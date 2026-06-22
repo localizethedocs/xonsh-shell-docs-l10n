@@ -1,0 +1,340 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.commands_cache.rst:2
+msgid "xonsh.commands\\_cache"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of xonsh.commands_cache:1
+msgid ""
+"Module for caching command & alias names as well as for predicting whether a "
+"command will be able to be run in the background."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of xonsh.commands_cache:4
+msgid ""
+"A background predictor is a function that accepts a single argument list and "
+"returns whether or not the process can be run in the background (returns "
+"True) or must be run the foreground (returns False)."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.fromkeys:2
+msgid ""
+"Create a new dictionary with keys from iterable and values set to value."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.clear:2
+msgid "Remove all items from the dict."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.copy:2
+msgid "Return a shallow copy of the dict."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.get:2
+#: xonsh.commands_cache.CaseInsensitiveDict.setdefault:4
+msgid "Return the value for key if key is in the dictionary, else default."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.items:2
+msgid "Return a set-like object providing a view on the dict's items."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.keys:2
+msgid "Return a set-like object providing a view on the dict's keys."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.pop:2
+msgid ""
+"If the key is not found, return the default if given; otherwise, raise a "
+"KeyError."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.popitem:2
+msgid "Remove and return a (key, value) pair as a 2-tuple."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.popitem:4
+msgid ""
+"Pairs are returned in LIFO (last-in, first-out) order. Raises KeyError if "
+"the dict is empty."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.setdefault:2
+msgid "Insert key with a value of default if key is not in the dictionary."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.update:2
+msgid ""
+"If E is present and has a .keys() method, then does:  for k in E.keys(): "
+"D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v "
+"in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CaseInsensitiveDict.values:2
+msgid "Return an object providing a view on the dict's values."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache:2
+msgid ""
+"A lazy cache representing the commands available on the file system. The "
+"keys are the command names and the values a tuple of (loc, has_alias) where "
+"loc is either a str pointing to the executable on the file system or None "
+"(if no executable exists) and has_alias is a boolean flag for whether the "
+"command has an alias."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache:8
+msgid ""
+"Note! There is ``xonsh.procs.executables`` module with resolving "
+"executables. Usage ``executables`` is preferred instead of commands_cache "
+"for cases where you just need to locate executable command."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.cached_name:2
+msgid "Returns the name that would appear in the cache, if it exists."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.default_predictor:2
+msgid ""
+"Default predictor, using predictor from original command if the command is "
+"an alias, elseif build a predictor based on binary analysis on POSIX, else "
+"return predict_true."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.default_predictor_readbin:2
+msgid ""
+"Make a default predictor by analyzing the content of the binary. Should only "
+"works on POSIX. Return failure if the analysis fails."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.get_predictor_threadable:2
+msgid ""
+"Return the predictor whether a command list is able to be run on a "
+"background thread, rather than the main thread."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.is_empty:2
+msgid "Returns whether the cache is populated or not."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.is_only_functional_alias:2
+msgid ""
+"Returns whether or not a command is only a functional alias, and has no "
+"underlying executable. For example, the \"cd\" command is only available as "
+"a functional alias."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.iter_commands:2
+msgid "Wrapper for handling windows path behaviour"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_is_only_functional_alias:2
+msgid ""
+"Returns whether or not a command is only a functional alias, and has no "
+"underlying executable. For example, the \"cd\" command is only available as "
+"a functional alias. This search is performed lazily."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:2
+msgid "Locates an executable in the cache, without checking its validity."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:4
+#: xonsh.commands_cache.CommandsCache.locate_binary:4
+msgid ""
+"NOT RECOMMENDED. Take a look into `xonsh.procs.executables."
+"locate_executable` before using this function."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:0
+#: xonsh.commands_cache.CommandsCache.locate_binary:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:9
+#: xonsh.commands_cache.CommandsCache.locate_binary:9
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:-1
+#: xonsh.commands_cache.CommandsCache.locate_binary:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:10
+#: xonsh.commands_cache.CommandsCache.locate_binary:10
+msgid "name of binary to search for"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:12
+#: xonsh.commands_cache.CommandsCache.locate_binary:12
+msgid "**ignore_alias**"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:-1
+#: xonsh.commands_cache.CommandsCache.locate_binary:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazy_locate_binary:13
+#: xonsh.commands_cache.CommandsCache.locate_binary:13
+msgid ""
+"Force return of binary path even if alias of ``name`` exists (default "
+"``False``)"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazyget:2
+msgid "A lazy value getter."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazyin:2
+msgid ""
+"Checks if the value is in the current cache without the potential to update "
+"the cache. It just says whether the value is known *now*. This may not "
+"reflect precisely what is on the $PATH."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazyiter:2
+msgid ""
+"Returns an iterator over the current cache contents without the potential to "
+"update the cache. This may not reflect what is on the $PATH."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.lazylen:2
+msgid ""
+"Returns the length of the current cache contents without the potential to "
+"update the cache. This may not reflect precisely what is on the $PATH."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.locate_binary:2
+msgid "Locates an executable on the file system using the cache."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.predict_threadable:2
+msgid ""
+"Predicts whether a command list is able to be run on a background thread, "
+"rather than the main thread."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.update_cache:2
+msgid ""
+"The main function to update commands cache. Note! There is ``xonsh.procs."
+"executables`` module with resolving executables. Usage ``executables`` is "
+"preferred instead of commands_cache for cases where you just need to locate "
+"executable command."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.CommandsCache.cache_file:2
+msgid "Keeping a property that lies on instance-attribute"
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.default_threadable_predictors:2
+msgid ""
+"Generates a new defaultdict for known threadable predictors. The default is "
+"to predict true."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.executables_in:2
+msgid "Returns a generator of files in path that the user could execute."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_env:2
+msgid ""
+"Predict if env is launching a threadable command or not. The launched "
+"command is extracted from env args, and the predictor of lauched command is "
+"used."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_false:2
+msgid "Never say the process is threadable."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_help_ver:2
+msgid ""
+"Predict the backgroundability of commands that have help & version switches: "
+"-h, --help, -v, -V, --version. If either of these options is present, the "
+"command is assumed to print to stdout normally and is therefore threadable. "
+"Otherwise, the command is assumed to not be threadable. This is useful for "
+"commands, like top, that normally enter alternate mode but may not in "
+"certain circumstances."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_hg:2
+msgid ""
+"Predict if mercurial is about to be run in interactive mode. If it is "
+"interactive, predict False. If it isn't, predict True. Also predict False "
+"for certain commands, such as split."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_shell:2
+msgid ""
+"Predict the backgroundability of the normal shell interface, which comes "
+"down to whether it is being run in subproc mode."
+msgstr ""
+
+#: ../../../../xonsh/commands_cache.py:docstring of
+#: xonsh.commands_cache.predict_true:2
+msgid "Always say the process is threadable."
+msgstr ""

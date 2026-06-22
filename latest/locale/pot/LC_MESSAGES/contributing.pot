@@ -1,0 +1,36 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contributing.rst:6
+msgid "Contributing"
+msgstr ""
+
+#: ../../../contributing.rst:7
+msgid ""
+"We highly encourage contributions to xonsh!  If you would like to "
+"contribute, it is as easy as forking the repository on GitHub, making your "
+"changes, and issuing a pull request.  If you have any questions about this "
+"process don't hesitate to `join to Xonsh Zulip Community <https://xonsh."
+"zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/>`_."
+msgstr ""
+
+#: ../../../contributing.rst:12
+msgid ""
+"See the `Developer's Guide <developer.html>`_ for more information about "
+"contributing."
+msgstr ""

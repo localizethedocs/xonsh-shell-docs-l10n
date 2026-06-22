@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.base_shell.rst:2
+msgid "xonsh.shells.base\\_shell"
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell:1
+msgid "The base class for xonsh shell"
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell:2
+msgid "The xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell:38
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell:39
+msgid ""
+"classes inheriting multiple base classes should call them explicitly as done "
+"for ``ReadlineShell``"
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.color_style:2
+msgid "Returns the current color map."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.color_style_names:2
+msgid "Returns an iterable of all available style names."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.compile:2
+msgid ""
+"Compiles source code and returns the (possibly modified) source and a valid "
+"code object."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.default:2
+msgid "Implements code execution."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.emptyline:2
+msgid "Called when an empty line has been entered."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.format_color:2
+msgid ""
+"Formats the colors in a string. ``BaseShell``'s default implementation of "
+"this method uses colors based on ANSI color codes."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.precmd:2
+msgid "Called just before execution of line."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.print_color:2
+msgid ""
+"Prints a string in color. This base implementation's colors are based on "
+"ANSI color codes if a string was given as input. If a list of token pairs is "
+"given, it will color based on pygments, if available. If pygments is not "
+"available, it will print a colorless string."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.push:2
+msgid ""
+"Pushes a line onto the buffer and compiles the code in a way that enables "
+"multiline input."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.reset_buffer:2
+msgid "Resets the line buffer."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.restore_tty_sanity:2
+msgid ""
+"An interface for resetting the TTY stdin mode. This is highly dependent on "
+"the shell backend. Also it is mostly optional since it only affects ^Z "
+"backgrounding behaviour."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.settitle:2
+msgid "Sets terminal title."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.singleline:2
+msgid "Reads a single line of input from the shell."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.prompt:2
+msgid "Obtains the current prompt string."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.Tee:2
+msgid "Class that merges tee'd stdout and stderr into a single stream."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.Tee:4
+msgid ""
+"This represents what a user would actually see on the command line. This "
+"class has the same interface as io.TextIOWrapper, except that the buffer is "
+"optional."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.Tee.close:2
+msgid "Restores the original stdout/stderr streams."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.Tee.close:4
+msgid ""
+"The memory buffer is intentionally NOT closed here because background "
+"pipeline threads (captured=\"object\") may still hold references to the "
+"Tee'd handles and flush after this point.  The buffer is released when the "
+"Tee is GC'd."
+msgstr ""
+
+#: ../../../../xonsh/shells/base_shell.py:docstring of
+#: xonsh.shells.base_shell.Tee.getvalue:2
+msgid "Gets the current contents of the in-memory buffer."
+msgstr ""

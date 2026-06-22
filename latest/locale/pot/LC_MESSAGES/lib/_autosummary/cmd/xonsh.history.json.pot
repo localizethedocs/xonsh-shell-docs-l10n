@@ -1,0 +1,597 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.json.rst:2
+msgid "xonsh.history.json"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of xonsh.history.json:1
+msgid "Implements JSON version of xonsh history backend."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:2
+msgid "A field in the 'cmds' portion of history."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:23
+msgid "Represents a field in the 'cmds' portion of history."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:25
+msgid ""
+"Will query the buffer for the relevant data, if possible. Otherwise it will "
+"lazily acquire data from the file."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:0
+#: xonsh.history.json.JsonCommandField:0 xonsh.history.json.JsonHistory:0
+#: xonsh.history.json.JsonHistory.append:0
+#: xonsh.history.json.JsonHistory.flush:0
+#: xonsh.history.json.JsonHistory.run_gc:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:30
+msgid "**field**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:31
+msgid "The name of the field to query."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:33
+msgid "**hist**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:-1
+msgid "History object"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:34
+msgid "The history object to query."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:36
+msgid "**default**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:-1 xonsh.history.json.JsonHistory:-1
+msgid "optional"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField:37
+msgid "The default value to return if key is not present."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonCommandField.i_am_at_the_front:2
+msgid "Tests if the command field is at the front of the queue."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: collections.abc.Sequence.index:2
+msgid "value.  Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: collections.abc.Sequence.index:4
+msgid "Supporting start and stop arguments is optional, but recommended."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:2
+msgid "Xonsh history backend implemented with JSON files."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:4
+msgid "JsonHistory implements an extra action: ``diff``"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:24
+msgid ""
+"Represents a xonsh session's history as an in-memory buffer that is "
+"periodically flushed to disk."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:30
+msgid "**filename**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:31
+msgid ""
+"Location of history file, defaults to ``$XONSH_DATA_DIR/history_json/xonsh-"
+"{sessionid}.json``."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:34
+msgid "**sessionid**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:-1
+msgid "int, uuid, str, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:35
+msgid "Current session identifier, will generate a new sessionid if not set."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:38
+msgid "**buffersize**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:-1
+msgid "int, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:39
+msgid "Maximum buffersize in memory."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:41
+msgid "**meta**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:42
+msgid ""
+"Top-level metadata to store along with the history. The kwargs 'cmds' and "
+"'sessionid' are not allowed and will be overwritten."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:45
+msgid "**gc**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:-1 xonsh.history.json.JsonHistory.flush:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory:46
+msgid "Run garbage collector flag."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.all_items:2
+msgid "Returns all history as found in XONSH_DATA_DIR."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.all_items:4
+msgid "yield format: {'inp': cmd, 'rtn': 0, ...}"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:2
+msgid ""
+"Appends command to history. Will periodically flush the history to file."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:7
+msgid "**cmd**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:8
+msgid ""
+"This dict contains information about the command that is to be added to the "
+"history list. It should contain the keys ``inp``, ``rtn`` and ``ts``. These "
+"key names mirror the same names defined as instance variables in the "
+"``HistoryEntry`` class. Additionally, an optional key ``spc`` may be present "
+"which will affect commands from being stored if ignorespace is in "
+"$HISTCONTROL."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:0
+#: xonsh.history.json.JsonHistory.append:0
+#: xonsh.history.json.JsonHistory.flush:0 xonsh.history.json.JsonHistory.info:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:19
+#: xonsh.history.json.JsonHistory.flush:15
+msgid "**hf**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:-1
+#: xonsh.history.json.JsonHistory.flush:-1
+msgid "JsonHistoryFlusher or None"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.append:20
+#: xonsh.history.json.JsonHistory.flush:16
+msgid "The thread that was spawned to flush history"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.clear:2
+msgid "Clears the current session's history from both memory and disk."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.delete:2
+msgid "Deletes all entries in history which matches a pattern."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.erasedups:2
+msgid "Remove duplicate commands across all history files, keeping the latest."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.flush:2
+msgid "Flushes the current command buffer to disk."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.flush:7
+msgid "**at_exit**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.flush:8
+msgid ""
+"Whether the JsonHistoryFlusher should act as a thread in the background, or "
+"execute immediately and block."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.info:2
+msgid "A collection of information about the shell history."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.info:10
+msgid "dict or collections.OrderedDict"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.info:11
+msgid "Contains history information as str key pairs."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:2
+msgid ""
+"Determines if a history item should be added to the event history. Call this "
+"in your append method."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:8
+msgid "**cmd: dict**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:9
+msgid ""
+"The prospective item to append (structure is the same as the append method)."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:15
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.base.History.is_ignored:16
+msgid "True if the item should be appended, False if not."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.items:2
+msgid "Display history items of current session."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.pull:2
+msgid "Pull history from other parallel sessions."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.run_gc:2
+msgid "Run the garbage collector."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.run_gc:7
+msgid "**size: None or tuple of a int and a string**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.run_gc:8
+msgid "Determines the size and units of what would be allowed to remain."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.run_gc:10
+msgid "**blocking: bool**"
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistory.run_gc:11
+msgid "If set blocking, then wait until gc action finished."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher:2
+msgid "Flush shell history to disk periodically."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher:23
+msgid "Thread for flushing history."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.dump:2
+msgid "Write the cached history to external storage."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.getName:2
+msgid "Return a string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.getName:4
+#: threading.Thread.setName:4
+msgid "This method is deprecated, use the name attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.i_am_at_the_front:2
+msgid "Tests if the flusher is at the front of the queue."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.isDaemon:2
+msgid "Return whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.isDaemon:4
+msgid "This method is deprecated, use the daemon attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.is_alive:2
+msgid "Return whether the thread is alive."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.is_alive:4
+msgid ""
+"This method returns True just before the run() method starts until just "
+"after the run() method terminates. See also the module function enumerate()."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:2
+msgid "Wait until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:4
+msgid ""
+"This blocks the calling thread until the thread whose join() method is "
+"called terminates -- either normally or through an unhandled exception or "
+"until the optional timeout occurs."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:8
+msgid ""
+"When the timeout argument is present and not None, it should be a floating-"
+"point number specifying a timeout for the operation in seconds (or fractions "
+"thereof). As join() always returns None, you must call is_alive() after "
+"join() to decide whether a timeout happened -- if the thread is still alive, "
+"the join() call timed out."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:14
+msgid ""
+"When the timeout argument is not present or None, the operation will block "
+"until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:17
+msgid "A thread can be join()ed many times."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.join:19
+msgid ""
+"join() raises a RuntimeError if an attempt is made to join the current "
+"thread as that would cause a deadlock. It is also an error to join() a "
+"thread before it has been started and attempts to do so raises the same "
+"exception."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.run:2
+#: xonsh.history.json.JsonHistoryGC.run:2
+msgid "Method representing the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.run:4
+#: xonsh.history.json.JsonHistoryGC.run:4
+msgid ""
+"You may override this method in a subclass. The standard run() method "
+"invokes the callable object passed to the object's constructor as the target "
+"argument, if any, with sequential and keyword arguments taken from the args "
+"and kwargs arguments, respectively."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.setDaemon:2
+msgid "Set whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.setDaemon:4
+msgid "This method is deprecated, use the .daemon property instead."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.setName:2
+msgid "Set the name string for this thread."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.start:2
+msgid "Start the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.start:4
+msgid ""
+"It must be called at most once per thread object. It arranges for the "
+"object's run() method to be invoked in a separate thread of control."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of threading.Thread.start:7
+msgid ""
+"This method will raise a RuntimeError if called more than once on the same "
+"thread object."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.daemon:2
+#: xonsh.history.json.JsonHistoryGC.daemon:2
+msgid "A boolean value indicating whether this thread is a daemon thread."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.daemon:4
+#: xonsh.history.json.JsonHistoryGC.daemon:4
+msgid ""
+"This must be set before start() is called, otherwise RuntimeError is raised. "
+"Its initial value is inherited from the creating thread; the main thread is "
+"not a daemon thread and therefore all threads created in the main thread "
+"default to daemon = False."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.daemon:9
+#: xonsh.history.json.JsonHistoryGC.daemon:9
+msgid "The entire Python program exits when only daemon threads are left."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.ident:2
+#: xonsh.history.json.JsonHistoryGC.ident:2
+msgid "Thread identifier of this thread or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.ident:4
+#: xonsh.history.json.JsonHistoryGC.ident:4
+msgid ""
+"This is a nonzero integer. See the get_ident() function. Thread identifiers "
+"may be recycled when a thread exits and another thread is created. The "
+"identifier is available even after the thread has exited."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.name:2
+#: xonsh.history.json.JsonHistoryGC.name:2
+msgid "A string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.name:4
+#: xonsh.history.json.JsonHistoryGC.name:4
+msgid ""
+"It has no semantics. Multiple threads may be given the same name. The "
+"initial name is set by the constructor."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.native_id:2
+#: xonsh.history.json.JsonHistoryGC.native_id:2
+msgid ""
+"Native integral thread ID of this thread, or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryFlusher.native_id:4
+#: xonsh.history.json.JsonHistoryGC.native_id:4
+msgid ""
+"This is a non-negative integer. See the get_native_id() function. This "
+"represents the Thread ID as reported by the kernel."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryGC:2
+msgid "Shell history garbage collection."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryGC:23
+msgid "Thread responsible for garbage collecting old history."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryGC:25
+msgid "May wait for shell (and for xonshrc to have been loaded) to start work."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryGC.files:2
+msgid ""
+"Find and return the history files. Optionally locked files may be excluded."
+msgstr ""
+
+#: ../../../../xonsh/history/json.py:docstring of
+#: xonsh.history.json.JsonHistoryGC.files:5
+msgid ""
+"This is sorted by the last closed time. Returns a list of (file_size, "
+"timestamp, number of cmds, file name) tuples."
+msgstr ""
