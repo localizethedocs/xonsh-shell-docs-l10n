@@ -129,7 +129,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:431
 msgid "Xonsh is an Ecosystem"
-msgstr ""
+msgstr "Xonsh 是一個生態系統"
 
 #: ../../../_templates/index.html:433
 msgid ""
@@ -152,7 +152,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:495
 msgid "Learn more →"
-msgstr ""
+msgstr "了解更多 →"
 
 #: ../../../_templates/index.html:508
 msgid ""
@@ -186,7 +186,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:583
 msgid "More xontribs →"
-msgstr ""
+msgstr "更多 xontrib →"
 
 #: ../../../_templates/index.html:606
 msgid "Xonsh"
@@ -194,15 +194,15 @@ msgstr ""
 
 #: ../../../_templates/index.html:609
 msgid "Xonsh Website"
-msgstr ""
+msgstr "Xonsh 網站"
 
 #: ../../../_templates/index.html:612
 msgid "Xonsh Documentation"
-msgstr ""
+msgstr "Xonsh 文件"
 
 #: ../../../_templates/index.html:615
 msgid "Xonsh Releases"
-msgstr ""
+msgstr "Xonsh 發行版"
 
 #: ../../../_templates/index.html:618
 msgid "Xonsh Docker Hub"
@@ -210,23 +210,23 @@ msgstr ""
 
 #: ../../../_templates/index.html:621
 msgid "Xonsh Issue Tracker"
-msgstr ""
+msgstr "Xonsh 議題追蹤器"
 
 #: ../../../_templates/index.html:626
 msgid "Community"
-msgstr ""
+msgstr "社群"
 
 #: ../../../_templates/index.html:629
 msgid "Xonsh Community"
-msgstr ""
+msgstr "Xonsh 社群"
 
 #: ../../../_templates/index.html:632
 msgid "Xonsh Discussions"
-msgstr ""
+msgstr "Xonsh 討論"
 
 #: ../../../_templates/index.html:635
 msgid "Xonsh Fediverse"
-msgstr ""
+msgstr "Xonsh 聯邦宇宙"
 
 #: ../../../_templates/index.html:638
 msgid "Xonsh Matrix"
@@ -246,7 +246,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:655
 msgid "Xontrib Tutorial"
-msgstr ""
+msgstr "Xontrib 教學"
 
 #: ../../../_templates/index.html:658
 msgid "Xontrib Template"

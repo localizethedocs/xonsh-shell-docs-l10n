@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../contents.rst:22
 msgid "Ask question"
-msgstr ""
+msgstr "提出問題"
 
 #: ../../../contents.rst:42
 msgid "Open technical issue"
@@ -31,11 +31,11 @@ msgstr ""
 
 #: ../../../contents.rst:68
 msgid "Create an extension"
-msgstr ""
+msgstr "建立擴充功能"
 
 #: ../../../contents.rst:3
 msgid "The Xonsh Shell"
-msgstr ""
+msgstr "Xonsh 外殼"
 
 #: ../../../intro.rst:3
 msgid ""
@@ -223,7 +223,7 @@ msgstr ""
 
 #: ../../../contents.rst:13
 msgid "Docs"
-msgstr ""
+msgstr "文件"
 
 #: ../../../contents.rst:16
 msgid "Beginner"
@@ -262,7 +262,7 @@ msgstr ""
 
 #: ../../../contents.rst:86
 msgid "Contributor"
-msgstr ""
+msgstr "貢獻者"
 
 #: ../../../contents.rst:88
 msgid ""
@@ -273,11 +273,11 @@ msgstr ""
 
 #: ../../../contents.rst:101
 msgid "`Developer’s Guide <developer.html>`_"
-msgstr ""
+msgstr "`開發者指南 <developer.html>`_"
 
 #: ../../../contents.rst:102
 msgid "`Xonsh Library Reference <lib/index.html>`_"
-msgstr ""
+msgstr "`Xonsh 程式庫參考 <lib/index.html>`_"
 
 #: ../../../contents.rst:103
 msgid "`History Backend <history_backend.html>`_"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ../../../contents.rst:119
 msgid "Links"
-msgstr ""
+msgstr "連結"
 
 #: ../../../contents.rst:121
 msgid ":ref:`genindex`"
@@ -383,10 +383,11 @@ msgid ""
 "`Xonsh Community <https://xonsh.zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/"
 ">`_"
 msgstr ""
+"`Xonsh 社群 <https://xonsh.zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/>`_"
 
 #: ../../../contents.rst:125
 msgid "`Xonsh Fediverse <https://mastodon.online/@xonsh>`_"
-msgstr ""
+msgstr "`Xonsh 聯邦宇宙 <https://mastodon.online/@xonsh>`_"
 
 #: ../../../contents.rst:126
 msgid "`Xonsh Matrix <https://matrix.to/#/#xonsh:matrix.org>`_"
