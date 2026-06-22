@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.ansi_colors.rst:2
+msgid "xonsh.ansi\\_colors"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of xonsh.ansi_colors:1
+msgid "Tools for helping with ANSI color codes."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_color_escape_code_to_name:2
+msgid ""
+"Converts an ANSI color code escape sequence to a tuple of color names in the "
+"provided style ('default' should almost be the style). For example, '0' "
+"becomes ('RESET',) and '32;41' becomes ('GREEN', 'BACKGROUND_RED'). The "
+"style keyword may either be a string, in which the style is looked up, or an "
+"actual style dict.  You can also provide a reversed style mapping, too, "
+"which is just the keys/values of the style dict swapped. If reversed style "
+"is not provided, it is computed."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_color_name_to_escape_code:2
+msgid "Converts a color name to the inner part of an ANSI escape code"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_color_style:2
+msgid "Returns the current color map."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_color_style_names:2
+msgid "Returns an iterable of all ANSI color style names."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:2
+msgid ""
+"Formats a template string but only with respect to the colors. Another "
+"template string is returned, with the color values filled in."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:0
+#: xonsh.ansi_colors.register_custom_ansi_style:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:8
+msgid "**template**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:-1
+#: xonsh.ansi_colors.register_custom_ansi_style:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:9
+msgid "The template string, potentially with color names."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:11
+msgid "**style**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:-1
+#: xonsh.ansi_colors.register_custom_ansi_style:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:12
+msgid "Style name to look up color map from."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:14
+msgid "**cmap**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:-1
+msgid "dict, optional"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:15
+msgid ""
+"A color map to use, this will prevent the color map from being looked up via "
+"the style name."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:18
+msgid "**hide**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:19
+msgid ""
+"Whether to wrap the color codes in the \\001 and \\002 escape codes, so that "
+"the color codes are not counted against line length."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_partial_color_format:27
+msgid "A template string with the color values filled in."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_reverse_style:2
+msgid ""
+"Reverses an ANSI color style mapping so that escape codes map to colors. "
+"Style may either be string or mapping. May also return the style it looked "
+"up."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.ansi_style_by_name:2
+msgid ""
+"Gets or makes an ANSI color style by name. If the styles does not exist, it "
+"will look for a style using the pygments name."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.make_ansi_style:2
+msgid "Makes an ANSI color style from a color palette"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:2
+msgid "Register custom ANSI style."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:7
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:8
+msgid "Style name."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:10
+msgid "**styles**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:11
+msgid "Token (or str) -> style mapping."
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:13
+msgid "**base**"
+msgstr ""
+
+#: ../../../../xonsh/ansi_colors.py:docstring of
+#: xonsh.ansi_colors.register_custom_ansi_style:14
+msgid "Base style to use as default."
+msgstr ""

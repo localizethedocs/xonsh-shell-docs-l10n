@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.collections.rst:2
+msgid "xonsh.lib.collections"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of xonsh.lib.collections:1
+msgid "Base class for chaining DBs"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: xonsh.lib.collections.ChainDB:2
+msgid ""
+"A ChainMap who's ``_getitem__`` returns either a ChainDB or the result. The "
+"results resolve to the outermost mapping."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: xonsh.lib.collections.ChainDB:24
+msgid ""
+"Initialize a ChainMap by setting *maps* to the given mappings. If no "
+"mappings are provided, a single empty dictionary is used."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.ChainMap.fromkeys:2
+msgid "Create a new ChainMap with keys from iterable and values set to value."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.ChainMap.clear:2
+msgid "Clear maps[0], leaving maps[1:] intact."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.ChainMap.copy:2
+msgid ""
+"New ChainMap or subclass with a new copy of maps[0] and refs to maps[1:]"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.ChainMap.new_child:2
+msgid ""
+"New ChainMap with a new map followed by all previous maps. If no map is "
+"provided, an empty dict is used. Keyword arguments update the map or new "
+"empty dict."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of collections.ChainMap.pop:2
+msgid ""
+"Remove *key* from maps[0] and return its value. Raise KeyError if *key* not "
+"in maps[0]."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.ChainMap.popitem:2
+msgid ""
+"Remove and return an item pair from maps[0]. Raise KeyError is maps[0] is "
+"empty."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: collections.abc.MutableMapping.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: xonsh.lib.collections.ChainDB.parents:2
+msgid "New ChainMap from maps[1:]."
+msgstr ""
+
+#: ../../../../xonsh/lib/collections.py:docstring of
+#: xonsh.lib.collections.ChainDBDefaultType:2
+msgid "Singleton for representing when no default value is given."
+msgstr ""

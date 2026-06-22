@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../python_virtual_environments.rst:7
+msgid "Virtual Environments"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:9
+msgid ""
+"Python virtual environments let you isolate a project's dependencies from "
+"the system Python, and xonsh works with the usual tools for creating them. "
+"Whichever tool you pick, the :ref:`xcontext <aliases-xcontext>` command will "
+"always tell you which interpreter, ``pip``, and environment variables are in "
+"effect right now — handy when something isn't resolving where you expected."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:17
+msgid "``virtualenv``"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:19
+msgid ""
+"`virtualenv <https://virtualenv.pypa.io/>`_ ships with a native xonsh "
+"activator, so creating and entering an environment takes just two steps:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:22
+msgid ""
+"@ virtualenv myenv\n"
+"@ source myenv/bin/activate.xsh\n"
+"(myenv) @"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:28
+msgid "To leave the environment, run ``deactivate``."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:32
+msgid "``vox``"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:34
+msgid ""
+"xonsh works with the usual Python virtual environment tools — ``venv``, "
+"``virtualenv``, ``pew`` — and on top of that ships its own environments "
+"manager called **Vox**. Vox is an xontrib that makes creating, listing, "
+"activating, and removing virtualenvs feel natural right inside the shell, so "
+"you don't have to leave the REPL or remember a separate activation script "
+"per project."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:41
+msgid "Install and load Vox:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:43
+msgid ""
+"@ xpip install xontrib-vox\n"
+"@ xontrib load vox"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:48
+msgid "To create a new environment with vox, run ``vox new <envname>``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:51
+msgid ""
+"@ vox new myenv\n"
+"Creating environment...\n"
+"Environment \"myenv\" created. Activate it with \"vox activate myenv\"."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:57
+msgid ""
+"The interpreter ``vox`` uses to create a virtualenv is configured via the "
+"``$VOX_DEFAULT_INTERPRETER`` environment variable."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:59
+msgid ""
+"You may also set the interpreter used to create the virtual environment by "
+"passing it explicitly to ``vox new`` i.e.:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:61
+msgid "@ vox new python2-env -p /usr/local/bin/python2"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:65
+msgid ""
+"Under the hood, vox uses Python 3's ``venv`` module to create Python 3 "
+"virtualenvs. [this is the default]"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:67
+msgid ""
+"If a Python 2 interpreter is chosen, it will use the Python 2 interpreter's "
+"``virtualenv`` module."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:69
+msgid ""
+"By default, environments are stored in ``~/.virtualenvs``, but you can "
+"override it by setting the ``$VIRTUALENV_HOME`` environment variable."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:71
+msgid "To see all existing environments, run ``vox list``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:73
+msgid ""
+"@ vox list\n"
+"Available environments:\n"
+"    eggs\n"
+"    myenv\n"
+"    spam"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:81
+msgid "To activate an environment, run ``vox activate <envname>``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:83
+msgid ""
+"@ vox activate myenv\n"
+"Activated \"myenv\"."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:88
+msgid "Instead of ``activate``, you can call ``workon`` or ``enter``."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:90
+msgid ""
+"If you want to activate an environment which is stored somewhere else (maybe "
+"because it was created by another tool) you can pass to ``vox activate`` a "
+"path to a virtual environment:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:93
+msgid ""
+"@ vox activate /home/user/myenv\n"
+"Activated \"/home/user/myenv\"."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:98
+msgid ""
+"To exit the currently active environment, run ``vox deactivate`` or ``vox "
+"exit``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:100
+msgid ""
+"@ vox deactivate\n"
+"Deactivated \"myenv\"."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:105
+msgid "To remove an environment, run ``vox remove <envname>``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:107
+msgid ""
+"@ vox remove myenv\n"
+"Environment \"myenv\" removed."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:112
+msgid "Instead of ``remove``, you can call ``rm``, ``delete``, or ``del``."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:114
+msgid ""
+"To see all available commands, run ``vox help``, ``vox --help``, or ``vox -"
+"h``."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:117
+msgid "``virtualenv`` like prompt"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:118
+msgid ""
+"Although it's included in the default prompt, you can customize your prompt "
+"to automatically update in the same way as ``virtualenv``."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:121
+msgid "Simply add the ``'{env_name}'`` variable to your ``$PROMPT``:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:123
+msgid "@ $PROMPT = '{env_name: {}}' + restofmyprompt"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:127
+msgid ""
+"Note that you do **not** need to load the ``vox`` xontrib for this to work. "
+"For more details see :ref:`customprompt`."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:132
+msgid "Automatically Switching Environments"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:134
+msgid ""
+"Automatic environment switching based on the current directory is managed "
+"with the ``autovox`` xontrib (``xontrib load autovox``). Third-party "
+"xontribs may register various policies for use with autovox. Pick and choose "
+"xontribs that implement policies that match your work style."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:136
+msgid ""
+"Implementing policies is easy! Just register with the ``autovox_policy`` "
+"event and return a ``Path`` if there is a matching venv. For example, this "
+"policy implements handling if there is a ``.venv`` directory in the project:"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:138
+msgid ""
+"@events.autovox_policy\n"
+"def dotvenv_policy(path, **_):\n"
+"    venv = path / '.venv'\n"
+"    if venv.exists():\n"
+"        return venv"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:146
+msgid ""
+"Note that you should only return if there is an environment for this "
+"directory exactly. Scanning parent directories is managed by autovox. You "
+"should also make the policy check relatively cheap. (Local IO is ok, but "
+"probably shouldn't call out to network services.)"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:150
+msgid "See also"
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:152
+msgid ""
+":ref:`aliases-xcontext` — inspect the interpreter, ``pip``, and active "
+"environment variables of the current session."
+msgstr ""
+
+#: ../../../python_virtual_environments.rst:154
+msgid ""
+":ref:`customprompt_ref` — customize ``{env_name}``, ``{env_prefix}``, and "
+"``{env_postfix}`` to control how the active environment appears in the "
+"prompt."
+msgstr ""

@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../talks_and_articles.rst:3
+msgid "Talks & Articles"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:4
+msgid ""
+"Here are some talks, articles, and other sundry about your favorite shell."
+msgstr ""
+
+#: ../../../talks_and_articles.rst:7
+msgid "Talks"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:9
+msgid "**SciPy, Jul 2019:** presented by Anthony Scopatz and Gil Forsyth"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:11
+msgid ""
+"<div style=\"text-align:center;\">\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"ujo9sbqHFqw\" frameborder=\"0\" allowfullscreen></iframe>\n"
+"</div>"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:17
+msgid "**Brněnské Pyvo, May 2019:** presented by Alexander Sosedkin"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:19
+msgid ""
+"<div style=\"text-align:center;\">\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"ZDhfpqRnpwI\" frameborder=\"0\" allowfullscreen></iframe>\n"
+"</div>"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:25
+msgid "**PyBay, Sep 2016:** presented by Matthias Bussonnier"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:27
+msgid ""
+"<div style=\"text-align:center;\">\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"lopI4HkA9rE\" frameborder=\"0\" allowfullscreen></iframe>\n"
+"</div>"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:33
+msgid "**PyCon, Jun 2016:** presented by Anthony Scopatz"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:35
+msgid ""
+"<div style=\"text-align:center;\">\n"
+"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/"
+"uaje5I22kgE\" frameborder=\"0\" allowfullscreen></iframe>\n"
+"</div>"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:43
+msgid "Articles"
+msgstr ""
+
+#: ../../../talks_and_articles.rst:45
+msgid ""
+"`First Impressions of Xonsh <https://www.fusionbox.com/blog/detail/thoughts-"
+"on-pycon-2016/606/>`_, FusionBox, June 20, 2016."
+msgstr ""
+
+#: ../../../talks_and_articles.rst:47
+msgid ""
+"`InfoWorld on xonsh <http://www.infoworld.com/article/3078017/application-"
+"development/new-shell-packs-power-of-python-and-bash.html>`_, Paul Krill, "
+"June 2nd, 2016."
+msgstr ""
+
+#: ../../../talks_and_articles.rst:49
+msgid ""
+"`Slashdot on xonsh <https://developers.slashdot.org/story/16/06/04/0039245/"
+"pythonunix-hybrid-demoed-at-pycon>`_, June 2016."
+msgstr ""

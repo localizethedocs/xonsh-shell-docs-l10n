@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.contexts.rst:2
+msgid "xonsh.contexts"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts:1
+msgid "Context management tools for xonsh."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:2
+msgid ""
+"This is a context manager for obtaining a block of lines without actually "
+"executing the block. The lines are accessible as the 'lines' attribute. This "
+"must be used as a macro."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:0
+#: xonsh.contexts.Functor:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:31
+msgid "**lines**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:-1
+msgid "list of str or None"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:32
+msgid "Block lines as if split by str.splitlines(), if available."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:34
+msgid "**glbs**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:-1
+msgid "Mapping or None"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:35
+msgid "Global execution context, ie globals()."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:37
+msgid "**locs**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Block:38
+msgid "Local execution context, ie locals()."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:2
+msgid ""
+"This is a context manager that turns the block into a callable object, bound "
+"to the execution context it was created in."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:29
+msgid "**args**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:-1
+msgid "Sequence of str, optional"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:30
+msgid "A tuple of argument names for the functor."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:32
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:-1
+msgid "Mapping of str to values or list of item tuples, optional"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:33
+msgid "Keyword argument names and values, if available."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:35
+msgid "**rtn**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:36
+msgid "Name of object to return, if available."
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:40
+msgid "**func**"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:-1
+msgid "function"
+msgstr ""
+
+#: ../../../../xonsh/contexts.py:docstring of xonsh.contexts.Functor:41
+msgid ""
+"The underlying function object. This defaults to none and is set after the "
+"the block is exited."
+msgstr ""

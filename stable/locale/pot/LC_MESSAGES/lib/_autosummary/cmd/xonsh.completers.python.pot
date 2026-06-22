@@ -1,0 +1,38 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.python.rst:2
+msgid "xonsh.completers.python"
+msgstr ""
+
+#: ../../../../xonsh/completers/python.py:docstring of
+#: xonsh.completers.python:1
+msgid "Completers for Python code"
+msgstr ""
+
+#: ../../../../xonsh/completers/python.py:docstring of
+#: xonsh.completers.python.complete_python:2
+msgid ""
+"Completes based on the contents of the current Python environment, the "
+"Python built-ins, and xonsh operators."
+msgstr ""
+
+#: ../../../../xonsh/completers/python.py:docstring of
+#: xonsh.completers.python.complete_xonsh_imp:2
+msgid "Completes module names for the inline xonsh importer (@.imp.<module>)."
+msgstr ""
