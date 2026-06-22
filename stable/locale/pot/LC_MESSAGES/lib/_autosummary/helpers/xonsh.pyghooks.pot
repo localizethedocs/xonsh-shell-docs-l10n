@@ -1,0 +1,694 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.pyghooks.rst:2
+msgid "xonsh.pyghooks"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks:1
+msgid "Hooks for pygments syntax highlighting."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.CompoundColorMap:2
+msgid ""
+"Looks up color tokens by name, potentially generating the value from the "
+"lookup."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.pop:2
+msgid ""
+"value.  If key is not found, d is returned if given, otherwise KeyError is "
+"raised."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: collections.abc.MutableMapping.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:2 xonsh.pyghooks.XonshLexer:2
+msgid "Xonsh console lexer for pygments."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:4
+msgid "A xonshcon block is a sequence of lines with the following conventions:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:6
+msgid ""
+"``@ ...`` — an interactive xonsh command. Tokenised with the ``@ `` (and "
+"trailing space) as :data:`Generic.Prompt` so that Sphinx themes / "
+"``sphinx_copybutton`` strip the prompt from copy-to-clipboard, leaving just "
+"the command text on the clipboard."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:11
+msgid ""
+"``>>> ...`` / ``... ...`` — same behaviour for Python interactive prompts."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:14
+msgid ""
+"A line starting with ``# `` at column 0 — a documented output comment. "
+"Tokenised as :data:`Generic.Output` so it is rendered in a distinct (grey) "
+"colour and excluded from copy (via ``user-select: none`` on ``.go`` in the "
+"Sphinx theme / ``custom.css``). This lets authors annotate *what the command "
+"would print* inline while the reader still copies only the code:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:21
+msgid ""
+"@ echo 1\n"
+"# 1    (output — grey, not copied)\n"
+"@ def qwe():\n"
+"      print(321)\n"
+"  qwe()\n"
+"# 321  (output — grey, not copied)"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:30
+msgid ""
+"A line starting with two leading spaces — a continuation of the previous ``@ "
+"`` line (e.g. the body of a ``def``/``for``/...). The first two spaces line "
+"up with the character after the ``@ `` prompt and are tokenised as :data:"
+"`Generic.Prompt` so they are stripped from copy-paste alongside the real "
+"prompts, leaving the body with its true (Python) indentation. Any further "
+"whitespace flows into the normal xonsh highlighting."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:38
+msgid ""
+"Continuation and prompt rules use ``bygroups`` to split the preceding "
+"newline off from the prompt token: ``(\\n)(@ |\\. )`` emits ``\\n`` as :data:"
+"`Text` (preserved in the clipboard — the two lines stay separated) and ``@ "
+"``/``. `` as :data:`Generic.Prompt` (stripped together with its trailing "
+"space, so no orphan leading space lands on the next line)."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:45
+msgid ""
+"The trailing catch-all ``\\n...`` rules keep backwards compat with older "
+"xonshcon blocks that have bare output lines at column 0 — any line that is "
+"not a prompt, a ``#``-comment, or a 2-space continuation is still tokenised "
+"as :data:`Generic.Output`. New documentation should prefer the ``# `` "
+"convention so the rendered block is more self-explanatory."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:70 xonsh.pyghooks.XonshLexer:23
+msgid ""
+"This constructor takes arbitrary options as keyword arguments. Every "
+"subclass must first process its own options and then call the `Lexer` "
+"constructor, since it processes the basic options like `stripnl`."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:75 xonsh.pyghooks.XonshLexer:28
+msgid "An example looks like this:"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:77 xonsh.pyghooks.XonshLexer:30
+msgid ""
+"def __init__(self, **options):\n"
+"    self.compress = options.get('compress', '')\n"
+"    Lexer.__init__(self, **options)"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer:83 xonsh.pyghooks.XonshLexer:36
+msgid ""
+"As these options must all be specifiable as strings (due to the command line "
+"usage), there are various utility functions available to help with that, see "
+"`Utilities`_."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: pygments.util.make_analysator.<locals>.text_analyse:2
+msgid "A static method which is called for lexer guessing."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: pygments.util.make_analysator.<locals>.text_analyse:4
+msgid ""
+"It should analyse the text and return a float in the range from ``0.0`` to "
+"``1.0``.  If it returns ``0.0``, the lexer will not be selected as the most "
+"probable one, if it returns ``1.0``, it will be selected immediately.  This "
+"is used by `guess_lexer`."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: pygments.util.make_analysator.<locals>.text_analyse:10
+msgid ""
+"The `LexerMeta` metaclass automatically wraps this function so that it works "
+"like a static method (no ``self`` or ``cls`` parameter) and the return value "
+"is automatically converted to `float`. If the return value is an object that "
+"is boolean `False` it's the same as if the return values was ``0.0``."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of pygments.lexer.Lexer.add_filter:2
+msgid "Add a new stream filter to this lexer."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of pygments.lexer.Lexer.get_tokens:2
+msgid ""
+"This method is the basic interface of a lexer. It is called by the "
+"`highlight()` function. It must process the text and return an iterable of "
+"``(tokentype, value)`` pairs from `text`."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of pygments.lexer.Lexer.get_tokens:6
+msgid ""
+"Normally, you don't need to override this method. The default implementation "
+"processes the options recognized by all lexers (`stripnl`, `stripall` and so "
+"on), and then yields all tokens from `get_tokens_unprocessed()`, with the "
+"``index`` dropped."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: pygments.lexer.Lexer.get_tokens:11
+msgid ""
+"If `unfiltered` is set to `True`, the filtering mechanism is bypassed even "
+"if filters are defined."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshLexer.get_tokens_unprocessed:2
+msgid ""
+"Check first command, then call super.get_tokens_unprocessed with root or "
+"subproc state."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshLexer.get_tokens_unprocessed:5
+msgid ""
+"Plugin mode (no live session — Sphinx, nbconvert, jupyter) keeps the "
+"original strict check here on purpose: ``_command_is_valid`` rejects "
+"keywords, so a Python source line like ``from foo import bar`` correctly "
+"falls through to root state and is highlighted as Python.  Treating *every* "
+"leading token as a valid command would switch the lexer into ``subproc`` "
+"state for any input whose first non-whitespace character matches "
+"``COMMAND_TOKEN_RE`` (including ``#`` for plain comments), wrecking "
+"highlighting for the rest of the file."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.alias_filenames:2
+#: xonsh.pyghooks.XonshLexer.alias_filenames:2
+msgid ""
+"A list of `fnmatch` patterns that match filenames which may or may not "
+"contain content for this lexer. This list is used by the :func:`."
+"guess_lexer_for_filename()` function, to determine which lexers are then "
+"included in guessing the correct one. That means that e.g. every lexer for "
+"HTML and a template language should include ``\\*.html`` in this list."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.aliases:2
+#: xonsh.pyghooks.XonshLexer.aliases:2
+msgid ""
+"A list of short, unique identifiers that can be used to look up the lexer "
+"from a list, e.g., using `get_lexer_by_name()`."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.filenames:2
+#: xonsh.pyghooks.XonshLexer.filenames:2
+msgid ""
+"A list of `fnmatch` patterns that match filenames which contain content for "
+"this lexer. The patterns in this list should be unique among all lexers."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.flags:2 xonsh.pyghooks.XonshLexer.flags:2
+msgid "Flags for compiling the regular expressions. Defaults to MULTILINE."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.mimetypes:2
+#: xonsh.pyghooks.XonshLexer.mimetypes:2
+msgid "A list of MIME types for content that can be lexed with this lexer."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.name:2 xonsh.pyghooks.XonshLexer.name:2
+msgid "Full name of the lexer, in human-readable form"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.priority:2
+#: xonsh.pyghooks.XonshLexer.priority:2
+msgid "Priority, should multiple lexers match and no content is provided"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.tokens:2 xonsh.pyghooks.XonshLexer.tokens:2
+msgid ""
+"At all time there is a stack of states. Initially, the stack contains a "
+"single state 'root'. The top of the stack is called \"the current state\"."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.tokens:5 xonsh.pyghooks.XonshLexer.tokens:5
+msgid "Dict of ``{'state': [(regex, tokentype, new_state), ...], ...}``"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.tokens:7 xonsh.pyghooks.XonshLexer.tokens:7
+msgid ""
+"``new_state`` can be omitted to signify no state transition. If "
+"``new_state`` is a string, it is pushed on the stack. This ensure the new "
+"current state is ``new_state``. If ``new_state`` is a tuple of strings, all "
+"of those strings are pushed on the stack and the current state will be the "
+"last element of the list. ``new_state`` can also be ``combined('state1', "
+"'state2', ...)`` to signify a new, anonymous state combined from the rules "
+"of two or more existing ones. Furthermore, it can be '#pop' to signify going "
+"back one step in the state stack, or '#push' to push the current state on "
+"the stack again. Note that if you push while in a combined state, the "
+"combined state itself is pushed, and not only the state in which the rule is "
+"defined."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.tokens:21
+#: xonsh.pyghooks.XonshLexer.tokens:21
+msgid ""
+"The tuple can also be replaced with ``include('state')``, in which case the "
+"rules from the state named by the string are included in the current one."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.url:2 xonsh.pyghooks.XonshLexer.url:2
+msgid ""
+"URL of the language specification/definition. Used in the Pygments "
+"documentation. Set to an empty string to disable."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshConsoleLexer.version_added:2
+#: xonsh.pyghooks.XonshLexer.version_added:2
+msgid "Version of Pygments in which the lexer was added."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.XonshStyle:2
+msgid ""
+"A xonsh pygments style that will dispatch to the correct color map by using "
+"a ChainMap.  The style_name property may be used to reset the current style."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.XonshStyle:0
+#: xonsh.pyghooks.code_by_name:0 xonsh.pyghooks.color_by_name:0
+#: xonsh.pyghooks.color_file:0 xonsh.pyghooks.register_custom_pygments_style:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.XonshStyle:30
+msgid "**style_name**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.XonshStyle:-1
+#: xonsh.pyghooks.color_by_name:-1
+#: xonsh.pyghooks.register_custom_pygments_style:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.XonshStyle:31
+msgid "The style name to initialize with."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.enhance_colors_for_cmd_exe:2
+msgid ""
+"Enhance colors when using cmd.exe on windows. When using the default style "
+"all blue and dark red colors are changed to CYAN and intense red."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.background_color:2
+msgid "overall background color (``None`` means transparent)"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.highlight_color:2
+msgid "highlight background color"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.line_number_background_color:2
+msgid "line number background color"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.line_number_color:2
+msgid "line number font color"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.line_number_special_background_color:2
+msgid "special line number background color"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.line_number_special_color:2
+msgid "special line number font color"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.XonshStyle.styles:2
+msgid "Style definitions for individual token types."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:2
+msgid "Converts a token name into a pygments-style color code."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:7
+#: xonsh.pyghooks.color_by_name:9
+#: xonsh.pyghooks.register_custom_pygments_style:7
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:-1
+#: xonsh.pyghooks.color_by_name:-1
+#: xonsh.pyghooks.register_custom_pygments_style:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:8
+msgid "Color token name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:10
+#: xonsh.pyghooks.register_custom_pygments_style:10
+msgid "**styles**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:-1
+msgid "Mapping"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:11
+msgid "Mapping for looking up non-hex colors"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:0
+#: xonsh.pyghooks.color_by_name:0 xonsh.pyghooks.color_file:0
+#: xonsh.pyghooks.register_custom_pygments_style:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:17
+msgid "**code**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.code_by_name:18
+msgid "Pygments style color code."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:2
+msgid ""
+"Converts a color name to a color token, foreground name, and background "
+"name.  Will take into consideration current foreground and background "
+"colors, if provided."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:10
+msgid "Color name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:12
+#: xonsh.pyghooks.color_by_name:25
+msgid "**fg**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:13
+msgid "Foreground color name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:15
+#: xonsh.pyghooks.color_by_name:28
+msgid "**bg**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:16
+msgid "Background color name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:22
+msgid "**tok**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:-1
+msgid "Token"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:23
+msgid "Pygments Token.Color subclass"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:-1
+msgid "str or None"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:26
+msgid "New computed foreground color name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_by_name:29
+msgid "New computed background color name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:2
+msgid "Determine color to use for file *approximately* as ls --color would,"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:3
+msgid "given lstat() results and its path."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:8
+msgid "**file_path**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:9
+msgid "relative path of file (as user typed it)."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:11
+msgid "**path_stat**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:12
+msgid "lstat() results for file_path."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:18
+msgid "color token, color_key"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:29
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:30
+msgid ""
+"implementation follows one authority: https://github.com/coreutils/coreutils/"
+"blob/master/src/ls.c#L4879"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:32
+msgid "except :"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:34
+msgid ""
+"does not return 'mi'.  That's the color ls uses to show the (missing) "
+"*target* of a symlink (in ls -l, not ls)."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.color_file:36
+msgid ""
+"in dircolors, setting type code to '0 or '00' bypasses that test and "
+"proceeds to others. In our implementation, setting code to '00' paints the "
+"file with no color. This is arguably a bug."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.color_name_to_pygments_code:2
+msgid "Converts a xonsh color name to a pygments color code."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.color_token_by_name:2
+msgid ""
+"Returns (color) token corresponding to Xonsh color tuple, side effect: "
+"defines token is defined in styles"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of xonsh.pyghooks.iskeyword:2
+msgid "x.__contains__(y) <==> y in x."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.make_pygments_style:2
+msgid "Makes a pygments style based on a color palette."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.on_lscolors_change:2
+msgid ""
+"if LS_COLORS updated, update file_color_tokens and  corresponding color "
+"token in style"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.partial_color_tokenize:2
+msgid ""
+"Tokenizes a template string containing colors. Will return a list of tuples "
+"mapping the token to the string which has that color. These sub-strings "
+"maybe templates themselves."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.pygments_style_by_name:2
+msgid "Gets or makes a pygments color style by its name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:2
+msgid "Register custom style."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:8
+msgid "Style name."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:11
+msgid "Token -> style mapping."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:13
+msgid "**highlight_color**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:14
+msgid "Hightlight color."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:16
+msgid "**background_color**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:17
+msgid "Background color."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:19
+msgid "**base**"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:20
+msgid "Base style to use as default."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:26
+msgid "**style** : The ``pygments.Style`` subclass created"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.register_custom_pygments_style:-1
+msgid "The"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.subproc_arg_callback:2
+msgid "Check if match contains valid path"
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.subproc_cmd_callback:2
+msgid ""
+"Yield Builtin token if match contains valid command, otherwise fallback to "
+"fallback lexer."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.xonsh_style_proxy:2
+msgid "Factory for a proxy class to a xonsh style."
+msgstr ""
+
+#: ../../../../xonsh/pyghooks.py:docstring of
+#: xonsh.pyghooks.file_color_tokens:2
+msgid ""
+"Parallel to LS_COLORS, keyed by dircolors keys, but value is a Color token. "
+"Initialized by XonshStyle."
+msgstr ""

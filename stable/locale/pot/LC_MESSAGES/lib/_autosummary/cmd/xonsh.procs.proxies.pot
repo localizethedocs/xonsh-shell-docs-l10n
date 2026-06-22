@@ -1,0 +1,613 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.proxies.rst:2
+msgid "xonsh.procs.proxies"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of xonsh.procs.proxies:1
+msgid "Interface for running Python functions as subprocess-mode commands."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of xonsh.procs.proxies:3
+msgid ""
+"Code for several helper methods in the `ProcProxy` class have been "
+"reproduced without modification from `subprocess.py` in the Python 3.4.2 "
+"standard library. The contents of `subprocess.py` (and, thus, the reproduced "
+"methods) are Copyright (c) 2003-2005 by Peter Astrand <astrand@lysator.liu."
+"se> and were licensed to the Python Software foundation under a Contributor "
+"Agreement."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:2
+msgid ""
+"Dispatches to different file handles depending on the current thread. Useful "
+"if you want file operation to go to different places for different threads."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:0
+#: xonsh.procs.proxies.ProcProxyThread:0
+#: xonsh.procs.proxies.parse_proxy_return:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:30
+msgid "**default**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:-1
+msgid "file-like or None, optional"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:31
+msgid ""
+"The file handle to write to if a thread cannot be found in the registry. If "
+"None, a new in-memory instance."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:36
+msgid "**registry**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher:37
+msgid "Maps thread idents to file handles."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.close:2
+msgid "Closes the current thread's handle."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.deregister:2
+msgid "Removes the current thread from the registry."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.detach:2
+msgid "Detaches the buffer for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.fileno:2
+msgid "Returns the file descriptor for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.flush:2
+msgid "Flushes the file descriptor for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.isatty:2
+msgid "Returns if the file descriptor for the current thread is a tty."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.read:2
+msgid "Reads from the handle for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.readable:2
+msgid "Returns if file descriptor for the current thread is readable."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.readline:2
+msgid "Reads a line from the handle for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.readlines:2
+msgid "Reads lines from the handle for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.register:2
+msgid ""
+"Registers a file handle for the current thread. Returns self so that this "
+"method can be used in a with-statement."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.seek:2
+msgid "Seeks the current file."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.seekable:2
+msgid "Returns if file descriptor for the current thread is seekable."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.tell:2
+msgid "Reports the current position in the handle for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.truncate:2
+msgid "Truncates the file for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.writable:2
+msgid "Returns if file descriptor for the current thread is writable."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.write:2
+msgid ""
+"Writes to this thread's handle. This also flushes, just to be extra sure the "
+"string was written."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.writelines:2
+msgid "Writes lines for the file descriptor for the current thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.available:2
+msgid "True if the thread is available in the registry."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.buffer:2
+msgid "Gets the buffer for this thread's handle."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.closed:2
+msgid "Is the thread's handle closed."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.encoding:2
+msgid "Gets the encoding for this thread's handle."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.errors:2
+msgid "Gets the errors for this thread's handle."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.handle:2
+msgid "Gets the current handle for the thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.line_buffering:2
+msgid "Gets if line buffering for this thread's handle enabled."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.FileThreadDispatcher.newlines:2
+msgid "Gets the newlines for this thread's handle."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxy:2
+msgid ""
+"This is process proxy class that runs its alias functions on the same thread "
+"that it was called from, which is typically the main thread. This prevents "
+"the process from running on a background thread, but enables debugger and "
+"profiler tools (functions) be run on the same thread that they are "
+"attempting to debug."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxy.poll:2
+msgid "Check if the function has completed via the returncode or None."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxy.wait:2
+msgid ""
+"Runs the function and returns the result. Timeout argument only present for "
+"API compatibility."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:2
+msgid "Class representing a function to be run as a subprocess-mode command."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:28
+msgid "**f**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:-1
+msgid "function"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:29
+msgid "The function to be executed."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:31
+msgid "**args**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:-1
+msgid "list"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:32
+msgid ""
+"A (possibly empty) list containing the arguments that were given on the "
+"command line"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:35
+msgid "**stdin**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:-1
+msgid "file-like, optional"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:36
+msgid ""
+"A file-like object representing stdin (input can be read from here).  If "
+"`stdin` is not provided or if it is explicitly set to `None`, then an "
+"instance of `io.StringIO` representing an empty file is used."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:41
+#: xonsh.procs.proxies.parse_proxy_return:10
+msgid "**stdout**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:42
+msgid ""
+"A file-like object representing stdout (normal output can be written here).  "
+"If `stdout` is not provided or if it is explicitly set to `None`, then `sys."
+"stdout` is used."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:46
+#: xonsh.procs.proxies.parse_proxy_return:13
+msgid "**stderr**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:47
+msgid ""
+"A file-like object representing stderr (error output can be written here).  "
+"If `stderr` is not provided or if it is explicitly set to `None`, then `sys."
+"stderr` is used."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:51
+msgid "**universal_newlines**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:52
+msgid "Whether or not to use universal newlines."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:54
+msgid "**close_fds**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:55
+msgid ""
+"Whether or not to close file descriptors. This is here for Popen "
+"compatability and currently does nothing."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:58
+msgid "**env**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:-1
+msgid "Mapping, optional"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread:59
+msgid "Environment mapping."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.getName:2
+msgid "Return a string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.getName:4
+#: threading.Thread.setName:4
+msgid "This method is deprecated, use the name attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.isDaemon:2
+msgid "Return whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.isDaemon:4
+msgid "This method is deprecated, use the daemon attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.is_alive:2
+msgid "Return whether the thread is alive."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.is_alive:4
+msgid ""
+"This method returns True just before the run() method starts until just "
+"after the run() method terminates. See also the module function enumerate()."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:2
+msgid "Wait until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:4
+msgid ""
+"This blocks the calling thread until the thread whose join() method is "
+"called terminates -- either normally or through an unhandled exception or "
+"until the optional timeout occurs."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:8
+msgid ""
+"When the timeout argument is present and not None, it should be a floating-"
+"point number specifying a timeout for the operation in seconds (or fractions "
+"thereof). As join() always returns None, you must call is_alive() after "
+"join() to decide whether a timeout happened -- if the thread is still alive, "
+"the join() call timed out."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:14
+msgid ""
+"When the timeout argument is not present or None, the operation will block "
+"until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:17
+msgid "A thread can be join()ed many times."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.join:19
+msgid ""
+"join() raises a RuntimeError if an attempt is made to join the current "
+"thread as that would cause a deadlock. It is also an error to join() a "
+"thread before it has been started and attempts to do so raises the same "
+"exception."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.poll:2
+msgid "Check if the function has completed."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.poll:0
+#: xonsh.procs.proxies.parse_proxy_return:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.poll:10
+msgid "None if the function is still executing, and the returncode otherwise"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.run:2
+msgid ""
+"Set up input/output streams and execute the child function in a new thread.  "
+"This is part of the `threading.Thread` interface and should not be called "
+"directly."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.setDaemon:2
+msgid "Set whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.setDaemon:4
+msgid "This method is deprecated, use the .daemon property instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.setName:2
+msgid "Set the name string for this thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.start:2
+msgid "Start the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.start:4
+msgid ""
+"It must be called at most once per thread object. It arranges for the "
+"object's run() method to be invoked in a separate thread of control."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of threading.Thread.start:7
+msgid ""
+"This method will raise a RuntimeError if called more than once on the same "
+"thread object."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.wait:2
+msgid "Waits for the process to finish and returns the return code."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.daemon:2
+msgid "A boolean value indicating whether this thread is a daemon thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.daemon:4
+msgid ""
+"This must be set before start() is called, otherwise RuntimeError is raised. "
+"Its initial value is inherited from the creating thread; the main thread is "
+"not a daemon thread and therefore all threads created in the main thread "
+"default to daemon = False."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.daemon:9
+msgid "The entire Python program exits when only daemon threads are left."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.ident:2
+msgid "Thread identifier of this thread or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.ident:4
+msgid ""
+"This is a nonzero integer. See the get_ident() function. Thread identifiers "
+"may be recycled when a thread exits and another thread is created. The "
+"identifier is available even after the thread has exited."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.name:2
+msgid "A string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.name:4
+msgid ""
+"It has no semantics. Multiple threads may be given the same name. The "
+"initial name is set by the constructor."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.native_id:2
+msgid ""
+"Native integral thread ID of this thread, or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.native_id:4
+msgid ""
+"This is a non-negative integer. See the get_native_id() function. This "
+"represents the Thread ID as reported by the kernel."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.ProcProxyThread.pipe_channels:2
+msgid "All PipeChannel objects managed by this proc."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:2
+msgid "Proxies may return a variety of outputs. This handles them generally."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:7
+msgid "**r**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:-1
+msgid "tuple, str, int, or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:8
+msgid "Return from proxy function"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:-1
+msgid "file-like"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:11
+msgid "Current stdout stream"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:14
+msgid "Current stderr stream"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:20
+msgid "**cmd_result**"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:-1
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.parse_proxy_return:21
+msgid "The return code of the proxy"
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.safe_flush:2
+msgid "Attempts to safely flush a file handle, returns success bool."
+msgstr ""
+
+#: ../../../../xonsh/procs/proxies.py:docstring of
+#: xonsh.procs.proxies.still_writable:2
+msgid ""
+"Determines whether a file descriptor is still writable by trying to write an "
+"empty string and seeing if it fails."
+msgstr ""

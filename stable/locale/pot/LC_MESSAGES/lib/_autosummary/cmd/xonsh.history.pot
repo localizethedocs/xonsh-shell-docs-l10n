@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:2
+msgid "xonsh.history"
+msgstr ""
+
+#: ../../../../xonsh/history/__init__.py:docstring of xonsh.history:1
+msgid "Command history backends for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/history/__init__.py:docstring of xonsh.history:3
+msgid ""
+"Provides the pluggable history interface and the built-in backends: JSON "
+"file, SQLite, and an in-memory dummy backend."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`base <xonsh.history.base>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Base class of Xonsh History backends."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`diff_history <xonsh.history.diff_history>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Tools for diff'ing two xonsh history files in a meaningful fashion."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`dummy <xonsh.history.dummy>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Implements the xonsh history backend."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`json <xonsh.history.json>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Implements JSON version of xonsh history backend."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`main <xonsh.history.main>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Main entry points of the xonsh history."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid ":py:obj:`sqlite <xonsh.history.sqlite>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.rst:29:<autosummary>:1
+msgid "Implements the xonsh history backend via sqlite3."
+msgstr ""

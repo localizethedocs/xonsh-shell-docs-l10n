@@ -1,0 +1,33 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.macutils.rst:2
+msgid "xonsh.platforms.macutils"
+msgstr ""
+
+#: ../../../../xonsh/platforms/macutils.py:docstring of
+#: xonsh.platforms.macutils:1
+msgid "Provides some Mac / Darwin based utility functions for xonsh."
+msgstr ""
+
+#: ../../../../xonsh/platforms/macutils.py:docstring of
+#: xonsh.platforms.macutils.sysctlbyname:2
+msgid ""
+"Gets a sysctl value by name. If return_str is true, this will return a "
+"string representation, else it will return the raw value."
+msgstr ""

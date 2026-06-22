@@ -1,0 +1,458 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../subprocess.rst:6
+msgid "Subprocess"
+msgstr ""
+
+#: ../../../subprocess.rst:8
+msgid ""
+"Xonsh provides several operators for launching subprocesses, each with "
+"different capturing and blocking behavior. Choosing the right one depends on "
+"whether you need the output, whether the process is interactive, and what "
+"return type you expect."
+msgstr ""
+
+#: ../../../subprocess.rst:15
+msgid "``$(cmd)`` -- captured stdout"
+msgstr ""
+
+#: ../../../subprocess.rst:17
+msgid ""
+"Runs ``cmd``, captures stdout and returns it as a string. Nothing is printed "
+"to the screen:"
+msgstr ""
+
+#: ../../../subprocess.rst:20
+msgid ""
+"$(whoami)\n"
+"# 'user'\n"
+"\n"
+"id $(whoami)          # use captured output as an argument\n"
+"# uid=501(user) gid=20(staff)\n"
+"\n"
+"output = $(echo -e '1\\n2\\r3 4\\r\\n5')\n"
+"output\n"
+"# '1\\n2\\n3 4\\n5\\n'"
+msgstr ""
+
+#: ../../../subprocess.rst:32
+msgid ""
+"Use :ref:`Command Decorators <command-decorators>` to change the return "
+"format:"
+msgstr ""
+
+#: ../../../subprocess.rst:34
+msgid ""
+"$(@lines ls /)\n"
+"# ['/bin', '/etc', '/home']\n"
+"\n"
+"$(@json curl https://example.com/data.json)\n"
+"# {'key': 'value'}"
+msgstr ""
+
+#: ../../../subprocess.rst:42
+msgid ""
+"See :ref:`Command Decorators <command-decorators>` for the full list "
+"(``@lines``, ``@json``, ``@jsonl``, ``@yaml``, ``@toml``, etc.)."
+msgstr ""
+
+#: ../../../subprocess.rst:47
+msgid "``!(cmd)`` -- captured object"
+msgstr ""
+
+#: ../../../subprocess.rst:49
+msgid ""
+"In fact every subprocess command in xonsh is executed through a :class:"
+"`~xonsh.procs.pipelines.CommandPipeline` -- the central object that manages "
+"process execution, piping, stdout/stderr capturing, and return codes."
+msgstr ""
+
+#: ../../../subprocess.rst:54
+msgid ""
+"``!(cmd)`` operator captures stdout and stderr and returns a :class:`~xonsh."
+"procs.pipelines.CommandPipeline`. The object is truthy when the return code "
+"is 0, and iterates over lines of stdout."
+msgstr ""
+
+#: ../../../subprocess.rst:61
+msgid ""
+"This operator is **non-blocking** -- it does not wait for the process to "
+"finish. To get the output, access ``.out``, ``.rtn``, call ``.end()``, or "
+"convert to ``str``, which forces the process to complete."
+msgstr ""
+
+#: ../../../subprocess.rst:66
+msgid ""
+"r = !(ls /)\n"
+"r.output            # '' -- process may not have finished yet\n"
+"r.end()             # block until done\n"
+"r.output            # 'bin\\netc\\n...'\n"
+"\n"
+"r = !(ls /)\n"
+"r.out               # .out forces ending\n"
+"# 'bin\\netc\\n...'"
+msgstr ""
+
+#: ../../../subprocess.rst:77
+msgid "Non-blocking pattern with a worker:"
+msgstr ""
+
+#: ../../../subprocess.rst:79
+msgid ""
+"worker = !(sleep 3)                   # returns immediately\n"
+"echo 'doing other work...'\n"
+"if worker.rtn == 0:                   # .rtn blocks until done\n"
+"    echo 'worker finished successfully'"
+msgstr ""
+
+#: ../../../subprocess.rst:88
+msgid ""
+"Because the terminal is detached, this operator can only be used for **non-"
+"interactive** tools. Running ``!(ls | fzf)`` or ``!(python -c \"input()\")`` "
+"will cause the process to be suspended by the OS. Use ``$(cmd)``, "
+"``$[cmd]``, or ``![cmd]`` for interactive tools."
+msgstr ""
+
+#: ../../../subprocess.rst:96
+msgid "``![cmd]`` -- uncaptured hidden object"
+msgstr ""
+
+#: ../../../subprocess.rst:98
+msgid ""
+"Streams stdout and stderr to the screen and returns a :class:`~xonsh.procs."
+"pipelines.HiddenCommandPipeline`. This is the operator used under the hood "
+"when you type a plain command at the interactive prompt (``cmd`` is the same "
+"as ``![cmd]``)."
+msgstr ""
+
+#: ../../../subprocess.rst:103
+msgid ""
+"r = ![echo hello]\n"
+"# hello                   <- streamed to terminal\n"
+"r.returncode\n"
+"# 0"
+msgstr ""
+
+#: ../../../subprocess.rst:110
+msgid ""
+"The ``.out`` attribute is empty by default. Set ``$XONSH_CAPTURE_ALWAYS = "
+"True`` to capture output even in this mode:"
+msgstr ""
+
+#: ../../../subprocess.rst:113
+msgid ""
+"with @.env.swap(XONSH_CAPTURE_ALWAYS=True):\n"
+"    r = ![echo hello]\n"
+"    # hello               <- still streamed\n"
+"    r.out\n"
+"    # 'hello\\n'           <- also captured"
+msgstr ""
+
+#: ../../../subprocess.rst:121
+msgid "Checking return status with the walrus operator:"
+msgstr ""
+
+#: ../../../subprocess.rst:123
+msgid ""
+"if r := ![ls NO]:\n"
+"    print(f'OK, code: {r.returncode}')\n"
+"else:\n"
+"    print(f'FAIL, code: {r.returncode}')\n"
+"# ls: cannot access 'NO': No such file or directory\n"
+"# FAIL, code: 2"
+msgstr ""
+
+#: ../../../subprocess.rst:134
+msgid "``$[cmd]`` -- uncaptured"
+msgstr ""
+
+#: ../../../subprocess.rst:136
+msgid ""
+"Streams stdout and stderr directly to the terminal and returns ``None``. The "
+"output always goes to the real terminal, even when ``$[cmd]`` is called from "
+"inside a callable alias or other captured context -- the subprocess inherits "
+"the raw OS file descriptors, bypassing any Python-level redirection."
+msgstr ""
+
+#: ../../../subprocess.rst:142
+msgid "Use this for interactive or uncapturable processes (e.g. editors):"
+msgstr ""
+
+#: ../../../subprocess.rst:144
+msgid ""
+"ret = $[echo 123]\n"
+"# 123    # output directly\n"
+"repr(ret)\n"
+"# 'None'\n"
+"\n"
+"@aliases.register\n"
+"def _configure():\n"
+"    me = $(whoami)\n"
+"    echo @(me) > /tmp/config\n"
+"    $[vim /tmp/config]\n"
+"\n"
+"configure"
+msgstr ""
+
+#: ../../../subprocess.rst:161
+msgid "``@$(cmd)`` -- captured inject"
+msgstr ""
+
+#: ../../../subprocess.rst:163
+msgid ""
+"Runs ``cmd``, captures stdout, splits it using :meth:`Lexer.split() <xonsh."
+"parsers.lexer.Lexer.split>` (shell-aware, respects quoting), and injects the "
+"resulting tokens as separate arguments:"
+msgstr ""
+
+#: ../../../subprocess.rst:168
+msgid ""
+"@ showcmd @$(echo -e '1\\n2\\r3 4\\r\\n5')\n"
+"# ['1', '2\\r3', '4', '5']"
+msgstr ""
+
+#: ../../../subprocess.rst:173
+msgid "You can use the same function directly to split any command string:"
+msgstr ""
+
+#: ../../../subprocess.rst:175
+msgid ""
+"from xonsh.parsers.lexer import Lexer\n"
+"Lexer().split('echo \"hello world\" file.txt')\n"
+"# ['echo', '\"hello world\"', 'file.txt']"
+msgstr ""
+
+#: ../../../subprocess.rst:183
+msgid "Threading"
+msgstr ""
+
+#: ../../../subprocess.rst:185
+msgid ""
+"Xonsh has a threading prediction mechanism that allows it to understand "
+"which commands can be captured. For example, ``echo`` has no interaction "
+"with the user and is capturable. However, some tools have mixed behavior -- "
+"they can be run for either interactive or non-interactive tasks. The best "
+"example is ``ssh``, which allows for remote terminal sessions *and* "
+"executing commands."
+msgstr ""
+
+#: ../../../subprocess.rst:192
+msgid ""
+"To handle different types of tasks, xonsh has the ``@thread`` and "
+"``@unthread`` built-in decorator aliases. If you need to capture the output "
+"from an interactive tool that has a capturable mode, use ``@thread``:"
+msgstr ""
+
+#: ../../../subprocess.rst:197
+msgid ""
+"@ !(@thread ssh host -T 'echo remote')\n"
+"CommandPipeline(output=\"remote\")"
+msgstr ""
+
+#: ../../../subprocess.rst:202
+msgid ""
+"Without ``@thread``, ``ssh`` would be predicted as unthreadable (because it "
+"is normally interactive) and the captured operator would not be able to "
+"collect its output."
+msgstr ""
+
+#: ../../../subprocess.rst:206
+msgid ""
+"Conversely, ``@unthread`` forces a command to run in the foreground without "
+"threading -- useful when a normally threadable command needs terminal access "
+"(e.g. entering a password prompt)."
+msgstr ""
+
+#: ../../../subprocess.rst:212
+msgid "Summary table"
+msgstr ""
+
+#: ../../../subprocess.rst:218
+msgid "Operator"
+msgstr ""
+
+#: ../../../subprocess.rst:219
+msgid "Blocking"
+msgstr ""
+
+#: ../../../subprocess.rst:220
+msgid "Capture stdout"
+msgstr ""
+
+#: ../../../subprocess.rst:221
+msgid "Capture stderr"
+msgstr ""
+
+#: ../../../subprocess.rst:222
+msgid "TTY input"
+msgstr ""
+
+#: ../../../subprocess.rst:223
+msgid "TTY output"
+msgstr ""
+
+#: ../../../subprocess.rst:224
+msgid "Raise"
+msgstr ""
+
+#: ../../../subprocess.rst:225
+msgid "Returns"
+msgstr ""
+
+#: ../../../subprocess.rst:226
+msgid "``$(cmd)``"
+msgstr ""
+
+#: ../../../subprocess.rst:227 ../../../subprocess.rst:228
+#: ../../../subprocess.rst:230 ../../../subprocess.rst:232
+#: ../../../subprocess.rst:243 ../../../subprocess.rst:246
+#: ../../../subprocess.rst:248 ../../../subprocess.rst:251
+#: ../../../subprocess.rst:254 ../../../subprocess.rst:255
+#: ../../../subprocess.rst:256 ../../../subprocess.rst:259
+#: ../../../subprocess.rst:260 ../../../subprocess.rst:262
+#: ../../../subprocess.rst:264
+msgid "yes"
+msgstr ""
+
+#: ../../../subprocess.rst:229 ../../../subprocess.rst:235
+#: ../../../subprocess.rst:238 ../../../subprocess.rst:240
+#: ../../../subprocess.rst:244 ../../../subprocess.rst:245
+#: ../../../subprocess.rst:252 ../../../subprocess.rst:253
+#: ../../../subprocess.rst:261
+msgid "no"
+msgstr ""
+
+#: ../../../subprocess.rst:231 ../../../subprocess.rst:239
+#: ../../../subprocess.rst:247 ../../../subprocess.rst:263
+msgid "no for thread"
+msgstr ""
+
+#: ../../../subprocess.rst:233
+msgid "``str`` (stdout)"
+msgstr ""
+
+#: ../../../subprocess.rst:234
+msgid "``!(cmd)``"
+msgstr ""
+
+#: ../../../subprocess.rst:236 ../../../subprocess.rst:237
+msgid "yes for thread"
+msgstr ""
+
+#: ../../../subprocess.rst:241
+msgid ":class:`~xonsh.procs.pipelines.CommandPipeline`"
+msgstr ""
+
+#: ../../../subprocess.rst:242
+msgid "``![cmd]``"
+msgstr ""
+
+#: ../../../subprocess.rst:249
+msgid ":class:`~xonsh.procs.pipelines.HiddenCommandPipeline`"
+msgstr ""
+
+#: ../../../subprocess.rst:250
+msgid "``$[cmd]``"
+msgstr ""
+
+#: ../../../subprocess.rst:257
+msgid "``None``"
+msgstr ""
+
+#: ../../../subprocess.rst:258
+msgid "``@$(cmd)``"
+msgstr ""
+
+#: ../../../subprocess.rst:265
+msgid "``list``"
+msgstr ""
+
+#: ../../../subprocess.rst:267
+msgid "What all this means:"
+msgstr ""
+
+#: ../../../subprocess.rst:269
+msgid ""
+"**Blocking** -- whether xonsh waits for the process to finish before "
+"continuing."
+msgstr ""
+
+#: ../../../subprocess.rst:271
+msgid ""
+"**Capture stdout** -- whether stdout is captured into a ``CommandPipeline`` "
+"object instead of being streamed to the terminal."
+msgstr ""
+
+#: ../../../subprocess.rst:273
+msgid ""
+"**Capture stderr** -- whether stderr is captured into a ``CommandPipeline`` "
+"object."
+msgstr ""
+
+#: ../../../subprocess.rst:274
+msgid ""
+"**TTY input** -- whether the process receives terminal input (stdin). "
+"Without it, interactive tools (e.g. ``fzf``, ``vim``) will be suspended by "
+"the OS."
+msgstr ""
+
+#: ../../../subprocess.rst:277
+msgid ""
+"**TTY output** -- whether stdout is connected directly to the terminal. \"no "
+"(threadable)\" means the stream is redirected for threadable processes."
+msgstr ""
+
+#: ../../../subprocess.rst:280
+msgid ""
+"**Raise** -- whether a non-zero return code raises ``CalledProcessError`` "
+"(when ``$RAISE_SUBPROC_ERROR`` is ``True``)."
+msgstr ""
+
+#: ../../../subprocess.rst:282
+msgid "**Returns** -- the Python type of the value returned by the operator."
+msgstr ""
+
+#: ../../../subprocess.rst:284
+msgid ""
+"A **thread** (threadable, capturable) process is one that does not interact "
+"with the user. If an unthreadable process runs with a detached terminal it "
+"will be suspended by the OS automatically."
+msgstr ""
+
+#: ../../../subprocess.rst:290
+msgid "See also"
+msgstr ""
+
+#: ../../../subprocess.rst:292
+msgid ":doc:`strings` -- how strings and quoting work in subprocess mode"
+msgstr ""
+
+#: ../../../subprocess.rst:293
+msgid ""
+":doc:`aliases` -- command decorators (``@lines``, ``@json``) and alias "
+"definitions"
+msgstr ""
+
+#: ../../../subprocess.rst:294
+msgid ":doc:`launch` -- command-line options for starting xonsh"
+msgstr ""
+
+#: ../../../subprocess.rst:295
+msgid ":doc:`tutorial` -- introduction to xonsh"
+msgstr ""

@@ -1,0 +1,1042 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../prompt.rst:5
+msgid "Prompt"
+msgstr ""
+
+#: ../../../prompt.rst:7
+msgid ""
+"Xonsh ships with two REPL engines. Historically, they have been referred to "
+"in xonsh as “shells” or “prompts”, but they will likely be renamed in the "
+"future, as they are in fact REPL (read–eval–print loop) engines that power "
+"all user interaction with the terminal. These are:"
+msgstr ""
+
+#: ../../../prompt.rst:11
+msgid ""
+"**prompt-toolkit** or **ptk** (``$SHELL_TYPE`` is ``prompt_toolkit``) — the "
+"recommended, full-featured engine built on `prompt_toolkit <https://python-"
+"prompt-toolkit.readthedocs.io/>`_. It provides syntax highlighting, multi-"
+"line editing, completion menus, custom key bindings, and more. It is "
+"included when installing the full package (``pip install 'xonsh[full]'``)."
+msgstr ""
+
+#: ../../../prompt.rst:16
+msgid ""
+"**readline** (``$SHELL_TYPE`` is ``readline``) — a minimal fallback used "
+"when ptk cannot be started for some reason (for example, when "
+"``prompt_toolkit`` is not installed)."
+msgstr ""
+
+#: ../../../prompt.rst:20
+msgid ""
+"This page describes features and customization options of the **ptk** "
+"engine. For the underlying library reference, see the `prompt_toolkit "
+"official docs <https://python-prompt-toolkit.readthedocs.io/>`_."
+msgstr ""
+
+#: ../../../prompt.rst:28
+msgid "Customizing the Prompt"
+msgstr ""
+
+#: ../../../prompt.rst:30
+msgid ""
+"Customizing the prompt by modifying ``$PROMPT``, ``$RIGHT_PROMPT`` or "
+"``$BOTTOM_TOOLBAR`` is probably the most common reason for altering an "
+"environment variable."
+msgstr ""
+
+#: ../../../prompt.rst:34
+msgid ""
+"The ``$PROMPT`` variable can be a string, or it can be a function (of no "
+"arguments) that returns a string.  The result can contain keyword arguments, "
+"which will be replaced automatically:"
+msgstr ""
+
+#: ../../../prompt.rst:38
+msgid ""
+"@ $PROMPT = '{user}@{hostname}:{cwd} @ '\n"
+"snail@home:~ @ # it works!\n"
+"@ $PROMPT = lambda: '{user}@{hostname}:{cwd} @> '\n"
+"snail@home:~ @> # so does that!"
+msgstr ""
+
+#: ../../../prompt.rst:45
+msgid "By default, the following variables are available for use:"
+msgstr ""
+
+#: ../../../prompt.rst:47
+msgid "``user``: The username of the current user"
+msgstr ""
+
+#: ../../../prompt.rst:48
+msgid "``hostname``: The name of the host computer"
+msgstr ""
+
+#: ../../../prompt.rst:49
+msgid ""
+"``cwd``: The current working directory. Use ``$DYNAMIC_CWD_WIDTH`` to set a "
+"maximum width and ``$DYNAMIC_CWD_ELISION_CHAR`` for the elision character."
+msgstr ""
+
+#: ../../../prompt.rst:51
+msgid ""
+"``short_cwd``: A shortened form of the current working directory; e.g., ``/"
+"path/to/xonsh`` becomes ``/p/t/xonsh``"
+msgstr ""
+
+#: ../../../prompt.rst:53
+msgid ""
+"``cwd_dir``: The dirname of the current working directory, e.g. ``/path/to/``"
+msgstr ""
+
+#: ../../../prompt.rst:54
+msgid ""
+"``cwd_base``: The basename of the current working directory, e.g. ``xonsh``"
+msgstr ""
+
+#: ../../../prompt.rst:55
+msgid "``env_name``: The name of active virtual environment, if any."
+msgstr ""
+
+#: ../../../prompt.rst:56
+msgid ""
+"``env_prefix``: Prefix characters for active virtual environment (default "
+"``\"(\"``)."
+msgstr ""
+
+#: ../../../prompt.rst:57
+msgid ""
+"``env_postfix``: Postfix characters for active virtual environment (default "
+"``\") \"``)."
+msgstr ""
+
+#: ../../../prompt.rst:58
+msgid "``curr_branch``: The name of the current git branch, if any."
+msgstr ""
+
+#: ../../../prompt.rst:59
+msgid ""
+"``branch_color``: ``{BOLD_GREEN}`` if the current git branch is clean, "
+"otherwise ``{BOLD_RED}``. Yellow if undetermined."
+msgstr ""
+
+#: ../../../prompt.rst:61
+msgid ""
+"``branch_bg_color``: Like ``{branch_color}``, but sets a background color."
+msgstr ""
+
+#: ../../../prompt.rst:62
+msgid ""
+"``prompt_end``: ``@#`` if the user has root/admin permissions, ``@`` "
+"otherwise."
+msgstr ""
+
+#: ../../../prompt.rst:63
+msgid ""
+"``current_job``: The name of the command currently running in the foreground."
+msgstr ""
+
+#: ../../../prompt.rst:64
+msgid ""
+"``gitstatus``: Informative git status, like ``[main|MERGING|+1…2]``. See :py:"
+"mod:`xonsh.prompt.gitstatus` for customization options."
+msgstr ""
+
+#: ../../../prompt.rst:66
+msgid "``localtime``: The current local time, formatted with ``time_format``."
+msgstr ""
+
+#: ../../../prompt.rst:67
+msgid "``time_format``: A time format string, defaulting to ``\"%H:%M:%S\"``."
+msgstr ""
+
+#: ../../../prompt.rst:68
+msgid "``last_return_code``: The return code of the last issued command."
+msgstr ""
+
+#: ../../../prompt.rst:69
+msgid ""
+"``last_return_code_if_nonzero``: The return code if non-zero, otherwise "
+"``None``."
+msgstr ""
+
+#: ../../../prompt.rst:72
+msgid "Colors"
+msgstr ""
+
+#: ../../../prompt.rst:74
+msgid ""
+"Xonsh supports colored output in prompts, ``print_color``, and ``printx``. "
+"Color keywords such as ``{GREEN}`` or ``{BOLD_BLUE}`` can be used in prompt "
+"strings and with color printing functions."
+msgstr ""
+
+#: ../../../prompt.rst:79
+msgid "Color Names"
+msgstr ""
+
+#: ../../../prompt.rst:81
+msgid "``RESET``: Resets any previously used styling."
+msgstr ""
+
+#: ../../../prompt.rst:82
+msgid ""
+"``COLORNAME``: Inserts a color code for the following basic colors, which "
+"come in regular (dark) and intense (light) forms:"
+msgstr ""
+
+#: ../../../prompt.rst:85
+msgid "``BLACK`` or ``INTENSE_BLACK``"
+msgstr ""
+
+#: ../../../prompt.rst:86
+msgid "``RED`` or ``INTENSE_RED``"
+msgstr ""
+
+#: ../../../prompt.rst:87
+msgid "``GREEN`` or ``INTENSE_GREEN``"
+msgstr ""
+
+#: ../../../prompt.rst:88
+msgid "``YELLOW`` or ``INTENSE_YELLOW``"
+msgstr ""
+
+#: ../../../prompt.rst:89
+msgid "``BLUE`` or ``INTENSE_BLUE``"
+msgstr ""
+
+#: ../../../prompt.rst:90
+msgid "``PURPLE`` or ``INTENSE_PURPLE``"
+msgstr ""
+
+#: ../../../prompt.rst:91
+msgid "``CYAN`` or ``INTENSE_CYAN``"
+msgstr ""
+
+#: ../../../prompt.rst:92
+msgid "``WHITE`` or ``INTENSE_WHITE``"
+msgstr ""
+
+#: ../../../prompt.rst:94
+msgid ""
+"``DEFAULT``: The color code for the terminal's default foreground color."
+msgstr ""
+
+#: ../../../prompt.rst:95
+msgid ""
+"``#HEX``: A ``#`` before a len-3 or len-6 hex code will use that hex color, "
+"or the nearest approximation that that is supported by the shell and "
+"terminal.  For example, ``#fff`` and ``#fafad2`` are both valid."
+msgstr ""
+
+#: ../../../prompt.rst:99
+msgid ""
+"``BACKGROUND_`` may be added to the beginning of a color name or hex color "
+"to set a background color.  For example, ``BACKGROUND_INTENSE_RED`` and "
+"``BACKGROUND_#123456`` can both be used."
+msgstr ""
+
+#: ../../../prompt.rst:102
+msgid ""
+"``bg#HEX`` or ``BG#HEX`` are shortcuts for setting a background hex color. "
+"Thus you can set ``bg#0012ab`` or the uppercase version."
+msgstr ""
+
+#: ../../../prompt.rst:106
+msgid "Color Modifiers"
+msgstr ""
+
+#: ../../../prompt.rst:108
+msgid ""
+"``BOLD_`` — increases font intensity. E.g. ``BOLD_RED``, ``BOLD_#112233``."
+msgstr ""
+
+#: ../../../prompt.rst:109
+msgid "``FAINT_`` — decreases font intensity. E.g. ``FAINT_YELLOW``."
+msgstr ""
+
+#: ../../../prompt.rst:110
+msgid "``ITALIC_`` — switches to italic. E.g. ``ITALIC_BLUE``."
+msgstr ""
+
+#: ../../../prompt.rst:111
+msgid "``UNDERLINE_`` — adds underline. E.g. ``UNDERLINE_GREEN``."
+msgstr ""
+
+#: ../../../prompt.rst:112
+msgid "``SLOWBLINK_`` — slow blinking text. E.g. ``SLOWBLINK_PURPLE``."
+msgstr ""
+
+#: ../../../prompt.rst:113
+msgid "``FASTBLINK_`` — fast blinking text. E.g. ``FASTBLINK_CYAN``."
+msgstr ""
+
+#: ../../../prompt.rst:114
+msgid "``INVERT_`` — swaps foreground and background. E.g. ``INVERT_WHITE``."
+msgstr ""
+
+#: ../../../prompt.rst:115
+msgid ""
+"``CONCEAL_`` — hides text (may not be widely supported). E.g. "
+"``CONCEAL_BLACK``."
+msgstr ""
+
+#: ../../../prompt.rst:116
+msgid ""
+"``STRIKETHROUGH_`` — draws a line through text. E.g. ``STRIKETHROUGH_RED``."
+msgstr ""
+
+#: ../../../prompt.rst:118
+msgid ""
+"Each modifier has an ``OFF`` variant to disable it: ``BOLDOFF_``, "
+"``FAINTOFF_``, ``ITALICOFF_``, ``UNDERLINEOFF_``, ``BLINKOFF_``, "
+"``INVERTOFF_``, ``CONCEALOFF_``, ``STRIKETHROUGHOFF_``."
+msgstr ""
+
+#: ../../../prompt.rst:122
+msgid "Modifiers can be combined: ``BOLD_UNDERLINE_INTENSE_BLACK``."
+msgstr ""
+
+#: ../../../prompt.rst:126
+msgid "Additional Prompt Variables"
+msgstr ""
+
+#: ../../../prompt.rst:128
+msgid ""
+"You can make use of additional variables beyond the defaults by adding them "
+"to the ``PROMPT_FIELDS`` environment variable. The values in this dictionary "
+"should be strings (which will be inserted into the prompt verbatim), or "
+"functions (which will be called each time the prompt is generated, and the "
+"results of those calls will be inserted into the prompt). For example:"
+msgstr ""
+
+#: ../../../prompt.rst:134
+msgid ""
+"snail@home ~ @ $PROMPT_FIELDS['test'] = \"hey\"\n"
+"snail@home ~ @ $PROMPT = \"{test} {cwd} @ \"\n"
+"hey ~ @\n"
+"hey ~ @ import random\n"
+"hey ~ @ $PROMPT_FIELDS['test'] = lambda: random.randint(1,9)\n"
+"3 ~ @\n"
+"5 ~ @\n"
+"2 ~ @\n"
+"8 ~ @"
+msgstr ""
+
+#: ../../../prompt.rst:146
+msgid "Here is an example — a random emoji before the prompt character:"
+msgstr ""
+
+#: ../../../prompt.rst:148
+msgid ""
+"from xonsh.completers.emoji import get_emoji_cache\n"
+"$PROMPT_FIELDS['random_emoji'] = lambda: @.imp.random."
+"choice(get_emoji_cache())[0]\n"
+"$PROMPT = $PROMPT.replace(\"{prompt_end}\", \"{random_emoji} "
+"{prompt_end}\")\n"
+"\n"
+"snail@home ~ 🥗 @  # It helps to visually\n"
+"snail@home ~ 🍎 @  # identify lines\n"
+"snail@home ~ 🧀 @  # in your scrollback history"
+msgstr ""
+
+#: ../../../prompt.rst:158
+msgid ""
+"Environment variables and functions are also available with the ``$`` "
+"prefix.  For example:"
+msgstr ""
+
+#: ../../../prompt.rst:161
+msgid ""
+"snail@home ~ @ $PROMPT = \"{$LANG} >\"\n"
+"en_US.utf8 >"
+msgstr ""
+
+#: ../../../prompt.rst:166
+msgid ""
+"Note that some entries of the ``$PROMPT_FIELDS`` are not always applicable, "
+"for example, ``curr_branch`` returns ``None`` if the current directory is "
+"not in a repository. The ``None`` will be interpreted as an empty string."
+msgstr ""
+
+#: ../../../prompt.rst:170
+msgid "But let's consider a problem:"
+msgstr ""
+
+#: ../../../prompt.rst:172
+msgid ""
+"snail@home ~/xonsh @ $PROMPT = \"{cwd_base} [{curr_branch}] @ \"\n"
+"xonsh [main] @ cd ..\n"
+"~ [] @"
+msgstr ""
+
+#: ../../../prompt.rst:178
+msgid ""
+"We want the branch to be displayed in square brackets, but we also don't "
+"want the brackets (and the extra space) to be displayed when there is no "
+"branch. The solution is to add a nested format string (separated with a "
+"colon) that will be invoked only if the value is not ``None``:"
+msgstr ""
+
+#: ../../../prompt.rst:183
+msgid ""
+"snail@home ~/xonsh @ $PROMPT = \"{cwd_base}{curr_branch: [{}]} @ \"\n"
+"xonsh [main] @ cd ..\n"
+"~ @"
+msgstr ""
+
+#: ../../../prompt.rst:189
+msgid ""
+"The curly brackets act as a placeholder, because the additional part is an "
+"ordinary format string. What we're doing here is equivalent to this "
+"expression:"
+msgstr ""
+
+#: ../../../prompt.rst:192
+msgid "\" [{}]\".format(curr_branch()) if curr_branch() is not None else \"\""
+msgstr ""
+
+#: ../../../prompt.rst:198
+msgid "Multiline Prompt"
+msgstr ""
+
+#: ../../../prompt.rst:200
+msgid ""
+"When you enter a multi-line statement (``for`` loop, ``if`` block, etc.), "
+"xonsh displays a continuation prompt on each subsequent line.  The pattern "
+"is controlled by ``$MULTILINE_PROMPT`` (default ``\" \"``)."
+msgstr ""
+
+#: ../../../prompt.rst:204
+msgid ""
+"The value is repeated to fill the width of the main prompt.  It can be a "
+"plain string, a string with color markup, or a callable:"
+msgstr ""
+
+#: ../../../prompt.rst:207
+msgid ""
+"prompt @ $MULTILINE_PROMPT = '~*'\n"
+"prompt @ for i in range(3):\n"
+"~*~*~*~*     print(i)\n"
+"~*~*~*~*"
+msgstr ""
+
+#: ../../../prompt.rst:214
+msgid ""
+"Both xonsh color keywords (``{RED}``) and ANSI escape codes (``\\033[31m``) "
+"are supported."
+msgstr ""
+
+#: ../../../prompt.rst:219
+msgid "Callable with ``line_number`` and ``width``"
+msgstr ""
+
+#: ../../../prompt.rst:221
+msgid ""
+"When ``$MULTILINE_PROMPT`` is a callable, it receives two keyword arguments:"
+msgstr ""
+
+#: ../../../prompt.rst:223
+msgid ""
+"``line_number`` — the line number of the continuation line. The main prompt "
+"is line 1, so the first continuation is ``line_number=2``."
+msgstr ""
+
+#: ../../../prompt.rst:225
+msgid "``width`` — the visible width (in columns) of the main prompt."
+msgstr ""
+
+#: ../../../prompt.rst:227
+msgid "This lets you render unique content per line, for example line numbers:"
+msgstr ""
+
+#: ../../../prompt.rst:229
+msgid ""
+"_ml_colors = ['{CYAN}', '{GREEN}', '{YELLOW}', '{BLUE}', '{PURPLE}', "
+"'{RED}']\n"
+"\n"
+"def _multiline(line_number, width):\n"
+"    c = _ml_colors[line_number % len(_ml_colors)]\n"
+"    return f'{c}{line_number:>{width - 2}}|{{RESET}} '\n"
+"\n"
+"$MULTILINE_PROMPT = _multiline"
+msgstr ""
+
+#: ../../../prompt.rst:239
+msgid "Result (each line is a different color)::"
+msgstr ""
+
+#: ../../../prompt.rst:241
+msgid ""
+"prompt @\n"
+"      2|    for i in range(5):\n"
+"      3|        if i > 2:\n"
+"      4|            print(i)\n"
+"      5|"
+msgstr ""
+
+#: ../../../prompt.rst:247
+msgid "Existing callables that accept no arguments continue to work."
+msgstr ""
+
+#: ../../../prompt.rst:251
+msgid "Custom Keybindings"
+msgstr ""
+
+#: ../../../prompt.rst:253
+msgid ""
+"For the list of default key bindings shipped with xonsh, see :doc:"
+"`keyboard_shortcuts`."
+msgstr ""
+
+#: ../../../prompt.rst:256
+msgid ""
+"The ``prompt_toolkit`` shell has a registry for handling custom keybindings. "
+"You may not like the default keybindings in xonsh, or you may want to add a "
+"new key binding."
+msgstr ""
+
+#: ../../../prompt.rst:260
+msgid ""
+"This section walks you through how to do this using ``prompt_toolkit`` tools "
+"to define keybindings and warns you about potential pitfalls."
+msgstr ""
+
+#: ../../../prompt.rst:263
+msgid ""
+"All of the code below can be entered into your :doc:`xonsh RC <xonshrc>`."
+msgstr ""
+
+#: ../../../prompt.rst:265
+msgid ""
+"This will let you hook directly into the ``prompt_toolkit`` keybinding "
+"manager. It will not stop you from rendering your prompt completely "
+"unusable, so tread lightly."
+msgstr ""
+
+#: ../../../prompt.rst:269
+msgid "Control characters"
+msgstr ""
+
+#: ../../../prompt.rst:271
+msgid ""
+"Some `ASCII control characters <https://en.wikipedia.org/wiki/"
+"Control_character#In_ASCII>`_ are widely used, and it is generally not "
+"recommended to override them. Additionally, certain keybindings are used by "
+"xonsh and may affect functionality if changed."
+msgstr ""
+
+#: ../../../prompt.rst:279
+msgid "Keystroke"
+msgstr ""
+
+#: ../../../prompt.rst:280
+msgid "ASCII control representation"
+msgstr ""
+
+#: ../../../prompt.rst:281
+msgid "Default command"
+msgstr ""
+
+#: ../../../prompt.rst:282
+msgid "``Control J``"
+msgstr ""
+
+#: ../../../prompt.rst:283
+msgid "``<Enter>``"
+msgstr ""
+
+#: ../../../prompt.rst:284
+msgid "Run command"
+msgstr ""
+
+#: ../../../prompt.rst:285
+msgid "``Control I``"
+msgstr ""
+
+#: ../../../prompt.rst:286
+msgid "``<Tab>``"
+msgstr ""
+
+#: ../../../prompt.rst:287
+msgid "Indent, autocomplete"
+msgstr ""
+
+#: ../../../prompt.rst:288
+msgid "``Control R``"
+msgstr ""
+
+#: ../../../prompt.rst:290
+msgid "Backwards history search"
+msgstr ""
+
+#: ../../../prompt.rst:291
+msgid "``Control Z``"
+msgstr ""
+
+#: ../../../prompt.rst:293
+msgid "SIGSTOP current job"
+msgstr ""
+
+#: ../../../prompt.rst:294
+msgid "``Control C``"
+msgstr ""
+
+#: ../../../prompt.rst:296
+msgid "SIGINT current job"
+msgstr ""
+
+#: ../../../prompt.rst:300
+msgid "Useful imports"
+msgstr ""
+
+#: ../../../prompt.rst:302
+msgid ""
+"There are a few useful ``prompt_toolkit`` tools that will help us create "
+"better bindings:"
+msgstr ""
+
+#: ../../../prompt.rst:305
+msgid ""
+"from prompt_toolkit.keys import Keys\n"
+"from prompt_toolkit.filters import Condition, EmacsInsertMode, ViInsertMode"
+msgstr ""
+
+#: ../../../prompt.rst:311
+msgid "Custom keyload function"
+msgstr ""
+
+#: ../../../prompt.rst:313
+msgid ""
+"We need our additional keybindings to load after the shell is initialized, "
+"so we define a function that contains all of the custom keybindings and "
+"decorate it with the appropriate event, in this case ``on_ptk_create``."
+msgstr ""
+
+#: ../../../prompt.rst:317
+msgid ""
+"We'll start with a toy example that just inserts the text \"hi\" into the "
+"current line of the prompt:"
+msgstr ""
+
+#: ../../../prompt.rst:319
+msgid ""
+"@events.on_ptk_create\n"
+"def custom_keybindings(bindings, **kw):\n"
+"\n"
+"    @bindings.add(Keys.ControlW)  # or just \"c-w\" string\n"
+"    def say_hi(event):\n"
+"        event.current_buffer.insert_text('hi')"
+msgstr ""
+
+#: ../../../prompt.rst:328
+msgid ""
+"Put that in your :doc:`xonsh RC <xonshrc>`, restart xonsh and then see if "
+"pressing ``Ctrl-w`` does anything (it should!)"
+msgstr ""
+
+#: ../../../prompt.rst:332
+msgid "What commands can keybindings run?"
+msgstr ""
+
+#: ../../../prompt.rst:334
+msgid ""
+"Pretty much anything! Since we're defining these commands after xonsh has "
+"started up, we can create keybinding events that run subprocess commands "
+"with hardly any effort at all. If we wanted to, say, have a command that "
+"runs ``ls -l`` in the current directory:"
+msgstr ""
+
+#: ../../../prompt.rst:339
+msgid ""
+"from prompt_toolkit.application import run_in_terminal\n"
+"\n"
+"@events.on_ptk_create\n"
+"def custom_keybindings(bindings, **kw):\n"
+"\n"
+"    @bindings.add(Keys.ControlP)\n"
+"    def run_ls(event):\n"
+"        def _task():\n"
+"            ls -l\n"
+"        run_in_terminal(_task)"
+msgstr ""
+
+#: ../../../prompt.rst:353
+msgid ""
+"``run_in_terminal(func)`` (imported from ``prompt_toolkit.application``) is "
+"the canonical ``prompt_toolkit`` idiom for running code that writes to "
+"``STDOUT`` from a keybinding. It temporarily hides the prompt, runs your "
+"function (which can freely ``print`` or launch subprocesses), then redraws "
+"the prompt — including ``$RIGHT_PROMPT`` and ``$BOTTOM_TOOLBAR`` — above the "
+"captured output. Do **not** use ``event.cli.renderer.erase()`` for this "
+"purpose: it resets the renderer's height bookkeeping and ``$BOTTOM_TOOLBAR`` "
+"(and sometimes ``$RIGHT_PROMPT``) will disappear until the next keypress."
+msgstr ""
+
+#: ../../../prompt.rst:364
+msgid "Restrict actions with filters"
+msgstr ""
+
+#: ../../../prompt.rst:366
+msgid ""
+"Often we want a key command to only work if certain conditions are met. For "
+"instance, the ``<TAB>`` key in xonsh brings up the completions menu, but "
+"then it also cycles through the available completions. We use filters to "
+"create this behavior."
+msgstr ""
+
+#: ../../../prompt.rst:371
+msgid ""
+"A few helpful filters are included with ``prompt_toolkit``, like "
+"``ViInsertMode`` and ``EmacsInsertMode``, which return ``True`` when the "
+"respective insert mode is active."
+msgstr ""
+
+#: ../../../prompt.rst:375
+msgid ""
+"But it's also easy to create our own filters that take advantage of xonsh's "
+"beautiful strangeness. Suppose we want a filter to restrict a given command "
+"to run only when there are fewer than ten files in a given directory. We "
+"just need a function that returns a Bool that matches that requirement and "
+"then we decorate it! And remember, those functions can be in xonsh-language, "
+"not just pure Python:"
+msgstr ""
+
+#: ../../../prompt.rst:379
+msgid ""
+"from prompt_toolkit.filters import Condition\n"
+"\n"
+"@Condition\n"
+"def lt_ten_files():\n"
+"    return len(g`*`) < 10"
+msgstr ""
+
+#: ../../../prompt.rst:387
+msgid ""
+"See `the tutorial section on globbing <tutorial.html#normal-globbing>`_ for "
+"more globbing options."
+msgstr ""
+
+#: ../../../prompt.rst:390
+msgid ""
+"Now that the condition is defined, we can pass it as a ``filter`` keyword to "
+"a keybinding definition:"
+msgstr ""
+
+#: ../../../prompt.rst:392
+msgid ""
+"@events.on_ptk_create\n"
+"def custom_keybindings(bindings, **kw):\n"
+"\n"
+"    @bindings.add(Keys.ControlL, filter=lt_ten_files)\n"
+"    def ls_if_lt_ten(event):\n"
+"        def _task():\n"
+"            ls -l\n"
+"        run_in_terminal(_task)"
+msgstr ""
+
+#: ../../../prompt.rst:403
+msgid ""
+"With both of those in your :doc:`xonsh RC <xonshrc>`, pressing ``Control L`` "
+"will list the contents of your current directory if there are fewer than 10 "
+"items in it. Useful? Debatable. Powerful? Yes."
+msgstr ""
+
+#: ../../../prompt.rst:408
+msgid "Edit-mode filter"
+msgstr ""
+
+#: ../../../prompt.rst:410
+msgid ""
+"A common use of filters is restricting a binding to a specific editing mode "
+"— Emacs insert, Vi insert, or Vi navigation. ``prompt_toolkit`` ships ready-"
+"made filters for each; pass them as ``filter`` to ``bindings.add``:"
+msgstr ""
+
+#: ../../../prompt.rst:415
+msgid ""
+"from prompt_toolkit.filters import (\n"
+"    EmacsInsertMode, ViInsertMode, ViNavigationMode,\n"
+")\n"
+"\n"
+"@events.on_ptk_create\n"
+"def custom_keybindings(bindings, **kw):\n"
+"\n"
+"    @bindings.add('c-l', filter=EmacsInsertMode())\n"
+"    def ls_in_emacs_insert(event):\n"
+"        def _task():\n"
+"            ls -l\n"
+"        run_in_terminal(_task)\n"
+"\n"
+"    @bindings.add('c-l', filter=ViInsertMode() | ViNavigationMode())\n"
+"    def ls_in_any_vi_mode(event):\n"
+"        def _task():\n"
+"            ls -l\n"
+"        run_in_terminal(_task)"
+msgstr ""
+
+#: ../../../prompt.rst:436
+msgid ""
+"The same key (``Ctrl-L``) can be bound to different actions per mode — "
+"``prompt_toolkit`` picks the binding whose ``filter`` is currently true. "
+"Combine with custom ``Condition`` filters using ``&``, ``|``, ``~`` (as in "
+"``ViInsertMode() & lt_ten_files``) for finer-grained rules."
+msgstr ""
+
+#: ../../../prompt.rst:443
+msgid "Pre-filling the next command"
+msgstr ""
+
+#: ../../../prompt.rst:445
+msgid ""
+"xonsh can pre-fill the prompt input for the next command using two "
+"environment variables. This is useful for building interactive workflows, "
+"wizards, or keybindings that prepare a command for the user to review and "
+"edit before running."
+msgstr ""
+
+#: ../../../prompt.rst:450
+msgid "``$XONSH_PROMPT_NEXT_CMD``"
+msgstr ""
+
+#: ../../../prompt.rst:452
+msgid "Sets the text that will appear in the next prompt as editable input:"
+msgstr ""
+
+#: ../../../prompt.rst:454
+msgid "$XONSH_PROMPT_NEXT_CMD = 'git commit -m \"\"'"
+msgstr ""
+
+#: ../../../prompt.rst:458
+msgid ""
+"The next time the prompt appears, ``git commit -m \"\"`` will be pre-filled "
+"and the user can edit it before pressing Enter."
+msgstr ""
+
+#: ../../../prompt.rst:461
+msgid ""
+"**Cursor positioning:** Use the ``<cursor>`` marker to place the cursor at a "
+"specific position:"
+msgstr ""
+
+#: ../../../prompt.rst:464
+msgid "$XONSH_PROMPT_NEXT_CMD = 'git commit -m \"<cursor>\"'"
+msgstr ""
+
+#: ../../../prompt.rst:468
+msgid ""
+"The marker is removed from the text and the cursor is placed at its position "
+"— in this case, between the quotes."
+msgstr ""
+
+#: ../../../prompt.rst:471
+msgid "**Example — a keybinding that prepares a git commit:**"
+msgstr ""
+
+#: ../../../prompt.rst:473
+msgid ""
+"@events.on_ptk_create\n"
+"def custom_keybindings(bindings, **kw):\n"
+"\n"
+"    @bindings.add('c-g')\n"
+"    def prepare_commit(event):\n"
+"        $XONSH_PROMPT_NEXT_CMD = 'git commit -m \"<cursor>\"'"
+msgstr ""
+
+#: ../../../prompt.rst:482
+msgid ""
+"Now pressing ``Ctrl-G`` will pre-fill the next prompt with ``git commit -m "
+"\"\"`` and place the cursor between the quotes."
+msgstr ""
+
+#: ../../../prompt.rst:486
+msgid "``$XONSH_PROMPT_NEXT_CMD_SUGGESTION``"
+msgstr ""
+
+#: ../../../prompt.rst:488
+msgid ""
+"Sets a greyed-out suggestion (like auto-suggest from history) for the next "
+"prompt. The user can accept it by pressing the right arrow key:"
+msgstr ""
+
+#: ../../../prompt.rst:491
+msgid "@ $XONSH_PROMPT_NEXT_CMD_SUGGESTION = 'git push origin main'"
+msgstr ""
+
+#: ../../../prompt.rst:495
+msgid ""
+"Unlike ``$XONSH_PROMPT_NEXT_CMD``, this does not pre-fill the input — it "
+"only shows a suggestion that the user can accept or ignore."
+msgstr ""
+
+#: ../../../prompt.rst:498
+msgid ""
+"Both variables are cleared automatically after being consumed by the prompt."
+msgstr ""
+
+#: ../../../prompt.rst:502
+msgid "Virtual Environment in Prompt"
+msgstr ""
+
+#: ../../../prompt.rst:504
+msgid ""
+"xonsh obeys the ``$VIRTUAL_ENV_DISABLE_PROMPT`` environment variable `as "
+"defined by virtualenv <https://virtualenv.pypa.io/en/latest/how-to/usage."
+"html#customize-prompt>`__. If this variable is truthy, xonsh will *always* "
+"substitute an empty string for ``{env_name}``. Note that unlike other "
+"shells, ``$VIRTUAL_ENV_DISABLE_PROMPT`` takes effect *immediately* after "
+"being set --- it is not necessary to re-activate the environment."
+msgstr ""
+
+#: ../../../prompt.rst:511
+msgid ""
+"xonsh also allows for an explicit override of the rendering of ``{env_name}"
+"``, via the ``$VIRTUAL_ENV_PROMPT`` environment variable. If this variable "
+"is set to a non-empty value, ``{env_name}`` will *always* render as its "
+"value, regardless of whether a virtual environment is active. The value is "
+"used as-is, without the usual ``{env_prefix}`` / ``{env_postfix}`` wrapping "
+"--- *except* when it matches the name derived from ``$VIRTUAL_ENV`` (the "
+"``prompt = ...`` field in ``<venv>/pyvenv.cfg`` or the venv directory "
+"basename). In that case it is treated as an auto-populated value from "
+"``activate.xsh`` and wrapped like the other sources, so the prompt reads "
+"``(venv) user@host`` instead of ``venvuser@host``. ``$VIRTUAL_ENV_PROMPT`` "
+"is overridden by ``$VIRTUAL_ENV_DISABLE_PROMPT``."
+msgstr ""
+
+#: ../../../prompt.rst:523
+msgid ""
+"When neither variable is set, ``{env_name}`` falls back to the active "
+"environment's name --- determined, in order, from the ``prompt = ...`` field "
+"in ``<venv>/pyvenv.cfg``, from the venv directory name, or from "
+"``$CONDA_DEFAULT_ENV``. The detected name is wrapped in ``{env_prefix}`` and "
+"``{env_postfix}`` (``(`` and ``) `` by default)."
+msgstr ""
+
+#: ../../../prompt.rst:529
+msgid "For example:"
+msgstr ""
+
+#: ../../../prompt.rst:531
+msgid ""
+"@ $PROMPT = '{env_name}@ '\n"
+"@ source env/bin/activate.xsh\n"
+"(env) @ $VIRTUAL_ENV_PROMPT = '~~ACTIVE~~ '\n"
+"~~ACTIVE~~ @ $VIRTUAL_ENV_DISABLE_PROMPT = 1\n"
+"@ del $VIRTUAL_ENV_PROMPT\n"
+"@ del $VIRTUAL_ENV_DISABLE_PROMPT\n"
+"(env) @"
+msgstr ""
+
+#: ../../../prompt.rst:545
+msgid "Color theme"
+msgstr ""
+
+#: ../../../prompt.rst:547
+msgid "You can view the available styles by typing"
+msgstr ""
+
+#: ../../../prompt.rst:549
+msgid ""
+"@ xonfig styles                      # list styles\n"
+"@ xonfig colors paraiso-dark         # review how it looks\n"
+"@ $XONSH_COLOR_STYLE='paraiso-dark'  # set a new theme"
+msgstr ""
+
+#: ../../../prompt.rst:556
+msgid "Registering custom styles"
+msgstr ""
+
+#: ../../../prompt.rst:558
+msgid ""
+"If you aren't happy with the styles provided by us (and ``pygments``), you "
+"can create and register custom styles."
+msgstr ""
+
+#: ../../../prompt.rst:560
+msgid "To do so, add something similar to your :doc:`xonsh RC <xonshrc>`:"
+msgstr ""
+
+#: ../../../prompt.rst:562
+msgid ""
+"from xonsh.tools import register_custom_style\n"
+"mystyle = {\n"
+"    \"Literal.String.Single\": \"#ff88aa\",\n"
+"    \"Literal.String.Double\": \"#ff4488\",\n"
+"    \"RED\": \"#008800\",\n"
+"}\n"
+"register_custom_style(\"mystyle\", mystyle, base=\"monokai\")\n"
+"$XONSH_COLOR_STYLE = \"mystyle\""
+msgstr ""
+
+#: ../../../prompt.rst:573
+msgid ""
+"You can check ``xonfig colors`` for the token names. The ``base`` style will "
+"be used as a fallback for styles you don't set - pick one from ``xonfig "
+"styles`` (``default`` is used if omitted)."
+msgstr ""
+
+#: ../../../prompt.rst:577
+msgid "OSC 7 — Working directory reporting"
+msgstr ""
+
+#: ../../../prompt.rst:579
+msgid ""
+"Xonsh automatically emits `OSC 7 <https://gitlab.freedesktop.org/terminal-wg/"
+"specifications/-/merge_requests/7>`_ escape sequences on every directory "
+"change and at shell startup. This is an invisible signal that tells the "
+"terminal emulator what the current working directory is."
+msgstr ""
+
+#: ../../../prompt.rst:584
+msgid "Terminals use it for:"
+msgstr ""
+
+#: ../../../prompt.rst:586
+msgid "Opening new tabs/splits in the same directory"
+msgstr ""
+
+#: ../../../prompt.rst:587
+msgid "macOS Terminal.app session restoration after reboot"
+msgstr ""
+
+#: ../../../prompt.rst:588
+msgid "Showing the path in the terminal title bar or tab"
+msgstr ""
+
+#: ../../../prompt.rst:590
+msgid ""
+"This works out of the box on most modern terminals including macOS Terminal."
+"app, iTerm2, GNOME Terminal, Windows Terminal, WezTerm, and Kitty. No "
+"configuration is needed."
+msgstr ""
+
+#: ../../../prompt.rst:596
+msgid "See also"
+msgstr ""
+
+#: ../../../prompt.rst:598
+msgid ":doc:`envvars` -- prompt-related environment variables"
+msgstr ""
+
+#: ../../../prompt.rst:599
+msgid ""
+":doc:`events` -- prompt lifecycle events (``on_pre_prompt``, "
+"``on_post_prompt``)"
+msgstr ""
