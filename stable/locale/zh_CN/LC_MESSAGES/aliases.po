@@ -1,0 +1,983 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../aliases.rst:5
+msgid "Built-in Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:6
+msgid "This page describes the xonsh built-in commands and aliases."
+msgstr ""
+
+#: ../../../aliases.rst:9
+msgid "Well-known commands"
+msgstr ""
+
+#: ../../../aliases.rst:12
+msgid "``cd``"
+msgstr ""
+
+#: ../../../aliases.rst:13
+msgid ""
+"Changes the directory. If no directory is specified (i.e. if there are no "
+"arguments) then this changes to the current user's home directory."
+msgstr ""
+
+#: ../../../aliases.rst:18
+msgid "``ls``"
+msgstr ""
+
+#: ../../../aliases.rst:19
+msgid ""
+"The ``ls`` command is aliased to ``['ls', '--color=auto', '-v']`` on Linux.  "
+"On macOS, FreeBSD, and DragonFlyBSD it is instead aliased to ``['ls', '-"
+"G']``. On NetBSD and OpenBSD no ``ls`` alias is defined."
+msgstr ""
+
+#: ../../../aliases.rst:25
+msgid "``grep``"
+msgstr ""
+
+#: ../../../aliases.rst:26
+msgid "The ``grep`` command is aliased to ``['grep', '--color=auto']``."
+msgstr ""
+
+#: ../../../aliases.rst:30
+msgid "``history``"
+msgstr ""
+
+#: ../../../aliases.rst:31
+msgid ""
+"Tools for dealing with xonsh history. See `the history tutorial <history."
+"html>`_ for more information all the history command and all of its sub-"
+"commands."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: history [-h]\n"
+"               {show,id,file,info,pull,flush,off,on,clear,delete,erasedups,"
+"gc,transfer} ...\n"
+"\n"
+"Try 'history <command> --help' for more info\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"\n"
+"commands:\n"
+"  {show,id,file,info,pull,flush,off,on,clear,delete,erasedups,gc,transfer}\n"
+"    show                Display history of a session, default command\n"
+"    id                  Display the current session id\n"
+"    file                Display the current history filename\n"
+"    info                Display information about the current history\n"
+"    pull                Pull history from other parallel sessions.\n"
+"    flush               Flush the current history to disk\n"
+"    off                 History will not be saved for this session\n"
+"    on                  History will be saved for the rest of the session "
+"(default)\n"
+"    clear               One-time wipe of session history\n"
+"    delete              Delete all commands matching a pattern\n"
+"    erasedups           Remove duplicate commands, keeping only the latest "
+"occurrence of each\n"
+"    gc                  Launches a new history garbage collector\n"
+"    transfer            Transfer entries between history backends."
+msgstr ""
+
+#: ../../../aliases.rst:38
+msgid "``timeit``"
+msgstr ""
+
+#: ../../../aliases.rst:39
+msgid "Runs timing study on arguments. Similar to IPython's ``%timeit`` magic."
+msgstr ""
+
+#: ../../../aliases.rst:43
+msgid "``exit``, ``quit``, ``EOF``"
+msgstr ""
+
+#: ../../../aliases.rst:44
+msgid ""
+"The commands ``exit``, ``EOF`` and ``quit`` all alias the same action, which "
+"is to leave xonsh in a safe manner. Typing ``Ctrl-d`` is the same as typing "
+"``EOF`` and pressing enter."
+msgstr ""
+
+#: ../../../aliases.rst:48
+msgid ""
+"``exit N`` sets the shell's exit code to ``N`` and stops the rest of the "
+"current script:"
+msgstr ""
+
+#: ../../../aliases.rst:51
+msgid ""
+"@ xonsh -c 'echo 1; exit 42; echo 3'\n"
+"1\n"
+"@ @.lastcmd.rtn\n"
+"42"
+msgstr ""
+
+#: ../../../aliases.rst:60
+msgid "Xonsh-specific Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:63
+msgid "``showcmd``"
+msgstr ""
+
+#: ../../../aliases.rst:64
+msgid ""
+"Displays how commands and arguments are evaluated. Use ``-e`` to expand "
+"aliases."
+msgstr ""
+
+#: ../../../aliases.rst:66
+msgid ""
+"@ showcmd echo The @('args') @(['list', 'is']) $(echo here) \"and\" --"
+"say=\"hello\" to @([]) you\n"
+"['echo', 'The', 'args', 'list', 'is', 'here', 'and', '--say=\"hello\"', "
+"'to', 'you']\n"
+"@ showcmd ls\n"
+"ls\n"
+"@ showcmd -e ls\n"
+"['ls', '--group-directories-first', '-A', '--color']"
+msgstr ""
+
+#: ../../../aliases.rst:77
+msgid "``xonfig``"
+msgstr ""
+
+#: ../../../aliases.rst:78
+msgid "Manages xonsh configuration information."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: xonfig [-h] {info,web,wizard,styles,colors,tutorial} ...\n"
+"\n"
+"Manage xonsh configuration.\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"\n"
+"commands:\n"
+"  {info,web,wizard,styles,colors,tutorial}\n"
+"    info                Displays configuration information\n"
+"    web                 Launch configurator in browser.\n"
+"    wizard              Launch configurator in terminal\n"
+"    styles              Prints available xonsh color styles\n"
+"    colors              Preview color style\n"
+"    tutorial            Launch tutorial in browser."
+msgstr ""
+
+#: ../../../aliases.rst:83
+msgid "``xontrib``"
+msgstr ""
+
+#: ../../../aliases.rst:84
+msgid ""
+"Manages xonsh extensions. More information is available at :doc:`xontrib`"
+msgstr ""
+
+#: ../../../aliases.rst:90
+msgid "``xcontext``"
+msgstr ""
+
+#: ../../../aliases.rst:92
+msgid ""
+"@ xcontext\n"
+"[Current xonsh session]\n"
+"xxonsh: /home/snail/.local/xonsh-env/bin/xonsh\n"
+"xpython: /home/snail/.local/xonsh-env/bin/python # Python 3.12.10\n"
+"xpip: /home/snail/.local/xonsh-env/bin/python -m pip\n"
+"\n"
+"[Current commands environment]\n"
+"xonsh: /home/snail/.local/xonsh-env/bin/xonsh\n"
+"python: /usr/bin/python # Python 3.11.6\n"
+"pip: /usr/bin/pip\n"
+"\n"
+"CONDA_DEFAULT_ENV: my-env"
+msgstr ""
+
+#: ../../../aliases.rst:107
+msgid ""
+"Report information about the current xonsh environment, including paths to "
+"the Python interpreter, pip, xonsh itself, and relevant environment "
+"variables."
+msgstr ""
+
+#: ../../../aliases.rst:109
+msgid ""
+"By default, symlinks in the displayed paths are resolved to their real "
+"targets; pass ``--no-resolve`` (``-n``) to show the raw paths instead."
+msgstr ""
+
+#: ../../../aliases.rst:115
+msgid "``xpip``"
+msgstr ""
+
+#: ../../../aliases.rst:116
+msgid ""
+"Runs the ``pip`` package manager for xonsh itself. Useful for installations "
+"where xonsh is in an isolated environment (e.g. conda, mamba, homebrew)."
+msgstr ""
+
+#: ../../../aliases.rst:119
+msgid ""
+"@ which pip\n"
+"/usr/bin/pip  # system pip\n"
+"@ which xpip\n"
+"/home/snail/.local/xonsh-env/bin/python -m pip  # current xonsh session pip\n"
+"@ xpip install fire\n"
+"@ import fire\n"
+"@ fire\n"
+"<module 'fire' from '/home/snail/.local/xonsh-env/lib/python3.11/site-"
+"packages/fire/__init__.py'>"
+msgstr ""
+
+#: ../../../aliases.rst:132
+msgid "``xpython``"
+msgstr ""
+
+#: ../../../aliases.rst:134
+msgid ""
+"Alias to the Python interpreter that is currently running xonsh (``sys."
+"executable``). This is useful for running Python modules or scripts in the "
+"same environment as the shell itself, especially in complex setups like "
+"AppImage."
+msgstr ""
+
+#: ../../../aliases.rst:136
+msgid ""
+"@ python -V\n"
+"Python 3.12.10\n"
+"@ xpython -V\n"
+"Python 3.11.9\n"
+"@ which python\n"
+"/opt/homebrew/bin/python\n"
+"@ which xpython\n"
+"/home/snail/.local/xonsh-env/bin/python"
+msgstr ""
+
+#: ../../../aliases.rst:151
+msgid "``xxonsh``"
+msgstr ""
+
+#: ../../../aliases.rst:153
+msgid ""
+"Launches exactly the same ``xonsh`` that was used to start the current "
+"session."
+msgstr ""
+
+#: ../../../aliases.rst:155
+msgid ""
+"See :ref:`launch-xxonsh` for a worked example of using it as a building "
+"block to launch ``tmux`` with this exact xonsh (the ``xtmux`` recipe)."
+msgstr ""
+
+#: ../../../aliases.rst:158
+msgid ""
+"Mnemonic: think of the initial ‘x’ as ‘c’—xxonsh stands for (c)urrent xonsh."
+msgstr ""
+
+#: ../../../aliases.rst:161
+msgid "``xreset``"
+msgstr ""
+
+#: ../../../aliases.rst:162
+msgid "Clean the xonsh context. All user variables will be deleted."
+msgstr ""
+
+#: ../../../aliases.rst:174
+msgid "``trace``"
+msgstr ""
+
+#: ../../../aliases.rst:175
+msgid ""
+"Provides an interface to printing lines of source code prior to their "
+"execution."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: trace [-h] {on,start,add,off,stop,del,rm,color,ls} ...\n"
+"\n"
+"Tool for tracing xonsh code as it runs.\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"\n"
+"commands:\n"
+"  {on,start,add,off,stop,del,rm,color,ls}\n"
+"    on (start, add)     begins tracing selected files.\n"
+"    off (stop, del, rm)\n"
+"                        removes selected files fom tracing.\n"
+"    color (ls)          output color management for tracer"
+msgstr ""
+
+#: ../../../aliases.rst:181
+msgid "``exec`` and  ``xexec``"
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: xexec [-h] [-l] [-c] [-a NAME] ...\n"
+"\n"
+"exec (also aliased as xexec) uses the os.execvpe() function to\n"
+"replace the xonsh process with the specified program.\n"
+"\n"
+"This provides the functionality of the bash 'exec' builtin::\n"
+"\n"
+"    >>> exec bash -l -i\n"
+"    bash $\n"
+"\n"
+"positional arguments:\n"
+"  command          program to launch along its arguments\n"
+"\n"
+"options:\n"
+"  -h, --help       show this help message and exit\n"
+"  -l, --login      the shell places a dash at the\n"
+"                   beginning of the zeroth argument passed to command to "
+"simulate login\n"
+"                   shell.\n"
+"  -c, --clean      causes command to be executed with an empty environment.\n"
+"  -a, --name NAME  the shell passes name as the zeroth argument\n"
+"                   to the executed command.\n"
+"\n"
+"Notes\n"
+"-----\n"
+"This command **is not** the same as the Python builtin function\n"
+"exec(). That function is for running Python code. This command,\n"
+"which shares the same name as the sh-lang statement, is for launching\n"
+"a command directly in the same process. In the event of a name conflict,\n"
+"please use the xexec command directly or dive into subprocess mode\n"
+"explicitly with ![exec command]. For more details, please see\n"
+"http://xon.sh/faq.html#exec."
+msgstr ""
+
+#: ../../../aliases.rst:189
+msgid "Command Decorators"
+msgstr ""
+
+#: ../../../aliases.rst:192
+msgid "``@error_raise`` and ``@error_ignore``"
+msgstr ""
+
+#: ../../../aliases.rst:193
+msgid ""
+"Use ``@error_raise`` to raise an exception if the command returns a non-zero "
+"exit code — similar to ``$XONSH_SUBPROC_CMD_RAISE_ERROR`` but scoped to a "
+"single command, and it raises unconditionally (even inside ``&&``/``||`` "
+"chains and even when ``$XONSH_SUBPROC_RAISE_ERROR`` is disabled).  Use "
+"``@error_ignore`` to explicitly suppress the raise — it also wins over the "
+"chain-result check performed by ``$XONSH_SUBPROC_RAISE_ERROR``."
+msgstr ""
+
+#: ../../../aliases.rst:200
+msgid ""
+"@ r = !(@error_raise ls nonono)\n"
+"subprocess.CalledProcessError: Command '['@error_raise', 'ls', 'nonono']' "
+"returned non-zero exit status 1.\n"
+"\n"
+"@ r = !(@error_ignore ls nonono)"
+msgstr ""
+
+#: ../../../aliases.rst:208
+msgid "``@thread`` and ``@unthread``"
+msgstr ""
+
+#: ../../../aliases.rst:209
+msgid ""
+"Use ``@thread`` and ``@unthread`` to run command as threadable or "
+"unthreadable e.g to have a result of SSH command:"
+msgstr ""
+
+#: ../../../aliases.rst:211
+msgid "@ !(@thread ssh host -T \"echo 1\")"
+msgstr ""
+
+#: ../../../aliases.rst:217
+msgid "``@path`` and ``@paths``"
+msgstr ""
+
+#: ../../../aliases.rst:218
+msgid ""
+"Use ``@path`` and ``@paths`` to get Path object(s) from the command output."
+msgstr ""
+
+#: ../../../aliases.rst:220
+msgid ""
+"@ dir = $(@path echo '/bin')\n"
+"  dir.exists()\n"
+"@ dirs = $(@paths echo '/bin\\n/etc')\n"
+"  [p.exists() for p in dirs]"
+msgstr ""
+
+#: ../../../aliases.rst:229
+msgid "``@lines``"
+msgstr ""
+
+#: ../../../aliases.rst:230
+msgid "Return output as list of lines."
+msgstr ""
+
+#: ../../../aliases.rst:232
+msgid "@ lines = $(@lines cat file)"
+msgstr ""
+
+#: ../../../aliases.rst:238
+msgid "``@json``"
+msgstr ""
+
+#: ../../../aliases.rst:239
+msgid "Parses JSON and returns a JSON object."
+msgstr ""
+
+#: ../../../aliases.rst:241
+msgid "@ data = $(@json curl https://example.com/data.json)"
+msgstr ""
+
+#: ../../../aliases.rst:247
+msgid "``@jsonl``"
+msgstr ""
+
+#: ../../../aliases.rst:248
+msgid "Parses JSON lines and returns a list of JSON objects."
+msgstr ""
+
+#: ../../../aliases.rst:250
+msgid "@ items = $(@jsonl cat data.jsonl)"
+msgstr ""
+
+#: ../../../aliases.rst:256
+msgid "``@yaml``"
+msgstr ""
+
+#: ../../../aliases.rst:257
+msgid "Parses YAML and returns a dict."
+msgstr ""
+
+#: ../../../aliases.rst:259
+msgid "@ config = $(@yaml cat config.yaml)"
+msgstr ""
+
+#: ../../../aliases.rst:265
+msgid "``@toml``"
+msgstr ""
+
+#: ../../../aliases.rst:266
+msgid "Parses TOML and returns a dict."
+msgstr ""
+
+#: ../../../aliases.rst:268
+msgid "@ config = $(@toml cat pyproject.toml)"
+msgstr ""
+
+#: ../../../aliases.rst:274
+msgid "``@xml``"
+msgstr ""
+
+#: ../../../aliases.rst:275
+msgid ""
+"Parses XML and returns an :class:`xml.etree.ElementTree.Element`. Navigate "
+"it with ``.tag``, ``.attrib``, ``.text``, ``.find()``, ``.findall()``, etc."
+msgstr ""
+
+#: ../../../aliases.rst:278
+msgid ""
+"@ feed = $(@xml curl -s https://github.com/xonsh/xonsh/releases.atom)\n"
+"  ns = {'a': 'http://www.w3.org/2005/Atom'}\n"
+"  [e.find('a:title', ns).text for e in feed.findall('a:entry', ns)[:5]]\n"
+"['v0.23.6', 'v0.23.5', 'v0.23.4', 'v0.23.3', 'v0.23.2']"
+msgstr ""
+
+#: ../../../aliases.rst:287
+msgid "``@lxml``"
+msgstr ""
+
+#: ../../../aliases.rst:288
+msgid ""
+"Parses XML with `lxml <https://lxml.de/>`_ and returns an ``lxml.etree."
+"_Element``. Adds full XPath, richer error messages, and faster parsing on "
+"top of the stdlib ``@xml``. Registered only when ``lxml`` is installed "
+"(``xpip install lxml``)."
+msgstr ""
+
+#: ../../../aliases.rst:293
+msgid ""
+"@ feed = $(@lxml curl -s https://github.com/xonsh/xonsh/releases.atom)\n"
+"  ns = {'a': 'http://www.w3.org/2005/Atom'}\n"
+"  feed.xpath('//a:entry/a:title/text()', namespaces=ns)[:5]\n"
+"['v0.23.6', 'v0.23.5', 'v0.23.4', 'v0.23.3', 'v0.23.2']"
+msgstr ""
+
+#: ../../../aliases.rst:302
+msgid "Directory Stack"
+msgstr ""
+
+#: ../../../aliases.rst:306
+msgid "``pushd``"
+msgstr ""
+
+#: ../../../aliases.rst:307
+msgid ""
+"Adds a directory to the top of the directory stack, or rotates the stack, "
+"making the new top of the stack the current working directory."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: pushd [-h] [-n] [-q] [+N|-N|dir]\n"
+"\n"
+"Adds a directory to the top of the directory stack, or rotates the stack,\n"
+"making the new top of the stack the current working directory.\n"
+"\n"
+"On Windows, if the path is a UNC path (begins with `\\\\<server>\\<share>`) "
+"and if the `DisableUNCCheck` registry\n"
+"value is not enabled, creates a temporary mapped drive letter and sets the "
+"working directory there, emulating\n"
+"behavior of `PUSHD` in `CMD.EXE`\n"
+"\n"
+"positional arguments:\n"
+"  +N|-N|dir    * dir :\n"
+"                   Makes dir be the top of the stack,\n"
+"                   making it the new current directory as if it had been "
+"supplied as an argument to the cd builtin.\n"
+"               * +N :\n"
+"                   Brings the Nth directory (counting from the left of the "
+"list printed by dirs, starting with zero)\n"
+"                   to the top of the list by rotating the stack.\n"
+"               * -N :\n"
+"                   Brings the Nth directory (counting from the right of the "
+"list printed by dirs, starting with zero)\n"
+"                   to the top of the list by rotating the stack.\n"
+"\n"
+"options:\n"
+"  -h, --help   show this help message and exit\n"
+"  -n, --cd     Suppresses the normal change of directory when adding "
+"directories to the stack,\n"
+"               so that only the stack is manipulated.\n"
+"  -q, --quiet  Do not call dirs, regardless of $PUSHD_SILENT"
+msgstr ""
+
+#: ../../../aliases.rst:314
+msgid "``popd``"
+msgstr ""
+
+#: ../../../aliases.rst:315
+msgid "Removes entries from the directory stack."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: popd [-h] [-n] [-q] [+N|-N]\n"
+"\n"
+"When no arguments are given, popd removes the top directory from the stack\n"
+"and performs a cd to the new top directory.\n"
+"The elements are numbered from 0 starting at the first directory listed with "
+"``dirs``;\n"
+"that is, popd is equivalent to popd +0.\n"
+"\n"
+"positional arguments:\n"
+"  +N|-N        Removes the Nth directory (counting from the left/right of "
+"the list printed by dirs w.r.t. -/+ prefix),\n"
+"               starting with zero.\n"
+"\n"
+"options:\n"
+"  -h, --help   show this help message and exit\n"
+"  -n, --cd     Suppresses the normal change of directory when removing "
+"directories from the stack,\n"
+"               so that only the stack is manipulated.\n"
+"  -q, --quiet  Do not call dirs, regardless of $PUSHD_SILENT"
+msgstr ""
+
+#: ../../../aliases.rst:321
+msgid "``dirs``"
+msgstr ""
+
+#: ../../../aliases.rst:322
+msgid ""
+"Displays the list of currently remembered directories.  Can also be used to "
+"clear the directory stack."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: dirs [-h] [-c] [-p] [-v] [-l] [N]\n"
+"\n"
+"Manage the list of currently remembered directories.\n"
+"\n"
+"positional arguments:\n"
+"  N           Displays the Nth directory (counting from the left/right "
+"according to +/x prefix respectively),\n"
+"              starting with zero\n"
+"\n"
+"options:\n"
+"  -h, --help  show this help message and exit\n"
+"  -c          Clears the directory stack by deleting all of the entries.\n"
+"  -p          Print the directory stack with one entry per line.\n"
+"  -v          Print the directory stack with one entry per line,\n"
+"              prefixing each entry with its index in the stack.\n"
+"  -l          Produces a longer listing; the default listing format\n"
+"              uses a tilde to denote the home directory."
+msgstr ""
+
+#: ../../../aliases.rst:329
+msgid "Jobs"
+msgstr ""
+
+#: ../../../aliases.rst:332
+msgid "``jobs``"
+msgstr ""
+
+#: ../../../aliases.rst:333
+msgid "Display a list of all current jobs."
+msgstr ""
+
+#: ../../../aliases.rst:337
+msgid "``fg``"
+msgstr ""
+
+#: ../../../aliases.rst:338
+msgid ""
+"Bring the currently active job to the foreground, or, if a single number is "
+"given as an argument, bring that job to the foreground."
+msgstr ""
+
+#: ../../../aliases.rst:343
+msgid "``bg``"
+msgstr ""
+
+#: ../../../aliases.rst:344
+msgid ""
+"Resume execution of the currently active job in the background, or, if a "
+"single number is given as an argument, resume that job in the background."
+msgstr ""
+
+#: ../../../aliases.rst:349
+msgid "``disown``"
+msgstr ""
+
+#: ../../../aliases.rst:350
+msgid ""
+"The behavior of this command matches the behavior of zsh's disown command "
+"which is as follows:"
+msgstr ""
+
+#: ../../../aliases.rst:353
+msgid ""
+"Remove the specified jobs from the job table; the shell will no longer "
+"report their status, and will not complain if you try to exit an interactive "
+"shell with them running or stopped. If no job is specified, disown the "
+"current job. If the jobs are currently stopped and the $AUTO_CONTINUE option "
+"is set ($AUTO_CONTINUE = True), a warning is printed containing information "
+"about how to make them running after they have been disowned. If one of the "
+"latter two forms is used, the jobs will automatically be made running, "
+"independent of the setting of the $AUTO_CONTINUE option."
+msgstr ""
+
+#: ../../../aliases.rst:366
+msgid "Source Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:370
+msgid "``source``"
+msgstr ""
+
+#: ../../../aliases.rst:371
+msgid ""
+"Executes the contents of the provided files in the current context. This, of "
+"course, only works on xonsh and Python files (``*.xsh``, ``*.py``). Use ``-"
+"e`` to ignore extension."
+msgstr ""
+
+#: ../../../aliases.rst:377
+msgid "``source-foreign``"
+msgstr ""
+
+#: ../../../aliases.rst:378
+msgid ""
+"Like the ``source`` command but for files in foreign (non-xonsh) languages. "
+"It will pick up the environment and any aliases."
+msgstr ""
+
+#: ../../../aliases.rst:381
+msgid ""
+"Supported shells: ``bash``, ``zsh``, ``sh`` (also ``dash``, ``ash``, "
+"``ksh``, ``mksh``, ``pdksh``), and ``cmd`` on Windows. Absolute paths like "
+"``/bin/bash`` or ``/bin/sh`` are canonicalised to the same defaults."
+msgstr ""
+
+#: ../../../aliases.rst:386
+msgid ""
+"The convenience wrappers below pre-set the ``shell`` and ``--sourcer`` "
+"arguments for the most common cases — every flag accepted by ``source-"
+"foreign`` is available on them as well."
+msgstr ""
+
+#: ../../../aliases.rst:1
+msgid ""
+"usage: source-foreign [-h] [-i] [-l] [--envcmd ENVCMD] [--aliascmd "
+"ALIASCMD]\n"
+"                      [--extra-args EXTRA_ARGS] [-u] [-p PREVCMD]\n"
+"                      [--postcmd POSTCMD] [--funcscmd FUNCSCMD]\n"
+"                      [--sourcer SOURCER] [--use-tmpfile]\n"
+"                      [--seterrprevcmd SETERRPREVCMD]\n"
+"                      [--seterrpostcmd SETERRPOSTCMD] [--overwrite-aliases]\n"
+"                      [--suppress-skip-message] [--show] [--show-output] [-"
+"d]\n"
+"                      [-n]\n"
+"                      shell files_or_code [files_or_code ...]\n"
+"\n"
+"Sources a file written in a foreign shell language.\n"
+"\n"
+"positional arguments:\n"
+"  shell                 Name or path to the foreign shell\n"
+"  files_or_code         file paths to source or code in the target "
+"language.\n"
+"\n"
+"options:\n"
+"  -h, --help            show this help message and exit\n"
+"  -i, --interactive     whether the sourced shell should be interactive\n"
+"  -l, --login           whether the sourced shell should be login\n"
+"  --envcmd ENVCMD       command to print environment\n"
+"  --aliascmd ALIASCMD   command to print aliases\n"
+"  --extra-args EXTRA_ARGS\n"
+"                        extra arguments needed to run the shell\n"
+"  -u, --unsafe          whether the source shell should be run safely, and "
+"not raise any errors, even if they occur.\n"
+"  -p, --prevcmd PREVCMD\n"
+"                        command(s) to run before any other commands, "
+"replaces traditional source.\n"
+"  --postcmd POSTCMD     command(s) to run after all other commands\n"
+"  --funcscmd FUNCSCMD   code to find locations of all native functions in "
+"the shell language.\n"
+"  --sourcer SOURCER     the source command in the target shell language.\n"
+"                        If this is not set, a default value will attempt to "
+"be\n"
+"                        looked up based on the shell name.\n"
+"  --use-tmpfile         whether the commands for source shell should be "
+"written to a temporary file.\n"
+"  --seterrprevcmd SETERRPREVCMD\n"
+"                        command(s) to set exit-on-error before any other "
+"commands.\n"
+"  --seterrpostcmd SETERRPOSTCMD\n"
+"                        command(s) to set exit-on-error after all other "
+"commands.\n"
+"  --overwrite-aliases   flag for whether or not sourced aliases should "
+"replace the current xonsh aliases.\n"
+"  --suppress-skip-message\n"
+"                        flag for whether or not skip messages should be "
+"suppressed.\n"
+"  --show                show the generated shell command that will be sent "
+"to the foreign\n"
+"                        shell (does not show what the sourced script prints "
+"— see\n"
+"                        ``--show-output`` for that).\n"
+"  --show-output         forward stdout and stderr produced by the sourced "
+"script to the\n"
+"                        xonsh terminal. By default they are silently "
+"discarded.\n"
+"  -d, --dry-run         Will not actually source the file.\n"
+"  -n, --non-interactive\n"
+"                        Deprecated: The default mode runs in non-interactive "
+"mode."
+msgstr ""
+
+#: ../../../aliases.rst:394
+msgid "``source-sh``"
+msgstr ""
+
+#: ../../../aliases.rst:395
+msgid ""
+"Thin wrapper around ``source-foreign sh`` with ``--sourcer .`` (the POSIX "
+"dot builtin, since ``/bin/sh`` on dash-based distros does not understand "
+"``source``). Use this to source ``/etc/profile`` and similar POSIX "
+"configuration files. Also covers ``dash``, ``ash``, ``ksh``, ``mksh``, and "
+"``pdksh`` (env and aliases are picked up; shell-specific function listing is "
+"not)."
+msgstr ""
+
+#: ../../../aliases.rst:404
+msgid "``source-bash``"
+msgstr ""
+
+#: ../../../aliases.rst:405
+msgid "Thin wrapper around ``source-foreign bash`` with ``--sourcer source``."
+msgstr ""
+
+#: ../../../aliases.rst:409
+msgid "``source-zsh``"
+msgstr ""
+
+#: ../../../aliases.rst:410
+msgid "Thin wrapper around ``source-foreign zsh`` with ``--sourcer source``."
+msgstr ""
+
+#: ../../../aliases.rst:414
+msgid "Windows Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:417
+msgid "cmd-based Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:418
+msgid ""
+"The following aliases on Windows are expanded to ``['cmd', '/c', alias]``:"
+msgstr ""
+
+#: ../../../aliases.rst:420
+msgid ""
+"{'cls': ['cmd', '/c', 'cls'],\n"
+" 'copy': ['cmd', '/c', 'copy'],\n"
+" 'del': ['cmd', '/c', 'del'],\n"
+" 'dir': ['cmd', '/c', 'dir'],\n"
+" 'erase': ['cmd', '/c', 'erase'],\n"
+" 'md': ['cmd', '/c', 'md'],\n"
+" 'mkdir': ['cmd', '/c', 'mkdir'],\n"
+" 'mklink': ['cmd', '/c', 'mklink'],\n"
+" 'move': ['cmd', '/c', 'move'],\n"
+" 'rd': ['cmd', '/c', 'rd'],\n"
+" 'ren': ['cmd', '/c', 'ren'],\n"
+" 'rename': ['cmd', '/c', 'rename'],\n"
+" 'rmdir': ['cmd', '/c', 'rmdir'],\n"
+" 'time': ['cmd', '/c', 'time'],\n"
+" 'type': ['cmd', '/c', 'type'],\n"
+" 'vol': ['cmd', '/c', 'vol'],\n"
+" }"
+msgstr ""
+
+#: ../../../aliases.rst:443
+msgid "``activate``/``deactivate`` on Windows with Anaconda"
+msgstr ""
+
+#: ../../../aliases.rst:444
+msgid ""
+"On Windows with an Anaconda Python distribution, ``activate`` and "
+"``deactivate`` are aliased to ``['source-cmd', 'activate.bat']`` and "
+"``['source-cmd', 'deactivate.bat']``. This makes it possible to use the same "
+"commands to activate/deactivate conda environments as in cmd.exe."
+msgstr ""
+
+#: ../../../aliases.rst:451
+msgid "``sudo`` on Windows"
+msgstr ""
+
+#: ../../../aliases.rst:452
+msgid ""
+"On Windows, if no executables named ``sudo`` are found, Xonsh adds a "
+"``sudo`` alias that poly fills the \"run as Admin\" behavior with the help "
+"of ``ShellExecuteEx`` and ``ctypes``. It doesn't support any actual ``sudo`` "
+"parameters and just takes the command to run."
+msgstr ""
+
+#: ../../../aliases.rst:459
+msgid "User Aliases with Descriptions"
+msgstr ""
+
+#: ../../../aliases.rst:461
+msgid ""
+"Every alias can carry a one-line description. It surfaces in the tab-"
+"completion dropdown next to the alias name, and in the ``cmd?`` / ``cmd??`` "
+"help output."
+msgstr ""
+
+#: ../../../aliases.rst:464
+msgid "For callable aliases, the function's docstring is used automatically:"
+msgstr ""
+
+#: ../../../aliases.rst:466
+msgid ""
+"@ @aliases.register('qwe')\n"
+"  def _qwe():\n"
+"      \"\"\"List files in long format.\"\"\"\n"
+"      ls -la\n"
+"\n"
+"@ qw<TAB>\n"
+"qwe  List files in long format."
+msgstr ""
+
+#: ../../../aliases.rst:476
+msgid ""
+"For string and list aliases — which have nowhere to attach a docstring — use "
+"the dict form:"
+msgstr ""
+
+#: ../../../aliases.rst:479
+msgid ""
+"@ aliases['qwe'] = {'alias': 'ls -la', 'doc': 'List files'}\n"
+"@ aliases |= {\n"
+"      'psg':  {'alias': ['ps', 'aux'], 'doc': 'Process list'},\n"
+"      'g':    {'alias': 'git',         'doc': 'Git wrapper'},\n"
+"  }"
+msgstr ""
+
+#: ../../../aliases.rst:487
+msgid ""
+"The dict form recognises two keys: ``'alias'`` (required, the alias value "
+"itself — string, list, or callable) and ``'doc'`` (optional, the one-line "
+"description). Other keys are reserved for future use and currently ignored."
+msgstr ""
+
+#: ../../../aliases.rst:491
+msgid ""
+"When ``'doc'`` is set on a callable alias, it overrides the function's own "
+"``__doc__`` — handy for showing a shorter summary in completions while "
+"keeping a longer docstring in the source:"
+msgstr ""
+
+#: ../../../aliases.rst:495
+msgid ""
+"@ def _bar():\n"
+"      \"\"\"Long, detailed description of bar...\"\"\"\n"
+"      echo bar\n"
+"@ aliases['bar'] = {'alias': _bar, 'doc': 'Short summary'}\n"
+"@ ba<TAB>\n"
+"bar  Short summary"
+msgstr ""
+
+#: ../../../aliases.rst:504
+msgid ""
+"Reassigning an alias without a ``'doc'`` clears the previous description, so "
+"descriptions never accidentally stick to a different value bound under the "
+"same name."
+msgstr ""
+
+#: ../../../aliases.rst:508
+msgid ""
+"By default, the description shows in the dropdown only when the alias has a "
+"docstring (or an explicit ``'doc'``). To also show the binary path for non-"
+"alias commands, set ``$CMD_COMPLETIONS_SHOW_DESC = True``."
+msgstr ""
+
+#: ../../../aliases.rst:514
+msgid "See also"
+msgstr ""
+
+#: ../../../aliases.rst:516
+msgid ":doc:`callable_aliases` -- writing callable aliases in depth"
+msgstr ""
+
+#: ../../../aliases.rst:517
+msgid ":doc:`subprocess` -- subprocess operators and capturing modes"
+msgstr ""
+
+#: ../../../aliases.rst:518
+msgid ":doc:`xonsh RC <xonshrc>` -- defining aliases in RC files"
+msgstr ""

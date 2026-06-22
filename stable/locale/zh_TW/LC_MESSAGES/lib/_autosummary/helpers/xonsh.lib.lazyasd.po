@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.lazyasd.rst:2
+msgid "xonsh.lib.lazyasd"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd:1
+msgid "Lazy and self destructive containers for speeding up module import."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:2
+msgid ""
+"Boolean like object that lazily computes it boolean value when it is first "
+"asked. Once loaded, this result will replace itself in the provided context "
+"(typically the globals of the call site) with the given name."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:7
+msgid ""
+"For example, you can prevent the complex boolean until it is actually used::"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:10
+msgid "ALIVE = LazyDict(lambda: not DEAD, globals(), 'ALIVE')"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:0
+#: xonsh.lib.lazyasd.LazyDict:0 xonsh.lib.lazyasd.LazyObject:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:14
+#: xonsh.lib.lazyasd.LazyObject:14
+msgid "**load**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:-1
+#: xonsh.lib.lazyasd.LazyObject:-1
+msgid "function with no arguments"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:15
+msgid "A loader function that performs the actual boolean evaluation."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:17
+#: xonsh.lib.lazyasd.LazyDict:23 xonsh.lib.lazyasd.LazyObject:17
+msgid "**ctx**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:-1
+#: xonsh.lib.lazyasd.LazyDict:-1 xonsh.lib.lazyasd.LazyObject:-1
+msgid "Mapping"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:18
+msgid ""
+"Context to replace the LazyBool instance in with the the fully loaded "
+"mapping."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:21
+#: xonsh.lib.lazyasd.LazyDict:27 xonsh.lib.lazyasd.LazyObject:21
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:-1
+#: xonsh.lib.lazyasd.LazyDict:-1 xonsh.lib.lazyasd.LazyObject:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyBool:22
+#: xonsh.lib.lazyasd.LazyDict:28
+msgid ""
+"Name in the context to give the loaded mapping. This *should* be the name on "
+"the LHS of the assignment."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:2
+msgid ""
+"Dictionary like object that lazily loads its values from an initial dict of "
+"key-loader function pairs.  Each key is loaded when its value is first "
+"accessed. Once fully loaded, this object will replace itself in the provided "
+"context (typically the globals of the call site) with the given name."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:8
+msgid ""
+"For example, you can prevent the compilation of a bunch of regular "
+"expressions until they are actually used::"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:11
+msgid ""
+"RES = LazyDict({\n"
+"        'dot': lambda: re.compile('.'),\n"
+"        'all': lambda: re.compile('.*'),\n"
+"        'two': lambda: re.compile('..'),\n"
+"        }, globals(), 'RES')"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:19
+msgid "**loaders**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:-1
+msgid "Mapping of keys to functions with no arguments"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:20
+msgid ""
+"A mapping of loader function that performs the actual value construction "
+"upon access."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyDict:24
+msgid ""
+"Context to replace the LazyDict instance in with the the fully loaded "
+"mapping."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.pop:2
+msgid ""
+"value.  If key is not found, d is returned if given, otherwise KeyError is "
+"raised."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: collections.abc.MutableMapping.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyObject:2
+msgid ""
+"Lazily loads an object via the load function the first time an attribute is "
+"accessed. Once loaded it will replace itself in the provided context "
+"(typically the globals of the call site) with the given name."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.LazyObject:7
+msgid ""
+"For example, you can prevent the compilation of a regular expression until "
+"it is actually used::"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: xonsh.lib.lazyasd.LazyObject:10
+msgid "DOT = LazyObject((lambda: re.compile('.')), globals(), 'DOT')"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: xonsh.lib.lazyasd.LazyObject:15
+msgid "A loader function that performs the actual object construction."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: xonsh.lib.lazyasd.LazyObject:18
+msgid ""
+"Context to replace the LazyObject instance in with the object returned by "
+"load()."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of
+#: xonsh.lib.lazyasd.LazyObject:22
+msgid ""
+"Name in the context to give the loaded object. This *should* be the name on "
+"the LHS of the assignment."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.lazybool:2
+msgid "Decorator for constructing lazy booleans from a function."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.lazydict:2
+msgid "Decorator for constructing lazy dicts from a function."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyasd.py:docstring of xonsh.lib.lazyasd.lazyobject:2
+msgid "Decorator for constructing lazy objects from a function."
+msgstr ""

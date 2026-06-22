@@ -1,0 +1,762 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../events.rst:2
+msgid "Built-in Events"
+msgstr ""
+
+#: ../../../events.rst:3
+msgid ""
+"The following events are defined by xonsh itself. For more information about "
+"events, see `the events tutorial <events_tutorial.html>`_."
+msgstr ""
+
+#: ../../../eventsbody:4
+msgid ":ref:`on_chdir <on_chdir>`"
+msgstr ""
+
+#: ../../../eventsbody:5
+msgid ":ref:`on_command_not_found <on_command_not_found>`"
+msgstr ""
+
+#: ../../../eventsbody:6
+msgid ":ref:`on_completer_filter <on_completer_filter>`"
+msgstr ""
+
+#: ../../../eventsbody:7
+msgid ":ref:`on_envvar_change <on_envvar_change>`"
+msgstr ""
+
+#: ../../../eventsbody:8
+msgid ":ref:`on_envvar_new <on_envvar_new>`"
+msgstr ""
+
+#: ../../../eventsbody:9
+msgid ":ref:`on_exit <on_exit>`"
+msgstr ""
+
+#: ../../../eventsbody:10
+msgid ":ref:`on_import_post_create_module <on_import_post_create_module>`"
+msgstr ""
+
+#: ../../../eventsbody:11
+msgid ":ref:`on_import_post_exec_module <on_import_post_exec_module>`"
+msgstr ""
+
+#: ../../../eventsbody:12
+msgid ":ref:`on_import_post_find_spec <on_import_post_find_spec>`"
+msgstr ""
+
+#: ../../../eventsbody:13
+msgid ":ref:`on_import_pre_create_module <on_import_pre_create_module>`"
+msgstr ""
+
+#: ../../../eventsbody:14
+msgid ":ref:`on_import_pre_exec_module <on_import_pre_exec_module>`"
+msgstr ""
+
+#: ../../../eventsbody:15
+msgid ":ref:`on_import_pre_find_spec <on_import_pre_find_spec>`"
+msgstr ""
+
+#: ../../../eventsbody:16
+msgid ":ref:`on_lscolors_change <on_lscolors_change>`"
+msgstr ""
+
+#: ../../../eventsbody:17
+msgid ":ref:`on_post_cmdloop <on_post_cmdloop>`"
+msgstr ""
+
+#: ../../../eventsbody:18
+msgid ":ref:`on_post_init <on_post_init>`"
+msgstr ""
+
+#: ../../../eventsbody:19
+msgid ":ref:`on_post_prompt <on_post_prompt>`"
+msgstr ""
+
+#: ../../../eventsbody:20
+msgid ":ref:`on_post_rc <on_post_rc>`"
+msgstr ""
+
+#: ../../../eventsbody:21
+msgid ":ref:`on_postcommand <on_postcommand>`"
+msgstr ""
+
+#: ../../../eventsbody:22
+msgid ":ref:`on_pre_cmdloop <on_pre_cmdloop>`"
+msgstr ""
+
+#: ../../../eventsbody:23
+msgid ":ref:`on_pre_prompt <on_pre_prompt>`"
+msgstr ""
+
+#: ../../../eventsbody:24
+msgid ":ref:`on_pre_prompt_format <on_pre_prompt_format>`"
+msgstr ""
+
+#: ../../../eventsbody:25
+msgid ":ref:`on_pre_rc <on_pre_rc>`"
+msgstr ""
+
+#: ../../../eventsbody:26
+msgid ":ref:`on_pre_spec_run_ls <on_pre_spec_run_ls>`"
+msgstr ""
+
+#: ../../../eventsbody:27
+msgid ":ref:`on_precommand <on_precommand>`"
+msgstr ""
+
+#: ../../../eventsbody:28
+msgid ":ref:`on_ptk_create <on_ptk_create>`"
+msgstr ""
+
+#: ../../../eventsbody:29
+msgid ":ref:`on_transform_command <on_transform_command>`"
+msgstr ""
+
+#: ../../../eventsbody:30
+msgid ":ref:`on_xonfig_info_requested <on_xonfig_info_requested>`"
+msgstr ""
+
+#: ../../../eventsbody:31
+msgid ":ref:`on_xontribs_loaded <on_xontribs_loaded>`"
+msgstr ""
+
+#: ../../../eventsbody:36
+msgid "Listing"
+msgstr ""
+
+#: ../../../eventsbody:41
+msgid "``on_chdir(olddir: str, newdir: str) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:42
+msgid "Fires when the current directory is changed for any reason."
+msgstr ""
+
+#: ../../../eventsbody:44
+msgid ""
+"@events.on_chdir\n"
+"def _source_env_xsh(olddir, newdir):\n"
+"    '''Source `env.xsh` file if it's exist in the new directory.'''\n"
+"    env_file = @.imp.pathlib.Path(newdir) / 'env.xsh'\n"
+"    if env_file.exists():\n"
+"        print(f'Source {env_file}')\n"
+"        source @(env_file)"
+msgstr ""
+
+#: ../../../eventsbody:59
+msgid ""
+"``on_command_not_found(cmd: list[str]) -> list[str] | tuple[str, ...] | dict "
+"| None``"
+msgstr ""
+
+#: ../../../eventsbody:60
+msgid "Fires if a command is not found (only in interactive sessions)."
+msgstr ""
+
+#: ../../../eventsbody:62 ../../../eventsbody:104 ../../../eventsbody:290
+#: ../../../eventsbody:360
+msgid "Parameters:"
+msgstr ""
+
+#: ../../../eventsbody:64
+msgid "``cmd``: The command that was attempted"
+msgstr ""
+
+#: ../../../eventsbody:66
+msgid "Returns:"
+msgstr ""
+
+#: ../../../eventsbody:68
+msgid ""
+"``list[str]`` or ``tuple[str, ...]``: A replacement command to execute "
+"instead. The first valid replacement from any handler will be used."
+msgstr ""
+
+#: ../../../eventsbody:70
+msgid ""
+"``dict``: A dict with a required ``\"cmd\"`` key (list of command tokens) "
+"and an optional ``\"env\"`` key (dict of environment variables to set for "
+"the replacement command). Same convention as ``@Aliases.return_command``."
+msgstr ""
+
+#: ../../../eventsbody:73
+msgid "``None``: To let the error be raised normally"
+msgstr ""
+
+#: ../../../eventsbody:75
+msgid ""
+"Note: If the replacement command also fails, the original error is shown."
+msgstr ""
+
+#: ../../../eventsbody:77
+msgid "Examples:"
+msgstr ""
+
+#: ../../../eventsbody:79
+msgid ""
+"@events.on_command_not_found\n"
+"def _vim_to_vi(cmd, **kwargs):\n"
+"    '''If vim not found let's try to use vi.'''\n"
+"    if cmd[0] == 'vim':\n"
+"        return ['vi'] + cmd[1:]\n"
+"\n"
+"@events.on_command_not_found\n"
+"def _node_with_path(cmd, **kwargs):\n"
+"    '''Run node with a custom NODE_PATH.'''\n"
+"    if cmd[0] == 'mynode':\n"
+"        return {\"cmd\": [\"node\"] + cmd[1:], \"env\": {\"NODE_PATH\": \"/"
+"opt/libs\"}}"
+msgstr ""
+
+#: ../../../eventsbody:98
+msgid ""
+"``on_completer_filter(completer: str, command: str, context: "
+"CompletionContext) -> bool | None``"
+msgstr ""
+
+#: ../../../eventsbody:99
+msgid ""
+"Fires once for every registered completer just before it is invoked, "
+"allowing handlers to veto the call. Return ``False`` to skip the completer; "
+"return ``True``, ``None`` (or nothing) to let it run. If any handler returns "
+"``False``, the completer is skipped."
+msgstr ""
+
+#: ../../../eventsbody:106
+msgid ""
+"``completer``: the registered name of the completer about to run (e.g. "
+"``'bash'``, ``'path'``)."
+msgstr ""
+
+#: ../../../eventsbody:108
+msgid ""
+"``command``: the basename of the command being completed (e.g. ``'kubectl'`` "
+"even when the user typed ``/usr/bin/kubectl``). Empty string when no command "
+"has been typed yet, or when the completion happens outside the command-line "
+"context."
+msgstr ""
+
+#: ../../../eventsbody:112
+msgid ""
+"``context``: the full :class:`CompletionContext` for the current completion "
+"request."
+msgstr ""
+
+#: ../../../eventsbody:115
+msgid ""
+"Use this to short-circuit completers such as ``bash`` on commands where the "
+"user does not need bash-supplied completions:"
+msgstr ""
+
+#: ../../../eventsbody:118
+msgid ""
+"@events.on_completer_filter\n"
+"def _only_bash_for_some(completer, command, context, **_):\n"
+"    return command in {'kubectl', 'docker'} if completer == 'bash' else True"
+msgstr ""
+
+#: ../../../eventsbody:124
+msgid ""
+"Handlers run on the completion thread; exceptions raised inside a handler "
+"are logged and treated as if no value was returned (i.e. the completer is "
+"still allowed to run)."
+msgstr ""
+
+#: ../../../eventsbody:133
+msgid "``on_envvar_change(name: str, oldvalue: Any, newvalue: Any) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:134
+msgid ""
+"Fires after an environment variable is changed. Note: Setting envvars inside "
+"the handler might cause a recursion until the limit."
+msgstr ""
+
+#: ../../../eventsbody:138
+msgid ""
+"@events.on_envvar_change\n"
+"def _on_env_path_change(name, oldvalue, newvalue):\n"
+"    '''Keep `/tmp/bin` on top of PATH.'''\n"
+"    if name == 'PATH' and (newvalue == [] or newvalue[0] != '/tmp/bin'):\n"
+"        $PATH = ['/tmp/bin'] + [v for v in newvalue if v != '/tmp/bin']"
+msgstr ""
+
+#: ../../../eventsbody:151
+msgid "``on_envvar_new(name: str, value: Any) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:152
+msgid ""
+"Fires after a new environment variable is created. Note: Setting envvars "
+"inside the handler might cause a recursion until the limit."
+msgstr ""
+
+#: ../../../eventsbody:161
+msgid "``on_exit(exit_code : int) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:162
+msgid "Fired after all commands have been executed, before tear-down occurs."
+msgstr ""
+
+#: ../../../eventsbody:164 ../../../eventsbody:253
+msgid ""
+"NOTE: All the caveats of the ``atexit`` module also apply to this event."
+msgstr ""
+
+#: ../../../eventsbody:171
+msgid ""
+"``on_import_post_create_module(module: Module, spec: ModuleSpec) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:172
+msgid ""
+"Fires after a module is created by its loader but before the loader returns "
+"it. The parameters here are the module object itself and the spec object. "
+"See importlib for more details."
+msgstr ""
+
+#: ../../../eventsbody:181
+msgid "``on_import_post_exec_module(module: Module) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:182
+msgid ""
+"Fires after a module is executed by its loader but before the loader returns "
+"it. The only parameter is the module itself. See importlib for more details."
+msgstr ""
+
+#: ../../../eventsbody:190
+msgid "``on_import_post_find_spec(spec, fullname, path, target) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:191
+msgid ""
+"Fires after all import find_spec() calls have been executed. The parameters "
+"here the spec and the arguments importlib.abc.MetaPathFinder.find_spec(). "
+"Namely,"
+msgstr ""
+
+#: ../../../eventsbody:0
+msgid "``spec``"
+msgstr ""
+
+#: ../../../eventsbody:194
+msgid "A ModuleSpec object if the spec was found, or None if it was not."
+msgstr ""
+
+#: ../../../eventsbody:0
+msgid "``fullname``"
+msgstr ""
+
+#: ../../../eventsbody:195 ../../../eventsbody:227
+msgid "The full name of the module to import."
+msgstr ""
+
+#: ../../../eventsbody:0
+msgid "``path``"
+msgstr ""
+
+#: ../../../eventsbody:196 ../../../eventsbody:228
+msgid ""
+"None if a top-level import, otherwise the ``__path__`` of the parent package."
+msgstr ""
+
+#: ../../../eventsbody:0
+msgid "``target``"
+msgstr ""
+
+#: ../../../eventsbody:198 ../../../eventsbody:230
+msgid "Target module used to make a better guess about the package spec."
+msgstr ""
+
+#: ../../../eventsbody:205
+msgid "``on_import_pre_create_module(spec: ModuleSpec) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:206
+msgid ""
+"Fires right before a module is created by its loader. The only parameter is "
+"the spec object. See importlib for more details."
+msgstr ""
+
+#: ../../../eventsbody:214
+msgid "``on_import_pre_exec_module(module: Module) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:215
+msgid ""
+"Fires right before a module is executed by its loader. The only parameter is "
+"the module itself. See importlib for more details."
+msgstr ""
+
+#: ../../../eventsbody:223
+msgid ""
+"``on_import_pre_find_spec(fullname: str, path: str, target: module or None) -"
+"> None``"
+msgstr ""
+
+#: ../../../eventsbody:224
+msgid ""
+"Fires before any import find_spec() calls have been executed. The parameters "
+"here are the same as importlib.abc.MetaPathFinder.find_spec(). Namely,"
+msgstr ""
+
+#: ../../../eventsbody:237
+msgid "``on_lscolors_change(key: str, oldvalue: Any, newvalue: Any) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:238
+msgid ""
+"Fires after a value in LS_COLORS changes, when a new key is added (oldvalue "
+"is None) or when an existing key is deleted (newvalue is None). LS_COLORS "
+"values must be (ANSI color) strings, None is unambiguous. Does not fire when "
+"the whole environment variable changes (see on_envvar_change). Does not fire "
+"for each value when LS_COLORS is first instantiated. Normal usage is to arm "
+"the event handler, then read (not modify) all existing values."
+msgstr ""
+
+#: ../../../eventsbody:250
+msgid "``on_post_cmdloop() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:251
+msgid "Fired just after the command loop finishes, if it is."
+msgstr ""
+
+#: ../../../eventsbody:260
+msgid "``on_post_init() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:261
+msgid "Fired after all initialization is finished and we're ready to do work."
+msgstr ""
+
+#: ../../../eventsbody:263
+msgid "NOTE: This is fired before the wizard is automatically started."
+msgstr ""
+
+#: ../../../eventsbody:270
+msgid "``on_post_prompt() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:271
+msgid "Fires just after the prompt returns"
+msgstr ""
+
+#: ../../../eventsbody:278
+msgid "``on_post_rc() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:279
+msgid "Fired just after rc files are loaded, if they are."
+msgstr ""
+
+#: ../../../eventsbody:286
+msgid ""
+"``on_postcommand(cmd: str, rtn: int, out: str or None, ts: list) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:287
+msgid ""
+"Fires just after a command is executed. The arguments are the same as "
+"history. This event only fires in interactive mode."
+msgstr ""
+
+#: ../../../eventsbody:292
+msgid ""
+"``cmd``: The command that was executed — the final form after transformation "
+"and dedent."
+msgstr ""
+
+#: ../../../eventsbody:294
+msgid "``rtn``: The result of the command executed (``0`` for success)"
+msgstr ""
+
+#: ../../../eventsbody:295
+msgid "``out``: If xonsh stores command output, this is the output"
+msgstr ""
+
+#: ../../../eventsbody:296
+msgid "``ts``: Timestamps, in the order of ``[starting, ending]``"
+msgstr ""
+
+#: ../../../eventsbody:298 ../../../eventsbody:364
+msgid "Example:"
+msgstr ""
+
+#: ../../../eventsbody:300
+msgid ""
+"@events.on_postcommand\n"
+"def _prompt_err_command_again(cmd, rtn, out, ts):\n"
+"    '''If the result of executing the command is not zero, repeat the "
+"command on the next command prompt.'''\n"
+"    if rtn != 0:\n"
+"        $XONSH_PROMPT_NEXT_CMD = cmd.rstrip()"
+msgstr ""
+
+#: ../../../eventsbody:313
+msgid "``on_pre_cmdloop() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:314
+msgid "Fired just before the command loop is started, if it is."
+msgstr ""
+
+#: ../../../eventsbody:321
+msgid "``on_pre_prompt() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:322
+msgid "Fires just before showing the prompt"
+msgstr ""
+
+#: ../../../eventsbody:329
+msgid "``on_pre_prompt_format() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:330
+msgid "Fires before the prompt will be formatted"
+msgstr ""
+
+#: ../../../eventsbody:337
+msgid "``on_pre_rc() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:338
+msgid "Fired just before rc files are loaded, if they are."
+msgstr ""
+
+#: ../../../eventsbody:345
+msgid "``on_pre_spec_run_ls(spec: xonsh.built_ins.SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:346
+msgid "Fires right before a SubprocSpec.run() is called for the ls command."
+msgstr ""
+
+#: ../../../eventsbody:354
+msgid "``on_precommand(cmd: str) -> None``"
+msgstr ""
+
+#: ../../../eventsbody:355
+msgid ""
+"Fires just before a command is executed, after ``on_transform_command`` has "
+"produced its final form. Handlers cannot modify the command — use "
+"``on_transform_command`` if you need to change the source before it runs. "
+"This event only fires in interactive mode."
+msgstr ""
+
+#: ../../../eventsbody:362
+msgid "``cmd``: The command about to be executed."
+msgstr ""
+
+#: ../../../eventsbody:366
+msgid ""
+"@events.on_precommand\n"
+"def _audit(cmd, **kw):\n"
+"    '''Log each command to a file right before execution.'''\n"
+"    with open('/tmp/xonsh_audit.log', 'a') as f:\n"
+"        f.write(cmd)"
+msgstr ""
+
+#: ../../../eventsbody:379
+msgid ""
+"``on_ptk_create(prompter: PromptSession, history: PromptToolkitHistory, "
+"completer: PromptToolkitCompleter, bindings: KeyBindings) ->``"
+msgstr ""
+
+#: ../../../eventsbody:380
+msgid ""
+"Fired after prompt toolkit has been initialized. Use this event in xonsh RC "
+"file."
+msgstr ""
+
+#: ../../../eventsbody:382
+msgid ""
+"# ~/.xonshrc\n"
+"@events.on_ptk_create\n"
+"def _custom_keybindings(bindings, **kw):\n"
+"    @bindings.add(@.imp.prompt_toolkit.keys.Keys.ControlW)\n"
+"    def say_hi(event):\n"
+"        event.current_buffer.insert_text('hi')"
+msgstr ""
+
+#: ../../../eventsbody:396
+msgid "``on_transform_command(cmd: str) -> str | None``"
+msgstr ""
+
+#: ../../../eventsbody:397
+msgid ""
+"Fired to request xontribs to transform a command line. Return the "
+"transformed command, or the same command if no transformation occurs. Return "
+"None to indicate no transformation (equivalent to returning the original "
+"command). Only done for interactive sessions."
+msgstr ""
+
+#: ../../../eventsbody:402
+msgid ""
+"This may be fired multiple times per command, with other transformers input "
+"or output, so design any handlers for this carefully."
+msgstr ""
+
+#: ../../../eventsbody:405
+msgid ""
+"@events.on_transform_command\n"
+"def _pipe_prev_command(cmd, **kw):\n"
+"    '''Pipe prev command e.g. `| grep 1` will be `<prev cmd> | grep 1`.'''\n"
+"    if cmd and cmd.startswith('| ') and __xonsh__.history:\n"
+"        return __xonsh__.history[-1].cmd.rstrip() + cmd.rstrip()\n"
+"    return cmd"
+msgstr ""
+
+#: ../../../eventsbody:419
+msgid "``on_xonfig_info_requested() -> list[tuple[str, str]]``"
+msgstr ""
+
+#: ../../../eventsbody:420
+msgid ""
+"Register a callable that will return extra info when ``xonfig info`` is "
+"called."
+msgstr ""
+
+#: ../../../eventsbody:427
+msgid "``on_xontribs_loaded() -> None``"
+msgstr ""
+
+#: ../../../eventsbody:428
+msgid "Fired after external xontribs with ``entrypoints defined`` are loaded."
+msgstr ""
+
+#: ../../../events.rst:10
+msgid "Event Categories"
+msgstr ""
+
+#: ../../../events.rst:11
+msgid ""
+"Additionally, there are a few categories of events whose names are part of "
+"the specification of the event. These events are fired if they exist, and "
+"are ignored otherwise. Here are their specifications."
+msgstr ""
+
+#: ../../../events.rst:18
+msgid "``on_pre_spec_run(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../../events.rst:19
+msgid ""
+"This event fires whenever any command has its ``SubprocSpec.run()`` method "
+"called.  This is fired prior to the run call executing anything at all. This "
+"receives the ``SubprocSpec`` object as ``spec`` that triggered the event, "
+"allowing the handler to modify the spec if needed.  For example, if we "
+"wanted to intercept all specs, we could write:"
+msgstr ""
+
+#: ../../../events.rst:25
+msgid ""
+"@events.on_pre_spec_run\n"
+"def print_when_ls(spec=None, **kwargs):\n"
+"    print(\"Running a command\")"
+msgstr ""
+
+#: ../../../events.rst:31
+msgid ""
+"To mask an environment variable for the subprocess this spec is about to "
+"run, set ``spec.env[name] = @.env.DELETE_VAR``. The variable will not appear "
+"in the environment passed to the child process, even if it is set in the "
+"session env:"
+msgstr ""
+
+#: ../../../events.rst:36
+msgid ""
+"@events.on_pre_spec_run\n"
+"def strip_secrets(spec, **_):\n"
+"    spec.env = (spec.env or {}) | {'SECRET_TOKEN': @.env.DELETE_VAR}"
+msgstr ""
+
+#: ../../../events.rst:44
+msgid "``on_pre_spec_run_<cmd-name>(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../../events.rst:45
+msgid ""
+"This event fires whenever a command with a give name (``<cmd-name>``) has "
+"its ``SubprocSpec.run()`` method called.  This is fired prior to the run "
+"call executing anything at all. This receives the ``SubprocSpec`` object as "
+"``spec`` that triggered the event, allowing the handler to modify the spec "
+"if needed.  For example, if we wanted to intercept an ``ls`` spec, we could "
+"write:"
+msgstr ""
+
+#: ../../../events.rst:52
+msgid ""
+"@events.on_pre_spec_run_ls\n"
+"def print_when_ls(spec=None, **kwargs):\n"
+"    print(\"Look at me list stuff!\")"
+msgstr ""
+
+#: ../../../events.rst:60
+msgid "``on_post_spec_run(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../../events.rst:61
+msgid ""
+"This event fires whenever any command has its ``SubprocSpec.run()`` method "
+"called.  This is fired after to the run call has executed everything except "
+"returning. This recieves the ``SubprocSpec`` object as ``spec`` that "
+"triggered the event, allowing the handler to modify the spec if needed. Note "
+"that because of the way process pipelines and specs work in xonsh, the "
+"command will have started running, but won't necessarily have completed. "
+"This is because ``SubprocSpec.run()`` does not block. For example, if we "
+"wanted to get any spec after a command has started running, we could write:"
+msgstr ""
+
+#: ../../../events.rst:71
+msgid ""
+"@events.on_post_spec_run\n"
+"def print_while_ls(spec=None, **kwargs):\n"
+"    print(\"A command is running\")"
+msgstr ""
+
+#: ../../../events.rst:80
+msgid "``on_post_spec_run_<cmd-name>(spec: SubprocSpec) -> None``"
+msgstr ""
+
+#: ../../../events.rst:81
+msgid ""
+"This event fires whenever a command with a give name (``<cmd-name>``) has "
+"its ``SubprocSpec.run()`` method called.  This is fired after to the run "
+"call has executed everything except returning. This recieves the "
+"``SubprocSpec`` object as ``spec`` that triggered the event, allowing the "
+"handler to modify the spec if needed. Note that because of the way process "
+"pipelines and specs work in xonsh, the command will have started running, "
+"but won't necessarily have completed. This is because ``SubprocSpec.run()`` "
+"does not block. For example, if we wanted to get an ``ls`` spec after ls has "
+"started running, we could write:"
+msgstr ""
+
+#: ../../../events.rst:92
+msgid ""
+"@events.on_post_spec_run_ls\n"
+"def print_while_ls(spec=None, **kwargs):\n"
+"    print(\"Mom! I'm listing!\")"
+msgstr ""
