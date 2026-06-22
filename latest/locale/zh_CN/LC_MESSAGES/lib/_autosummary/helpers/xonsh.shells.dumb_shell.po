@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.shells.dumb_shell.rst:2
+msgid "xonsh.shells.dumb\\_shell"
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.dumb_shell:1 xonsh.shells.dumb_shell.DumbShell:2
+msgid "A dumb shell for when $TERM == 'dumb', which usually happens in emacs."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.dumb_shell.DumbShell:38
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.dumb_shell.DumbShell:39
+msgid ""
+"classes inheriting multiple base classes should call them explicitly as done "
+"for ``ReadlineShell``"
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.cmdloop:2
+msgid ""
+"Repeatedly issue a prompt, accept input, parse an initial prefix off the "
+"received input, and dispatch to action methods, passing them the remainder "
+"of the line as argument."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.color_style:2
+msgid "Returns the current color map."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.color_style_names:2
+msgid "Returns an iterable of all available style names."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.columnize:2
+msgid "Display a list of strings as a compact set of columns."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.columnize:4
+msgid ""
+"Each column is only as wide as necessary. Columns are separated by two "
+"spaces (one was not legible enough)."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.compile:2
+msgid ""
+"Compiles source code and returns the (possibly modified) source and a valid "
+"code object."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.complete:2
+msgid "Return the next possible completion for 'text'."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.complete:4
+msgid ""
+"If a command has not been entered, then complete against command list. "
+"Otherwise try to call complete_<command> to get list of completions."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.completedefault:2
+msgid "Implements tab-completion for text."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.default:2
+msgid "Implements code execution."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.do_help:2
+msgid ""
+"List available commands with \"help\" or detailed help with \"help cmd\"."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.emptyline:2
+msgid "Called when an empty line has been entered."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.format_color:2
+msgid ""
+"Readline implementation of color formatting. This uses ANSI color codes."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.onecmd:2
+msgid ""
+"Interpret the argument as though it had been typed in response to the prompt."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.onecmd:5
+msgid ""
+"This may be overridden, but should not normally need to be; see the precmd() "
+"and postcmd() methods for useful execution hooks. The return value is a flag "
+"indicating whether interpretation of commands by the interpreter should stop."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.parseline:2
+msgid "Overridden to no-op."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.postcmd:2
+msgid ""
+"Called just before execution of line. For readline, this handles the "
+"automatic indentation of code blocks."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.postloop:2
+msgid "Hook method executed once when the cmdloop() method is about to return."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.precmd:2
+msgid "Called just before execution of line."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of cmd.Cmd.preloop:2
+msgid "Hook method executed once when the cmdloop() method is called."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.print_color:2
+msgid ""
+"Prints a string in color. This base implementation's colors are based on "
+"ANSI color codes if a string was given as input. If a list of token pairs is "
+"given, it will color based on pygments, if available. If pygments is not "
+"available, it will print a colorless string."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.push:2
+msgid ""
+"Pushes a line onto the buffer and compiles the code in a way that enables "
+"multiline input."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.reset_buffer:2
+msgid "Resets the line buffer."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.restore_tty_sanity:2
+msgid ""
+"An interface for resetting the TTY stdin mode. This is highly dependent on "
+"the shell backend. Also it is mostly optional since it only affects ^Z "
+"backgrounding behaviour."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.base_shell.BaseShell.settitle:2
+msgid "Sets terminal title."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.readline_shell.ReadlineShell.singleline:2
+msgid ""
+"Reads a single line of input. The store_in_history kwarg flags whether the "
+"input should be stored in readline's in-memory history."
+msgstr ""
+
+#: ../../../../xonsh/shells/dumb_shell.py:docstring of
+#: xonsh.shells.dumb_shell.DumbShell.prompt:2
+msgid "Obtains the current prompt string."
+msgstr ""

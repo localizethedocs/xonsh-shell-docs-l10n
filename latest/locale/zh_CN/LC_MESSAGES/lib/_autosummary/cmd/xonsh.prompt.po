@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:2
+msgid "xonsh.prompt"
+msgstr ""
+
+#: ../../../../xonsh/prompt/__init__.py:docstring of xonsh.prompt:1
+msgid "Prompt formatting for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/prompt/__init__.py:docstring of xonsh.prompt:3
+msgid ""
+"Provides the prompt field registry and the built-in fields: current working "
+"directory, git/VCS status, virtualenv, job info and command timing."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`base <xonsh.prompt.base>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "Base prompt, provides PROMPT_FIELDS and prompt related functions"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`cwd <xonsh.prompt.cwd>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "CWD related prompt formatter"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`env <xonsh.prompt.env>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "Prompt formatter for virtualenv and others"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`gitstatus <xonsh.prompt.gitstatus>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "Informative git status prompt formatter."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`job <xonsh.prompt.job>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "Prompt formatter for jobs fields e.g. current_job."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`times <xonsh.prompt.times>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "date & time related prompt formatter"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid ":py:obj:`vc <xonsh.prompt.vc>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.rst:31:<autosummary>:1
+msgid "Prompt formatter for simple version control branches"
+msgstr ""

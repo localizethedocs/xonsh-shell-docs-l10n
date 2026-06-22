@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.history.rst:2
+msgid "xonsh.shells.ptk\\_shell.history"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: xonsh.shells.ptk_shell.history:1
+msgid "History object for use with prompt_toolkit."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: xonsh.shells.ptk_shell.history.PromptToolkitHistory:2
+msgid ""
+"History class that implements the prompt-toolkit history interface with the "
+"xonsh backend."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: xonsh.shells.ptk_shell.history.PromptToolkitHistory:24
+msgid "Initialize history object."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: prompt_toolkit.history.History.append_string:2
+msgid "Add string to the history."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: prompt_toolkit.history.History.get_strings:2
+msgid ""
+"Get the strings from the history that are loaded so far. (In order. Oldest "
+"item first.)"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: prompt_toolkit.history.History.load:2
+msgid ""
+"Load the history and yield all the entries in reverse order (latest, most "
+"recent history entry first)."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: prompt_toolkit.history.History.load:5
+msgid ""
+"This method can be called multiple times from the `Buffer` to repopulate the "
+"history when prompting for a new input. So we are responsible here for both "
+"caching, and making sure that strings that were were appended to the history "
+"will be incorporated next time this method is called."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: xonsh.shells.ptk_shell.history.PromptToolkitHistory.load_history_strings:2
+msgid "Loads synchronous history strings"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/history.py:docstring of
+#: xonsh.shells.ptk_shell.history.PromptToolkitHistory.store_string:2
+msgid "Store the string in persistent storage."
+msgstr ""

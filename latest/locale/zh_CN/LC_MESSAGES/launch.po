@@ -1,0 +1,506 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../launch.rst:5
+msgid "Launch Options"
+msgstr ""
+
+#: ../../../launch.rst:7
+msgid "Xonsh accepts the following command-line arguments:"
+msgstr ""
+
+#: ../../../launch.rst:9
+msgid ""
+"xonsh [-h] [-V] [-c COMMAND] [-n] [-i] [-l] [--rc RC [RC ...]]\n"
+"      [--no-rc] [--no-env] [--no-script-cache] [--cache-everything]\n"
+"      [-D ITEM] [-st SHELL_TYPE] [--timings]\n"
+"      [--save-origin-env] [--load-origin-env]\n"
+"      [script-file] [args ...]"
+msgstr ""
+
+#: ../../../launch.rst:18
+msgid "Arguments Reference"
+msgstr ""
+
+#: ../../../launch.rst:20
+msgid "``script-file``"
+msgstr ""
+
+#: ../../../launch.rst:21
+msgid "If present, execute the script and exit."
+msgstr ""
+
+#: ../../../launch.rst:23
+msgid "``args``"
+msgstr ""
+
+#: ../../../launch.rst:24
+msgid "Additional arguments passed to the script."
+msgstr ""
+
+#: ../../../launch.rst:26
+msgid "``-h``, ``--help``"
+msgstr ""
+
+#: ../../../launch.rst:27
+msgid "Show help and exit."
+msgstr ""
+
+#: ../../../launch.rst:29
+msgid "``-V``, ``--version``"
+msgstr ""
+
+#: ../../../launch.rst:30
+msgid "Show version information and exit."
+msgstr ""
+
+#: ../../../launch.rst:32
+msgid "``-c COMMAND``"
+msgstr ""
+
+#: ../../../launch.rst:33
+msgid "Run a single command and exit."
+msgstr ""
+
+#: ../../../launch.rst:35
+msgid "``-n``, ``--no-execute``"
+msgstr ""
+
+#: ../../../launch.rst:36
+msgid ""
+"Check syntax of the command, script, or stdin without running it. Exit non-"
+"zero on errors.  See also the ``xonsh check`` subcommand."
+msgstr ""
+
+#: ../../../launch.rst:39
+msgid "``-i``, ``--interactive``"
+msgstr ""
+
+#: ../../../launch.rst:40
+msgid "Force running in interactive mode."
+msgstr ""
+
+#: ../../../launch.rst:42
+msgid "``-l``, ``--login``"
+msgstr ""
+
+#: ../../../launch.rst:43
+msgid "Run as a login shell."
+msgstr ""
+
+#: ../../../launch.rst:45
+msgid "``--rc RC [RC ...]``"
+msgstr ""
+
+#: ../../../launch.rst:46
+msgid ""
+"The :doc:`xonsh RC <xonshrc>` files to load. These may be either xonsh files "
+"or directories containing xonsh files."
+msgstr ""
+
+#: ../../../launch.rst:49
+msgid "``--no-rc``"
+msgstr ""
+
+#: ../../../launch.rst:50
+msgid ""
+"Do not load any xonsh RC files.  ``--rc`` is ignored when ``--no-rc`` is set."
+msgstr ""
+
+#: ../../../launch.rst:53
+msgid "``--no-env``"
+msgstr ""
+
+#: ../../../launch.rst:54
+msgid "Do not inherit parent environment variables."
+msgstr ""
+
+#: ../../../launch.rst:56
+msgid "``--no-script-cache``"
+msgstr ""
+
+#: ../../../launch.rst:57
+msgid "Do not cache scripts as they are run."
+msgstr ""
+
+#: ../../../launch.rst:59
+msgid "``--cache-everything``"
+msgstr ""
+
+#: ../../../launch.rst:60
+msgid "Use a cache, even for interactive commands."
+msgstr ""
+
+#: ../../../launch.rst:62
+msgid "``-D ITEM``"
+msgstr ""
+
+#: ../../../launch.rst:63
+msgid ""
+"Define an environment variable, in the form ``-DVAR=VAL``, or inherit an "
+"existing variable with ``-DVAR``.  May be used many times."
+msgstr ""
+
+#: ../../../launch.rst:67
+msgid "``-st``, ``--shell-type SHELL_TYPE``"
+msgstr ""
+
+#: ../../../launch.rst:68
+msgid ""
+"What kind of shell to use.  Possible values: ``best`` (``b``), ``prompt-"
+"toolkit`` (``ptk``, ``prompt_toolkit``), ``readline`` (``rl``), ``dumb`` "
+"(``d``), ``random`` (``rand``). Overrides ``$SHELL_TYPE``."
+msgstr ""
+
+#: ../../../launch.rst:73
+msgid "``--timings``"
+msgstr ""
+
+#: ../../../launch.rst:74
+msgid ""
+"Print timing information before the prompt is shown.  Useful for tracking "
+"down performance issues and investigating startup times."
+msgstr ""
+
+#: ../../../launch.rst:77
+msgid "``--save-origin-env``"
+msgstr ""
+
+#: ../../../launch.rst:78
+msgid ""
+"Save origin environment variables before running xonsh.  Use with ``--load-"
+"origin-env`` to restore them later."
+msgstr ""
+
+#: ../../../launch.rst:81
+msgid "``--load-origin-env``"
+msgstr ""
+
+#: ../../../launch.rst:82
+msgid ""
+"Load origin environment variables that were saved with ``--save-origin-env``."
+msgstr ""
+
+#: ../../../launch.rst:87
+msgid "Clean Environment"
+msgstr ""
+
+#: ../../../launch.rst:89
+msgid ""
+"Starting xonsh with ``--no-env`` drops the inherited environment, but a few "
+"essential variables (``PATH``, ``TERM``, ``HOME``) will be missing, which "
+"may cause warnings.  Use ``-D`` to pass them through:"
+msgstr ""
+
+#: ../../../launch.rst:93
+msgid ""
+"xonsh --no-rc --no-env  # works, but may warn about no TTY or no HOME\n"
+"\n"
+"# Create a convenient alias:\n"
+"aliases['xonsh-no-env'] = 'xonsh --no-rc --no-env -DPATH -DTERM -DHOME'\n"
+"xonsh-no-env"
+msgstr ""
+
+#: ../../../launch.rst:103
+msgid "Minimal Startup"
+msgstr ""
+
+#: ../../../launch.rst:105
+msgid ""
+"For the fastest possible startup with no extras -- useful for scripting, "
+"benchmarking, or debugging -- combine the flags to disable everything:"
+msgstr ""
+
+#: ../../../launch.rst:108
+msgid ""
+"xonsh --no-rc --no-env --shell-type readline \\\n"
+"      -DCOLOR_INPUT=0 -DCOLOR_RESULTS=0 -DPROMPT='@ ' \\\n"
+"      -DXONSH_HISTORY_BACKEND=dummy -DXONTRIBS_AUTOLOAD_DISABLED=1"
+msgstr ""
+
+#: ../../../launch.rst:114
+msgid "What each flag does:"
+msgstr ""
+
+#: ../../../launch.rst:116
+msgid "``--no-rc`` -- prevent loading RC files."
+msgstr ""
+
+#: ../../../launch.rst:117
+msgid "``--no-env`` -- prevent inheriting the environment."
+msgstr ""
+
+#: ../../../launch.rst:118
+msgid "``--shell-type readline`` -- use the cheapest shell backend."
+msgstr ""
+
+#: ../../../launch.rst:119
+msgid ""
+"``-DCOLOR_INPUT=0`` -- disable input coloring and the file-type completer "
+"that reads files to choose colors."
+msgstr ""
+
+#: ../../../launch.rst:121
+msgid "``-DCOLOR_RESULTS=0`` -- disable colors in output."
+msgstr ""
+
+#: ../../../launch.rst:122
+msgid ""
+"``-DPROMPT='@ '`` -- use a simple prompt instead of the default one with "
+"gitstatus and other complex fields."
+msgstr ""
+
+#: ../../../launch.rst:124
+msgid "``-DXONSH_HISTORY_BACKEND=dummy`` -- disable the history backend."
+msgstr ""
+
+#: ../../../launch.rst:125
+msgid "``-DXONTRIBS_AUTOLOAD_DISABLED=1`` -- skip loading xontribs."
+msgstr ""
+
+#: ../../../launch.rst:131
+msgid "Launching the Same Xonsh (xxonsh)"
+msgstr ""
+
+#: ../../../launch.rst:133
+msgid ""
+"The built-in ``xxonsh`` alias (see :ref:`aliases-xxonsh` for the alias entry "
+"in the Built-in Aliases reference) launches exactly the same ``xonsh`` that "
+"was used to start the current session — same interpreter, same source tree, "
+"regardless of the current working directory or whatever is installed in "
+"``site-packages``."
+msgstr ""
+
+#: ../../../launch.rst:139
+msgid ""
+"When another tool needs to spawn xonsh with the same identity as the current "
+"session, use ``get_xxonsh_alias()`` from ``xonsh.aliases``: it always "
+"returns a ``list`` so it can be concatenated with any other argv list. For "
+"example, to start ``tmux`` with exactly this xonsh:"
+msgstr ""
+
+#: ../../../launch.rst:144
+msgid ""
+"aliases['xtmux'] = ['tmux', 'new-session'] + @.imp.xonsh.aliases."
+"get_xxonsh_alias()"
+msgstr ""
+
+#: ../../../launch.rst:150
+msgid "Save and Load Origin Environment"
+msgstr ""
+
+#: ../../../launch.rst:152
+msgid ""
+"When you launch a nested xonsh with ``--no-env``, all environment variables "
+"from the parent session are dropped. Sometimes you want a clean environment "
+"for a project but still need the original env with ``PATH``, ``TERM``, and "
+"other OS-level variables."
+msgstr ""
+
+#: ../../../launch.rst:157
+msgid ""
+"``--save-origin-env`` snapshots the current environment before running "
+"xonsh, and ``--load-origin-env`` restores that snapshot inside the new "
+"session. Together, they let you start a fresh xonsh from the current "
+"modified environment."
+msgstr ""
+
+#: ../../../launch.rst:162
+msgid ""
+"For example, suppose you have a main xonsh session and you run ``xonsh --"
+"save-origin-env``. You're working, doing things, and then you need to work "
+"with a project that has its own environment setup in ``project_rc.xsh``. You "
+"don't want to source this file to avoid collisions, and you can't run a "
+"xonsh instance with just ``--rc`` because the new session will inherit your "
+"current environment."
+msgstr ""
+
+#: ../../../launch.rst:169
+msgid ""
+"In this case, you can run ``xonsh --load-origin-env --rc project_rc.xsh`` "
+"and get a new, clean environment with project-specific aliases, environment "
+"variables, and possibly a custom prompt as well."
+msgstr ""
+
+#: ../../../launch.rst:173
+msgid ""
+"After finishing work on that project, you can exit and return to your main "
+"environment."
+msgstr ""
+
+#: ../../../launch.rst:177
+msgid "Running from Another Shell"
+msgstr ""
+
+#: ../../../launch.rst:179
+msgid ""
+"To launch xonsh from another shell, make sure that shell is itself running "
+"in interactive mode — otherwise the OS will suspend the interactive xonsh "
+"process. For example, when starting xonsh from a bash script, use an "
+"interactive shebang (``#!/bin/bash -i``)."
+msgstr ""
+
+#: ../../../launch.rst:188
+msgid "Controlling Terminal and Foreground Process Group"
+msgstr ""
+
+#: ../../../launch.rst:190
+msgid ""
+"At startup xonsh performs the industry-standard handshake used by "
+"interactive shells to install itself as the foreground process group of its "
+"controlling terminal."
+msgstr ""
+
+#: ../../../launch.rst:193
+msgid ""
+"On POSIX, the first thing :func:`xonsh.main.main` does — before argument "
+"parsing, xontrib loading, or :doc:`xonsh RC <xonshrc>` execution — is call :"
+"func:`xonsh.main._setup_controlling_terminal`. This function installs a "
+"Python-level no-op handler for ``SIGTTIN`` and ``SIGTTOU`` on every POSIX "
+"invocation. If ``os.isatty(stderr)`` is true, it then calls :func:`xonsh."
+"main._acquire_controlling_terminal`; otherwise it returns after installing "
+"the handlers."
+msgstr ""
+
+#: ../../../launch.rst:201
+msgid ""
+"``_acquire_controlling_terminal`` uses stderr (file descriptor 2) as the TTY "
+"handle, matching :func:`xonsh.procs.jobs.give_terminal_to`. It blocks "
+"``SIGTTOU``, ``SIGTTIN``, ``SIGTSTP``, and ``SIGCHLD`` in the calling thread "
+"with ``pthread_sigmask``. If the TTY's foreground group is already the "
+"current process group, it short-circuits to success without registering an "
+"``atexit`` restorer. Otherwise it calls ``setpgid(0, 0)`` followed by "
+"``tcsetpgrp(tty_fd, getpgrp())``, remembers the previous foreground group, "
+"and records the success. The signal mask is restored in a ``finally`` block."
+msgstr ""
+
+#: ../../../launch.rst:210
+msgid ""
+"Control returns to ``_setup_controlling_terminal``, which branches on the "
+"result. On success, the Python no-op handlers stay in place, and :func:"
+"`xonsh.main._release_controlling_terminal` is registered with :mod:`atexit` "
+"only when foreground ownership was actually transferred. On failure, the "
+"Python no-op handlers are replaced with ``SIG_IGN`` for ``SIGTTIN`` and "
+"``SIGTTOU``. ``_setup_controlling_terminal`` is idempotent and is also "
+"called from the top of :func:`xonsh.main.main_xonsh`, with the second call "
+"short-circuiting on the ``_tty_setup_done`` module flag."
+msgstr ""
+
+#: ../../../launch.rst:219
+msgid ""
+"On shutdown, if the ``atexit`` restorer was registered, "
+"``_release_controlling_terminal`` calls ``tcsetpgrp`` to hand the previous "
+"foreground group back to the parent shell with ``SIGTTOU`` blocked during "
+"the call. If the parent has already reclaimed the TTY, or if the fd is no "
+"longer valid, the error is swallowed. In every other case — no handshake "
+"ran, the fast path was taken, or the handshake failed — the restorer is a no-"
+"op."
+msgstr ""
+
+#: ../../../launch.rst:227
+msgid "When the handshake is a no-op"
+msgstr ""
+
+#: ../../../launch.rst:229
+msgid ""
+"The handshake itself is skipped, though the Python no-op handlers for "
+"``SIGTTIN`` and ``SIGTTOU`` are still installed, on Windows; in non-"
+"interactive invocations where stderr is not a TTY, such as ``xonsh script."
+"xsh``, piped input, redirected stderr, script-from-stdin mode, and pytest "
+"runs that capture stderr via a pipe; when xonsh is a session leader "
+"(``getsid(0) == getpid()``); when xonsh is already the foreground group, in "
+"which case the fast path returns and the ``atexit`` restorer is not "
+"registered; and when ``pthread_sigmask`` is not available on the platform."
+msgstr ""
+
+#: ../../../launch.rst:239
+msgid "Disabling the handshake"
+msgstr ""
+
+#: ../../../launch.rst:241
+msgid ""
+"Set ``XONSH_NO_FG_TAKEOVER=1`` in the parent environment (before launching "
+"xonsh) to skip the handshake entirely. When the handshake is disabled, xonsh "
+"falls back to installing ``SIG_IGN`` for ``SIGTTIN`` and ``SIGTTOU``."
+msgstr ""
+
+#: ../../../launch.rst:245
+msgid ""
+"# disable the takeover\n"
+"XONSH_NO_FG_TAKEOVER=1 xonsh"
+msgstr ""
+
+#: ../../../launch.rst:252
+msgid "Tips"
+msgstr ""
+
+#: ../../../launch.rst:254
+msgid ""
+"When passing multi-statement commands to ``xonsh -c``, the :ref:`subprocess "
+"expression macro <macros>` ``@!()`` lets you avoid manual quoting — it "
+"captures its content as a literal string and passes it as a single argument:"
+msgstr ""
+
+#: ../../../launch.rst:259
+msgid "$(@lines xonsh -c @!(echo hello; echo world))"
+msgstr ""
+
+#: ../../../launch.rst:263
+msgid "See :ref:`macros` for more on ``@!()``."
+msgstr ""
+
+#: ../../../launch.rst:266
+msgid "Subcommands"
+msgstr ""
+
+#: ../../../launch.rst:268
+msgid ""
+"``xonsh format`` -- format xonsh source files in place, à la Black (``--"
+"check`` / ``--diff`` supported). Run ``xonsh format --help``."
+msgstr ""
+
+#: ../../../launch.rst:270
+msgid ""
+"``xonsh check`` -- check xonsh source files for syntax errors without "
+"running them; the ``-n`` / ``--no-execute`` flag does the same for a ``-c`` "
+"command, a script file, or piped stdin. Run ``xonsh check --help``."
+msgstr ""
+
+#: ../../../launch.rst:273
+msgid ""
+"``xonsh lint`` -- lint xonsh source files for likely mistakes (env-var "
+"typos, bad env-var values, deprecated vars, unused imports), without running "
+"them. Run ``xonsh lint --help``."
+msgstr ""
+
+#: ../../../launch.rst:279
+msgid "See also"
+msgstr ""
+
+#: ../../../launch.rst:281
+msgid ":doc:`xonsh RC <xonshrc>` -- RC file loading and configuration snippets"
+msgstr ""
+
+#: ../../../launch.rst:282
+msgid ":doc:`env` -- environment variables and type system"
+msgstr ""
+
+#: ../../../launch.rst:283
+msgid ":doc:`envvars` -- full list of environment variables"
+msgstr ""

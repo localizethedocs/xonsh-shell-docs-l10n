@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.modules.rst:2
+msgid "xonsh.lib.modules"
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder:2
+msgid ""
+"Reusable module matcher. Can be used by other completers like Python to find "
+"matching script completions"
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder:23
+msgid "Helper class to search and load Python modules"
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder:28
+msgid "**names**"
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder:29
+msgid ""
+"extra search paths/package-names to use if finding module on namespace "
+"package fails. paths should have a path literal to indicate it is a path. "
+"Otherwise it is treated as a package name."
+msgstr ""
+
+#: ../../../../xonsh/lib/modules.py:docstring of
+#: xonsh.lib.modules.ModuleFinder.import_module:2
+msgid "given the file location import as module"
+msgstr ""

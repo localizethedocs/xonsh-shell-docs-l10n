@@ -1,0 +1,653 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../xonsh_session.rst:5
+msgid "Xonsh Session"
+msgstr ""
+
+#: ../../../xonsh_session.rst:7
+msgid ""
+"When xonsh starts, it builds a long-lived **session** object that holds the "
+"environment, history, command pipeline, parser, executor, jobs and so on. "
+"Two Python objects expose this state:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:11
+msgid ""
+":class:`xonsh.built_ins.XonshSessionInterface` — a small, **stable** surface "
+"intended for end users and scripts. Reachable through the ``@`` shortcut "
+"(``@.env``, ``@.history``, ``@.imp``, ``@.lastcmd``)."
+msgstr ""
+
+#: ../../../xonsh_session.rst:15
+msgid ""
+":class:`xonsh.built_ins.XonshSession` — the **internal** session container "
+"with everything xonsh needs at runtime. Reachable as ``__xonsh__`` (or "
+"``xonsh.built_ins.XSH``). Useful when you are extending xonsh, writing "
+"completers, hooks, or low-level integrations."
+msgstr ""
+
+#: ../../../xonsh_session.rst:20
+msgid "This page documents both, with a focus on day-to-day use cases."
+msgstr ""
+
+#: ../../../xonsh_session.rst:24
+msgid "``XonshSessionInterface`` and the ``@`` shortcut"
+msgstr ""
+
+#: ../../../xonsh_session.rst:26
+msgid ""
+"``XonshSessionInterface`` is the **public, narrow** surface of a xonsh "
+"session. It is exposed as a single-character shortcut: the ``@`` token."
+msgstr ""
+
+#: ../../../xonsh_session.rst:29
+msgid ""
+"Internally, the parser rewrites every ``@.<name>`` into ``__xonsh__."
+"interface.<name>``, so the two are exactly equivalent. ``@`` on its own "
+"evaluates to the interface object itself."
+msgstr ""
+
+#: ../../../xonsh_session.rst:33
+msgid ""
+"This means you can use ``@`` directly inside Python and subprocess mode:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:35
+msgid ""
+"# Print the value of $HOME via the typed Env API\n"
+"echo @(@.env.get('HOME', '/tmp'))\n"
+"\n"
+"# Last exit code\n"
+"echo \"exit was\" @(@.lastcmd.rtn)\n"
+"\n"
+"# Inline import + call in one expression\n"
+"echo @(@.imp.json.dumps({'ok': True}))"
+msgstr ""
+
+#: ../../../xonsh_session.rst:47
+msgid "``@.env`` — current environment"
+msgstr ""
+
+#: ../../../xonsh_session.rst:49
+msgid ""
+"``@.env`` is the current :class:`xonsh.environ.Env` instance. Use it any "
+"time you want a programmatic, typed read or write of an environment "
+"variable, instead of the shell-style ``$VAR`` form."
+msgstr ""
+
+#: ../../../xonsh_session.rst:53 ../../../xonsh_session.rst:79
+#: ../../../xonsh_session.rst:109 ../../../xonsh_session.rst:135
+msgid "Use cases:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:55
+msgid ""
+"# Safe lookup with default\n"
+"home = @.env.get('HOME', '/tmp')\n"
+"\n"
+"# Temporary override scoped to a `with`-block — restored on exit\n"
+"with @.env.swap(EDITOR='vi', PAGER='cat'):\n"
+"    $[git log --oneline -3]\n"
+"\n"
+"# Register a custom env variable with a validator and default\n"
+"@.env.register('MY_TIMEOUT', type='int', default=30,\n"
+"               doc='Request timeout in seconds.')"
+msgstr ""
+
+#: ../../../xonsh_session.rst:68
+msgid ""
+"``@.env`` shines when the variable name is **dynamic** (built from a string) "
+"and you need default value, since ``$VAR`` requires a literal name in the "
+"source."
+msgstr ""
+
+#: ../../../xonsh_session.rst:73
+msgid "``@.history`` — history backend"
+msgstr ""
+
+#: ../../../xonsh_session.rst:75
+msgid ""
+"``@.history`` is the active :class:`xonsh.history.History` backend "
+"(``json``, ``sqlite``, or ``dummy``). It exposes the same API regardless of "
+"the configured backend."
+msgstr ""
+
+#: ../../../xonsh_session.rst:81
+msgid ""
+"# Last command typed in this session (raw input)\n"
+"print(@.history.inps[-1])\n"
+"\n"
+"# Iterate session items: each is {'inp': cmd, 'ts': (start, end)}\n"
+"for item in @.history.items():\n"
+"    print(item['inp'])\n"
+"\n"
+"# All history (across sessions)\n"
+"for item in @.history.all_items(newest_first=True):\n"
+"    print(item['inp'])\n"
+"    break\n"
+"\n"
+"# Force a flush to disk (same as `history flush`)\n"
+"@.history.flush()"
+msgstr ""
+
+#: ../../../xonsh_session.rst:98
+msgid ""
+"The ``history`` xonsh command is the user-facing wrapper around this object. "
+"``@.history`` is what you reach for when you need data, not text."
+msgstr ""
+
+#: ../../../xonsh_session.rst:102
+msgid "``@.imp`` — inline importer"
+msgstr ""
+
+#: ../../../xonsh_session.rst:104
+msgid ""
+"``@.imp`` is an :class:`xonsh.built_ins.InlineImporter` instance. It turns "
+"``@.imp.<module>`` into ``__import__('<module>')`` on first attribute "
+"access, so you can pull in and use a stdlib (or third-party) module without "
+"a separate ``import`` line."
+msgstr ""
+
+#: ../../../xonsh_session.rst:111
+msgid ""
+"# One-liners that would otherwise need an import\n"
+"echo @(@.imp.time.time())\n"
+"echo @(@.imp.json.dumps({'pid': @.imp.os.getpid()}))\n"
+"echo @(@.imp.platform.system())\n"
+"\n"
+"# Pipe a Python value into a subprocess\n"
+"echo @(@.imp.uuid.uuid4()) | tr - _\n"
+"\n"
+"# Handy for startup aliases — no upfront import needed\n"
+"aliases['epoch'] = lambda args: print(int(@.imp.time.time()))"
+msgstr ""
+
+#: ../../../xonsh_session.rst:124
+msgid ""
+"For repeated use of the same module, a regular ``import`` is faster and "
+"clearer; ``@.imp`` is for ad-hoc, one-shot calls where adding an ``import`` "
+"would just be noise."
+msgstr ""
+
+#: ../../../xonsh_session.rst:129
+msgid "``@.lastcmd`` — last command pipeline"
+msgstr ""
+
+#: ../../../xonsh_session.rst:131
+msgid ""
+"``@.lastcmd`` is the :class:`xonsh.procs.pipelines.CommandPipeline` of the "
+"most recently completed subprocess-mode command. It is updated every time "
+"you run a subprocess (``ls``, ``$(...)``, ``![...]``, etc.)."
+msgstr ""
+
+#: ../../../xonsh_session.rst:137
+msgid ""
+"ls /nope\n"
+"print('exit:', @.lastcmd.rtn)        # exit code\n"
+"print('stdout:', @.lastcmd.output)   # captured stdout (if any)\n"
+"print('stderr:', @.lastcmd.errors)   # captured stderr (if any)\n"
+"print('args:',   @.lastcmd.args)     # the parsed command list\n"
+"print('alias:',  @.lastcmd.alias)    # alias resolved (if any)\n"
+"\n"
+"# Build a \"fail fast\" wrapper in a script\n"
+"git pull\n"
+"if @.lastcmd.rtn != 0:\n"
+"    raise SystemExit('git pull failed')"
+msgstr ""
+
+#: ../../../xonsh_session.rst:154
+msgid "``XonshSession`` — the internal session"
+msgstr ""
+
+#: ../../../xonsh_session.rst:156
+msgid ""
+"``XonshSession`` is the *full* container that xonsh builds at startup. It is "
+"reachable in two equivalent ways:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:159
+msgid ""
+"``__xonsh__`` — bound into ``builtins`` when the session loads, so every "
+"executed scope sees it as a global."
+msgstr ""
+
+#: ../../../xonsh_session.rst:161
+msgid "``xonsh.built_ins.XSH`` — the canonical module-level singleton."
+msgstr ""
+
+#: ../../../xonsh_session.rst:165
+msgid ""
+"Most attributes here are internal. They are exposed because xonsh needs them "
+"to talk to itself, but they are **not** part of the stable API. Anything in :"
+"class:`XonshSessionInterface` (the ``@`` shortcut) is meant to outlive "
+"releases; everything else here may change. Prefer ``@.<x>`` or ``XSH."
+"interface`` whenever an equivalent exists."
+msgstr ""
+
+#: ../../../xonsh_session.rst:172
+msgid "Useful fields"
+msgstr ""
+
+#: ../../../xonsh_session.rst:174
+msgid ""
+"The following attributes are the most commonly used by hooks, completers, "
+"and :doc:`xonsh RC <xonshrc>` automation. They are listed roughly in the "
+"order you are likely to need them."
+msgstr ""
+
+#: ../../../xonsh_session.rst:178
+msgid ""
+"``__xonsh__.env`` — same :class:`xonsh.environ.Env` as ``@.env``; populated "
+"by :meth:`XonshSession.load`."
+msgstr ""
+
+#: ../../../xonsh_session.rst:181
+msgid "``__xonsh__.history`` — same as ``@.history``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:183
+msgid ""
+"``__xonsh__.aliases`` — the live :class:`xonsh.aliases.Aliases` mapping. "
+"Setting ``__xonsh__.aliases['ll'] = 'ls -la'`` from your :doc:`xonsh RC "
+"<xonshrc>` is the canonical way to define an alias. The property delegates "
+"to ``commands_cache.aliases`` and is read-only on the session itself; mutate "
+"the mapping in place."
+msgstr ""
+
+#: ../../../xonsh_session.rst:189
+msgid ""
+"``__xonsh__.completers`` — ``OrderedDict`` of registered completer "
+"callables. Lazily initialized on first access. Modify with the ``completer`` "
+"command or by mutating the dict directly."
+msgstr ""
+
+#: ../../../xonsh_session.rst:193
+msgid ""
+"``__xonsh__.shell`` — the active shell wrapper (:class:`xonsh.shell.Shell`). "
+"The concrete implementation is in ``__xonsh__.shell.shell`` "
+"(``PromptToolkitShell``, ``ReadlineShell`` or ``DumbShell``). Use this when "
+"you need to call a shell-specific method like ``print_color``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:199
+msgid ""
+"``__xonsh__.execer`` — the :class:`xonsh.execer.Execer`, which parses, "
+"compiles, and runs xonsh source. Use ``execer.exec(src)`` / ``execer."
+"eval(src)`` to evaluate xonsh code from inside Python."
+msgstr ""
+
+#: ../../../xonsh_session.rst:203
+msgid ""
+"``__xonsh__.builtins`` — a ``SimpleNamespace`` containing the xonsh-injected "
+"builtins: ``XonshError``, ``XonshCalledProcessError``, ``evalx``, ``execx``, "
+"``compilex``, ``events``, ``print_color``, ``printx``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:208
+msgid ""
+"``__xonsh__.ctx`` — the global Python context dict that all xonsh user code "
+"runs against. Equivalent to ``globals()`` for the REPL. Useful for "
+"completers and hooks that want to inspect what the user has defined."
+msgstr ""
+
+#: ../../../xonsh_session.rst:213
+msgid ""
+"``__xonsh__.all_jobs`` — dict of background jobs keyed by job id. See "
+"``jobs``, ``fg``, ``bg``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:216
+msgid "``__xonsh__.lastcmd`` — same as ``@.lastcmd``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:218
+msgid ""
+"``__xonsh__.sessionid`` — UUID of the current session, used in history "
+"filenames and similar."
+msgstr ""
+
+#: ../../../xonsh_session.rst:221
+msgid ""
+"``__xonsh__.rc_files`` — list of :doc:`xonsh RC <xonshrc>` files actually "
+"loaded."
+msgstr ""
+
+#: ../../../xonsh_session.rst:223
+msgid ""
+"``__xonsh__.builtins.events`` — the :class:`xonsh.events.events` registry; "
+"how you subscribe to ``on_postcommand``, ``on_pre_prompt``, ``on_chdir`` and "
+"friends."
+msgstr ""
+
+#: ../../../xonsh_session.rst:227
+msgid ""
+"``__xonsh__.exit`` — set this to an integer from anywhere to ask xonsh to "
+"exit on the next loop iteration with that return code."
+msgstr ""
+
+#: ../../../xonsh_session.rst:232
+msgid "Lifecycle and helpers"
+msgstr ""
+
+#: ../../../xonsh_session.rst:234
+msgid ""
+"These are the methods you call when *embedding* xonsh, hot-reloading the "
+"session in tests, or writing tooling that wraps it:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:237
+msgid ""
+"``load(execer=None, ctx=None, inherit_env=True, **kwargs)`` — fully "
+"initialize the session: build the env, install builtins into Python, hook "
+"``atexit`` for history flush, install signal handlers. Called by ``main."
+"main_xonsh`` once at startup."
+msgstr ""
+
+#: ../../../xonsh_session.rst:241
+msgid ""
+"``unload()`` — reverse of ``load``: undo env replacement, restore Python's "
+"``exit``/``quit``, flush history, remove ``__xonsh__`` from builtins."
+msgstr ""
+
+#: ../../../xonsh_session.rst:244
+msgid ""
+"``link_builtins()`` / ``unlink_builtins()`` — rebind the proxy builtins "
+"(``XonshError``, ``events``, etc.) into Python's ``builtins`` namespace. "
+"Used internally by ``load``/``unload``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:247
+msgid ""
+"``cmd(*args, **kwargs)`` — return a :class:`xonsh.built_ins.Cmd` *builder* "
+"that lets you compose a subprocess pipeline programmatically before "
+"dispatching it. See the next section."
+msgstr ""
+
+#: ../../../xonsh_session.rst:252
+msgid ""
+"Subprocess dispatchers — how ``$()``, ``!()``, ``$[]``, ``![]`` map to Python"
+msgstr ""
+
+#: ../../../xonsh_session.rst:254
+msgid ""
+"Every subprocess-mode operator in xonsh is a thin parser sugar around a "
+"``XonshSession.subproc_*`` method. Knowing the mapping is what lets you "
+"*construct commands programmatically* (for example from a list of arguments) "
+"and still get exactly the same semantics as the literal form."
+msgstr ""
+
+#: ../../../xonsh_session.rst:263
+msgid "Syntax"
+msgstr ""
+
+#: ../../../xonsh_session.rst:264
+msgid "Method"
+msgstr ""
+
+#: ../../../xonsh_session.rst:265
+msgid "Returns"
+msgstr ""
+
+#: ../../../xonsh_session.rst:266
+msgid "Use it when"
+msgstr ""
+
+#: ../../../xonsh_session.rst:267
+msgid "``$(cmd)``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:268
+msgid "``__xonsh__.subproc_captured_stdout``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:269
+msgid ""
+"``str`` (or ``list[str]`` if ``$XONSH_SUBPROC_OUTPUT_FORMAT='list_lines'``)"
+msgstr ""
+
+#: ../../../xonsh_session.rst:270
+msgid ""
+"You only want the captured **stdout** as a value to assign, interpolate, or "
+"pass on."
+msgstr ""
+
+#: ../../../xonsh_session.rst:272
+msgid "``!(cmd)``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:273
+msgid "``__xonsh__.subproc_captured_object``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:274
+msgid ":class:`xonsh.procs.pipelines.CommandPipeline`"
+msgstr ""
+
+#: ../../../xonsh_session.rst:275
+msgid ""
+"You want the **whole result object**: exit code, stdout, stderr, timing, "
+"alias info. Truthy iff ``rtn == 0``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:277
+msgid "``$[cmd]``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:278
+msgid "``__xonsh__.subproc_uncaptured``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:279
+msgid "``None``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:280
+msgid ""
+"You want output to go straight to the **terminal** with no capture. The "
+"\"just run it\" form."
+msgstr ""
+
+#: ../../../xonsh_session.rst:282
+msgid "``![cmd]``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:283
+msgid "``__xonsh__.subproc_captured_hiddenobject``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:284
+msgid ":class:`xonsh.procs.pipelines.HiddenCommandPipeline`"
+msgstr ""
+
+#: ../../../xonsh_session.rst:285
+msgid ""
+"Like ``!()`` but the object's ``repr`` does **not** dump the captured output "
+"to the screen. Useful inside hooks/scripts."
+msgstr ""
+
+#: ../../../xonsh_session.rst:287
+msgid "``@$(cmd)``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:288
+msgid "``__xonsh__.subproc_captured_inject``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:289
+msgid "``list[str]``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:290
+msgid ""
+"You want the captured stdout split via xonsh's lexer (so it respects "
+"quoting) and spliced as **arguments** into another command."
+msgstr ""
+
+#: ../../../xonsh_session.rst:294
+msgid "All of these forms accept the same ``cmds`` shape:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:296
+msgid ""
+"``cmds`` is a list of \"commands\", each command being a list of argument "
+"strings/tuples."
+msgstr ""
+
+#: ../../../xonsh_session.rst:298
+msgid "Multiple commands separated by ``\"|\"`` form a pipe."
+msgstr ""
+
+#: ../../../xonsh_session.rst:299
+msgid "A trailing ``\"&\"`` runs the pipeline in the background."
+msgstr ""
+
+#: ../../../xonsh_session.rst:301
+msgid ""
+"So ``$(ls -la | grep .py)`` becomes ``subproc_captured_stdout(['ls', '-la'], "
+"'|', ['grep', '.py'])``."
+msgstr ""
+
+#: ../../../xonsh_session.rst:304
+msgid ""
+"This is exactly what the :class:`xonsh.built_ins.Cmd` builder produces, "
+"which is why you can write the same pipeline two ways:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:307
+msgid ""
+"# As literal subprocess sugar\n"
+"out = $(git log --oneline -5 | head -3)\n"
+"\n"
+"# Or built explicitly via the Cmd helper\n"
+"out = (\n"
+"    @.imp.xonsh.built_ins\n"
+"    .Cmd(__xonsh__, 'git', 'log', '--oneline', '-5')\n"
+"    .pipe('head', '-3')\n"
+"    .out()    # dispatches to subproc_captured_stdout\n"
+")"
+msgstr ""
+
+#: ../../../xonsh_session.rst:320
+msgid "Other dispatch helpers on the builder map 1:1 to the table above:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:322
+msgid "``Cmd.out()``  → ``$()``  (``subproc_captured_stdout``)"
+msgstr ""
+
+#: ../../../xonsh_session.rst:323
+msgid "``Cmd.run()``  → ``$[]``  (``subproc_uncaptured``)"
+msgstr ""
+
+#: ../../../xonsh_session.rst:324
+msgid "``Cmd.obj()``  → ``!()``  (``subproc_captured_object``)"
+msgstr ""
+
+#: ../../../xonsh_session.rst:325
+msgid "``Cmd.hide()`` → ``![]``  (``subproc_captured_hiddenobject``)"
+msgstr ""
+
+#: ../../../xonsh_session.rst:327
+msgid ""
+"Use the literal forms in interactive code, and the dispatcher / builder API "
+"when the command list is **dynamic** — for example built from user input, "
+"generated in a loop, or driven by config."
+msgstr ""
+
+#: ../../../xonsh_session.rst:332
+msgid "Other AST-invoked helpers"
+msgstr ""
+
+#: ../../../xonsh_session.rst:334
+msgid ""
+"A few more attributes on ``__xonsh__`` exist because xonsh's parser rewrites "
+"special syntax into calls on them. You normally do not call these directly, "
+"but it is useful to know they are there:"
+msgstr ""
+
+#: ../../../xonsh_session.rst:338
+msgid ""
+"``pathsearch`` / ``globsearch`` / ``regexsearch`` / ``regexmatchsearch`` — "
+"implement backtick expressions (```regex```, ``g`glob```, etc.) and ``$VAR`` "
+"glob expansion."
+msgstr ""
+
+#: ../../../xonsh_session.rst:341
+msgid "``glob`` — wrapper used by glob expansion in subproc mode."
+msgstr ""
+
+#: ../../../xonsh_session.rst:342
+msgid "``expand_path`` — applied to bare path arguments."
+msgstr ""
+
+#: ../../../xonsh_session.rst:343
+msgid ""
+"``call_macro`` / ``enter_macro`` — power xonsh **macro** calls (``f!(...)``) "
+"and macro context managers."
+msgstr ""
+
+#: ../../../xonsh_session.rst:345
+msgid "``path_literal`` — backs the ``p\"...\"`` Path literal syntax."
+msgstr ""
+
+#: ../../../xonsh_session.rst:346
+msgid ""
+"``help`` / ``superhelp`` — back ``obj?`` and ``obj??`` for Python objects "
+"(the subproc-mode counterparts live in ``xonsh.procs.specs`` and ``xonsh."
+"aliases.print_alias_help``)."
+msgstr ""
+
+#: ../../../xonsh_session.rst:349
+msgid "``eval_fstring_field`` — backs xonsh's f-string field evaluation."
+msgstr ""
+
+#: ../../../xonsh_session.rst:350
+msgid ""
+"``list_of_strs_or_callables`` / ``list_of_list_of_strs_outer_product`` — "
+"flatten the heterogeneous argument lists xonsh's parser produces before "
+"dispatching to subproc."
+msgstr ""
+
+#: ../../../xonsh_session.rst:355
+msgid ""
+"When in doubt, prefer ``@.<x>`` (``XSH.interface``) for the four stable bits "
+"of the API, and treat everything on ``__xonsh__`` as power-user territory "
+"that should be guarded with try/except and feature checks."
+msgstr ""
+
+#: ../../../xonsh_session.rst:361
+msgid "See also"
+msgstr ""
+
+#: ../../../xonsh_session.rst:363
+msgid ":doc:`env` -- environment variables and ``@.env``"
+msgstr ""
+
+#: ../../../xonsh_session.rst:364
+msgid ":doc:`subprocess` -- subprocess operators backed by session attributes"
+msgstr ""
+
+#: ../../../xonsh_session.rst:365
+msgid ":doc:`aliases` -- ``@.aliases`` and alias management"
+msgstr ""
+
+#: ../../../xonsh_session.rst:366
+msgid ":doc:`events` -- event system and handler registration"
+msgstr ""

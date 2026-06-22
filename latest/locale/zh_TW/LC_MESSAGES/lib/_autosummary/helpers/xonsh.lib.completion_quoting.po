@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.completion_quoting.rst:2
+msgid "xonsh.lib.completion\\_quoting"
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting:1
+msgid ""
+"Shared helper for deciding whether a completion candidate needs shell-"
+"quoting in xonsh."
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting:4
+msgid ""
+"Used by both the built-in path completer (:mod:`xonsh.completers.path`) and "
+"the bash-completion bridge (:mod:`xonsh.completers.bash_completion`), which "
+"historically carried near-identical copies of this regex that drifted over "
+"time."
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting:9
+msgid ""
+"Pure-Python, no side effects on import — safe for standalone use, as :mod:"
+"`xonsh.completers.bash_completion` requires."
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:2
+msgid ""
+"Return True if *name* would be mangled by the xonsh parser and therefore "
+"needs to be wrapped in quotes when emitted as a completion."
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:8
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:9
+msgid "The candidate completion string (a path, an executable name, …)."
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:11
+msgid "**sep**"
+msgstr ""
+
+#: ../../../../xonsh/lib/completion_quoting.py:docstring of
+#: xonsh.lib.completion_quoting.name_needs_quotes:12
+msgid ""
+"The path separator the caller treats as safe (``os.sep`` on POSIX, ``os."
+"altsep`` in forced-POSIX mode on Windows). When a backslash appears in "
+"*name* but *sep* is not backslash, the backslash is a shell metacharacter "
+"and forces quoting. Defaults to :data:`os.sep`."
+msgstr ""

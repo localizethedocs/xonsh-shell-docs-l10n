@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.click.rst:2
+msgid "xonsh.completers.click"
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:1
+msgid ""
+"Tab-completion for click-based aliases registered via :func:`xonsh.aliases."
+"Aliases.register_click_command`."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:4
+msgid ""
+"The entry point is :func:`complete_click`, bound per-alias through "
+"``functools.partial(complete_click, click_cmd)`` and attached to the alias "
+"wrapper as ``xonsh_complete``. The stock alias completer (``xonsh.completers."
+"_aliases.complete_aliases``) then picks it up from ``alias.func."
+"xonsh_complete`` during normal tab completion."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:10
+msgid ""
+"The ``click`` package is imported lazily — this module is only exercised "
+"once a click alias has been registered, which itself requires click to be "
+"installed."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:2
+msgid "Tab-completer for click-based aliases."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:4
+msgid "Yields completions for, in priority order:"
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:6
+msgid ""
+"Option values when the preceding token is an option with a ``click.Choice`` "
+"type (``--color <TAB>`` → ``red green blue``)."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:8
+msgid ""
+"Option flags when the prefix starts with ``-`` (``--nam<TAB>`` → ``--name``)."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:10
+msgid "Sub-command names when the current command is a ``click.Group``."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:11
+msgid "Positional arguments with a ``click.Choice`` type."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.complete_click:13
+msgid ""
+"Bound per-alias via :func:`functools.partial` in :func:`xonsh.aliases."
+"_click_command_alias`, so each wrapper captures its own ``click.Command`` "
+"instance."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.option_all_opts:2
+msgid ""
+"Every flag string declared on a ``click.Option`` — primary + secondary. "
+"``secondary_opts`` holds the off-switch of flag pairs like ``--verbose/--"
+"quiet``."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.option_takes_value:2
+msgid ""
+"``True`` if the option consumes a separate argument as its value. Flags (``--"
+"verbose``) and count options (``-vvv``) do not."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.positional_index:2
+msgid ""
+"Count how many positional arguments have been supplied to ``current_cmd`` so "
+"far, skipping options and their values. Used to pick which ``click."
+"Argument`` slot we're completing into."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.previous_option_waiting_value:2
+msgid ""
+"If the last token is an option expecting a value, return that ``click."
+"Option``; otherwise ``None``. Used to drive Choice completion after things "
+"like ``--color <TAB>``."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.resolve_subcommand:2
+msgid "Walk ``click.Group`` → sub-command chain consuming positional tokens."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.resolve_subcommand:4
+msgid ""
+"Returns ``(current_cmd, remaining_args)`` where ``remaining_args`` is the "
+"slice of ``args`` belonging to ``current_cmd`` (i.e. everything after the "
+"last recognised sub-command name)."
+msgstr ""
+
+#: ../../../../xonsh/completers/click.py:docstring of
+#: xonsh.completers.click.resolve_subcommand:8
+msgid ""
+"Options are skipped when they appear before the sub-command name — the few "
+"that take a separate value consume the next token as well. An unknown sub-"
+"command stops the walk, so the completer can still offer ``--`` options on "
+"the outermost unresolved command."
+msgstr ""

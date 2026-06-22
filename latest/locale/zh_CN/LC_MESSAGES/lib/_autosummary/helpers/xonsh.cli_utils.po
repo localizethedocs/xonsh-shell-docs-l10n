@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.cli_utils.rst:2
+msgid "xonsh.cli\\_utils"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils:1
+msgid "helper functions and classes to create argparse CLI from functions."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils:3
+#: xonsh.cli_utils.ArgParserAlias:21
+msgid "Examples"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils:4
+msgid "please see :py:class:`xonsh.completers.completer.CompleterAlias` class"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.ArgParser:2
+msgid "Sub-class of ArgumentParser with special methods to nest commands"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:2
+msgid "create a sub-parser and call this function during dispatch"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:0 xonsh.cli_utils.NumpyDoc:0
+#: xonsh.cli_utils.dispatch:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:7 xonsh.cli_utils.NumpyDoc:28
+msgid "**func**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:8
+msgid ""
+"a type-annotated function that will be used to create ArgumentParser "
+"instance. All parameters that start with ``_`` will not be added to parser "
+"arguments. Use _stdout, _stack ... to receive them from callable-alias/"
+"commands. Use _parser to get the generated parser instance. Use _args to get "
+"what is passed from sys.argv Use _parsed to get result of ``parser."
+"parse_args``"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:15
+msgid "**default**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:16
+msgid "Marks this sub-command as the default command for this parser."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:18 xonsh.cli_utils.dispatch:10
+msgid "**args**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:19
+msgid ""
+"if given only add these arguments to the parser. Otherwise all parameters to "
+"the function without `_` prefixed in their name gets added to the parser."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:23
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:24
+msgid "passed to ``subparser.add_parser`` call"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParser.add_command:30
+msgid "result from ``subparser.add_parser``"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of argparse.ArgumentParser.error:2
+msgid "Prints a usage message incorporating the message to stderr and exits."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of argparse.ArgumentParser.error:5
+msgid ""
+"If you override this in a subclass, it should not return -- it should either "
+"exit or raise an exception."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.ArgParserAlias:2
+msgid "Provides a structure to the Alias. The parser is lazily loaded."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.ArgParserAlias:4
+msgid ""
+"can help create ``argparse.ArgumentParser`` parser from function signature "
+"and dispatch the functions."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias:22
+msgid "For usage please check :py:mod:`xonsh.completers.completer`"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgparseCompleter:2
+msgid "A completer function for ArgParserAlias commands"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgparseCompleter.get_parser:2
+msgid "Check for sub-parsers"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgparseCompleter.filled:2
+msgid "Consume remaining_args for the given action"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.NumpyDoc:2
+msgid "Represent parsed function docstring"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.NumpyDoc:23
+msgid "Parse the function docstring and return its help content"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.NumpyDoc:29
+msgid "a callable/object that holds docstring"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.add_args:2
+msgid "Using the function's annotation add arguments to the parser"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.add_args:4
+msgid "basically converts ``def fn(param : Arg(*args, **kw), ...): ...``"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.add_args:5
+msgid "-> into equivalent ``parser.add_argument(*args, *kw)`` call."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:2
+msgid "Call the underlying function with arguments parsed from sys.argv"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:7
+msgid "**parser**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:8
+msgid "root parser"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:11
+msgid "sys.argv as parsed by Alias"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:13
+msgid "**lenient**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:14
+msgid ""
+"if True, then use parser_know_args and pass the extra arguments as "
+"`_unparsed`"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:16
+msgid "**ns**"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.dispatch:17
+msgid "a dict that will be passed to underlying function"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of xonsh.cli_utils.make_parser:2
+msgid "A bare-bones argparse builder from functions"
+msgstr ""

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../links.rst:6
+msgid "Helpful Links"
+msgstr ""
+
+#: ../../../links.rst:8
+msgid ""
+"`GitHub Repository <https://github.com/xonsh/xonsh>`_: `releases <https://"
+"github.com/xonsh/xonsh/releases>`_, `changelog <https://github.com/xonsh/"
+"xonsh/blob/main/CHANGELOG.rst>`_"
+msgstr ""
+
+#: ../../../links.rst:9
+msgid ""
+"GitHub topics: `xonsh <https://github.com/topics/xonsh>`_ and `xontrib "
+"<https://github.com/topics/xontrib>`_"
+msgstr ""
+
+#: ../../../links.rst:10
+msgid "`DockerHub images <https://hub.docker.com/u/xonsh>`_"
+msgstr ""
+
+#: ../../../links.rst:11
+msgid ""
+"`Cookiecutter template to creating xontribs <https://github.com/xonsh/"
+"xontrib-cookiecutter>`_"
+msgstr ""
+
+#: ../../../links.rst:12
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../../links.rst:13
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../../links.rst:14
+msgid ":ref:`search`"
+msgstr ""
+
+#: ../../../links.rst:16
+msgid ""
+"<a href=\"https://github.com/xonsh/xonsh\" class='github-fork-ribbon' "
+"title='Fork me on GitHub'>Fork me on GitHub</a>\n"
+"\n"
+"<style>\n"
+"/*!\n"
+" * Adapted from\n"
+" * \"Fork me on GitHub\" CSS ribbon v0.2.0 | MIT License\n"
+" * https://github.com/simonwhitaker/github-fork-ribbon-css\n"
+" */\n"
+"\n"
+".github-fork-ribbon, .github-fork-ribbon:hover, .github-fork-ribbon:hover:"
+"active {\n"
+"  background:none;\n"
+"  left: inherit;\n"
+"  width: 12.1em;\n"
+"  height: 12.1em;\n"
+"  position: absolute;\n"
+"  overflow: hidden;\n"
+"  top: 0;\n"
+"  right: 0;\n"
+"  z-index: 9999;\n"
+"  pointer-events: none;\n"
+"  text-decoration: none;\n"
+"  text-indent: -999999px;\n"
+"}\n"
+"\n"
+".github-fork-ribbon:before, .github-fork-ribbon:after {\n"
+"  /* The right and left classes determine the side we attach our banner to "
+"*/\n"
+"  position: absolute;\n"
+"  display: block;\n"
+"  width: 15.38em;\n"
+"  height: 1.54em;\n"
+"  top: 3.23em;\n"
+"  right: -3.23em;\n"
+"  box-sizing: content-box;\n"
+"  transform: rotate(45deg);\n"
+"}\n"
+"\n"
+".github-fork-ribbon:before {\n"
+"  content: \"\";\n"
+"  padding: .38em 0;\n"
+"  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, "
+"0, 0.1));\n"
+"  box-shadow: 0 0.07em 0.4em 0 rgba(0, 0, 0, 0.3);\n"
+"  pointer-events: auto;\n"
+"}\n"
+"\n"
+".github-fork-ribbon:after {\n"
+"  content: attr(title);\n"
+"  color: #000;\n"
+"  font: 700 1em \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n"
+"  line-height: 1.54em;\n"
+"  text-decoration: none;\n"
+"  text-align: center;\n"
+"  text-indent: 0;\n"
+"  padding: .15em 0;\n"
+"  margin: .15em 0;\n"
+"  border-width: .08em 0;\n"
+"  border-style: dotted;\n"
+"  border-color: #777;\n"
+"}\n"
+"\n"
+"</style>"
+msgstr ""

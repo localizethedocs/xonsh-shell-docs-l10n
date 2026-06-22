@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../appimage.rst:2
+msgid "AppImage"
+msgstr ""
+
+#: ../../../appimage.rst:4
+msgid ""
+"`AppImage <https://appimage.org/>`_ is a format for distributing portable "
+"software on Linux without needing superuser permissions to install the "
+"application. It tries also to allow Linux distribution-agnostic binary "
+"software deployment for application developers, also called Upstream "
+"packaging."
+msgstr ""
+
+#: ../../../appimage.rst:6
+msgid ""
+"In short the AppImage is one executable file which contains both xonsh and "
+"Python. AppImage allows xonsh to be run on any AppImage supported Linux "
+"distribution without installation or root access."
+msgstr ""
+
+#: ../../../appimage.rst:9
+msgid "Get AppImage from Github"
+msgstr ""
+
+#: ../../../appimage.rst:10
+msgid ""
+"You can get the xonsh AppImage from GitHub and run it on your Linux machine "
+"without installing it:"
+msgstr ""
+
+#: ../../../appimage.rst:12
+msgid ""
+"wget https://github.com/xonsh/xonsh/releases/latest/download/xonsh-x86_64."
+"AppImage -O xonsh\n"
+"chmod +x xonsh\n"
+"./xonsh"
+msgstr ""
+
+#: ../../../appimage.rst:18
+msgid ""
+"If you don't have Python on your host, you may want to get it from AppImage:"
+msgstr ""
+
+#: ../../../appimage.rst:20
+msgid ""
+"./xonsh\n"
+"$PATH = [f'{$APPDIR}/usr/bin'] + $PATH\n"
+"python -m pip install tqdm --user  # the package will be installed to ~/."
+"local/\n"
+"import tqdm"
+msgstr ""
+
+#: ../../../appimage.rst:28
+msgid "Extracting and running from a directory"
+msgstr ""
+
+#: ../../../appimage.rst:30
+msgid ""
+"An AppImage can be extracted to a regular directory.  This is useful when "
+"FUSE is not available (Docker containers, WSL1, older kernels) or when you "
+"want to install pip packages directly into the extracted directory:"
+msgstr ""
+
+#: ../../../appimage.rst:34
+msgid ""
+"./xonsh-x86_64.AppImage --appimage-extract   # creates squashfs-root/\n"
+"squashfs-root/AppRun                          # run xonsh from the extracted "
+"dir"
+msgstr ""
+
+#: ../../../appimage.rst:39
+msgid ""
+"The extracted ``squashfs-root/`` directory is fully self-contained.  You can "
+"rename or move it anywhere:"
+msgstr ""
+
+#: ../../../appimage.rst:42
+msgid ""
+"mv squashfs-root ~/.local/xonsh-app\n"
+"~/.local/xonsh-app/AppRun"
+msgstr ""
+
+#: ../../../appimage.rst:47
+msgid ""
+"To use the bundled Python directly (e.g. to install packages or run scripts):"
+msgstr ""
+
+#: ../../../appimage.rst:49
+msgid ""
+"export APPDIR=~/.local/xonsh-app\n"
+"$APPDIR/usr/bin/python3 -m pip install tqdm --user\n"
+"$APPDIR/usr/bin/python3 my_script.py"
+msgstr ""
+
+#: ../../../appimage.rst:55
+msgid "Or from inside the extracted xonsh session:"
+msgstr ""
+
+#: ../../../appimage.rst:57
+msgid ""
+"@ ~/.local/xonsh-app/AppRun\n"
+"@ $PATH = [f'{$APPDIR}/usr/bin'] + $PATH\n"
+"@ python --version   # bundled Python\n"
+"@ xpip install rich  # install into ~/.local/"
+msgstr ""
+
+#: ../../../appimage.rst:66
+msgid "Building your own xonsh AppImage"
+msgstr ""
+
+#: ../../../appimage.rst:68
+msgid ""
+"The best way to build xonsh AppImage in 5 minutes is to using `python-"
+"appimage <https://github.com/niess/python-appimage>`_:"
+msgstr ""
+
+#: ../../../appimage.rst:70
+msgid ""
+"mkdir -p /tmp/build && cd /tmp/build\n"
+"git clone --depth 1 https://github.com/xonsh/xonsh\n"
+"cd xonsh/appimage\n"
+"echo 'xonsh' > requirements.txt\n"
+"cat pre-requirements.txt >> requirements.txt  # here you can add your "
+"additional PyPi packages to pack them into AppImage\n"
+"cd ..\n"
+"pip install git+https://github.com/niess/python-appimage\n"
+"python -m python_appimage build app ./appimage\n"
+"./xonsh-x86_64.AppImage"
+msgstr ""
+
+#: ../../../appimage.rst:83
+msgid "Links"
+msgstr ""
+
+#: ../../../appimage.rst:85
+msgid ""
+"`How to run xonsh AppImage on Alpine? <https://github.com/xonsh/xonsh/"
+"discussions/4158>`_"
+msgstr ""

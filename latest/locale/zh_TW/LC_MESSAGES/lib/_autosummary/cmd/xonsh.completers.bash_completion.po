@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.bash_completion.rst:2
+msgid "xonsh.completers.bash\\_completion"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion:1
+msgid ""
+"This module provides the implementation for the retrieving completion "
+"results from bash."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:2
+msgid "Provides the completion from the end of the line."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:0
+#: xonsh.completers.bash_completion.bash_completions:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:7
+#: xonsh.completers.bash_completion.bash_completions:10
+msgid "**line**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:-1
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:8
+msgid "Line to complete"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:10
+msgid "**return_line**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:11
+msgid ""
+"If true (default), will return the entire line, with the completion added. "
+"If false, this will instead return the strings to append to the original "
+"line."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:14
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:-1
+msgid "optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:15
+msgid ""
+"All other keyword arguments are passed to the bash_completions() function."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:0
+#: xonsh.completers.bash_completion.bash_completions:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:21
+#: xonsh.completers.bash_completion.bash_completions:60
+msgid "**rtn**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:-1
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "set of str"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_complete_line:22
+#: xonsh.completers.bash_completion.bash_completions:61
+msgid "Possible completions of prefix"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:2
+msgid "Completes based on results from BASH completion."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:7
+msgid "**prefix**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:8
+msgid "The string to match"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:11
+msgid "The line that prefix appears on."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:13
+msgid "**begidx**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:14
+msgid "The index in line that prefix starts on."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:16
+msgid "**endidx**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:17
+msgid "The index in line that prefix ends on."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:19
+msgid "**env**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "Mapping, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:20
+msgid "The environment dict to execute the Bash subprocess in."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:22
+msgid "**paths**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "list or tuple of str or None, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:23
+msgid ""
+"This is a list (or tuple) of strings that specifies where the "
+"``bash_completion`` script and supplemental completion scripts may be found. "
+"The first valid ``bash_completion`` framework file will be used; non-"
+"framework files and files in directories are sourced after it. For better "
+"performance, bash-completion v2.x is recommended since it lazy-loads "
+"individual completion scripts. For both bash-completion v1.x and v2.x, paths "
+"of package-managed individual completion scripts (like ``.../completes/"
+"ssh``) do not need to be included here. The default values are platform "
+"dependent, but reasonable."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:33
+msgid "**command**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "str or None, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:34
+msgid ""
+"The /path/to/bash to use. If None, it will be selected based on the from the "
+"environment and platform."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:37
+msgid "**quote_paths**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "callable, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:38
+msgid ""
+"A functions that quotes file system paths. You shouldn't normally need this "
+"as the default is acceptable 99+% of the time. This function should return a "
+"set of the new paths and a boolean for whether the paths were quoted."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:43
+msgid "**line_args**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "list of str, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:44
+msgid ""
+"A list of the args in the current line to be used instead of ``line."
+"split()``. This is usefull with a space in an argument, e.g. ``ls 'a "
+"dir/'<TAB>``."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:47
+msgid "**opening_quote**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:48
+msgid ""
+"The current argument's opening quote. This is passed to the `quote_paths` "
+"function."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:50
+msgid "**closing_quote**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:51
+msgid ""
+"The closing quote that **should** be used. This is also passed to the "
+"`quote_paths` function."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:53
+msgid "**arg_index**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:-1
+msgid "int, optional"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:54
+msgid "The current prefix's index in the args."
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:63
+msgid "**lprefix**"
+msgstr ""
+
+#: ../../../../xonsh/completers/bash_completion.py:docstring of
+#: xonsh.completers.bash_completion.bash_completions:64
+msgid "Length of the prefix to be replaced in the completion."
+msgstr ""

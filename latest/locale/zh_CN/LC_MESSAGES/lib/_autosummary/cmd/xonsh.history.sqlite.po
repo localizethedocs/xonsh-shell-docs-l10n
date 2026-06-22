@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.sqlite.rst:2
+msgid "xonsh.history.sqlite"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of xonsh.history.sqlite:1
+msgid "Implements the xonsh history backend via sqlite3."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:2
+msgid "Xonsh history backend implemented with sqlite3."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:23
+msgid "Represents a xonsh session's history."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:0 xonsh.history.sqlite.SqliteHistory:0
+#: xonsh.history.sqlite.SqliteHistory.append:0
+#: xonsh.history.sqlite.SqliteHistory.run_gc:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:28
+msgid "**remember_history**"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:15
+#: xonsh.history.sqlite.SqliteHistory:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:29
+msgid ""
+"Сontrols whether entered commands are saved to the command history. If True, "
+"commands are saved; if False, command history is not kept."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:32
+msgid "**sessionid**"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:-1
+msgid "int, uuid, str, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory:33
+msgid "Current session identifier, will generate a new sessionid if not set."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.all_items:2
+msgid "Display all history items."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.append:2
+msgid "Append a command item into history."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:8
+#: xonsh.history.sqlite.SqliteHistory.append:7
+msgid "**cmd: dict**"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.append:8
+msgid ""
+"This dict contains information about the command that is to be added to the "
+"history list. It should contain the keys ``inp``, ``rtn`` and ``ts``. These "
+"key names mirror the same names defined as instance variables in the "
+"``HistoryEntry`` class."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.clear:2
+msgid "Clears the current session's history from both memory and disk."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.delete:2
+msgid "Deletes all entries in the database where the input matches a pattern."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.erasedups:2
+msgid "Remove duplicate commands, keeping only the latest occurrence."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.flush:2
+msgid "Flush the history items to disk from a buffer."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.info:2
+msgid "A collection of information about the shell history."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:0
+#: xonsh.history.sqlite.SqliteHistory.info:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.info:10
+msgid "dict or collections.OrderedDict"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.info:11
+msgid "Contains history information as str key pairs."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:2
+msgid ""
+"Determines if a history item should be added to the event history. Call this "
+"in your append method."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:9
+msgid ""
+"The prospective item to append (structure is the same as the append method)."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.base.History.is_ignored:16
+msgid "True if the item should be appended, False if not."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.items:2
+msgid "Display history items of current session."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.pull:2
+msgid "Pull history from other parallel sessions."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.run_gc:2
+msgid "Run the garbage collector."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.run_gc:7
+msgid "**size: None or tuple of a int and a string**"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.run_gc:8
+msgid "Determines the size and units of what would be allowed to remain."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.run_gc:10
+msgid "**blocking: bool**"
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistory.run_gc:11
+msgid "If set blocking, then wait until gc action finished."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC:2
+msgid "Shell history garbage collection."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC:23
+msgid "Thread responsible for garbage collecting old history."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC:25
+msgid "May wait for shell (and for xonshrc to have been loaded) to start work."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.getName:2
+msgid "Return a string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.getName:4
+#: threading.Thread.setName:4
+msgid "This method is deprecated, use the name attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.isDaemon:2
+msgid "Return whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.isDaemon:4
+msgid "This method is deprecated, use the daemon attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.is_alive:2
+msgid "Return whether the thread is alive."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.is_alive:4
+msgid ""
+"This method returns True just before the run() method starts until just "
+"after the run() method terminates. See also the module function enumerate()."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:2
+msgid "Wait until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:4
+msgid ""
+"This blocks the calling thread until the thread whose join() method is "
+"called terminates -- either normally or through an unhandled exception or "
+"until the optional timeout occurs."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:8
+msgid ""
+"When the timeout argument is present and not None, it should be a floating-"
+"point number specifying a timeout for the operation in seconds (or fractions "
+"thereof). As join() always returns None, you must call is_alive() after "
+"join() to decide whether a timeout happened -- if the thread is still alive, "
+"the join() call timed out."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:14
+msgid ""
+"When the timeout argument is not present or None, the operation will block "
+"until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:17
+msgid "A thread can be join()ed many times."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.join:19
+msgid ""
+"join() raises a RuntimeError if an attempt is made to join the current "
+"thread as that would cause a deadlock. It is also an error to join() a "
+"thread before it has been started and attempts to do so raises the same "
+"exception."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.run:2
+msgid "Method representing the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.run:4
+msgid ""
+"You may override this method in a subclass. The standard run() method "
+"invokes the callable object passed to the object's constructor as the target "
+"argument, if any, with sequential and keyword arguments taken from the args "
+"and kwargs arguments, respectively."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: threading.Thread.setDaemon:2
+msgid "Set whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: threading.Thread.setDaemon:4
+msgid "This method is deprecated, use the .daemon property instead."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.setName:2
+msgid "Set the name string for this thread."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.start:2
+msgid "Start the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.start:4
+msgid ""
+"It must be called at most once per thread object. It arranges for the "
+"object's run() method to be invoked in a separate thread of control."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of threading.Thread.start:7
+msgid ""
+"This method will raise a RuntimeError if called more than once on the same "
+"thread object."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.daemon:2
+msgid "A boolean value indicating whether this thread is a daemon thread."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.daemon:4
+msgid ""
+"This must be set before start() is called, otherwise RuntimeError is raised. "
+"Its initial value is inherited from the creating thread; the main thread is "
+"not a daemon thread and therefore all threads created in the main thread "
+"default to daemon = False."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.daemon:9
+msgid "The entire Python program exits when only daemon threads are left."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.ident:2
+msgid "Thread identifier of this thread or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.ident:4
+msgid ""
+"This is a nonzero integer. See the get_ident() function. Thread identifiers "
+"may be recycled when a thread exits and another thread is created. The "
+"identifier is available even after the thread has exited."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.name:2
+msgid "A string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.name:4
+msgid ""
+"It has no semantics. Multiple threads may be given the same name. The "
+"initial name is set by the constructor."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.native_id:2
+msgid ""
+"Native integral thread ID of this thread, or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.SqliteHistoryGC.native_id:4
+msgid ""
+"This is a non-negative integer. See the get_native_id() function. This "
+"represents the Thread ID as reported by the kernel."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.xh_sqlite_delete_input_matching:2
+msgid "Deletes entries from the database where the input matches a pattern."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.xh_sqlite_erasedups:2
+msgid "Remove duplicate commands, keeping only the latest occurrence of each."
+msgstr ""
+
+#: ../../../../xonsh/history/sqlite.py:docstring of
+#: xonsh.history.sqlite.xh_sqlite_wipe_session:2
+msgid "Wipe the current session's entries from the database."
+msgstr ""

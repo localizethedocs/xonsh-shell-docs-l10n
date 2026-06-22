@@ -1,0 +1,964 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.environ.rst:2
+msgid "xonsh.environ"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ:1
+msgid "Environment for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.AsyncPromptSetting:2
+msgid ""
+"Asynchronous Prompt Load ``$PROMPT`` in background without blocking read-"
+"eval loop."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.AutoCompletionSetting:2
+msgid "Tab-completion behavior."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.CacheSetting:2
+msgid "Cache Settings"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.ChangeDirSetting:2
+msgid "``cd`` Behavior"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.DeprecatedSetting:2
+msgid "Deprecated settings."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:2
+msgid ""
+"A xonsh environment, whose variables have limited typing. Most variables "
+"are, by default, strings. However, the following rules also apply based on "
+"variable-name:"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:6
+msgid "PATH: any variable whose name ends in PATH is a list of strings."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:7
+msgid "XONSH_HISTORY_SIZE: this variable is an (int | float, str) tuple."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:8
+msgid ""
+"LC_* (locale categories): locale category names get/set the Python locale "
+"via locale.getlocale() and locale.setlocale() functions."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:11
+msgid ""
+"An Env instance may be converted to an untyped version suitable for use in a "
+"subprocess."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env:32
+msgid "If no initial environment is given, os_environ is used."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:2
+msgid ""
+"Deregister an enviornment variable and all its type handling, default value, "
+"doc."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:0
+#: xonsh.environ.Env.register:0 xonsh.environ.EnvPath.add:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:8
+#: xonsh.environ.Env.register:8
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:-1
+#: xonsh.environ.Env.register:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:9
+msgid "Environment variable name to deregister. Typically all caps."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.detype:2
+msgid ""
+"Returns a dict of detyped variables. Note! If env variable wasn't explicitly "
+"set (e.g. the value has default value in ``Xettings``) it will be not in "
+"this list."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.detype_all:2
+msgid "Returns a dict of all available detyped env variables."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.detype_all:4
+msgid ""
+"Builds on top of detype() by adding default values for keys that weren't "
+"explicitly set."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get:2
+msgid ""
+"The environment will look up default values from its own defaults if a "
+"default is not given here."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_converter:2
+msgid "Gets a converter for the given key."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_default:2
+msgid "Gets default for the given key."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_detyper:2
+msgid "Gets a detyper for the given key."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_docs:2
+msgid "Gets the documentation for the environment variable."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_validator:2
+msgid "Gets a validator for the given key."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.help:2
+msgid "Get information about a specific environment variable."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.is_manually_set:2
+msgid "Checks if an environment variable has been manually set."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.pop:2
+msgid ""
+"value.  If key is not found, d is returned if given, otherwise KeyError is "
+"raised."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.rawkeys:2
+msgid ""
+"An iterator that returns all environment keys in their original form. This "
+"include string & compiled regular expression keys."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:2
+msgid ""
+"Register an enviornment variable with optional type handling, default value, "
+"doc."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:9
+msgid "Environment variable name to register. Typically all caps."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:11
+msgid "**type**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
+msgid "str, optional,  {'bool', 'str', 'path', 'env_path', 'int', 'float'}"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:12
+msgid ""
+"Variable type. If not one of the available presets, use `validate`, "
+"`convert`, and `detype` to specify type behavior."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:15
+#: xonsh.environ.Var:19
+msgid "**default**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
+msgid "optional"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:16
+msgid ""
+"Default value for variable. ``ValueError`` raised if type does not match "
+"that specified by `type` (or `validate`)."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:19
+#: xonsh.environ.Var:24
+msgid "**doc**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
+#: xonsh.environ.Var:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:20
+msgid ""
+"Docstring for variable. This description will be shown in the autocomplete "
+"menu (tab-completion)."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:23
+#: xonsh.environ.Var:9
+msgid "**validate**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
+msgid "func, optional"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:24
+msgid "Function to validate type."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:26
+#: xonsh.environ.Var:13
+msgid "**convert**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:27
+#: xonsh.environ.Var:14
+msgid "Function to convert variable from a string representation to its type."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:29
+#: xonsh.environ.Var:16
+msgid "**detype**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:30
+#: xonsh.environ.Var:17
+msgid "Function to convert variable from its type to a string representation."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:32
+#: xonsh.environ.Var:30
+msgid "**is_configurable**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
+#: xonsh.environ.Var:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:33
+#: xonsh.environ.Var:31
+msgid "Flag for whether the environment variable is configurable or not."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:35
+#: xonsh.environ.Var:27
+msgid "**doc_default**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:36
+#: xonsh.environ.Var:28
+msgid "Custom docstring for the default value for complex defaults."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:38
+#: xonsh.environ.Var:33
+msgid "**can_store_as_str**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:39
+#: xonsh.environ.Var:34
+msgid ""
+"Flag for whether the environment variable should be stored as a string. This "
+"is used when persisting a variable that is not JSON serializable to the "
+"config file. For example, sets, frozensets, and potentially other non-"
+"trivial data types. default, False."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.replace_env:2
+#: xonsh.environ.Env.undo_replace_env:2
+msgid ""
+"Replaces the contents of os_environ with a detyped version of the xonsh "
+"environment."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.set:2
+msgid ""
+"Set an environment variable and return the stored value. Used by ``$VAR := "
+"val``."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.swap:2
+msgid ""
+"Provides a context manager for temporarily swapping out certain environment "
+"variables with other values. On exit from the context manager, the original "
+"values are restored. The changes are only applied to the current thread, so "
+"that they don't leak between threads. To get the thread-local overrides use "
+"`get_swapped_values` and `set_swapped_values`."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.swap:8
+msgid ""
+"If ``overlay`` is provided (a dict), it is pushed as a thread-local overlay "
+"that shadows both swapped and global values on reads. Callable aliases use "
+"this to provide scoped ``env`` variables."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableMapping.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath:2
+msgid ""
+"A class that implements an environment path, which is a list of strings. "
+"Provides a custom method that expands all paths if the relevant env variable "
+"has been set."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:2
+msgid "Add a value to this EnvPath,"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:4
+msgid ""
+"path.add(data, front=bool, replace=bool) -> ensures that path contains data, "
+"with position determined by kwargs"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:8
+msgid "**data**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:-1
+msgid "string or bytes or pathlib.Path"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:9
+msgid "value to be added"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:11
+msgid "**front**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:12
+msgid ""
+"whether the value should be added to the front, will be ignored if the data "
+"already exists in this EnvPath and replace is False Default : False"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:17
+msgid "**replace**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:18
+msgid ""
+"If True, the value will be removed and added to the start or end(depending "
+"on the value of front) Default : False"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:26
+msgid "None"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.append:2
+msgid "S.append(value) -- append value to the end of the sequence"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableSequence.extend:2
+msgid ""
+"S.extend(iterable) -- extend sequence by appending elements from the iterable"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.abc.Sequence.index:2
+msgid "value.  Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.abc.Sequence.index:4
+msgid "Supporting start and stop arguments is optional, but recommended."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.insert:2
+msgid "S.insert(index, value) -- insert value before index"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableSequence.pop:2
+msgid "last).  Raise IndexError if list is empty or index is out of range."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.remove:2
+msgid ""
+"S.remove(value) -- remove first occurrence of value. Raise ValueError if the "
+"value is not present."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: collections.abc.MutableSequence.reverse:2
+msgid "S.reverse() -- reverse *IN PLACE*"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.paths:2
+msgid "Returns the list of directories that this EnvPath contains."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.ErrorHandlingSetting:2
+msgid "Error Handling Settings"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.GeneralSetting:2
+msgid "General"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.InternalEnvironDict:2
+msgid ""
+"A dictionary which supports thread-local overrides. There are two reasons we "
+"can't use ChainMap directly: 1. To use thread-local storage, we need to "
+"access the local().__dict__ directly each time to get the correct dict. 2. "
+"We want to set items to the local storage only if they were explicitly set "
+"there."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.InternalEnvironDict:26
+msgid ""
+"Initialize a ChainMap by setting *maps* to the given mappings. If no "
+"mappings are provided, a single empty dictionary is used."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.ChainMap.fromkeys:2
+msgid "Create a new ChainMap with keys from iterable and values set to value."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.ChainMap.clear:2
+msgid "Clear maps[0], leaving maps[1:] intact."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.ChainMap.copy:2
+msgid ""
+"New ChainMap or subclass with a new copy of maps[0] and refs to maps[1:]"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of collections.ChainMap.new_child:2
+msgid ""
+"New ChainMap with a new map followed by all previous maps. If no map is "
+"provided, an empty dict is used. Keyword arguments update the map or new "
+"empty dict."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.InternalEnvironDict.pop:2
+msgid ""
+"Remove *key* from maps[0] and return its value. Raise KeyError if *key* not "
+"in maps[0]."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.InternalEnvironDict.popitem:2
+msgid ""
+"Remove and return an item pair from maps[0]. Raise KeyError is maps[0] is "
+"empty."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.InternalEnvironDict.parents:2
+msgid "New ChainMap from maps[1:]."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.InterpreterSetting:2
+msgid "Interpreter Behavior"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.JobsSetting:2
+msgid "Jobs Settings"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LangSetting:2
+msgid "Language and locale settings."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LsColors:2
+msgid ""
+"Helps convert to/from ``$LS_COLORS`` format, respecting the xonsh color "
+"style. This accepts the same inputs as dict(). The special value ``target`` "
+"is replaced by no color, but sets a flag for cognizant application (see "
+"is_target())."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LsColors.convert:2
+msgid "Converts an object to LsColors, if needed."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.LsColors.fromdircolors:2
+msgid ""
+"Constructs an LsColors instance by running dircolors. If a filename is "
+"provided, it is passed down to the dircolors command."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.LsColors.fromstring:2
+msgid ""
+"Creates a new instance of the LsColors class from a colon-separated string "
+"of dircolor-valid keys to ANSI color escape sequences."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LsColors.detype:2
+msgid "De-types the instance, allowing it to be exported to the environment."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LsColors.is_target:2
+msgid "Return True if key is 'target'"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.LsColors.style:2
+msgid "The ANSI color style for the current XONSH_COLOR_STYLE"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.LsColors.style_name:2
+msgid "Current XONSH_COLOR_STYLE value"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.PTKCompletionSetting:2
+msgid "Prompt Toolkit tab-completion"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.PTKSetting:2
+msgid "Prompt Toolkit shell Only usable with ``$SHELL_TYPE=prompt_toolkit.``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.PromptHistorySetting:2
+msgid "Interactive Prompt History"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.PromptSetting:2
+msgid "Interactive Prompt"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.SubprocessSetting:2
+msgid "Subprocess Settings"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.SystemSetting:2
+msgid "System Environment Variables"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.SystemSetting:4
+msgid ""
+"Common, well-known variables inherited from the surrounding OS / shell "
+"(POSIX-standard and XDG Base Directory Specification). They are not xonsh-"
+"specific — xonsh only provides sensible defaults and lets scripts read/write "
+"them the same way any other shell would."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:2
+msgid ""
+"Named tuples whose elements represent environment variable validation, "
+"conversion, detyping; default values; and documentation."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:-1
+msgid "func"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:10
+msgid ""
+"Validator function returning a bool; checks that the variable is of the "
+"expected type."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:20
+msgid ""
+"Default value for variable. If set to DefaultNotGiven, raise KeyError "
+"instead of returning this default value.  Used for env vars defined outside "
+"of Xonsh."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:25
+msgid "The environment variable docstring."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:39
+msgid "**pattern**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:40
+msgid "a regex pattern to match for the given variable"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:42
+msgid "**sync**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:43
+msgid "The name of env variable for mirroring the setting."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:45
+msgid "**deprecated**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:46
+msgid "Show warning about deprecated variable in case of setting."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var:64
+msgid ""
+"Create new instance of Var(validate, convert, detype, default, doc, "
+"is_configurable, doc_default, can_store_as_str, pattern, sync, deprecated)"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.with_default:2
+msgid "fill arguments from the value of default"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Var.can_store_as_str:2
+msgid "Alias for field number 7"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.convert:2
+msgid "Alias for field number 1"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.default:2
+msgid "Alias for field number 3"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.deprecated:2
+msgid "Alias for field number 10"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.detype:2
+msgid "Alias for field number 2"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.doc:2
+msgid "Alias for field number 4"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.doc_default:2
+msgid "Alias for field number 6"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Var.is_configurable:2
+msgid "Alias for field number 5"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.pattern:2
+msgid "Alias for field number 8"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.sync:2
+msgid "Alias for field number 9"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Var.validate:2
+msgid "Alias for field number 0"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.VarPattern:2
+msgid "A pattern rule for dynamic env var typing."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.VarPattern:4
+msgid ""
+"When stored as the value of an env variable, any env var whose name matches "
+"``pattern`` will receive the type handling specified by ``var_type`` (a key "
+"in ``ENSURERS``, e.g. ``\"env_path\"``)."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.VarPattern:8
+msgid "Example::"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.VarPattern:10
+msgid "$XONSH_ENV_PATTERN_PATH = VarPattern(r\"\\w*PATH$\", \"env_path\")"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.VarPattern.to_var:2
+msgid "Return a Var with the type handling from ENSURERS."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.WindowsSetting:2
+msgid "Windows OS"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Xettings:2
+msgid ""
+"Parent class - All setting classes will be inheriting from this. The first "
+"line of those class's docstring will become the group's title. Rest of the "
+"docstring will become the description of that Group of settings."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.XontribSetting:2
+msgid "Xontrib Settings"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.default_completer_dirs:2
+msgid ""
+"By default, the following paths are searched. 1. ``$XONSH_CONFIG_DIR/"
+"completions`` - user level completions 2. ``$XONSH_SYS_CONFIG_DIR/"
+"completions`` - system level completions 3. ``$XONSH_DATA_DIR/"
+"generated_completions`` - auto generated completers from man pages 4. "
+"``$XDG_DATA_DIRS/xonsh/vendor_completions`` - completers from other programs "
+"can be placed here."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.default_completer_dirs:8
+msgid ""
+"Other than this, Python package namespace ``xompletions`` can be used to put "
+"completer modules as well."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_env:2
+msgid "Constructs a default xonsh environment."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_lscolors:2
+msgid "Gets a default instanse of LsColors"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.default_prompt_fields:2
+msgid "``xonsh.prompt.base.PromptFields``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_value:2
+msgid "Decorator for making callable default values."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_xonshrc:2
+msgid ""
+"``['$XONSH_SYS_CONFIG_DIR/xonshrc', '$XONSH_CONFIG_DIR/xonsh/rc.xsh', '~/."
+"xonshrc']``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_xonshrcdir:2
+msgid "``['$XONSH_SYS_CONFIG_DIR/rc.d', '$XONSH_CONFIG_DIR/rc.d']``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.ensure_ls_colors_in_env:2
+msgid ""
+"This ensures that the ``$LS_COLORS`` environment variable is in the "
+"environment. This fires exactly once upon the first time the ls command is "
+"called."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.foreign_env_fixes:2
+msgid "Environment fixes for all operating systems"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.get_home_xonshrc_path:2
+msgid "Cross-platform implementation of getting ``~/.xonshrc`` path."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.histcontrol_csv_to_set:2
+msgid "Convert HISTCONTROL value, warning if erasedups is used."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.is_callable_default:2
+msgid "Checks if a value is a callable default."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.is_env_path:2
+msgid "This tests if something is an environment path, ie a list of strings."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.is_lscolors:2
+msgid "Checks if an object is an instance of LsColors"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.locale_convert:2
+msgid "Creates a converter for a locale key."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.locate_binary:2
+msgid "Locates an executable on the file system."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.locate_binary:4
+msgid ""
+"NOT RECOMMENDED because ``commands_cache.locate_binary`` contains "
+"``update_cache`` with scanning all files in ``$PATH``. First of all take a "
+"look into ``xonsh.specs.executables`` for more fast implementation the "
+"locate operation."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.make_args_env:2
+msgid ""
+"Makes a dictionary containing the ``$ARGS`` and ``$ARG<N>`` environment "
+"variables. If the supplied ARGS is None, then sys.argv is used."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.str_to_abs_path:2
+msgid "Converts a string to an absolute path."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.str_to_env_path:2
+msgid ""
+"Converts a string to an environment path, ie a list of strings, splitting on "
+"the OS separator."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.str_to_path:2
+msgid "Converts a string to a path."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.to_debug:2
+msgid ""
+"Converts value using to_bool_or_int() and sets this value on as the execer's "
+"debug level."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.windows_foreign_env_fixes:2
+msgid "Environment fixes for Windows. Operates in-place."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xdg_data_dirs:2
+msgid "On Windows: ``[%ProgramData%]`` (normally C:\\ProgramData)"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xdg_data_dirs:3
+msgid ""
+"More Info: https://docs.microsoft.com/en-us/windows-hardware/customize/"
+"desktop/unattend/microsoft-windows-shell-setup-folderlocations-programdata"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xdg_data_dirs:5
+msgid ""
+"On Linux and Unix based systemd it is the same as in open-desktop standard: "
+"``['/usr/share', '/usr/local/share']``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.xonsh_append_newline:2
+msgid "Appends a newline if we are in interactive mode"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xonsh_cache_dir:2
+msgid "Ensures and returns the ``$XONSH_CACHE_DIR``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xonsh_config_dir:2
+msgid "``$XDG_CONFIG_HOME/xonsh``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xonsh_data_dir:2
+msgid "Ensures and returns the ``$XONSH_DATA_DIR``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.xonsh_script_run_control:2
+msgid ""
+"Loads a xonsh file and applies it as a run control. Any exceptions are "
+"logged here, returns boolean indicating success."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.xonsh_sys_config_dir:2
+msgid ""
+"On Linux & macOS: ``'/etc/xonsh'`` On Windows: ``'%ALLUSERSPROFILE%\\"
+"\\xonsh'``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xonshconfig:2
+msgid "Ensures and returns the ``$XONSHCONFIG``"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of xonsh.environ.xonshrc_context:2
+msgid ""
+"Attempts to read in all xonshrc files (and search xonshrc directories), and "
+"returns the list of rc file paths successfully loaded, in the order of "
+"loading."
+msgstr ""

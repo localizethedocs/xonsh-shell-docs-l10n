@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../embedding.rst:5
+msgid "Embedding Xonsh"
+msgstr ""
+
+#: ../../../embedding.rst:9
+msgid ""
+"This page is a **work-in-progress stub**. It currently documents only the "
+"controlling-terminal handshake for embedded use cases. A fuller guide — "
+"covering :func:`xonsh.main.setup`, custom :class:`~xonsh.shell.Shell` "
+"subclasses, teardown, thread safety, and integration patterns for LLM "
+"agents / TUI apps / REPLs — will appear in a later release. If you are "
+"embedding xonsh and need guidance that is not covered here, please open an "
+"issue or discussion on GitHub."
+msgstr ""
+
+#: ../../../embedding.rst:18
+msgid ""
+"Xonsh exposes itself as a Python library in addition to the standalone "
+"``xonsh`` command. Third-party projects can create a xonsh session, load "
+"xontribs and rc files, and drive the execer / shell from their own code. The "
+"public entry point for this is :func:`xonsh.main.setup`, documented in :mod:"
+"`xonsh.main`."
+msgstr ""
+
+#: ../../../embedding.rst:26
+msgid "Calling ``setup()`` Off the Main Thread"
+msgstr ""
+
+#: ../../../embedding.rst:28
+msgid ""
+":func:`xonsh.main.setup` is safe to call from a non-main thread. Python "
+"disallows installing signal handlers from worker threads, so xonsh skips "
+"that step when it detects it is not on the main thread. Historically this "
+"path raised ``ValueError: signal only works in main thread`` during load "
+"(see `xonsh#3689 <https://github.com/xonsh/xonsh/issues/3689>`_)."
+msgstr ""
+
+#: ../../../embedding.rst:34
+msgid "Consequences for embedders:"
+msgstr ""
+
+#: ../../../embedding.rst:36
+msgid ""
+"``setup()`` completes normally from any thread; the execer, session, "
+"environment and aliases work as expected."
+msgstr ""
+
+#: ../../../embedding.rst:38
+msgid ""
+"The :func:`atexit` history-flush registration still runs, so history is "
+"flushed on normal interpreter shutdown."
+msgstr ""
+
+#: ../../../embedding.rst:40
+msgid ""
+"Termination-signal handlers that would flush history on ``SIGTERM``, "
+"``SIGHUP``, ``SIGQUIT``, ``SIGTSTP`` etc. are **not** installed in this case "
+"— the host process owns signals in embedded scenarios. If you need signal-"
+"driven flushes, call ``setup()`` once on the main thread at startup or "
+"install your own handlers there."
+msgstr ""
+
+#: ../../../embedding.rst:48
+msgid "Controlling Terminal Handshake for Embedded Interactive Shells"
+msgstr ""
+
+#: ../../../embedding.rst:50
+msgid ""
+"When xonsh runs as the standalone ``xonsh`` command, its entry point (:func:"
+"`xonsh.main.main`) automatically performs a startup handshake that makes "
+"xonsh the *foreground process group* of its controlling terminal. This "
+"avoids a class of startup crashes and hangs in environments where the parent "
+"process does not arrange TTY ownership correctly — Flatpak / Bubblewrap "
+"sandboxes, build systems, nested containers, ``systemd --user`` services, "
+"some IDE terminals."
+msgstr ""
+
+#: ../../../embedding.rst:58
+msgid ""
+"See :ref:`launch-fg-takeover` for the full rationale, the failure modes it "
+"fixes (``BlockingIOError`` on asyncio wakeup pipe, ``termios.error`` EINTR, "
+"and related), the three-step signal policy, and the ``XONSH_NO_FG_TAKEOVER`` "
+"escape hatch."
+msgstr ""
+
+#: ../../../embedding.rst:64
+msgid "When the handshake runs"
+msgstr ""
+
+#: ../../../embedding.rst:66
+msgid "The handshake is invoked automatically on **both** of these paths:"
+msgstr ""
+
+#: ../../../embedding.rst:68
+msgid ":func:`xonsh.main.main` — the default CLI entry point."
+msgstr ""
+
+#: ../../../embedding.rst:69
+msgid ""
+":func:`xonsh.main.main_xonsh` — the inner entry point used when some code "
+"paths bypass ``main``."
+msgstr ""
+
+#: ../../../embedding.rst:72
+msgid ""
+"It is **not** invoked from :func:`xonsh.main.setup`. That means an embedded "
+"project that builds its own interactive shell by calling ``setup()`` (or by "
+"instantiating :class:`~xonsh.shell.Shell`, :class:`~xonsh.execer.Execer` "
+"and :class:`~xonsh.built_ins.XonshSession` directly) will **not** get the "
+"handshake for free. If your embedded xonsh runs in one of the affected "
+"environments, you need to invoke it yourself."
+msgstr ""
+
+#: ../../../embedding.rst:81
+msgid "How to invoke it from embedded code"
+msgstr ""
+
+#: ../../../embedding.rst:83
+msgid ""
+"The helper currently lives in ``xonsh.main`` as a module-private function: "
+"``_setup_controlling_terminal``. Its signature and name may change in future "
+"releases, so wrap the call in ``try`` / ``except`` — or reach out to the "
+"xonsh maintainers if you need a stable public entry point for your embedding "
+"scenario."
+msgstr ""
+
+#: ../../../embedding.rst:89
+msgid ""
+"Call it **before** you start your interactive shell loop — ideally as early "
+"in your program's startup as possible, so that any :doc:`xonsh RC <xonshrc>` "
+"or xontrib code your embedder runs already has foreground ownership:"
+msgstr ""
+
+#: ../../../embedding.rst:93
+msgid ""
+"# embedded_launcher.py\n"
+"from xonsh.main import setup\n"
+"\n"
+"# Acquire foreground of controlling TTY (idempotent, safe to\n"
+"# call multiple times — only the first call does real work).\n"
+"# No-op on Windows, in non-TTY contexts (pytest, piped input,\n"
+"# redirected stderr), and when XONSH_NO_FG_TAKEOVER=1 is set.\n"
+"try:\n"
+"    from xonsh.main import _setup_controlling_terminal\n"
+"    _setup_controlling_terminal()\n"
+"except Exception:\n"
+"    pass\n"
+"\n"
+"# Your existing xonsh setup stays unchanged.\n"
+"setup(\n"
+"    shell_type=\"prompt_toolkit\",\n"
+"    # ... your ctx, env, xontribs, aliases, etc.\n"
+")\n"
+"\n"
+"# Your custom shell / REPL / agent loop starts here."
+msgstr ""
+
+#: ../../../embedding.rst:117
+msgid "What the helper does"
+msgstr ""
+
+#: ../../../embedding.rst:119
+msgid "The call has three possible outcomes, all handled internally:"
+msgstr ""
+
+#: ../../../embedding.rst:121
+msgid ""
+"**Fast path** — xonsh is already the foreground process group (standard case "
+"when launched from a well-behaved terminal). The function short-circuits, "
+"installs a Python no-op handler for ``SIGTTIN`` / ``SIGTTOU`` as a safety "
+"net, and returns."
+msgstr ""
+
+#: ../../../embedding.rst:125
+msgid ""
+"**Full handshake** — xonsh transfers TTY foreground ownership to its own "
+"process group via ``setpgid(0, 0)`` plus ``tcsetpgrp(tty, getpgrp())``. "
+"Registers an :mod:`atexit` restorer so the previous foreground group is "
+"handed back on process exit."
+msgstr ""
+
+#: ../../../embedding.rst:130
+msgid ""
+"**Sandbox fallback** — if the handshake cannot complete (exotic sandbox, "
+"cross-session TTY, missing ``CAP_SYS_ADMIN`` for certain cases), the no-op "
+"handler installed in step 1 is *replaced* with ``SIG_IGN`` so that the "
+"kernel drops ``SIGTTIN`` / ``SIGTTOU`` at delivery time and they never reach "
+"Python's asyncio wakeup pipe."
+msgstr ""
+
+#: ../../../embedding.rst:137
+msgid ""
+"All outcomes are safe; every error path degrades cleanly. The helper never "
+"raises under normal use."
+msgstr ""
+
+#: ../../../embedding.rst:141
+msgid "When you should *not* call it"
+msgstr ""
+
+#: ../../../embedding.rst:143
+msgid ""
+"**Headless embedding.** If your embedder uses ``setup(shell_type=\"none\")`` "
+"(the default) and never starts an interactive prompt, you do not need the "
+"handshake. There is no TTY to acquire. Calling the helper in this case is "
+"harmless (it will fall into the non-TTY gate and do nothing), but it is also "
+"pointless."
+msgstr ""
+
+#: ../../../embedding.rst:149
+msgid ""
+"**You manage TTY / job control yourself.** If your embedder deliberately "
+"keeps xonsh in the background of its controlling TTY — for example, you run "
+"xonsh under a PTY proxy that multiplexes multiple children — taking "
+"foreground ownership will break your design. Set ``XONSH_NO_FG_TAKEOVER=1`` "
+"in the environment before starting xonsh, or simply skip the call."
+msgstr ""
+
+#: ../../../embedding.rst:155
+msgid ""
+"**You are running tests.** Most test runners capture stderr, in which case "
+"the helper's internal ``isatty`` gate makes the call a no-op. If you use "
+"``pytest -s`` and really want the handshake disabled for tests, export "
+"``XONSH_NO_FG_TAKEOVER=1`` for the test session."
+msgstr ""

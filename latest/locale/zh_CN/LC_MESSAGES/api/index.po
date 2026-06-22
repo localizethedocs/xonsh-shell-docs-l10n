@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../api/index.rst:5
+msgid "Xonsh API"
+msgstr ""
+
+#: ../../../api/index.rst:7
+msgid ""
+"The ``xonsh.api`` package is a set of public libraries that can be used in "
+"third-party projects as well as in xonsh extensions (xontribs).  If you are "
+"writing a xontrib, using ``xonsh.api`` is the recommended way to interact "
+"with xonsh internals."
+msgstr ""
+
+#: ../../../api/index.rst:14
+msgid ""
+"The API is under development and currently has a small number of methods.  "
+"Contributions are welcome!"
+msgstr ""
+
+#: ../../../api/index.rst:17
+msgid "For the full internal library reference, see :doc:`/lib/index`."
+msgstr ""
+
+#: ../../../api/index.rst:21
+msgid "``xonsh.api.subprocess``"
+msgstr ""
+
+#: ../../../api/index.rst:23
+msgid ""
+"Drop-in replacements for :mod:`subprocess` functions that use xonsh's "
+"subprocess pipeline under the hood."
+msgstr ""
+
+#: ../../../../xonsh/api/subprocess.py:docstring of xonsh.api.subprocess.run:2
+msgid "Drop in replacement for ``subprocess.run`` like functionality"
+msgstr ""
+
+#: ../../../../xonsh/api/subprocess.py:docstring of
+#: xonsh.api.subprocess.check_call:2
+msgid "Drop in replacement for ``subprocess.check_call`` like functionality"
+msgstr ""
+
+#: ../../../../xonsh/api/subprocess.py:docstring of
+#: xonsh.api.subprocess.check_output:2
+msgid "Drop in replacement for ``subprocess.check_output`` like functionality"
+msgstr ""
+
+#: ../../../api/index.rst:34
+msgid "``xonsh.api.os``"
+msgstr ""
+
+#: ../../../api/index.rst:36
+msgid "Xonsh-powered utilities inspired by the :mod:`os` module."
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:2
+msgid ""
+"Remove a directory, even if it has read-only files (Windows). Git creates "
+"read-only files that must be removed on teardown. See https://stackoverflow."
+"com/questions/2656322  for more info."
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:9
+msgid "**dirname**"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:10
+msgid "Directory to be removed"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:12
+msgid "**force**"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:13
+msgid "If True force removal, defaults to False"
+msgstr ""
+
+#: ../../../../xonsh/api/os.py:docstring of xonsh.dirstack.with_pushd:2
+msgid "alias to push_d context manager"
+msgstr ""

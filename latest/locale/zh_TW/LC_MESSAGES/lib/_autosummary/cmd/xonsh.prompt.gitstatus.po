@@ -1,0 +1,248 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.gitstatus.rst:2
+msgid "xonsh.prompt.gitstatus"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:1
+msgid "Informative git status prompt formatter."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:3
+msgid "Each part of the status field is extendable and customizable."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:5
+msgid "Following fields are available other than ``gitstatus``"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:7
+msgid "gitstatus.ahead"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:8
+msgid "gitstatus.behind"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:9
+msgid "gitstatus.branch"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:10
+msgid "gitstatus.changed"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:11
+msgid "gitstatus.clean"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:12
+msgid "gitstatus.conflicts"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:13
+msgid "gitstatus.deleted"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:14
+msgid "gitstatus.lines_added"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:15
+msgid "gitstatus.lines_removed"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:16
+msgid "gitstatus.numstat"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:17
+msgid "gitstatus.operations"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:18
+msgid "gitstatus.porcelain"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:19
+msgid "gitstatus.repo_path"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:20
+msgid "gitstatus.short_head"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:21
+msgid "gitstatus.staged"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:22
+msgid "gitstatus.stash_count"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:23
+msgid "gitstatus.tag"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:24
+msgid "gitstatus.tag_or_hash"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:25
+msgid "gitstatus.untracked"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:27
+msgid ""
+"All the fields have prefix and suffix attribute that can be set in the "
+"configuration as shown below. Other attributes can also be changed."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:30
+msgid "See some examples below,"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of xonsh.prompt.gitstatus:32
+msgid ""
+"from xonsh.prompt.base import PromptField, PromptFields\n"
+"\n"
+"# 1. to change the color of the branch name\n"
+"$PROMPT_FIELDS['gitstatus.branch'].prefix = \"{RED}\"\n"
+"\n"
+"# 2. to change the symbol for conflicts from ``{RED}×``\n"
+"$PROMPT_FIELDS['gitstatus.conflicts'].prefix = \"{GREEN}*\"\n"
+"\n"
+"# 3. hide the branch name if it is main or dev\n"
+"branch_field = $PROMPT_FIELDS['gitstatus.branch']\n"
+"old_updator = branch_field.updator\n"
+"def new_updator(fld: PromptField, ctx: PromptFields):\n"
+"    old_updator(fld, ctx)\n"
+"    if fld.value in {\"main\", \"dev\"}:\n"
+"        fld.value = \"\"\n"
+"branch_field.updator = new_updator"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus:2
+msgid "Return str `BRANCH|OPERATOR|numbers`"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus:0
+#: xonsh.prompt.gitstatus.GitStatusPromptField:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus:28
+#: xonsh.prompt.gitstatus.GitStatusPromptField:28
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus:29
+#: xonsh.prompt.gitstatus.GitStatusPromptField:29
+msgid "attributes of the class will be set from this"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.base.BasePromptField.wrap:2
+msgid "decorator to set the updator"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.update:2
+#: xonsh.prompt.gitstatus.GitStatusPromptField.update:2
+msgid "will be called from PromptFields getter for each new prompt"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.fragments:2
+msgid ""
+"name of the fields or the literals to combine. If the framgment name "
+"startswith ``.`` then they are resolved to include the name of this field."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.hidden:2
+msgid "These fields will not be processed for the result"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.name:2
+#: xonsh.prompt.gitstatus.GitStatusPromptField.name:2
+msgid "will be set during load."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.name:17
+#: xonsh.prompt.gitstatus.GitStatusPromptField.name:17
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.name:18
+#: xonsh.prompt.gitstatus.GitStatusPromptField.name:18
+msgid ""
+"fields with names such as ``gitstatus.branch`` mean they are defined in a "
+"module named ``gitstatus`` and are most likely a subfield used by "
+"``gitstatus``"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.separator:2
+msgid "in case this combines values from other prompt fields"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.updator:2
+#: xonsh.prompt.gitstatus.GitStatusPromptField.updator:2
+msgid ""
+"this is a callable that needs to update the value or any of the attribute of "
+"the field"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatus.value:2
+#: xonsh.prompt.gitstatus.GitStatusPromptField.value:2
+msgid ""
+"This field should hold the bare value of the field without any color/format "
+"strings"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.GitStatusPromptField:2
+msgid "Only calls the updator if we are inside a git repository"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.get_gitstatus_info:2
+msgid "Get individual fields from $PROMPT_FIELDS['gitstatus.porcelain']"
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.get_operations:2
+msgid "get the current git operation e.g. MERGE/REBASE..."
+msgstr ""
+
+#: ../../../../xonsh/prompt/gitstatus.py:docstring of
+#: xonsh.prompt.gitstatus.get_stash_count:2
+msgid "Get git-stash count"
+msgstr ""

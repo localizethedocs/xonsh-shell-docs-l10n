@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../keyboard_shortcuts.rst:5
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:6
+msgid ""
+"Xonsh comes pre-baked with a few keyboard shortcuts. The following is only "
+"available under the prompt-toolkit shell."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:9
+msgid "Editing"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:15 ../../../keyboard_shortcuts.rst:45
+#: ../../../keyboard_shortcuts.rst:67
+msgid "Shortcut"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:16 ../../../keyboard_shortcuts.rst:46
+#: ../../../keyboard_shortcuts.rst:68
+msgid "Description"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:17 ../../../keyboard_shortcuts.rst:47
+msgid "``Ctrl-C``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:18
+msgid "Cancel the current command if nothing is selected."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:19
+msgid "``Shift-Left`` or ``Shift-Right``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:20
+msgid "Select one character in either direction."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:21
+msgid "``Ctrl-Shift-Left`` or ``Ctrl-Shift-Right``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:22
+msgid "Select one word in either direction."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:23
+msgid "``Ctrl-V``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:24
+msgid "Paste clipboard contents."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:25
+msgid "``Ctrl-Backspace`` or ``Ctrl-H``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:26
+msgid "Delete a single word (like ``Alt-Backspace``)."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:27
+msgid "``Ctrl-X + Ctrl-E``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:28
+msgid "Open the current buffer in your default text editor."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:29
+msgid "``Ctrl-Right``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:30
+msgid "Complete a single auto-suggestion word."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:31
+msgid "``Shift+Enter``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:32
+msgid ""
+"Start new line without execution. Terminal must support xterm "
+"modifyOtherKeys mode 1 or Kitty keyboard protocol."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:37
+msgid "Selection Actions"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:39
+msgid ""
+"The following shortcuts work when text is selected (e.g. via ``Shift+Arrow`` "
+"keys):"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:48
+msgid "Copy selected text."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:49
+msgid "``Ctrl-X + Ctrl-C``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:50
+msgid "Copy selected text (alternative)."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:51
+msgid "``Ctrl-X + Ctrl-X``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:52
+msgid "Cut selected text."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:53
+msgid "``Tab``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:54
+msgid "Indent selected lines."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:55
+msgid "``Shift+Tab``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:56
+msgid "Unindent selected lines."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:57
+msgid "``Escape``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:58
+msgid "Cancel selection."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:61
+msgid "Execution"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:69
+msgid "``Ctrl-J``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:70
+msgid "Similar to enter in a few respects:"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:71
+msgid "1. Execute the current buffer."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:72
+msgid "2. End and execute a multiline statement."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:73
+msgid "``Ctrl-M``"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:74
+msgid "Same as ``Ctrl-J``."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:78
+msgid "Exit"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:80
+msgid ""
+"Press ``Ctrl-D`` to exit xonsh and return to original terminal. If not "
+"called by another terminal, then exit current terminal window. Similar to "
+"``exit``."
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:85
+msgid "Links"
+msgstr ""
+
+#: ../../../keyboard_shortcuts.rst:87
+msgid "`Add your own key bindings <prompt.html>`_"
+msgstr ""

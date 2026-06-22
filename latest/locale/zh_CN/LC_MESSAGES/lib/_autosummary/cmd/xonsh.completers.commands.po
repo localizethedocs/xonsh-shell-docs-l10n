@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.commands.rst:2
+msgid "xonsh.completers.commands"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.CommandCompleter:2
+msgid "Lazily complete commands from `xompletions` package"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.CommandCompleter:4
+msgid ""
+"The base-name (case-insensitive) of the executable is used to find the "
+"matching completer module or the regex patterns."
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.CommandCompleter.wrap:2
+msgid ""
+"Register a regex pattern to map command name variants to a completer module."
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.CommandCompleter.wrap:4
+msgid "Can be called from xonshrc or xontrib::"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.CommandCompleter.wrap:6
+msgid ""
+"from xonsh.completers.commands import complete_xompletions as xmp\n"
+"xmp.wrap(r\"\\bmycmd(?:\\d)*$\", \"mycmd\")"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher:2
+msgid "supports regex based proxying"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher:23
+msgid "Helper class to search and load Python modules"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher:28
+msgid "**names**"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher:29
+msgid ""
+"extra search paths/package-names to use if finding module on namespace "
+"package fails. paths should have a path literal to indicate it is a path. "
+"Otherwise it is treated as a package name."
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.lib.modules.ModuleFinder.import_module:2
+msgid "given the file location import as module"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.ModuleReMatcher.wrap:2
+msgid "For any commands matching the pattern complete from the ``module``"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.complete_command:2
+msgid "Returns a list of valid commands starting with the first argument"
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.complete_end_proc_keywords:2
+msgid "If there's no space following 'and' or 'or' - insert one."
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.complete_end_proc_tokens:2
+msgid "If there's no space following '|', '&', or ';' - insert one."
+msgstr ""
+
+#: ../../../../xonsh/completers/commands.py:docstring of
+#: xonsh.completers.commands.complete_skipper:2
+msgid ""
+"Skip over several tokens (e.g., sudo) and complete based on the rest of the "
+"command."
+msgstr ""

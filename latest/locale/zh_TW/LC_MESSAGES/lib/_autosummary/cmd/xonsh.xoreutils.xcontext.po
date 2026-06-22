@@ -1,0 +1,233 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.xcontext.rst:2
+msgid "xonsh.xoreutils.xcontext"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext:1
+msgid "The xontext command."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved:2
+msgid "A binary path probed by :class:`XContext`."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved:4
+msgid ""
+"``path`` is the input value as discovered (whatever :func:"
+"`locate_executable`, :func:`get_current_xonsh`, :data:`sys.executable`, or "
+"the alias lookup returned) — preserved verbatim so the colored output and "
+"the JSON consumer can show the user the path they would actually type. "
+"``resolved`` is the same value after PATHEXT lookup and (in default mode) "
+"``os.path.realpath``; when symlinks weren't followed *and* no PATHEXT "
+"substitution happened, it equals ``path``. Both may be a string, a list "
+"(alias args where ``[0]`` is the executable), or ``None`` (not found / no "
+"such alias)."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved:15
+msgid ""
+"``bad`` is True when the entry is unusable: symlink loop, missing file, not "
+"a regular file, lacks ``+x``, or its ``--version`` probe failed (Windows "
+"Store ``python.exe`` alias). ``version`` is the trimmed ``--version`` "
+"output, populated only for python-family entries."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved:21
+msgid ""
+":attr:`display` renders ``path`` for the colored row; list paths are space-"
+"joined the way the CLI shows them, plain strings pass through, and ``None`` "
+"becomes ``None`` so callers can detect \"not found\" without re-checking "
+"``path``. :attr:`resolved_display` renders the same thing for ``resolved``. :"
+"attr:`differs` reports whether the resolved value is meaningfully different "
+"from the input — when it's False, the colored renderer suppresses the ``name "
+"resolved:`` row."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved.differs:2
+msgid "True when ``resolved`` is set and is not identical to ``path``."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.Resolved.differs:4
+msgid ""
+"Drives whether the colored renderer emits the secondary ``name resolved:`` "
+"row — same value on both sides would just duplicate the line."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext:2
+msgid "Lazy collector of every value displayed by ``xcontext``."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext:4
+msgid ""
+"Each ``get_*`` method computes its value and returns a :class:`Resolved` "
+"(or, for env getters, a plain string / ``None``). Construct with "
+"``resolve=False`` to skip symlink resolution — the accessibility / ``+x`` "
+"check still runs, matching the ``--no-resolve`` CLI flag."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext:10
+msgid ""
+"Caching is **off by default** so a long-lived instance always reflects the "
+"current ``$PATH`` and alias state — callers that read a getter twice after "
+"mutating the environment get the new value, not a stale snapshot. Pass "
+"``cache=True`` to enable per-instance memoization for the lifetime of the "
+"report; ``xcontext_main`` does this so each ``--version`` subprocess runs at "
+"most once per invocation."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_pip:2
+msgid "Return the ``pip`` binary that ``$PATH`` resolves to."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_pytest:2
+msgid "Return the ``pytest`` binary that ``$PATH`` resolves to."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_python:2
+msgid "Return the ``python`` binary on ``$PATH``, with version probed."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_python:4
+msgid ""
+"The version probe doubles as a spawn check — a Windows Store ``python.exe`` "
+"App Execution Alias can be located on ``$PATH`` but raises WinError 1920 on "
+"execution. Such entries get ``bad=True`` so the row renders red."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_uv:2
+msgid "Return the ``uv`` binary that ``$PATH`` resolves to."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_commands_xonsh:2
+msgid "Return the ``xonsh`` binary that ``$PATH`` resolves to."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_env_conda_default_env:2
+msgid "Return ``$CONDA_DEFAULT_ENV`` or ``None`` if unset."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_env_virtual_env:2
+msgid "Return ``$VIRTUAL_ENV`` or ``None`` if unset."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_session_xpip:2
+msgid "Return the ``xpip`` alias value (typically ``[python, -m, pip]``)."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_session_xpython:2
+msgid "Return the python interpreter that's running this xonsh."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_session_xpython:4
+msgid ""
+"Inside an AppImage, ``sys.executable`` points at the AppImage bootstrap "
+"rather than the bundled python — fall back to ``$_`` so the displayed binary "
+"is something the user can actually invoke."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.XContext.get_session_xxonsh:2
+msgid "Return the path to the currently running xonsh interpreter."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:2
+msgid "Report information about the current xonsh environment."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:4
+msgid ""
+"The colored text report shows the input path of each binary on a ``name:`` "
+"row and — when symlink resolution (or, on Windows, the PATHEXT lookup) "
+"changes it — the resolved path on a second ``name resolved:`` row. The label-"
+"color match check (GREEN/BLUE) uses the resolved paths so two entries that "
+"ultimately point to the same underlying file compare equal even when their "
+"input paths differ."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:14
+msgid "**no_resolve**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:-1
+msgid "-n, --no-resolve"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:15
+msgid ""
+"Show raw paths as-is without following symlinks (turns off the default "
+"resolution). The accessibility / executable check still runs, so broken "
+"entries are still flagged in red."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:19
+msgid "**as_json**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:-1
+msgid "-j, --json"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/xcontext.py:docstring of
+#: xonsh.xoreutils.xcontext.xcontext_main:20
+msgid ""
+"Emit the paths as a JSON object on stdout instead of the colored text "
+"report. Top-level keys mirror the text sections (``session``, ``commands``, "
+"``env``). Each entry in ``session`` and ``commands`` carries the input path "
+"under its base key (e.g. ``xxonsh``) — and, **only when the resolved path "
+"differs from the input**, an additional sibling key with a ``_resolved`` "
+"suffix (e.g. ``xxonsh_resolved``). This mirrors the colored output's "
+"secondary row: with ``--no-resolve`` (or when paths already match their "
+"realpath) the ``_resolved`` keys are omitted entirely instead of duplicating "
+"the value. ``env`` only contains variables that are set."
+msgstr ""

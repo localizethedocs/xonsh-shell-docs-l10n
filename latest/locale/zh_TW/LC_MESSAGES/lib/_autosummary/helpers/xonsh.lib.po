@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:2
+msgid "xonsh.lib"
+msgstr ""
+
+#: ../../../../xonsh/lib/__init__.py:docstring of xonsh.lib:1
+msgid ""
+"Libraries of common functions that used in xonsh components as well as "
+"modules borrowed from other projects."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`collections <xonsh.lib.collections>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Base class for chaining DBs"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`completion_quoting <xonsh.lib.completion_quoting>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ""
+"Shared helper for deciding whether a completion candidate needs shell-"
+"quoting in xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`inspectors <xonsh.lib.inspectors>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Tools for inspecting Python objects."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`itertools <xonsh.lib.itertools>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`jsonutils <xonsh.lib.jsonutils>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ""
+"Custom tools for managing JSON serialization / deserialization of xonsh "
+"objects."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`lazyasd <xonsh.lib.lazyasd>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Lazy and self destructive containers for speeding up module import."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`lazyimps <xonsh.lib.lazyimps>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Lazy imports that may apply across the xonsh package."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`lazyjson <xonsh.lib.lazyjson>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Implements a lazy JSON file class that wraps around json data."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`modules <xonsh.lib.modules>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`openpy <xonsh.lib.openpy>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Tools to open ``*.py`` files as Unicode."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`os <xonsh.lib.os>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "DEPRECATED: Use `xonsh.lib.lazyasd` instead of `xonsh.lazyasd`."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`pretty <xonsh.lib.pretty>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid "Python advanced pretty printer."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`string <xonsh.lib.string>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.rst:45:<autosummary>:1
+msgid ":py:obj:`subprocess <xonsh.lib.subprocess>`"
+msgstr ""

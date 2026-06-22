@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.pygments_cache.rst:2
+msgid "xonsh.pygments\\_cache"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of xonsh.pygments_cache:1
+msgid ""
+"A fast, drop-in replacement for pygments ``get_*()`` and ``guess_*()`` "
+"funtions."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of xonsh.pygments_cache:3
+msgid "The following pygments API functions are currently supplied here::"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of xonsh.pygments_cache:5
+msgid ""
+"from pygments_cache import get_lexer_for_filename, guess_lexer_for_filename\n"
+"from pygments_cache import get_formatter_for_filename, "
+"get_formatter_by_name\n"
+"from pygments_cache import get_style_by_name, get_all_styles\n"
+"from pygments_cache import get_filter_by_name"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of xonsh.pygments_cache:10
+msgid ""
+"The cache itself is stored at the location given by the "
+"``$PYGMENTS_CACHE_FILE`` environment variable, or by default at ``~/.local/"
+"share/pygments-cache/cache.py``. The cache file is created on first use, if "
+"it does not already exist."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:2
+msgid ""
+"Register custom style to be able to retrieve it by ``get_style_by_name``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:7
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:8
+msgid "Style name."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:10
+msgid "**style**"
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.add_custom_style:11
+msgid "Custom style to add."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.build_cache:2
+msgid "Does the hard work of building a cache from nothing."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.cache_filename:2
+msgid "Gets the name of the cache file to use."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_all_styles:2
+msgid ""
+"Iterable through all known style names. This mimics the behavior of "
+"``pygments.styles.get_all_styles``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_filter_by_name:2
+msgid ""
+"Gets a filter instance from its name. This mimics the behavior of ``pygments."
+"filters.get_filtere_by_name()``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_formatter_by_name:2
+msgid ""
+"Gets a formatter instance from its name or alias. This mimics the behavior "
+"of ``pygments.formatters.get_formatter_by_name()``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_formatter_for_filename:2
+msgid ""
+"Gets a formatter instance from a filename (usually via the filename "
+"extension). This mimics the behavior of ``pygments.formatters."
+"get_formatter_for_filename()``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_lexer_for_filename:2
+msgid ""
+"Gets a lexer from a filename (usually via the filename extension). This "
+"mimics the behavior of ``pygments.lexers.get_lexer_for_filename()`` and "
+"``pygments.lexers.guess_lexer_for_filename()``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.get_style_by_name:2
+msgid ""
+"Gets a style class from its name or alias. This mimics the behavior of "
+"``pygments.styles.get_style_by_name()``."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of xonsh.pygments_cache.load:2
+msgid "Loads the cache from a filename."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.load_or_build:2
+msgid ""
+"Loads the cache from disk. If the cache does not exist, this will build and "
+"write it out."
+msgstr ""
+
+#: ../../../../xonsh/pygments_cache.py:docstring of
+#: xonsh.pygments_cache.write_cache:2
+msgid "Writes the current cache to the file"
+msgstr ""

@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.pipes.rst:2
+msgid "xonsh.procs.pipes"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of xonsh.procs.pipes:1
+msgid "Pipe channel for single-owner fd management."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel:2
+msgid ""
+"Single-owner pipe fd manager. Owner creates the pipe and is responsible for "
+"closing both ends. Consumers get non-owning wrappers via open_writer() / "
+"open_reader()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.from_pipe:2
+msgid "Create a PipeChannel from os.pipe()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.from_pty:2
+msgid "Create a PipeChannel from pty.openpty()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.from_pty:4
+msgid "Falls back to os.pipe() if PTY devices are exhausted."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.close:2
+msgid "Close both ends."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.close_reader:2
+msgid "Close the read end fd. Thread-safe and idempotent."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.close_writer:2
+msgid "Close the write end fd. Thread-safe and idempotent."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.open_reader:2
+msgid "Non-owning file wrapper for the read end."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipes.py:docstring of
+#: xonsh.procs.pipes.PipeChannel.open_writer:2
+msgid "Non-owning file wrapper for the write end."
+msgstr ""
