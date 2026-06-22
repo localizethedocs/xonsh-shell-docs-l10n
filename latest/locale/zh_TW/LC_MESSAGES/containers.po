@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../containers.rst:2
 msgid "Container"
-msgstr ""
+msgstr "容器"
 
 #: ../../../containers.rst:4
 msgid ""
