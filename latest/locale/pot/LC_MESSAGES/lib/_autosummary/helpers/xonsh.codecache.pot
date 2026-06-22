@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.codecache.rst:2
+msgid "xonsh.codecache"
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of xonsh.codecache:1
+msgid "Tools for caching xonsh code."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.code_cache_check:2
+msgid "Check whether the code cache for a particular piece of code is valid."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.code_cache_check:4 xonsh.codecache.script_cache_check:4
+msgid ""
+"Returns a tuple containing: a boolean representing whether the cached code "
+"should be used, and the cached code (or ``None`` if the cache should not be "
+"used)."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.code_cache_name:2
+msgid "Return an appropriate spoofed filename for the given code."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of xonsh.codecache.compile_code:2
+msgid "Wrapper for ``execer.compile`` to compile the given code"
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.get_cache_filename:2
+msgid "Return the filename of the cache for the given filename."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.get_cache_filename:4
+msgid ""
+"Cache filenames are similar to those used by the Mercurial DVCS for its "
+"internal store."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.get_cache_filename:7
+msgid ""
+"The ``code`` switch should be true if we should use the code store rather "
+"than the script store."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.run_code_with_cache:2
+msgid ""
+"Run a piece of code, using a cached version if it exists, and updating the "
+"cache as necessary. See run_compiled_code for the return value."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.run_compiled_code:2
+msgid ""
+"Helper to run code in a given mode and context. Returns a sys.exc_info() "
+"triplet in case the code raises an exception, or (None, None, None) "
+"otherwise."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.run_script_with_cache:2
+msgid ""
+"Run a script, using a cached version if it exists (and the source has not "
+"changed), and updating the cache as necessary. See run_compiled_code for the "
+"return value."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.script_cache_check:2
+msgid "Check whether the script cache for a particular file is valid."
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of
+#: xonsh.codecache.should_use_cache:2
+msgid ""
+"Return ``True`` if caching has been enabled for this mode (through command "
+"line flags or environment variables)"
+msgstr ""
+
+#: ../../../../xonsh/codecache.py:docstring of xonsh.codecache.update_cache:2
+msgid ""
+"Update the cache at ``cache_file_name`` to contain the compiled code "
+"represented by ``ccode``."
+msgstr ""

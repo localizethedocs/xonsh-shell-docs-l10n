@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.jobs.rst:2
+msgid "xonsh.procs.jobs"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs:1
+msgid "Job control for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.add_job:2
+msgid "Add a new job to the jobs dictionary."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.bg:2
+msgid "xonsh command: bg"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.bg:4
+msgid ""
+"Resume execution of the currently active job in the background, or, if a "
+"single number is given as an argument, resume that job in the background."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.clean_jobs:2
+msgid "Clean up jobs for exiting shell"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.clean_jobs:4
+msgid "In non-interactive mode, send SIGHUP to all jobs."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.clean_jobs:6
+msgid ""
+"In interactive mode, check for suspended or background jobs, print a warning "
+"if any exist, and return False. Otherwise, return True."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:2
+msgid ""
+"Remove the specified jobs from the job table; the shell will no longer "
+"report their status, and will not complain if you try to exit an interactive "
+"shell with them running or stopped."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:6
+msgid ""
+"If the jobs are currently stopped and the $AUTO_CONTINUE option is not set "
+"($AUTO_CONTINUE = False), a warning is printed containing information about "
+"how to make them continue after they have been disowned."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:12
+msgid "**job_ids**"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:13
+msgid "Jobs to act on or none to disown the current job"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:15
+msgid "**force_auto_continue**"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:-1
+msgid "-c, --continue"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.disown_fn:16
+msgid ""
+"Automatically continue stopped jobs when they are disowned, equivalent to "
+"setting $AUTO_CONTINUE=True"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.fg:2
+msgid "xonsh command: fg"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.fg:4
+msgid ""
+"Bring the currently active job to the foreground, or, if a single number is "
+"given as an argument, bring that job to the foreground. Additionally, "
+"specify \"+\" for the most recent job and \"-\" for the second most recent "
+"job."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.get_next_job_number:2
+msgid "Get the lowest available unique job number (for the next job created)."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.get_next_task:2
+msgid "Get the next active task and put it on top of the queue"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.hup_all_jobs:2
+msgid "Send SIGHUP to all child processes (called when exiting xonsh)."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.job_id_completer:2
+msgid "Return currently running jobs ids"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.jobs:2
+msgid "xonsh command: jobs"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.jobs:4
+msgid "Display a list of all current jobs."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.print_one_job:2
+msgid "Print a line describing job number ``num``."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.proc_untraced_waitpid:2
+msgid "Read a stop signals from the process and update the process state."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of xonsh.procs.jobs.resume_job:2
+msgid ""
+"used by fg and bg to resume a job either in the foreground or in the "
+"background."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.update_job_attr:2
+msgid "Update job attribute."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.use_main_jobs:2
+msgid ""
+"Context manager that replaces a thread's task queue and job dictionary with "
+"those of the main thread"
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.use_main_jobs:5
+msgid ""
+"This allows another thread (e.g. the commands jobs, disown, and bg) to "
+"handle the main thread's job control."
+msgstr ""
+
+#: ../../../../xonsh/procs/jobs.py:docstring of
+#: xonsh.procs.jobs.wait_for_active_job:2
+msgid ""
+"Wait for the active job to finish, to be killed by SIGINT, or to be "
+"suspended by ctrl-z."
+msgstr ""

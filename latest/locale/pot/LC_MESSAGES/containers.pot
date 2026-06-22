@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../containers.rst:2
+msgid "Container"
+msgstr ""
+
+#: ../../../containers.rst:4
+msgid ""
+"Xonsh publishes a handful of containers, primarily targeting CI and "
+"automation use cases. All of them are published on `Docker Hub <https://hub."
+"docker.com/u/xonsh>`__."
+msgstr ""
+
+#: ../../../containers.rst:6
+msgid "``xonsh/xonsh``: A base container providing basic xonsh"
+msgstr ""
+
+#: ../../../containers.rst:7
+msgid "``xonsh/xonsh-interactive``: xonsh with additions for people"
+msgstr ""
+
+#: ../../../containers.rst:8
+msgid "``xonsh/xonsh-github-action``: xonsh with additions for GitHub Actions"
+msgstr ""
+
+#: ../../../containers.rst:10
+msgid "All containers use the same tagging scheme:"
+msgstr ""
+
+#: ../../../containers.rst:12
+msgid "``<version>``/``latest``: Based on ``python:3`` (Debian Buster)"
+msgstr ""
+
+#: ../../../containers.rst:13
+msgid ""
+"``<version>-slim``/``slim``: Based on ``python:3-slim`` (Debian Buster, slim "
+"variant)"
+msgstr ""
+
+#: ../../../containers.rst:14
+msgid ""
+"``<version>-alpine``/``alpine``: Based on ``python:3-alpine`` (Alpine Linux)"
+msgstr ""
+
+#: ../../../containers.rst:16
+msgid ""
+"You can select specific versions of xonsh. However, you cannot select "
+"specific versions of Python. Everything is rebuilt daily."
+msgstr ""
+
+#: ../../../containers.rst:18
+msgid ""
+"All containers include an ``xpip`` utility to let you easily install "
+"packages from a Dockerfile."
+msgstr ""
+
+#: ../../../containers.rst:20
+msgid ""
+"The container source can be found in the `container project <https://github."
+"com/xonsh/container>`_."
+msgstr ""
+
+#: ../../../containers.rst:23
+msgid "``xonsh/xonsh``"
+msgstr ""
+
+#: ../../../containers.rst:25
+msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh>`__)"
+msgstr ""
+
+#: ../../../containers.rst:27
+msgid ""
+"A basic container, including Python itself, xonsh, and the linux extras. "
+"This container is deliberately kept minimal."
+msgstr ""
+
+#: ../../../containers.rst:31
+msgid "``xonsh/xonsh-interactive``"
+msgstr ""
+
+#: ../../../containers.rst:33
+msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-interactive>`__)"
+msgstr ""
+
+#: ../../../containers.rst:35
+msgid ""
+"A container made for humans (such as getting a shell inside of a pod). It "
+"includes prompt toolkit and pygments so that xonsh is more usable "
+"interactively."
+msgstr ""
+
+#: ../../../containers.rst:39
+msgid "``xonsh/xonsh-github-action``"
+msgstr ""
+
+#: ../../../containers.rst:41
+msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-github-action>`__)"
+msgstr ""
+
+#: ../../../containers.rst:43
+msgid "A container with extras for GitHub Actions."
+msgstr ""
+
+#: ../../../containers.rst:45
+msgid "First, some of the inputs are parsed into more helpful forms:"
+msgstr ""
+
+#: ../../../containers.rst:47
+msgid ""
+"``$GITHUB_EVENT``: The event that triggered the action (parsed from "
+"``$GITHUB_EVENT_PATH``)"
+msgstr ""
+
+#: ../../../containers.rst:48
+msgid ""
+"``$INPUT``: The input arguments configured in the workflow (from "
+"``$INPUT_*``)"
+msgstr ""
+
+#: ../../../containers.rst:50
+msgid ""
+"In addition, if you have `PyGithub <https://github.com/PyGithub/PyGithub>`_ "
+"or `gqlmod <https://gqlmod.readthedocs.io/en/stable/>`_ installed, and an "
+"authentication token was found, they will be configured:"
+msgstr ""
+
+#: ../../../containers.rst:52
+msgid "PyGithub: A ``Github`` object can be found at ``$GITHUB``"
+msgstr ""
+
+#: ../../../containers.rst:53
+msgid ""
+"gqlmod: the token will be applied globally and the library will be ready to "
+"use"
+msgstr ""

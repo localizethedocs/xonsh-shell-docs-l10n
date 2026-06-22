@@ -1,0 +1,422 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.lib.inspectors.rst:2
+msgid "xonsh.lib.inspectors"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:1
+msgid "Tools for inspecting Python objects."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:3
+msgid "This file was forked from the IPython project:"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:5
+msgid "Copyright (c) 2008-2014, IPython Development Team"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:6
+msgid "Copyright (C) 2001-2007 Fernando Perez <fperez@colorado.edu>"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:7
+msgid "Copyright (c) 2001, Janko Hauser <jhauser@zscout.de>"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of xonsh.lib.inspectors:8
+msgid "Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu>"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector:2
+msgid "Inspects objects."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.info:2
+msgid "Compute a dict with detailed information about an object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.info:4
+msgid "Optional arguments:"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.info:6
+msgid "oname: name of the variable pointing to the object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.info:8
+msgid ""
+"info: a structure with some information fields which may have been "
+"precomputed already."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.info:11
+msgid "detail_level: if set to 1, more information is given."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.noinfo:2
+msgid "Generic message when no information is found."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pdef:2
+msgid "Print the call signature for any callable object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pdef:4
+msgid "If the object is a class, print the constructor information."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pdoc:2
+msgid "Print the docstring for any object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pdoc:4
+msgid "Optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pdoc:6
+msgid ""
+"-formatter: a function to run the docstring through for specially formatted "
+"docstrings."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pfile:2
+msgid "Show the whole file where an object was defined."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:2
+msgid "Show detailed information about an object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:0 xonsh.lib.inspectors.call_tip:0
+#: xonsh.lib.inspectors.find_file:0 xonsh.lib.inspectors.find_source_lines:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:7 xonsh.lib.inspectors.find_file:10
+#: xonsh.lib.inspectors.find_source_lines:10
+msgid "**obj**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:-1
+msgid "object"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:10
+msgid "**oname**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:11
+msgid "name of the variable pointing to the object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:13
+msgid "**info**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:-1
+msgid "dict, optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:14
+msgid ""
+"a structure with some information fields which may have been precomputed "
+"already."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:17
+msgid "**detail_level**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:-1
+msgid "int, optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.pinfo:18
+msgid "if set to 1, more information is given."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.Inspector.psource:2
+msgid "Print the source code for an object."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:2
+msgid "Extract call tip data from an oinfo dict."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:7
+msgid "**oinfo**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:10
+msgid "**format_call**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:11
+msgid ""
+"If True, the call line is formatted and returned as a string.  If not, a "
+"tuple of (name, argspec) is returned."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:0 xonsh.lib.inspectors.find_file:0
+#: xonsh.lib.inspectors.find_source_lines:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:18
+msgid "**call_info**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:-1
+msgid "None, str or (str, dict) tuple."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:19
+msgid ""
+"When format_call is True, the whole call information is formatted as a "
+"single string.  Otherwise, the object's name and its argspec dict are "
+"returned.  If no call information is available, None is returned."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:23
+msgid "**docstring**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:-1
+msgid "str or None"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.call_tip:24
+msgid ""
+"The most relevant docstring for calling purposes is returned, if available.  "
+"The priority is: call docstring for callable instances, then constructor "
+"docstring for classes, then main object's docstring otherwise (regular "
+"functions)."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:2
+msgid "Find the absolute path to the file where an object was defined."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:4
+msgid "This is essentially a robust wrapper around `inspect.getabsfile`."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:6 xonsh.lib.inspectors.find_source_lines:6
+msgid "Returns None if no file can be found."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:-1 xonsh.lib.inspectors.find_source_lines:-1
+msgid "any Python object"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:17
+msgid "**fname**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_file:18
+msgid "The absolute path to the file where the object was defined."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_source_lines:2
+msgid "Find the line number in a file where an object was defined."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_source_lines:4
+msgid "This is essentially a robust wrapper around `inspect.getsourcelines`."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_source_lines:17
+msgid "**lineno**"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_source_lines:-1
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.find_source_lines:18
+msgid "The line number where the object definition starts."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.format_argspec:2
+msgid "Format argspec dict into a human-readable call signature string."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.formatargspec:2
+msgid ""
+"Reimplements ``inspect.formatargspec`` which was deprecated in Python 3.5 "
+"and removed in Python 3.11."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.get_encoding:2
+msgid "Get encoding for python source file defining obj"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.get_encoding:4
+msgid "Returns None if obj is not defined in a sourcefile."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getargspec:2
+msgid ""
+"Wrapper around :func:`inspect.getfullargspec` on Python 3, and :func:inspect."
+"getargspec` on Python 2."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getargspec:5
+msgid ""
+"In addition to functions and methods, this can also handle objects with a "
+"``__call__`` attribute."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getdoc:2
+msgid "Stable wrapper around inspect.getdoc."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getdoc:4
+msgid "This can't crash because of attribute problems."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getdoc:6
+msgid ""
+"It also attempts to call a getdoc() method on the given object.  This allows "
+"objects which provide their docstrings via non-standard mechanisms (like "
+"Pyro proxies) to still be inspected by ipython's ? system."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:2
+msgid "Wrapper around inspect.getsource."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:4
+msgid ""
+"This can be modified by other projects to provide customized source "
+"extraction."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:7
+msgid "Inputs:"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:9
+msgid "obj: an object whose source code we will attempt to extract."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:11
+msgid "Optional inputs:"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.getsource:13
+msgid ""
+"is_binary: whether the object is known to come from a binary source. This "
+"implementation will skip returning any output for binary objects, but custom "
+"extractors may know how to meaningfully process them."
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.is_simple_callable:2
+msgid "True if obj is a function ()"
+msgstr ""
+
+#: ../../../../xonsh/lib/inspectors.py:docstring of
+#: xonsh.lib.inspectors.object_info:2
+msgid "Make an object info dict with all fields present."
+msgstr ""
