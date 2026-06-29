@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../changelog.md:1
 msgid "Xonsh Change Log"
-msgstr ""
+msgstr "Xonsh 變更日誌"
 
 #: ../../../changelog.md:3
 msgid ""

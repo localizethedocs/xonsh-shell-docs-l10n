@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.tags.rst:2
 msgid "xonsh.webconfig.tags"
-msgstr ""
+msgstr "xonsh.webconfig.tags"
 
 #: ../../../../xonsh/webconfig/tags.py:docstring of
 #: xonsh.webconfig.tags.Elem.attrib:2

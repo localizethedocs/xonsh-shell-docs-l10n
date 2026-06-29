@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../envvars.rst.jinja2:2
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../envvars.rst.jinja2:3
 msgid ""

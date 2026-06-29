@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xontribs/xontrib.rst:19:<autosummary>:1
 msgid ":py:obj:`coreutils <xontrib.coreutils>`"
-msgstr ""
+msgstr ":py:obj:`coreutils <xontrib.coreutils>`"
 
 #: ../../../lib/_autosummary/xontribs/xontrib.rst:19:<autosummary>:1
 msgid "Core utils (cat, echo, pwd, ...) implemented in Python."

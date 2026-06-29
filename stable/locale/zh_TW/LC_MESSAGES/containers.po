@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../containers.rst:31
 msgid "``xonsh/xonsh-interactive``"
-msgstr ""
+msgstr "``xonsh/xonsh-interactive``"
 
 #: ../../../containers.rst:33
 msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-interactive>`__)"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../../containers.rst:39
 msgid "``xonsh/xonsh-github-action``"
-msgstr ""
+msgstr "``xonsh/xonsh-github-action``"
 
 #: ../../../containers.rst:41
 msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-github-action>`__)"

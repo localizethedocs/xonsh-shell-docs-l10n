@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../../tutorial.rst:106
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../tutorial.rst:107
 msgid ""

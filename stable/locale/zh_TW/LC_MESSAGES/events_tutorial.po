@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../events_tutorial.rst:9
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../events_tutorial.rst:10
 msgid ""

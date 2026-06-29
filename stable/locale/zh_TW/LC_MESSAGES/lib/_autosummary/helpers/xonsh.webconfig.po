@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid ":py:obj:`file_writes <xonsh.webconfig.file_writes>`"
-msgstr ""
+msgstr ":py:obj:`file_writes <xonsh.webconfig.file_writes>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid "functions to update rc files"
@@ -42,19 +42,19 @@ msgstr ""
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid ":py:obj:`main <xonsh.webconfig.main>`"
-msgstr ""
+msgstr ":py:obj:`main <xonsh.webconfig.main>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid ":py:obj:`routes <xonsh.webconfig.routes>`"
-msgstr ""
+msgstr ":py:obj:`routes <xonsh.webconfig.routes>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid ":py:obj:`tags <xonsh.webconfig.tags>`"
-msgstr ""
+msgstr ":py:obj:`tags <xonsh.webconfig.tags>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid ":py:obj:`xonsh_data <xonsh.webconfig.xonsh_data>`"
-msgstr ""
+msgstr ":py:obj:`xonsh_data <xonsh.webconfig.xonsh_data>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.webconfig.rst:27:<autosummary>:1
 msgid "script for compiling elm source and dumping it to the js folder."

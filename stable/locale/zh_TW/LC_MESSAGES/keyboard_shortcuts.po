@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:85
 msgid "Links"
-msgstr ""
+msgstr "連結"
 
 #: ../../../keyboard_shortcuts.rst:87
 msgid "`Add your own key bindings <prompt.html>`_"

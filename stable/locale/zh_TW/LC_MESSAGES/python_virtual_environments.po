@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../python_virtual_environments.rst:7
 msgid "Virtual Environments"
-msgstr ""
+msgstr "虛擬環境"
 
 #: ../../../python_virtual_environments.rst:9
 msgid ""
@@ -100,7 +100,7 @@ msgstr ""
 
 #: ../../../python_virtual_environments.rst:61
 msgid "@ vox new python2-env -p /usr/local/bin/python2"
-msgstr ""
+msgstr "@ vox new python2-env -p /usr/local/bin/python2"
 
 #: ../../../python_virtual_environments.rst:65
 msgid ""

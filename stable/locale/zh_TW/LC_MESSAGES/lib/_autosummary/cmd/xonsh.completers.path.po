@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.path.rst:2
 msgid "xonsh.completers.path"
-msgstr ""
+msgstr "xonsh.completers.path"
 
 #: ../../../../xonsh/completers/path.py:docstring of
 #: xonsh.completers.path.cd_in_command:2

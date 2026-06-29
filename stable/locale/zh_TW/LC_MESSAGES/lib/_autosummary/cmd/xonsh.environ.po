@@ -607,7 +607,7 @@ msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.SystemSetting:2
 msgid "System Environment Variables"
-msgstr ""
+msgstr "系統環境變數"
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.SystemSetting:4
 msgid ""

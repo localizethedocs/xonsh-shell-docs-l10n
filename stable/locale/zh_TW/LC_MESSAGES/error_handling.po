@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../../error_handling.rst:55
 msgid "Environment variables"
-msgstr ""
+msgstr "環境變數"
 
 #: ../../../error_handling.rst:57
 msgid ""

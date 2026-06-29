@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../../appimage.rst:83
 msgid "Links"
-msgstr ""
+msgstr "連結"
 
 #: ../../../appimage.rst:85
 msgid ""

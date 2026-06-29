@@ -168,7 +168,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid ":py:obj:`completer <xonsh.shells.ptk_shell.completer>`"
-msgstr ""
+msgstr ":py:obj:`completer <xonsh.shells.ptk_shell.completer>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid "Completer implementation to use with prompt_toolkit."
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid ":py:obj:`formatter <xonsh.shells.ptk_shell.formatter>`"
-msgstr ""
+msgstr ":py:obj:`formatter <xonsh.shells.ptk_shell.formatter>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid "PTK specific PromptFormatter class."
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid ":py:obj:`history <xonsh.shells.ptk_shell.history>`"
-msgstr ""
+msgstr ":py:obj:`history <xonsh.shells.ptk_shell.history>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid "History object for use with prompt_toolkit."
@@ -192,7 +192,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid ":py:obj:`key_bindings <xonsh.shells.ptk_shell.key_bindings>`"
-msgstr ""
+msgstr ":py:obj:`key_bindings <xonsh.shells.ptk_shell.key_bindings>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid "Key bindings for prompt_toolkit xonsh shell."
@@ -200,7 +200,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid ":py:obj:`updator <xonsh.shells.ptk_shell.updator>`"
-msgstr ""
+msgstr ":py:obj:`updator <xonsh.shells.ptk_shell.updator>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.rst:27:<autosummary>:1
 msgid "Has classes that help updating Prompt sections using Threads."

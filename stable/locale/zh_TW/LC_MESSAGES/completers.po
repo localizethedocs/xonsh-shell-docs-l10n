@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../completers.rst:8
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../completers.rst:10
 msgid ""

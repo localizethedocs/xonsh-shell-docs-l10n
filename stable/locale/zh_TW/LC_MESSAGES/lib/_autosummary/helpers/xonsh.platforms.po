@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
 msgid ":py:obj:`macutils <xonsh.platforms.macutils>`"
-msgstr ""
+msgstr ":py:obj:`macutils <xonsh.platforms.macutils>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
 msgid "Provides some Mac / Darwin based utility functions for xonsh."
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
 msgid ":py:obj:`winutils <xonsh.platforms.winutils>`"
-msgstr ""
+msgstr ":py:obj:`winutils <xonsh.platforms.winutils>`"
 
 #: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
 msgid ""

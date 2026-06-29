@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`base <xonsh.completers.base>`"
-msgstr ""
+msgstr ":py:obj:`base <xonsh.completers.base>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Base completer for xonsh."
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`bash <xonsh.completers.bash>`"
-msgstr ""
+msgstr ":py:obj:`bash <xonsh.completers.bash>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Xonsh hooks into bash completions."
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`bash_completion <xonsh.completers.bash_completion>`"
-msgstr ""
+msgstr ":py:obj:`bash_completion <xonsh.completers.bash_completion>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ""
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`click <xonsh.completers.click>`"
-msgstr ""
+msgstr ":py:obj:`click <xonsh.completers.click>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ""
@@ -70,19 +70,19 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`commands <xonsh.completers.commands>`"
-msgstr ""
+msgstr ":py:obj:`commands <xonsh.completers.commands>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`completer <xonsh.completers.completer>`"
-msgstr ""
+msgstr ":py:obj:`completer <xonsh.completers.completer>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`dirs <xonsh.completers.dirs>`"
-msgstr ""
+msgstr ":py:obj:`dirs <xonsh.completers.dirs>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`emoji <xonsh.completers.emoji>`"
-msgstr ""
+msgstr ":py:obj:`emoji <xonsh.completers.emoji>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Completer for unicode symbols and emoji."
@@ -90,11 +90,11 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`environment <xonsh.completers.environment>`"
-msgstr ""
+msgstr ":py:obj:`environment <xonsh.completers.environment>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`imports <xonsh.completers.imports>`"
-msgstr ""
+msgstr ":py:obj:`imports <xonsh.completers.imports>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Import statement completions."
@@ -102,7 +102,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`init <xonsh.completers.init>`"
-msgstr ""
+msgstr ":py:obj:`init <xonsh.completers.init>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Constructor for xonsh completer objects."
@@ -110,15 +110,15 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`man <xonsh.completers.man>`"
-msgstr ""
+msgstr ":py:obj:`man <xonsh.completers.man>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`path <xonsh.completers.path>`"
-msgstr ""
+msgstr ":py:obj:`path <xonsh.completers.path>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`python <xonsh.completers.python>`"
-msgstr ""
+msgstr ":py:obj:`python <xonsh.completers.python>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Completers for Python code"
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ":py:obj:`tools <xonsh.completers.tools>`"
-msgstr ""
+msgstr ":py:obj:`tools <xonsh.completers.tools>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid "Xonsh completer tools."

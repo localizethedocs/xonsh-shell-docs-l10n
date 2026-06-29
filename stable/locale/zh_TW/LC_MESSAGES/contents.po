@@ -395,4 +395,4 @@ msgstr ""
 
 #: ../../../contents.rst:127
 msgid "`Xonsh Merch <https://www.hellotux.com/xonsh>`_"
-msgstr ""
+msgstr "`Xonsh 週邊商品 <https://www.hellotux.com/xonsh>`_"

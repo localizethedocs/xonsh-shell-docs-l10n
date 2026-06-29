@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:5
 msgid "Xonsh Projects"
-msgstr ""
+msgstr "Xonsh 專案"
 
 #: ../../../xonsh_projects.rst:6
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:11
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../xonsh_projects.rst:12
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:72
 msgid "Formatting xonsh code"
-msgstr ""
+msgstr "格式化 xonsh 程式碼"
 
 #: ../../../xonsh_projects.rst:73
 msgid ""

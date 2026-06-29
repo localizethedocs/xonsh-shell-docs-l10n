@@ -167,7 +167,7 @@ msgstr ""
 
 #: ../../../editors.rst:106
 msgid "Formatting xonsh code"
-msgstr ""
+msgstr "格式化 xonsh 程式碼"
 
 #: ../../../editors.rst:108
 msgid ""

@@ -489,7 +489,7 @@ msgstr ""
 
 #: ../../../strings.rst:259
 msgid ":doc:`env` -- environment variables and ``@.env.swap()``"
-msgstr ""
+msgstr ":doc:`env` -- 環境變數與 ``@.env.swap()``"
 
 #: ../../../strings.rst:260
 msgid ":doc:`globbing` -- glob and regex path expansion"
