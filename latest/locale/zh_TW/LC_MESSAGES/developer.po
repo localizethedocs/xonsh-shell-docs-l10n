@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../../developer.rst:105
 msgid "Changelog"
-msgstr ""
+msgstr "變更日誌"
 
 #: ../../../developer.rst:107
 msgid ""
@@ -243,7 +243,7 @@ msgstr ""
 
 #: ../../../developer.rst:142
 msgid "Python Style Guide"
-msgstr ""
+msgstr "Python 風格指南"
 
 #: ../../../developer.rst:144
 msgid ""
@@ -302,7 +302,7 @@ msgstr ""
 
 #: ../../../developer.rst:167
 msgid "How to Test"
-msgstr ""
+msgstr "如何測試"
 
 #: ../../../developer.rst:170
 msgid "Dependencies"
@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../../developer.rst:174
 msgid "pip install -e '.[dev]'"
-msgstr ""
+msgstr "pip install -e '.[dev]'"
 
 #: ../../../developer.rst:179
 msgid "Running the Tests - Basic"
@@ -346,7 +346,7 @@ msgstr ""
 
 #: ../../../developer.rst:194
 msgid "python -m pytest"
-msgstr ""
+msgstr "python -m pytest"
 
 #: ../../../developer.rst:198
 msgid ""
@@ -356,7 +356,7 @@ msgstr ""
 
 #: ../../../developer.rst:201
 msgid "python -m pytest test_aliases.py"
-msgstr ""
+msgstr "python -m pytest test_aliases.py"
 
 #: ../../../developer.rst:205
 msgid "Note that you can pass multiple test names in the above examples:"
@@ -364,7 +364,7 @@ msgstr ""
 
 #: ../../../developer.rst:207
 msgid "python -m pytest test_aliases.py test_environ.py"
-msgstr ""
+msgstr "python -m pytest test_aliases.py test_environ.py"
 
 #: ../../../developer.rst:212
 msgid "Running the Tests in Parallel"
@@ -382,6 +382,8 @@ msgid ""
 "pip install pytest-xdist\n"
 "python -m pytest -n auto"
 msgstr ""
+"pip install pytest-xdist\n"
+"python -m pytest -n auto"
 
 #: ../../../developer.rst:223
 msgid ""
@@ -455,7 +457,7 @@ msgstr ""
 
 #: ../../../developer.rst:268
 msgid "Happy Testing!"
-msgstr ""
+msgstr "測試愉快！"
 
 #: ../../../developer.rst:272
 msgid "How to Document"
@@ -469,7 +471,7 @@ msgstr ""
 
 #: ../../../developer.rst:278
 msgid "Docstrings"
-msgstr ""
+msgstr "文件字串"
 
 #: ../../../developer.rst:280
 msgid ""
@@ -532,21 +534,23 @@ msgstr ""
 
 #: ../../../developer.rst:322
 msgid "`Sphinx <http://sphinx-doc.org/>`_"
-msgstr ""
+msgstr "`Sphinx <http://sphinx-doc.org/>`_"
 
 #: ../../../developer.rst:323
 msgid "`Furo Theme <https://pradyunsg.me/furo/>`_"
-msgstr ""
+msgstr "`Furo 主題 <https://pradyunsg.me/furo/>`_"
 
 #: ../../../developer.rst:324
 msgid ""
 "`numpydoc <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
 "standard>`_"
 msgstr ""
+"`numpydoc <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
+"standard>`_"
 
 #: ../../../developer.rst:325
 msgid "`MyST Parser <https://myst-parser.readthedocs.io>`_"
-msgstr ""
+msgstr "`MyST Parser <https://myst-parser.readthedocs.io>`_"
 
 #: ../../../developer.rst:327
 msgid "Note that xonsh itself needs to be installed too."
@@ -560,7 +564,7 @@ msgstr ""
 
 #: ../../../developer.rst:332
 msgid "pip install -e '.[doc]'"
-msgstr ""
+msgstr "pip install -e '.[doc]'"
 
 #: ../../../developer.rst:337
 msgid "Procedure for modifying the website"
@@ -586,7 +590,7 @@ msgstr ""
 
 #: ../../../developer.rst:352
 msgid "make serve"
-msgstr ""
+msgstr "make serve"
 
 #: ../../../developer.rst:356
 msgid ""
@@ -596,7 +600,7 @@ msgstr ""
 
 #: ../../../developer.rst:359
 msgid "firefox _build/html/index.html"
-msgstr ""
+msgstr "firefox _build/html/index.html"
 
 #: ../../../developer.rst:363
 msgid ""
@@ -774,7 +778,7 @@ msgstr ""
 
 #: ../../../developer.rst:472
 msgid "Container"
-msgstr ""
+msgstr "容器"
 
 #: ../../../developer.rst:474
 msgid ""
@@ -797,7 +801,7 @@ msgstr ""
 
 #: ../../../developer.rst:487
 msgid "python xonsh-in-docker.py"
-msgstr ""
+msgstr "python xonsh-in-docker.py"
 
 #: ../../../developer.rst:491
 msgid ""
@@ -809,7 +813,7 @@ msgstr ""
 
 #: ../../../developer.rst:496
 msgid "python xonsh-in-docker.py --python 3.13 --ptk 3.0.52"
-msgstr ""
+msgstr "python xonsh-in-docker.py --python 3.13 --ptk 3.0.52"
 
 #: ../../../developer.rst:500
 msgid ""
@@ -819,7 +823,7 @@ msgstr ""
 
 #: ../../../developer.rst:504
 msgid "Nix Container"
-msgstr ""
+msgstr "Nix 容器"
 
 #: ../../../developer.rst:506
 msgid ""

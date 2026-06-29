@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:186 ../../../_templates/index.html:230
 msgid "Docs"
-msgstr ""
+msgstr "文件"
 
 #: ../../../_templates/index.html:189 ../../../_templates/index.html:231
 msgid "Code"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:195
 msgid "Merch"
-msgstr ""
+msgstr "週邊商品"
 
 #: ../../../_templates/index.html:220
 msgid "<b>XONSH</b> is a Python-powered shell"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../../_templates/index.html:642
 msgid "Xonsh Merch"
-msgstr ""
+msgstr "Xonsh 週邊商品"
 
 #: ../../../_templates/index.html:650
 msgid "Github Xontribs"
@@ -3108,7 +3108,7 @@ msgstr ""
 
 #: themes/basic/defindex.html:4
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: themes/basic/defindex.html:8
 msgid "Welcome! This is"

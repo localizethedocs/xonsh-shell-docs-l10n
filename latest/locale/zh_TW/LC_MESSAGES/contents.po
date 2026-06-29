@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../contents.rst:115
 msgid "`Become a sponsor to Xonsh <https://github.com/sponsors/xonsh>`_."
-msgstr ""
+msgstr "`成為 Xonsh 的贊助者 <https://github.com/sponsors/xonsh>`_\\ 。"
 
 #: ../../../contents.rst:119
 msgid "Links"
@@ -395,4 +395,4 @@ msgstr ""
 
 #: ../../../contents.rst:127
 msgid "`Xonsh Merch <https://www.hellotux.com/xonsh>`_"
-msgstr ""
+msgstr "`Xonsh 週邊商品 <https://www.hellotux.com/xonsh>`_"

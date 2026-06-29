@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`cd <xompletions.cd>`"
-msgstr ""
+msgstr ":py:obj:`cd <xompletions.cd>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completion for \"cd\", includes only valid directory names."
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`gh <xompletions.gh>`"
-msgstr ""
+msgstr ":py:obj:`gh <xompletions.gh>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completers for gh CLI"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`git <xompletions.git>`"
-msgstr ""
+msgstr ":py:obj:`git <xompletions.git>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Git completer: subcommands, aliases, options, and refs."
@@ -47,7 +47,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`pip <xompletions.pip>`"
-msgstr ""
+msgstr ":py:obj:`pip <xompletions.pip>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completers for pip."
@@ -55,7 +55,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`python <xompletions.python>`"
-msgstr ""
+msgstr ":py:obj:`python <xompletions.python>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completers for ``python -m <module>`` commands."
@@ -63,7 +63,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`rmdir <xompletions.rmdir>`"
-msgstr ""
+msgstr ":py:obj:`rmdir <xompletions.rmdir>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completion for \"rmdir\", includes only valid directory names."
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid ":py:obj:`sudo <xompletions.sudo>`"
-msgstr ""
+msgstr ":py:obj:`sudo <xompletions.sudo>`"
 
 #: ../../../lib/_autosummary/xompletions/xompletions.rst:31:<autosummary>:1
 msgid "Completer for ``sudo``."

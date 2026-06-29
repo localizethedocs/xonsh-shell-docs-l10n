@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:5
 msgid "Xonsh Projects"
-msgstr ""
+msgstr "Xonsh 專案"
 
 #: ../../../xonsh_projects.rst:6
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:11
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: ../../../xonsh_projects.rst:12
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../../xonsh_projects.rst:72
 msgid "Formatting xonsh code"
-msgstr ""
+msgstr "格式化 xonsh 程式碼"
 
 #: ../../../xonsh_projects.rst:73
 msgid ""

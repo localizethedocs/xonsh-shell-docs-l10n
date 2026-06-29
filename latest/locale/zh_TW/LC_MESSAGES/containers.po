@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../../containers.rst:31
 msgid "``xonsh/xonsh-interactive``"
-msgstr ""
+msgstr "``xonsh/xonsh-interactive``"
 
 #: ../../../containers.rst:33
 msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-interactive>`__)"
@@ -108,7 +108,7 @@ msgstr ""
 
 #: ../../../containers.rst:39
 msgid "``xonsh/xonsh-github-action``"
-msgstr ""
+msgstr "``xonsh/xonsh-github-action``"
 
 #: ../../../containers.rst:41
 msgid "(`Docker Hub <https://hub.docker.com/r/xonsh/xonsh-github-action>`__)"

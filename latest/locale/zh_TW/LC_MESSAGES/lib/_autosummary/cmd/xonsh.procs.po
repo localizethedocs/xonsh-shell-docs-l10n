@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`executables <xonsh.procs.executables>`"
-msgstr ""
+msgstr ":py:obj:`executables <xonsh.procs.executables>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Interfaces to locate executable files on file system."
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`jobs <xonsh.procs.jobs>`"
-msgstr ""
+msgstr ":py:obj:`jobs <xonsh.procs.jobs>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Job control for the xonsh shell."
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`pipelines <xonsh.procs.pipelines>`"
-msgstr ""
+msgstr ":py:obj:`pipelines <xonsh.procs.pipelines>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Command pipeline tools."
@@ -58,7 +58,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`pipes <xonsh.procs.pipes>`"
-msgstr ""
+msgstr ":py:obj:`pipes <xonsh.procs.pipes>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Pipe channel for single-owner fd management."
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`posix <xonsh.procs.posix>`"
-msgstr ""
+msgstr ":py:obj:`posix <xonsh.procs.posix>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Interface for running subprocess-mode commands on posix systems."
@@ -74,7 +74,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`proxies <xonsh.procs.proxies>`"
-msgstr ""
+msgstr ":py:obj:`proxies <xonsh.procs.proxies>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Interface for running Python functions as subprocess-mode commands."
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`readers <xonsh.procs.readers>`"
-msgstr ""
+msgstr ":py:obj:`readers <xonsh.procs.readers>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "File handle readers and related tools."
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid ":py:obj:`specs <xonsh.procs.specs>`"
-msgstr ""
+msgstr ":py:obj:`specs <xonsh.procs.specs>`"
 
 #: ../../../lib/_autosummary/cmd/xonsh.procs.rst:33:<autosummary>:1
 msgid "Subprocess specification and related utilities."
