@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-08-31 16:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,27 @@ msgstr ""
 msgid "Platform-dependent code."
 msgstr ""
 
-#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
 msgid ":py:obj:`macutils <xonsh.platforms.macutils>`"
 msgstr ""
 
-#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
 msgid "Provides some Mac / Darwin based utility functions for xonsh."
 msgstr ""
 
-#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
+msgid ":py:obj:`win_colors <xonsh.platforms.win_colors>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
+msgid "Color helpers for the Windows console host."
+msgstr ""
+
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
 msgid ":py:obj:`winutils <xonsh.platforms.winutils>`"
 msgstr ""
 
-#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:21:<autosummary>:1
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.rst:23:<autosummary>:1
 msgid ""
 "This file is based on the code from https://github.com/JustAMan/pyWinClobber/"
 "blob/master/win32elevate.py"

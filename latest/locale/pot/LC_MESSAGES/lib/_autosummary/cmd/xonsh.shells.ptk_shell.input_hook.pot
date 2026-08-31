@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 16:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.input_hook.rst:2
+msgid "xonsh.shells.ptk\\_shell.input\\_hook"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook:1
+msgid "Serve the built-in ``input()`` from a prompt_toolkit prompt."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook:3
+msgid ""
+"CPython's ``input()`` only gets line editing when the ``readline`` module "
+"has been imported: importing it installs ``PyOS_ReadlineFunctionPointer``, "
+"which ``input()`` calls whenever stdin and stdout are interactive. The "
+"prompt_toolkit shell never imports ``readline``, so ``input()`` falls back "
+"to a plain read from the terminal in canonical mode. There the kernel "
+"assembles the line and caps it at ``MAX_CANON`` — 1024 bytes on macOS and "
+"the BSDs, 4096 on Linux. Everything past the cap is discarded, *including* "
+"the terminating newline, so the read never completes and the call hangs "
+"until the user interrupts it. ``getpass.getpass()`` has the same problem: it "
+"clears ``ECHO`` but leaves canonical mode on."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook:14
+msgid ""
+"Routing ``input()`` through prompt_toolkit puts the terminal in raw mode for "
+"the duration of the read, which removes the limit and adds the usual line "
+"editing, kill/yank and history keys."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook:18
+msgid ""
+"The hook is installed only while the interactive prompt_toolkit shell is "
+"running its command loop (see ``PromptToolkitShell.cmdloop``), and it hands "
+"the call back to the original ``input()`` whenever a prompt_toolkit prompt "
+"cannot be driven safely — off the main thread, without a terminal, or while "
+"another prompt_toolkit application already owns the screen."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook:2
+msgid "Callable replacement for ``builtins.input``."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook:7
+msgid "**shell**"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook:-1
+msgid "PromptToolkitShell"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook:8
+msgid ""
+"The shell that owns this hook. Only used to read the editing mode, so the "
+"``input()`` prompt matches the shell's key bindings."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook.install:2
+msgid "Replace ``builtins.input`` with this hook."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook.prompt:2
+msgid "Read one line through a dedicated prompt_toolkit session."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook.restore:2
+msgid "Put the original ``builtins.input`` back."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/input_hook.py:docstring of
+#: xonsh.shells.ptk_shell.input_hook.PTKInputHook.usable:2
+msgid "Whether a prompt_toolkit prompt can be driven right now."
+msgstr ""
