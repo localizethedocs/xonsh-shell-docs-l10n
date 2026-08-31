@@ -1,0 +1,477 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.main.rst:2
+msgid "xonsh.history.main"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of xonsh.history.main:1
+msgid "Main entry points of the xonsh history."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias:2
+msgid "Try 'history <command> --help' for more info"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.history.main.HistoryAlias.Error.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.history.main.HistoryAlias.Error.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.clear:2
+msgid "One-time wipe of session history"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.delete:2
+msgid "Delete all commands matching a pattern"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.delete:0
+#: xonsh.history.main.HistoryAlias.diff:0 xonsh.history.main.HistoryAlias.gc:0
+#: xonsh.history.main.HistoryAlias.info:0
+#: xonsh.history.main.HistoryAlias.pull:0
+#: xonsh.history.main.HistoryAlias.show:0
+#: xonsh.history.main.HistoryAlias.transfer:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.delete:7
+msgid "**pattern:**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.delete:8
+msgid "regex pattern to match against command history"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:2
+msgid "Diff two xonsh history files"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:7
+msgid "**left:**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:8
+msgid "The first file to diff"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:10
+msgid "**right:**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:11
+msgid "The second file to diff"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:13
+msgid "**reopen: -r, --reopen**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:14
+msgid "make lazy file loading reopen files each time"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:16
+msgid "**verbose: -v, --verbose**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.diff:17
+msgid "whether to print even more information"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.erasedups:2
+msgid "Remove duplicate commands, keeping only the latest occurrence of each"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.file:2
+msgid "Display the current history filename"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.flush:2
+msgid "Flush the current history to disk"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:2
+msgid "Launches a new history garbage collector"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:7
+msgid "**size**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:-1
+msgid "-s, --size"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:8
+msgid ""
+"Next two arguments represent the history size and units; e.g. \"--size 8128 "
+"commands\""
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:10
+msgid "**force**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:-1
+msgid "-f, --force"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:11
+msgid ""
+"perform garbage collection even if history much bigger than configured limit"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:13
+msgid "**blocking**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:-1
+msgid "-n, --non-blocking"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.gc:14
+msgid ""
+"makes the gc non-blocking, and thus return sooner. By default it runs on "
+"main thread blocking input."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.id_cmd:2
+msgid "Display the current session id"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.info:2
+msgid "Display information about the current history"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.info:7
+msgid "**to_json: -j, --json**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.info:8
+msgid "print in JSON format"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.off:2
+msgid "History will not be saved for this session"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.on:2
+msgid "History will be saved for the rest of the session (default)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.pull:2
+msgid "Pull history from other parallel sessions."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.pull:7
+msgid "**show_commands: -c, --show-commands**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.pull:8
+msgid "show pulled commands"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.pull:10
+msgid "**session_id: -s, --session-id**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.pull:11
+msgid "pull from specified session only"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:2
+msgid "Display history of a session, default command"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:7
+msgid "**session:**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:8
+msgid "The history session to get. (all is an alias for xonsh)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:10
+msgid "**slices:**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:11
+msgid "integer or slice notation to get only portions of history."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:13
+msgid "**datetime_format**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:-1
+msgid "-f"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:14
+msgid "the datetime format to be used for filtering and printing"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:16
+msgid "**start_time: --start-time, +T**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:17
+msgid ""
+"show only commands after timestamp. Accepts $XONSH_DATETIME_FORMAT or "
+"ISO-8601 (e.g. 2023-07-17)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:20
+msgid "**end_time: -T, --end-time**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:21
+msgid ""
+"show only commands before timestamp. Accepts $XONSH_DATETIME_FORMAT or "
+"ISO-8601 (e.g. 2023-07-17)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:24
+msgid "**location: -l, --location**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:25
+msgid "The history file location (bash or zsh)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:27
+msgid "**reverse: -r, --reverse**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:28
+msgid "Reverses the direction"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:30
+msgid "**numerate: -n, --numerate**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:31
+msgid "Numerate each command"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:33
+msgid "**timestamp: -t, --ts, --time-stamp**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:34
+msgid "show command timestamps"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:36
+msgid "**null_byte: -0, --nb, --null-byte**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:37
+msgid ""
+"separate commands by the null character for piping history to external "
+"filters"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:39
+msgid "**_unparsed**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.show:40
+msgid "remaining args from ``parser.parse_known_args``"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:2
+msgid "Transfer entries between history backends."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:7
+msgid "**source**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:8
+msgid "Name of the source history backend"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:10
+msgid "**source_file**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:-1
+msgid "--source-file, --sf"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:11
+msgid "Override the default location of the history file of the backend."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:13
+msgid "**target**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:-1
+msgid "--target, -t"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:14
+msgid "Name of the target history backend. (default: $XONSH_HISTORY_BACKEND)"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:16
+msgid "**target_file**"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:-1
+msgid "--target-file, --tf"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:17
+msgid "Path to the location of the history file."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:30
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.HistoryAlias.transfer:31
+msgid ""
+"It will not remove duplicate entries, use $HISTCONTROL for managing such "
+"entries."
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.SessionAction:2
+msgid "Set the choices lazily"
+msgstr ""
+
+#: ../../../../xonsh/history/main.py:docstring of
+#: xonsh.history.main.construct_history:2
+msgid "Construct the history backend object."
+msgstr ""

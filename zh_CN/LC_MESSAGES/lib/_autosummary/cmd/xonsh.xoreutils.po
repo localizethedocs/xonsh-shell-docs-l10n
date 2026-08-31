@@ -1,0 +1,138 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:2
+msgid "xonsh.xoreutils"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/__init__.py:docstring of xonsh.xoreutils:1
+msgid "Cross-platform reimplementations of common coreutils."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/__init__.py:docstring of xonsh.xoreutils:3
+msgid ""
+"Pure-Python versions of ``cat``, ``echo``, ``pwd``, ``tee``, ``tty``, "
+"``ulimit``, ``umask``, ``uname``, ``uptime``, ``which``, ``yes`` and related "
+"helpers. Used so that xonsh scripts behave identically across POSIX and "
+"Windows."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`cat <xonsh.xoreutils.cat>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Implements a cat command for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`echo <xonsh.xoreutils.echo>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Implements a simple echo command for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`pwd <xonsh.xoreutils.pwd>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "A pwd implementation for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`tee <xonsh.xoreutils.tee>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "A tee implementation for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`tty <xonsh.xoreutils.tty>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "A tty implementation for xonsh"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`ulimit <xonsh.xoreutils.ulimit>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "An ulimit implementation for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`umask <xonsh.xoreutils.umask>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Implements a umask command for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`uname <xonsh.xoreutils.uname>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Provides a cross-platform way to figure out the system uname."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`uptime <xonsh.xoreutils.uptime>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Provides a cross-platform way to figure out the system uptime."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`util <xonsh.xoreutils.util>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Assorted utilities for xonsh core utils."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`which <xonsh.xoreutils.which>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "Implements the which xoreutil."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`xcontext <xonsh.xoreutils.xcontext>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "The xontext command."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid ":py:obj:`yes <xonsh.xoreutils.yes>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.rst:43:<autosummary>:1
+msgid "An implementation of yes for xonsh."
+msgstr ""

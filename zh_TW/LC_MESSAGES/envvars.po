@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../envvars.rst.jinja2:2
+msgid "Environment Variables"
+msgstr "環境變數"
+
+#: ../../../envvars.rst.jinja2:3
+msgid ""
+"The following displays information about the environment variables that "
+"affect xonsh in some way. It also lists their default values, if applicable."
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:7
+msgid ""
+"{% set ns = namespace(root_index='') %} {% set env_vars = make_envvars() %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:10
+msgid "{% macro list_table(vars) %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:11
+msgid "{% for vardoc in rst.iterator_for_divmod(vars.values(), 2) %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:12
+msgid ""
+"{% if loop.index0 % 2 == 0 %}* {% else %}  {% endif %}- {% if vardoc %}"
+"{{ rst.to_ref_string(vardoc.info.title) }}{% endif %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:14 ../../../envvars.rst.jinja2:28
+msgid "{% endfor %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:15
+msgid "{% endmacro %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:17
+msgid ""
+"{#titular table#} {% for cls, envgrp in env_vars.children.items() recursive "
+"%}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:19
+msgid "{% if not loop.depth0 %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:20
+msgid "{% set ns.root_index=loop.index %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:21
+msgid "{% endif %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:30
+msgid ""
+"{#variables doc#} {% for cls, envgrp in env_vars.children.items() recursive "
+"%}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:35
+msgid ""
+"{{ cls.get_group_title() }} {{ rst.underline_title(cls.get_group_title(), "
+"loop.depth0) }} {{ cls.get_group_description() }}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:39
+msgid "{% for key, vardoc in envgrp.vars.items() %}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:43
+msgid ""
+"{{ vardoc.info.title }} {{ rst.underline_title(vardoc.info.title) }} "
+"{{ vardoc.info.docstr }}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:47
+msgid "**configurable:** {{ vardoc.info.configurable }}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:49
+msgid "**default:** {{ vardoc.info.default }}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:51
+msgid "**store_as_str:** {{ vardoc.info.store_as_str }}"
+msgstr ""
+
+#: ../../../envvars.rst.jinja2:56
+msgid ""
+"{% if envgrp.children %}{{ loop(envgrp.children.items()) }}{% endif %} {% "
+"endfor %}"
+msgstr ""

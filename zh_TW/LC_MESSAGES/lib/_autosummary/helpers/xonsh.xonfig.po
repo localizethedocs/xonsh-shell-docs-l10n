@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.xonfig.rst:2
+msgid "xonsh.xonfig"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig:1
+msgid "The xonsh configuration (xonfig) utility."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.XonfigAlias:2
+msgid "Manage xonsh configuration."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.xonfig.XonfigAlias.Error.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.xonfig.XonfigAlias.Error.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.XonfigAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_env_wiz:2
+msgid "Makes an environment variable wizard."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_envvar:2
+msgid "Makes a StoreNonEmpty node for an environment variable."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_exit_message:2
+msgid "Creates a message for how to exit the wizard."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_fs_wiz:2
+msgid "Makes the foreign shell part of the wizard."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:2
+msgid "Makes a configuration wizard for xonsh config file."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:7
+msgid "**default_file**"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:8
+msgid "Default filename to save and load to. User will still be prompted."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:10
+msgid "**confirm**"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:11
+msgid "Confirm that the main part of the wizard should be run."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:13
+msgid "**no_wizard_file**"
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xonfig_wizard:14
+msgid ""
+"Filename for that will flag to future runs that the wizard should not be run "
+"again. If None (default), this defaults to default_file."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xontrib:2
+msgid "Makes a message and StoreNonEmpty node for a xontrib."
+msgstr ""
+
+#: ../../../../xonsh/xonfig.py:docstring of xonsh.xonfig.make_xontribs_wiz:2
+msgid "Makes a xontrib wizard."
+msgstr ""

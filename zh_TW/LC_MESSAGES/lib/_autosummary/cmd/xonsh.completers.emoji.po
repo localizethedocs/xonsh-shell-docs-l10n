@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.emoji.rst:2
+msgid "xonsh.completers.emoji"
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of xonsh.completers.emoji:1
+msgid "Completer for unicode symbols and emoji."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of xonsh.completers.emoji:3
+msgid "Trigger prefixes are configurable via environment variables:"
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of xonsh.completers.emoji:5
+msgid ""
+"``$XONSH_COMPLETER_EMOJI_PREFIX`` (default ``\"::\"``) — colorful emoji "
+"(faces, animals, objects)."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of xonsh.completers.emoji:6
+msgid ""
+"``$XONSH_COMPLETER_SYMBOLS_PREFIX`` (default ``\":::\"``) — simple unicode "
+"symbols (arrows, math, dingbats)."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of xonsh.completers.emoji:8
+msgid "Set to empty string to disable."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.complete_emoji:2
+msgid "Complete emoji and unicode symbols using configurable trigger prefixes."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:2
+msgid ""
+"Return the cached list of ``(char, unicode-name)`` pairs for colorful emoji."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:4
+msgid ""
+"The cache covers Unicode ranges for emoticons, misc pictographs, transport, "
+"supplemental and extended-A symbols, filtered to double-width characters "
+"(``wcwidth == 2``). It is built lazily on first call and reused thereafter; "
+"callers can use it directly — e.g. to wire a random-emoji prompt field."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:0
+#: xonsh.completers.emoji.get_symbol_cache:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:14
+#: xonsh.completers.emoji.get_symbol_cache:14
+msgid "list of tuple of (str, str)"
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:15
+msgid "Pairs ``(emoji_character, lowercased_unicode_name)``."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_emoji_cache:27
+#: xonsh.completers.emoji.get_symbol_cache:27
+msgid "Examples"
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_symbol_cache:2
+msgid ""
+"Return the cached list of ``(char, unicode-name)`` pairs for simple symbols."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_symbol_cache:4
+msgid ""
+"The cache covers Unicode ranges for arrows, mathematical operators, misc "
+"technical symbols, geometric shapes, dingbats, and misc symbols+arrows, "
+"filtered to single-width characters (``wcwidth == 1``). It is built lazily "
+"on first call and reused thereafter."
+msgstr ""
+
+#: ../../../../xonsh/completers/emoji.py:docstring of
+#: xonsh.completers.emoji.get_symbol_cache:15
+msgid "Pairs ``(symbol_character, lowercased_unicode_name)``."
+msgstr ""

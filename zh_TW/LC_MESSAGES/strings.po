@@ -1,0 +1,510 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../strings.rst:6
+msgid "Subprocess Strings"
+msgstr ""
+
+#: ../../../strings.rst:7
+msgid "Strings in xonsh follow two simple rules:"
+msgstr ""
+
+#: ../../../strings.rst:9
+msgid "Strings in xonsh are always parsed in the same way, and"
+msgstr ""
+
+#: ../../../strings.rst:10
+msgid "Python always wins!"
+msgstr ""
+
+#: ../../../strings.rst:12
+msgid ""
+"Together these rules mean that **even strings in subprocess mode are treated "
+"like Python strings!** This will (help) preserve your sanity."
+msgstr ""
+
+#: ../../../strings.rst:16
+msgid "No Escape"
+msgstr ""
+
+#: ../../../strings.rst:17
+msgid ""
+"Xonsh strings are exactly like Python strings everywhere. Xonsh uses exactly "
+"the same escape characters that Python does; no more and no less."
+msgstr ""
+
+#: ../../../strings.rst:20
+msgid "**bash**"
+msgstr ""
+
+#: ../../../strings.rst:22
+msgid ""
+"$ echo A\\ Single\\ Argument\n"
+"A Single Argument"
+msgstr ""
+
+#: ../../../strings.rst:27
+msgid ""
+"In the above example, since the spaces are escaped, the ``echo`` command "
+"only receves a single argument. Xonsh does not allow this. If you were to "
+"try this in xonsh, you'd see:"
+msgstr ""
+
+#: ../../../strings.rst:31 ../../../strings.rst:70 ../../../strings.rst:96
+#: ../../../strings.rst:109
+msgid "**xonsh**"
+msgstr ""
+
+#: ../../../strings.rst:33
+msgid ""
+"@ echo Actually\\ Three\\ Arguments\n"
+"Actually\\ Three\\ Arguments"
+msgstr ""
+
+#: ../../../strings.rst:38
+msgid ""
+"In this example, echo recives three arguments:: ``\"Actually\\\\\"``, "
+"``\"Three\\\\\"``, and ``\"Arguments\"``. Instead, xonsh requires you to use "
+"quotes in order to pass in a single argument:"
+msgstr ""
+
+#: ../../../strings.rst:42
+msgid "**xonsh** or **bash**"
+msgstr ""
+
+#: ../../../strings.rst:44
+msgid ""
+"$ echo \"A Single Argument\"\n"
+"A Single Argument"
+msgstr ""
+
+#: ../../../strings.rst:49
+msgid ""
+"Using quotes is arguably what should have been done in sh-lang in the first "
+"place."
+msgstr ""
+
+#: ../../../strings.rst:54
+msgid "When in doubt in subprocess mode, use quotes!"
+msgstr ""
+
+#: ../../../strings.rst:58
+msgid "Justification"
+msgstr ""
+
+#: ../../../strings.rst:59
+msgid ""
+"The reasons for not having additional escape sequences, as in sh-langs, are:"
+msgstr ""
+
+#: ../../../strings.rst:61
+msgid "Escape charaters can get overwhemlingly ugly, fast."
+msgstr ""
+
+#: ../../../strings.rst:62
+msgid "We have escape characters, they are called quotes :)"
+msgstr ""
+
+#: ../../../strings.rst:63
+msgid "We have literal input in subprocess mode via macros."
+msgstr ""
+
+#: ../../../strings.rst:65
+msgid ""
+"On this last point, if you don't already know about `Subprocess Macros "
+"<macros.html#subprocess-macros>`_, these allow all input following an ``!`` "
+"to be treated as a single argument. For example,"
+msgstr ""
+
+#: ../../../strings.rst:72
+msgid ""
+"@ echo! A  Single     Argument\n"
+"A  Single     Argument"
+msgstr ""
+
+#: ../../../strings.rst:77
+msgid "Subprocess macros are the ultimate escape mechanism."
+msgstr ""
+
+#: ../../../strings.rst:80
+msgid "The Quotes Stay"
+msgstr ""
+
+#: ../../../strings.rst:81
+msgid "In sh-langs, internal quote characters are removed. For instance:"
+msgstr ""
+
+#: ../../../strings.rst:83
+msgid ""
+"$ echo foo\"bar\"baz\n"
+"foobarbaz\n"
+"\n"
+"$ echo --key=\"value\"\n"
+"--key=value"
+msgstr ""
+
+#: ../../../strings.rst:91
+msgid ""
+"Xonsh considers this behavior suboptimal. Instead, xonsh treats these "
+"arguments as if they were surrounded in another, outer level of quotation "
+"(``'foo\"bar\"baz'``). Xonsh will keep the quotation marks when leading and "
+"trailing quotes are not matched."
+msgstr ""
+
+#: ../../../strings.rst:98
+msgid ""
+"@ echo foo\"bar\"baz\n"
+"foo\"bar\"baz\n"
+"\n"
+"@ echo --key=\"value\"\n"
+"--key=\"value\""
+msgstr ""
+
+#: ../../../strings.rst:106
+msgid "You can think of these being equivalent to,"
+msgstr ""
+
+#: ../../../strings.rst:111
+msgid ""
+"@ echo 'foo\"bar\"baz'\n"
+"foo\"bar\"baz\n"
+"\n"
+"@ echo '--key=\"value\"'\n"
+"--key=\"value\""
+msgstr ""
+
+#: ../../../strings.rst:119
+msgid ""
+"This is yet another major point of departure for xonsh from traditional "
+"shells. However, the xonsh subprocess string handling is consistent and "
+"predictable."
+msgstr ""
+
+#: ../../../strings.rst:124
+msgid "Environment Variable Substitution"
+msgstr ""
+
+#: ../../../strings.rst:126
+msgid ""
+"In subprocess mode, ``$NAME`` inside strings is replaced with the value of "
+"the environment variable. This happens automatically for regular and f-"
+"strings, but **not** for raw strings:"
+msgstr ""
+
+#: ../../../strings.rst:130
+msgid ""
+"echo $HOME\n"
+"# /home/snail\n"
+"\n"
+"echo \"$HOME\"\n"
+"# /home/snail\n"
+"\n"
+"echo r\"$HOME\"\n"
+"# $HOME           -- raw strings suppress substitution\n"
+"\n"
+"echo $HOME/docs    # subprocess mode -- substituted inline\n"
+"# /home/snail/docs\n"
+"\n"
+"del $MY_VAR"
+msgstr ""
+
+#: ../../../strings.rst:146
+msgid ""
+"See `String Literal Prefixes`_ below for a full comparison of which string "
+"types perform substitution."
+msgstr ""
+
+#: ../../../strings.rst:151
+msgid "String Literal Prefixes"
+msgstr ""
+
+#: ../../../strings.rst:153
+msgid ""
+"For fine control of environment variable substitutions, brace substitutions, "
+"and backslash escapes, xonsh supports an extended set of string literal "
+"prefixes:"
+msgstr ""
+
+#: ../../../strings.rst:157
+msgid ""
+"``\"\"`` — regular string: backslash escapes. Envvar substitutions in "
+"subprocess mode."
+msgstr ""
+
+#: ../../../strings.rst:158
+msgid "``r\"\"`` — raw string: unmodified."
+msgstr ""
+
+#: ../../../strings.rst:159
+msgid ""
+"``f\"\"`` — formatted string: brace substitutions, backslash escapes. Envvar "
+"substitutions in subprocess mode."
+msgstr ""
+
+#: ../../../strings.rst:160
+msgid "``fr\"\"`` — raw formatted string: brace substitutions."
+msgstr ""
+
+#: ../../../strings.rst:161
+msgid ""
+"``p\"\"`` — path string: backslash escapes, envvar substitutions, returns "
+"Path."
+msgstr ""
+
+#: ../../../strings.rst:162
+msgid "``pr\"\"`` — raw path string: envvar substitutions, returns Path."
+msgstr ""
+
+#: ../../../strings.rst:163
+msgid ""
+"``pf\"\"`` — formatted path string: backslash escapes, brace and envvar "
+"substitutions, returns Path."
+msgstr ""
+
+#: ../../../strings.rst:165
+msgid ""
+"To understand the differences, set ``$EVAR`` to ``1`` and ``var`` to ``2``:"
+msgstr ""
+
+#: ../../../strings.rst:170
+msgid "String literal"
+msgstr ""
+
+#: ../../../strings.rst:170
+msgid "As python object"
+msgstr ""
+
+#: ../../../strings.rst:170
+msgid "print(<String literal>)"
+msgstr ""
+
+#: ../../../strings.rst:170
+msgid "echo <String literal>"
+msgstr ""
+
+#: ../../../strings.rst:172
+msgid "``\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:172
+msgid "``\"/$EVAR/'{var}'\"``"
+msgstr ""
+
+#: ../../../strings.rst:172
+msgid "``/$EVAR/'{var}'``"
+msgstr ""
+
+#: ../../../strings.rst:172 ../../../strings.rst:176
+msgid "``/1/'{var}'``"
+msgstr ""
+
+#: ../../../strings.rst:173
+msgid "``r\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:173
+msgid "``\"/$EVAR/\\\\'{var}\\\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:173
+msgid "``/$EVAR/\\'{var}\\'``"
+msgstr ""
+
+#: ../../../strings.rst:174
+msgid "``f\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:174
+msgid "``\"/$EVAR/'2'\"``"
+msgstr ""
+
+#: ../../../strings.rst:174
+msgid "``/$EVAR/'2'``"
+msgstr ""
+
+#: ../../../strings.rst:174 ../../../strings.rst:178
+msgid "``/1/'2'``"
+msgstr ""
+
+#: ../../../strings.rst:175
+msgid "``fr\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:175
+msgid "``\"/$EVAR/\\\\'2\\\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:175
+msgid "``/$EVAR/\\'2\\'``"
+msgstr ""
+
+#: ../../../strings.rst:176
+msgid "``p\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:176
+msgid "``Path(\"/1/'{var}'\")``"
+msgstr ""
+
+#: ../../../strings.rst:177
+msgid "``pr\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:177
+msgid "``Path(\"/1/\\\\'{var}\\\\'\")``"
+msgstr ""
+
+#: ../../../strings.rst:177
+msgid "``/1/\\'{var}\\'``"
+msgstr ""
+
+#: ../../../strings.rst:178
+msgid "``pf\"/$EVAR/\\'{var}\\'\"``"
+msgstr ""
+
+#: ../../../strings.rst:178
+msgid "``Path(\"/1/'2'\")``"
+msgstr ""
+
+#: ../../../strings.rst:183
+msgid "String Tricks"
+msgstr ""
+
+#: ../../../strings.rst:186
+msgid "Triple Quotes"
+msgstr ""
+
+#: ../../../strings.rst:188
+msgid ""
+"To avoid escape characters (e.g. ``echo \"\\\"hello\\\"\"``), use triple "
+"quotes:"
+msgstr ""
+
+#: ../../../strings.rst:191
+msgid ""
+"echo \"\"\"{\"hello\":'world'}\"\"\"\n"
+"# {\"hello\":'world'}"
+msgstr ""
+
+#: ../../../strings.rst:197
+msgid "Creating Files with Multiline Strings"
+msgstr ""
+
+#: ../../../strings.rst:199
+msgid ""
+"Combine triple quotes with ``@()`` and a redirect to create files without "
+"heredoc syntax:"
+msgstr ""
+
+#: ../../../strings.rst:202
+msgid ""
+"echo @(\"\"\"\n"
+"line 1\n"
+"line 2\n"
+"line 3\n"
+"\"\"\".strip()) > file.txt"
+msgstr ""
+
+#: ../../../strings.rst:211
+msgid "Multiline Arguments"
+msgstr ""
+
+#: ../../../strings.rst:213
+msgid ""
+"Use ``@()`` with triple quotes to pass a multiline string as a single "
+"argument:"
+msgstr ""
+
+#: ../../../strings.rst:216
+msgid ""
+"python -c @(\"\"\"\n"
+"import sys\n"
+"for i in range(3):\n"
+"    print(i, sys.platform)\n"
+"\"\"\")"
+msgstr ""
+
+#: ../../../strings.rst:225
+msgid "f-strings in Commands"
+msgstr ""
+
+#: ../../../strings.rst:227
+msgid ""
+"You can use ``@()`` to inject an f-string, but f-strings also work directly "
+"in subprocess mode:"
+msgstr ""
+
+#: ../../../strings.rst:230
+msgid ""
+"echo @(f'Hello {$HOME}')\n"
+"# Hello /home/snail\n"
+"\n"
+"# f-strings work by themselves too:\n"
+"echo f'Hello {$HOME}'\n"
+"# Hello /home/snail"
+msgstr ""
+
+#: ../../../strings.rst:241
+msgid "Splitting Strings Like the Shell"
+msgstr ""
+
+#: ../../../strings.rst:243
+msgid ""
+"Xonsh's :meth:`Lexer.split() <xonsh.parsers.lexer.Lexer.split>` can split a "
+"string into tokens the same way the shell does -- respecting quoting, "
+"escapes, and operators.  This is the function used internally by the "
+"``@$()`` operator:"
+msgstr ""
+
+#: ../../../strings.rst:248
+msgid ""
+"from xonsh.parsers.lexer import Lexer\n"
+"Lexer().split('echo \"hello world\" file.txt')\n"
+"# ['echo', '\"hello world\"', 'file.txt']"
+msgstr ""
+
+#: ../../../strings.rst:256
+msgid "See also"
+msgstr ""
+
+#: ../../../strings.rst:258
+msgid ":doc:`subprocess` -- subprocess operators and capturing modes"
+msgstr ""
+
+#: ../../../strings.rst:259
+msgid ":doc:`env` -- environment variables and ``@.env.swap()``"
+msgstr ":doc:`env` -- 環境變數與 ``@.env.swap()``"
+
+#: ../../../strings.rst:260
+msgid ":doc:`globbing` -- glob and regex path expansion"
+msgstr ""
+
+#: ../../../strings.rst:261
+msgid ":doc:`macros` -- subprocess macros for literal input"
+msgstr ""
+
+#: ../../../strings.rst:262
+msgid "`To Quote or Not Quote <https://github.com/xonsh/xonsh/issues/1432>`_"
+msgstr ""
+
+#: ../../../strings.rst:263
+msgid ""
+"`Quote removal in subprocess mode does not behave as expected <https://"
+"github.com/xonsh/xonsh/issues/621>`_"
+msgstr ""

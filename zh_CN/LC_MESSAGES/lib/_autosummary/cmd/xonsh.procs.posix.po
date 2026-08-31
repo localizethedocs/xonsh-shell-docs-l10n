@@ -1,0 +1,286 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.posix.rst:2
+msgid "xonsh.procs.posix"
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of xonsh.procs.posix:1
+msgid "Interface for running subprocess-mode commands on posix systems."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:2
+msgid ""
+"A thread for running and managing subprocess. This allows reading from the "
+"stdin, stdout, and stderr streams in a non-blocking fashion."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:5
+msgid ""
+"This takes the same arguments and keyword arguments as regular Popen. This "
+"requires that the captured_stdout and captured_stderr attributes to be set "
+"following instantiation."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:27
+msgid ""
+"This constructor should always be called with keyword arguments. Arguments "
+"are:"
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:29
+msgid ""
+"*group* should be None; reserved for future extension when a ThreadGroup "
+"class is implemented."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:32
+msgid ""
+"*target* is the callable object to be invoked by the run() method. Defaults "
+"to None, meaning nothing is called."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:35
+msgid ""
+"*name* is the thread name. By default, a unique name is constructed of the "
+"form \"Thread-N\" where N is a small decimal number."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:38
+msgid ""
+"*args* is a list or tuple of arguments for the target invocation. Defaults "
+"to ()."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:40
+msgid ""
+"*kwargs* is a dictionary of keyword arguments for the target invocation. "
+"Defaults to {}."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread:43
+msgid ""
+"If a subclass overrides the constructor, it must make sure to invoke the "
+"base class constructor (Thread.__init__()) before doing anything else to the "
+"thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.getName:2
+msgid "Return a string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.getName:4
+#: threading.Thread.setName:4
+msgid "This method is deprecated, use the name attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.isDaemon:2
+msgid "Return whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.isDaemon:4
+msgid "This method is deprecated, use the daemon attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.is_alive:2
+msgid "Return whether the thread is alive."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.is_alive:4
+msgid ""
+"This method returns True just before the run() method starts until just "
+"after the run() method terminates. See also the module function enumerate()."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:2
+msgid "Wait until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:4
+msgid ""
+"This blocks the calling thread until the thread whose join() method is "
+"called terminates -- either normally or through an unhandled exception or "
+"until the optional timeout occurs."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:8
+msgid ""
+"When the timeout argument is present and not None, it should be a floating-"
+"point number specifying a timeout for the operation in seconds (or fractions "
+"thereof). As join() always returns None, you must call is_alive() after "
+"join() to decide whether a timeout happened -- if the thread is still alive, "
+"the join() call timed out."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:14
+msgid ""
+"When the timeout argument is not present or None, the operation will block "
+"until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:17
+msgid "A thread can be join()ed many times."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.join:19
+msgid ""
+"join() raises a RuntimeError if an attempt is made to join the current "
+"thread as that would cause a deadlock. It is also an error to join() a "
+"thread before it has been started and attempts to do so raises the same "
+"exception."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.kill:2
+msgid "Dispatches to Popen.kill()."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.poll:2
+msgid "Dispatches to Popen.returncode."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.run:2
+msgid ""
+"Runs the subprocess by performing a parallel read on stdin if allowed, and "
+"copying bytes from captured_stdout to stdout and bytes from captured_stderr "
+"to stderr."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.send_signal:2
+msgid "Dispatches to Popen.send_signal()."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.setDaemon:2
+msgid "Set whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.setDaemon:4
+msgid "This method is deprecated, use the .daemon property instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.setName:2
+msgid "Set the name string for this thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.start:2
+msgid "Start the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.start:4
+msgid ""
+"It must be called at most once per thread object. It arranges for the "
+"object's run() method to be invoked in a separate thread of control."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of threading.Thread.start:7
+msgid ""
+"This method will raise a RuntimeError if called more than once on the same "
+"thread object."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.terminate:2
+msgid "Dispatches to Popen.terminate()."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.wait:2
+msgid ""
+"Dispatches to Popen.wait(), but also does process cleanup such as joining "
+"this thread and replacing the original window size signal handler."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.daemon:2
+msgid "A boolean value indicating whether this thread is a daemon thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.daemon:4
+msgid ""
+"This must be set before start() is called, otherwise RuntimeError is raised. "
+"Its initial value is inherited from the creating thread; the main thread is "
+"not a daemon thread and therefore all threads created in the main thread "
+"default to daemon = False."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.daemon:9
+msgid "The entire Python program exits when only daemon threads are left."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.ident:2
+msgid "Thread identifier of this thread or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.ident:4
+msgid ""
+"This is a nonzero integer. See the get_ident() function. Thread identifiers "
+"may be recycled when a thread exits and another thread is created. The "
+"identifier is available even after the thread has exited."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.name:2
+msgid "A string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.name:4
+msgid ""
+"It has no semantics. Multiple threads may be given the same name. The "
+"initial name is set by the constructor."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.native_id:2
+msgid ""
+"Native integral thread ID of this thread, or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.native_id:4
+msgid ""
+"This is a non-negative integer. See the get_native_id() function. This "
+"represents the Thread ID as reported by the kernel."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.returncode:2
+msgid "Process return code."
+msgstr ""
+
+#: ../../../../xonsh/procs/posix.py:docstring of
+#: xonsh.procs.posix.PopenThread.signal:2
+msgid "Process signal, or None."
+msgstr ""
