@@ -12,20 +12,20 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../lib/_autosummary/cmd/xonsh.completers.init.rst:2
-msgid "xonsh.completers.init"
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.win_colors.rst:2
+msgid "xonsh.platforms.win\\_colors"
 msgstr ""
 
-#: ../../../../xonsh/completers/init.py:docstring of xonsh.completers.init:1
-msgid "Constructor for xonsh completer objects."
+#: ../../../../xonsh/platforms/win_colors.py:docstring of
+#: xonsh.platforms.win_colors:1
+msgid "Color helpers for the Windows console host."
 msgstr ""
 
-#: ../../../../xonsh/completers/init.py:docstring of
-#: xonsh.completers.init.default_completers:2
-msgid "Creates a copy of the default completers."
+#: ../../../../xonsh/platforms/win_colors.py:docstring of
+#: xonsh.platforms.win_colors.hardcode_colors_for_win10:2
+msgid "Replace ANSI colors with readable RGB values for ``conhost.exe``."
 msgstr ""

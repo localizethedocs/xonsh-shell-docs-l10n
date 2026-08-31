@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,10 +23,10 @@ msgstr ""
 
 #: ../../../callable_aliases.rst:4
 msgid ""
-"In xonsh, a Python function can be registered as a shell command (alias). "
-"The function declares which arguments it needs, and xonsh fills them "
+"In Xonsh, a Python function can be registered as a shell command (alias). "
+"The function declares which arguments it needs, and Xonsh fills them "
 "automatically based on parameter names. When a function runs as an alias, "
-"xonsh redirects ``sys.stdout`` and ``sys.stderr`` inside it, making it "
+"Xonsh redirects ``sys.stdout`` and ``sys.stderr`` inside it, making it "
 "possible to capture all output that happens within the function — including "
 "``print()`` calls and subprocess commands."
 msgstr ""
@@ -200,7 +201,7 @@ msgstr ""
 msgid ""
 "The ``env`` parameter provides a local environment overlay. Values set in "
 "``env`` shadow the global environment during alias execution — both for "
-"xonsh ``$VAR`` reads and for subprocesses. When the alias exits, the overlay "
+"Xonsh ``$VAR`` reads and for subprocesses. When the alias exits, the overlay "
 "is removed and the global environment is unchanged."
 msgstr ""
 
@@ -243,7 +244,7 @@ msgstr ""
 msgid ""
 "The ``@aliases.return_command`` decorator creates aliases that return a new "
 "command to execute instead of running it themselves. The body of the alias "
-"can run its own commands first, then return the command xonsh should execute "
+"can run its own commands first, then return the command Xonsh should execute "
 "on its behalf."
 msgstr ""
 
@@ -532,7 +533,7 @@ msgstr ""
 
 #: ../../../callable_aliases.rst:382
 msgid ""
-"Inside a callable alias xonsh replaces ``sys.stdout`` and ``sys.stderr`` "
+"Inside a callable alias Xonsh replaces ``sys.stdout`` and ``sys.stderr`` "
 "with the alias's own streams.  The ``stdout`` and ``stderr`` function "
 "arguments point to the **same** redirected streams.  So bare ``print()`` "
 "just works — in pipes, in capture, everywhere:"
@@ -760,36 +761,36 @@ msgstr ""
 msgid "``@uncapturable`` — output goes to terminal only"
 msgstr ""
 
-#: ../../../callable_aliases.rst:544
-msgid "Click Integration"
+#: ../../../callable_aliases.rst:546
+msgid "Click CLI Integration"
 msgstr ""
 
-#: ../../../callable_aliases.rst:546
+#: ../../../callable_aliases.rst:548
 msgid ""
 "If the `click <https://click.palletsprojects.com/>`_ package is installed, "
 "xonsh exposes two helpers on the ``aliases`` object:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:549
+#: ../../../callable_aliases.rst:551
 msgid ""
 "``aliases.click`` — the ``click`` module itself, for decorating functions "
 "with ``@aliases.click.option(...)``, ``@aliases.click.argument(...)``, etc."
 msgstr ""
 
-#: ../../../callable_aliases.rst:551
+#: ../../../callable_aliases.rst:553
 msgid ""
 "``aliases.register_click_command`` — a decorator that registers a click "
-"command as a xonsh alias."
+"command as a Xonsh alias."
 msgstr ""
 
-#: ../../../callable_aliases.rst:554
+#: ../../../callable_aliases.rst:556
 msgid ""
 "Both are loaded lazily on first access — sessions that never touch click "
 "don't pay the import cost, and nothing breaks on systems where click is not "
 "installed."
 msgstr ""
 
-#: ../../../callable_aliases.rst:558
+#: ../../../callable_aliases.rst:560
 msgid ""
 "@ @aliases.register_click_command\n"
 "  @aliases.click.option('--count', default=1, help='Number of greetings.')\n"
@@ -806,11 +807,11 @@ msgid ""
 "World"
 msgstr ""
 
-#: ../../../callable_aliases.rst:573
+#: ../../../callable_aliases.rst:575
 msgid "The decorator mirrors the calling conventions of ``@aliases.register``:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:575
+#: ../../../callable_aliases.rst:577
 msgid ""
 "@aliases.register_click_command              # bare, name from function\n"
 "@aliases.register_click_command()            # empty parentheses, same "
@@ -818,10 +819,10 @@ msgid ""
 "@aliases.register_click_command(\"my-name\")   # explicit alias name"
 msgstr ""
 
-#: ../../../callable_aliases.rst:581
+#: ../../../callable_aliases.rst:583
 msgid ""
 "The function's first argument is a ``click.Context`` subclass that carries "
-"every standard xonsh alias parameter from `Signature Parameters`_ as an "
+"every standard Xonsh alias parameter from `Signature Parameters`_ as an "
 "attribute of the same name — ``ctx.stdin``, ``ctx.stdout``, ``ctx.stderr``, "
 "``ctx.spec``, ``ctx.stack``, ``ctx.decorators``, ``ctx.alias_name``, ``ctx."
 "called_alias_name``, ``ctx.env``. The only exception is ``args``, which is "
@@ -829,66 +830,66 @@ msgid ""
 "Context.args`` that ``click`` uses for option parsing."
 msgstr ""
 
-#: ../../../callable_aliases.rst:589
+#: ../../../callable_aliases.rst:591
 msgid ""
 "The ``click`` module itself is also attached as ``ctx.click``, so callbacks "
 "can call ``ctx.click.echo(...)``, ``ctx.click.secho(...)``, etc. without a "
 "separate ``import click``."
 msgstr ""
 
-#: ../../../callable_aliases.rst:593
+#: ../../../callable_aliases.rst:595
 msgid ""
-"Use these when a click command needs the underlying xonsh streams or "
+"Use these when a click command needs the underlying Xonsh streams or "
 "environment overlay — for example, ``print(text, file=ctx.stdout)`` writes "
 "to the alias's captured output the same way a regular callable alias does."
 msgstr ""
 
-#: ../../../callable_aliases.rst:597
+#: ../../../callable_aliases.rst:599
 msgid ""
 "Tab completion is wired up automatically: option flags, ``click.Choice`` "
 "option values, positional ``click.Choice`` arguments, and sub-commands of a "
 "``click.Group`` are all suggested without any extra configuration."
 msgstr ""
 
-#: ../../../callable_aliases.rst:601
+#: ../../../callable_aliases.rst:603
 msgid ""
 "@ hello --<TAB>\n"
 "--count --help --name"
 msgstr ""
 
-#: ../../../callable_aliases.rst:608
+#: ../../../callable_aliases.rst:610
 msgid "String Aliases and ExecAlias"
 msgstr ""
 
-#: ../../../callable_aliases.rst:610
+#: ../../../callable_aliases.rst:612
 msgid ""
-"When you assign a string to an alias, xonsh stores it in one of two ways "
+"When you assign a string to an alias, Xonsh stores it in one of two ways "
 "depending on the content."
 msgstr ""
 
-#: ../../../callable_aliases.rst:613
+#: ../../../callable_aliases.rst:615
 msgid ""
 "A **simple string** like ``\"ls -la\"`` is split into a list of tokens and "
 "stored as ``[\"ls\", \"-la\"]``. This is equivalent to assigning the list "
 "directly:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:617
+#: ../../../callable_aliases.rst:619
 msgid ""
 "@ aliases['ll'] = 'ls -la'\n"
 "@ aliases['ll'] = ['ls', '-la']   # same thing"
 msgstr ""
 
-#: ../../../callable_aliases.rst:622
+#: ../../../callable_aliases.rst:624
 msgid ""
-"A string that contains xonsh expressions (``@()``, ``$()``), pipes (``|``), "
+"A string that contains Xonsh expressions (``@()``, ``$()``), pipes (``|``), "
 "redirections (``>``, ``<``), or logical operators (``&&``, ``||``) cannot be "
-"represented as a simple list — it needs to be compiled and executed as xonsh "
+"represented as a simple list — it needs to be compiled and executed as Xonsh "
 "code. Xonsh wraps such strings in an ``ExecAlias``, which is a callable "
 "alias under the hood:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:628
+#: ../../../callable_aliases.rst:630
 msgid ""
 "@ aliases['answer'] = 'echo @(21+21)'\n"
 "@ answer\n"
@@ -903,31 +904,31 @@ msgid ""
 "end"
 msgstr ""
 
-#: ../../../callable_aliases.rst:644
+#: ../../../callable_aliases.rst:646
 msgid "Arguments"
 msgstr ""
 
-#: ../../../callable_aliases.rst:646
+#: ../../../callable_aliases.rst:648
 msgid ""
 "When an ``ExecAlias`` runs, the arguments passed to it are available as "
 "temporary environment variables:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:649
+#: ../../../callable_aliases.rst:651
 msgid "``$args`` — the full list of arguments."
 msgstr ""
 
-#: ../../../callable_aliases.rst:650
+#: ../../../callable_aliases.rst:652
 msgid "``$arg0``, ``$arg1``, … — individual positional arguments."
 msgstr ""
 
-#: ../../../callable_aliases.rst:652
+#: ../../../callable_aliases.rst:654
 msgid ""
 "These variables exist only while the alias body is running and are removed "
 "afterwards."
 msgstr ""
 
-#: ../../../callable_aliases.rst:655
+#: ../../../callable_aliases.rst:657
 msgid ""
 "@ aliases['greet'] = 'echo Hello, $arg0!'\n"
 "@ greet World\n"
@@ -940,13 +941,13 @@ msgid ""
 "@ cdls /tmp"
 msgstr ""
 
-#: ../../../callable_aliases.rst:667
+#: ../../../callable_aliases.rst:669
 msgid ""
 "Arguments are **not** passed automatically — you need to use ``$args`` or "
 "``$arg<n>`` explicitly. If you don't reference them, they are ignored:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:670
+#: ../../../callable_aliases.rst:672
 msgid ""
 "@ aliases['noargs'] = 'echo @(\"arguments are ignored\")'\n"
 "@ noargs 1 2 3\n"
@@ -957,17 +958,17 @@ msgid ""
 "the arguments are: 1 2 3"
 msgstr ""
 
-#: ../../../callable_aliases.rst:682
+#: ../../../callable_aliases.rst:684
 msgid "Equivalence with Callable Aliases"
 msgstr ""
 
-#: ../../../callable_aliases.rst:684
+#: ../../../callable_aliases.rst:686
 msgid ""
 "An ``ExecAlias`` is a shorthand for a callable alias. These three "
 "definitions are equivalent:"
 msgstr ""
 
-#: ../../../callable_aliases.rst:687
+#: ../../../callable_aliases.rst:689
 msgid ""
 "@ aliases['answer'] = 'echo @(21+21)'\n"
 "\n"

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,4 +24,13 @@ msgstr ""
 #: ../../../../xonsh/lib/string.py:docstring of xonsh.lib.string.commonprefix:2
 msgid ""
 "Given an iterable of strings, returns the longest common leading substring"
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of
+#: xonsh.lib.string.endswith_newline:2
+msgid "Return a string ending with exactly one newline character."
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of xonsh.lib.string.unquote:2
+msgid "Strip one pair of matching quote characters from a string."
 msgstr ""

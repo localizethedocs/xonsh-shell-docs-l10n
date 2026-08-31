@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -104,8 +105,8 @@ msgid ""
 "Xonsh (sounds like \"consh\") is a full-featured and cross-platform Python-"
 "based shell. The language is a superset of Python 3 with seamless "
 "integration of shell functionality and commands. It works on all major "
-"systems including Linux, macOS, Windows, BSD, Jupyter, Android and Raspberry "
-"Pi."
+"platforms, including Linux, macOS, Windows, BSD, Jupyter, Android, Raspberry "
+"Pi and Nix."
 msgstr ""
 
 #: ../../../comparison.rst:2
@@ -142,7 +143,7 @@ msgid ""
 "      <th class=\"stub\"><p>Nice prompt</p></th>\n"
 "      <td align=\"center\">◯</td>\n"
 "      <td align=\"center\">🟢</td>\n"
-"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">◯</td>\n"
 "      <td align=\"center\">🟢</td>\n"
 "    </tr>\n"
 "    <tr>\n"
@@ -289,7 +290,7 @@ msgid ""
 msgstr ""
 
 #: ../../../contents.rst:105
-msgid "Write a note or an article about xonsh."
+msgid "Write a note or an article about Xonsh."
 msgstr ""
 
 #: ../../../contents.rst:106
@@ -298,7 +299,7 @@ msgstr ""
 
 #: ../../../contents.rst:107
 msgid ""
-"Add xonsh support in third party tool: `package manager <https://github.com/"
+"Add Xonsh support in third party tool: `package manager <https://github.com/"
 "topics/package-manager>`_, `terminal emulator <https://github.com/topics/"
 "terminal-emulators>`_, `console tool <https://github.com/topics/console>`_, "
 "`IDE <https://github.com/topics/ide>`_."
@@ -337,7 +338,7 @@ msgstr ""
 
 #: ../../../contents.rst:112
 msgid ""
-"Test xonsh with compiler, interpreter, optimizer and report upstream issues "
+"Test Xonsh with compiler, interpreter, optimizer and report upstream issues "
 "e.g. `Nuitka <https://github.com/xonsh/xonsh/"
 "issues/2895#issuecomment-3665753657>`_, `RustPython <https://github.com/"
 "xonsh/xonsh/issues/5082#issue-1611837062>`_."
@@ -358,7 +359,7 @@ msgid ""
 msgstr ""
 
 #: ../../../contents.rst:115
-msgid "`Become a sponsor to xonsh <https://github.com/sponsors/xonsh>`_."
+msgid "`Become a sponsor to Xonsh <https://github.com/sponsors/xonsh>`_."
 msgstr ""
 
 #: ../../../contents.rst:119

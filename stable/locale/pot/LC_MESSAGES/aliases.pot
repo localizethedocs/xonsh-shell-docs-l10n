@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -58,10 +59,47 @@ msgid "The ``grep`` command is aliased to ``['grep', '--color=auto']``."
 msgstr ""
 
 #: ../../../aliases.rst:30
-msgid "``history``"
+msgid "``timeit``"
 msgstr ""
 
 #: ../../../aliases.rst:31
+msgid "Runs timing study on arguments. Similar to IPython's ``%timeit`` magic."
+msgstr ""
+
+#: ../../../aliases.rst:35
+msgid "``exit``, ``quit``, ``EOF``"
+msgstr ""
+
+#: ../../../aliases.rst:36
+msgid ""
+"The commands ``exit``, ``EOF`` and ``quit`` all alias the same action, which "
+"is to leave xonsh in a safe manner. Typing ``Ctrl-d`` is the same as typing "
+"``EOF`` and pressing enter."
+msgstr ""
+
+#: ../../../aliases.rst:40
+msgid ""
+"``exit N`` sets the shell's exit code to ``N`` and stops the rest of the "
+"current script:"
+msgstr ""
+
+#: ../../../aliases.rst:43
+msgid ""
+"@ xonsh -c 'echo 1; exit 42; echo 3'\n"
+"1\n"
+"@ @.lastcmd.rtn\n"
+"42"
+msgstr ""
+
+#: ../../../aliases.rst:52
+msgid "Xonsh-specific Aliases"
+msgstr ""
+
+#: ../../../aliases.rst:55
+msgid "``history``"
+msgstr ""
+
+#: ../../../aliases.rst:56
 msgid ""
 "Tools for dealing with xonsh history. See `the history tutorial <history."
 "html>`_ for more information all the history command and all of its sub-"
@@ -96,43 +134,6 @@ msgid ""
 "occurrence of each\n"
 "    gc                  Launches a new history garbage collector\n"
 "    transfer            Transfer entries between history backends."
-msgstr ""
-
-#: ../../../aliases.rst:38
-msgid "``timeit``"
-msgstr ""
-
-#: ../../../aliases.rst:39
-msgid "Runs timing study on arguments. Similar to IPython's ``%timeit`` magic."
-msgstr ""
-
-#: ../../../aliases.rst:43
-msgid "``exit``, ``quit``, ``EOF``"
-msgstr ""
-
-#: ../../../aliases.rst:44
-msgid ""
-"The commands ``exit``, ``EOF`` and ``quit`` all alias the same action, which "
-"is to leave xonsh in a safe manner. Typing ``Ctrl-d`` is the same as typing "
-"``EOF`` and pressing enter."
-msgstr ""
-
-#: ../../../aliases.rst:48
-msgid ""
-"``exit N`` sets the shell's exit code to ``N`` and stops the rest of the "
-"current script:"
-msgstr ""
-
-#: ../../../aliases.rst:51
-msgid ""
-"@ xonsh -c 'echo 1; exit 42; echo 3'\n"
-"1\n"
-"@ @.lastcmd.rtn\n"
-"42"
-msgstr ""
-
-#: ../../../aliases.rst:60
-msgid "Xonsh-specific Aliases"
 msgstr ""
 
 #: ../../../aliases.rst:63
@@ -440,64 +441,78 @@ msgid "@ lines = $(@lines cat file)"
 msgstr ""
 
 #: ../../../aliases.rst:238
-msgid "``@json``"
+msgid "``@stream``"
 msgstr ""
 
 #: ../../../aliases.rst:239
-msgid "Parses JSON and returns a JSON object."
+msgid ""
+"Return output as stream of lines. This is useful when "
+"``$XONSH_SUBPROC_OUTPUT_FORMAT`` is set to ``list_lines``."
 msgstr ""
 
 #: ../../../aliases.rst:241
-msgid "@ data = $(@json curl https://example.com/data.json)"
+msgid "@ str = $(@stream cat file)"
 msgstr ""
 
 #: ../../../aliases.rst:247
-msgid "``@jsonl``"
+msgid "``@json``"
 msgstr ""
 
 #: ../../../aliases.rst:248
-msgid "Parses JSON lines and returns a list of JSON objects."
+msgid "Parses JSON and returns a JSON object."
 msgstr ""
 
 #: ../../../aliases.rst:250
-msgid "@ items = $(@jsonl cat data.jsonl)"
+msgid "@ data = $(@json curl https://example.com/data.json)"
 msgstr ""
 
 #: ../../../aliases.rst:256
-msgid "``@yaml``"
+msgid "``@jsonl``"
 msgstr ""
 
 #: ../../../aliases.rst:257
-msgid "Parses YAML and returns a dict."
+msgid "Parses JSON lines and returns a list of JSON objects."
 msgstr ""
 
 #: ../../../aliases.rst:259
-msgid "@ config = $(@yaml cat config.yaml)"
+msgid "@ items = $(@jsonl cat data.jsonl)"
 msgstr ""
 
 #: ../../../aliases.rst:265
-msgid "``@toml``"
+msgid "``@yaml``"
 msgstr ""
 
 #: ../../../aliases.rst:266
-msgid "Parses TOML and returns a dict."
+msgid "Parses YAML and returns a dict."
 msgstr ""
 
 #: ../../../aliases.rst:268
-msgid "@ config = $(@toml cat pyproject.toml)"
+msgid "@ config = $(@yaml cat config.yaml)"
 msgstr ""
 
 #: ../../../aliases.rst:274
-msgid "``@xml``"
+msgid "``@toml``"
 msgstr ""
 
 #: ../../../aliases.rst:275
+msgid "Parses TOML and returns a dict."
+msgstr ""
+
+#: ../../../aliases.rst:277
+msgid "@ config = $(@toml cat pyproject.toml)"
+msgstr ""
+
+#: ../../../aliases.rst:283
+msgid "``@xml``"
+msgstr ""
+
+#: ../../../aliases.rst:284
 msgid ""
 "Parses XML and returns an :class:`xml.etree.ElementTree.Element`. Navigate "
 "it with ``.tag``, ``.attrib``, ``.text``, ``.find()``, ``.findall()``, etc."
 msgstr ""
 
-#: ../../../aliases.rst:278
+#: ../../../aliases.rst:287
 msgid ""
 "@ feed = $(@xml curl -s https://github.com/xonsh/xonsh/releases.atom)\n"
 "  ns = {'a': 'http://www.w3.org/2005/Atom'}\n"
@@ -505,11 +520,11 @@ msgid ""
 "['v0.23.6', 'v0.23.5', 'v0.23.4', 'v0.23.3', 'v0.23.2']"
 msgstr ""
 
-#: ../../../aliases.rst:287
+#: ../../../aliases.rst:296
 msgid "``@lxml``"
 msgstr ""
 
-#: ../../../aliases.rst:288
+#: ../../../aliases.rst:297
 msgid ""
 "Parses XML with `lxml <https://lxml.de/>`_ and returns an ``lxml.etree."
 "_Element``. Adds full XPath, richer error messages, and faster parsing on "
@@ -517,7 +532,7 @@ msgid ""
 "(``xpip install lxml``)."
 msgstr ""
 
-#: ../../../aliases.rst:293
+#: ../../../aliases.rst:302
 msgid ""
 "@ feed = $(@lxml curl -s https://github.com/xonsh/xonsh/releases.atom)\n"
 "  ns = {'a': 'http://www.w3.org/2005/Atom'}\n"
@@ -525,15 +540,15 @@ msgid ""
 "['v0.23.6', 'v0.23.5', 'v0.23.4', 'v0.23.3', 'v0.23.2']"
 msgstr ""
 
-#: ../../../aliases.rst:302
+#: ../../../aliases.rst:311
 msgid "Directory Stack"
 msgstr ""
 
-#: ../../../aliases.rst:306
+#: ../../../aliases.rst:315
 msgid "``pushd``"
 msgstr ""
 
-#: ../../../aliases.rst:307
+#: ../../../aliases.rst:316
 msgid ""
 "Adds a directory to the top of the directory stack, or rotates the stack, "
 "making the new top of the stack the current working directory."
@@ -574,11 +589,11 @@ msgid ""
 "  -q, --quiet  Do not call dirs, regardless of $PUSHD_SILENT"
 msgstr ""
 
-#: ../../../aliases.rst:314
+#: ../../../aliases.rst:323
 msgid "``popd``"
 msgstr ""
 
-#: ../../../aliases.rst:315
+#: ../../../aliases.rst:324
 msgid "Removes entries from the directory stack."
 msgstr ""
 
@@ -605,11 +620,11 @@ msgid ""
 "  -q, --quiet  Do not call dirs, regardless of $PUSHD_SILENT"
 msgstr ""
 
-#: ../../../aliases.rst:321
+#: ../../../aliases.rst:330
 msgid "``dirs``"
 msgstr ""
 
-#: ../../../aliases.rst:322
+#: ../../../aliases.rst:331
 msgid ""
 "Displays the list of currently remembered directories.  Can also be used to "
 "clear the directory stack."
@@ -636,49 +651,49 @@ msgid ""
 "              uses a tilde to denote the home directory."
 msgstr ""
 
-#: ../../../aliases.rst:329
+#: ../../../aliases.rst:338
 msgid "Jobs"
 msgstr ""
 
-#: ../../../aliases.rst:332
+#: ../../../aliases.rst:341
 msgid "``jobs``"
 msgstr ""
 
-#: ../../../aliases.rst:333
+#: ../../../aliases.rst:342
 msgid "Display a list of all current jobs."
 msgstr ""
 
-#: ../../../aliases.rst:337
+#: ../../../aliases.rst:346
 msgid "``fg``"
 msgstr ""
 
-#: ../../../aliases.rst:338
+#: ../../../aliases.rst:347
 msgid ""
 "Bring the currently active job to the foreground, or, if a single number is "
 "given as an argument, bring that job to the foreground."
 msgstr ""
 
-#: ../../../aliases.rst:343
+#: ../../../aliases.rst:352
 msgid "``bg``"
 msgstr ""
 
-#: ../../../aliases.rst:344
+#: ../../../aliases.rst:353
 msgid ""
 "Resume execution of the currently active job in the background, or, if a "
 "single number is given as an argument, resume that job in the background."
 msgstr ""
 
-#: ../../../aliases.rst:349
+#: ../../../aliases.rst:358
 msgid "``disown``"
 msgstr ""
 
-#: ../../../aliases.rst:350
+#: ../../../aliases.rst:359
 msgid ""
 "The behavior of this command matches the behavior of zsh's disown command "
 "which is as follows:"
 msgstr ""
 
-#: ../../../aliases.rst:353
+#: ../../../aliases.rst:362
 msgid ""
 "Remove the specified jobs from the job table; the shell will no longer "
 "report their status, and will not complain if you try to exit an interactive "
@@ -690,39 +705,39 @@ msgid ""
 "independent of the setting of the $AUTO_CONTINUE option."
 msgstr ""
 
-#: ../../../aliases.rst:366
+#: ../../../aliases.rst:375
 msgid "Source Aliases"
 msgstr ""
 
-#: ../../../aliases.rst:370
+#: ../../../aliases.rst:379
 msgid "``source``"
 msgstr ""
 
-#: ../../../aliases.rst:371
+#: ../../../aliases.rst:380
 msgid ""
 "Executes the contents of the provided files in the current context. This, of "
 "course, only works on xonsh and Python files (``*.xsh``, ``*.py``). Use ``-"
 "e`` to ignore extension."
 msgstr ""
 
-#: ../../../aliases.rst:377
+#: ../../../aliases.rst:386
 msgid "``source-foreign``"
 msgstr ""
 
-#: ../../../aliases.rst:378
+#: ../../../aliases.rst:387
 msgid ""
 "Like the ``source`` command but for files in foreign (non-xonsh) languages. "
 "It will pick up the environment and any aliases."
 msgstr ""
 
-#: ../../../aliases.rst:381
+#: ../../../aliases.rst:390
 msgid ""
 "Supported shells: ``bash``, ``zsh``, ``sh`` (also ``dash``, ``ash``, "
 "``ksh``, ``mksh``, ``pdksh``), and ``cmd`` on Windows. Absolute paths like "
 "``/bin/bash`` or ``/bin/sh`` are canonicalised to the same defaults."
 msgstr ""
 
-#: ../../../aliases.rst:386
+#: ../../../aliases.rst:395
 msgid ""
 "The convenience wrappers below pre-set the ``shell`` and ``--sourcer`` "
 "arguments for the most common cases — every flag accepted by ``source-"
@@ -798,11 +813,11 @@ msgid ""
 "mode."
 msgstr ""
 
-#: ../../../aliases.rst:394
+#: ../../../aliases.rst:403
 msgid "``source-sh``"
 msgstr ""
 
-#: ../../../aliases.rst:395
+#: ../../../aliases.rst:404
 msgid ""
 "Thin wrapper around ``source-foreign sh`` with ``--sourcer .`` (the POSIX "
 "dot builtin, since ``/bin/sh`` on dash-based distros does not understand "
@@ -812,36 +827,36 @@ msgid ""
 "not)."
 msgstr ""
 
-#: ../../../aliases.rst:404
+#: ../../../aliases.rst:413
 msgid "``source-bash``"
 msgstr ""
 
-#: ../../../aliases.rst:405
+#: ../../../aliases.rst:414
 msgid "Thin wrapper around ``source-foreign bash`` with ``--sourcer source``."
 msgstr ""
 
-#: ../../../aliases.rst:409
+#: ../../../aliases.rst:418
 msgid "``source-zsh``"
 msgstr ""
 
-#: ../../../aliases.rst:410
+#: ../../../aliases.rst:419
 msgid "Thin wrapper around ``source-foreign zsh`` with ``--sourcer source``."
 msgstr ""
 
-#: ../../../aliases.rst:414
+#: ../../../aliases.rst:423
 msgid "Windows Aliases"
 msgstr ""
 
-#: ../../../aliases.rst:417
+#: ../../../aliases.rst:426
 msgid "cmd-based Aliases"
 msgstr ""
 
-#: ../../../aliases.rst:418
+#: ../../../aliases.rst:427
 msgid ""
 "The following aliases on Windows are expanded to ``['cmd', '/c', alias]``:"
 msgstr ""
 
-#: ../../../aliases.rst:420
+#: ../../../aliases.rst:429
 msgid ""
 "{'cls': ['cmd', '/c', 'cls'],\n"
 " 'copy': ['cmd', '/c', 'copy'],\n"
@@ -862,11 +877,11 @@ msgid ""
 " }"
 msgstr ""
 
-#: ../../../aliases.rst:443
+#: ../../../aliases.rst:452
 msgid "``activate``/``deactivate`` on Windows with Anaconda"
 msgstr ""
 
-#: ../../../aliases.rst:444
+#: ../../../aliases.rst:453
 msgid ""
 "On Windows with an Anaconda Python distribution, ``activate`` and "
 "``deactivate`` are aliased to ``['source-cmd', 'activate.bat']`` and "
@@ -874,11 +889,11 @@ msgid ""
 "commands to activate/deactivate conda environments as in cmd.exe."
 msgstr ""
 
-#: ../../../aliases.rst:451
+#: ../../../aliases.rst:460
 msgid "``sudo`` on Windows"
 msgstr ""
 
-#: ../../../aliases.rst:452
+#: ../../../aliases.rst:461
 msgid ""
 "On Windows, if no executables named ``sudo`` are found, Xonsh adds a "
 "``sudo`` alias that poly fills the \"run as Admin\" behavior with the help "
@@ -886,22 +901,22 @@ msgid ""
 "parameters and just takes the command to run."
 msgstr ""
 
-#: ../../../aliases.rst:459
+#: ../../../aliases.rst:468
 msgid "User Aliases with Descriptions"
 msgstr ""
 
-#: ../../../aliases.rst:461
+#: ../../../aliases.rst:470
 msgid ""
 "Every alias can carry a one-line description. It surfaces in the tab-"
 "completion dropdown next to the alias name, and in the ``cmd?`` / ``cmd??`` "
 "help output."
 msgstr ""
 
-#: ../../../aliases.rst:464
+#: ../../../aliases.rst:473
 msgid "For callable aliases, the function's docstring is used automatically:"
 msgstr ""
 
-#: ../../../aliases.rst:466
+#: ../../../aliases.rst:475
 msgid ""
 "@ @aliases.register('qwe')\n"
 "  def _qwe():\n"
@@ -912,13 +927,13 @@ msgid ""
 "qwe  List files in long format."
 msgstr ""
 
-#: ../../../aliases.rst:476
+#: ../../../aliases.rst:485
 msgid ""
 "For string and list aliases — which have nowhere to attach a docstring — use "
 "the dict form:"
 msgstr ""
 
-#: ../../../aliases.rst:479
+#: ../../../aliases.rst:488
 msgid ""
 "@ aliases['qwe'] = {'alias': 'ls -la', 'doc': 'List files'}\n"
 "@ aliases |= {\n"
@@ -927,21 +942,21 @@ msgid ""
 "  }"
 msgstr ""
 
-#: ../../../aliases.rst:487
+#: ../../../aliases.rst:496
 msgid ""
 "The dict form recognises two keys: ``'alias'`` (required, the alias value "
 "itself — string, list, or callable) and ``'doc'`` (optional, the one-line "
 "description). Other keys are reserved for future use and currently ignored."
 msgstr ""
 
-#: ../../../aliases.rst:491
+#: ../../../aliases.rst:500
 msgid ""
 "When ``'doc'`` is set on a callable alias, it overrides the function's own "
 "``__doc__`` — handy for showing a shorter summary in completions while "
 "keeping a longer docstring in the source:"
 msgstr ""
 
-#: ../../../aliases.rst:495
+#: ../../../aliases.rst:504
 msgid ""
 "@ def _bar():\n"
 "      \"\"\"Long, detailed description of bar...\"\"\"\n"
@@ -951,32 +966,32 @@ msgid ""
 "bar  Short summary"
 msgstr ""
 
-#: ../../../aliases.rst:504
+#: ../../../aliases.rst:513
 msgid ""
 "Reassigning an alias without a ``'doc'`` clears the previous description, so "
 "descriptions never accidentally stick to a different value bound under the "
 "same name."
 msgstr ""
 
-#: ../../../aliases.rst:508
+#: ../../../aliases.rst:517
 msgid ""
 "By default, the description shows in the dropdown only when the alias has a "
 "docstring (or an explicit ``'doc'``). To also show the binary path for non-"
 "alias commands, set ``$CMD_COMPLETIONS_SHOW_DESC = True``."
 msgstr ""
 
-#: ../../../aliases.rst:514
+#: ../../../aliases.rst:523
 msgid "See also"
 msgstr ""
 
-#: ../../../aliases.rst:516
+#: ../../../aliases.rst:525
 msgid ":doc:`callable_aliases` -- writing callable aliases in depth"
 msgstr ""
 
-#: ../../../aliases.rst:517
+#: ../../../aliases.rst:526
 msgid ":doc:`subprocess` -- subprocess operators and capturing modes"
 msgstr ""
 
-#: ../../../aliases.rst:518
+#: ../../../aliases.rst:527
 msgid ":doc:`xonsh RC <xonshrc>` -- defining aliases in RC files"
 msgstr ""
