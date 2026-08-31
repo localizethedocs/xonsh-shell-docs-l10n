@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.dummy.rst:2
+msgid "xonsh.history.dummy"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of xonsh.history.dummy:1
+msgid "Implements the xonsh history backend."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:2
+msgid "A dummy implement of history backend."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:23
+msgid "Represents a xonsh session's history."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:0 xonsh.history.base.History.is_ignored:0
+#: xonsh.history.base.History.run_gc:0 xonsh.history.dummy.DummyHistory:0
+#: xonsh.history.dummy.DummyHistory.append:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:28
+msgid "**remember_history**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.is_ignored:15 xonsh.history.dummy.DummyHistory:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:29
+msgid ""
+"Сontrols whether entered commands are saved to the command history. If True, "
+"commands are saved; if False, command history is not kept."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:32
+msgid "**sessionid**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:-1
+msgid "int, uuid, str, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory:33
+msgid "Current session identifier, will generate a new sessionid if not set."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.all_items:2
+msgid "Get all history items."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.append:2
+msgid "Append a command item into history."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.is_ignored:8
+#: xonsh.history.dummy.DummyHistory.append:7
+msgid "**cmd: dict**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.append:8
+msgid ""
+"This dict contains information about the command that is to be added to the "
+"history list. It should contain the keys ``inp``, ``rtn`` and ``ts``. These "
+"key names mirror the same names defined as instance variables in the "
+"``HistoryEntry`` class."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.clear:2
+msgid ""
+"Clears the history of the current session from both the disk and memory."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:2
+msgid ""
+"Deletes the history of the current session for commands that match a user-"
+"provided pattern."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:8
+msgid "**pattern: str**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:9
+msgid "The regex pattern to match commands against."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:0 xonsh.history.base.History.is_ignored:0
+#: xonsh.history.dummy.DummyHistory.info:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:15
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.delete:16
+msgid "The number of commands deleted from history."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.flush:2
+msgid "Flush the history items to disk from a buffer."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.info:2
+msgid "A collection of information about the shell history."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.info:10
+msgid "dict or collections.OrderedDict"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.info:11
+msgid "Contains history information as str key pairs."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.is_ignored:2
+msgid ""
+"Determines if a history item should be added to the event history. Call this "
+"in your append method."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.is_ignored:9
+msgid ""
+"The prospective item to append (structure is the same as the append method)."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.is_ignored:16
+msgid "True if the item should be appended, False if not."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.dummy.DummyHistory.items:2
+msgid "Get history items of current session."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.pull:2
+msgid "Pull history from other parallel sessions."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.run_gc:2
+msgid "Run the garbage collector."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.run_gc:7
+msgid "**size: None or tuple of a int and a string**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.run_gc:8
+msgid "Determines the size and units of what would be allowed to remain."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.run_gc:10
+msgid "**blocking: bool**"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.run_gc:11
+msgid "If set blocking, then wait until gc action finished."
+msgstr ""

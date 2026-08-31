@@ -1,0 +1,501 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.specs.rst:2
+msgid "xonsh.procs.specs"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of xonsh.procs.specs:1
+msgid "Subprocess specification and related utilities."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.DecoratorAlias:2
+msgid "Decorator alias base class."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.DecoratorAlias.decorate_spec:2
+#: xonsh.procs.specs.SpecAttrDecoratorAlias.decorate_spec:2
+msgid "Modify spec immediately after modifier added."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.DecoratorAlias.decorate_spec_pre_run:2
+msgid "Modify spec before run."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SpecAttrDecoratorAlias:2
+msgid "Decorator Alias for spec attributes."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:2
+msgid "A container for specifying how a subprocess command should be executed."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:29
+msgid "**cmd**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "list of str"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:30
+msgid "Command to be run."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:32
+msgid "**cls**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "Popen-like"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:33
+msgid "Class to run the subprocess with."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:35
+msgid "**stdin**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "file-like"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:36
+msgid "Popen file descriptor or flag for stdin."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:38
+msgid "**stdout**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:39
+msgid "Popen file descriptor or flag for stdout."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:41
+msgid "**stderr**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:42
+msgid "Popen file descriptor or flag for stderr."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:44
+msgid "**universal_newlines**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:45
+msgid "Whether or not to use universal newlines."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:47
+msgid "**close_fds**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:48
+msgid "Whether or not to close the file descriptors when the process exits."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:51
+msgid "**captured**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "bool or str, optional"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:52
+msgid ""
+"The flag for if the subprocess is captured, may be one of: False for $[], "
+"'stdout' for $(), 'hiddenobject' for ![], or 'object' for !()."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:56
+msgid "**env**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "dict"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:57
+msgid "Replacement environment to run the subporcess in."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:61
+msgid "**args**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:62
+msgid "Arguments as originally supplied."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:64
+msgid "**alias**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "list of str, callable, or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:65
+msgid "The alias that was resolved for this command, if any."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:67
+msgid "**binary_loc**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "str or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:68
+msgid "Path to binary to execute."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:70
+msgid "**is_proxy**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:71
+msgid "Whether or not the subprocess is or should be run as a proxy."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:73
+msgid "**background**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:74
+msgid "Whether or not the subprocess should be started in the background."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:76
+msgid "**threadable**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:77
+msgid ""
+"Whether or not the subprocess is able to be run in a background thread, "
+"rather than the main thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:80
+msgid "**pipeline_index**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "int or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:81
+msgid "The index number of this sepc into the pipeline that is being setup."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:83
+msgid "**last_in_pipeline**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:84
+msgid "Whether the subprocess is the last in the execution pipeline."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:86
+msgid "**captured_stdout**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:87
+msgid "Handle to captured stdin"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:89
+msgid "**captured_stderr**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:90
+msgid "Handle to captured stderr"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:92
+msgid "**stack**"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:-1
+msgid "list of FrameInfo namedtuples or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec:93
+msgid ""
+"The stack of the call-site of alias, if the alias requires it. None "
+"otherwise."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.build:2
+msgid ""
+"Creates an instance of the subprocess command, with any modifications and "
+"adjustments based on the actual cmd that was received."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.add_decorator:2
+msgid "Add spec modifier to the specification."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.close:2
+msgid "Release any pipe wrappers and channels held by this spec."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.close:4
+msgid ""
+"Required when a spec is created via ``cmds_to_specs`` but never executed (no "
+"``CommandPipeline._close_proc`` is invoked). The wrappers from ``PipeChannel."
+"open_writer/open_reader`` use ``closefd=False``, so leaving them for GC "
+"produces a ``ResourceWarning: unclosed file`` on Python 3.12+. Idempotent."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.prep_env_subproc:2
+msgid "Prepares the environment to use in the subprocess."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.prep_preexec_fn:2
+msgid "Prepares the 'preexec_fn' keyword argument"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_alias:2
+msgid "Resolving alias and setting up command."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_alias_cls:2
+msgid "Determine which proxy class to run an alias with."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_args_list:2
+msgid "Weave a list of arguments into a command."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_auto_cd:2
+msgid "Implements AUTO_CD functionality."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_binary_loc:2
+msgid "Sets the binary location"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_decorators:2
+msgid "Apply decorators."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_executable_commands:2
+msgid "Resolve command executables, if applicable."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_redirects:2
+msgid "Manages redirects."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.resolve_stack:2
+msgid "Computes the stack for a callable alias's call-site, if needed."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.SubprocSpec.run:2
+msgid "Launches the subprocess and returns the object."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.cmds_to_specs:2
+msgid ""
+"Converts a list of cmds to a list of SubprocSpec objects that are ready to "
+"be executed."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.cmds_to_specs:5
+msgid ""
+"``in_boolop`` is propagated from the parser; it is True when the whole "
+"pipeline is a direct operand of a ``&&``/``||`` chain.  Each spec gets the "
+"flag stored on it so downstream code (e.g. ``CommandPipeline``, "
+"``_raise_subproc_error``) can decide whether to short-circuit on returncode "
+"or raise."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.default_signal_pauser:2
+msgid "Pauses a signal, as needed."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.get_script_subproc_command:2
+msgid ""
+"Given the name of a script outside the path, returns a list representing an "
+"appropriate subprocess command to execute the script or None if the argument "
+"is not readable or not a script. Raises PermissionError if the script is not "
+"executable."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.is_app_execution_alias:2
+msgid ""
+"App execution aliases behave strangly on Windows and Python. Here we try to "
+"detect if a file is an app execution alias."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.no_pg_xonsh_preexec_fn:2
+msgid ""
+"Default subprocess preexec function for when there is no existing pipeline "
+"group."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.parse_shebang_from_file:2
+msgid ""
+"Returns shebang for a file or None. Doc: https://www.gnu.org/software/guile/"
+"manual/html_node/The-Meta-Switch.html"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:2
+msgid ""
+"Runs a subprocess, in its many forms. This takes a list of 'commands,' which "
+"may be a list of command line arguments or a string, representing a special "
+"connecting character.  For example::"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:6
+msgid "$ ls | grep wakka"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:8
+msgid "is represented by the following cmds::"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:10
+msgid "[['ls'], '|', ['grep', 'wakka']]"
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:12
+msgid "Lastly, the captured argument affects only the last real command."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of
+#: xonsh.procs.specs.run_subproc:14
+msgid ""
+"``in_boolop`` is forwarded from the parser; True when this whole pipeline is "
+"a direct operand of a ``&&``/``||`` chain.  Each spec receives ``spec."
+"in_boolop`` so downstream consumers can act on it (e.g. let a non-zero "
+"return short-circuit instead of raising)."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of xonsh.procs.specs.safe_close:2
+msgid "Safely attempts to close an object."
+msgstr ""
+
+#: ../../../../xonsh/procs/specs.py:docstring of xonsh.procs.specs.safe_open:2
+msgid "Safely attempts to open a file in for xonsh subprocs."
+msgstr ""
