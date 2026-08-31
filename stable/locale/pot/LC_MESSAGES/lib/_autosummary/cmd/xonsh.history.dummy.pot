@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -122,7 +123,8 @@ msgid "The regex pattern to match commands against."
 msgstr ""
 
 #: ../../../../xonsh/history/dummy.py:docstring of
-#: xonsh.history.base.History.delete:0 xonsh.history.base.History.is_ignored:0
+#: xonsh.history.base.History.delete:0 xonsh.history.base.History.erasedups:0
+#: xonsh.history.base.History.is_ignored:0
 #: xonsh.history.dummy.DummyHistory.info:0
 msgid "Returns"
 msgstr ""
@@ -135,6 +137,30 @@ msgstr ""
 #: ../../../../xonsh/history/dummy.py:docstring of
 #: xonsh.history.base.History.delete:16
 msgid "The number of commands deleted from history."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.erasedups:2
+msgid "Remove duplicate commands, keeping only the latest occurrence."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.erasedups:4
+msgid ""
+"Backends that support deduplication override this. The base implementation "
+"is a no-op."
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.erasedups:12
+msgid "tuple of int"
+msgstr ""
+
+#: ../../../../xonsh/history/dummy.py:docstring of
+#: xonsh.history.base.History.erasedups:13
+msgid ""
+"``(removed, total)`` — the number of duplicates removed and the total number "
+"of entries considered."
 msgstr ""
 
 #: ../../../../xonsh/history/dummy.py:docstring of

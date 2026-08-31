@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-08-31 16:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../../_templates/index.html:11
-msgid "Xonsh — Python-powered shell for Linux, macOS, Windows"
+msgid "Xonsh — Python-powered shell for Linux, macOS, Windows, Android"
 msgstr ""
 
 #: ../../../_templates/index.html:174
@@ -33,8 +33,8 @@ msgstr ""
 msgid "Install"
 msgstr ""
 
-#: ../../../_templates/index.html:183 ../../../_templates/index.html:506
-#: ../../../_templates/index.html:646
+#: ../../../_templates/index.html:183 ../../../_templates/index.html:507
+#: ../../../_templates/index.html:647
 msgid "Extensions"
 msgstr ""
 
@@ -65,7 +65,7 @@ msgid ""
 "                              The language is a superset of Python 3 with "
 "seamless integration of shell functionality and commands.\n"
 "                              It works on all major platforms, including "
-"Linux, macOS, Windows, BSD, Jupyter, Android and Raspberry Pi."
+"Linux, macOS, Windows, BSD, Jupyter, Android, Raspberry Pi and Nix."
 msgstr ""
 
 #: ../../../_templates/index.html:245
@@ -127,22 +127,22 @@ msgid ""
 "combine external programs into a single programmable environment."
 msgstr ""
 
-#: ../../../_templates/index.html:431
+#: ../../../_templates/index.html:432
 msgid "Xonsh is an Ecosystem"
 msgstr ""
 
-#: ../../../_templates/index.html:433
+#: ../../../_templates/index.html:434
 msgid ""
 "Xonsh extends beyond a shell through xontribs — community-driven plugins "
 "that integrate frameworks, developer tools, AI assistants, themes, and "
 "system features into a cohesive ecosystem."
 msgstr ""
 
-#: ../../../_templates/index.html:463
+#: ../../../_templates/index.html:464
 msgid "Xonsh is Everywhere"
 msgstr ""
 
-#: ../../../_templates/index.html:465
+#: ../../../_templates/index.html:466
 msgid ""
 "Xonsh is designed to adapt seamlessly to any platform, enabling the same "
 "workflows to run seamlessly across macOS, Linux, Windows, so scripts, "
@@ -150,129 +150,129 @@ msgid ""
 "package managers."
 msgstr ""
 
-#: ../../../_templates/index.html:495
+#: ../../../_templates/index.html:496
 msgid "Learn more →"
 msgstr ""
 
-#: ../../../_templates/index.html:508
+#: ../../../_templates/index.html:509
 msgid ""
 "Extensions in the Xonsh ecosystem are called xontribs (short for "
 "“contributions”) — a set of tools and conventions for extending the "
 "functionality of xonsh."
 msgstr ""
 
-#: ../../../_templates/index.html:523
+#: ../../../_templates/index.html:524
 msgid ""
 "Let your pipe lines from the standard output flow thru the Python code in "
 "the xonsh shell."
 msgstr ""
 
-#: ../../../_templates/index.html:538
+#: ../../../_templates/index.html:539
 msgid ""
 "Get identifiers, paths, URLs and words from the previous command output and "
 "use them for the next command in the xonsh shell."
 msgstr ""
 
-#: ../../../_templates/index.html:553
+#: ../../../_templates/index.html:554
 msgid ""
 "Return to the most recently used directory when starting the xonsh shell."
 msgstr ""
 
-#: ../../../_templates/index.html:568
+#: ../../../_templates/index.html:569
 msgid ""
 "Argcomplete support to tab completion of python and xonsh scripts in the "
 "xonsh shell."
 msgstr ""
 
-#: ../../../_templates/index.html:583
+#: ../../../_templates/index.html:584
 msgid "More xontribs →"
 msgstr ""
 
-#: ../../../_templates/index.html:606
+#: ../../../_templates/index.html:607
 msgid "Xonsh"
 msgstr ""
 
-#: ../../../_templates/index.html:609
+#: ../../../_templates/index.html:610
 msgid "Xonsh Website"
 msgstr ""
 
-#: ../../../_templates/index.html:612
+#: ../../../_templates/index.html:613
 msgid "Xonsh Documentation"
 msgstr ""
 
-#: ../../../_templates/index.html:615
+#: ../../../_templates/index.html:616
 msgid "Xonsh Releases"
 msgstr ""
 
-#: ../../../_templates/index.html:618
+#: ../../../_templates/index.html:619
 msgid "Xonsh Docker Hub"
 msgstr ""
 
-#: ../../../_templates/index.html:621
+#: ../../../_templates/index.html:622
 msgid "Xonsh Issue Tracker"
 msgstr ""
 
-#: ../../../_templates/index.html:626
+#: ../../../_templates/index.html:627
 msgid "Community"
 msgstr ""
 
-#: ../../../_templates/index.html:629
+#: ../../../_templates/index.html:630
 msgid "Xonsh Community"
 msgstr ""
 
-#: ../../../_templates/index.html:632
+#: ../../../_templates/index.html:633
 msgid "Xonsh Discussions"
 msgstr ""
 
-#: ../../../_templates/index.html:635
+#: ../../../_templates/index.html:636
 msgid "Xonsh Fediverse"
 msgstr ""
 
-#: ../../../_templates/index.html:638
+#: ../../../_templates/index.html:639
 msgid "Xonsh Matrix"
 msgstr ""
 
-#: ../../../_templates/index.html:641
+#: ../../../_templates/index.html:642
 msgid "Xonsh Merch"
 msgstr ""
 
-#: ../../../_templates/index.html:649
+#: ../../../_templates/index.html:650
 msgid "Github Xontribs"
 msgstr ""
 
-#: ../../../_templates/index.html:652
+#: ../../../_templates/index.html:653
 msgid "Awesome Xontribs"
 msgstr ""
 
-#: ../../../_templates/index.html:655
+#: ../../../_templates/index.html:656
 msgid "Xontrib Tutorial"
 msgstr ""
 
-#: ../../../_templates/index.html:658
+#: ../../../_templates/index.html:659
 msgid "Xontrib Template"
 msgstr ""
 
-#: ../../../_templates/index.html:663
+#: ../../../_templates/index.html:664
 msgid "Open Source"
 msgstr ""
 
-#: ../../../_templates/index.html:666
+#: ../../../_templates/index.html:667
 msgid "Xonsh Source Code"
 msgstr ""
 
-#: ../../../_templates/index.html:669
+#: ../../../_templates/index.html:670
 msgid "Xonsh License"
 msgstr ""
 
-#: ../../../_templates/index.html:672
+#: ../../../_templates/index.html:673
 msgid "Xonsh Developer's Guide"
 msgstr ""
 
-#: ../../../_templates/index.html:675
+#: ../../../_templates/index.html:676
 msgid "Xonsh Sponsor"
 msgstr ""
 
-#: ../../../_templates/index.html:678
+#: ../../../_templates/index.html:679
 msgid "Xonsh AI Policy"
 msgstr ""
 
