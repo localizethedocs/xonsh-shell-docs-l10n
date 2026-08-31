@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-08-31 16:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -547,10 +547,6 @@ msgstr ""
 msgid "Determines whether a line ends with a colon token, ignoring comments."
 msgstr ""
 
-#: ../../../../xonsh/tools.py:docstring of xonsh.tools.endswith_newline:2
-msgid "Force one new line character end to string."
-msgstr ""
-
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.ensure_slice:2
 msgid "Try to convert an object into a slice, complain on failure"
 msgstr ""
@@ -686,13 +682,6 @@ msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.globpath:2
 msgid "Simple wrapper around glob that also expands home and env vars."
-msgstr ""
-
-#: ../../../../xonsh/tools.py:docstring of
-#: xonsh.tools.hardcode_colors_for_win10:2
-msgid ""
-"Replace all ansi colors with hardcoded colors to avoid unreadable defaults "
-"in conhost.exe"
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.history_tuple_to_str:2
@@ -1237,10 +1226,6 @@ msgid ""
 "Decorator that specifies that a callable alias should not be run with any "
 "capturing. This is often needed if the alias call interactive subprocess, "
 "like pagers and text editors."
-msgstr ""
-
-#: ../../../../xonsh/tools.py:docstring of xonsh.tools.unquote:2
-msgid "Strip paired quotes from string once."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.unthreadable:2

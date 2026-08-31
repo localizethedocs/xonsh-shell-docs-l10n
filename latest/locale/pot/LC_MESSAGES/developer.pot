@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-08-31 16:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -773,10 +773,50 @@ msgid ""
 msgstr ""
 
 #: ../../../developer.rst:472
-msgid "Container"
+msgid "Binary cache"
 msgstr ""
 
 #: ../../../developer.rst:474
+msgid ""
+"Building xonsh from the flake compiles it from source, which takes a while. "
+"Every push to ``main`` is built by CI and the results are pushed to the "
+"`xonsh.cachix.org <https://app.cachix.org/cache/xonsh>`_ binary cache. To "
+"use it:"
+msgstr ""
+
+#: ../../../developer.rst:478
+msgid "nix run nixpkgs#cachix -- use xonsh"
+msgstr ""
+
+#: ../../../developer.rst:482
+msgid "Or declare the substituter yourself, e.g. on NixOS:"
+msgstr ""
+
+#: ../../../developer.rst:484
+msgid ""
+"nix.settings = {\n"
+"  substituters = [ \"https://xonsh.cachix.org\" ];\n"
+"  trusted-public-keys = [ \"xonsh.cachix.org-1:"
+"wwdHGMixIz1oZB0MtubjhZyCfWMWRLTQTT9zLO+DyMY=\" ];\n"
+"};"
+msgstr ""
+
+#: ../../../developer.rst:491
+msgid ""
+"The ``cachix`` branch always points at the newest commit of ``main`` that "
+"was built successfully, so following it guarantees a cache hit instead of a "
+"local build:"
+msgstr ""
+
+#: ../../../developer.rst:495
+msgid "nix run github:xonsh/xonsh/cachix"
+msgstr ""
+
+#: ../../../developer.rst:501
+msgid "Container"
+msgstr ""
+
+#: ../../../developer.rst:503
 msgid ""
 "It is often useful to try xonsh in a clean environment on a distribution "
 "other than your own — for example to reproduce a bug report or to validate a "
@@ -784,22 +824,22 @@ msgid ""
 "containers; ``docker`` would work just as well if you prefer it."
 msgstr ""
 
-#: ../../../developer.rst:481
+#: ../../../developer.rst:510
 msgid "Script to run in Container"
 msgstr ""
 
-#: ../../../developer.rst:483
+#: ../../../developer.rst:512
 msgid ""
 "If you want to run your \"work in progress version\" without installing and "
 "in a fresh environment you can use Docker. If Docker is installed you just "
 "have to run this:"
 msgstr ""
 
-#: ../../../developer.rst:487
+#: ../../../developer.rst:516
 msgid "python xonsh-in-docker.py"
 msgstr ""
 
-#: ../../../developer.rst:491
+#: ../../../developer.rst:520
 msgid ""
 "This will build and run the current state of the repository in an isolated "
 "container (it may take a while the first time you run it). You can override "
@@ -807,21 +847,21 @@ msgid ""
 "ptk``:"
 msgstr ""
 
-#: ../../../developer.rst:496
+#: ../../../developer.rst:525
 msgid "python xonsh-in-docker.py --python 3.13 --ptk 3.0.52"
 msgstr ""
 
-#: ../../../developer.rst:500
+#: ../../../developer.rst:529
 msgid ""
 "Ensure your cwd is the root directory of the project (i.e., the one "
 "containing the .git directory)."
 msgstr ""
 
-#: ../../../developer.rst:504
+#: ../../../developer.rst:533
 msgid "Nix Container"
 msgstr ""
 
-#: ../../../developer.rst:506
+#: ../../../developer.rst:535
 msgid ""
 "podman run --rm -it nixos/nix\n"
 "nix-channel --update && nix-shell -p xonsh\n"
@@ -829,11 +869,11 @@ msgid ""
 "xcontext"
 msgstr ""
 
-#: ../../../developer.rst:514
+#: ../../../developer.rst:543
 msgid "Arch Linux Container"
 msgstr ""
 
-#: ../../../developer.rst:516
+#: ../../../developer.rst:545
 msgid ""
 "podman run --rm -it archlinux/archlinux\n"
 "pacman -Syu git python-pip\n"
@@ -844,16 +884,16 @@ msgid ""
 "python -m pytest"
 msgstr ""
 
-#: ../../../developer.rst:528
+#: ../../../developer.rst:557
 msgid "Document History"
 msgstr ""
 
-#: ../../../developer.rst:530
+#: ../../../developer.rst:559
 msgid ""
 "Portions of this page have been forked from the PyNE documentation, "
 "Copyright 2011-2015, the PyNE Development Team. All rights reserved."
 msgstr ""
 
-#: ../../../developer.rst:534
+#: ../../../developer.rst:563
 msgid "Chronicle"
 msgstr ""
