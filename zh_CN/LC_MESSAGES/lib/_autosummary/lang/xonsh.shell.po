@@ -1,0 +1,110 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/lang/xonsh.shell.rst:2
+msgid "xonsh.shell"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell:1
+msgid "The xonsh shell"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:2
+msgid "Main xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:4
+msgid ""
+"Initializes execution environment and decides if prompt_toolkit or readline "
+"version of shell should be used."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:30
+msgid "**execer**"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:-1
+msgid "Execer"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:31
+msgid "An execer instance capable of running xonsh code."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:33
+msgid "**ctx**"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:-1
+msgid "Mapping, optional"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:34
+msgid ""
+"The execution context for the shell (e.g. the globals namespace). If none, "
+"this is computed by loading the rc files. If not None, this no additional "
+"context is computed and this is used directly."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:39
+msgid "**shell_type**"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:40
+msgid ""
+"The shell type to start, such as 'readline', 'prompt_toolkit1', or 'random'."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:43
+msgid "**history_backend**"
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.Shell:44
+msgid "The name of the history backend to use."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of
+#: xonsh.shell.Shell.construct_shell_cls:2
+msgid "Construct the history backend object."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.deindent:2
+msgid "Remove leading indentation from ``src`` before compilation."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.deindent:4
+msgid ""
+"Applies ``textwrap.dedent`` to strip the common leading whitespace from "
+"every line. If the first line ends with a line-continuation backslash and "
+"still begins with whitespace after dedent (paste of a subproc command where "
+"line 1 was indented deeper than the continuation line), also ``lstrip`` the "
+"source so the first line is flush-left."
+msgstr ""
+
+#: ../../../../xonsh/shell.py:docstring of xonsh.shell.transform_command:2
+msgid "Returns the results of firing the precommand handles."
+msgstr ""

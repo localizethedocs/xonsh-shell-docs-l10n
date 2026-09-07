@@ -1,0 +1,383 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.xontribs.rst:2
+msgid "xonsh.xontribs"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs:1
+msgid "Tools for helping manage xontributions."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.XontribNotInstalled:2
+msgid "raised when the requested xontrib is not found"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.xontribs.XontribAlias.Error.add_note:2
+#: ../../../../xonsh/xontribs.py:docstring
+#: xonsh.xontribs.XontribNotInstalled.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.xontribs.XontribAlias.Error.with_traceback:2
+#: ../../../../xonsh/xontribs.py:docstring
+#: xonsh.xontribs.XontribNotInstalled.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:2
+msgid "Return the integer represented by the given array of bytes."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:4
+msgid "bytes"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:5
+msgid ""
+"Holds the array of bytes to convert.  The argument must either support the "
+"buffer protocol or be an iterable object producing bytes.  Bytes and "
+"bytearray are examples of built-in objects that support the buffer protocol."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:9 xonsh.xontribs.ExitCode.to_bytes:8
+msgid "byteorder"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:10 xonsh.xontribs.ExitCode.to_bytes:9
+msgid ""
+"The byte order used to represent the integer.  If byteorder is 'big', the "
+"most significant byte is at the beginning of the byte array.  If byteorder "
+"is 'little', the most significant byte is at the end of the byte array.  To "
+"request the native byte order of the host system, use sys.byteorder as the "
+"byte order value. Default is to use 'big'."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:16 xonsh.xontribs.ExitCode.to_bytes:15
+msgid "signed"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.from_bytes:17
+msgid "Indicates whether two's complement is used to represent the integer."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.as_integer_ratio:2
+msgid "Return a pair of integers, whose ratio is equal to the original int."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.as_integer_ratio:4
+msgid "The ratio is in lowest terms and has a positive denominator."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.bit_count:2
+msgid ""
+"Number of ones in the binary representation of the absolute value of self."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.bit_count:4
+msgid "Also known as the population count."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.bit_length:2
+msgid "Number of bits necessary to represent self in binary."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.conjugate:2
+msgid "Returns self, the complex conjugate of any int."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.is_integer:2
+msgid "Returns True. Exists for duck type compatibility with float.is_integer."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.to_bytes:2
+msgid "Return an array of bytes representing an integer."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.to_bytes:4
+msgid "length"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.to_bytes:5
+msgid ""
+"Length of bytes object to use.  An OverflowError is raised if the integer is "
+"not representable with the given number of bytes. Default is length 1."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.to_bytes:16
+msgid ""
+"Determines whether two's complement is used to represent the integer.  If "
+"signed is False and a negative integer is given, an OverflowError is raised."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.denominator:2
+msgid "the denominator of a rational number in lowest terms"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.ExitCode.imag:2
+msgid "the imaginary part of a complex number"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.ExitCode.numerator:2
+msgid "the numerator of a rational number in lowest terms"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.ExitCode.real:2
+msgid "the real part of a complex number"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib:2
+msgid "Meta class that is used to describe a xontrib"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib:23
+msgid "Create new instance of Xontrib(module, distribution)"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.Xontrib.distribution:2
+msgid "short description about the xontrib."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.Xontrib.module:2
+msgid "path to the xontrib module"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.XontribAlias:2
+msgid "Manage xonsh extensions"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.XontribAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.auto_load_xontribs_from_entrypoints:2
+msgid "Load xontrib modules exposed via setuptools's entrypoints"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.find_xontrib:2
+msgid "Finds a xontribution from its name."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.get_module_docstring:2
+msgid "Find the module and return its docstring without actual import"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.get_xontribs:2
+msgid "Return xontrib definitions lazily."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of
+#: xonsh.xontribs.prompt_xontrib_install:2
+msgid "Returns a formatted string with name of xontrib package to prompt user"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.update_context:2
+msgid "Updates a context in place from a xontrib."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontrib_context:2
+msgid "Return a context dictionary for a xontrib of a given name."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontrib_data:2
+msgid "Collects and returns the data about installed xontribs."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_info:2
+msgid "Show details about an installed xontrib."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_info:0
+#: xonsh.xontribs.xontribs_list:0 xonsh.xontribs.xontribs_load:0
+#: xonsh.xontribs.xontribs_reload:0 xonsh.xontribs.xontribs_unload:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_info:7
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_info:8
+msgid "name of the xontrib"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_list:2
+msgid "List installed xontribs and show whether they are loaded or not"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_list:7
+msgid "**to_json**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_list:-1
+msgid "-j, --json"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_list:8
+msgid "reports results as json"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:2
+msgid "Load xontribs from a list of names"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:7
+#: xonsh.xontribs.xontribs_reload:7 xonsh.xontribs.xontribs_unload:7
+msgid "**names**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:8
+msgid "names of xontribs"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:10
+#: xonsh.xontribs.xontribs_reload:10 xonsh.xontribs.xontribs_unload:10
+msgid "**verbose**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:-1
+#: xonsh.xontribs.xontribs_reload:-1 xonsh.xontribs.xontribs_unload:-1
+msgid "-v, --verbose"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:11
+#: xonsh.xontribs.xontribs_reload:11 xonsh.xontribs.xontribs_unload:11
+msgid "verbose output"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:13
+msgid "**full_module**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:-1
+msgid "-f, --full"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:14
+msgid ""
+"indicates that the names are fully qualified module paths and not inside "
+"``xontrib`` package"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:16
+msgid "**suppress_warnings**"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:-1
+msgid "-s, --suppress-warnings"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_load:17
+msgid "no warnings about missing xontribs and return code 0"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_loaded:2
+msgid "Returns list of loaded xontribs."
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_reload:2
+msgid ""
+"Reload the given xontribs (requires ``_unload_xontrib_`` for full cleanup)"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_reload:8
+msgid "name of xontribs to reload"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_unload:2
+msgid ""
+"Unload the given xontribs (requires ``_unload_xontrib_`` for full cleanup)"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_unload:8
+msgid "name of xontribs to unload"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_unload:24
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/xontribs.py:docstring of xonsh.xontribs.xontribs_unload:25
+msgid ""
+"The xontrib must implement ``_unload_xontrib_()`` for proper cleanup. "
+"Without it, registered event handlers, env vars, aliases, and completers "
+"will remain active. The default is equivalent to ``del sys.modules[module]``."
+msgstr ""

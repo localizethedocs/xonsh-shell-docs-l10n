@@ -1,0 +1,863 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../developer.rst:4
+msgid "Developer's Guide"
+msgstr ""
+
+#: ../../../developer.rst:8
+msgid ""
+"Welcome to the xonsh developer's guide! This is a place for developers to "
+"place information that does not belong in the user's guide or the library "
+"reference but is useful or necessary for the next people that come along to "
+"develop xonsh."
+msgstr ""
+
+#: ../../../developer.rst:13
+msgid "All code changes must go through the pull request review procedure."
+msgstr ""
+
+#: ../../../developer.rst:17
+msgid "Making Your First Change"
+msgstr ""
+
+#: ../../../developer.rst:20
+msgid "Terminal-based workflow"
+msgstr ""
+
+#: ../../../developer.rst:22
+msgid "The simplified terminal-based workflow to contribute to xonsh:"
+msgstr ""
+
+#: ../../../developer.rst:24
+msgid ""
+"mkdir -p ~/git && cd ~/git\n"
+"# For example your name is `snail` and you forked https://github.com/xonsh/"
+"xonsh on Github\n"
+"git clone git@github.com:snail/xonsh.git\n"
+"# You can setup IDE (see next section) to extremely speed up the work and "
+"test.\n"
+"cd xonsh\n"
+"\n"
+"# Set git user name. Without `--global` it will work in local repository.\n"
+"git config user.name \"Snail\"\n"
+"git config user.email \"snail@email.com\"\n"
+"\n"
+"# Create your feature or fix branch.\n"
+"git checkout -b my_awesome_feature\n"
+"\n"
+"# Install dev packages.\n"
+"# python -m ensurepip --upgrade  # install pip if you have python without "
+"pip\n"
+"pip install -U pip\n"
+"pip install '.[dev]' '.[doc]'\n"
+"\n"
+"# Make changes: add new environment variable.\n"
+"vim xonsh/environ.py\n"
+"git add xonsh/environ.py\n"
+"\n"
+"# Create test.\n"
+"vim tests/environ.py\n"
+"python -m pytest\n"
+"\n"
+"# Live test.\n"
+"python -m xonsh --no-rc\n"
+"\n"
+"# Push\n"
+"git commit -m \"My new environment variable!\"\n"
+"git push\n"
+"\n"
+"# Open https://github.com/xonsh/xonsh/pulls\n"
+"# Use green button to open Pull Request (PR)\n"
+"# Use Conventional Commits naming e.g.\n"
+"# \"feat: New env variable $SNAIL\""
+msgstr ""
+
+#: ../../../developer.rst:65
+msgid "IDE-based workflow"
+msgstr ""
+
+#: ../../../developer.rst:67
+msgid "You can also use IDE like PyCharm:"
+msgstr ""
+
+#: ../../../developer.rst:69
+msgid "Install IDE e.g. `PyCharm <https://www.jetbrains.com/pycharm/>`_."
+msgstr ""
+
+#: ../../../developer.rst:70
+msgid ""
+"Go to ``File -> Project from Version Control -> URL`` https://github.com/"
+"xonsh/xonsh"
+msgstr ""
+
+#: ../../../developer.rst:71
+msgid "Go to the terminal and update pip and install full dependencies:"
+msgstr ""
+
+#: ../../../developer.rst:73
+msgid ""
+"# Run from PyCharm terminal with appropriate environment.\n"
+"python -m pip install -U pip  # you need pip >= 24\n"
+"python -m pip install '.[full]' '.[dev]' '.[doc]'"
+msgstr ""
+
+#: ../../../developer.rst:79
+msgid "Setup IDE e.g. PyCharm:"
+msgstr ""
+
+#: ../../../developer.rst:81
+msgid ""
+"Create project based on xonsh code directory.\n"
+"Click \"Run\" - \"Run...\" - \"Edit Configurations\"\n"
+"Click \"+\" and choose \"Python\". Set:\n"
+"    Name: \"xonsh --no-rc\".\n"
+"    Run: choose \"module\" and write \"xonsh\".\n"
+"    Script parameters: \"--no-rc -DFROM=PYCHARM\" (here \"FROM\" will help "
+"to identify process using `ps ax | grep PYCHARM`).\n"
+"    Working directory: \"/tmp\"  # to avoid corrupting the source code "
+"during experiments\n"
+"    Environment variables: add \";XONSH_SHOW_TRACEBACK=1\"\n"
+"    Modify options: click \"Emulate terminal in output console\".\n"
+"Save settings.\n"
+"\n"
+"Open `xonsh/procs/specs.py` and `def run_subproc` function.\n"
+"Put breakpoint to `specs = cmds_to_specs` code. See also: https://www."
+"jetbrains.com/help/pycharm/using-breakpoints.html\n"
+"Click \"Run\" - \"Debug...\" - \"xonsh\". Now you can see xonsh prompt.\n"
+"Run `echo 1` and now you're in the debug mode on the breakpoint.\n"
+"Press F8 to step forward. Good luck!"
+msgstr ""
+
+#: ../../../developer.rst:100
+msgid ""
+"Create git branch and solve `good first issue <https://github.com/xonsh/"
+"xonsh/issues?"
+"q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+sort%3Areactions-%2B1-"
+"desc>`_ or `popular issue <https://github.com/xonsh/xonsh/issues?"
+"q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc>`_."
+msgstr ""
+
+#: ../../../developer.rst:101
+msgid "Create pull request to xonsh."
+msgstr ""
+
+#: ../../../developer.rst:105
+msgid "Changelog"
+msgstr "變更日誌"
+
+#: ../../../developer.rst:107
+msgid ""
+"Use `conventional commits <https://www.conventionalcommits.org/en/v1.0.0/>`_ "
+"for your git commits and Pull-Request titles"
+msgstr ""
+
+#: ../../../developer.rst:108
+msgid ""
+"`CHANGELOG.md <CHANGELOG.md>`_ is automatically generated from these commit "
+"messages using `release-please-action <https://github.com/googleapis/release-"
+"please-action>`_"
+msgstr ""
+
+#: ../../../developer.rst:109
+msgid ""
+"We squash the Pull-Request commits when merging to maintain linear history. "
+"So it is important to use"
+msgstr ""
+
+#: ../../../developer.rst:113
+msgid "Style Guide"
+msgstr ""
+
+#: ../../../developer.rst:115
+msgid ""
+"xonsh is a pure Python project, and so we use PEP8 (with some additions) to "
+"ensure consistency throughout the code base."
+msgstr ""
+
+#: ../../../developer.rst:119
+msgid "Rules to Write By"
+msgstr ""
+
+#: ../../../developer.rst:121
+msgid ""
+"It is important to refer to things and concepts by their most specific name. "
+"When writing xonsh code or documentation please use technical terms "
+"appropriately. The following rules help provide needed clarity."
+msgstr ""
+
+#: ../../../developer.rst:126
+msgid "Interfaces"
+msgstr ""
+
+#: ../../../developer.rst:128
+msgid "User-facing APIs should be as generic and robust as possible."
+msgstr ""
+
+#: ../../../developer.rst:129
+msgid "Tests belong in the top-level ``tests`` directory."
+msgstr ""
+
+#: ../../../developer.rst:130
+msgid "Documentation belongs in the top-level ``docs`` directory."
+msgstr ""
+
+#: ../../../developer.rst:133
+msgid "Expectations"
+msgstr ""
+
+#: ../../../developer.rst:135
+msgid "Code must have associated tests and adequate documentation."
+msgstr ""
+
+#: ../../../developer.rst:136
+msgid ""
+"User-interaction code (such as the Shell class) is hard to test. Mechanism "
+"to test such constructs should be developed over time."
+msgstr ""
+
+#: ../../../developer.rst:138
+msgid "Have *extreme* empathy for your users."
+msgstr ""
+
+#: ../../../developer.rst:139
+msgid ""
+"Be selfish. Since you will be writing tests you will be your first user."
+msgstr ""
+
+#: ../../../developer.rst:142
+msgid "Python Style Guide"
+msgstr "Python 風格指南"
+
+#: ../../../developer.rst:144
+msgid ""
+"xonsh follows `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_ for all "
+"Python code. The following rules apply where `PEP8 <https://www.python.org/"
+"dev/peps/pep-0008/>`_ is open to interpretation."
+msgstr ""
+
+#: ../../../developer.rst:147
+msgid ""
+"Use absolute imports (``import xonsh.tools``) rather than explicit relative "
+"imports (``import .tools``). Implicit relative imports (``import tools``) "
+"are never allowed."
+msgstr ""
+
+#: ../../../developer.rst:150
+msgid ""
+"We use sphinx with the numpydoc extension to autogenerate API documentation. "
+"Follow the `numpydoc <https://numpydoc.readthedocs.io/en/latest/format."
+"html#docstring-standard>`_ standard for docstrings."
+msgstr ""
+
+#: ../../../developer.rst:152
+msgid "Simple functions should have simple docstrings."
+msgstr ""
+
+#: ../../../developer.rst:153
+msgid ""
+"Lines should be at most 80 characters long. The 72 and 79 character "
+"recommendations from PEP8 are not required here."
+msgstr ""
+
+#: ../../../developer.rst:155
+msgid ""
+"Tests should be written with `pytest <https://docs.pytest.org/>`_ using a "
+"procedural style. Do not use unittest directly or write tests in an object-"
+"oriented style."
+msgstr ""
+
+#: ../../../developer.rst:157
+msgid "Test generators make more dots and the dots must flow!"
+msgstr ""
+
+#: ../../../developer.rst:158
+msgid ""
+"We use `ruff <https://docs.astral.sh/ruff/>`_ for linting and formatting the "
+"code. It is used as a `pre-commit <https://pre-commit.com/>`_ hook. Enable "
+"it by running:"
+msgstr ""
+
+#: ../../../developer.rst:160
+msgid ""
+"pre-commit install\n"
+"pre-commit run --all-files"
+msgstr ""
+
+#: ../../../developer.rst:167
+msgid "How to Test"
+msgstr "如何測試"
+
+#: ../../../developer.rst:170
+msgid "Dependencies"
+msgstr ""
+
+#: ../../../developer.rst:172
+msgid "Prep your environment for running the tests:"
+msgstr ""
+
+#: ../../../developer.rst:174
+msgid "pip install -e '.[dev]'"
+msgstr "pip install -e '.[dev]'"
+
+#: ../../../developer.rst:179
+msgid "Running the Tests - Basic"
+msgstr ""
+
+#: ../../../developer.rst:181
+msgid ""
+"Run all the tests using pytest. Use ``python -m pytest`` to prevent using "
+"xonsh code from ``site-packages`` if xonsh was installed in the same "
+"environment:"
+msgstr ""
+
+#: ../../../developer.rst:183
+msgid "python -m pytest -q"
+msgstr ""
+
+#: ../../../developer.rst:187
+msgid ""
+"Use \"-q\" to keep pytest from outputting a bunch of info for every test."
+msgstr ""
+
+#: ../../../developer.rst:190
+msgid "Running the Tests - Advanced"
+msgstr ""
+
+#: ../../../developer.rst:192
+msgid "To perform all unit tests:"
+msgstr ""
+
+#: ../../../developer.rst:194
+msgid "python -m pytest"
+msgstr "python -m pytest"
+
+#: ../../../developer.rst:198
+msgid ""
+"If you want to run specific tests you can specify the test names to execute. "
+"For example to run test_aliases:"
+msgstr ""
+
+#: ../../../developer.rst:201
+msgid "python -m pytest test_aliases.py"
+msgstr "python -m pytest test_aliases.py"
+
+#: ../../../developer.rst:205
+msgid "Note that you can pass multiple test names in the above examples:"
+msgstr ""
+
+#: ../../../developer.rst:207
+msgid "python -m pytest test_aliases.py test_environ.py"
+msgstr "python -m pytest test_aliases.py test_environ.py"
+
+#: ../../../developer.rst:212
+msgid "Running the Tests in Parallel"
+msgstr ""
+
+#: ../../../developer.rst:214
+msgid ""
+"On a multi-core machine `pytest-xdist <https://pypi.org/project/pytest-xdist/"
+">`_ runs tests several times faster by distributing work across worker "
+"processes:"
+msgstr ""
+
+#: ../../../developer.rst:218
+msgid ""
+"pip install pytest-xdist\n"
+"python -m pytest -n auto"
+msgstr ""
+"pip install pytest-xdist\n"
+"python -m pytest -n auto"
+
+#: ../../../developer.rst:223
+msgid ""
+"``-n auto`` uses one worker per CPU core. Pass an explicit integer (``-n "
+"4``) to cap the worker count."
+msgstr ""
+
+#: ../../../developer.rst:227
+msgid "Writing the Tests - Advanced"
+msgstr ""
+
+#: ../../../developer.rst:229
+msgid "(refer to pytest documentation)"
+msgstr ""
+
+#: ../../../developer.rst:231
+msgid ""
+"With the Pytest framework you can use bare ``assert`` statements on anything "
+"you're trying to test, note that the name of the test function has to be "
+"prefixed with ``test_``:"
+msgstr ""
+
+#: ../../../developer.rst:235
+msgid ""
+"def test_whatever():\n"
+"    assert is_true_or_false"
+msgstr ""
+
+#: ../../../developer.rst:240
+msgid ""
+"The conftest.py in tests directory defines fixtures for mocking various "
+"parts of xonsh for more test isolation. For a list of the various fixtures:"
+msgstr ""
+
+#: ../../../developer.rst:243
+msgid "python -m pytest --fixtures"
+msgstr ""
+
+#: ../../../developer.rst:247
+msgid ""
+"when writing tests it's best to use pytest features i.e. parametrization:"
+msgstr ""
+
+#: ../../../developer.rst:249
+msgid ""
+"@pytest.mark.parametrize('env', [test_env1, test_env2])\n"
+"def test_one(env, xession):\n"
+"    # update the environment variables instead of setting the attribute\n"
+"    # which could result in leaks to other tests.\n"
+"    # each run will have the same set of default env variables set.\n"
+"    xession.env.update(env)\n"
+"    ..."
+msgstr ""
+
+#: ../../../developer.rst:259
+msgid ""
+"this will run the test two times each time with the respective ``test_env``. "
+"This can be done with a for loop too but the test will run only once for the "
+"different test cases and you get less isolation."
+msgstr ""
+
+#: ../../../developer.rst:263
+msgid ""
+"With that in mind, each test should have the least ``assert`` statements, "
+"preferably one."
+msgstr ""
+
+#: ../../../developer.rst:266
+msgid "At the moment, xonsh doesn't support any pytest plugins."
+msgstr ""
+
+#: ../../../developer.rst:268
+msgid "Happy Testing!"
+msgstr "測試愉快！"
+
+#: ../../../developer.rst:272
+msgid "How to Document"
+msgstr ""
+
+#: ../../../developer.rst:274
+msgid ""
+"Documentation takes many forms. This will guide you through the steps of "
+"successful documentation."
+msgstr ""
+
+#: ../../../developer.rst:278
+msgid "Docstrings"
+msgstr "文件字串"
+
+#: ../../../developer.rst:280
+msgid ""
+"No matter what language you are writing in, you should always have "
+"documentation strings along with you code. This is so important that it is "
+"part of the style guide. When writing in Python, your docstrings should be "
+"in reStructured Text using the `numpydoc <https://numpydoc.readthedocs.io/en/"
+"latest/format.html#docstring-standard>`_ format."
+msgstr ""
+
+#: ../../../developer.rst:286
+msgid "Auto-Documentation Hooks"
+msgstr ""
+
+#: ../../../developer.rst:288
+msgid ""
+"The docstrings that you have written will automatically be connected to the "
+"website, once the appropriate hooks have been setup. At this stage, all "
+"documentation lives within xonsh's top-level ``docs`` directory. We uses the "
+"sphinx tool to manage and generate the documentation, which you can learn "
+"about from `the sphinx website <http://sphinx-doc.org/>`_. If you want to "
+"generate the documentation, first xonsh itself must be installed and then "
+"you may run the following command from the ``docs`` dir:"
+msgstr ""
+
+#: ../../../developer.rst:296 ../../../developer.rst:343
+msgid ""
+"cd docs/\n"
+"make html"
+msgstr ""
+
+#: ../../../developer.rst:301
+msgid ""
+"For each new module, you will have to supply the appropriate hooks. This "
+"should be done the first time that the module appears in a pull request. "
+"From here, call the new module ``mymod``. The following explains how to add "
+"hooks."
+msgstr ""
+
+#: ../../../developer.rst:307
+msgid "Python Hooks"
+msgstr ""
+
+#: ../../../developer.rst:309
+msgid ""
+"Python API documentation is generated for the entries in ``docs/api.rst``. "
+"`sphinx-autosummary <https://www.sphinx-doc.org/en/master/usage/extensions/"
+"autosummary.html>`_ is used to generate documentation for the modules. "
+"Mention your module ``mymod`` under appropriate header. This will discover "
+"all of the docstrings in ``mymod`` and create the appropriate webpage."
+msgstr ""
+
+#: ../../../developer.rst:318
+msgid "Building the Website"
+msgstr ""
+
+#: ../../../developer.rst:320
+msgid "Building the website/documentation requires the following dependencies:"
+msgstr ""
+
+#: ../../../developer.rst:322
+msgid "`Sphinx <http://sphinx-doc.org/>`_"
+msgstr "`Sphinx <http://sphinx-doc.org/>`_"
+
+#: ../../../developer.rst:323
+msgid "`Furo Theme <https://pradyunsg.me/furo/>`_"
+msgstr "`Furo 主題 <https://pradyunsg.me/furo/>`_"
+
+#: ../../../developer.rst:324
+msgid ""
+"`numpydoc <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
+"standard>`_"
+msgstr ""
+"`numpydoc <https://numpydoc.readthedocs.io/en/latest/format.html#docstring-"
+"standard>`_"
+
+#: ../../../developer.rst:325
+msgid "`MyST Parser <https://myst-parser.readthedocs.io>`_"
+msgstr "`MyST Parser <https://myst-parser.readthedocs.io>`_"
+
+#: ../../../developer.rst:327
+msgid "Note that xonsh itself needs to be installed too."
+msgstr ""
+
+#: ../../../developer.rst:329
+msgid ""
+"If you have cloned the git repository, you can install all of the doc-"
+"related dependencies by running:"
+msgstr ""
+
+#: ../../../developer.rst:332
+msgid "pip install -e '.[doc]'"
+msgstr "pip install -e '.[doc]'"
+
+#: ../../../developer.rst:337
+msgid "Procedure for modifying the website"
+msgstr ""
+
+#: ../../../developer.rst:339
+msgid ""
+"The xonsh website source files are located in the ``docs`` directory. A "
+"developer first makes necessary changes, then rebuilds the website locally "
+"by executing the command:"
+msgstr ""
+
+#: ../../../developer.rst:348
+msgid ""
+"This will generate html files for the website in the ``_build/html/`` folder."
+msgstr ""
+
+#: ../../../developer.rst:350
+msgid ""
+"You can watch for changes and automatically rebuild the documentation with "
+"the following command:"
+msgstr ""
+
+#: ../../../developer.rst:352
+msgid "make serve"
+msgstr "make serve"
+
+#: ../../../developer.rst:356
+msgid ""
+"The developer may view the local changes by opening these files with their "
+"favorite browser, e.g.:"
+msgstr ""
+
+#: ../../../developer.rst:359
+msgid "firefox _build/html/index.html"
+msgstr "firefox _build/html/index.html"
+
+#: ../../../developer.rst:363
+msgid ""
+"Once the developer is satisfied with the changes, the changes should be "
+"committed and pull-requested per usual. The docs are built and deployed "
+"using GitHub Actions."
+msgstr ""
+
+#: ../../../developer.rst:367
+msgid ""
+"Docs associated with the latest release are hosted at `https://xon.sh "
+"<https://xon.sh>`_ while docs for the current ``main`` branch are available "
+"at `https://xon.sh/dev <https://xon.sh/dev>`_."
+msgstr ""
+
+#: ../../../developer.rst:372
+msgid "Branches and Releases"
+msgstr ""
+
+#: ../../../developer.rst:374
+msgid ""
+"Mainline xonsh development occurs on the ``main`` branch. Other branches may "
+"be used for feature development (topical branches) or to represent past and "
+"upcoming releases."
+msgstr ""
+
+#: ../../../developer.rst:379
+msgid "Maintenance Tasks"
+msgstr ""
+
+#: ../../../developer.rst:381
+msgid ""
+"You can cleanup your local repository of transient files such as \\*.pyc "
+"files created by unit testing by running:"
+msgstr ""
+
+#: ../../../developer.rst:384
+msgid ""
+"rm -f xonsh/parser_table.py xonsh/completion_parser_table.py\n"
+"rm -f xonsh/*.pyc tests/*.pyc\n"
+"rm -fr build"
+msgstr ""
+
+#: ../../../developer.rst:391
+msgid "Performing the Release"
+msgstr ""
+
+#: ../../../developer.rst:393
+msgid ""
+"Releases are automated via `GitHub Actions <https://github.com/xonsh/xonsh/"
+"tree/main/.github/workflows>`_. All workflows for testing, building Python "
+"packages, and producing AppImage binaries live in the ``.github/workflows`` "
+"directory of the repository."
+msgstr ""
+
+#: ../../../developer.rst:398
+msgid "Cross-platform testing"
+msgstr ""
+
+#: ../../../developer.rst:400
+msgid ""
+"Most of the time, an actual VM machine is needed to test the nuances of "
+"cross platform testing. But alas here are some other ways to test things"
+msgstr ""
+
+#: ../../../developer.rst:403
+msgid "Windows"
+msgstr ""
+
+#: ../../../developer.rst:405
+msgid ""
+"`wine <https://www.winehq.org/>`_ can be used to emulate the development "
+"environment. It provides cmd.exe with its default installation."
+msgstr ""
+
+#: ../../../developer.rst:407
+msgid "macOS"
+msgstr ""
+
+#: ../../../developer.rst:409
+msgid ""
+"`darlinghq <https://www.darlinghq.org/>`_ can be used to emulate the "
+"development environment for Linux users. Windows users can use Linux inside "
+"a virtual machine or WSL to run the same."
+msgstr ""
+
+#: ../../../developer.rst:411
+msgid ""
+"`OSX KVM <https://github.com/kholia/OSX-KVM>`_ can be used for "
+"virtualization."
+msgstr ""
+
+#: ../../../developer.rst:413
+msgid "Linux"
+msgstr ""
+
+#: ../../../developer.rst:415
+msgid ""
+"It far easier to test things for Linux. `docker <https://www.docker.com/>`_ "
+"is available on all three platforms."
+msgstr ""
+
+#: ../../../developer.rst:417
+msgid ""
+"One can leverage the Github Actions to provide a reverse shell to test "
+"things out. Solutions like `actions-tmate <https://mxschmitt.github.io/"
+"action-tmate/>`_ are available, but they should not in any way violate the "
+"Github Action policies."
+msgstr ""
+
+#: ../../../developer.rst:424
+msgid "Testing xonsh on Different Operating Systems"
+msgstr ""
+
+#: ../../../developer.rst:427
+msgid "Nix"
+msgstr ""
+
+#: ../../../developer.rst:429
+msgid ""
+"If you have Nix package manager installed on your system, you can use it "
+"instead of Docker to build and run your \"work in progress version\". If Nix "
+"is configured with experimental features ``nix-command`` and ``flakes`` "
+"enabled, it is as simple as running this in the project directory:"
+msgstr ""
+
+#: ../../../developer.rst:434
+msgid ""
+"# build and run with a single command\n"
+"nix run\n"
+"\n"
+"# or build and then run\n"
+"nix build  # this builds the package and creates a `result` symlink\n"
+"./result/bin/xonsh"
+msgstr ""
+
+#: ../../../developer.rst:443
+msgid ""
+"This will build and run the current state of the repository with Nix. "
+"Optionally add ``-L`` to the Nix commands to see detailed output when "
+"building. If you have new files created and need them to build, make sure "
+"they're added to Git (e.g. using ``git add``), or Nix won't be aware of them "
+"when building the package from flake."
+msgstr ""
+
+#: ../../../developer.rst:448
+msgid "If you prefer not to use flakes, it can also be done in a legacy way:"
+msgstr ""
+
+#: ../../../developer.rst:450
+msgid ""
+"nix-build nix/ -A xonsh\n"
+"./result/bin/xonsh"
+msgstr ""
+
+#: ../../../developer.rst:455
+msgid ""
+"The default Python version used follows the default of ``nixpkgs-unstable`` "
+"(it is 3.13 at the time of writing this). There are variants using different "
+"Python versions declared in ``nix/default.nix``. For example, to use Python "
+"3.14:"
+msgstr ""
+
+#: ../../../developer.rst:459
+msgid ""
+"# build and run\n"
+"nix run '.#xonsh-py314'\n"
+"\n"
+"# build only\n"
+"nix build '.#xonsh-py314'\n"
+"\n"
+"# build with legacy nix\n"
+"nix-build nix/ -A xonsh-py314"
+msgstr ""
+
+#: ../../../developer.rst:472
+msgid "Container"
+msgstr "容器"
+
+#: ../../../developer.rst:474
+msgid ""
+"It is often useful to try xonsh in a clean environment on a distribution "
+"other than your own — for example to reproduce a bug report or to validate a "
+"change against a pristine setup. The recipes below use rootless ``podman`` "
+"containers; ``docker`` would work just as well if you prefer it."
+msgstr ""
+
+#: ../../../developer.rst:481
+msgid "Script to run in Container"
+msgstr ""
+
+#: ../../../developer.rst:483
+msgid ""
+"If you want to run your \"work in progress version\" without installing and "
+"in a fresh environment you can use Docker. If Docker is installed you just "
+"have to run this:"
+msgstr ""
+
+#: ../../../developer.rst:487
+msgid "python xonsh-in-docker.py"
+msgstr "python xonsh-in-docker.py"
+
+#: ../../../developer.rst:491
+msgid ""
+"This will build and run the current state of the repository in an isolated "
+"container (it may take a while the first time you run it). You can override "
+"the default Python and ``prompt_toolkit`` versions with ``--python`` and ``--"
+"ptk``:"
+msgstr ""
+
+#: ../../../developer.rst:496
+msgid "python xonsh-in-docker.py --python 3.13 --ptk 3.0.52"
+msgstr "python xonsh-in-docker.py --python 3.13 --ptk 3.0.52"
+
+#: ../../../developer.rst:500
+msgid ""
+"Ensure your cwd is the root directory of the project (i.e., the one "
+"containing the .git directory)."
+msgstr ""
+
+#: ../../../developer.rst:504
+msgid "Nix Container"
+msgstr "Nix 容器"
+
+#: ../../../developer.rst:506
+msgid ""
+"podman run --rm -it nixos/nix\n"
+"nix-channel --update && nix-shell -p xonsh\n"
+"xonsh\n"
+"xcontext"
+msgstr ""
+
+#: ../../../developer.rst:514
+msgid "Arch Linux Container"
+msgstr ""
+
+#: ../../../developer.rst:516
+msgid ""
+"podman run --rm -it archlinux/archlinux\n"
+"pacman -Syu git python-pip\n"
+"pacman -Syu man-db man-pages bash-completion\n"
+"git clone https://github.com/xonsh/xonsh\n"
+"cd xonsh\n"
+"pip install --break-system-packages '.[dev]' '.[test]' '.[doc]'\n"
+"python -m pytest"
+msgstr ""
+
+#: ../../../developer.rst:528
+msgid "Document History"
+msgstr ""
+
+#: ../../../developer.rst:530
+msgid ""
+"Portions of this page have been forked from the PyNE documentation, "
+"Copyright 2011-2015, the PyNE Development Team. All rights reserved."
+msgstr ""
+
+#: ../../../developer.rst:534
+msgid "Chronicle"
+msgstr ""

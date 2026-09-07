@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.updator.rst:2
+msgid "xonsh.shells.ptk\\_shell.updator"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator:1
+msgid "Has classes that help updating Prompt sections using Threads."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:2
+msgid "Represent an asynchronous prompt."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:0
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.start_update:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:28
+msgid "**name: str**"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:29
+msgid "what prompt to update. One of ['message', 'rprompt', 'bottom_toolbar']"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:31
+msgid "**session: PromptSession**"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt:32
+msgid "current ptk session"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.invalidate:2
+msgid ""
+"Create a timer to update the prompt. The timing can be configured through "
+"env variables. threading.Timer is used to stop calling invalidate frequently."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.start_update:2
+msgid "Listen on futures and update the prompt as each one completed."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.start_update:4
+msgid "Timer is used to avoid clogging multiple calls at the same time."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.start_update:8
+msgid "**on_complete:**"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.start_update:9
+msgid "callback to notify after all the futures are completed"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.AsyncPrompt.stop:2
+msgid "Stop any running threads"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.Executor:2
+msgid "Caches thread results across prompts."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.PromptUpdator:2
+msgid ""
+"Handle updating multiple AsyncPrompt instances prompt/rprompt/bottom_toolbar"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/updator.py:docstring of
+#: xonsh.shells.ptk_shell.updator.PromptUpdator.start:2
+msgid "after ptk prompt is created, update it in background."
+msgstr ""
