@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:2
+msgid "xonsh.completers"
+msgstr ""
+
+#: ../../../../xonsh/completers/__init__.py:docstring of xonsh.completers:1
+msgid "Tab completion providers for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/completers/__init__.py:docstring of xonsh.completers:3
+msgid ""
+"Bundles the built-in completers for Python expressions, file paths, "
+"commands, bash completions, man pages, imports, environment variables and "
+"more."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`base <xonsh.completers.base>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Base completer for xonsh."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`bash <xonsh.completers.bash>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Xonsh hooks into bash completions."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`bash_completion <xonsh.completers.bash_completion>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ""
+"This module provides the implementation for the retrieving completion "
+"results from bash."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`click <xonsh.completers.click>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ""
+"Tab-completion for click-based aliases registered via :func:`xonsh.aliases."
+"Aliases.register_click_command`."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`commands <xonsh.completers.commands>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`completer <xonsh.completers.completer>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`dirs <xonsh.completers.dirs>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`emoji <xonsh.completers.emoji>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Completer for unicode symbols and emoji."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`environment <xonsh.completers.environment>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`imports <xonsh.completers.imports>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Import statement completions."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`init <xonsh.completers.init>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Constructor for xonsh completer objects."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`man <xonsh.completers.man>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`path <xonsh.completers.path>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`python <xonsh.completers.python>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Completers for Python code"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid ":py:obj:`tools <xonsh.completers.tools>`"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
+msgid "Xonsh completer tools."
+msgstr ""

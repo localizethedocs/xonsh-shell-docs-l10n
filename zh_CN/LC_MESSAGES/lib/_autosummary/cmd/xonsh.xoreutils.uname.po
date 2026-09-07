@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.xoreutils.uname.rst:2
+msgid "xonsh.xoreutils.uname"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of xonsh.xoreutils.uname:1
+msgid "Provides a cross-platform way to figure out the system uname."
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of xonsh.xoreutils.uname:3
+msgid ""
+"This version of uname was written in Python for the xonsh project: http://"
+"xon.sh"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of xonsh.xoreutils.uname:5
+msgid "Based on cat from GNU coreutils: http://www.gnu.org/software/coreutils/"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:2
+msgid ""
+"This version of uname was written in Python for the xonsh project: https://"
+"xon.sh"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:4
+msgid ""
+"Based on uname from GNU coreutils: http://www.gnu.org/software/coreutils/"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:8
+msgid "**all**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-a, --all"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:9
+msgid ""
+"print all information, in the following order, except omit -p and -i if "
+"unknown"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:11
+msgid "**kernel_name**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-s, --kernel-name"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:12
+msgid "print the kernel name"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:14
+msgid "**node_name**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-n, --nodename"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:15
+msgid "print the network node hostname"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:17
+msgid "**kernel_release**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-r, --kernel-release"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:18
+msgid "print the kernel release"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:20
+msgid "**kernel_version**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-v, --kernel-version"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:21
+msgid "print the kernel version"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:23
+msgid "**machine**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-m, --machine"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:24
+msgid "print the machine hardware name"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:26
+msgid "**processor**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-p, --processor"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:27
+msgid "print the processor type (non-portable)"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:29
+msgid "**hardware_platform**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-i, --hardware-platform"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:30
+msgid "print the hardware platform (non-portable)"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:32
+msgid "**operating_system**"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:-1
+msgid "-o, --operating-system"
+msgstr ""
+
+#: ../../../../xonsh/xoreutils/uname.py:docstring of
+#: xonsh.xoreutils.uname.uname_fn:33
+msgid "print the operating system"
+msgstr ""

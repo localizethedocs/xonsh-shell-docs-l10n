@@ -1,0 +1,147 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.openpy.rst:2
+msgid "xonsh.lib.openpy"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:1
+msgid "Tools to open ``*.py`` files as Unicode."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:3
+msgid "Uses the encoding specified within the file, as per PEP 263."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:5
+msgid "Much of the code is taken from the tokenize module in Python 3.2."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:7
+msgid "This file was forked from the IPython project:"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:9
+msgid "Copyright (c) 2008-2014, IPython Development Team"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:10
+msgid "Copyright (C) 2001-2007 Fernando Perez <fperez@colorado.edu>"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:11
+msgid "Copyright (c) 2001, Janko Hauser <jhauser@zscout.de>"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy:12
+msgid "Copyright (c) 2001, Nathaniel Gray <n8gray@caltech.edu>"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_file:2
+msgid "Read a Python file, using the encoding declared inside the file."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_file:0
+#: xonsh.lib.openpy.read_py_url:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_file:7
+msgid "**filename**"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.read_py_file:-1 xonsh.lib.openpy.read_py_url:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_file:8
+msgid "The path to the file to read."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.read_py_file:10 xonsh.lib.openpy.read_py_url:14
+msgid "**skip_encoding_cookie**"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.read_py_file:-1 xonsh.lib.openpy.read_py_url:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.read_py_file:11 xonsh.lib.openpy.read_py_url:15
+msgid ""
+"If True (the default), and the encoding declaration is found in the first "
+"two lines, that line will be excluded from the output - compiling a unicode "
+"string with an encoding declaration is a SyntaxError in Python 2."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_file:0
+#: xonsh.lib.openpy.read_py_url:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.read_py_file:19 xonsh.lib.openpy.read_py_url:23
+msgid "A unicode string containing the contents of the file."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:2
+msgid ""
+"Read a Python file from a URL, using the encoding declared inside the file."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:7
+msgid "**url**"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:8
+msgid "The URL from which to fetch the file."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:10
+msgid "**errors**"
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:11
+msgid ""
+"How to handle decoding errors in the file. Options are the same as for bytes."
+"decode(), but here 'replace' is the default."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.source_to_unicode:2
+msgid "Converts a bytes string with python source code to unicode."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.source_to_unicode:4
+msgid ""
+"Unicode strings are passed through unchanged. Byte strings are checked for "
+"the python source file encoding cookie to determine encoding. txt can be "
+"either a bytes buffer or a string containing the source code."
+msgstr ""
+
+#: ../../../../xonsh/lib/openpy.py:docstring of
+#: xonsh.lib.openpy.strip_encoding_cookie:2
+msgid ""
+"Generator to pull lines from a text-mode file, skipping the encoding cookie "
+"if it is found in the first two lines."
+msgstr ""

@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.vc.rst:2
+msgid "xonsh.prompt.vc"
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of xonsh.prompt.vc:1
+msgid "Prompt formatter for simple version control branches"
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.branch_bg_color:2
+msgid ""
+"Return red if the current branch is dirty, yellow if the dirtiness can not "
+"be determined, and green if it clean. These are background colors."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of xonsh.prompt.vc.branch_color:2
+msgid ""
+"Return red if the current branch is dirty, yellow if the dirtiness can not "
+"be determined, and green if it clean. These are bold, intense colors for the "
+"foreground."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of xonsh.prompt.vc.current_branch:2
+msgid ""
+"Gets the branch for a current working directory. Returns an empty string if "
+"the cwd is not a repository.  This currently only works for git, hg, and "
+"fossil and should be extended in the future.  If a timeout occurred, the "
+"string '<branch-timeout>' is returned."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.dirty_working_directory:2
+msgid ""
+"Returns a boolean as to whether there are uncommitted files in version "
+"control repository we are inside. If this cannot be determined, returns "
+"None. Currently supports git and hg."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.fossil_dirty_working_directory:2
+msgid ""
+"Returns whether the fossil checkout is dirty. If this could not be "
+"determined (timeout, file not found, etc.) then this returns None."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.get_fossil_branch:2
+msgid ""
+"Attempts to find the current fossil branch. If this could not be determined "
+"(timeout, not in a fossil checkout, etc.) then this returns None."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of xonsh.prompt.vc.get_git_branch:2
+msgid ""
+"Attempts to find the current git branch. If this could not be determined "
+"(timeout, not in a git repo, etc.) then this returns None."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of xonsh.prompt.vc.get_hg_branch:2
+msgid ""
+"Try to get the mercurial branch of the current directory, return None if not "
+"in a repo or subprocess.TimeoutExpired if timed out."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.git_dirty_working_directory:2
+msgid ""
+"Returns whether or not the git directory is dirty. If this could not be "
+"determined (timeout, file not found, etc.) then this returns None."
+msgstr ""
+
+#: ../../../../xonsh/prompt/vc.py:docstring of
+#: xonsh.prompt.vc.hg_dirty_working_directory:2
+msgid ""
+"Computes whether or not the mercurial working directory is dirty or not. If "
+"this cannot be determined, None is returned."
+msgstr ""
