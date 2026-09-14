@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-09-14 15:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,7 +166,7 @@ msgid "Execution"
 msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:69
-msgid "``Ctrl-J``"
+msgid "``Alt-Ctrl-J``"
 msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:70
@@ -182,11 +182,11 @@ msgid "2. End and execute a multiline statement."
 msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:73
-msgid "``Ctrl-M``"
+msgid "``Alt-Ctrl-M``"
 msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:74
-msgid "Same as ``Ctrl-J``."
+msgid "Same as ``Alt-Ctrl-J``."
 msgstr ""
 
 #: ../../../keyboard_shortcuts.rst:78
