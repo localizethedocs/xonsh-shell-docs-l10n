@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.tracer.rst:2
+msgid "xonsh.tracer"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer:1
+msgid "Implements a xonsh tracer."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerAlias:2
+msgid "Tool for tracing xonsh code as it runs."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.tracer.TracerAlias.Error.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.tracer.TracerAlias.Error.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType:2
+msgid ""
+"Represents a xonsh tracer object, which keeps track of all tracing state. "
+"This is a singleton."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.tracer.TracerType.color_output:2
+msgid "Specify whether or not the tracer output should be colored."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.off_files:2
+msgid "removes selected files fom tracing."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.off_files:0
+#: xonsh.tracer.TracerType.on_files:0 xonsh.tracer.TracerType.toggle_color:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.off_files:7
+#: xonsh.tracer.TracerType.on_files:10
+msgid "**files**"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.off_files:8
+msgid ""
+"file paths to stop watching, use ``__file__`` (default) to select the "
+"current file."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.on_files:2
+msgid "begins tracing selected files."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.on_files:7
+msgid "**_args**"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.on_files:8
+msgid "argv from alias parser"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.on_files:11
+msgid ""
+"file paths to watch, use \"__file__\" (default) to select the current file."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.start:2
+msgid "Starts tracing a file."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.stop:2
+msgid "Stops tracing a file."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.tracer.TracerType.toggle_color:2
+msgid "output color management for tracer"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.tracer.TracerType.toggle_color:7
+msgid "**toggle**"
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of
+#: xonsh.tracer.TracerType.toggle_color:8
+msgid "true/false, y/n, etc. to toggle color usage."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.trace:2
+msgid "Implements a line tracing function."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.TracerType.trace:4
+msgid ""
+"Default-argument bindings keep cross-module references alive inside "
+"``__kwdefaults__``. At interpreter shutdown, weakref callbacks like "
+"``logging._removeHandlerRef`` can fire while ``xonsh.tracer``'s globals are "
+"being cleared, and without these bindings the lookups would raise "
+"``TypeError: 'NoneType' object is not callable``. See #4924 / #5806. "
+"``tracer_format_line`` is intentionally *not* bound here: it lives in this "
+"same module, so its lifetime matches ``trace`` itself."
+msgstr ""
+
+#: ../../../../xonsh/tracer.py:docstring of xonsh.tracer.tracer_format_line:2
+msgid "Formats a trace line suitable for printing."
+msgstr ""

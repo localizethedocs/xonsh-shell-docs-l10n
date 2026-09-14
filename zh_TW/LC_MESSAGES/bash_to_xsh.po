@@ -1,0 +1,523 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../bash_to_xsh.rst:2
+msgid "Bash to Xonsh Translation Guide"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:3
+msgid "This page provides xonsh equivalents for common patterns in Bash."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:9
+msgid "Bash"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:10
+msgid "Xonsh"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:11
+msgid "Notes"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:12
+msgid "No special object for represent session."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:13
+msgid "``@``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:14
+msgid ""
+"The ``@`` object has ``@.env`` - env variables, ``@.imp`` - importer, ``@."
+"lastcmd`` - last command, etc."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:15
+msgid "``script.sh``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:16
+msgid "``script.xsh``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:17
+msgid "The recommended file extension is ``.xsh``."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:18
+msgid "``#!/bin/bash``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:19
+msgid "``#!/usr/bin/env xonsh``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:20
+msgid "Use ``xonsh`` in the shebang."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:21
+msgid "``echo --arg=\"val\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:23
+msgid "``echo {}``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:25
+msgid "``echo \\;``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:27
+msgid "``echo --arg \"val\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:29
+msgid "``echo \"{}\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:31
+msgid "``echo \";\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:33
+msgid ""
+"Read `Subprocess Strings <https://xon.sh/strings.html>`_ tutorial to "
+"understand how strings become arguments in xonsh. There is no notion of an "
+"escaping character in xonsh like the backslash (``\\``) in bash. Single or "
+"double quotes can be used to remove the special meaning of certain "
+"characters, words or brackets."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:38
+msgid "``$NAME`` or ``${NAME}``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:39
+msgid "``$NAME``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:40
+msgid "Look up an environment variable by name."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:41
+msgid "``export NAME=Peter``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:42
+msgid "``$NAME = 'Peter'``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:43
+msgid ""
+"Setting an environment variable. See also :ref:`$UPDATE_OS_ENVIRON "
+"<update_os_environ>`."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:44
+msgid "``unset NAME``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:45
+msgid "``del $NAME``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:46
+msgid "Unsetting/deleting an environment variable."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:47 ../../../bash_to_xsh.rst:48
+msgid "``echo \"$HOME/hello\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:49
+msgid "Construct an argument using an environment variable."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:50
+msgid "``echo $HOME/$(uname)``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:51
+msgid "``echo @($HOME + '/' + $(uname))``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:52
+msgid "Concatenate a variable or text with the result of running a command."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:53
+msgid "``echo 'my home is $HOME'``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:54
+msgid "``echo @(\"my home is $HOME\")``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:55
+msgid "Escape an environment variable from expansion."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:56
+msgid "``${!VAR}``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:57
+msgid "``${var or expr}``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:58
+msgid ""
+"Look up an environment variable via another variable name. In xonsh, this "
+"may be any valid expression."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:60
+msgid "``ENV1=VAL1 command``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:61
+msgid "``$ENV1=VAL1 command``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:63
+msgid "or ``with @.env.swap(ENV1=VAL1): command``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:64
+msgid ""
+"Set temporary environment variable(s) and execute the command. Use the "
+"second notation with an indented block to execute many commands in the same "
+"context."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:66
+msgid "``alias ll='ls -la'``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:67
+msgid "``aliases['ll'] = 'ls -la'``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:68
+msgid ""
+"Alias in xonsh could be a subprocess command as a string or list of "
+"arguments or any Python function."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:69
+msgid "``$(cmd args)`` or ```cmd args```"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:70
+msgid "``@$(cmd args)``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:71
+msgid ""
+"Command substitution (allow the output of a command to replace the command "
+"itself).  Tokenizes and executes the output of a subprocess command as "
+"another subprocess."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:74
+msgid "``v=`echo 1```"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:75
+msgid "``v=$(echo 1)``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:76
+msgid ""
+"In bash, backticks mean to run a captured subprocess - it's ``$()`` in "
+"xonsh. Backticks in xonsh mean regex globbing (i.e. ``ls `/etc/pass.*```)."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:78
+msgid "``echo -e \"\\033[0;31mRed text\\033[0m\"``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:79
+msgid "``printx(\"{RED}Red text{RESET}\")``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:80
+msgid "Print colored text as easy as possible."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:81
+msgid "``shopt -s dotglob``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:82
+msgid "``$DOTGLOB = True``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:83
+msgid ""
+"Globbing files with ``*`` or ``**`` will also match dotfiles, or those "
+"‘hidden’ files whose names begin with a literal `.`. Such files are filtered "
+"out by default like in bash."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:85
+msgid "``if [ -f \"$FILE\" ];``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:86
+msgid ""
+"``p'/path/to/file'.exists()`` or ``pf'{file}'.exists()`` or ``if !(test -f "
+"$FILE):``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:87
+msgid ""
+"Path objects can be instantiated and checked directly using p-string syntax."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:88
+msgid "``set -e``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:89
+msgid "``$XONSH_SUBPROC_RAISE_ERROR = True`` *(default)*"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:90
+msgid ""
+"Cause a failure after a non-zero return code of the *final* command in a "
+"statement — this matches bash's ``set -e`` semantics where intermediate "
+"failures inside ``&&``/``||`` chains are allowed. Xonsh will raise a "
+"``subprocess.CalledProcessError``. Use ``$XONSH_SUBPROC_CMD_RAISE_ERROR = "
+"True`` to additionally raise on *every* failing individual command."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:96
+msgid "``set -x``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:97
+msgid "``trace on`` and ``$XONSH_SUBPROC_TRACE = True``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:98
+msgid "Turns on tracing of source code lines during execution."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:99
+msgid "``&&``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:100
+msgid "``&&`` or ``and``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:101
+msgid "Logical-and operator for subprocesses."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:102
+msgid "``||``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:103
+msgid "``||`` as well as ``or``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:104
+msgid "Logical-or operator for subprocesses."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:105
+msgid "``$$``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:106
+msgid "``os.getpid()``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:107
+msgid "Get PID of the current shell."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:108
+msgid "``$?``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:109
+msgid "``@.lastcmd.rtn``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:110
+msgid ""
+"Returns the exit code, or status, of the previous command. To get the exit "
+"code of the command in xonsh script use ``!().rtn`` for not interactive "
+"processes."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:113
+msgid "``$<n>``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:114
+msgid "``$ARG<n>``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:115
+msgid ""
+"Command line argument at index ``n``, so ``$ARG1`` is the equivalent of "
+"``$1``."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:117
+msgid "``$@``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:118
+msgid "``$ARGS``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:119
+msgid "List of all command line argument and parameter strings."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:120
+msgid "``while getopts``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:121
+msgid ""
+"Use `argparse <https://docs.python.org/3/library/argparse.html>`_ or `click "
+"<https://click.palletsprojects.com>`_."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:122
+msgid ""
+"See also `awesome-cli-app <https://github.com/anki-code/xonsh-awesome-cli-"
+"app>`_ and `xontrib-argcomplete <https://github.com/anki-code/xontrib-"
+"argcomplete>`_ ."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:124
+msgid "``complete``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:125
+msgid "``completer list``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:126
+msgid ""
+"As with many other shells, xonsh ships with the ability to complete "
+"partially-specified arguments upon hitting the “tab” key."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:128
+msgid "``IFS``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:129
+msgid "``$XONSH_SUBPROC_OUTPUT_FORMAT``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:130
+msgid ""
+"Changing the output representation and splitting. Also take a look into "
+"``DecoratorAlias`` to have an ability to return object e.g. ``j = $(@json "
+"echo '{}')``."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:132
+msgid "OhMyBash or BashIt"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:133
+msgid "`awesome-xontribs <https://github.com/xonsh/awesome-xontribs>`_"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:134
+msgid ""
+"Xontributions, or ``xontribs``, are a set of tools and conventions for "
+"extending the functionality of xonsh beyond what is provided by default."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:136
+msgid "Display completions as list"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:137
+msgid "``$COMPLETIONS_DISPLAY = 'readline'``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:138
+msgid "Display completions will emulate the behavior of readline."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:139
+msgid "``podman run -it bash``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:140
+msgid "``podman run -it xonsh/xonsh:slim``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:141
+msgid ""
+"Xonsh publishes a handful of containers, primarily targeting CI and "
+"automation use cases. All of them are published on `Docker Hub <https://hub."
+"docker.com/u/xonsh>`_."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:143
+msgid "``exit 1``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:144
+msgid "``exit 1`` or ``exit(1)``"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:145
+msgid "Exiting from the current script."
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:147
+msgid ""
+"To understand how xonsh executes the subprocess commands try ``showcmd`` or "
+"set :ref:`$XONSH_SUBPROC_TRACE <xonsh_subproc_trace>` to ``True``:"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:149
+msgid ""
+"@ $XONSH_SUBPROC_TRACE = True\n"
+"@ echo $(echo @('hello')) @('wor' + 'ld') | grep hello\n"
+"TRACE SUBPROC: (['echo', 'hello'],)\n"
+"TRACE SUBPROC: (['echo', 'hello\\n', 'world'], '|', ['grep', 'hello'])"
+msgstr ""
+
+#: ../../../bash_to_xsh.rst:156
+msgid ""
+"If after time you still try to type ``export``, ``unset`` or ``!!`` commands "
+"there are the `bashisms <https://github.com/xonsh/xontrib-bashisms>`_ and "
+"`sh <https://github.com/anki-code/xontrib-sh>`_ xontribs."
+msgstr ""

@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:2
+msgid "xonsh.shells"
+msgstr ""
+
+#: ../../../../xonsh/shells/__init__.py:docstring of xonsh.shells:1
+msgid "The xonsh interactive shells"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid ":py:obj:`base_shell <xonsh.shells.base_shell>`"
+msgstr ":py:obj:`base_shell <xonsh.shells.base_shell>`"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid "The base class for xonsh shell"
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid ":py:obj:`dumb_shell <xonsh.shells.dumb_shell>`"
+msgstr ":py:obj:`dumb_shell <xonsh.shells.dumb_shell>`"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid "A dumb shell for when $TERM == 'dumb', which usually happens in emacs."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid ":py:obj:`ptk_shell <xonsh.shells.ptk_shell>`"
+msgstr ":py:obj:`ptk_shell <xonsh.shells.ptk_shell>`"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid "The prompt_toolkit based xonsh shell."
+msgstr ""
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid ":py:obj:`readline_shell <xonsh.shells.readline_shell>`"
+msgstr ":py:obj:`readline_shell <xonsh.shells.readline_shell>`"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.rst:25:<autosummary>:1
+msgid "The readline based xonsh shell."
+msgstr ""

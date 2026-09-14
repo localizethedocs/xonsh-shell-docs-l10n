@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../events_tutorial.rst:5
+msgid "Events"
+msgstr ""
+
+#: ../../../events_tutorial.rst:6
+msgid "What's the best way to keep informed in xonsh? Subscribe to an event!"
+msgstr ""
+
+#: ../../../events_tutorial.rst:9
+msgid "Overview"
+msgstr ""
+
+#: ../../../events_tutorial.rst:10
+msgid ""
+"Simply, events are a way for various pieces of xonsh to tell each other "
+"what's going on. They're fired when something of note happens, eg the "
+"current directory changes or just before a command is executed."
+msgstr ""
+
+#: ../../../events_tutorial.rst:14
+msgid "See the `event list <events.html>`_ for the core xonsh events."
+msgstr ""
+
+#: ../../../events_tutorial.rst:17
+msgid "Show me the code!"
+msgstr ""
+
+#: ../../../events_tutorial.rst:19
+msgid ""
+"This will add a line to a file every time the current directory changes (due "
+"to ``cd``, ``pushd``, or several other commands):"
+msgstr ""
+
+#: ../../../events_tutorial.rst:22
+msgid ""
+"@events.on_chdir\n"
+"def _add_to_file(olddir, newdir, **kw):\n"
+"    with open('/tmp/.dirhist', 'a') as dh:\n"
+"        print(newdir, file=dh)"
+msgstr ""
+
+#: ../../../events_tutorial.rst:30
+msgid ""
+"Note that the event system is keyword only. Event handlers must match "
+"argument names and must have a ``**kw`` as protection against future changes."
+msgstr ""
+
+#: ../../../events_tutorial.rst:34
+msgid "Can I use this in my xontrib?"
+msgstr ""
+
+#: ../../../events_tutorial.rst:36
+msgid ""
+"Yes! It's even easy! In your xontrib, you just have to do something like:"
+msgstr ""
+
+#: ../../../events_tutorial.rst:38
+msgid ""
+"events.doc('myxontrib_on_spam', \"\"\"\n"
+"myxontrib_on_spam(can: Spam) -> bool?\n"
+"\n"
+"Fired in case of spam. Return ``True`` if it's been eaten.\n"
+"\"\"\")"
+msgstr ""
+
+#: ../../../events_tutorial.rst:46
+msgid ""
+"This will enable users to call ``help(events.myxontrib_on_spam)`` and get "
+"useful output."
+msgstr ""
+
+#: ../../../events_tutorial.rst:49
+msgid "Listing Registered Handlers"
+msgstr ""
+
+#: ../../../events_tutorial.rst:51
+msgid ""
+"You can easily inspect which handlers are registered for each event by "
+"simply printing the ``events`` object. This is useful for debugging and "
+"understanding which xontribs are active."
+msgstr ""
+
+#: ../../../events_tutorial.rst:55
+msgid ""
+"@events.on_precommand\n"
+"def my_handler(cmd, **_):\n"
+"    pass\n"
+"\n"
+"print(events)"
+msgstr ""
+
+#: ../../../events_tutorial.rst:63
+msgid "This will produce output similar to the following:"
+msgstr ""
+
+#: ../../../events_tutorial.rst:65
+msgid ""
+"on_lscolors_change:\n"
+"  - xonsh.pyghooks.on_lscolors_change\n"
+"on_pre_spec_run_ls:\n"
+"  - xonsh.environ.ensure_ls_colors_in_env\n"
+"on_precommand:\n"
+"  - __main__.my_handler"
+msgstr ""
+
+#: ../../../events_tutorial.rst:74
+msgid ""
+"To get this information programmatically, you can use the ``events."
+"handlers()`` method, which returns a dictionary mapping event names to a "
+"list of handler strings."
+msgstr ""
+
+#: ../../../events_tutorial.rst:77
+msgid ""
+"events.handlers()\n"
+"# {'on_lscolors_change': ['xonsh.pyghooks.on_lscolors_change'], ...}"
+msgstr ""
+
+#: ../../../events_tutorial.rst:83
+msgid "Notes for developers"
+msgstr ""
+
+#: ../../../events_tutorial.rst:85
+msgid "Handler call order is not guaranteed now."
+msgstr ""
+
+#: ../../../events_tutorial.rst:87
+msgid ""
+"``Event.fire()`` returns a list of the returns from the handlers. You should "
+"merge this list if it's needed."
+msgstr ""
+
+#: ../../../events_tutorial.rst:89
+msgid ""
+"In xonsh, events come in species. Each one may look like an event and quack "
+"like an event, but they behave differently. This was done because load hooks "
+"look like events and quack like events, but they have different semantics. "
+"See `LoadEvents <api/events.html#xonsh.events.LoadEvent>`_ for details. In "
+"order to turn an event from the default ``Event``, you must transmogrify it, "
+"using ``events.transmogrify()``. The class the event is turned in to must be "
+"a subclass of ``AbstractEvent``. Under the hood, transmogrify creates a new "
+"instance and copies the handlers and docstring from the old instance to the "
+"new one."
+msgstr ""
+
+#: ../../../events_tutorial.rst:98
+msgid "Further Reading"
+msgstr ""
+
+#: ../../../events_tutorial.rst:100
+msgid ""
+"For a complete list of available events, see `the events reference <events."
+"html>`_."
+msgstr ""
