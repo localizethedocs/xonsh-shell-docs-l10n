@@ -1,0 +1,183 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../editors.rst:4
+msgid "Editor and IDE"
+msgstr ""
+
+#: ../../../editors.rst:7
+msgid "Sublime Text"
+msgstr ""
+
+#: ../../../editors.rst:8
+msgid ""
+"There is a `xonsh package`_ for **Sublime Text 4** (build > 4075). To "
+"install:"
+msgstr ""
+
+#: ../../../editors.rst:10
+msgid ""
+"Via **Package Control**: open (``^``/``⌘`` ``⇧`` ``P``) ``Command Palette`` "
+"→ ``Package Control: Install Package`` → ``xonsh``"
+msgstr ""
+
+#: ../../../editors.rst:11
+msgid ""
+"**Manually**: clone the repository to your `Sublime Text packages`_ "
+"directory and rename it to ``xonsh``"
+msgstr ""
+
+#: ../../../editors.rst:13
+msgid ""
+"cd /path/to/sublime/packages/directory\n"
+"git clone https://github.com/eugenesvk/sublime-xonsh.git\n"
+"mv sublime-xonsh xonsh"
+msgstr ""
+
+#: ../../../editors.rst:24
+msgid "Visual Studio Code (VS Code)"
+msgstr ""
+
+#: ../../../editors.rst:25
+msgid ""
+"There is a `xonsh extension for VS Code`_. To install search \"xonsh\" using "
+"extensions menu or just press ``F1`` and run without `>` preceding:"
+msgstr ""
+
+#: ../../../editors.rst:28
+msgid "ext install jnoortheen.xonsh"
+msgstr ""
+
+#: ../../../editors.rst:34
+msgid ""
+"Since version 1.86 of VS Code, the editor also supports loading the "
+"environment for users with xonsh as their default shell."
+msgstr ""
+
+#: ../../../editors.rst:40
+msgid "JetBrains: IntelliJ IDEA, PyCharm"
+msgstr ""
+
+#: ../../../editors.rst:41
+msgid ""
+"There is a `xonsh-jetbrains <https://github.com/nahoj/xonsh-jetbrains>`_ "
+"plugin for JetBrains products."
+msgstr ""
+
+#: ../../../editors.rst:44
+msgid "Emacs"
+msgstr ""
+
+#: ../../../editors.rst:47
+msgid "Emacs Xonsh mode"
+msgstr ""
+
+#: ../../../editors.rst:49
+msgid ""
+"There is an emacs mode for editing xonsh scripts available from the `MELPA "
+"repository`_. If you are not familiar see the installation instructions "
+"there."
+msgstr ""
+
+#: ../../../editors.rst:53
+msgid "Then just add this line to your emacs configuration file:"
+msgstr ""
+
+#: ../../../editors.rst:55
+msgid "(require 'xonsh-mode)"
+msgstr ""
+
+#: ../../../editors.rst:64
+msgid "Xonsh Comint buffer"
+msgstr ""
+
+#: ../../../editors.rst:66
+msgid ""
+"You can use xonsh as your `interactive shell in Emacs <https://www.gnu.org/"
+"software/emacs/manual/html_node/emacs/Interactive-Shell.html>`_ in a Comint "
+"buffer. This way you keep all the Emacs editing power in the shell, but you "
+"lose xonsh's completion feature."
+msgstr ""
+
+#: ../../../editors.rst:71
+msgid ""
+"Make sure you install xonsh with readline support and in your :doc:`xonsh RC "
+"<xonshrc>` define"
+msgstr ""
+
+#: ../../../editors.rst:74
+msgid "$SHELL_TYPE = 'readline'"
+msgstr ""
+
+#: ../../../editors.rst:78
+msgid ""
+"Also, in Emacs set ``explicit-shell-file-name`` to your xonsh executable."
+msgstr ""
+
+#: ../../../editors.rst:81
+msgid "Xonsh Ansi-term buffer"
+msgstr ""
+
+#: ../../../editors.rst:83
+msgid ""
+"The second option is to run xonsh in an Ansi-term buffer inside Emacs. This "
+"way you have to switch modes if you want do Emacs-style editing, but you "
+"keep xonsh's impressive completion."
+msgstr ""
+
+#: ../../../editors.rst:87
+msgid ""
+"For this it is preferred to have xonsh installed with the prompt-toolkit. "
+"Then you can leave ``$SHELL_TYPE`` at its default."
+msgstr ""
+
+#: ../../../editors.rst:90
+msgid ""
+"Emacs will prompt you for the path of the xonsh executable when you start up "
+"``ansi-term``."
+msgstr ""
+
+#: ../../../editors.rst:94
+msgid "Vim"
+msgstr ""
+
+#: ../../../editors.rst:96
+msgid "There is `xonsh syntax file for vim`_. To install run:"
+msgstr ""
+
+#: ../../../editors.rst:98
+msgid "git clone --depth 1 https://github.com/linkinpark342/xonsh-vim ~/.vim"
+msgstr ""
+
+#: ../../../editors.rst:106
+msgid "Formatting xonsh code"
+msgstr ""
+
+#: ../../../editors.rst:108
+msgid ""
+"Xonsh ships a built-in code formatter accessible as the ``xonsh format`` "
+"subcommand. It can be wired into any editor that lets you pipe the current "
+"buffer through an external command — point the editor at ``xonsh format -`` "
+"to read the buffer from stdin and replace it with the formatted output."
+msgstr ""
+
+#: ../../../editors.rst:114
+msgid ""
+"See :ref:`formatting_xonsh_code` for the full set of invocations and flags."
+msgstr ""

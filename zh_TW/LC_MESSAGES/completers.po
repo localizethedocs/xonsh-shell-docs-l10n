@@ -1,0 +1,1036 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../completers.rst:5
+msgid "Tab-Completion"
+msgstr ""
+
+#: ../../../completers.rst:8
+msgid "Overview"
+msgstr "概覽"
+
+#: ../../../completers.rst:10
+msgid ""
+"As with many other shells, xonsh ships with the ability to complete "
+"partially-specified arguments upon hitting the \"tab\" key."
+msgstr ""
+
+#: ../../../completers.rst:13
+msgid ""
+"In Python-mode, pressing the \"tab\" key will complete based on the variable "
+"names in the current builtins, globals, and locals, as well as xonsh "
+"language keywords & operators, files & directories, and environment variable "
+"names. In subprocess-mode, xonsh additionally completes based on the names "
+"of any executable files on your $PATH, alias keys, and full Bash completion "
+"for the commands themselves."
+msgstr ""
+
+#: ../../../completers.rst:20
+msgid ""
+"xonsh also provides a mechanism by which the results of a tab completion can "
+"be customized (i.e., new completions can be generated, or a subset of the "
+"built-in completions can be ignored)."
+msgstr ""
+
+#: ../../../completers.rst:24
+msgid ""
+"This page details the internal structure of xonsh's completion system and "
+"includes instructions for implementing new tab completion functions."
+msgstr ""
+
+#: ../../../completers.rst:29
+msgid "Structure"
+msgstr ""
+
+#: ../../../completers.rst:31
+msgid ""
+"xonsh's built-in completers live in the ``xonsh.completers`` package, and "
+"they are managed through an instance of ``OrderedDict`` (``__xonsh__."
+"completers``) that maps unique identifiers to completion functions."
+msgstr ""
+
+#: ../../../completers.rst:35
+msgid ""
+"The completers are divided to **exclusive** completers and **non-exclusive** "
+"completers. Non-exclusive completers are used for completions that are "
+"relevant but don't cover the whole completions needed (e.g. completions for "
+"the built-in commands ``and``/``or``)."
+msgstr ""
+
+#: ../../../completers.rst:39
+msgid ""
+"When the \"tab\" key is pressed, xonsh loops over the completion functions "
+"in order, calling each one in turn and collecting its output until it "
+"reaches an **exclusive** one that returns a non-empty set of completions for "
+"the current line. The collected completions are then displayed to the user."
+msgstr ""
+
+#: ../../../completers.rst:46
+msgid "Listing Active Completers"
+msgstr ""
+
+#: ../../../completers.rst:48
+msgid ""
+"A list of the active completers can be viewed by running the ``completer "
+"list`` command.  This command will display names and descriptions of the "
+"currently-active completers, in the order in which they will be checked."
+msgstr ""
+
+#: ../../../completers.rst:55
+msgid "Writing a New Completer"
+msgstr ""
+
+#: ../../../completers.rst:57
+msgid ""
+"Completers are implemented as Python functions that take a :class:"
+"`Completion Context <xonsh.parsers.completion_context.CompletionContext>` "
+"object. Examples for the context object:"
+msgstr ""
+
+#: ../../../completers.rst:60
+msgid ""
+"# ls /tmp/<TAB>\n"
+"CompletionContext(\n"
+"    command=CommandContext(\n"
+"        args=(CommandArg(value='ls'),),\n"
+"        arg_index=1, prefix='/tmp/',\n"
+"        ),\n"
+"    python=PythonContext(multiline_code=\"ls /tmp/\", cursor_index=8, "
+"ctx={...})\n"
+")\n"
+"\n"
+"# ls $(whic<TAB> \"python\") -l\n"
+"CompletionContext(\n"
+"    command=CommandContext(\n"
+"        args=(CommandArg(value='python', opening_quote='\"', "
+"closing_quote='\"'),),\n"
+"        arg_index=0, prefix='whic', subcmd_opening='$(',\n"
+"    ),\n"
+"    python=None\n"
+")\n"
+"\n"
+"# echo @(sys.exe<TAB>)\n"
+"CompletionContext(\n"
+"    command=None,\n"
+"    python=PythonContext(\n"
+"        multiline_code=\"sys.exe\", cursor_index=7,\n"
+"        is_sub_expression=True, ctx={...},\n"
+"    )\n"
+")"
+msgstr ""
+
+#: ../../../completers.rst:90
+msgid ""
+"Xonsh still supports legacy completers - see `Legacy Completers Support`_. "
+"For backwards-compatibility, contextual completers need to be marked (as "
+"seen in the examples)."
+msgstr ""
+
+#: ../../../completers.rst:93
+msgid ""
+"This function should return a python set of possible completions for "
+"``command.prefix`` in the current context.  If the completer should not be "
+"used in this case, it should return ``None`` or an empty set, which will "
+"cause xonsh to move on and try to use the next completer."
+msgstr ""
+
+#: ../../../completers.rst:98
+msgid ""
+"Occasionally, completers will need to return a match that does not actually "
+"start with ``prefix``.  In this case, a completer should instead return a "
+"tuple ``(completions, prefixlength)``, where ``completions`` is the set of "
+"appropriate completions, and ``prefixlength`` is the number of characters in "
+"``line`` that should be treated as part of the completion."
+msgstr ""
+
+#: ../../../completers.rst:105
+msgid ""
+"Further completion customizations can be made using the ``RichCompletion`` "
+"object - see `Advanced Completions`_."
+msgstr ""
+
+#: ../../../completers.rst:107
+msgid ""
+"The docstring of a completer should contain a brief description of its "
+"functionality, which will be displayed by ``completer list``."
+msgstr ""
+
+#: ../../../completers.rst:110
+msgid ""
+"Some simple examples follow.  For real-world examples, see ``xompletions."
+"git`` (subprocess-based, uses ``--git-completion-helper``) and ``xonsh."
+"completers.man`` (man page parsing with disk cache)."
+msgstr ""
+
+#: ../../../completers.rst:114
+msgid ""
+"@ from xonsh.completers.tools import *\n"
+"\n"
+"@ @contextual_completer\n"
+"  def dummy_completer(context):\n"
+"      '''\n"
+"      Completes everything with options \"lou\" and \"carcolh\",\n"
+"      regardless of the value of prefix.\n"
+"      '''\n"
+"      return {\"lou\", \"carcolh\"}\n"
+"\n"
+"@ completer add dummy dummy_completer\n"
+"@ xzecze<TAB>   # → lou, carcolh\n"
+"\n"
+"@ @non_exclusive_completer\n"
+"  @contextual_completer\n"
+"  def nx_dummy_completer(context):\n"
+"      '''\n"
+"      Like dummy_completer but its results are ADDED to the other "
+"completions.\n"
+"      '''\n"
+"      return {\"lou\", \"carcolh\"}\n"
+"\n"
+"@ completer add nx_dummy nx_dummy_completer"
+msgstr ""
+
+#: ../../../completers.rst:139
+msgid ""
+"@contextual_completer\n"
+"def python_context_completer(context):\n"
+"    '''\n"
+"    Completes based on the names in the current Python environment\n"
+"    '''\n"
+"    if context.python:\n"
+"        last_name = context.python.prefix.split()[-1]\n"
+"        return {i for i in context.python.ctx if i.startswith(last_name)}\n"
+"\n"
+"@contextual_completer\n"
+"def unbeliever_completer(context):\n"
+"    '''\n"
+"    Replaces \"lou carcolh\" with \"snail\" if tab is pressed after at "
+"least\n"
+"    typing the \"lou \" part.\n"
+"    '''\n"
+"    if (\n"
+"        # We're completing a command\n"
+"        context.command and\n"
+"        # We're completing the second argument\n"
+"        context.command.arg_index == 1 and\n"
+"        # The first argument is 'lou'\n"
+"        context.command.args[0].value == 'lou' and\n"
+"        # The prefix startswith 'carcolh' (may be empty)\n"
+"        'carcolh'.startswith(context.command.prefix)\n"
+"    ):\n"
+"        return {'snail'}, len('lou ') + len(context.command.prefix)\n"
+"\n"
+"# Save boilerplate with this helper decorator:\n"
+"\n"
+"@contextual_command_completer_for(\"lou\")\n"
+"def better_unbeliever_completer(command):\n"
+"    \"\"\"Like unbeliever_completer but with less boilerplate\"\"\"\n"
+"    if command.arg_index == 1 and 'carcolh'.startswith(command.prefix):\n"
+"        return {'snail'}, len('lou ') + len(command.prefix)"
+msgstr ""
+
+#: ../../../completers.rst:176
+msgid ""
+"To understand how xonsh uses completers and their return values try to set :"
+"ref:`$XONSH_COMPLETER_TRACE <xonsh_completer_trace>` to ``True``:"
+msgstr ""
+
+#: ../../../completers.rst:179
+msgid ""
+"@ $XONSH_COMPLETER_TRACE = True\n"
+"@ pip c<TAB>\n"
+"TRACE COMPLETIONS: Getting completions with context:\n"
+"CompletionContext(command=CommandContext(args=(CommandArg(value='pip', "
+"opening_quote='', closing_quote=''),), arg_index=1, prefix='c', suffix='', "
+"opening_quote='', closing_quote='', is_after_closing_quote=False, "
+"subcmd_opening=''), python=PythonContext('pip c', 5, "
+"is_sub_expression=False))\n"
+"TRACE COMPLETIONS: Got 3 from exclusive 'pip' for 'c':\n"
+"'cache': src=pip, type=exclusive, prefix_len=1, append_space=True\n"
+"'check': src=pip, type=exclusive, prefix_len=1, append_space=True\n"
+"'config': src=pip, type=exclusive, prefix_len=1, append_space=True"
+msgstr ""
+
+#: ../../../completers.rst:190
+msgid ""
+"The header reads as ``Got <N> from <type> '<name>' for '<prefix>'`` — "
+"showing the number of results, the completer's exclusivity, its name, and "
+"the prefix the completer tried to match. Each body line shows the completion "
+"value, the ``src`` (completer that produced it), the completer ``type`` "
+"(``exclusive`` or ``non-exclusive``), and any non-default ``RichCompletion`` "
+"attributes (``prefix_len``, ``display``, ``description``, ``append_space``, "
+"``close_quote`` — short for ``append_closing_quote`` — ``style``, ``pvd`` — "
+"short for ``provider``). The format is grep-friendly, so you can filter by "
+"source or type, e.g. ``... | grep 'src=pip'`` or ``... | grep 'type=non-"
+"exclusive'``."
+msgstr ""
+
+#: ../../../completers.rst:202
+msgid "Fine-grained origin via ``provider``"
+msgstr ""
+
+#: ../../../completers.rst:204
+msgid ""
+"A completer may set a ``provider`` tag on each ``RichCompletion`` to "
+"identify the sub-source inside the completer. This is trace-only metadata "
+"and does not affect the completion UX."
+msgstr ""
+
+#: ../../../completers.rst:208
+msgid ""
+"For example, the ``base`` completer runs a union of Python names, ``$PATH`` "
+"executables, aliases, and file paths. When you type the first argument and "
+"hit ``<TAB>``, the trace distinguishes them:"
+msgstr ""
+
+#: ../../../completers.rst:212
+msgid ""
+"@ aliases['qwe-xonsh'] = 'echo'\n"
+"@ xonsh<TAB>\n"
+"TRACE COMPLETIONS: Got 2 from exclusive 'base' for 'xonsh':\n"
+"'qwe-xonsh ': src=base, pvd='alias', type=exclusive, prefix_len=5, "
+"append_space=True\n"
+"'xonsh ': src=base, pvd='command', type=exclusive, prefix_len=5, "
+"append_space=True"
+msgstr ""
+
+#: ../../../completers.rst:220
+msgid ""
+"Completers that are invoked but return no usable matches are also reported, "
+"so you can see the full decision path:"
+msgstr ""
+
+#: ../../../completers.rst:223
+msgid ""
+"TRACE COMPLETIONS: Got 0 from non-exclusive 'environment_vars' for 'xonsh'.\n"
+"TRACE COMPLETIONS: Got 0 from exclusive 'bash' for 'xonsh'.\n"
+"TRACE COMPLETIONS: Got 3 from exclusive 'path' for './do':\n"
+"..."
+msgstr ""
+
+#: ../../../completers.rst:230
+msgid ""
+"This way you can see immediately that ``qwe-xonsh`` comes from an alias "
+"while ``xonsh`` is a real executable on ``$PATH``. Built-in providers: "
+"``alias``, ``command``, ``python``, ``path``, plus the xompletion module "
+"name (e.g. ``pip``, ``gh``) for completions produced by the ``xompleter``. "
+"Custom completers may set any string they like."
+msgstr ""
+
+#: ../../../completers.rst:237
+msgid "Setting ``provider`` in your own completer"
+msgstr ""
+
+#: ../../../completers.rst:239
+msgid ""
+"There are two ways to tag your completions, depending on whether you want "
+"per-item control or want to label the whole result at once."
+msgstr ""
+
+#: ../../../completers.rst:242
+msgid ""
+"**Per-item**: pass ``provider=...`` directly to each ``RichCompletion``. "
+"This is most useful when a single completer has internal branches and you "
+"want to distinguish them in trace:"
+msgstr ""
+
+#: ../../../completers.rst:246
+msgid ""
+"from xonsh.completers.tools import (\n"
+"    RichCompletion,\n"
+"    contextual_command_completer_for,\n"
+")\n"
+"\n"
+"@contextual_command_completer_for(\"deploy\")\n"
+"def complete_deploy(command):\n"
+"    \"\"\"Complete ``deploy <env>`` with fast- and slow-paths tagged.\"\"\"\n"
+"    cached = {\"prod\", \"staging\"}       # e.g. loaded from a local cache\n"
+"    remote = {\"dev-42\", \"dev-43\"}      # e.g. hit an HTTP endpoint\n"
+"\n"
+"    for env in cached:\n"
+"        if env.startswith(command.prefix):\n"
+"            yield RichCompletion(env, provider=\"deploy:cache\")\n"
+"    for env in remote:\n"
+"        if env.startswith(command.prefix):\n"
+"            yield RichCompletion(env, provider=\"deploy:remote\")"
+msgstr ""
+
+#: ../../../completers.rst:266
+msgid "After ``completer add deploy complete_deploy`` the trace will show:"
+msgstr ""
+
+#: ../../../completers.rst:268
+msgid ""
+"TRACE COMPLETIONS: Got 3 from exclusive 'deploy' for 'd':\n"
+"'dev-42': src=deploy, pvd='deploy:remote', type=exclusive, prefix_len=1\n"
+"'dev-43': src=deploy, pvd='deploy:remote', type=exclusive, prefix_len=1\n"
+"'staging': src=deploy, pvd='deploy:cache', type=exclusive, prefix_len=1"
+msgstr ""
+
+#: ../../../completers.rst:275
+msgid ""
+"**Whole-result**: wrap the completer's return value with ``tag_provider``. "
+"This preserves the return shape (``None``, iterable, or ``(comps, lprefix)`` "
+"tuple) and only tags completions that do not already carry their own "
+"``provider``:"
+msgstr ""
+
+#: ../../../completers.rst:280
+msgid ""
+"from xonsh.completers.tools import (\n"
+"    contextual_command_completer_for,\n"
+"    tag_provider,\n"
+")\n"
+"\n"
+"@contextual_command_completer_for(\"mycmd\")\n"
+"def complete_mycmd(command):\n"
+"    \"\"\"Completer whose entire output is tagged ``provider='mycmd'``."
+"\"\"\"\n"
+"    results = {\"start\", \"stop\", \"status\"}\n"
+"    return tag_provider(results, \"mycmd\")"
+msgstr ""
+
+#: ../../../completers.rst:293
+msgid ""
+"``tag_provider`` is also what the built-in ``xompleter`` uses under the hood "
+"to label each xompletion module's output — so any ``RichCompletion`` that "
+"*already* specifies its own ``provider`` is kept intact and won't be "
+"overwritten by the outer tag."
+msgstr ""
+
+#: ../../../completers.rst:301
+msgid "Registering a Completer"
+msgstr ""
+
+#: ../../../completers.rst:303
+msgid ""
+"Once you have created a completion function, you can add it to the list of "
+"active completers via the ``completer add`` command or ``xonsh.completers."
+"completer.add_one_completer`` function::"
+msgstr ""
+
+#: ../../../completers.rst:306
+msgid ""
+"Usage:\n"
+"    completer add NAME FUNC [POS]"
+msgstr ""
+
+#: ../../../completers.rst:309
+msgid "``NAME`` is a unique name to use in the listing"
+msgstr ""
+
+#: ../../../completers.rst:311
+msgid "``FUNC`` is the name of a completer function to use."
+msgstr ""
+
+#: ../../../completers.rst:313
+msgid ""
+"``POS`` (optional) is a position into the list of completers at which the "
+"new completer should be added.  It can be one of the following values:"
+msgstr ""
+
+#: ../../../completers.rst:315
+msgid ""
+"``\"start\"`` indicates that the completer should be added to the start of "
+"the list of completers ("
+msgstr ""
+
+#: ../../../completers.rst:316
+msgid "it should be run before all other exclusive completers)"
+msgstr ""
+
+#: ../../../completers.rst:317
+msgid ""
+"``\"end\"`` indicates that the completer should be added to the end of the "
+"list of completers (it should be run after all others)"
+msgstr ""
+
+#: ../../../completers.rst:318
+msgid ""
+"``\">KEY\"``, where ``KEY`` is a pre-existing name, indicates that this "
+"should be added after the completer named ``KEY``"
+msgstr ""
+
+#: ../../../completers.rst:319
+msgid ""
+"``\"<KEY\"``, where ``KEY`` is a pre-existing name, indicates that this "
+"should be added before the completer named ``KEY``"
+msgstr ""
+
+#: ../../../completers.rst:321
+msgid "If ``POS`` is not provided, it defaults to ``\"start\"``."
+msgstr ""
+
+#: ../../../completers.rst:323
+msgid ""
+"It is also possible to manipulate ``__xonsh__.completers`` directly, but "
+"this is the preferred method."
+msgstr ""
+
+#: ../../../completers.rst:327
+msgid "Removing a Completer"
+msgstr ""
+
+#: ../../../completers.rst:329
+msgid ""
+"To remove a completer from the list of active completers, run ``completer "
+"remove NAME``, where ``NAME`` is the unique identifier associated with the "
+"completer you wish to remove."
+msgstr ""
+
+#: ../../../completers.rst:334
+msgid "Advanced Completions"
+msgstr ""
+
+#: ../../../completers.rst:336
+msgid ""
+"To provide further control over the completion, a completer can return a :"
+"class:`RichCompletion <xonsh.completers.tools.RichCompletion>` object. Using "
+"this class, you can:"
+msgstr ""
+
+#: ../../../completers.rst:339
+msgid "Provide a specific prefix length per completion (via ``prefix_len``)"
+msgstr ""
+
+#: ../../../completers.rst:340
+msgid ""
+"Control how the completion looks in prompt-toolkit (via ``display``, "
+"``description`` and ``style``) -"
+msgstr ""
+
+#: ../../../completers.rst:341
+msgid "use the ``jedi`` xontrib to see it in action."
+msgstr ""
+
+#: ../../../completers.rst:342
+msgid "Append a space after the completion (``append_space=True``)"
+msgstr ""
+
+#: ../../../completers.rst:346
+msgid "Completing Closed String Literals"
+msgstr ""
+
+#: ../../../completers.rst:347
+msgid ""
+"When the cursor is appending to a closed string literal (i.e. cursor at the "
+"end of ``ls \"/usr/\"``), the following happens:"
+msgstr ""
+
+#: ../../../completers.rst:349
+msgid "The closing quote will be appended to all completions."
+msgstr ""
+
+#: ../../../completers.rst:350
+msgid ""
+"I.e the completion ``/usr/bin`` will turn into ``/usr/bin\"``. To prevent "
+"this behavior, a completer can return a ``RichCompletion`` with "
+"``append_closing_quote=False``."
+msgstr ""
+
+#: ../../../completers.rst:352
+msgid "If not specified, lprefix will cover the closing prefix."
+msgstr ""
+
+#: ../../../completers.rst:353
+msgid ""
+"I.e for ``ls \"/usr/\"``, the default lprefix will be 6 to include the "
+"closing quote. To prevent this behavior, a completer can return a different "
+"lprefix or specify it inside ``RichCompletion``."
+msgstr ""
+
+#: ../../../completers.rst:356
+msgid ""
+"So if you want to change/remove the quotes from a string, the following "
+"completer can be written:"
+msgstr ""
+
+#: ../../../completers.rst:358
+msgid ""
+"@contextual_command_completer\n"
+"def remove_quotes(command):\n"
+"    \"\"\"\n"
+"    Return a completer that will remove the quotes, i.e:\n"
+"    which \"python\"<TAB> -> which python\n"
+"    echo \"hi<TAB> -> echo hi\n"
+"    ls \"file with spaces\"<TAB> -> ls file with spaces\n"
+"    \"\"\"\n"
+"    raw_prefix_len = len(command.raw_prefix)  # this includes the closing "
+"quote if it exists\n"
+"    return {RichCompletion(command.prefix, prefix_len=raw_prefix_len, "
+"append_closing_quote=False)}"
+msgstr ""
+
+#: ../../../completers.rst:373
+msgid "Completing Aliases"
+msgstr ""
+
+#: ../../../completers.rst:375
+msgid ""
+"You can attach a custom completer to a function alias using the ``@aliases."
+"completer`` decorator:"
+msgstr ""
+
+#: ../../../completers.rst:378
+msgid ""
+"def _complete_hello(command, alias):\n"
+"    return {'world', 'there', 'xonsh'}\n"
+"\n"
+"@aliases.register\n"
+"@aliases.completer(_complete_hello)\n"
+"def _hello(args):\n"
+"    echo @(args)"
+msgstr ""
+
+#: ../../../completers.rst:388
+msgid "Now ``hello <TAB>`` will suggest ``world``, ``there``, and ``xonsh``."
+msgstr ""
+
+#: ../../../completers.rst:390
+msgid "You can also set the ``xonsh_complete`` attribute manually:"
+msgstr ""
+
+#: ../../../completers.rst:392
+msgid ""
+"def _hello(args):\n"
+"    echo @(args)\n"
+"\n"
+"_hello.xonsh_complete = lambda *a, **kw: {'world', 'there', 'xonsh'}\n"
+"aliases['hello'] = _hello"
+msgstr ""
+
+#: ../../../completers.rst:400
+msgid "The completer function receives two keyword arguments:"
+msgstr ""
+
+#: ../../../completers.rst:402
+msgid ""
+"``command``: the :class:`CommandContext <xonsh.parsers.completion_context."
+"CommandContext>` for the current completion"
+msgstr ""
+
+#: ../../../completers.rst:403
+msgid "``alias``: the resolved alias object"
+msgstr ""
+
+#: ../../../completers.rst:406
+msgid "Command Completers (xompletions)"
+msgstr ""
+
+#: ../../../completers.rst:408
+msgid ""
+"xonsh includes a package called ``xompletions`` that provides tab-"
+"completions for specific commands like ``pip``, ``gh``, ``cd``, etc. Each "
+"command gets its own Python module inside the ``xompletions/`` directory."
+msgstr ""
+
+#: ../../../completers.rst:412
+msgid "How it works:"
+msgstr ""
+
+#: ../../../completers.rst:414
+msgid ""
+"When the user presses TAB, the ``xompleter`` completer (registered as "
+"``complete_xompletions``) extracts the command name from ``args[0]``."
+msgstr ""
+
+#: ../../../completers.rst:416
+msgid ""
+"It looks for a matching module in ``xompletions/`` — first by exact name, "
+"then by regex patterns."
+msgstr ""
+
+#: ../../../completers.rst:417
+msgid "If found, it calls the module's ``xonsh_complete(ctx)`` function."
+msgstr ""
+
+#: ../../../completers.rst:418
+msgid ""
+"The function returns completions or ``None`` (to let the next completer "
+"handle it)."
+msgstr ""
+
+#: ../../../completers.rst:421
+msgid "Creating a command completer"
+msgstr ""
+
+#: ../../../completers.rst:423
+msgid ""
+"To create a completer for a command, place a Python file named after the "
+"command in any directory listed in ``$XONSH_COMPLETER_DIRS``. The file must "
+"contain a ``xonsh_complete`` function:"
+msgstr ""
+
+#: ../../../completers.rst:427
+msgid ""
+"# ~/.config/xonsh/completers/mycmd.py\n"
+"from xonsh.parsers.completion_context import CommandContext\n"
+"\n"
+"def xonsh_complete(ctx: CommandContext):\n"
+"    \"\"\"Completes mycmd subcommands.\"\"\"\n"
+"    if ctx.arg_index == 1:\n"
+"        return {'start', 'stop', 'status'}"
+msgstr ""
+
+#: ../../../completers.rst:437
+msgid "$XONSH_COMPLETER_DIRS = [\"~/.config/xonsh/completers\"]"
+msgstr ""
+
+#: ../../../completers.rst:441
+msgid "Now ``mycmd <TAB>`` will suggest ``start``, ``stop``, and ``status``."
+msgstr ""
+
+#: ../../../completers.rst:443
+msgid ""
+"xonsh also ships built-in completers in the ``xompletions/`` package (for "
+"``pip``, ``gh``, ``cd``, etc.)."
+msgstr ""
+
+#: ../../../completers.rst:446
+msgid "Handling command name variants with ``wrap``"
+msgstr ""
+
+#: ../../../completers.rst:448
+msgid ""
+"The file name must match the command name exactly (``gh.py`` for ``gh``). On "
+"Windows, extensions like ``.exe`` are stripped automatically via "
+"``$PATHEXT``, so ``gh.exe`` will find ``gh.py``."
+msgstr ""
+
+#: ../../../completers.rst:452
+msgid ""
+"However, if a command has other name variants (e.g. ``pip3.11``, "
+"``python3.12``), the exact file name won't match. For these cases, you can "
+"register regex patterns from your :doc:`xonsh RC <xonshrc>` or a xontrib:"
+msgstr ""
+
+#: ../../../completers.rst:456
+msgid ""
+"from xonsh.completers.commands import complete_xompletions as xmp\n"
+"xmp.wrap(r\"\\bmycmd(?:\\d)*$\", \"mycmd\")"
+msgstr ""
+
+#: ../../../completers.rst:461
+msgid ""
+"This maps ``mycmd``, ``mycmd2``, ``mycmd3`` etc. to the ``mycmd`` completer "
+"module."
+msgstr ""
+
+#: ../../../completers.rst:463
+msgid ""
+"xonsh ships with built-in patterns for ``pip`` (covers ``xpip``, "
+"``pip3.11``, ``pip.exe``) and ``python`` (covers ``python3``, "
+"``python3.12``, ``python.exe``)."
+msgstr ""
+
+#: ../../../completers.rst:467
+msgid "Completing ``python -m <module>``"
+msgstr ""
+
+#: ../../../completers.rst:469
+msgid ""
+"When an alias resolves to ``python -m <module>`` (e.g. ``xpip`` → ``python -"
+"m pip``), xonsh uses the ``xompletions/python.py`` completer to delegate to "
+"the module's completer."
+msgstr ""
+
+#: ../../../completers.rst:472
+msgid ""
+"The mapping is stored in ``PYTHON_MODULE_COMPLETERS`` and can be extended "
+"from your :doc:`xonsh RC <xonshrc>`:"
+msgstr ""
+
+#: ../../../completers.rst:474
+msgid ""
+"from xompletions.python import PYTHON_MODULE_COMPLETERS\n"
+"\n"
+"# Simple completer with static options\n"
+"def _complete_mytool(ctx, module_arg_index):\n"
+"    return {'start', 'stop', 'status'}\n"
+"\n"
+"PYTHON_MODULE_COMPLETERS['mytool'] = _complete_mytool"
+msgstr ""
+
+#: ../../../completers.rst:484
+msgid ""
+"Now ``python -m mytool <TAB>`` will suggest ``start``, ``stop``, and "
+"``status``. This also works through aliases:"
+msgstr ""
+
+#: ../../../completers.rst:487
+msgid ""
+"aliases['mt'] = ['python', '-m', 'mytool']\n"
+"mt <TAB>  # completes with start, stop, status"
+msgstr ""
+
+#: ../../../completers.rst:492
+msgid ""
+"For modules that use the `argcomplete <https://github.com/kislyuk/"
+"argcomplete>`_ protocol, a ready-made helper is available:"
+msgstr ""
+
+#: ../../../completers.rst:495
+msgid ""
+"from xompletions.python import PYTHON_MODULE_COMPLETERS, "
+"_complete_argcomplete\n"
+"\n"
+"PYTHON_MODULE_COMPLETERS['my_argcomplete_tool'] = _complete_argcomplete"
+msgstr ""
+
+#: ../../../completers.rst:503
+msgid "Shortcut Path Completion"
+msgstr ""
+
+#: ../../../completers.rst:505
+msgid ""
+"When typing long paths, xonsh can complete each segment from a one- or two-"
+"character hint instead of the full directory name — every slash-separated "
+"segment is matched as a *subsequence* of an actual entry, similar to fish "
+"and zsh."
+msgstr ""
+
+#: ../../../completers.rst:510
+msgid ""
+"@ cd /u/lo/b<TAB>             # → cd /usr/local/bin/\n"
+"@ cat ~/p/g/x/READ<TAB>       # → cat ~/Projects/git/xonsh/README.rst"
+msgstr ""
+
+#: ../../../completers.rst:515
+msgid ""
+"Hits are tried in order: exact prefix → substring → subsequence → fuzzy "
+"(Levenshtein), so a regular full prefix still wins when one is available. "
+"Both subsequence and fuzzy matching are on by default and can be turned off "
+"via ``$SUBSEQUENCE_PATH_COMPLETION = False`` or ``$FUZZY_PATH_COMPLETION = "
+"False`` in your :doc:`xonsh RC <xonshrc>`."
+msgstr ""
+
+#: ../../../completers.rst:521
+msgid ""
+"Path completion is also case-insensitive on POSIX — typing ``/USR/lo<TAB>`` "
+"resolves to ``/usr/local/`` even on case-sensitive filesystems like ext4."
+msgstr ""
+
+#: ../../../completers.rst:527
+msgid "Emoji & Symbols"
+msgstr ""
+
+#: ../../../completers.rst:529
+msgid ""
+"Need a 🐈 in your commit message? xonsh has a built-in emoji completer. It "
+"is disabled by default. To enable, set the trigger prefixes:"
+msgstr ""
+
+#: ../../../completers.rst:532
+msgid ""
+"@ $XONSH_COMPLETER_EMOJI_PREFIX = '::'\n"
+"@ $XONSH_COMPLETER_SYMBOLS_PREFIX = ':::'"
+msgstr ""
+
+#: ../../../completers.rst:537
+msgid ""
+"Then type ``::`` followed by a keyword and press TAB to search for colorful "
+"emoji:"
+msgstr ""
+
+#: ../../../completers.rst:540
+msgid ""
+"echo \"great job ::fire<TAB>\"   →  echo \"great job 🔥\"\n"
+"echo \"::cat<TAB>\"              →  echo \"🐈\""
+msgstr ""
+
+#: ../../../completers.rst:545
+msgid "For classic unicode symbols (arrows, math, stars), use ``:::``:"
+msgstr ""
+
+#: ../../../completers.rst:547
+msgid ""
+"echo \":::arrow<TAB>\"  →  echo \"→\"\n"
+"echo \":::star<TAB>\"   →  echo \"★\""
+msgstr ""
+
+#: ../../../completers.rst:552
+msgid ""
+"Set ``$XONSH_COMPLETER_EMOJI_PREFIX`` or ``$XONSH_COMPLETER_SYMBOLS_PREFIX`` "
+"to ``None`` to disable the corresponding completer."
+msgstr ""
+
+#: ../../../completers.rst:559
+msgid "Selecting a tab completion result"
+msgstr ""
+
+#: ../../../completers.rst:561
+msgid ""
+"In the ``prompt_toolkit`` shell, you can cycle through possible tab-"
+"completion results using the TAB key and use ENTER to select the completion "
+"you want. By default, ENTER will also execute the current line. If you would "
+"prefer to not automatically execute the line (say, if you're constructing a "
+"long pathname), you can set"
+msgstr ""
+
+#: ../../../completers.rst:567
+msgid "$COMPLETIONS_CONFIRM = True"
+msgstr ""
+
+#: ../../../completers.rst:571
+msgid "in your :doc:`xonsh RC <xonshrc>`."
+msgstr ""
+
+#: ../../../completers.rst:573
+msgid ""
+"By default, TABs cycle through the full list. Set ``$COMPLETION_MODE = "
+"\"menu-complete\"`` to instead insert the first whole completion on the "
+"first TAB and cycle through the rest on further TABs. This is only one of "
+"many knobs; see `Tab Completion Behavior <https://xon.sh/envvars.html#tab-"
+"completion-behavior>`_ for the full list (display style, menu rows, "
+"threading, trace output, and more)."
+msgstr ""
+
+#: ../../../completers.rst:582
+msgid "Man Page Completer"
+msgstr ""
+
+#: ../../../completers.rst:584
+msgid ""
+"When no dedicated completer exists for a command, xonsh falls back to "
+"parsing the command's **man page** to extract option names (``-v``, ``--"
+"verbose``, etc.). This works automatically for most CLI tools."
+msgstr ""
+
+#: ../../../completers.rst:588
+msgid ""
+"For commands that use per-subcommand man pages (``docker-run``, ``cargo-"
+"build``, ``systemctl-start``, etc.), xonsh tries the hyphenated form ``man "
+"<cmd>-<subcmd>`` first and falls back to ``man <cmd>``."
+msgstr ""
+
+#: ../../../completers.rst:592
+msgid ""
+"Parsed options are cached on disk under ``$XONSH_DATA_DIR/"
+"generated_completions/man/``. The cache is invalidated automatically when "
+"the man page file is updated (e.g. after a package upgrade). To force a "
+"refresh — for example, after upgrading xonsh itself with an improved parser "
+"— clear the cache:"
+msgstr ""
+
+#: ../../../completers.rst:598
+msgid "@ rm $XONSH_DATA_DIR/generated_completions/man/*"
+msgstr ""
+
+#: ../../../completers.rst:603
+msgid "Installing man pages for tools"
+msgstr ""
+
+#: ../../../completers.rst:605
+msgid ""
+"Some tools (Docker, Podman, etc.) ship man pages in a separate package. If "
+"``docker run -<TAB>`` returns no completions, the man page may not be "
+"installed. On macOS with Homebrew:"
+msgstr ""
+
+#: ../../../completers.rst:609
+msgid "$ brew install docker"
+msgstr ""
+
+#: ../../../completers.rst:613
+msgid ""
+"On Linux, man pages are usually part of the main package, but some "
+"distributions split them out (e.g. ``docker-doc`` on Debian/Ubuntu)."
+msgstr ""
+
+#: ../../../completers.rst:616
+msgid "You can verify whether a man page is available:"
+msgstr ""
+
+#: ../../../completers.rst:618
+msgid "$ man -w docker-run"
+msgstr ""
+
+#: ../../../completers.rst:622
+msgid ""
+"If this prints a path, completions will work. If it prints an error, install "
+"the corresponding package."
+msgstr ""
+
+#: ../../../completers.rst:627
+msgid "Legacy Completers Support"
+msgstr ""
+
+#: ../../../completers.rst:629
+msgid ""
+"Before completion context was introduced, xonsh had a different readline-"
+"like completion API. While this legacy API is not recommended, xonsh still "
+"supports it."
+msgstr ""
+
+#: ../../../completers.rst:633
+msgid ""
+"The legacy completers are less robust than the contextual system in many "
+"situations, for example:"
+msgstr ""
+
+#: ../../../completers.rst:635
+msgid "``ls $(which<TAB>`` completes with the prefix ``$(which``"
+msgstr ""
+
+#: ../../../completers.rst:637
+msgid ""
+"``ls 'a file<TAB>`` completes with the prefix ``file`` (instead of ``a "
+"file``)"
+msgstr ""
+
+#: ../../../completers.rst:639
+msgid ""
+"See `Completion Context PR <https://github.com/xonsh/xonsh/pull/4017>`_ for "
+"more information."
+msgstr ""
+
+#: ../../../completers.rst:641
+msgid ""
+"Legacy completers are python functions that aren't marked by "
+"``@contextual_completer`` and receive the following arguments:"
+msgstr ""
+
+#: ../../../completers.rst:643
+msgid ""
+"``prefix``: the string to be matched (the last whitespace-separated token in "
+"the current line)"
+msgstr ""
+
+#: ../../../completers.rst:644
+msgid "``line``: a string representing the entire current line"
+msgstr ""
+
+#: ../../../completers.rst:645
+msgid "``begidx``: the index at which ``prefix`` starts in ``line``"
+msgstr ""
+
+#: ../../../completers.rst:646
+msgid "``endidx``: the length of the ``prefix`` in ``line``"
+msgstr ""
+
+#: ../../../completers.rst:647
+msgid ""
+"``ctx``: the current Python environment, as a dictionary mapping names to "
+"values"
+msgstr ""
+
+#: ../../../completers.rst:649
+msgid ""
+"Their return value can be any of the variations of the contextual "
+"completers'."
+msgstr ""
