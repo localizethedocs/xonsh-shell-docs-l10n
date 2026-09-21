@@ -1,0 +1,441 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../error_handling.rst:4
+msgid "Subprocess Error Handling"
+msgstr ""
+
+#: ../../../error_handling.rst:6
+msgid ""
+"Xonsh treats shell commands as first-class code.  When a command fails, you "
+"usually want your script to **stop** instead of silently marching past the "
+"failure — the way a Python exception would — but you also want the "
+"flexibility of ``&&``/``||`` short-circuit logic that the shell is built "
+"around."
+msgstr ""
+
+#: ../../../error_handling.rst:12
+msgid ""
+"This page walks through the rules xonsh uses to decide *when* a failing "
+"subprocess raises a ``subprocess.CalledProcessError``, how those rules "
+"interact with pipes, logical operators, captured forms and per-command "
+"decorators, and how the interactive prompt displays (or hides) the resulting "
+"exception."
+msgstr ""
+
+#: ../../../error_handling.rst:20
+msgid "Chains"
+msgstr ""
+
+#: ../../../error_handling.rst:22
+msgid ""
+"To describe where exceptions are raised we use the word **chain** for a "
+"grouping of subprocess commands that produces a single result:"
+msgstr ""
+
+#: ../../../error_handling.rst:25
+msgid "**single chain** — one plain command: ``ls file``"
+msgstr ""
+
+#: ../../../error_handling.rst:26
+msgid "**pipe chain** — commands joined with ``|``: ``echo 1 | grep 1 | head``"
+msgstr ""
+
+#: ../../../error_handling.rst:27
+msgid ""
+"**logical chain** — commands joined with ``&&``/``||``: ``ls file1 || ls "
+"file2 || echo gone``"
+msgstr ""
+
+#: ../../../error_handling.rst:30
+msgid ""
+"Statements separated by ``;`` or newlines are *independent* chains. For "
+"example, ``echo 1 && echo 2 ; echo 3 ; echo 1 | grep 1`` contains **three** "
+"chains."
+msgstr ""
+
+#: ../../../error_handling.rst:34
+msgid ""
+"Xonsh decides whether to raise *per chain*, not per individual command, "
+"which is what gives ``||``/``&&`` their shell-like rescue semantics:"
+msgstr ""
+
+#: ../../../error_handling.rst:37
+msgid ""
+"@ ls /no || echo rescued            # one chain, rescued by ||\n"
+"ls: cannot access '/no': No such file or directory\n"
+"rescued                              # no exception\n"
+"\n"
+"@ echo 1 && ls /no && echo never    # one chain, ends on a failing ls\n"
+"1\n"
+"ls: cannot access '/no': No such file or directory\n"
+"# CalledProcessError (the chain as a whole failed)\n"
+"\n"
+"@ echo a ; ls /no ; echo b           # three chains; second fails, third "
+"never runs\n"
+"a\n"
+"ls: cannot access '/no': No such file or directory\n"
+"# CalledProcessError on the second chain"
+msgstr ""
+
+#: ../../../error_handling.rst:55
+msgid "Environment variables"
+msgstr ""
+
+#: ../../../error_handling.rst:57
+msgid ""
+"Xonsh exposes three knobs for error handling.  The first two control "
+"**whether** a subprocess failure raises; the third controls **display of the "
+"exception** at the interactive prompt."
+msgstr ""
+
+#: ../../../error_handling.rst:62
+msgid "``$XONSH_SUBPROC_RAISE_ERROR`` — default ``True``"
+msgstr ""
+
+#: ../../../error_handling.rst:64
+msgid ""
+"Raises ``subprocess.CalledProcessError`` when the **final result of a "
+"chain** is a non-zero exit code.  This is the rule that makes xonsh scripts "
+"behave like Python: a failing command stops execution unless you explicitly "
+"rescue it with ``||`` or ``@error_ignore``."
+msgstr ""
+
+#: ../../../error_handling.rst:69
+msgid "``ls /no`` → raises (single chain, failed)"
+msgstr ""
+
+#: ../../../error_handling.rst:70
+msgid "``ls /no | grep root`` → raises (pipe chain, final stage failed)"
+msgstr ""
+
+#: ../../../error_handling.rst:71
+msgid "``ls /no || echo ok`` → **no** raise (logical chain rescued by ``||``)"
+msgstr ""
+
+#: ../../../error_handling.rst:72
+msgid "``echo 1 && ls /no`` → raises (chain ends on failing ``ls``)"
+msgstr ""
+
+#: ../../../error_handling.rst:73
+msgid ""
+"``(echo 1 && ls /etc) || echo fb`` → no raise (outer ``||`` rescued by a "
+"successful inner chain)"
+msgstr ""
+
+#: ../../../error_handling.rst:77
+msgid "``$XONSH_SUBPROC_CMD_RAISE_ERROR`` — default ``False``"
+msgstr ""
+
+#: ../../../error_handling.rst:79
+msgid ""
+"Raises on **every** failing command regardless of chain context — any non-"
+"zero exit is fatal.  When ``True`` it short-circuits chain semantics: ``ls /"
+"no || echo fb`` would raise on ``ls``, the ``||`` fallback never runs."
+msgstr ""
+
+#: ../../../error_handling.rst:84
+msgid ""
+"Reserved for scripts that really want \"fail fast on anything\".  The old "
+"name ``$RAISE_SUBPROC_ERROR`` is kept as a deprecated alias that syncs to "
+"``XONSH_SUBPROC_CMD_RAISE_ERROR``."
+msgstr ""
+
+#: ../../../error_handling.rst:89
+msgid "``$XONSH_PROMPT_SHOW_SUBPROC_ERROR`` — default ``False``"
+msgstr ""
+
+#: ../../../error_handling.rst:91
+msgid ""
+"This is a **display** flag — it does not change whether an exception is "
+"raised, only whether the **interactive prompt** prints xonsh's ``subprocess."
+"CalledProcessError: ...`` line after the command's own ``stderr``.  The "
+"command's own ``stderr`` is always visible because the subprocess writes it "
+"directly to the terminal."
+msgstr ""
+
+#: ../../../error_handling.rst:97
+msgid ""
+"``False`` *(default)* — interactive prompt stays quiet after a failed "
+"command.  You see the command's ``stderr``, the prompt returns, and "
+"``$LAST_RETURN_CODE`` reflects the failure."
+msgstr ""
+
+#: ../../../error_handling.rst:100
+msgid ""
+"``True`` — restores the historical behavior of printing ``subprocess."
+"CalledProcessError: Command '...' returned non-zero exit status N.`` under "
+"the command's own output."
+msgstr ""
+
+#: ../../../error_handling.rst:104
+msgid ""
+"Non-interactive scripts (``./script.xsh``, ``xonsh -c``) are **unaffected** "
+"— they always show the exception, because in script mode you usually want to "
+"know which line blew up."
+msgstr ""
+
+#: ../../../error_handling.rst:108
+msgid ""
+"The per-command ``@error_raise`` decorator **always** shows the exception "
+"regardless of this flag — it is the explicit per-command opt-in."
+msgstr ""
+
+#: ../../../error_handling.rst:114
+msgid "Captured subprocess ``!()`` is the only exemption"
+msgstr ""
+
+#: ../../../error_handling.rst:116
+msgid ""
+"Every subprocess form raises on a non-zero return code by default — bare "
+"commands, ``![...]``, ``$[...]``, ``$(...)``, ``@$(...)``.  The **only** "
+"exception is the full-capture form ``!(...)``: it returns a "
+"``CommandPipeline`` object and xonsh leaves error handling entirely up to "
+"you."
+msgstr ""
+
+#: ../../../error_handling.rst:122
+msgid ""
+"@ ls nofile            # exception\n"
+"@ $(ls nofile)         # exception\n"
+"@ $[ls nofile]         # exception\n"
+"@ ![ls nofile]         # exception\n"
+"\n"
+"@ !(ls nofile)         # no exception — returns a CommandPipeline"
+msgstr ""
+
+#: ../../../error_handling.rst:131
+msgid ""
+"``!(...)`` is designed to be tested directly, because ``CommandPipeline`` is "
+"truthy when the command succeeded and falsy when it failed:"
+msgstr ""
+
+#: ../../../error_handling.rst:135
+msgid ""
+"@ if !(ls nofile):\n"
+"      print(\"found\")\n"
+"  else:\n"
+"      print(\"absent\")\n"
+"absent"
+msgstr ""
+
+#: ../../../error_handling.rst:143
+msgid ""
+"If you want a specific ``!(...)`` call to raise anyway, use the "
+"``@error_raise`` decorator inside it — the decorator wins over the ``!()`` "
+"exemption:"
+msgstr ""
+
+#: ../../../error_handling.rst:147
+msgid ""
+"@ if !(@error_raise ls nofile):\n"
+"      print(\"found\")\n"
+"# CalledProcessError — @error_raise overrides the !() exemption"
+msgstr ""
+
+#: ../../../error_handling.rst:155
+msgid "Per-command decorators"
+msgstr ""
+
+#: ../../../error_handling.rst:157
+msgid ""
+"Two decorator aliases give you an escape hatch that is scoped to a single "
+"command inside a larger chain."
+msgstr ""
+
+#: ../../../error_handling.rst:161
+msgid "``@error_raise`` — always raise"
+msgstr ""
+
+#: ../../../error_handling.rst:163
+msgid ""
+"Force ``subprocess.CalledProcessError`` on this command, regardless of "
+"``$XONSH_SUBPROC_RAISE_ERROR``, ``$XONSH_SUBPROC_CMD_RAISE_ERROR``, or "
+"whether the command sits inside a normally-rescuing chain:"
+msgstr ""
+
+#: ../../../error_handling.rst:167
+msgid ""
+"@ @error_raise ls /no || echo fb\n"
+"# CalledProcessError — @error_raise wins over ||\n"
+"\n"
+"@ !(@error_raise ls /no)\n"
+"# CalledProcessError — @error_raise wins over !() exemption too"
+msgstr ""
+
+#: ../../../error_handling.rst:175
+msgid ""
+"It also **always** shows the exception at the interactive prompt, overriding "
+"``$XONSH_PROMPT_SHOW_SUBPROC_ERROR = False``."
+msgstr ""
+
+#: ../../../error_handling.rst:179
+msgid "``@error_ignore`` — never raise"
+msgstr ""
+
+#: ../../../error_handling.rst:181
+msgid ""
+"The inverse — the command *never* raises, no matter the environment settings "
+"or chain position:"
+msgstr ""
+
+#: ../../../error_handling.rst:184
+msgid ""
+"@ @error_ignore ls /no\n"
+"ls: cannot access '/no': No such file or directory\n"
+"# no exception\n"
+"\n"
+"@ echo 1 && @error_ignore ls /no && echo 2\n"
+"  echo 3\n"
+"1\n"
+"ls: cannot access '/no': No such file or directory\n"
+"3\n"
+"# no exception; the `@error_ignore` also makes the chain\n"
+"# treat the failing ls as \"don't raise on this final operand\""
+msgstr ""
+
+#: ../../../error_handling.rst:198
+msgid ""
+"``@error_ignore`` is especially handy when you want a command to contribute "
+"to the chain's return code but **not** its error behavior:"
+msgstr ""
+
+#: ../../../error_handling.rst:201
+msgid ""
+"@ echo 1 | @error_ignore grep pattern | wc -l\n"
+"0\n"
+"# grep returns 1 (no match), @error_ignore keeps the pipe quiet,\n"
+"# wc happily prints 0"
+msgstr ""
+
+#: ../../../error_handling.rst:210
+msgid "Catching the exception"
+msgstr ""
+
+#: ../../../error_handling.rst:212
+msgid ""
+"The raised exception is a plain ``subprocess.CalledProcessError``, so the "
+"usual Python idioms work:"
+msgstr ""
+
+#: ../../../error_handling.rst:215
+msgid ""
+"@ import subprocess\n"
+"@ try:\n"
+"      ls /no\n"
+"  except subprocess.CalledProcessError as e:\n"
+"      print(\"rc =\", e.returncode)\n"
+"      print(\"cmd =\", e.cmd)\n"
+"ls: cannot access '/no': No such file or directory\n"
+"rc = 2\n"
+"cmd = ['ls', '/no']"
+msgstr ""
+
+#: ../../../error_handling.rst:227
+msgid "For scoped overrides, ``env.swap`` is often cleaner than catching:"
+msgstr ""
+
+#: ../../../error_handling.rst:229
+msgid ""
+"@ with @.env.swap(XONSH_SUBPROC_RAISE_ERROR=False):\n"
+"      ls /no\n"
+"ls: cannot access '/no': No such file or directory\n"
+"# no exception, even though the default is True"
+msgstr ""
+
+#: ../../../error_handling.rst:236
+msgid ""
+"For **captured iteration** there is also ``CommandPipeline.itercheck()`` "
+"which raises ``XonshCalledProcessError`` (a subclass of ``subprocess."
+"CalledProcessError`` that additionally carries ``.completed_command`` and ``."
+"stderr``):"
+msgstr ""
+
+#: ../../../error_handling.rst:241
+msgid ""
+"@ try:\n"
+"      for line in !(grep -R TODO src/).itercheck():\n"
+"          print(line.strip())\n"
+"  except XonshCalledProcessError as e:\n"
+"      print(\"grep failed with rc\", e.returncode)"
+msgstr ""
+
+#: ../../../error_handling.rst:251
+msgid "Interactive prompt behavior in detail"
+msgstr ""
+
+#: ../../../error_handling.rst:253
+msgid "With the default ``$XONSH_PROMPT_SHOW_SUBPROC_ERROR = False``:"
+msgstr ""
+
+#: ../../../error_handling.rst:255
+msgid ""
+"@ ls /no\n"
+"ls: cannot access '/no': No such file or directory\n"
+"@ echo $LAST_RETURN_CODE\n"
+"2\n"
+"\n"
+"@ echo hi && ls /no && echo bye\n"
+"hi\n"
+"ls: cannot access '/no': No such file or directory\n"
+"@"
+msgstr ""
+
+#: ../../../error_handling.rst:267
+msgid "With ``$XONSH_PROMPT_SHOW_SUBPROC_ERROR = True``:"
+msgstr ""
+
+#: ../../../error_handling.rst:269
+msgid ""
+"@ $XONSH_PROMPT_SHOW_SUBPROC_ERROR = True\n"
+"@ ls /no\n"
+"ls: cannot access '/no': No such file or directory\n"
+"subprocess.CalledProcessError: Command '['ls', '/no']' returned non-zero "
+"exit status 2.\n"
+"@"
+msgstr ""
+
+#: ../../../error_handling.rst:277
+msgid "``@error_raise`` always shows:"
+msgstr ""
+
+#: ../../../error_handling.rst:279
+msgid ""
+"@ @error_raise ls /no\n"
+"ls: cannot access '/no': No such file or directory\n"
+"subprocess.CalledProcessError: Command '['@error_raise', 'ls', '/no']' "
+"returned non-zero exit status 2."
+msgstr ""
+
+#: ../../../error_handling.rst:287
+msgid "See also"
+msgstr ""
+
+#: ../../../error_handling.rst:289
+msgid ""
+":ref:`tutorial` — the scripting section discusses "
+"``$XONSH_SUBPROC_RAISE_ERROR`` in the context of writing robust xonsh "
+"scripts."
+msgstr ""
+
+#: ../../../error_handling.rst:292
+msgid ""
+":ref:`aliases` — for ``@error_raise`` / ``@error_ignore`` and other "
+"decorator aliases."
+msgstr ""

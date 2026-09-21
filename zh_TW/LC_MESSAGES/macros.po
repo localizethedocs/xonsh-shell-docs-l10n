@@ -1,0 +1,950 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../macros.rst:5
+msgid "Macros"
+msgstr ""
+
+#: ../../../macros.rst:6
+msgid "Bust out your DSLRs, people. It is time to closely examine macros!"
+msgstr ""
+
+#: ../../../macros.rst:9
+msgid "What are macro instructions?"
+msgstr ""
+
+#: ../../../macros.rst:10
+msgid ""
+"In generic terms, a programming macro is a special kind of syntax that "
+"replaces a smaller amount of code with a larger expression, syntax tree, "
+"code object, etc after the macro has been evaluated. In practice, macros "
+"pause the normal parsing and evaluation of the code that they contain. This "
+"is so that they can perform their expansion with a complete inputs. Roughly, "
+"the algorithm executing a macro follows is:"
+msgstr ""
+
+#: ../../../macros.rst:17
+msgid "Macro start, pause or skip normal parsing"
+msgstr ""
+
+#: ../../../macros.rst:18
+msgid "Gather macro inputs as strings"
+msgstr ""
+
+#: ../../../macros.rst:19
+msgid "Evaluate macro with inputs"
+msgstr ""
+
+#: ../../../macros.rst:20
+msgid "Resume normal parsing and execution."
+msgstr ""
+
+#: ../../../macros.rst:22
+msgid "Is this meta-programming? You betcha!"
+msgstr ""
+
+#: ../../../macros.rst:25
+msgid "When and where are macros used?"
+msgstr ""
+
+#: ../../../macros.rst:26
+msgid ""
+"Macros are a practicality-beats-purity feature of many programming "
+"languages. Because they allow you break out of the normal parsing cycle, "
+"depending on the language, you can do some truly wild things with them. "
+"However, macros are really there to reduce the amount of boiler plate code "
+"that users and developers have to write."
+msgstr ""
+
+#: ../../../macros.rst:32
+msgid ""
+"In C and C++ (and Fortran), the C Preprocessor ``cpp`` is a macro evaluation "
+"engine. For example, every time you see an ``#include`` or ``#ifdef``, this "
+"is the ``cpp`` macro system in action. In these languages, the macros are "
+"technically outside of the definition of the language at hand. Furthermore, "
+"because ``cpp`` must function with only a single pass through the code, the "
+"sorts of macros that can be written with ``cpp`` are relatively simple."
+msgstr ""
+
+#: ../../../macros.rst:40
+msgid ""
+"Rust, on the other hand, has a first-class notion of macros that look and "
+"feel a lot like normal functions. Macros in Rust are capable of pulling off "
+"type information from their arguments and preventing their return values "
+"from being consumed."
+msgstr ""
+
+#: ../../../macros.rst:45
+msgid ""
+"Other languages like Lisp, Forth, and Julia also provide their macro "
+"systems. Even restructured text (rST) directives could be considered macros."
+msgstr ""
+
+#: ../../../macros.rst:48
+msgid ""
+"If these seem unfamiliar to the Python world, note that Jupyter and IPython "
+"magics ``%`` and ``%%`` are macros!"
+msgstr ""
+
+#: ../../../macros.rst:52
+msgid "Function Macros"
+msgstr ""
+
+#: ../../../macros.rst:53
+msgid ""
+"Xonsh supports Rust-like macros that are based on normal Python callables. "
+"Macros do not require a special definition in xonsh. However, like in Rust, "
+"they must be called with an exclamation point ``!`` between the callable and "
+"the opening parentheses ``(``. Macro arguments are split on the top-level "
+"commas ``,``, like normal Python functions.  For example, say we have the "
+"functions ``f`` and ``g``. We could perform a macro call on these functions "
+"with the following:"
+msgstr ""
+
+#: ../../../macros.rst:61
+msgid ""
+"# No macro args\n"
+"f!()\n"
+"\n"
+"# Single arg\n"
+"f!(x)\n"
+"g!([y, 43, 44])\n"
+"\n"
+"# Two args\n"
+"f!(x, x + 42)\n"
+"g!([y, 43, 44], f!(z))"
+msgstr ""
+
+#: ../../../macros.rst:74
+msgid ""
+"Not so bad, right?  So what actually happens to the arguments when used in a "
+"macro call?  Well, that depends on the definition of the function. In "
+"particular, each argument in the macro call is matched up with the "
+"corresponding parameter annotation in the callable's signature.  For "
+"example, say we have an ``identity()`` function that annotates its sole "
+"argument as a string:"
+msgstr ""
+
+#: ../../../macros.rst:80
+msgid ""
+"def identity(x : str):\n"
+"    return x"
+msgstr ""
+
+#: ../../../macros.rst:85
+msgid ""
+"If we call this normally, we'll just get whatever object we put in back out, "
+"even if that object is not a string:"
+msgstr ""
+
+#: ../../../macros.rst:88
+msgid ""
+"@ identity('me')\n"
+"'me'\n"
+"\n"
+"@ identity(42)\n"
+"42\n"
+"\n"
+"@ identity(identity)\n"
+"<function __main__.identity>"
+msgstr ""
+
+#: ../../../macros.rst:99
+msgid ""
+"However, if we perform macro calls instead we are now guaranteed to get the "
+"string of the source code that is in the macro call:"
+msgstr ""
+
+#: ../../../macros.rst:102
+msgid ""
+"@ identity!('me')\n"
+"\"'me'\"\n"
+"\n"
+"@ identity!(42)\n"
+"'42'\n"
+"\n"
+"@ identity!(identity)\n"
+"'identity'"
+msgstr ""
+
+#: ../../../macros.rst:113
+msgid ""
+"Also note that each macro argument is stripped prior to passing it to the "
+"macro itself. This is done for consistency."
+msgstr ""
+
+#: ../../../macros.rst:116
+msgid ""
+"@ identity!(42)\n"
+"'42'\n"
+"\n"
+"@ identity!(  42 )\n"
+"'42'"
+msgstr ""
+
+#: ../../../macros.rst:124
+msgid ""
+"Importantly, because we are capturing and not evaluating the source code, a "
+"macro call can contain input that is beyond the usual syntax. In fact, that "
+"is sort of the whole point. Here are some cases to start your gears turning:"
+msgstr ""
+
+#: ../../../macros.rst:128
+msgid ""
+"@ identity!(import os)\n"
+"'import os'\n"
+"\n"
+"@ identity!(if True:\n"
+"@     pass)\n"
+"'if True:\\n    pass'\n"
+"\n"
+"@ identity!(std::vector<std::string> x = {\"yoo\", \"hoo\"})\n"
+"'std::vector<std::string> x = {\"yoo\", \"hoo\"}'"
+msgstr ""
+
+#: ../../../macros.rst:140
+msgid "You do you, ``identity()``."
+msgstr ""
+
+#: ../../../macros.rst:143
+msgid "Calling Function Macros"
+msgstr ""
+
+#: ../../../macros.rst:144
+msgid ""
+"There are a couple of points to consider when calling macros. The first is "
+"that passing in arguments by name will not behave as expected. This is "
+"because the ``<name>=`` is captured by the macro itself. Using the "
+"``identity()`` function from above:"
+msgstr ""
+
+#: ../../../macros.rst:149
+msgid ""
+"@ identity!(x=42)\n"
+"'x=42'"
+msgstr ""
+
+#: ../../../macros.rst:154
+msgid "Performing a macro call uses only argument order to pass in values."
+msgstr ""
+
+#: ../../../macros.rst:156
+msgid ""
+"Additionally, macro calls split arguments only on the top-level commas. The "
+"top-level commas are not included in any argument. This behaves analogously "
+"to normal Python function calls. For instance, say we have the following "
+"``g()`` function that accepts two arguments:"
+msgstr ""
+
+#: ../../../macros.rst:161
+msgid ""
+"def g(x : str, y : str):\n"
+"    print('x = ' + repr(x))\n"
+"    print('y = ' + repr(y))"
+msgstr ""
+
+#: ../../../macros.rst:167
+msgid ""
+"Then you can see the splitting and stripping behavior on each macro argument:"
+msgstr ""
+
+#: ../../../macros.rst:170
+msgid ""
+"@ g!(42, 65)\n"
+"x = '42'\n"
+"y = '65'\n"
+"\n"
+"@ g!(42, 65,)\n"
+"x = '42'\n"
+"y = '65'\n"
+"\n"
+"@ g!( 42, 65, )\n"
+"x = '42'\n"
+"y = '65'\n"
+"\n"
+"@ g!(['x', 'y'], {1: 1, 2: 3})\n"
+"x = \"['x', 'y']\"\n"
+"y = '{1: 1, 2: 3}'"
+msgstr ""
+
+#: ../../../macros.rst:188
+msgid ""
+"Sometimes you may only want to pass in the first few arguments as macro "
+"arguments and you want the rest to be treated as normal Python arguments. By "
+"convention, xonsh's macro caller will look for a lone ``*`` argument in "
+"order to split the macro arguments and the regular arguments. So for example:"
+msgstr ""
+
+#: ../../../macros.rst:194
+msgid ""
+"@ g!(42, *, 65)\n"
+"x = '42'\n"
+"y = 65\n"
+"\n"
+"@ g!(42, *, y=65)\n"
+"x = '42'\n"
+"y = 65"
+msgstr ""
+
+#: ../../../macros.rst:204
+msgid ""
+"In the above, note that ``x`` is still captured as a macro argument. "
+"However, everything after the ``*``, namely ``y``, is evaluated is if it "
+"were passed in to a normal function call.  This can be useful for large "
+"interfaces where only a handful of args are expected as macro arguments."
+msgstr ""
+
+#: ../../../macros.rst:209
+msgid "Hopefully, now you see the big picture."
+msgstr ""
+
+#: ../../../macros.rst:212
+msgid "Writing Function Macros"
+msgstr ""
+
+#: ../../../macros.rst:213
+msgid ""
+"Though any function (or callable) can be used as a macro, this functionality "
+"is probably most useful if the function was *designed* as a macro. There are "
+"two main aspects of macro design to consider: argument annotations and call "
+"site execution context."
+msgstr ""
+
+#: ../../../macros.rst:220
+msgid "Macro Annotations"
+msgstr ""
+
+#: ../../../macros.rst:221
+msgid "There are six kinds of annotations that macros are able to interpret:"
+msgstr ""
+
+#: ../../../macros.rst:223
+msgid "Kinds of Annotation"
+msgstr ""
+
+#: ../../../macros.rst:226
+msgid "Category"
+msgstr ""
+
+#: ../../../macros.rst:227
+msgid "Object"
+msgstr ""
+
+#: ../../../macros.rst:228
+msgid "Flags"
+msgstr ""
+
+#: ../../../macros.rst:229
+msgid "Modes"
+msgstr ""
+
+#: ../../../macros.rst:230
+msgid "Returns"
+msgstr ""
+
+#: ../../../macros.rst:231
+msgid "String"
+msgstr ""
+
+#: ../../../macros.rst:232
+msgid "``str``"
+msgstr ""
+
+#: ../../../macros.rst:233
+msgid "``'s'``, ``'str'``, or ``'string'``"
+msgstr ""
+
+#: ../../../macros.rst:235
+msgid "Source code of argument as string, *default*."
+msgstr ""
+
+#: ../../../macros.rst:236
+msgid "AST"
+msgstr ""
+
+#: ../../../macros.rst:237
+msgid "``ast.AST``"
+msgstr ""
+
+#: ../../../macros.rst:238
+msgid "``'a'`` or ``'ast'``"
+msgstr ""
+
+#: ../../../macros.rst:239 ../../../macros.rst:244
+msgid "``'eval'`` (default), ``'exec'``, or ``'single'``"
+msgstr ""
+
+#: ../../../macros.rst:240
+msgid "Abstract syntax tree of argument."
+msgstr ""
+
+#: ../../../macros.rst:241
+msgid "Code"
+msgstr ""
+
+#: ../../../macros.rst:242
+msgid "``types.CodeType`` or ``compile``"
+msgstr ""
+
+#: ../../../macros.rst:243
+msgid "``'c'``, ``'code'``, or ``'compile'``"
+msgstr ""
+
+#: ../../../macros.rst:245
+msgid "Compiled code object of argument."
+msgstr ""
+
+#: ../../../macros.rst:246
+msgid "Eval"
+msgstr ""
+
+#: ../../../macros.rst:247
+msgid "``eval`` or ``None``"
+msgstr ""
+
+#: ../../../macros.rst:248
+msgid "``'v'`` or ``'eval'``"
+msgstr ""
+
+#: ../../../macros.rst:250
+msgid "Evaluation of the argument."
+msgstr ""
+
+#: ../../../macros.rst:251
+msgid "Exec"
+msgstr ""
+
+#: ../../../macros.rst:252
+msgid "``exec``"
+msgstr ""
+
+#: ../../../macros.rst:253
+msgid "``'x'`` or ``'exec'``"
+msgstr ""
+
+#: ../../../macros.rst:254
+msgid "``'exec'`` (default) or ``'single'``"
+msgstr ""
+
+#: ../../../macros.rst:255
+msgid "Execs the argument and returns None."
+msgstr ""
+
+#: ../../../macros.rst:256
+msgid "Type"
+msgstr ""
+
+#: ../../../macros.rst:257
+msgid "``type``"
+msgstr ""
+
+#: ../../../macros.rst:258
+msgid "``'t'`` or ``'type'``"
+msgstr ""
+
+#: ../../../macros.rst:260
+msgid "The type of the argument after it has been evaluated."
+msgstr ""
+
+#: ../../../macros.rst:262
+msgid ""
+"These annotations allow you to hook into whichever stage of the compilation "
+"that you desire. It is important to note that the string form of the "
+"arguments is split and stripped (as described above) prior to conversion to "
+"the annotation type."
+msgstr ""
+
+#: ../../../macros.rst:267
+msgid ""
+"Each argument may be annotated with its own individual type. Annotations may "
+"be provided as either objects or as the string flags seen in the above "
+"table. String flags are case-insensitive. If an argument does not have an "
+"annotation, ``str`` is selected. This makes the macro function call behave "
+"like the subprocess macros and context manager macros below. For example,"
+msgstr ""
+
+#: ../../../macros.rst:274
+msgid ""
+"def func(a, b : 'AST', c : compile):\n"
+"    pass"
+msgstr ""
+
+#: ../../../macros.rst:279
+msgid "In a macro call of ``func!()``,"
+msgstr ""
+
+#: ../../../macros.rst:281
+msgid "``a`` will be evaluated with ``str`` since no annotation was provided,"
+msgstr ""
+
+#: ../../../macros.rst:282
+msgid "``b`` will be parsed into a syntax tree node, and"
+msgstr ""
+
+#: ../../../macros.rst:283
+msgid ""
+"``c`` will be compiled into code object since the builtin ``compile()`` "
+"function was used as the annotation."
+msgstr ""
+
+#: ../../../macros.rst:286
+msgid ""
+"Additionally, certain kinds of annotations have different modes that affect "
+"the parsing, compilation, and execution of its argument.  While a sensible "
+"default is provided, you may also supply your own. This is done by "
+"annotating with a (kind, mode) tuple.  The first element can be any valid "
+"object or flag. The second element must be a corresponding mode as a "
+"string.  For instance,"
+msgstr ""
+
+#: ../../../macros.rst:293
+msgid ""
+"def gunc(d : (exec, 'single'), e : ('c', 'exec')):\n"
+"    pass"
+msgstr ""
+
+#: ../../../macros.rst:298
+msgid "Thus in a macro call of ``gunc!()``,"
+msgstr ""
+
+#: ../../../macros.rst:300
+msgid "``d`` will be exec'd in single-mode (rather than exec-mode), and"
+msgstr ""
+
+#: ../../../macros.rst:301
+msgid "``e`` will be compiled in exec-mode (rather than eval-mode)."
+msgstr ""
+
+#: ../../../macros.rst:303
+msgid ""
+"For more information on the differences between the exec, eval, and single "
+"modes please see the Python documentation."
+msgstr ""
+
+#: ../../../macros.rst:308
+msgid "Macro Function Execution Context"
+msgstr ""
+
+#: ../../../macros.rst:309
+msgid ""
+"Equally important as having the macro arguments is knowing the execution "
+"context of the macro call itself. Rather than mucking around with frames, "
+"macros provide both the globals and locals of the call site.  These are "
+"accessible as the ``macro_globals`` and ``macro_locals`` attributes of the "
+"macro function itself while the macro is being executed."
+msgstr ""
+
+#: ../../../macros.rst:315
+msgid ""
+"For example, consider a macro which replaces all literal ``1`` digits with "
+"the literal ``2``, evaluates the modification, and returns the results. To "
+"eval, the macro will need to pull off its globals and locals:"
+msgstr ""
+
+#: ../../../macros.rst:319
+msgid ""
+"def one_to_two(x : str):\n"
+"    s = x.replace('1', '2')\n"
+"    glbs = one_to_two.macro_globals\n"
+"    locs = one_to_two.macro_locals\n"
+"    return eval(s, glbs, locs)"
+msgstr ""
+
+#: ../../../macros.rst:327
+msgid "Running this with a few of different inputs, we see:"
+msgstr ""
+
+#: ../../../macros.rst:329
+msgid ""
+"@ one_to_two!(1 + 1)\n"
+"4\n"
+"\n"
+"@ one_to_two!(11)\n"
+"22\n"
+"\n"
+"@ x = 1\n"
+"@ one_to_two!(x + 1)\n"
+"3"
+msgstr ""
+
+#: ../../../macros.rst:341
+msgid ""
+"Of course, many other more sophisticated options are available depending on "
+"the use case."
+msgstr ""
+
+#: ../../../macros.rst:346
+msgid "Subprocess Macros"
+msgstr ""
+
+#: ../../../macros.rst:347
+msgid ""
+"Like with function macros above, subprocess macros allow you to pause the "
+"parser for until you are ready to exit subprocess mode. Unlike function "
+"macros, there is only a single macro argument and its macro type is always a "
+"string.  This is because it (usually) doesn't make sense to pass non-string "
+"arguments to a command. And when it does, there is the ``@()`` syntax!"
+msgstr ""
+
+#: ../../../macros.rst:353
+msgid ""
+"In the simplest case, subprocess macros look like the equivalent of their "
+"function macro counterparts:"
+msgstr ""
+
+#: ../../../macros.rst:356
+msgid ""
+"@ echo! I'm Mr. Meeseeks.\n"
+"I'm Mr. Meeseeks."
+msgstr ""
+
+#: ../../../macros.rst:361
+msgid ""
+"Again, note that everything to the right of the ``!`` is passed down to the "
+"``echo`` command as the final, single argument. This is space preserving, "
+"like wrapping with quotes:"
+msgstr ""
+
+#: ../../../macros.rst:365
+msgid ""
+"# normally, xonsh will split on whitespace,\n"
+"# so each argument is passed in separately\n"
+"@ echo x  y       z\n"
+"x y z\n"
+"\n"
+"# usually space can be preserved with quotes\n"
+"@ echo \"x  y       z\"\n"
+"x  y       z\n"
+"\n"
+"# however, subprocess macros will pause and then strip\n"
+"# all input after the exclamation point\n"
+"@ echo! x  y       z\n"
+"x  y       z"
+msgstr ""
+
+#: ../../../macros.rst:381
+msgid ""
+"However, the macro will pause everything, including path and environment "
+"variable expansion, that might be present even with quotes.  For example:"
+msgstr ""
+
+#: ../../../macros.rst:384
+msgid ""
+"# without macros, environment variable are expanded\n"
+"@ echo $USER\n"
+"lou\n"
+"\n"
+"# inside of a macro, all additional munging is turned off.\n"
+"@ echo! $USER\n"
+"$USER"
+msgstr ""
+
+#: ../../../macros.rst:394
+msgid ""
+"Everything to the right of the exclamation point, except the leading and "
+"trailing whitespace, is passed into the command directly as written. This "
+"allows certain commands to function in cases where quoting or piping might "
+"be more burdensome. The ``timeit`` command is a great example where simple "
+"syntax will often fail, but will be easily executable as a macro:"
+msgstr ""
+
+#: ../../../macros.rst:400
+msgid ""
+"# fails normally\n"
+"@ timeit \"hello mom \" + \"and dad\"\n"
+"xonsh: subprocess mode: command not found: hello\n"
+"\n"
+"# macro success!\n"
+"@ timeit! \"hello mom \" + \"and dad\"\n"
+"100000000 loops, best of 3: 8.24 ns per loop"
+msgstr ""
+
+#: ../../../macros.rst:410
+msgid ""
+"All expressions to the left of the exclamation point are passed in normally "
+"and are not treated as the special macro argument. This allows the mixing of "
+"simple and complex command line arguments. For example, sometimes you might "
+"really want to write some code in another language:"
+msgstr ""
+
+#: ../../../macros.rst:415
+msgid ""
+"# don't worry, it is temporary!\n"
+"@ bash -c ! export var=42; echo $var\n"
+"42\n"
+"\n"
+"# that's better!\n"
+"@ python -c ! import os; print(os.path.abspath(\"/\"))\n"
+"/"
+msgstr ""
+
+#: ../../../macros.rst:425
+msgid ""
+"Compared to function macros, subprocess macros are relatively simple. "
+"However, they can still be very expressive!"
+msgstr ""
+
+#: ../../../macros.rst:429
+msgid "Context Manager Macros"
+msgstr ""
+
+#: ../../../macros.rst:430
+msgid ""
+"Now that we have seen what life can be like with macro expressions, it is "
+"time to introduce the macro statement: ``with!``.  With-bang provides macros "
+"on top of existing Python context managers. This provides both anonymous and "
+"onymous blocks in xonsh."
+msgstr ""
+
+#: ../../../macros.rst:435
+msgid ""
+"The syntax for context manager macros is the same as the usual with-"
+"statement in Python, but with an additional exclamation point between the "
+"``with`` word and the first context manager expression. As a simple example,"
+msgstr ""
+
+#: ../../../macros.rst:439
+msgid ""
+"with! x:\n"
+"    y = 10\n"
+"    print(y)"
+msgstr ""
+
+#: ../../../macros.rst:445
+msgid ""
+"In the above, everything to the left of the colon (``x``) will be evaluated "
+"normally. However, the body will not be executed and ``y`` will not be "
+"defined or printed. In this case, the body will be attached to x as a "
+"string, along with globals and locals, prior to the body even being entered. "
+"The body is then replaced with a ``pass`` statement. You can think of the "
+"above as being transformed into the following:"
+msgstr ""
+
+#: ../../../macros.rst:452
+msgid ""
+"x.macro_block = 'y = 10\\nprint(y)\\n'\n"
+"x.macro_globals = globals()\n"
+"x.macro_locals = locals()\n"
+"with! x:\n"
+"    pass"
+msgstr ""
+
+#: ../../../macros.rst:460
+msgid "There are a few important things about this to notice:"
+msgstr ""
+
+#: ../../../macros.rst:462
+msgid "The ``macro_block`` string is dedented,"
+msgstr ""
+
+#: ../../../macros.rst:463
+msgid ""
+"The ``macro_*`` attributes are set *before* the context manager is entered "
+"so the ``__enter__()`` method may use them, and"
+msgstr ""
+
+#: ../../../macros.rst:465
+msgid ""
+"The ``macro_*`` attributes are not cleaned up automatically so that the "
+"context manager may use them even after the object is exited. The "
+"``__exit__()`` method may clean up these attributes, if desired."
+msgstr ""
+
+#: ../../../macros.rst:469
+msgid ""
+"By default, macro blocks are returned as a string. However, like with "
+"function macro arguments, the kind of ``macro_block`` is determined by a "
+"special annotation.  This annotation is given via the ``__xonsh_block__`` "
+"attribute on the context manager itself.  This allows the block to be "
+"interpreted as an AST, byte compiled, etc."
+msgstr ""
+
+#: ../../../macros.rst:475
+msgid ""
+"The convenient part about this syntax is that the macro block is only exited "
+"once it sees a dedent back to the level of the ``with!``. All other code is "
+"indiscriminately skipped! This allows you to write blocks of code in "
+"languages other than xonsh without pause."
+msgstr ""
+
+#: ../../../macros.rst:480
+msgid ""
+"For example, consider a simple XML macro context manager. This will return "
+"the parsed XML tree from a macro block. The context manager itself can be "
+"written as:"
+msgstr ""
+
+#: ../../../macros.rst:485
+msgid ""
+"import xml.etree.ElementTree as ET\n"
+"\n"
+"class XmlBlock:\n"
+"\n"
+"    # make sure the macro_block comes back as a string\n"
+"    __xonsh_block__ = str\n"
+"\n"
+"    def __enter__(self):\n"
+"        # parse and return the block on entry\n"
+"        root = ET.fromstring(self.macro_block)\n"
+"        return root\n"
+"\n"
+"    def __exit__(self, *exc):\n"
+"        # no reason to keep these attributes around.\n"
+"        del self.macro_block, self.macro_globals, self.macro_locals"
+msgstr ""
+
+#: ../../../macros.rst:504
+msgid "The above class may then be used in a with-bang as follows:"
+msgstr ""
+
+#: ../../../macros.rst:506
+msgid ""
+"with! XmlBlock() as tree:\n"
+"    <note>\n"
+"      <to>You</to>\n"
+"      <from>Xonsh</from>\n"
+"      <heading>Don't You Want Me, Baby</heading>\n"
+"      <body>\n"
+"        You know I don't believe you when you say that you don't need me.\n"
+"      </body>\n"
+"    </note>"
+msgstr ""
+
+#: ../../../macros.rst:518
+msgid ""
+"And if you run this, you'll see that the ``tree`` object really is a parsed "
+"XML object."
+msgstr ""
+
+#: ../../../macros.rst:521
+msgid ""
+"@ print(tree.tag)\n"
+"note"
+msgstr ""
+
+#: ../../../macros.rst:527
+msgid ""
+"So in roughly eight lines of xonsh code, you can seamlessly interface with "
+"another, vastly different language."
+msgstr ""
+
+#: ../../../macros.rst:530
+msgid ""
+"The possibilities for this are not limited to just markup languages or other "
+"party tricks. You could be a remote execution interface via SSH, RPC, dask / "
+"distributed, etc. The real benefit of context manager macros is that they "
+"allow you to select when, where, and what code is executed as a part of the "
+"xonsh language itself."
+msgstr ""
+
+#: ../../../macros.rst:536
+msgid "The power is there; use it without reservation!"
+msgstr ""
+
+#: ../../../macros.rst:539
+msgid "Subprocess Expression Macro ``@!()``"
+msgstr ""
+
+#: ../../../macros.rst:540
+msgid ""
+"The ``@!()`` operator captures its content as a **literal string** and "
+"passes it as a single argument in subprocess mode. Unlike ``@()`` which "
+"evaluates the expression at runtime, ``@!()`` preserves the source text as-"
+"is."
+msgstr ""
+
+#: ../../../macros.rst:544
+msgid ""
+"@ echo @!(2+2)\n"
+"2+2\n"
+"\n"
+"@ echo @(2+2)\n"
+"4"
+msgstr ""
+
+#: ../../../macros.rst:552
+msgid ""
+"The content can be any text -- Python expressions, shell commands, or "
+"arbitrary strings:"
+msgstr ""
+
+#: ../../../macros.rst:555
+msgid ""
+"@ echo @!(x if x > 0 else -x)\n"
+"x if x > 0 else -x\n"
+"\n"
+"@ echo @!(ls -la /tmp)\n"
+"ls -la /tmp\n"
+"\n"
+"@ echo @!(f\"{name}: {value}\")\n"
+"f\"{name}: {value}\""
+msgstr ""
+
+#: ../../../macros.rst:566
+msgid "Syntax highlighting and autocompletion work inside ``@!()``."
+msgstr ""
+
+#: ../../../macros.rst:568
+msgid "**Example: xontrib-pipeliner**"
+msgstr ""
+
+#: ../../../macros.rst:570
+msgid ""
+"The `xontrib-pipeliner <https://github.com/anki-code/xontrib-pipeliner>`_ "
+"``pl`` command takes a Python expression as a string argument and applies it "
+"to each line of input. ``@!()`` is a natural fit:"
+msgstr ""
+
+#: ../../../macros.rst:574
+msgid ""
+"@ echo 123 | pl @!(line + '!!!')\n"
+"123!!!\n"
+"\n"
+"@ ls | pl @!(line.upper())\n"
+"\n"
+"@ import json  # import any library\n"
+"  cat data.json | pl @!(json.loads(line))  # process using that library"
+msgstr ""
+
+#: ../../../macros.rst:584
+msgid ""
+"Without ``@!()``, you would need to quote the expression manually, which is "
+"error-prone when the expression itself contains quotes:"
+msgstr ""
+
+#: ../../../macros.rst:587
+msgid ""
+"# quoting gets messy:\n"
+"@ echo 123 | pl \"line + '!!!'\"\n"
+"\n"
+"# @!() just works:\n"
+"@ echo 123 | pl @!(line + '!!!')\n"
+"\n"
+"@ $(@lines xonsh -c @!(echo hello; echo world))"
+msgstr ""
+
+#: ../../../macros.rst:599
+msgid "Take Away"
+msgstr ""
+
+#: ../../../macros.rst:600
+msgid ""
+"Hopefully, at this point, you see that a few well placed macros can be "
+"extremely convenient and valuable to any project."
+msgstr ""
