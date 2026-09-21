@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-09-21 15:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,11 +94,6 @@ msgstr ""
 #: ../../../../xonsh/history/json.py:docstring of
 #: xonsh.history.json.JsonCommandField:37
 msgid "The default value to return if key is not present."
-msgstr ""
-
-#: ../../../../xonsh/history/json.py:docstring of
-#: xonsh.history.json.JsonCommandField.i_am_at_the_front:2
-msgid "Tests if the command field is at the front of the queue."
 msgstr ""
 
 #: ../../../../xonsh/history/json.py:docstring of
@@ -396,11 +391,6 @@ msgstr ""
 #: ../../../../xonsh/history/json.py:docstring of threading.Thread.getName:4
 #: threading.Thread.setName:4
 msgid "This method is deprecated, use the name attribute instead."
-msgstr ""
-
-#: ../../../../xonsh/history/json.py:docstring of
-#: xonsh.history.json.JsonHistoryFlusher.i_am_at_the_front:2
-msgid "Tests if the flusher is at the front of the queue."
 msgstr ""
 
 #: ../../../../xonsh/history/json.py:docstring of threading.Thread.isDaemon:2
