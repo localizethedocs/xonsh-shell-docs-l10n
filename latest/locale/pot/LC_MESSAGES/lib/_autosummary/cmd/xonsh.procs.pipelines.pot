@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-09-21 15:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,7 +136,7 @@ msgstr ""
 #: ../../../../xonsh/procs/pipelines.py:docstring of
 #: xonsh.procs.pipelines.CommandPipeline:45
 #: xonsh.procs.pipelines.HiddenCommandPipeline:24
-msgid ":obj:`output <output>`"
+msgid ":obj:`output <.output>`"
 msgstr ""
 
 #: ../../../../xonsh/procs/pipelines.py:docstring of
@@ -198,7 +198,7 @@ msgstr ""
 #: ../../../../xonsh/procs/pipelines.py:docstring of
 #: xonsh.procs.pipelines.CommandPipeline:57
 #: xonsh.procs.pipelines.HiddenCommandPipeline:36
-msgid ":obj:`pipestatus <pipestatus>`"
+msgid ":obj:`pipestatus <.pipestatus>`"
 msgstr ""
 
 #: ../../../../xonsh/procs/pipelines.py:docstring of
@@ -218,7 +218,7 @@ msgstr ""
 #: ../../../../xonsh/procs/pipelines.py:docstring of
 #: xonsh.procs.pipelines.CommandPipeline:60
 #: xonsh.procs.pipelines.HiddenCommandPipeline:39
-msgid ":obj:`pipecode <pipecode>`"
+msgid ":obj:`pipecode <.pipecode>`"
 msgstr ""
 
 #: ../../../../xonsh/procs/pipelines.py:docstring of
