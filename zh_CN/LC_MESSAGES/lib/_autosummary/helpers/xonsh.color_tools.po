@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.color_tools.rst:2
+msgid "xonsh.color\\_tools"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools:1
+msgid "Tools for color handling in xonsh."
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools:3
+msgid ""
+"This includes Convert values between RGB hex codes and xterm-256 color "
+"codes. Parts of this file were originally forked from Micah Elliott http://"
+"MicahElliott.com Copyright (C) 2011 Micah Elliott. All rights reserved. "
+"WTFPL http://sam.zoy.org/wtfpl/"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools.COLORS:2
+msgid "constants"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools.iscolor:2
+msgid "Tests if a string is a valid color"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.make_palette:2
+msgid "Makes a color palette from a collection of strings."
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools.rgb_to_256:2
+msgid "Find the closest ANSI 256 approximation to the given RGB value."
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools.rgb_to_256:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.rgb_to_256:13
+msgid "**rgb**"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.rgb_to_256:-1
+msgid "Hex code representing an RGB value, eg, 'abcdef'"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of xonsh.color_tools.rgb_to_256:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.rgb_to_256:20
+msgid "Tuple of String between 0 and 255 (compatible with xterm) and"
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.rgb_to_256:23
+msgid "hex code (length-6)."
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.short_to_ints:2
+msgid "Coverts a short (256) color to a 3-tuple of ints."
+msgstr ""
+
+#: ../../../../xonsh/color_tools.py:docstring of
+#: xonsh.color_tools.warn_deprecated_no_color:2
+msgid "Show a warning once if NO_COLOR was used instead of RESET."
+msgstr ""
