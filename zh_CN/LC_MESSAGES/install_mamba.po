@@ -1,0 +1,263 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../install_mamba.rst:5
+msgid "Mamba Install Xonsh"
+msgstr ""
+
+#: ../../../install_mamba.rst:7
+msgid ""
+"Xonsh is a Python-based shell, and running xonsh requires Python to be "
+"installed. The Python version and its packages can be installed in various "
+"locations. When you execute ``import`` or any other Python code during a "
+"xonsh session, it is executed in the Python environment that was used to "
+"start the current xonsh instance."
+msgstr ""
+
+#: ../../../install_mamba.rst:13
+msgid ""
+"When xonsh is used as a core shell, it is necessary to keep the Python "
+"environment with xonsh stable, predictable, and independent of system "
+"changes. Lightweight environment managers such as ``venv``, ``pipx``, or "
+"``rye`` do not fully address this requirement. Package managers that can "
+"install fully isolated Python environments as a core feature, such as "
+"``miniconda`` or ``micromamba``, should be used."
+msgstr ""
+
+#: ../../../install_mamba.rst:20
+msgid ""
+"The ``mamba-install-xonsh.sh`` script creates an independent Python "
+"environment for xonsh using `mamba <https://mamba.readthedocs.io/>`_ in "
+"``$TARGET_DIR`` without affecting any other components of the system. This "
+"is an isolated, xonsh-specific environment that is not affected by system "
+"package upgrades, Python version changes, or other experiments with "
+"environments. You can use ``xpip`` and ``xmamba`` to intentionally install "
+"packages into this environment."
+msgstr ""
+
+#: ../../../install_mamba.rst:27
+msgid "Install the latest xonsh release with a well-tested Python version:"
+msgstr ""
+
+#: ../../../install_mamba.rst:29
+msgid ""
+"$ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' "
+"\\\n"
+"  /bin/bash -c \"$(curl -fsSL https://xon.sh/install/mamba-install-xonsh."
+"sh)\""
+msgstr ""
+
+#: ../../../install_mamba.rst:34
+msgid "Install xonsh from the ``main`` Git branch with a stable Python version"
+msgstr ""
+
+#: ../../../install_mamba.rst:36
+msgid ""
+"$ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full] @ "
+"git+https://github.com/xonsh/xonsh@main' \\\n"
+"  /bin/bash -c \"$(curl -fsSL https://xon.sh/install/mamba-install-xonsh."
+"sh)\""
+msgstr ""
+
+#: ../../../install_mamba.rst:42
+msgid "Preinstall and preload `xontribs <https://github.com/topics/xontrib>`_:"
+msgstr ""
+
+#: ../../../install_mamba.rst:44
+msgid ""
+"$ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full] @ "
+"git+https://github.com/xonsh/xonsh@main' \\\n"
+"  PIP_INSTALL=\"uv xontrib-sh xontrib-jump-to-dir xontrib-dalias xontrib-"
+"pipeliner xontrib-whole-word-jumping\" \\\n"
+"  XONSHRC=\"\\$XONSH_HISTORY_BACKEND = 'sqlite'; xontrib load -s sh "
+"jump_to_dir pipeliner whole_word_jumping dalias; \\$PROMPT = \\$PROMPT."
+"replace('{prompt_end}', '\\n{prompt_end}')\" \\\n"
+"  /bin/bash -c \"$(curl -fsSL https://xon.sh/install/mamba-install-xonsh."
+"sh)\""
+msgstr ""
+
+#: ../../../install_mamba.rst:52
+msgid "Usage"
+msgstr ""
+
+#: ../../../install_mamba.rst:54
+msgid ""
+"After installation, you no longer need to worry about Python or package "
+"manipulations unintentionally breaking the shell. You can safely use "
+"``pip``, ``brew``, and other package managers without corrupting the xonsh "
+"environment."
+msgstr ""
+
+#: ../../../install_mamba.rst:58
+msgid "After installation:"
+msgstr ""
+
+#: ../../../install_mamba.rst:60
+msgid "``xonsh`` refers to ``~/.local/xonsh-env/xbin/xonsh``."
+msgstr ""
+
+#: ../../../install_mamba.rst:61
+msgid "``xpython`` refers to ``~/.local/xonsh-env/bin/python``."
+msgstr ""
+
+#: ../../../install_mamba.rst:62
+msgid "``xpip`` refers to ``~/.local/xonsh-env/bin/python -m pip``."
+msgstr ""
+
+#: ../../../install_mamba.rst:63
+msgid "``xcontext`` shows the current context."
+msgstr ""
+
+#: ../../../install_mamba.rst:64
+msgid "You can run ``source xmamba.xsh`` to activate mamba (see below)."
+msgstr ""
+
+#: ../../../install_mamba.rst:66
+msgid "Additions:"
+msgstr ""
+
+#: ../../../install_mamba.rst:68
+msgid ""
+"``xbin-xonsh`` runs xonsh from xonsh-env if ``xonsh`` is overridden in "
+"``$PATH``."
+msgstr ""
+
+#: ../../../install_mamba.rst:69
+msgid "``xbin-python`` runs Python from xonsh-env."
+msgstr ""
+
+#: ../../../install_mamba.rst:70
+msgid "Executable helpers from xonsh-env:"
+msgstr ""
+
+#: ../../../install_mamba.rst:72
+msgid ""
+"``xbin-hidden`` lists the internal hidden ``bin`` directory of xonsh-env. "
+"Example: ``xpip install lolcat && xbin-hidden``."
+msgstr ""
+
+#: ../../../install_mamba.rst:74
+msgid ""
+"``xbin-add`` adds an executable from the hidden ``bin`` directory to the "
+"visible ``xbin``. Example: ``xbin-add lolcat``."
+msgstr ""
+
+#: ../../../install_mamba.rst:76
+msgid "``xbin-list`` lists executables in the visible ``xbin`` directory."
+msgstr ""
+
+#: ../../../install_mamba.rst:77
+msgid ""
+"``xbin-del`` removes an executable from ``xbin``. The executable remains in "
+"``bin``."
+msgstr ""
+
+#: ../../../install_mamba.rst:81
+msgid "Tips and Tricks"
+msgstr ""
+
+#: ../../../install_mamba.rst:84
+msgid "Using mamba from xonsh-env"
+msgstr ""
+
+#: ../../../install_mamba.rst:86
+msgid "To bind the xonsh-env micromamba to the ``xmamba`` alias, run:"
+msgstr ""
+
+#: ../../../install_mamba.rst:88
+msgid "@ source xmamba.xsh"
+msgstr ""
+
+#: ../../../install_mamba.rst:92
+msgid "You can then use:"
+msgstr ""
+
+#: ../../../install_mamba.rst:94
+msgid ""
+"@ xmamba activate base  # Environment where xonsh was installed.\n"
+"@ pip install lolcat    # Install ``lolcat`` into the ``base`` environment.\n"
+"@ xmamba deactivate\n"
+"\n"
+"@ xmamba create --name myenv python=3.12\n"
+"@ xmamba activate myenv\n"
+"@ pip install lolcat    # Install ``lolcat`` into ``myenv``.\n"
+"@ xmamba deactivate"
+msgstr ""
+
+#: ../../../install_mamba.rst:106
+msgid "Cleaning"
+msgstr ""
+
+#: ../../../install_mamba.rst:108
+msgid ""
+"If you do not plan to use ``xmamba``, you can reclaim disk space using "
+"`mamba clean <https://fig.io/manual/mamba/clean>`_:"
+msgstr ""
+
+#: ../../../install_mamba.rst:111
+msgid ""
+"@ source xmamba.xsh\n"
+"@ xmamba clean -a"
+msgstr ""
+
+#: ../../../install_mamba.rst:117
+msgid "Uninstall"
+msgstr ""
+
+#: ../../../install_mamba.rst:119
+msgid "Simply delete ``$TARGET_DIR``. For example:"
+msgstr ""
+
+#: ../../../install_mamba.rst:121
+msgid "@ rm -rf ~/.local/xonsh-env/"
+msgstr ""
+
+#: ../../../install_mamba.rst:126
+msgid "Known Issues"
+msgstr ""
+
+#: ../../../install_mamba.rst:129
+msgid "Do not blindly use as a login shell"
+msgstr ""
+
+#: ../../../install_mamba.rst:131
+msgid ""
+"Using xonsh as a `login shell <https://linuxhandbook.com/login-shell/>`_ is "
+"not recommended unless you are experienced and understand the implications. "
+"Many tools expect the login shell to be POSIX-compliant, and issues may "
+"arise when such tools attempt to run POSIX-specific commands in xonsh."
+msgstr ""
+
+#: ../../../install_mamba.rst:137
+msgid "``std::bad_alloc``"
+msgstr ""
+
+#: ../../../install_mamba.rst:139
+msgid "If you encounter the error::"
+msgstr ""
+
+#: ../../../install_mamba.rst:141
+msgid "terminate called after throwing an instance of 'std::bad_alloc'"
+msgstr ""
+
+#: ../../../install_mamba.rst:143
+msgid ""
+"delete the target directory (for example, ``rm -rf ~/.local/xonsh-env/``) "
+"and repeat the installation."
+msgstr ""

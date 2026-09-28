@@ -1,0 +1,723 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.tools.rst:2
+msgid "xonsh.completers.tools"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of xonsh.completers.tools:1
+msgid "Xonsh completer tools."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:2
+msgid "A rich completion that completers can return instead of a string"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:28
+msgid "**value**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:29
+msgid "The completion's actual value."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:31
+msgid "**prefix_len**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:32
+msgid ""
+"Length of the prefix to be replaced in the completion. If None, the default "
+"prefix len will be used."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:35
+msgid "**display**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:36
+msgid ""
+"Text to display in completion option list instead of ``value``. NOTE: If "
+"supplied, the common prefix with other completions won't be removed."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:39
+msgid "**description**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:40
+msgid "Extra text to display when the completion is selected."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:42
+msgid "**style**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:43
+msgid "Style to pass to prompt-toolkit's ``Completion`` object."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:45
+msgid "**append_closing_quote**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:46
+msgid ""
+"Whether to append a closing quote to the completion if the cursor is after "
+"it. See ``Completer.complete`` in ``xonsh/completer.py``"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:49
+msgid "**append_space**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:50
+msgid ""
+"Whether to append a space after the completion. This is intended to work "
+"with ``appending_closing_quote``, so the space will be added correctly "
+"**after** the closing quote. This is used in ``Completer.complete``. An "
+"extra bonus is that the space won't show up in the ``display`` attribute."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:55
+msgid "**provider**"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion:56
+msgid ""
+"Optional, debug-only tag identifying the sub-source inside the completer "
+"that produced this completion (e.g. ``\"alias\"``, ``\"command\"``, "
+"``\"python\"``, ``\"path\"``). Surfaced by ``$XONSH_COMPLETER_TRACE`` so "
+"users can tell whether a match came from, say, an alias vs. a ``$PATH`` "
+"executable inside the same ``base`` completer. Does not affect UX."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.capitalize:2
+msgid "Return a capitalized version of the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.capitalize:4
+msgid ""
+"More specifically, make the first character have upper case and the rest "
+"lower case."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.casefold:2
+msgid "Return a version of the string suitable for caseless comparisons."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.center:2
+msgid "Return a centered string of length width."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.center:4
+#: xonsh.completers.tools.RichCompletion.ljust:4
+#: xonsh.completers.tools.RichCompletion.rjust:4
+msgid ""
+"Padding is done using the specified fill character (default is a space)."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.encode:2
+msgid "Encode the string using the codec registered for encoding."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.encode:4
+msgid "encoding"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.encode:5
+msgid "The encoding in which to encode the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.encode:6
+msgid "errors"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.encode:7
+msgid ""
+"The error handling scheme to use for encoding errors. The default is "
+"'strict' meaning that encoding errors raise a UnicodeEncodeError.  Other "
+"possible values are 'ignore', 'replace' and 'xmlcharrefreplace' as well as "
+"any other name registered with codecs.register_error that can handle "
+"UnicodeEncodeErrors."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.expandtabs:2
+msgid "Return a copy where all tab characters are expanded using spaces."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.expandtabs:4
+msgid "If tabsize is not given, a tab size of 8 characters is assumed."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.format:2
+msgid ""
+"Return a formatted version of the string, using substitutions from args and "
+"kwargs. The substitutions are identified by braces ('{' and '}')."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.format_map:2
+msgid ""
+"Return a formatted version of the string, using substitutions from mapping. "
+"The substitutions are identified by braces ('{' and '}')."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isalnum:2
+msgid "Return True if the string is an alpha-numeric string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isalnum:4
+msgid ""
+"A string is alpha-numeric if all characters in the string are alpha-numeric "
+"and there is at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isalpha:2
+msgid "Return True if the string is an alphabetic string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isalpha:4
+msgid ""
+"A string is alphabetic if all characters in the string are alphabetic and "
+"there is at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isascii:2
+msgid "Return True if all characters in the string are ASCII, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isascii:4
+msgid ""
+"ASCII characters have code points in the range U+0000-U+007F. Empty string "
+"is ASCII too."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isdecimal:2
+msgid "Return True if the string is a decimal string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isdecimal:4
+msgid ""
+"A string is a decimal string if all characters in the string are decimal and "
+"there is at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isdigit:2
+msgid "Return True if the string is a digit string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isdigit:4
+msgid ""
+"A string is a digit string if all characters in the string are digits and "
+"there is at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isidentifier:2
+msgid ""
+"Return True if the string is a valid Python identifier, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isidentifier:4
+msgid ""
+"Call keyword.iskeyword(s) to test whether string s is a reserved identifier, "
+"such as \"def\" or \"class\"."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.islower:2
+msgid "Return True if the string is a lowercase string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.islower:4
+msgid ""
+"A string is lowercase if all cased characters in the string are lowercase "
+"and there is at least one cased character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isnumeric:2
+msgid "Return True if the string is a numeric string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isnumeric:4
+msgid ""
+"A string is numeric if all characters in the string are numeric and there is "
+"at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isprintable:2
+msgid ""
+"Return True if all characters in the string are printable, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isprintable:4
+msgid "A character is printable if repr() may use it in its output."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isspace:2
+msgid "Return True if the string is a whitespace string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isspace:4
+msgid ""
+"A string is whitespace if all characters in the string are whitespace and "
+"there is at least one character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.istitle:2
+msgid "Return True if the string is a title-cased string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.istitle:4
+msgid ""
+"In a title-cased string, upper- and title-case characters may only follow "
+"uncased characters and lowercase characters only cased ones."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isupper:2
+msgid "Return True if the string is an uppercase string, False otherwise."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.isupper:4
+msgid ""
+"A string is uppercase if all cased characters in the string are uppercase "
+"and there is at least one cased character in the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.join:2
+msgid "Concatenate any number of strings."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.join:4
+msgid ""
+"The string whose method is called is inserted in between each given string.  "
+"The result is returned as a new string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.join:7
+msgid "Example: '.'.join(['ab', 'pq', 'rs']) -> 'ab.pq.rs'"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.ljust:2
+msgid "Return a left-justified string of length width."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.lower:2
+msgid "Return a copy of the string converted to lowercase."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.lstrip:2
+msgid "Return a copy of the string with leading whitespace removed."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.lstrip:4
+#: xonsh.completers.tools.RichCompletion.rstrip:4
+#: xonsh.completers.tools.RichCompletion.strip:4
+msgid "If chars is given and not None, remove characters in chars instead."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.partition:2
+#: xonsh.completers.tools.RichCompletion.rpartition:2
+msgid "Partition the string into three parts using the given separator."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.partition:4
+msgid ""
+"This will search for the separator in the string.  If the separator is "
+"found, returns a 3-tuple containing the part before the separator, the "
+"separator itself, and the part after it."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.partition:8
+msgid ""
+"If the separator is not found, returns a 3-tuple containing the original "
+"string and two empty strings."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.removeprefix:2
+msgid "Return a str with the given prefix string removed if present."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.removeprefix:4
+msgid ""
+"If the string starts with the prefix string, return string[len(prefix):].  "
+"Otherwise, return a copy of the original string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.removesuffix:2
+msgid "Return a str with the given suffix string removed if present."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.removesuffix:4
+msgid ""
+"If the string ends with the suffix string and that suffix is not empty, "
+"return string[:-len(suffix)].  Otherwise, return a copy of the original "
+"string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.replace:2
+msgid "Create a new RichCompletion with replaced attributes"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rjust:2
+msgid "Return a right-justified string of length width."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rpartition:4
+msgid ""
+"This will search for the separator in the string, starting at the end.  If "
+"the separator is found, returns a 3-tuple containing the part before the "
+"separator, the separator itself, and the part after it."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rpartition:9
+msgid ""
+"If the separator is not found, returns a 3-tuple containing two empty "
+"strings and the original string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:2
+#: xonsh.completers.tools.RichCompletion.split:2
+msgid ""
+"Return a list of the substrings in the string, using sep as the separator "
+"string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:4
+#: xonsh.completers.tools.RichCompletion.split:4
+msgid "sep"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:5
+#: xonsh.completers.tools.RichCompletion.split:5
+msgid "The separator used to split the string."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:7
+#: xonsh.completers.tools.RichCompletion.split:7
+msgid ""
+"When set to None (the default value), will split on any whitespace character "
+"(including \\n \\r \\t \\f and spaces) and will discard empty strings from "
+"the result."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:10
+#: xonsh.completers.tools.RichCompletion.split:10
+msgid "maxsplit"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:11
+#: xonsh.completers.tools.RichCompletion.split:11
+msgid "Maximum number of splits. -1 (the default value) means no limit."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rsplit:14
+msgid "Splitting starts at the end of the string and works to the front."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.rstrip:2
+msgid "Return a copy of the string with trailing whitespace removed."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.split:14
+msgid "Splitting starts at the front of the string and works to the end."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.split:16
+msgid ""
+"Note, str.split() is mainly useful for data that has been intentionally "
+"delimited.  With natural text that includes punctuation, consider using the "
+"regular expression module."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.splitlines:2
+msgid "Return a list of the lines in the string, breaking at line boundaries."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.splitlines:4
+msgid ""
+"Line breaks are not included in the resulting list unless keepends is given "
+"and true."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.strip:2
+msgid ""
+"Return a copy of the string with leading and trailing whitespace removed."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.swapcase:2
+msgid ""
+"Convert uppercase characters to lowercase and lowercase characters to "
+"uppercase."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.title:2
+msgid "Return a version of the string where each word is titlecased."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.title:4
+msgid ""
+"More specifically, words start with uppercased characters and all remaining "
+"cased characters have lower case."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.translate:2
+msgid "Replace each character in the string using the given translation table."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.translate:4
+msgid "table"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.translate:5
+msgid ""
+"Translation table, which must be a mapping of Unicode ordinals to Unicode "
+"ordinals, strings, or None."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.translate:8
+msgid ""
+"The table must implement lookup/indexing via __getitem__, for instance a "
+"dictionary or list.  If this operation raises LookupError, the character is "
+"left untouched.  Characters mapped to None are deleted."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.upper:2
+msgid "Return a copy of the string converted to uppercase."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.zfill:2
+msgid ""
+"Pad a numeric string with zeros on the left, to fill a field of the given "
+"width."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.RichCompletion.zfill:4
+msgid "The string is never truncated."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.comp_based_completer:2
+msgid ""
+"Helper function to complete commands such as ``pip``,``django-admin``,... "
+"that use bash's ``complete``"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.contextual_command_completer:2
+msgid ""
+"like ``contextual_completer``, but will only run when completing a command "
+"and will directly receive the ``CommandContext`` object"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.contextual_command_completer_for:2
+msgid ""
+"like ``contextual_command_completer``, but will only run when completing the "
+"``cmd`` command"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.contextual_completer:2
+msgid "Decorator for a contextual completer"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.contextual_completer:4
+msgid ""
+"This is used to mark completers that want to use the parsed completion "
+"context. See ``xonsh/parsers/completion_context.py``."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.contextual_completer:7
+msgid "``func`` receives a single CompletionContext object."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.get_filter_function:2
+msgid ""
+"Return the completion filter function based on ``$XONSH_COMPLETER_MODE``."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.get_filter_function:4
+msgid "Modes:"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.get_filter_function:6
+msgid ""
+"``\"substring_tier\"`` (default) — completions are filtered by case-"
+"insensitive substring match.  The pipeline's tier-based sort ranks prefix "
+"matches above substring matches."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.get_filter_function:9
+msgid ""
+"``\"prefix\"`` — only completions that start with the prefix are shown (case-"
+"insensitive)."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.justify:2
+msgid ""
+"Re-wrap the string s so that each line is no more than max_length characters "
+"long, padding all lines but the first on the left with the string left_pad."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.non_exclusive_completer:2
+msgid "Decorator for a non-exclusive completer"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.non_exclusive_completer:4
+msgid ""
+"This is used to mark completers that will be collected with other "
+"completer's results."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.tag_provider:2
+msgid "Tag completer output with ``provider`` for ``$XONSH_COMPLETER_TRACE``."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.tag_provider:4
+msgid ""
+"Accepts any of the three standard completer return shapes and preserves the "
+"shape so downstream pipeline logic (exclusivity, filtering, lprefix) is "
+"unaffected:"
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.tag_provider:8
+msgid "``None`` → returned unchanged."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.tag_provider:9
+msgid "``(comps, extra)`` 2-tuple → ``(tagged_generator, extra)``."
+msgstr ""
+
+#: ../../../../xonsh/completers/tools.py:docstring of
+#: xonsh.completers.tools.tag_provider:10
+msgid "Any other iterable → generator of tagged completions."
+msgstr ""
