@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-06-22 11:14:24 +0200",
-      "hash" : "2978ff4f103d50f096d2f1554ad39e7c53a230ac",
-      "title" : "build(deps): bump actions/checkout from 6 to 7 (#6523)"
+      "date" : "2026-10-05 16:08:54 +0600",
+      "hash" : "05fddb0ca568ddbe17d7a3a6fb6f78ae04bfd4b9",
+      "title" : "fix(parser): make `${expr}` subprocess args strings like `$NAME` (#6612)"
     }
   },
   "type" : "branch",

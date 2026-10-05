@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-10-05 17:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,8 @@ msgid ""
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.deregister:0
-#: xonsh.environ.Env.register:0 xonsh.environ.EnvPath.add:0
+#: xonsh.environ.Env.get_stringified:0 xonsh.environ.Env.register:0
+#: xonsh.environ.EnvPath.add:0
 msgid "Parameters"
 msgstr ""
 
@@ -143,6 +144,60 @@ msgstr ""
 msgid "Gets the documentation for the environment variable."
 msgstr ""
 
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:2
+msgid "Return ``key`` detyped the way bare ``$NAME`` is in subprocess mode."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:4
+msgid ""
+"An unset key returns ``default``. A missing detyper, or a detyper that "
+"returns ``None``, falls back to ``str(value)``. Bare ``${expr}`` subprocess "
+"arguments and ``expandvars`` both use this."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:10
+msgid "**key**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:-1 xonsh.environ.Env.get_stringified:20
+msgid "object"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:11
+msgid "Environment variable name, usually a ``str``."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:13 xonsh.environ.Env.register:15
+#: xonsh.environ.Var:19
+msgid "**default**"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:-1
+msgid "object, optional"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:14
+msgid "Returned when ``key`` is not set. ``\"\"`` by default."
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:0 xonsh.environ.EnvPath.add:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/environ.py:docstring of
+#: xonsh.environ.Env.get_stringified:21
+msgid "Detyped string, or ``default`` when the key is absent."
+msgstr ""
+
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.get_validator:2
 msgid "Gets a validator for the given key."
 msgstr ""
@@ -189,18 +244,13 @@ msgid "**type**"
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
-msgid "str, optional,  {'bool', 'str', 'path', 'env_path', 'int', 'float'}"
+msgid "str, optional, {'bool', 'str', 'path', 'env_path', 'int', 'float'}"
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:12
 msgid ""
 "Variable type. If not one of the available presets, use `validate`, "
 "`convert`, and `detype` to specify type behavior."
-msgstr ""
-
-#: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:15
-#: xonsh.environ.Var:19
-msgid "**default**"
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.Env.register:-1
@@ -411,10 +461,6 @@ msgstr ""
 msgid ""
 "If True, the value will be removed and added to the start or end(depending "
 "on the value of front) Default : False"
-msgstr ""
-
-#: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:0
-msgid "Returns"
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.EnvPath.add:26
