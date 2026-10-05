@@ -1,0 +1,217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.dirstack.rst:2
+msgid "xonsh.dirstack"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack:1
+msgid ""
+"Directory stack and associated utilities for the xonsh shell. https://www."
+"gnu.org/software/bash/manual/html_node/Directory-Stack-Builtins.html"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.cd:2
+msgid "Changes the directory."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.cd:4
+msgid ""
+"If no directory is specified (i.e. if `args` is None) then this changes to "
+"the current user's home directory."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:2
+msgid "Manage the list of currently remembered directories."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:0
+#: xonsh.dirstack.popd_fn:0 xonsh.dirstack.pushd_fn:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:7
+#: xonsh.dirstack.popd_fn:14
+msgid "**nth**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:8
+msgid ""
+"Displays the Nth directory (counting from the left/right according to +/x "
+"prefix respectively), starting with zero"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:11
+msgid "**clear**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:-1
+msgid "-c"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:12
+msgid "Clears the directory stack by deleting all of the entries."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:14
+msgid "**print_long**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:-1
+msgid "-p"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:15
+msgid "Print the directory stack with one entry per line."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:17
+msgid "**verbose**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:-1
+msgid "-v"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:18
+msgid ""
+"Print the directory stack with one entry per line, prefixing each entry with "
+"its index in the stack."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:21
+msgid "**long**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:-1
+msgid "-l"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.dirs_fn:22
+msgid ""
+"Produces a longer listing; the default listing format uses a tilde to denote "
+"the home directory."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:2
+msgid ""
+"When no arguments are given, popd removes the top directory from the stack "
+"and performs a cd to the new top directory. The elements are numbered from 0 "
+"starting at the first directory listed with ``dirs``; that is, popd is "
+"equivalent to popd +0."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:10
+#: xonsh.dirstack.pushd_fn:22
+msgid "**cd**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:-1
+#: xonsh.dirstack.pushd_fn:-1
+msgid "-n, --cd"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:11
+msgid ""
+"Suppresses the normal change of directory when removing directories from the "
+"stack, so that only the stack is manipulated."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:15
+msgid ""
+"Removes the Nth directory (counting from the left/right of the list printed "
+"by dirs w.r.t. -/+ prefix), starting with zero."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:18
+#: xonsh.dirstack.pushd_fn:26
+msgid "**quiet**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:-1
+#: xonsh.dirstack.pushd_fn:-1
+msgid "-q, --quiet"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.popd_fn:19
+#: xonsh.dirstack.pushd_fn:27
+msgid "Do not call dirs, regardless of $PUSHD_SILENT"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:2
+msgid ""
+"Adds a directory to the top of the directory stack, or rotates the stack, "
+"making the new top of the stack the current working directory."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:5
+msgid ""
+"On Windows, if the path is a UNC path (begins with `\\\\<server>\\<share>`) "
+"and if the `DisableUNCCheck` registry value is not enabled, creates a "
+"temporary mapped drive letter and sets the working directory there, "
+"emulating behavior of `PUSHD` in `CMD.EXE`"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:11
+msgid "**dir_or_n**"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:12
+msgid "dir :"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:13
+msgid ""
+"Makes dir be the top of the stack, making it the new current directory as if "
+"it had been supplied as an argument to the cd builtin."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:15
+msgid "+N :"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:16
+msgid ""
+"Brings the Nth directory (counting from the left of the list printed by "
+"dirs, starting with zero) to the top of the list by rotating the stack."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:18
+msgid "-N :"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:19
+msgid ""
+"Brings the Nth directory (counting from the right of the list printed by "
+"dirs, starting with zero) to the top of the list by rotating the stack."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.pushd_fn:23
+msgid ""
+"Suppresses the normal change of directory when adding directories to the "
+"stack, so that only the stack is manipulated."
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.with_pushd:2
+msgid "Use pushd as a context manager"
+msgstr ""
+
+#: ../../../../xonsh/dirstack.py:docstring of xonsh.dirstack.DIRSTACK:2
+msgid "A list containing the currently remembered directories."
+msgstr ""

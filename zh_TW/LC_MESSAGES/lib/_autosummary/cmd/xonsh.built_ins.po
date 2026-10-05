@@ -1,0 +1,1224 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.built_ins.rst:2
+msgid "xonsh.built\\_ins"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins:1
+msgid "The xonsh built-ins."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins:3
+msgid ""
+"Note that this module is named 'built_ins' so as not to be confused with the "
+"special Python builtins module."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd:2
+msgid "A command group."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd.hide:2
+msgid "dispatch ![]"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd.obj:2
+msgid "dispatch !()"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd.out:2
+msgid "dispatch $()"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd.pipe:2
+msgid "combine $() | $[]"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.Cmd.run:2
+msgid "dispatch $[]"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:2
+msgid "Proxies access dynamically."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:0 xonsh.built_ins.XonshSession.load:0
+#: xonsh.built_ins.call_macro:0 xonsh.built_ins.convert_macro_arg:0
+#: xonsh.built_ins.enter_macro:0 xonsh.built_ins.in_macro_call:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:28
+msgid "**refname**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:-1 xonsh.built_ins.convert_macro_arg:-1
+#: xonsh.built_ins.enter_macro:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:29
+msgid ""
+"'.'-separated string that represents the new, reference name that the user "
+"will access."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:32
+msgid "**objname**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.DynamicAccessProxy:33
+msgid ""
+"'.'-separated string that represents the name where the target object "
+"actually lives that refname points to."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.InlineImporter:2
+#: xonsh.built_ins.XonshSessionInterface.imp:2
+msgid ""
+"Inline importer allows to import and use module attribute or function in one "
+"line."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList:2
+msgid "List subclass returned by glob operations with convenience methods."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList:4
+msgid "All methods return XonshList, enabling chaining::"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList:6
+msgid "g`**/*.py`.files().sorted().paths()"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.append:2
+msgid "Append object to the end of the list."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.clear:2
+msgid "Remove all items from list."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.copy:2
+msgid "Return a shallow copy of the list."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.dirs:2
+msgid "Keep only paths that are existing directories."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.exists:2
+msgid "Keep only paths that exist on disk."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.extend:2
+msgid "Extend list by appending elements from the iterable."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.files:2
+msgid "Keep only paths that are existing files."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.filter:2
+msgid "Return a XonshList with only elements where func(elem) is truthy."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.hidden:2
+msgid ""
+"Keep only hidden files and directories. On Unix: names starting with '.'. On "
+"Windows: also FILE_ATTRIBUTE_HIDDEN."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.index:4 xonsh.built_ins.XonshList.remove:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.insert:2
+msgid "Insert object before index."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.paths:2
+msgid "Convert string elements to pathlib.Path objects."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.pop:2
+msgid "Remove and return item at index (default last)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.pop:4
+msgid "Raises IndexError if list is empty or index is out of range."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.remove:2
+msgid "Remove first occurrence of value."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.reverse:2
+msgid "Reverse *IN PLACE*."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.select:2
+msgid "Pick the n-th element from each tuple, skipping None values."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.sort:2
+msgid "Sort the list in ascending order and return None."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.sort:4
+msgid ""
+"The sort is in-place (i.e. the list itself is modified) and stable (i.e. the "
+"order of two equal elements is maintained)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshList.sort:7
+msgid ""
+"If a key function is given, apply it once to each list item and sort them, "
+"ascending or descending, according to their function values."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.sort:10
+msgid "The reverse flag can be set to sort in descending order."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.sorted:2
+msgid "Return a new sorted XonshList."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.unique:2
+msgid "Return a XonshList with duplicates removed, preserving order."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshList.visible:2
+msgid ""
+"Keep only visible (non-hidden) files and directories. On Unix: names not "
+"starting with '.'. On Windows: no FILE_ATTRIBUTE_HIDDEN."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral:2
+msgid "Extension of ``pathlib.Path`` to support extended functionality."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.cwd:2
+msgid "Return a new path pointing to the current working directory."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.from_uri:2
+msgid "Return a new path from the given 'file' URI."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.home:2
+msgid "Return a new path pointing to expanduser('~')."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.absolute:2
+msgid ""
+"Return an absolute version of this path No normalization or symlink "
+"resolution is performed."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.absolute:5
+msgid "Use resolve() to resolve symlinks and remove '..' segments."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.as_posix:2
+msgid "Return the string representation of the path with forward (/) slashes."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.PurePath.as_uri:2
+msgid "Return the path as a URI."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.cd:2
+msgid ""
+"Returns context manager to change the directory e.g. ``with p'/tmp'.cd(): "
+"$[ls]``"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.chmod:2
+msgid ""
+"Extension of ``pathlib.Path.chmod`` that returns ``self`` instead of "
+"``None``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.exists:2
+msgid "Whether this path exists."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.exists:4
+msgid ""
+"This method normally follows symlinks; to check whether a symlink exists, "
+"add the argument follow_symlinks=False."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.expanduser:2
+msgid ""
+"Return a new path with expanded ~ and ~user constructs (as returned by os."
+"path.expanduser)"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.full_match:2
+msgid ""
+"Return True if this path matches the given glob-style pattern. The pattern "
+"is matched against the entire path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.glob:2
+msgid ""
+"Iterate over this subtree and yield all existing files (of any kind, "
+"including directories) matching the given relative pattern."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.group:2
+msgid "Return the group name of the file gid."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.Path.hardlink_to:2
+msgid "Make this path a hard link pointing to the same file as *target*."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.Path.hardlink_to:4
+msgid "Note the order of arguments (self, target) is the reverse of os.link's."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.is_absolute:2
+msgid ""
+"True if the path is absolute (has both a root and, if applicable, a drive)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.is_block_device:2
+msgid "Whether this path is a block device."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.is_char_device:2
+msgid "Whether this path is a character device."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.is_dir:2
+msgid "Whether this path is a directory."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.is_fifo:2
+msgid "Whether this path is a FIFO."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.is_file:2
+msgid ""
+"Whether this path is a regular file (also True for symlinks pointing to "
+"regular files)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.Path.is_junction:2
+msgid "Whether this path is a junction."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.is_mount:2
+msgid "Check if this path is a mount point"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.is_relative_to:2
+msgid "Return True if the path is relative to another path or False."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.is_reserved:2
+msgid ""
+"Return True if the path contains one of the special names reserved by the "
+"system, if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.is_socket:2
+msgid "Whether this path is a socket."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.is_symlink:2
+msgid "Whether this path is a symbolic link."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.iterdir:2
+msgid "Yield path objects of the directory contents."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.iterdir:4
+msgid ""
+"The children are yielded in arbitrary order, and the special entries '.' and "
+"'..' are not included."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.joinpath:2
+msgid ""
+"Combine this path with one or several arguments, and return a new path "
+"representing either a subpath (if all arguments are relative paths) or a "
+"totally different path (if one of the arguments is anchored)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.lchmod:2
+msgid ""
+"Like chmod(), except if the path points to a symlink, the symlink's "
+"permissions are changed, rather than its target's."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.lstat:2
+msgid ""
+"Like stat(), except if the path points to a symlink, the symlink's status "
+"information is returned, rather than its target's."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.match:2
+msgid ""
+"Return True if this path matches the given pattern. If the pattern is "
+"relative, matching is done from the right; otherwise, the entire path is "
+"matched. The recursive wildcard '**' is *not* supported by this method."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.mkdir:2
+msgid ""
+"Extension of ``pathlib.Path.mkdir`` that returns ``self`` instead of "
+"``None``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.open:2
+msgid ""
+"Open the file pointed to by this path and return a file object, as the built-"
+"in open() function does."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.owner:2
+msgid "Return the login name of the file owner."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.read_bytes:2
+msgid "Open the file in bytes mode, read it, and close the file."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.read_text:2
+msgid "Open the file in text mode, read it, and close the file."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.readlink:2
+msgid "Return the path to which the symbolic link points."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.relative_to:2
+msgid ""
+"Return the relative path to another path identified by the passed "
+"arguments.  If the operation is not possible (because this is not related to "
+"the other path), raise ValueError."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.relative_to:6
+msgid ""
+"The *walk_up* parameter controls whether `..` may be used to resolve the "
+"path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.rename:2
+msgid "Rename this path to the target path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.rename:4
+#: pathlib._local.Path.replace:4
+msgid ""
+"The target path may be absolute or relative. Relative paths are interpreted "
+"relative to the current working directory, *not* the directory of the Path "
+"object."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.rename:8
+#: pathlib._local.Path.replace:8
+msgid "Returns the new Path instance pointing to the target path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.replace:2
+msgid "Rename this path to the target path, overwriting if that path exists."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.resolve:2
+msgid ""
+"Make the path absolute, resolving all symlinks on the way and also "
+"normalizing it."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.rglob:2
+msgid ""
+"Recursively yield all existing files (of any kind, including directories) "
+"matching the given relative pattern, anywhere in this subtree."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.rmdir:2
+msgid "Remove this directory.  The directory must be empty."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.samefile:2
+msgid ""
+"Return whether other_path is the same or not as this file (as returned by os."
+"path.samefile())."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.stat:2
+msgid ""
+"Return the result of the stat() system call on this path, like os.stat() "
+"does."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.symlink_to:2
+msgid ""
+"Make this path a symlink pointing to the target path. Note the order of "
+"arguments (link, target) is the reverse of os.symlink."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.touch:2
+msgid ""
+"Extension of ``pathlib.Path.touch`` that returns ``self`` instead of "
+"``None``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.unlink:2
+msgid ""
+"Remove this file or link. If the path is a directory, use rmdir() instead."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.walk:2
+msgid "Walk the directory tree from this directory, similar to os.walk()."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._local.PurePath.with_name:2
+msgid "Return a new path with the file name changed."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.with_segments:2
+msgid ""
+"Construct a new path object from any number of path-like objects. Subclasses "
+"may override this method to customize how new path objects are created from "
+"methods like `iterdir()`."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.with_stem:2
+msgid "Return a new path with the stem changed."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PurePathBase.with_suffix:2
+msgid ""
+"Return a new path with the file suffix changed.  If the path has no suffix, "
+"add given suffix.  If the given suffix is an empty string, remove the suffix "
+"from the path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: pathlib._abc.PathBase.write_bytes:2
+msgid "Open the file in bytes mode, write to it, and close the file."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.write_text:2
+msgid "Open the file in text mode, write to it, and close the file."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.anchor:2
+msgid "The concatenation of the drive and root, or ''."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.drive:2
+msgid "The drive prefix (letter or UNC path), if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.name:2
+msgid "The final path component, if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.parent:2
+msgid "The logical parent of the path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.parents:2
+msgid "A sequence of this path's logical parents."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.parts:2
+msgid ""
+"An object providing sequence-like access to the components in the filesystem "
+"path."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.root:2
+msgid "The root of the path, if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.stem:2
+msgid "The final path component, minus its last suffix."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.suffix:2
+msgid "The final component's last suffix, if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.suffix:4
+msgid "This includes the leading period. For example: '.txt'"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.suffixes:2
+msgid "A list of the final component's suffixes, if any."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteral.suffixes:4
+msgid "These include the leading periods. For example: ['.tar', '.gz']"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshPathLiteralChangeDirectoryContextManager:2
+msgid "Implements context manager to use in xonsh path literal."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshSession:2
+msgid "All components defining a xonsh session."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshSession:4
+msgid ""
+"Warning! If you use this object for any reason and access ``__xonsh__`` or "
+"``xonsh.built_ins.XSH`` attributes or functions, you do so at your own risk, "
+"as the internal contents and behavior of this object may change with any "
+"release. For repeatable use cases, find a way to improve "
+"``XonshSessionInterface`` or ``xonsh.api``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshSession:0
+#: xonsh.built_ins.XonshSessionInterface:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshSession:34
+msgid "**exit: int or None**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.XonshSession:35
+msgid ""
+"Session attribute. In case of integer value it signals xonsh to exit with "
+"returning this value as exit code."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:2
+msgid "Loads the session with default values."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:7
+msgid "**execer**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:-1
+msgid "Execer, optional"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:8
+msgid "Xonsh execution object, may be None to start"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:10
+msgid "**ctx**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:-1
+msgid "Mapping, optional"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:11
+msgid "Context to start xonsh session with."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:13
+msgid "**inherit_env**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.load:14
+msgid ""
+"If ``True``: inherit environment variables from ``os.environ``. If "
+"``False``: use default values for environment variables and set "
+"``$XONSH_ENV_INHERITED = False``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSession.completers:2
+msgid ""
+"Returns a list of all available completers. Init when first accessing the "
+"attribute"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:2
+msgid "Xonsh Session Interface"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:8
+msgid "**env**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:-1
+msgid "xonsh.environ.Env"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:9
+msgid "A xonsh environment e.g. `@.env.get('HOME', '/tmp')`."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:11
+msgid "**history**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:-1
+msgid "xonsh.history.History"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:12
+msgid ""
+"Xonsh history backend e.g. `@.history[-1].cmd`. See also `history --help` to "
+"manage history from command line."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:16
+msgid "**imp**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:-1
+msgid "xonsh.built_ins.InlineImporter"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:17
+msgid ""
+"The inline importer provides instant access to library functions and "
+"attributes e.g. `@.imp.time.time()`."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:20
+msgid "**lastcmd**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:-1
+msgid "xonsh.procs.pipelines.CommandPipeline"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:21
+msgid ""
+"Last executed subprocess-mode command pipeline e.g. `@.lastcmd.rtn` returns "
+"exit code."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:24
+msgid "**debug**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:-1
+msgid "xonsh.debug.XonshDebug"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.XonshSessionInterface:25
+msgid ""
+"Debug helpers for the running session e.g. ``@.debug.breakpoint()`` to drop "
+"into a debugger."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.builtin_cmd:2
+msgid ""
+"Run a builtin name as a subprocess command if $XONSH_BUILTINS_TO_CMD is set "
+"and the name is a known command or alias. Otherwise return the builtin value."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:2
+msgid "Calls a function as a macro, returning its result."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:7
+#: xonsh.built_ins.in_macro_call:8
+msgid "**f**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:-1
+#: xonsh.built_ins.in_macro_call:-1
+msgid "callable object"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:8
+#: xonsh.built_ins.in_macro_call:9
+msgid "The function that is called as ``f(*args)``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:10
+msgid "**raw_args**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:-1
+msgid "tuple of str"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:11
+msgid ""
+"The str representation of arguments of that were passed into the macro. "
+"These strings will be parsed, compiled, evaled, or left as a string "
+"depending on the annotations of f."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:15
+#: xonsh.built_ins.convert_macro_arg:13 xonsh.built_ins.enter_macro:17
+#: xonsh.built_ins.in_macro_call:11
+msgid "**glbs**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:-1
+#: xonsh.built_ins.convert_macro_arg:-1 xonsh.built_ins.enter_macro:-1
+#: xonsh.built_ins.in_macro_call:-1
+msgid "Mapping"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:16
+#: xonsh.built_ins.convert_macro_arg:14 xonsh.built_ins.in_macro_call:12
+msgid "The globals from the call site."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:18
+#: xonsh.built_ins.convert_macro_arg:16 xonsh.built_ins.enter_macro:20
+#: xonsh.built_ins.in_macro_call:14
+msgid "**locs**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:-1
+#: xonsh.built_ins.convert_macro_arg:-1 xonsh.built_ins.enter_macro:-1
+#: xonsh.built_ins.in_macro_call:-1
+msgid "Mapping or None"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.call_macro:19
+#: xonsh.built_ins.convert_macro_arg:17 xonsh.built_ins.in_macro_call:15
+msgid "The locals from the call site."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:2
+msgid "Converts a string macro argument based on the requested kind."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:7
+msgid "**raw_arg**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:8
+msgid "The str representation of the macro argument."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:10
+msgid "**kind**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:-1
+msgid "object"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:11
+msgid "A flag or type representing how to convert the argument."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:19
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:-1
+msgid "str, optional"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:20
+msgid "The macro argument name."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:22
+msgid "**macroname**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:23
+msgid "The name of the macro itself."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:0 xonsh.built_ins.enter_macro:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.convert_macro_arg:29
+msgid "The converted argument."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.ensure_list_of_strs:2
+msgid "Ensures that x is a list of strings."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.ensure_str_or_callable:2
+msgid "Ensures that x is single string or function."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:2
+msgid ""
+"Prepares to enter a context manager macro by attaching the contents of the "
+"macro block, globals, and locals to the object. These modifications are made "
+"in-place and the original object is returned."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:9
+#: xonsh.built_ins.enter_macro:27
+msgid "**obj**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:-1
+msgid "context manager"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:10
+msgid "The object that is about to be entered via a with-statement."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:12
+msgid "**raw_block**"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:13
+msgid ""
+"The str of the block that is the context body. This string will be parsed, "
+"compiled, evaled, or left as a string depending on the return annotation of "
+"obj.__enter__."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:18
+msgid "The globals from the context site."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:21
+msgid "The locals from the context site."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.enter_macro:28
+msgid "The same context manager but with the new macro information applied."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.eval_fstring_field:2
+msgid "Evaluates the argument in Xonsh context."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.helper:2
+#: xonsh.built_ins.superhelper:2
+msgid "Prints help about, and then returns that variable."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.in_macro_call:2
+msgid ""
+"Attaches macro globals and locals temporarily to function as a context "
+"manager."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.list_of_list_of_strs_outer_product:2
+msgid "Takes an outer product of a list of strings"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.list_of_strs_or_callables:2
+msgid ""
+"Ensures that x is a list of strings or functions. This is called when using "
+"the ``@()`` operator to expand it's content."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.pathsearch:2
+msgid ""
+"Takes a string and returns a list of file paths that match (regex, glob, or "
+"arbitrary search function). If pathobj=True, the return is a list of pathlib."
+"Path objects instead of strings."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.regexmatchsearch:2
+msgid "Regex glob that returns match groups instead of paths."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.reglob:2
+msgid "Regular expression-based globbing."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.resetting_signal_handle:2
+msgid ""
+"Sets a new signal handle that will automatically restore the old value once "
+"the new handle is finished."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_captured_hiddenobject:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns an instance of "
+"HiddenCommandPipeline representing the completed command."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_captured_inject:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns a list of whitespace-"
+"separated strings of the stdout that was produced. The string is split using "
+"xonsh's lexer, rather than Python's str.split() or shlex.split()."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_captured_object:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns an instance of "
+"CommandPipeline representing the completed command."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_captured_stdout:2
+msgid ""
+"Runs a subprocess, capturing the output. Returns the stdout that was "
+"produced as a str or list based on ``$XONSH_SUBPROC_OUTPUT_FORMAT``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_captured_stdout:5
+msgid ""
+"``in_boolop`` is set by the parser to True when this call is a direct "
+"operand of a ``&&``/``||`` chain, so the runtime can adjust behavior (e.g. "
+"suppress ``$XONSH_SUBPROC_CMD_RAISE_ERROR`` to let the chain short-circuit "
+"on returncode)."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:2
+msgid ""
+"Raise ``CalledProcessError`` if *value* is the (final) result of a subproc "
+"statement that ended in failure."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:5
+msgid "Used as the AST wrapper around two kinds of nodes:"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:7
+msgid ""
+"The outermost ``BoolOp`` of a logical chain (``cmd1 && cmd2`` / ``cmd1 || "
+"cmd2``).  Python ``and``/``or`` short-circuits to the pipeline that "
+"determined the chain result, so the wrapper sees the *final* pipeline."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:11
+msgid ""
+"A standalone subproc-helper call at statement level — bare commands, ``!"
+"[...]``, ``$[...]``, ``$(...)``, ``@$(...)``.  The explicit-capture form ``!"
+"(...)`` is *intentionally* not wrapped: per spec it is the user's full "
+"responsibility."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:16
+msgid ""
+"When ``$XONSH_SUBPROC_RAISE_ERROR`` is True (default), this enforces \"raise "
+"on the last executed pipeline's non-zero exit code\" semantics:"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:19
+msgid "``ls nono`` (standalone) — rc≠0: raises."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:20
+msgid "``$(ls nono)`` (standalone) — rc≠0: raises."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:21
+msgid "``$[ls nono]`` (standalone) — rc≠0: raises."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:22
+msgid "``echo 1 && echo 2`` — last is ``echo 2`` (rc=0): no raise."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:23
+msgid "``ls nono || echo 1`` — last is ``echo 1`` (rc=0): no raise."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:24
+msgid "``ls nono && echo 1`` — last is ``ls nono`` (rc≠0): raises."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:26
+msgid "Per-command overrides:"
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:28
+msgid ""
+"``@error_ignore`` (``spec.raise_subproc_error is False``) on the final "
+"pipeline suppresses the raise — used e.g. for ``echo 1 && @error_ignore ls "
+"nono``."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:31
+msgid ""
+"``@error_raise`` raises directly at the pipeline level, so the wrapper never "
+"sees a failed value."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_check_boolop:34
+msgid ""
+"Some subproc helpers (``$()``, ``$[]``, ``@$()``) return a *string* / "
+"*None* / *list* rather than a ``CommandPipeline``, so the wrapper can't read "
+"``returncode`` directly off ``value``.  In that case it falls back to ``XSH."
+"lastcmd`` — the most recently completed pipeline, which is the one this "
+"helper just ran."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of
+#: xonsh.built_ins.subproc_uncaptured:2
+msgid ""
+"Runs a subprocess, without capturing the output. Returns the stdout that was "
+"produced as a str."
+msgstr ""
+
+#: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.xonsh_builtins:2
+msgid ""
+"A context manager for using the xonsh builtins only in a limited scope. "
+"Likely useful in testing."
+msgstr ""

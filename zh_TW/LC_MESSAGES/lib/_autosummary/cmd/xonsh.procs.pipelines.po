@@ -1,0 +1,644 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.pipelines.rst:2
+msgid "xonsh.procs.pipelines"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of xonsh.procs.pipelines:1
+msgid "Command pipeline tools."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:2
+msgid "Represents a subprocess-mode command pipeline."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:0
+#: xonsh.procs.pipelines.HiddenCommandPipeline:0
+#: xonsh.procs.pipelines.PrevProcCloser:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:28
+#: xonsh.procs.pipelines.HiddenCommandPipeline:7
+msgid "**specs**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "list of SubprocSpec"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:29
+#: xonsh.procs.pipelines.HiddenCommandPipeline:8
+msgid "Process specifications"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:0
+#: xonsh.procs.pipelines.HiddenCommandPipeline:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:33
+#: xonsh.procs.pipelines.HiddenCommandPipeline:12
+msgid "**spec**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "SubprocSpec"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:34
+#: xonsh.procs.pipelines.HiddenCommandPipeline:13
+msgid "The last specification in specs"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:36
+#: xonsh.procs.pipelines.HiddenCommandPipeline:15
+msgid "**proc**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "Popen-like"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:37
+#: xonsh.procs.pipelines.HiddenCommandPipeline:16
+msgid "The process in procs"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:39
+#: xonsh.procs.pipelines.HiddenCommandPipeline:18
+msgid "**ended**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:40
+#: xonsh.procs.pipelines.HiddenCommandPipeline:19
+msgid "Boolean for if the command has stopped executing."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:42
+#: xonsh.procs.pipelines.HiddenCommandPipeline:21
+msgid "**input**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:43
+#: xonsh.procs.pipelines.HiddenCommandPipeline:22
+msgid "A string of the standard input."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:45
+#: xonsh.procs.pipelines.HiddenCommandPipeline:24
+msgid ":obj:`output <output>`"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:46
+#: xonsh.procs.pipelines.CommandPipeline.output:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline:25
+#: xonsh.procs.pipelines.HiddenCommandPipeline.output:2
+msgid "Non-blocking, lazy access to output"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:48
+#: xonsh.procs.pipelines.HiddenCommandPipeline:27
+msgid "**errors**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:49
+#: xonsh.procs.pipelines.HiddenCommandPipeline:28
+msgid "A string of the standard error."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:51
+#: xonsh.procs.pipelines.HiddenCommandPipeline:30
+msgid "**lines**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "list of str"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:52
+#: xonsh.procs.pipelines.HiddenCommandPipeline:31
+msgid "The output lines"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:54
+#: xonsh.procs.pipelines.HiddenCommandPipeline:33
+msgid "**starttime**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "floats or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:55
+#: xonsh.procs.pipelines.HiddenCommandPipeline:34
+msgid "Pipeline start timestamp."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:57
+#: xonsh.procs.pipelines.HiddenCommandPipeline:36
+msgid ":obj:`pipestatus <pipestatus>`"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "list of int or None"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:58
+#: xonsh.procs.pipelines.CommandPipeline:61
+#: xonsh.procs.pipelines.HiddenCommandPipeline:37
+#: xonsh.procs.pipelines.HiddenCommandPipeline:40
+msgid "Current status."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:60
+#: xonsh.procs.pipelines.HiddenCommandPipeline:39
+msgid ":obj:`pipecode <pipecode>`"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline:-1
+#: xonsh.procs.pipelines.HiddenCommandPipeline:-1
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.end:2
+msgid "End the pipeline, return the controlling terminal if needed."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.end:4
+msgid "Main things done in self._end()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.get_formatted_lines:2
+msgid "Format output lines."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.itercheck:2
+msgid ""
+"Iterates through the command lines and throws an error if the returncode is "
+"non-zero."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.iterraw:2
+msgid ""
+"Iterates through the last stdout, and returns the lines exactly as found."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stream_stderr:2
+msgid "Streams lines to sys.stderr and the errors attribute."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.tee_stdout:2
+msgid ""
+"Writes the process stdout to the output variable, line-by-line, and yields "
+"each line. This may optionally accept lines (in bytes) to iterate over, in "
+"which case it does not call iterraw()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.alias:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.alias:2
+msgid "Alias the process used."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.args:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.args:2
+msgid "Arguments to the process."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.err:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.err:2
+msgid "Error messages as a string."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.executed_cmd:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.executed_cmd:2
+msgid "The resolve and executed command."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.inp:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.inp:2
+msgid "Creates normalized input string from args."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.out:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.out:2
+msgid "Output value as a str."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.pid:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.pid:2
+msgid "Process identifier."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.pipecode:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.pipecode:2
+msgid ""
+"Current status. 1 if any command in the pipeline returned non-zero or is "
+"still running, 0 if all succeeded."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.pipestatus:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.pipestatus:2
+msgid "Current status. Return codes of all commands in the pipeline."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.raw_err:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.raw_err:2
+msgid "Errors as raw bytes."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.raw_out:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.raw_out:2
+msgid "Output as raw bytes."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.returncode:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.returncode:2
+msgid "Process return code."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.returncode:4
+#: xonsh.procs.pipelines.HiddenCommandPipeline.returncode:4
+msgid ""
+"``None`` means the proc has not exited (typically a suspended or "
+"backgrounded pipeline).  After a foreground pipeline has ``end()``-ed this "
+"never returns ``None``."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.returncode:8
+#: xonsh.procs.pipelines.HiddenCommandPipeline.returncode:8
+msgid ""
+"Background: under load, ``tee_stdout`` can bail before the trailing ``proc."
+"wait()`` in ``iterraw`` runs (e.g. an uncaught ``OSError`` while draining "
+"the pipe).  ``end()`` then flips ``self.ended = True`` in its ``finally`` "
+"with ``self.proc.returncode`` still unset.  The raise-check helpers "
+"conflated ``None`` with ``0`` (success) and silently swallowed real failures "
+"(#6456).  Reap once more via ``poll()`` — non-blocking, so suspended/"
+"backgrounded pipelines still correctly report ``None``."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.rtn:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.rtn:2
+msgid "Alias to return code."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stderr:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stderr:2
+msgid "Process stderr."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stderr_postfix:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stderr_postfix:2
+msgid "Postfix to print after stderr, as bytes."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stderr_prefix:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stderr_prefix:2
+msgid "Prefix to print in front of stderr, as bytes."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stderr_redirect:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stderr_redirect:2
+msgid "Redirection used for stderr."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stdin:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stdin:2
+msgid "Process stdin."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stdin_redirect:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stdin_redirect:2
+msgid "Redirection used for stdin."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stdout:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stdout:2
+msgid "Process stdout."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.stdout_redirect:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.stdout_redirect:2
+msgid "Redirection used for stdout."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.CommandPipeline.timestamps:2
+#: xonsh.procs.pipelines.HiddenCommandPipeline.timestamps:2
+msgid "The start and end time stamps."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser:2
+msgid ""
+"Previous process closer thread for pipelines whose last command is itself "
+"unthreadable. This makes sure that the pipeline is driven forward and does "
+"not deadlock."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser:30
+msgid "**pipeline**"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser:-1
+msgid "CommandPipeline"
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser:31
+msgid "The pipeline whose prev procs we should close."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.getName:2
+msgid "Return a string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.getName:4
+#: threading.Thread.setName:4
+msgid "This method is deprecated, use the name attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.isDaemon:2
+msgid "Return whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.isDaemon:4
+msgid "This method is deprecated, use the daemon attribute instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.is_alive:2
+msgid "Return whether the thread is alive."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.is_alive:4
+msgid ""
+"This method returns True just before the run() method starts until just "
+"after the run() method terminates. See also the module function enumerate()."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:2
+msgid "Wait until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:4
+msgid ""
+"This blocks the calling thread until the thread whose join() method is "
+"called terminates -- either normally or through an unhandled exception or "
+"until the optional timeout occurs."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:8
+msgid ""
+"When the timeout argument is present and not None, it should be a floating-"
+"point number specifying a timeout for the operation in seconds (or fractions "
+"thereof). As join() always returns None, you must call is_alive() after "
+"join() to decide whether a timeout happened -- if the thread is still alive, "
+"the join() call timed out."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:14
+msgid ""
+"When the timeout argument is not present or None, the operation will block "
+"until the thread terminates."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:17
+msgid "A thread can be join()ed many times."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.join:19
+msgid ""
+"join() raises a RuntimeError if an attempt is made to join the current "
+"thread as that would cause a deadlock. It is also an error to join() a "
+"thread before it has been started and attempts to do so raises the same "
+"exception."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.run:2
+msgid "Runs the closing algorithm."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.setDaemon:2
+msgid "Set whether this thread is a daemon."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: threading.Thread.setDaemon:4
+msgid "This method is deprecated, use the .daemon property instead."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.setName:2
+msgid "Set the name string for this thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.start:2
+msgid "Start the thread's activity."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.start:4
+msgid ""
+"It must be called at most once per thread object. It arranges for the "
+"object's run() method to be invoked in a separate thread of control."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of threading.Thread.start:7
+msgid ""
+"This method will raise a RuntimeError if called more than once on the same "
+"thread object."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.daemon:2
+msgid "A boolean value indicating whether this thread is a daemon thread."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.daemon:4
+msgid ""
+"This must be set before start() is called, otherwise RuntimeError is raised. "
+"Its initial value is inherited from the creating thread; the main thread is "
+"not a daemon thread and therefore all threads created in the main thread "
+"default to daemon = False."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.daemon:9
+msgid "The entire Python program exits when only daemon threads are left."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.ident:2
+msgid "Thread identifier of this thread or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.ident:4
+msgid ""
+"This is a nonzero integer. See the get_ident() function. Thread identifiers "
+"may be recycled when a thread exits and another thread is created. The "
+"identifier is available even after the thread has exited."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.name:2
+msgid "A string used for identification purposes only."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.name:4
+msgid ""
+"It has no semantics. Multiple threads may be given the same name. The "
+"initial name is set by the constructor."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.native_id:2
+msgid ""
+"Native integral thread ID of this thread, or None if it has not been started."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.PrevProcCloser.native_id:4
+msgid ""
+"This is a non-negative integer. See the get_native_id() function. This "
+"represents the Thread ID as reported by the kernel."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.blocking_property:2
+msgid "Property that may block waiting for process completion."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.blocking_property.deleter:2
+msgid "Descriptor to obtain a copy of the property with a different deleter."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.blocking_property.getter:2
+msgid "Descriptor to obtain a copy of the property with a different getter."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.blocking_property.setter:2
+msgid "Descriptor to obtain a copy of the property with a different setter."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.resume_process:2
+msgid "Sends SIGCONT to a process if possible."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.safe_readable:2
+msgid "Attempts to find if the handle is readable without throwing an error."
+msgstr ""
+
+#: ../../../../xonsh/procs/pipelines.py:docstring of
+#: xonsh.procs.pipelines.safe_readlines:2
+msgid "Attempts to read lines without throwing an error."
+msgstr ""
