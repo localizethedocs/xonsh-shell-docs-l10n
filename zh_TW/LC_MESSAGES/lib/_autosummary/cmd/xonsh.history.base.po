@@ -1,0 +1,332 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.base.rst:2
+msgid "xonsh.history.base"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base:1
+msgid "Base class of Xonsh History backends."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:2
+msgid "Xonsh history backend base class."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:4
+msgid "History objects should be created via a subclass of History."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:6
+msgid ""
+"History acts like a sequence that can be indexed to return ``HistoryEntry`` "
+"objects."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:9
+msgid "Note that the most recent command is the last item in history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:0
+#: xonsh.history.base.HistoryEntry:0
+msgid "Attributes"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:14
+msgid "**rtns**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+msgid "sequence of ints"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:15
+#: xonsh.history.base.HistoryEntry:15
+msgid "The return of the command (ie, 0 on success)"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:17
+msgid "**inps**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+msgid "sequence of strings"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:18
+#: xonsh.history.base.HistoryEntry:9
+msgid "The command as typed by the user, including newlines"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:20
+msgid "**tss**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+msgid "sequence of two-tuples of floats"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:21
+msgid ""
+"The timestamps of when the command started and finished, including fractions"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:24
+msgid "**outs**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:25
+#: xonsh.history.base.HistoryEntry:12
+msgid "The output of the command, if xonsh is configured to save it"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:27
+msgid "**gc**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+msgid "A garbage collector or None"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:28
+msgid "The garbage collector"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:30
+msgid ""
+"**In all of these sequences, index 0 is the oldest and -1 (the last item)**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:33
+msgid "**is the newest.**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:52
+msgid "Represents a xonsh session's history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:0
+#: xonsh.history.base.History.append:0 xonsh.history.base.History.delete:0
+#: xonsh.history.base.History.is_ignored:0 xonsh.history.base.History.run_gc:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:57
+msgid "**remember_history**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+#: xonsh.history.base.History.is_ignored:15
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:58
+msgid ""
+"Сontrols whether entered commands are saved to the command history. If True, "
+"commands are saved; if False, command history is not kept."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:61
+msgid "**sessionid**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:-1
+msgid "int, uuid, str, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of xonsh.history.base.History:62
+msgid "Current session identifier, will generate a new sessionid if not set."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.all_items:2
+msgid "Get all history items."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.append:2
+msgid "Append a command item into history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.append:7 xonsh.history.base.History.is_ignored:8
+msgid "**cmd: dict**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.append:8
+msgid ""
+"This dict contains information about the command that is to be added to the "
+"history list. It should contain the keys ``inp``, ``rtn`` and ``ts``. These "
+"key names mirror the same names defined as instance variables in the "
+"``HistoryEntry`` class."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.clear:2
+msgid ""
+"Clears the history of the current session from both the disk and memory."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:2
+msgid ""
+"Deletes the history of the current session for commands that match a user-"
+"provided pattern."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:8
+msgid "**pattern: str**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:9
+msgid "The regex pattern to match commands against."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:0 xonsh.history.base.History.info:0
+#: xonsh.history.base.History.is_ignored:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:15
+msgid "int"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.delete:16
+msgid "The number of commands deleted from history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.flush:2
+msgid "Flush the history items to disk from a buffer."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.info:2
+msgid "A collection of information about the shell history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.info:10
+msgid "dict or collections.OrderedDict"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.info:11
+msgid "Contains history information as str key pairs."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.is_ignored:2
+msgid ""
+"Determines if a history item should be added to the event history. Call this "
+"in your append method."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.is_ignored:9
+msgid ""
+"The prospective item to append (structure is the same as the append method)."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.is_ignored:16
+msgid "True if the item should be appended, False if not."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.items:2
+msgid "Get history items of current session."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.pull:2
+msgid "Pull history from other parallel sessions."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.run_gc:2
+msgid "Run the garbage collector."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.run_gc:7
+msgid "**size: None or tuple of a int and a string**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.run_gc:8
+msgid "Determines the size and units of what would be allowed to remain."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.run_gc:10
+msgid "**blocking: bool**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.History.run_gc:11
+msgid "If set blocking, then wait until gc action finished."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:2
+msgid "Represent a command in history."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:8
+msgid "**cmd: str**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:11
+msgid "**out: str**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:14
+msgid "**rtn: int**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:17
+msgid "**ts: two-tuple of floats**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:18
+msgid ""
+"The timestamps of when the command started and finished, including fractions."
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:21
+msgid "**cwd: str**"
+msgstr ""
+
+#: ../../../../xonsh/history/base.py:docstring of
+#: xonsh.history.base.HistoryEntry:22
+msgid "The current working directory before execution the command."
+msgstr ""

@@ -1,0 +1,452 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../xonshrc.rst:2
+msgid "Run Control File"
+msgstr ""
+
+#: ../../../xonshrc.rst:3
+msgid ""
+"Xonsh allows you to customize your shell behavior with run control files, "
+"called \"xonshrc\" files. These files are written either in the Xonsh "
+"language or in Python and are executed exactly once at startup."
+msgstr ""
+
+#: ../../../xonshrc.rst:8
+msgid "Xonsh RC Basics"
+msgstr ""
+
+#: ../../../xonshrc.rst:10
+msgid "The control file usually contains:"
+msgstr ""
+
+#: ../../../xonshrc.rst:12
+msgid ""
+"Assignment statements setting `environment variables <envvars.html>`_. This "
+"includes standard OS environment variables that affect other programs and "
+"many that Xonsh uses for itself."
+msgstr ""
+
+#: ../../../xonshrc.rst:13
+msgid ""
+"``xontrib`` commands to load selected add-ins (`xontribs <xontrib."
+"html#loading-xontribs>`_)."
+msgstr ""
+
+#: ../../../xonshrc.rst:14
+msgid "Xonsh function definitions."
+msgstr ""
+
+#: ../../../xonshrc.rst:15
+msgid ""
+"`Alias definitions <aliases.html>`_, many of which invoke the above "
+"functions with specified arguments."
+msgstr ""
+
+#: ../../../xonshrc.rst:17
+msgid ""
+"First of all, you need to know about the home directory ``~/.xonshrc`` "
+"control file. This file is commonly used to put configurations for the user "
+"interactive prompt and it is executed automatically only for interactive "
+"Xonsh sessions."
+msgstr ""
+
+#: ../../../xonshrc.rst:19
+msgid ""
+"There are also a few places where Xonsh looks for run control files. These "
+"files will be executed automatically in both interactive and non-interactive "
+"modes, and you need to use the `$XONSH_INTERACTIVE <envvars.html#xonsh-"
+"interactive>`_ and `$XONSH_LOGIN <envvars.html#xonsh-login>`_ environment "
+"variables to determine what code you want to execute in each mode. Here is "
+"the list of run control files and directories:"
+msgstr ""
+
+#: ../../../xonshrc.rst:21
+msgid ""
+"Cross-desktop group (XDG) compliant ``~/.config/xonsh/rc.xsh`` control file."
+msgstr ""
+
+#: ../../../xonshrc.rst:22
+msgid ""
+"The system-wide control file ``/etc/xonsh/xonshrc`` for Linux and macOS and "
+"in ``%ALLUSERSPROFILE%\\xonsh\\xonshrc`` on Windows. It controls options "
+"that are applied to all users of Xonsh on a given system."
+msgstr ""
+
+#: ../../../xonshrc.rst:23
+msgid ""
+"The home-based directory ``~/.config/xonsh/rc.d/`` and system ``/etc/xonsh/"
+"rc.d/`` can contain ``.xsh`` or ``.py`` files. They will be executed at "
+"startup in order. This allows for drop-in configuration where your "
+"configuration can be split across scripts and common and local "
+"configurations more easily separated."
+msgstr ""
+
+#: ../../../xonshrc.rst:25
+msgid "In addition:"
+msgstr ""
+
+#: ../../../xonshrc.rst:27
+msgid "Use ``xonsh --no-rc`` to prevent using control files."
+msgstr ""
+
+#: ../../../xonshrc.rst:28
+msgid "Use ``xonsh --rc snail.xsh`` to run only a certain control file."
+msgstr ""
+
+#: ../../../xonshrc.rst:29
+msgid ""
+"Use ``xonsh -i script.xsh`` to run xonsh in interactive mode with loading "
+"all possible control files."
+msgstr ""
+
+#: ../../../xonshrc.rst:30
+msgid ""
+"Use ``xonsh --rc rc1.xsh rc2.xsh -- script.xsh`` to run scripts with "
+"multiple control files."
+msgstr ""
+
+#: ../../../xonshrc.rst:31
+msgid ""
+"You can create autoloadable `xontrib <xontrib.html#loading-xontribs>`_ as "
+"alternative to run control file and reuse it as python package."
+msgstr ""
+
+#: ../../../xonshrc.rst:33
+msgid ""
+"The options set per user override settings in the system-wide control file."
+msgstr ""
+
+#: ../../../xonshrc.rst:35
+msgid ""
+"xonsh RC also lets you account for the operating system, so you can ship a "
+"single file across systems and gate snippets by platform and execution mode "
+"— see :ref:`Cross-platform xonsh RC <cross_platform_xonshrc>`."
+msgstr ""
+
+#: ../../../xonshrc.rst:39
+msgid ""
+"Xonsh provides 2 wizards to create your own \"xonshrc\".  ``xonfig web`` "
+"provides basic settings, and ``xonfig wizard`` steps you through all the "
+"available options."
+msgstr ""
+
+#: ../../../xonshrc.rst:43
+msgid "xonfig web"
+msgstr ""
+
+#: ../../../xonshrc.rst:45
+msgid ""
+"This helps you choose a color theme, customized prompt and add-in packages "
+"(\"xontribs\").  It initializes your personal run control file (usually at "
+"``~/.xonshrc``).  To invoke it (from a xonsh prompt):"
+msgstr ""
+
+#: ../../../xonshrc.rst:48
+msgid ""
+"@ xonfig web\n"
+"Web config started at 'http://localhost:8421'. Hit Ctrl+C to stop.\n"
+"127.0.0.1 - - [23/Aug/2020 15:04:39] \"GET / HTTP/1.1\" 200 -"
+msgstr ""
+
+#: ../../../xonshrc.rst:54
+msgid ""
+"This will open your default browser on a page served from a local server.  "
+"You can exit the server by typing ``Ctrl+c`` at any time."
+msgstr ""
+
+#: ../../../xonshrc.rst:56
+msgid "The page has:"
+msgstr ""
+
+#: ../../../xonshrc.rst:0
+msgid "Colors"
+msgstr ""
+
+#: ../../../xonshrc.rst:58
+msgid ""
+"shows the  color themes built into Xonsh. Simply click on a sample to select "
+"it.  Although color names are standardized across various terminal "
+"applications, their actual appearance is not and do vary widely.  Seeing is "
+"believing!"
+msgstr ""
+
+#: ../../../xonshrc.rst:0
+msgid "Prompts"
+msgstr ""
+
+#: ../../../xonshrc.rst:61
+msgid ""
+"shows various sample prompts.  It is recommended to select one but to then "
+"edit the ``xonshrc`` file to further refine your prompt."
+msgstr ""
+
+#: ../../../xonshrc.rst:0
+msgid "Xontribs"
+msgstr ""
+
+#: ../../../xonshrc.rst:63
+msgid ""
+"are community-contributed add-ins often used to enhance command completion "
+"and line editing, but can affect any aspect of Xonsh behavior. Choose one or "
+"more to suit your needs but note that they will require installation of "
+"additional packages.  You can extend Xonsh by `writing your own xontrib "
+"<xontrib.html>`_, and are invited/urged to do so!"
+msgstr ""
+
+#: ../../../xonshrc.rst:0
+msgid "Save"
+msgstr ""
+
+#: ../../../xonshrc.rst:67
+msgid ""
+"Click to write the configuration choices to your ``~/.xonshrc``. This will "
+"add a few tagged lines to your run control file, but will not overwrite it "
+"completely, so you can run `xonfig web` at any time."
+msgstr ""
+
+#: ../../../xonshrc.rst:71
+msgid "xonfig wizard"
+msgstr ""
+
+#: ../../../xonshrc.rst:73
+msgid ""
+"This imports settings and tools you have defined in your existing (POSIX) "
+"shell. It also walks you through setting all known environment variables and "
+"xontribs in a question-and-answer format. Run it from a xonsh prompt:"
+msgstr ""
+
+#: ../../../xonshrc.rst:77
+msgid "@ xonfig wizard"
+msgstr ""
+
+#: ../../../xonshrc.rst:83
+msgid "Real world sample xonshrc"
+msgstr ""
+
+#: ../../../xonshrc.rst:85
+msgid "The following is a real-world example of such a file."
+msgstr ""
+
+#: ../../../xonshrc.rst:87
+msgid ":download:`Download xonshrc <xonshrc.xsh>`"
+msgstr ""
+
+#: ../../../xonshrc.rst:89
+msgid ""
+"# adjust some paths\n"
+"$PATH.append('/home/snail/sandbox/bin')\n"
+"$LD_LIBRARY_PATH = ['/home/snail/.local/lib', '/home/snail/miniconda3/lib', "
+"'']\n"
+"\n"
+"# alias to quit AwesomeWM from the terminal\n"
+"@aliases.register('qa')\n"
+"def _quit_awesome(args, stdin=None):\n"
+"    lines = $(ps ux | grep \"gnome-session --session=awesome\")."
+"splitlines()\n"
+"    pids = [l.split()[1] for l in lines]\n"
+"    for pid in pids:\n"
+"        kill @(pid)\n"
+"\n"
+"# some customization options, see https://xon.sh/envvars.html for details\n"
+"$MULTILINE_PROMPT = '`·.,¸,.·*¯`·.,¸,.·*¯'\n"
+"$XONSH_SHOW_TRACEBACK = True\n"
+"$XONSH_STORE_STDOUT = True\n"
+"$XONSH_HISTORY_MATCH_ANYWHERE = True\n"
+"$COMPLETIONS_CONFIRM = True\n"
+"$XONSH_AUTOPAIR = True\n"
+msgstr ""
+
+#: ../../../xonshrc.rst:92
+msgid ""
+"See also `xontrib-rc-awesome <https://github.com/anki-code/xontrib-rc-"
+"awesome>`_."
+msgstr ""
+
+#: ../../../xonshrc.rst:95
+msgid "Real world sample rc.py"
+msgstr ""
+
+#: ../../../xonshrc.rst:97
+msgid ""
+"The following is a real-world example of such a file. This can be set by "
+"``env XONSHRC=rc.py xonsh`` or ``xonsh --rc=rc.py``"
+msgstr ""
+
+#: ../../../xonshrc.rst:100
+msgid ":download:`Download rc.py <xonshrc.py>`"
+msgstr ""
+
+#: ../../../xonshrc.rst:102
+msgid ""
+"from xonsh.built_ins import XSH\n"
+"\n"
+"env = XSH.env\n"
+"# adjust some paths\n"
+"env[\"PATH\"].append(\"/home/snail/sandbox/bin\")\n"
+"env[\"LD_LIBRARY_PATH\"] = [\"/home/snail/.local/lib\", \"/home/snail/"
+"miniconda3/lib\"]\n"
+"\n"
+"# alias to quit AwesomeWM from the terminal\n"
+"@XSH.aliases.register(\"qa\")\n"
+"def _quit_awesome(args, stdin=None):\n"
+"    print(\"awesome python code\")\n"
+"\n"
+"# setting aliases as list are faster since they don't involve parser.\n"
+"XSH.aliases[\"gc\"] = [\"git\", \"commit\"]\n"
+"\n"
+"# some customization options, see https://xon.sh/envvars.html for details\n"
+"env[\"MULTILINE_PROMPT\"] = \"`·.,¸,.·*¯`·.,¸,.·*¯\"\n"
+"env[\"XONSH_SHOW_TRACEBACK\"] = True\n"
+"env[\"XONSH_STORE_STDOUT\"] = True\n"
+"env[\"XONSH_HISTORY_MATCH_ANYWHERE\"] = True\n"
+"env[\"COMPLETIONS_CONFIRM\"] = True\n"
+"env[\"XONSH_AUTOPAIR\"] = True\n"
+msgstr ""
+
+#: ../../../xonshrc.rst:107
+msgid "Snippets for xonshrc"
+msgstr ""
+
+#: ../../../xonshrc.rst:109
+msgid ""
+"The following are useful snippets and code that tweaks and adjust xonsh in "
+"various ways. If you have any useful tricks, feel free to share them."
+msgstr ""
+
+#: ../../../xonshrc.rst:113
+msgid "Adjust how git branch label behaves"
+msgstr ""
+
+#: ../../../xonshrc.rst:114
+msgid ""
+"Xonsh adds a colored branch name to the prompt when working with git or hg "
+"repositories. This behavior can be controlled with the ``$PROMPT`` "
+"environment variable. See how to `customize the prompt`_ . The branch name "
+"changes color if the work dir is dirty or not. This is controlled by the "
+"``{branch_color}`` formatter string."
+msgstr ""
+
+#: ../../../xonshrc.rst:119
+msgid ""
+"The following snippet reimplements the formatter also to include untracked "
+"files when considering if a git directory is dirty."
+msgstr ""
+
+#: ../../../xonshrc.rst:121
+msgid ""
+"from xonsh.prompt.vc import git_dirty_working_directory\n"
+"$VC_GIT_INCLUDE_UNTRACKED = True\n"
+"$PROMPT_FIELDS['branch_color'] = lambda: ('{BOLD_INTENSE_RED}'\n"
+"                                               if "
+"git_dirty_working_directory()\n"
+"                                               else '{BOLD_INTENSE_GREEN}')"
+msgstr ""
+
+#: ../../../xonshrc.rst:134
+msgid "Get better colors from the ``ls`` command"
+msgstr ""
+
+#: ../../../xonshrc.rst:135
+msgid ""
+"The colors of the ``ls`` command may be hard to read in a dark terminal. If "
+"so, this is an excellent addition to the xonshrc file."
+msgstr ""
+
+#: ../../../xonshrc.rst:137
+msgid ""
+"$LS_COLORS='rs=0:di=01;36:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:"
+"bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:"
+"ow=34;42:st=37;44:ex=01;32:'"
+msgstr ""
+
+#: ../../../xonshrc.rst:142
+msgid "Make JSON data directly pastable"
+msgstr ""
+
+#: ../../../xonshrc.rst:143
+msgid ""
+"With the following snippet, xonsh will understand JSON data such as "
+"``{ \"name\": \"Tyler\", \"active\": false, \"age\": null }``. Note that "
+"this injects names into Python's ``builtins`` module, which is rather hacky "
+"and might break other functionality. Use at your own risk."
+msgstr ""
+
+#: ../../../xonshrc.rst:147
+msgid ""
+"import builtins\n"
+"builtins.true = True\n"
+"builtins.false = False\n"
+"builtins.null = None"
+msgstr ""
+
+#: ../../../xonshrc.rst:155
+msgid "Display different date information every 10th time"
+msgstr ""
+
+#: ../../../xonshrc.rst:156
+msgid ""
+"For a compact shell prompts, some people prefer a very condensed time "
+"format. But when you have a lengthy shell session you might want the date to "
+"show up in your logs every now and then..."
+msgstr ""
+
+#: ../../../xonshrc.rst:158
+msgid ""
+"import time\n"
+"def get_shelldate():\n"
+"    get_shelldate.fulldate %= 10\n"
+"    get_shelldate.fulldate += 1\n"
+"    if get_shelldate.fulldate == 1:\n"
+"        return time.strftime('%d%m%Y')\n"
+"    return time.strftime('%H:%M')\n"
+"get_shelldate.fulldate = 0\n"
+"\n"
+"$PROMPT_FIELDS['shelldate'] = get_shelldate"
+msgstr ""
+
+#: ../../../xonshrc.rst:173
+msgid "See also"
+msgstr ""
+
+#: ../../../xonshrc.rst:175
+msgid ""
+":ref:`Cross-platform xonsh RC <cross_platform_xonshrc>` -- writing one cross-"
+"platform RC"
+msgstr ""
+
+#: ../../../xonshrc.rst:176
+msgid ":doc:`env` -- environment variable types, patterns, and ``swap``"
+msgstr ""
+
+#: ../../../xonshrc.rst:177
+msgid ":doc:`aliases` -- defining aliases"
+msgstr ""
+
+#: ../../../xonshrc.rst:178
+msgid ":doc:`prompt` -- prompt customization"
+msgstr ""
+
+#: ../../../xonshrc.rst:179
+msgid ":doc:`launch` -- command-line options and ``--rc``"
+msgstr ""
+
+#: ../../../xonshrc.rst:180
+msgid ":doc:`events` -- event hooks for customization"
+msgstr ""

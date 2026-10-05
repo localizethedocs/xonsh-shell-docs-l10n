@@ -1,0 +1,71 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.shells.ptk_shell.completer.rst:2
+msgid "xonsh.shells.ptk\\_shell.completer"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer:1
+msgid "Completer implementation to use with prompt_toolkit."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter:2
+msgid "Simple prompt_toolkit Completer object."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter:4
+msgid "It just redirects requests to normal Xonsh completer."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter:24
+msgid ""
+"Takes instance of xonsh.completer.Completer, the xonsh execution context, "
+"and the shell instance itself."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter.get_completions:2
+msgid "Returns a generator for list of completions."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: prompt_toolkit.completion.base.Completer.get_completions_async:2
+msgid ""
+"Asynchronous generator for completions. (Probably, you won't have to "
+"override this.)"
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: prompt_toolkit.completion.base.Completer.get_completions_async:5
+msgid "Asynchronous generator of :class:`.Completion` objects."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter.reserve_space:2
+msgid "Adjust the height for showing autocompletion menu."
+msgstr ""
+
+#: ../../../../xonsh/shells/ptk_shell/completer.py:docstring of
+#: xonsh.shells.ptk_shell.completer.PromptToolkitCompleter.suggestion_completion:2
+msgid "Provides a completion based on the current auto-suggestion."
+msgstr ""
