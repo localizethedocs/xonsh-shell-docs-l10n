@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"POT-Creation-Date: 2026-10-12 18:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,4 +24,31 @@ msgstr ""
 #: ../../../../xonsh/lib/string.py:docstring of xonsh.lib.string.commonprefix:2
 msgid ""
 "Given an iterable of strings, returns the longest common leading substring"
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of
+#: xonsh.lib.string.endswith_newline:2
+msgid "Return a string ending with exactly one newline character."
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of xonsh.lib.string.is_balanced:2
+msgid ""
+"Determines whether an expression has unbalanced opening and closing tokens."
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of
+#: xonsh.lib.string.subexpr_before_unbalanced:2
+msgid "Obtains the expression prior to last unbalanced left token."
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of
+#: xonsh.lib.string.subexpr_from_unbalanced:2
+msgid ""
+"Attempts to pull out a valid subexpression for unbalanced grouping, based on "
+"opening tokens, eg. '(', and closing tokens, eg. ')'.  This does not do full "
+"tokenization, but should be good enough for tab completion."
+msgstr ""
+
+#: ../../../../xonsh/lib/string.py:docstring of xonsh.lib.string.unquote:2
+msgid "Strip one pair of matching quote characters from a string."
 msgstr ""
