@@ -1,0 +1,945 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.aliases.rst:2
+msgid "xonsh.aliases"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases:1
+msgid "Aliases for the xonsh shell."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult:2
+msgid "List subclass that can carry local_env from return_command aliases."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.append:2
+msgid "Append object to the end of the list."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.clear:2
+msgid "Remove all items from list."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.copy:2
+msgid "Return a shallow copy of the list."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.extend:2
+msgid "Extend list by appending elements from the iterable."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.index:4
+#: xonsh.aliases.AliasReturnCommandResult.remove:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.insert:2
+msgid "Insert object before index."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.pop:2
+msgid "Remove and return item at index (default last)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.pop:4
+msgid "Raises IndexError if list is empty or index is out of range."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.remove:2
+msgid "Remove first occurrence of value."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.reverse:2
+msgid "Reverse *IN PLACE*."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.sort:2
+msgid "Sort the list in ascending order and return None."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.sort:4
+msgid ""
+"The sort is in-place (i.e. the list itself is modified) and stable (i.e. the "
+"order of two equal elements is maintained)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.sort:7
+msgid ""
+"If a key function is given, apply it once to each list item and sort them, "
+"ascending or descending, according to their function values."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.AliasReturnCommandResult.sort:10
+msgid "The reverse flag can be set to sort in descending order."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases:2
+msgid "Represents a location to hold and look up aliases."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.tools.capturable:2
+msgid ""
+"Decorator that specifies that a callable alias should be run with capturing. "
+"This is the default behavior."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.completer:2
+msgid "Decorator that attaches a completer function to an alias."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.completer:4
+msgid "Usage::"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.completer:6
+msgid ""
+"def _my_completer(command, alias):\n"
+"    return {'opt1', 'opt2'}\n"
+"\n"
+"@aliases.register\n"
+"@aliases.completer(_my_completer)\n"
+"def _hello(args):\n"
+"    echo @(args)"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.completer:14
+msgid "Now ``hello <TAB>`` will suggest ``opt1`` and ``opt2``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.Aliases.return_command:2
+msgid ""
+"Decorator that switches alias from returning result to return in new command "
+"for execution."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.tools.threadable:2
+msgid ""
+"Decorator that specifies that a callable alias should be run in a background "
+"thread. This is the default behavior."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.tools.uncapturable:2
+msgid ""
+"Decorator that specifies that a callable alias should not be run with any "
+"capturing. This is often needed if the alias call interactive subprocess, "
+"like pagers and text editors."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.tools.unthreadable:2
+msgid ""
+"Decorator that specifies that a callable alias should be run only on the "
+"main thread process. This is often needed for debuggers and profilers."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.eval_alias:2
+msgid ""
+"\"Evaluates\" the alias ``value``, by recursively looking up the leftmost "
+"token and \"expanding\" if it's also an alias."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.eval_alias:5
+msgid ""
+"A value like ``[\"cmd\", \"arg\"]`` might transform like this: ``> [\"cmd\", "
+"\"arg\"] -> [\"ls\", \"-al\", \"arg\"] -> callable()`` where ``cmd=ls -al`` "
+"and ``ls`` is an alias with its value being a callable.  The resulting "
+"callable will be \"partially applied\" with ``[\"-al\", \"arg\"]``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.Aliases.eval_alias:11
+msgid ""
+"``env_out``, if given, is a mutable dict that accumulates the env overlay "
+"requested by any ``return_command`` alias encountered while resolving the "
+"chain (via dict-return ``\"env\"`` key). The top-level :meth:`get` caller "
+"passes its own collector dict here."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.Aliases.expand_alias:2
+msgid ""
+"Expands any aliases present in line if alias does not point to a builtin "
+"function and if alias is only a single command. The command won't be "
+"expanded if the cursor's inside/behind it."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get:2
+msgid ""
+"Returns list that represent command with resolved aliases. The ``key`` can "
+"be string with alias name or list for a command. In the first position will "
+"be the resolved command name or callable alias. If the key is not present, "
+"then `default` is returned."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get:7
+msgid ""
+"``decorators`` is the list of `DecoratorAlias` objects that found during "
+"resolving aliases (#5443)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get:10
+msgid ""
+"Note! The return value is always list because during resolving we can find "
+"return_command alias that can completely replace command and add new "
+"arguments."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:2
+msgid "Return the cleaned docstring of an alias."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:4
+msgid "Resolution order:"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:6
+msgid ""
+"An explicit doc set via the dict-form ``aliases[k] = {\"alias\": ..., "
+"\"doc\": \"...\"}`` takes priority over everything else — it's the only way "
+"to attach a description to a list/string alias and an intentional override "
+"for callable aliases."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:11
+msgid ""
+"For ``FuncAlias`` instances, the wrapped function's ``__doc__`` (read from "
+"``alias.func`` directly to avoid falling back to ``FuncAlias.__doc__``, "
+"which would otherwise leak the class placeholder ``\"Provides a callable "
+"alias for xonsh commands.\"``)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:16
+msgid ""
+"For any other alias object (e.g. ``ArgParserAlias``, ``ExecAlias``), the "
+"object's own ``__doc__``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:18
+msgid "List- and string-aliases without an explicit doc yield ``\"\"``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.get_doc:20
+msgid ""
+"The returned string is run through :func:`inspect.cleandoc` so multi-line "
+"docstrings have shared indentation removed."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: collections.abc.MutableMapping.pop:2
+msgid ""
+"value.  If key is not found, d is returned if given, otherwise KeyError is "
+"raised."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: collections.abc.MutableMapping.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.register:2
+msgid "Decorator to register the given function by name."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.Aliases.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.ExecAlias:2
+msgid "Provides an exec alias for xonsh source code."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.ExecAlias:0
+#: xonsh.aliases.print_alias_help:0 xonsh.aliases.source_alias_fn:0
+#: xonsh.aliases.source_cmd_fn:0 xonsh.aliases.source_foreign_fn:0
+#: xonsh.aliases.xexec_fn:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.ExecAlias:28
+msgid "**src**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.ExecAlias:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.ExecAlias:29
+msgid "Source code that will be"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.FuncAlias:2
+msgid "Provides a callable alias for xonsh commands."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.PartialEvalAlias:2
+msgid "Partially evaluated alias."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.PartialEvalAlias:4
+msgid ""
+"Wraps a callable alias with accumulated arguments. The wrapped function's "
+"signature is inspected once at init time. At call time, arguments are "
+"matched by name (with positional fallback for unnamed parameters)."
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.Error:2
+msgid ""
+"Special case, when raised, the traceback will not be shown. Instead the "
+"process with exit with error code and message"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.aliases.SourceForeignAlias.Error.add_note:2
+msgid "Exception.add_note(note) -- add a note to the exception"
+msgstr ""
+
+#: ../../../../xonsh/cli_utils.py:docstring of
+#: xonsh.aliases.SourceForeignAlias.Error.with_traceback:2
+msgid ""
+"Exception.with_traceback(tb) -- set self.__traceback__ to tb and return self."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.SourceForeignAlias.build:2
+msgid "Sub-classes should return constructed ArgumentParser"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.create_parser:2
+msgid "create root parser"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.err:2
+msgid "Write text to error stream"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.cli_utils.ArgParserAlias.out:2
+msgid "Write text to output stream"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_alias_name:2
+msgid "Derive an alias name from a function or a string."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_alias_name:4
+msgid ""
+"For functions, uses ``__name__`` with a single leading underscore stripped "
+"(so ``_hello`` becomes ``hello``). Strings are used as-is. If ``dash_case`` "
+"is True, underscores are replaced with dashes."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xpip_alias:2
+msgid "Determines the correct invocation to get xonsh's pip"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xxonsh_alias:2
+msgid ""
+"Determine the correct invocation to launch xonsh the same way the current "
+"session was launched."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xxonsh_alias:5
+msgid ""
+"Always returns a list, so the result can be concatenated with other argv "
+"lists (e.g. ``['tmux', 'new-session'] + get_xxonsh_alias()``)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xxonsh_alias:8
+msgid ""
+"For an entry-point launch (e.g. ``/usr/local/bin/xonsh``) the value of ``sys."
+"argv[0]`` is already a runnable absolute path, so the result is a single-"
+"element list."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xxonsh_alias:12
+msgid ""
+"For a \"from source\" launch via ``python -m xonsh`` (``sys.argv[0]`` "
+"basename is ``__main__.py``) a naive ``[sys.executable, \"-m\", \"xonsh\"]`` "
+"would be CWD-dependent: ``python -m xonsh`` resolves the package via ``sys."
+"path``, which has the *current* working directory at position 0. Running "
+"``xxonsh`` from outside the source repo would silently pick whatever "
+"``import xonsh`` resolves to in ``site-packages`` (or raise "
+"``ModuleNotFoundError``), which is almost never what the user wants."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.get_xxonsh_alias:20
+msgid ""
+"Instead, compute the parent directory of the source ``xonsh`` package once "
+"(from the absolute path of ``__main__.py``) and spawn Python with a ``-c`` "
+"bootstrap that prepends that directory to ``sys.path`` before importing "
+"``xonsh.main``. This makes the alias resolve to the same source tree from "
+"any CWD, regardless of what is installed in ``site-packages``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.make_default_aliases:2
+msgid "Creates a new default aliases dictionary."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.partial_eval_alias:2
+msgid "Wraps a callable alias with accumulated arguments."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:2
+msgid "Print info about an alias to the active shell."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:4
+msgid ""
+"Used by the ``cmd?``/``cmd??`` subprocess-mode help syntax. Output is "
+"colorized via xonsh color tokens."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:9
+#: xonsh.aliases.xexec_fn:23
+msgid "**name**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:10
+msgid "Alias name (must be present in ``XSH.aliases``)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:12
+msgid "**superhelp**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.print_alias_help:13
+msgid ""
+"If True (``cmd??``), include docstring, threadable/capturable flags, source "
+"location and source code for ``FuncAlias``."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.run_alias_by_params:2
+msgid ""
+"Run alias function based on signature and params. If function param names "
+"are in alias signature fill them. If function params have unknown names fill "
+"using alias signature order."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:2
+msgid "usage: showcmd [-e|--expand-alias] [-h|--help] cmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:4
+msgid ""
+"Displays the command and arguments as a list of strings that xonsh would run "
+"in subprocess mode. This is useful for determining how xonsh evaluates your "
+"commands and arguments prior to running these commands."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:8
+msgid "optional arguments:"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:9
+msgid "expand alias"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:10
+msgid "show this help message and exit"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:26
+msgid "Examples"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:27
+msgid ""
+"@ showcmd echo $USER \"can't\" hear \"the sea\" ['echo', 'I', \"can't\", "
+"'hear', 'the sea']"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.showcmd:30
+msgid "@ aliases['ali'] = 'echo 1' @ showcmd -e ali 2 ['echo', '1', '2']"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:2
+msgid ""
+"Executes the contents of the provided files in the current context. If "
+"sourced file isn't found in cwd, search for file along $PATH to source "
+"instead."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:9
+#: xonsh.aliases.source_cmd_fn:7
+msgid "**files**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:10
+#: xonsh.aliases.source_cmd_fn:8
+msgid "paths to source files."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:12
+msgid "**ignore_ext**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:-1
+msgid "-e, --ignore-ext"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_alias_fn:13
+msgid "don't check the file extension"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:2
+msgid "Source cmd.exe files"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:10
+#: xonsh.aliases.source_foreign_fn:16 xonsh.aliases.xexec_fn:15
+msgid "**login**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1 xonsh.aliases.xexec_fn:-1
+msgid "-l, --login"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:11
+#: xonsh.aliases.source_foreign_fn:17
+msgid "whether the sourced shell should be login"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:13
+#: xonsh.aliases.source_foreign_fn:19
+msgid "**envcmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--envcmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:14
+#: xonsh.aliases.source_foreign_fn:20
+msgid "command to print environment"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:16
+#: xonsh.aliases.source_foreign_fn:22
+msgid "**aliascmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--aliascmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:17
+#: xonsh.aliases.source_foreign_fn:23
+msgid "command to print aliases"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:19
+#: xonsh.aliases.source_foreign_fn:25
+msgid "**extra_args**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--extra-args"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:20
+#: xonsh.aliases.source_foreign_fn:26
+msgid "extra arguments needed to run the shell"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:22
+#: xonsh.aliases.source_foreign_fn:28
+msgid "**safe**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+msgid "-s, --safe"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:23
+#: xonsh.aliases.source_foreign_fn:29
+msgid ""
+"whether the source shell should be run safely, and not raise any errors, "
+"even if they occur."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:25
+#: xonsh.aliases.source_foreign_fn:34
+msgid "**postcmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--postcmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:26
+#: xonsh.aliases.source_foreign_fn:35
+msgid "command(s) to run after all other commands"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:28
+#: xonsh.aliases.source_foreign_fn:37
+msgid "**funcscmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--funcscmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:29
+#: xonsh.aliases.source_foreign_fn:38
+msgid "code to find locations of all native functions in the shell language."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:31
+#: xonsh.aliases.source_foreign_fn:48
+msgid "**seterrprevcmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--seterrprevcmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:32
+#: xonsh.aliases.source_foreign_fn:49
+msgid "command(s) to set exit-on-error before any other commands."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:34
+#: xonsh.aliases.source_foreign_fn:54
+msgid "**overwrite_aliases**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--overwrite-aliases"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:35
+#: xonsh.aliases.source_foreign_fn:55
+msgid ""
+"flag for whether or not sourced aliases should replace the current xonsh "
+"aliases."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:37
+#: xonsh.aliases.source_foreign_fn:57
+msgid "**suppress_skip_message**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--suppress-skip-message"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:38
+#: xonsh.aliases.source_foreign_fn:58
+msgid "flag for whether or not skip messages should be suppressed."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:40
+#: xonsh.aliases.source_foreign_fn:60
+msgid "**show**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--show"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:41
+msgid ""
+"show the generated shell command that will be sent to cmd.exe (does not show "
+"what the sourced script prints — see ``--show-output`` for that)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:45
+#: xonsh.aliases.source_foreign_fn:65
+msgid "**show_output**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "--show-output"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:46
+#: xonsh.aliases.source_foreign_fn:66
+msgid ""
+"forward stdout and stderr produced by the sourced script to the xonsh "
+"terminal. By default they are silently discarded."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:49
+#: xonsh.aliases.source_foreign_fn:69
+msgid "**dryrun**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:-1
+#: xonsh.aliases.source_foreign_fn:-1
+msgid "-d, --dry-run"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_cmd_fn:50
+#: xonsh.aliases.source_foreign_fn:70
+msgid "Will not actually source the file."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:2
+msgid "Sources a file written in a foreign shell language."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:7
+msgid "**shell**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:8
+msgid "Name or path to the foreign shell"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:10
+msgid "**files_or_code**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:11
+msgid "file paths to source or code in the target language."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:13
+msgid "**interactive**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "-i, --interactive"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:14
+msgid "whether the sourced shell should be interactive"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "-u, --unsafe"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:31
+msgid "**prevcmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "-p, --prevcmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:32
+msgid ""
+"command(s) to run before any other commands, replaces traditional source."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:40
+msgid "**sourcer**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "--sourcer"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:41
+msgid ""
+"the source command in the target shell language. If this is not set, a "
+"default value will attempt to be looked up based on the shell name."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:45
+msgid "**use_tmpfile**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "--use-tmpfile"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:46
+msgid ""
+"whether the commands for source shell should be written to a temporary file."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:51
+msgid "**seterrpostcmd**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:-1
+msgid "--seterrpostcmd"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:52
+msgid "command(s) to set exit-on-error after all other commands."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.source_foreign_fn:61
+msgid ""
+"show the generated shell command that will be sent to the foreign shell "
+"(does not show what the sourced script prints — see ``--show-output`` for "
+"that)."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.trace:2
+msgid "Runs the xonsh tracer utility."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.win_sudo:2
+msgid "Run a command with Windows UAC elevation."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.win_sudo:4
+msgid ""
+"Registered as the ``sudo`` alias on Windows only when no ``sudo`` binary is "
+"found on ``$PATH`` (see issue #5706). Resolves the target via :func:`xonsh."
+"environ.locate_binary` and re-launches it through ``ShellExecuteEx`` with "
+"the ``runas`` verb; ``cmd.exe`` built-ins (``dir``, ``copy``, ...) are "
+"dispatched via ``cmd /D /C`` from the current working directory. The "
+"elevated process opens in a new console and does not inherit standard "
+"streams, so its output is not piped back."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:2
+msgid ""
+"exec (also aliased as xexec) uses the os.execvpe() function to replace the "
+"xonsh process with the specified program."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:5
+msgid "This provides the functionality of the bash 'exec' builtin::"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:7
+msgid ""
+">>> exec bash -l -i\n"
+"bash $"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:12
+msgid "**command**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:13
+msgid "program to launch along its arguments"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:16
+msgid ""
+"the shell places a dash at the beginning of the zeroth argument passed to "
+"command to simulate login shell."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:20
+msgid "**clean**"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:-1
+msgid "-c, --clean"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:21
+msgid "causes command to be executed with an empty environment."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:-1
+msgid "-a, --name"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:24
+msgid "the shell passes name as the zeroth argument to the executed command."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:38
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xexec_fn:39
+msgid ""
+"This command **is not** the same as the Python builtin function exec(). That "
+"function is for running Python code. This command, which shares the same "
+"name as the sh-lang statement, is for launching a command directly in the "
+"same process. In the event of a name conflict, please use the xexec command "
+"directly or dive into subprocess mode explicitly with ![exec command]. For "
+"more details, please see http://xon.sh/faq.html#exec."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xonsh_exit:2
+msgid "Sends signal to exit shell."
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of xonsh.aliases.xonsh_reset:2
+msgid "Clears __xonsh__.ctx"
+msgstr ""
+
+#: ../../../../xonsh/aliases.py:docstring of
+#: xonsh.aliases.WINDOWS_CMD_ALIASES:2
+msgid "Built-in commands of ``cmd.exe`` that xonsh borrows on Windows."
+msgstr ""

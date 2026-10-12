@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.base.rst:2
+msgid "xonsh.prompt.base"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of xonsh.prompt.base:1
+msgid "Base prompt, provides PROMPT_FIELDS and prompt related functions"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField:0 xonsh.prompt.base.MultiPromptField:0
+#: xonsh.prompt.base.PromptField:0
+#: xonsh.prompt.base.prompt_tokens_formatter_default:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField:7 xonsh.prompt.base.MultiPromptField:28
+#: xonsh.prompt.base.PromptField:28
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField:8 xonsh.prompt.base.MultiPromptField:29
+#: xonsh.prompt.base.PromptField:29
+msgid "attributes of the class will be set from this"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.wrap:2
+msgid "decorator to set the updator"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.update:2
+#: xonsh.prompt.base.MultiPromptField.update:2
+msgid "will be called from PromptFields getter for each new prompt"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.name:2
+#: xonsh.prompt.base.MultiPromptField.name:2
+#: xonsh.prompt.base.PromptField.name:2
+msgid "will be set during load."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.name:17
+#: xonsh.prompt.base.MultiPromptField.name:17
+#: xonsh.prompt.base.PromptField.name:17 xonsh.prompt.base.PromptFields.pick:17
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.name:18
+#: xonsh.prompt.base.MultiPromptField.name:18
+#: xonsh.prompt.base.PromptField.name:18
+msgid ""
+"fields with names such as ``gitstatus.branch`` mean they are defined in a "
+"module named ``gitstatus`` and are most likely a subfield used by "
+"``gitstatus``"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.updator:2
+#: xonsh.prompt.base.MultiPromptField.updator:2
+#: xonsh.prompt.base.PromptField.updator:2
+msgid ""
+"this is a callable that needs to update the value or any of the attribute of "
+"the field"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.BasePromptField.value:2
+#: xonsh.prompt.base.MultiPromptField.value:2
+#: xonsh.prompt.base.PromptField.value:2
+msgid ""
+"This field should hold the bare value of the field without any color/format "
+"strings"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.MultiPromptField:2
+msgid "Facilitate combining other PromptFields"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.MultiPromptField.fragments:2
+msgid ""
+"name of the fields or the literals to combine. If the framgment name "
+"startswith ``.`` then they are resolved to include the name of this field."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.MultiPromptField.separator:2
+msgid "in case this combines values from other prompt fields"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens:22
+msgid "Create new instance of ParsedTokens(tokens, template)"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.count:2
+msgid "Return number of occurrences of value."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.index:2
+msgid "Return first index of value."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.index:4
+msgid "Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.process:2
+msgid ""
+"Wrapper that gets formatter-function from environment and returns final "
+"prompt."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.update:2
+msgid "Update tokens list in-place"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.template:2
+msgid "Alias for field number 1"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.ParsedTokens.tokens:2
+msgid "Alias for field number 0"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptField:2
+msgid ""
+"Any new non-private attributes set by the sub-classes are considered a way "
+"to configure the format"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields:2
+msgid "Mapping of functions available for prompt-display."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.get_fields:2
+msgid "Find and load all instances of PromptField from the given module."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.get_fields:4
+msgid ""
+"Each module is expected to have a single prompt-field with the same name as "
+"the module"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.needs_calling:2
+msgid "check if we can offload the work"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.pick:2
+msgid "Get the value of the prompt-field"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.pick:18
+msgid ""
+"If it is callable, then the result of the callable is returned. If it is a "
+"PromptField then it is updated"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.pick_val:2
+msgid "wrap .pick() method to get .value attribute in case of PromptField"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.pop:2
+msgid ""
+"value.  If key is not found, d is returned if given, otherwise KeyError is "
+"raised."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.popitem:2
+msgid "as a 2-tuple; but raise KeyError if D is empty."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.reset:2
+msgid "the results are cached and need to be reset between prompts"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFields.reset_key:2
+msgid "remove a single key from the cache (if it exists)"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:2
+msgid "If E present and has a .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:3
+msgid "for k in E.keys(): D[k] = E[k]"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:4
+msgid "If E present and lacks .keys() method, does:"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:5
+msgid "for (k, v) in E: D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:6
+msgid "In either case, this is followed by:"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: collections.abc.MutableMapping.update:7
+msgid "for k, v in F.items(): D[k] = v"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.PromptFormatter:2
+msgid ""
+"Class that holds all the related prompt formatting methods, uses the "
+"``PROMPT_FIELDS`` envvar (no color formatting)."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.default_prompt:2
+msgid "Creates a new instance of the default prompt."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.is_template_string:2
+msgid "Returns whether or not the string is a valid template."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.multiline_prompt:2
+msgid "Returns the filler text for the prompt in multiline scenarios."
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:2
+msgid "Join the tokens"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:7
+msgid "**container: ParsedTokens**"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:8
+msgid "parsed tokens holder"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:14
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/prompt/base.py:docstring of
+#: xonsh.prompt.base.prompt_tokens_formatter_default:15
+msgid "process the tokens and finally return the prompt string"
+msgstr ""
