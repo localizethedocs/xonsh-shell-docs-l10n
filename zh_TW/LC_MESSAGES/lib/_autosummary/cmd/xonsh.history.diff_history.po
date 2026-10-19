@@ -1,0 +1,115 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.history.diff_history.rst:2
+msgid "xonsh.history.diff\\_history"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history:1
+msgid "Tools for diff'ing two xonsh history files in a meaningful fashion."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:2
+msgid "This class helps diff two xonsh history files."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:28
+msgid "**afile**"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:-1
+msgid "file handle or str"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:29
+msgid "The first file to diff"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:31
+msgid "**bfile**"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:32
+msgid "The second file to diff"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:34
+msgid "**reopen**"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:35
+msgid ""
+"Whether or not to reopen the file handles each time. The default here is "
+"opposite from the LazyJSON default because we know that we will be doing a "
+"lot of reading so it is best to keep the handles open."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:39
+msgid "**verbose**"
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer:40
+msgid "Whether to print a verbose amount of information."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer.cmdsdiff:2
+msgid "Computes the difference of the commands themselves."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer.envdiff:2
+msgid "Computes the difference between the environments."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer.format:2
+msgid "Formats the difference between the two history files."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.HistoryDiffer.header:2
+msgid "Computes a header string difference."
+msgstr ""
+
+#: ../../../../xonsh/history/diff_history.py:docstring of
+#: xonsh.history.diff_history.highlighted_ndiff:2
+msgid "Returns a highlighted string, with bold characters where different."
+msgstr ""
