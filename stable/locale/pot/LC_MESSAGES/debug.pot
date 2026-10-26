@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,8 +33,8 @@ msgstr ""
 
 #: ../../../debug.rst:11
 msgid ""
-"**Instant debugging** — drop into a debugger at the exact call site with ``@."
-"debug``, with automatic engine selection and a xonsh-syntax REPL when no "
+"**Instant debugging** — drop into a debugger at the exact call site with "
+"``@.debug``, with automatic engine selection and a xonsh-syntax REPL when no "
 "external debugger is installed."
 msgstr ""
 
@@ -54,10 +55,10 @@ msgstr ""
 #: ../../../debug.rst:24
 msgid ""
 "When you need to stop execution at a specific call site without wiring up an "
-"IDE, xonsh ships a debugging helper attached to every session as ``@."
-"debug``. It works like Python's builtin ``breakpoint()``, but with automatic "
-"engine selection, session-aware fallbacks, and a xonsh-syntax REPL when no "
-"external debugger is installed."
+"IDE, xonsh ships a debugging helper attached to every session as "
+"``@.debug``. It works like Python's builtin ``breakpoint()``, but with "
+"automatic engine selection, session-aware fallbacks, and a xonsh-syntax REPL "
+"when no external debugger is installed."
 msgstr ""
 
 #: ../../../debug.rst:31
@@ -125,8 +126,8 @@ msgid ""
 "If you build your own dev-helper that calls ``@.debug.breakpoint()`` for "
 "you, the debugger would normally stop *inside* the helper, which is rarely "
 "what you want. Pass an explicit ``frame=`` to relocate the stop site to any "
-"frame on the stack — typically the helper's caller. This mirrors ``pdbp."
-"set_trace(frame=...)``."
+"frame on the stack — typically the helper's caller. This mirrors "
+"``pdbp.set_trace(frame=...)``."
 msgstr ""
 
 #: ../../../debug.rst:78
@@ -193,10 +194,11 @@ msgstr ""
 
 #: ../../../debug.rst:109
 msgid ""
-"A REPL at the caller's frame backed by the session's :class:`~xonsh.execer."
-"Execer`. Full xonsh syntax is available — subprocesses (``ls``, ``$(ls)``), "
-"env lookups (``@.env['HOME']``), aliases, and ``@.`` attribute access. "
-"Raises ``RuntimeError`` if no execer is attached to the session."
+"A REPL at the caller's frame backed by the "
+"session's :class:`~xonsh.execer.Execer`. Full xonsh syntax is available — "
+"subprocesses (``ls``, ``$(ls)``), env lookups (``@.env['HOME']``), aliases, "
+"and ``@.`` attribute access. Raises ``RuntimeError`` if no execer is "
+"attached to the session."
 msgstr ""
 
 #: ../../../debug.rst:114
@@ -322,10 +324,11 @@ msgstr ""
 
 #: ../../../debug.rst:185
 msgid ""
-"PEP 553 makes Python's builtin ``breakpoint()`` go through ``sys."
-"breakpointhook``. ``@.debug`` can install a hook that routes every builtin "
-"``breakpoint()`` call through the same engine as ``@.debug.breakpoint()``. "
-"Add the following to your :doc:`xonsh RC <xonshrc>`:"
+"PEP 553 makes Python's builtin ``breakpoint()`` go through "
+"``sys.breakpointhook``. ``@.debug`` can install a hook that routes every "
+"builtin ``breakpoint()`` call through the same engine as "
+"``@.debug.breakpoint()``. Add the following to your :doc:`xonsh RC "
+"<xonshrc>`:"
 msgstr ""
 
 #: ../../../debug.rst:191

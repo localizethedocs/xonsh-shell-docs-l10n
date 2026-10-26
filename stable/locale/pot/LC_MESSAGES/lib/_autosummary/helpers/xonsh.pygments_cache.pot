@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -98,8 +99,8 @@ msgstr ""
 #: ../../../../xonsh/pygments_cache.py:docstring of
 #: xonsh.pygments_cache.get_filter_by_name:2
 msgid ""
-"Gets a filter instance from its name. This mimics the behavior of ``pygments."
-"filters.get_filtere_by_name()``."
+"Gets a filter instance from its name. This mimics the behavior of "
+"``pygments.filters.get_filtere_by_name()``."
 msgstr ""
 
 #: ../../../../xonsh/pygments_cache.py:docstring of
@@ -113,8 +114,8 @@ msgstr ""
 #: xonsh.pygments_cache.get_formatter_for_filename:2
 msgid ""
 "Gets a formatter instance from a filename (usually via the filename "
-"extension). This mimics the behavior of ``pygments.formatters."
-"get_formatter_for_filename()``."
+"extension). This mimics the behavior of "
+"``pygments.formatters.get_formatter_for_filename()``."
 msgstr ""
 
 #: ../../../../xonsh/pygments_cache.py:docstring of

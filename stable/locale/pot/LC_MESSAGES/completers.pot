@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -60,8 +61,9 @@ msgstr ""
 #: ../../../completers.rst:31
 msgid ""
 "xonsh's built-in completers live in the ``xonsh.completers`` package, and "
-"they are managed through an instance of ``OrderedDict`` (``__xonsh__."
-"completers``) that maps unique identifiers to completion functions."
+"they are managed through an instance of ``OrderedDict`` "
+"(``__xonsh__.completers``) that maps unique identifiers to completion "
+"functions."
 msgstr ""
 
 #: ../../../completers.rst:35
@@ -97,9 +99,10 @@ msgstr ""
 
 #: ../../../completers.rst:57
 msgid ""
-"Completers are implemented as Python functions that take a :class:"
-"`Completion Context <xonsh.parsers.completion_context.CompletionContext>` "
-"object. Examples for the context object:"
+"Completers are implemented as Python functions that take "
+"a :class:`Completion Context "
+"<xonsh.parsers.completion_context.CompletionContext>` object. Examples for "
+"the context object:"
 msgstr ""
 
 #: ../../../completers.rst:60
@@ -172,9 +175,9 @@ msgstr ""
 
 #: ../../../completers.rst:110
 msgid ""
-"Some simple examples follow.  For real-world examples, see ``xompletions."
-"git`` (subprocess-based, uses ``--git-completion-helper``) and ``xonsh."
-"completers.man`` (man page parsing with disk cache)."
+"Some simple examples follow.  For real-world examples, see "
+"``xompletions.git`` (subprocess-based, uses ``--git-completion-helper``) and "
+"``xonsh.completers.man`` (man page parsing with disk cache)."
 msgstr ""
 
 #: ../../../completers.rst:114
@@ -245,8 +248,8 @@ msgstr ""
 
 #: ../../../completers.rst:176
 msgid ""
-"To understand how xonsh uses completers and their return values try to set :"
-"ref:`$XONSH_COMPLETER_TRACE <xonsh_completer_trace>` to ``True``:"
+"To understand how xonsh uses completers and their return values try to "
+"set :ref:`$XONSH_COMPLETER_TRACE <xonsh_completer_trace>` to ``True``:"
 msgstr ""
 
 #: ../../../completers.rst:179
@@ -419,8 +422,8 @@ msgstr ""
 #: ../../../completers.rst:303
 msgid ""
 "Once you have created a completion function, you can add it to the list of "
-"active completers via the ``completer add`` command or ``xonsh.completers."
-"completer.add_one_completer`` function::"
+"active completers via the ``completer add`` command or "
+"``xonsh.completers.completer.add_one_completer`` function::"
 msgstr ""
 
 #: ../../../completers.rst:306
@@ -498,9 +501,9 @@ msgstr ""
 
 #: ../../../completers.rst:336
 msgid ""
-"To provide further control over the completion, a completer can return a :"
-"class:`RichCompletion <xonsh.completers.tools.RichCompletion>` object. Using "
-"this class, you can:"
+"To provide further control over the completion, a completer can return "
+"a :class:`RichCompletion <xonsh.completers.tools.RichCompletion>` object. "
+"Using this class, you can:"
 msgstr ""
 
 #: ../../../completers.rst:339
@@ -581,8 +584,8 @@ msgstr ""
 
 #: ../../../completers.rst:375
 msgid ""
-"You can attach a custom completer to a function alias using the ``@aliases."
-"completer`` decorator:"
+"You can attach a custom completer to a function alias using the "
+"``@aliases.completer`` decorator:"
 msgstr ""
 
 #: ../../../completers.rst:378
@@ -619,8 +622,8 @@ msgstr ""
 
 #: ../../../completers.rst:402
 msgid ""
-"``command``: the :class:`CommandContext <xonsh.parsers.completion_context."
-"CommandContext>` for the current completion"
+"``command``: the :class:`CommandContext "
+"<xonsh.parsers.completion_context.CommandContext>` for the current completion"
 msgstr ""
 
 #: ../../../completers.rst:403
@@ -743,8 +746,8 @@ msgstr ""
 
 #: ../../../completers.rst:469
 msgid ""
-"When an alias resolves to ``python -m <module>`` (e.g. ``xpip`` → ``python -"
-"m pip``), xonsh uses the ``xompletions/python.py`` completer to delegate to "
+"When an alias resolves to ``python -m <module>`` (e.g. ``xpip`` → ``python "
+"-m pip``), xonsh uses the ``xompletions/python.py`` completer to delegate to "
 "the module's completer."
 msgstr ""
 

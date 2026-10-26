@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -180,8 +181,8 @@ msgstr ""
 #: ../../../../xonsh/procs/readers.py:docstring of
 #: xonsh.procs.readers.QueueReader.readlines:2
 msgid ""
-"Reads lines from the file descriptor. This is blocking for negative hints (i."
-"e. read all the remaining lines) and non-blocking otherwise."
+"Reads lines from the file descriptor. This is blocking for negative hints "
+"(i.e. read all the remaining lines) and non-blocking otherwise."
 msgstr ""
 
 #: ../../../../xonsh/procs/readers.py:docstring of
@@ -226,9 +227,10 @@ msgstr ""
 #: xonsh.procs.readers.populate_console:2
 msgid ""
 "Reads bytes from the file descriptor and puts lines into the queue. The "
-"reads happened in parallel, using xonsh.winutils."
-"read_console_output_character(), and is thus only available on windows. If "
-"the read fails for any reason, the reader is flagged as closed."
+"reads happened in parallel, using "
+"xonsh.winutils.read_console_output_character(), and is thus only available "
+"on windows. If the read fails for any reason, the reader is flagged as "
+"closed."
 msgstr ""
 
 #: ../../../../xonsh/procs/readers.py:docstring of

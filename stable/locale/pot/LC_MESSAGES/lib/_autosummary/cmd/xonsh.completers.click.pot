@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,17 +23,17 @@ msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:1
 msgid ""
-"Tab-completion for click-based aliases registered via :func:`xonsh.aliases."
-"Aliases.register_click_command`."
+"Tab-completion for click-based aliases registered "
+"via :func:`xonsh.aliases.Aliases.register_click_command`."
 msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:4
 msgid ""
 "The entry point is :func:`complete_click`, bound per-alias through "
 "``functools.partial(complete_click, click_cmd)`` and attached to the alias "
-"wrapper as ``xonsh_complete``. The stock alias completer (``xonsh.completers."
-"_aliases.complete_aliases``) then picks it up from ``alias.func."
-"xonsh_complete`` during normal tab completion."
+"wrapper as ``xonsh_complete``. The stock alias completer "
+"(``xonsh.completers._aliases.complete_aliases``) then picks it up from "
+"``alias.func.xonsh_complete`` during normal tab completion."
 msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of xonsh.completers.click:10
@@ -78,9 +79,9 @@ msgstr ""
 #: ../../../../xonsh/completers/click.py:docstring of
 #: xonsh.completers.click.complete_click:13
 msgid ""
-"Bound per-alias via :func:`functools.partial` in :func:`xonsh.aliases."
-"_click_command_alias`, so each wrapper captures its own ``click.Command`` "
-"instance."
+"Bound per-alias via :func:`functools.partial` "
+"in :func:`xonsh.aliases._click_command_alias`, so each wrapper captures its "
+"own ``click.Command`` instance."
 msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of
@@ -102,16 +103,16 @@ msgstr ""
 #: xonsh.completers.click.positional_index:2
 msgid ""
 "Count how many positional arguments have been supplied to ``current_cmd`` so "
-"far, skipping options and their values. Used to pick which ``click."
-"Argument`` slot we're completing into."
+"far, skipping options and their values. Used to pick which "
+"``click.Argument`` slot we're completing into."
 msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of
 #: xonsh.completers.click.previous_option_waiting_value:2
 msgid ""
-"If the last token is an option expecting a value, return that ``click."
-"Option``; otherwise ``None``. Used to drive Choice completion after things "
-"like ``--color <TAB>``."
+"If the last token is an option expecting a value, return that "
+"``click.Option``; otherwise ``None``. Used to drive Choice completion after "
+"things like ``--color <TAB>``."
 msgstr ""
 
 #: ../../../../xonsh/completers/click.py:docstring of

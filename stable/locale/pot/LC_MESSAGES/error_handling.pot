@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -163,10 +164,10 @@ msgstr ""
 #: ../../../error_handling.rst:91
 msgid ""
 "This is a **display** flag — it does not change whether an exception is "
-"raised, only whether the **interactive prompt** prints xonsh's ``subprocess."
-"CalledProcessError: ...`` line after the command's own ``stderr``.  The "
-"command's own ``stderr`` is always visible because the subprocess writes it "
-"directly to the terminal."
+"raised, only whether the **interactive prompt** prints xonsh's "
+"``subprocess.CalledProcessError: ...`` line after the command's own "
+"``stderr``.  The command's own ``stderr`` is always visible because the "
+"subprocess writes it directly to the terminal."
 msgstr ""
 
 #: ../../../error_handling.rst:97
@@ -178,9 +179,9 @@ msgstr ""
 
 #: ../../../error_handling.rst:100
 msgid ""
-"``True`` — restores the historical behavior of printing ``subprocess."
-"CalledProcessError: Command '...' returned non-zero exit status N.`` under "
-"the command's own output."
+"``True`` — restores the historical behavior of printing "
+"``subprocess.CalledProcessError: Command '...' returned non-zero exit status "
+"N.`` under the command's own output."
 msgstr ""
 
 #: ../../../error_handling.rst:104
@@ -361,9 +362,9 @@ msgstr ""
 #: ../../../error_handling.rst:236
 msgid ""
 "For **captured iteration** there is also ``CommandPipeline.itercheck()`` "
-"which raises ``XonshCalledProcessError`` (a subclass of ``subprocess."
-"CalledProcessError`` that additionally carries ``.completed_command`` and ``."
-"stderr``):"
+"which raises ``XonshCalledProcessError`` (a subclass of "
+"``subprocess.CalledProcessError`` that additionally carries "
+"``.completed_command`` and ``.stderr``):"
 msgstr ""
 
 #: ../../../error_handling.rst:241
