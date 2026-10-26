@@ -1,0 +1,521 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../globbing.rst:2
+msgid "Globbing"
+msgstr ""
+
+#: ../../../globbing.rst:4
+msgid ""
+"Xonsh supports four forms of filename globbing: normal (shell-style) "
+"globbing, regular expression globbing, match globbing, and formatted glob "
+"literals. All can be used in both subprocess mode and Python mode."
+msgstr ""
+
+#: ../../../globbing.rst:10
+msgid "Normal Globbing"
+msgstr ""
+
+#: ../../../globbing.rst:12
+msgid ""
+"Filename globbing with the ``*`` character is allowed in subprocess mode. "
+"This uses Python's ``glob`` module under the covers. As an example, start "
+"with a directory of files:"
+msgstr ""
+
+#: ../../../globbing.rst:16
+msgid ""
+"@ mkdir -p test/a/b\n"
+"@ touch test/f.txt test/a/f.txt test/a/b/f.txt\n"
+"@ ls test\n"
+"a  f.txt"
+msgstr ""
+
+#: ../../../globbing.rst:23
+msgid ""
+"In subprocess mode, normal globbing happens without any special syntax. "
+"However, there is backtick syntax that is available inside Python mode as "
+"well as subprocess mode. This can be done using ``g``:"
+msgstr ""
+
+#: ../../../globbing.rst:27
+msgid ""
+"@ ls test/*.txt\n"
+"test/f.txt\n"
+"@ print(g`test/*.txt`)\n"
+"['test/f.txt']"
+msgstr ""
+
+#: ../../../globbing.rst:34
+msgid ""
+"The ``*`` wildcard matches any characters within a single path component. "
+"The ``?`` wildcard matches a single character. The ``[abc]`` syntax matches "
+"one of the enclosed characters."
+msgstr ""
+
+#: ../../../globbing.rst:38
+msgid ""
+"Recursive globbing with ``**`` matches zero or more intermediate "
+"directories. For example, ``test/**/f.txt`` matches ``test/f.txt``, ``test/a/"
+"f.txt``, and ``test/a/b/f.txt``:"
+msgstr ""
+
+#: ../../../globbing.rst:42
+msgid ""
+"@ print(g`test/**/f.txt`)\n"
+"['test/a/b/f.txt', 'test/a/f.txt', 'test/f.txt']"
+msgstr ""
+
+#: ../../../globbing.rst:49
+msgid "Hidden (Dot) Files"
+msgstr ""
+
+#: ../../../globbing.rst:51
+msgid ""
+"By default, globbing excludes hidden files and directories — those whose "
+"names begin with a literal ``.``. The ``$DOTGLOB`` environment variable "
+"controls this for all globbing forms: normal globs (``g``), regex globs "
+"(``r``), and bare subprocess wildcards."
+msgstr ""
+
+#: ../../../globbing.rst:56
+msgid ""
+"When ``$DOTGLOB`` is ``False`` (the default), dotfiles are filtered out:"
+msgstr ""
+
+#: ../../../globbing.rst:58
+msgid ""
+"@ touch visible .hidden\n"
+"@ print(g`*`)\n"
+"['visible']"
+msgstr ""
+
+#: ../../../globbing.rst:64
+msgid "When ``$DOTGLOB`` is ``True``, dotfiles are included:"
+msgstr ""
+
+#: ../../../globbing.rst:66
+msgid ""
+"@ $DOTGLOB = True\n"
+"@ print(g`*`)\n"
+"['.hidden', 'visible']"
+msgstr ""
+
+#: ../../../globbing.rst:72
+msgid "The same applies to regex globs:"
+msgstr ""
+
+#: ../../../globbing.rst:74
+msgid ""
+"@ $DOTGLOB = True\n"
+"@ print(`\\..*`)\n"
+"['.hidden']"
+msgstr ""
+
+#: ../../../globbing.rst:82
+msgid "Regular Expression Globbing"
+msgstr ""
+
+#: ../../../globbing.rst:84
+msgid ""
+"If you have ever felt that normal globbing could use some more octane, then "
+"regex globbing is the tool for you! Any string that uses backticks (`````) "
+"instead of quotes (``'``, ``\"``) is interpreted as a regular expression to "
+"match filenames against. Like with regular globbing, a list of successful "
+"matches is returned. In Python mode, this is just a list of strings. In "
+"subprocess mode, each filename becomes its own argument to the subprocess "
+"command."
+msgstr ""
+
+#: ../../../globbing.rst:92
+msgid ""
+"This same kind of search is performed if the backticks are prefaced with "
+"``r``. So the following expressions are equivalent: ````test```` and "
+"``r`test```."
+msgstr ""
+
+#: ../../../globbing.rst:95
+msgid ""
+"@ touch a aa aaa aba abba aab aabb abcba\n"
+"@ ls `a(a+|b+)a`\n"
+"aaa  aba  abba\n"
+"@ print(`a(a+|b+)a`)\n"
+"['aaa', 'aba', 'abba']"
+msgstr ""
+
+#: ../../../globbing.rst:104
+msgid "Segment-by-Segment Matching"
+msgstr ""
+
+#: ../../../globbing.rst:106
+msgid ""
+"Regex globbing splits the pattern by the path separator (``/``) and compiles "
+"each segment as a separate regular expression. At each directory level, only "
+"entries matching the current segment are visited. This prunes the directory "
+"tree early and avoids a full recursive walk."
+msgstr ""
+
+#: ../../../globbing.rst:111
+msgid ""
+"However, this means that regex features spanning across ``/`` will break "
+"because the segments are no longer valid regexes on their own:"
+msgstr ""
+
+#: ../../../globbing.rst:114
+msgid ""
+"@ # Group split across / — each segment gets an unmatched parenthesis\n"
+"@ r`(.*/)*\\w+\\.py`\n"
+"re.error: missing ), unterminated subpattern at position 0\n"
+"\n"
+"@ # Backreference across / — refers to a group in a different segment\n"
+"@ r`(\\w+)/(\\1)\\.py`\n"
+"re.error: cannot refer to an open group at position 8"
+msgstr ""
+
+#: ../../../globbing.rst:126
+msgid "Formatted Glob Literals"
+msgstr ""
+
+#: ../../../globbing.rst:128
+msgid ""
+"Using the ``f`` modifier with either regex or normal globbing makes the glob "
+"pattern behave like a formatted string literal. This can be used to "
+"substitute variables and other expressions into the glob pattern:"
+msgstr ""
+
+#: ../../../globbing.rst:132
+msgid ""
+"@ touch a aa aaa aba abba aab aabb abcba\n"
+"@ mypattern = 'ab'\n"
+"@ print(f`{mypattern[0]}+`)\n"
+"['a', 'aa', 'aaa']\n"
+"@ print(gf`{mypattern}*`)\n"
+"['aba', 'abba', 'abcba']"
+msgstr ""
+
+#: ../../../globbing.rst:143
+msgid "Match Globbing"
+msgstr ""
+
+#: ../../../globbing.rst:145
+msgid ""
+"The ``m`` modifier enables **match globbing** — a regex glob that returns "
+"capture groups instead of full paths. This lets you destructure matched "
+"paths directly:"
+msgstr ""
+
+#: ../../../globbing.rst:149
+msgid ""
+"@ for parent, file in m`.*/(.*)/(.*\\.py)`:\n"
+"      print(parent, file)\n"
+"src main.py\n"
+"src utils.py\n"
+"tests test_main.py"
+msgstr ""
+
+#: ../../../globbing.rst:157
+msgid ""
+"When the pattern contains capture groups ``()``, each match returns a tuple "
+"of the captured strings. Without groups, full paths are returned — same as "
+"``r`` glob, but with full-path matching instead of segment-by-segment."
+msgstr ""
+
+#: ../../../globbing.rst:161
+msgid "This is useful for extracting path components without manual splitting:"
+msgstr ""
+
+#: ../../../globbing.rst:163
+msgid ""
+"@ # Find all .png files and get (directory, filename) pairs\n"
+"@ pairs = m`images/(.*)/(.*\\.png)`\n"
+"@ print(pairs)\n"
+"[('icons', 'logo.png'), ('photos', 'cat.png')]\n"
+"\n"
+"@ # Single group — returns flat list of strings\n"
+"@ names = m`src/(.*)\\.py`\n"
+"@ print(names)\n"
+"['main', 'utils']"
+msgstr ""
+
+#: ../../../globbing.rst:175
+msgid ""
+"Unlike ``r`` glob which matches segment-by-segment, ``m`` glob applies the "
+"regex to the **full path**. This means regex features like groups and "
+"backreferences can span across ``/``."
+msgstr ""
+
+#: ../../../globbing.rst:179
+msgid ""
+"``$DOTGLOB`` is respected — hidden files and directories are excluded by "
+"default."
+msgstr ""
+
+#: ../../../globbing.rst:184
+msgid "Sorting"
+msgstr ""
+
+#: ../../../globbing.rst:186
+msgid ""
+"By default, glob results are sorted alphabetically. The ``$GLOB_SORTED`` "
+"environment variable controls this for normal globs. Setting it to ``False`` "
+"returns results in arbitrary filesystem order:"
+msgstr ""
+
+#: ../../../globbing.rst:190
+msgid ""
+"@ $GLOB_SORTED = False\n"
+"@ g`*`\n"
+"['setup.py', 'README.md']"
+msgstr ""
+
+#: ../../../globbing.rst:196
+msgid "Regex globs are always sorted regardless of this setting."
+msgstr ""
+
+#: ../../../globbing.rst:200
+msgid "XonshList"
+msgstr ""
+
+#: ../../../globbing.rst:202
+msgid ""
+"All glob forms (``g``, ``r``, ``m``, ``p``) return a ``XonshList`` — an "
+"extended list with convenience methods for common shell operations. Every "
+"method returns a new ``XonshList``, so calls can be chained:"
+msgstr ""
+
+#: ../../../globbing.rst:206
+msgid ""
+"@ g`**/*.py`.files().sorted()\n"
+"['setup.py', 'src/main.py', 'tests/test_main.py']\n"
+"\n"
+"@ r`.*\\.log`.exists().paths()\n"
+"[PosixPath('app.log'), PosixPath('error.log')]\n"
+"\n"
+"@ m`src/(.*)\\.py`.unique().sorted()\n"
+"['config', 'main', 'utils']"
+msgstr ""
+
+#: ../../../globbing.rst:217
+msgid "Available methods:"
+msgstr ""
+
+#: ../../../globbing.rst:223
+msgid "Method"
+msgstr ""
+
+#: ../../../globbing.rst:224
+msgid "Description"
+msgstr ""
+
+#: ../../../globbing.rst:225
+msgid "``.sorted(key=, reverse=)``"
+msgstr ""
+
+#: ../../../globbing.rst:226
+msgid ""
+"Return a new sorted list. Unlike ``list.sort()``, returns the list for "
+"chaining."
+msgstr ""
+
+#: ../../../globbing.rst:228
+msgid "``.unique()``"
+msgstr ""
+
+#: ../../../globbing.rst:229
+msgid "Remove duplicates, preserving order."
+msgstr ""
+
+#: ../../../globbing.rst:230
+msgid "``.filter(func)``"
+msgstr ""
+
+#: ../../../globbing.rst:231
+msgid "Keep only elements where ``func(elem)`` is truthy."
+msgstr ""
+
+#: ../../../globbing.rst:232
+msgid "``.select(n)``"
+msgstr ""
+
+#: ../../../globbing.rst:233
+msgid ""
+"Pick the n-th element from each tuple (for multi-group ``m`` globs). Skips "
+"``None`` values from optional groups."
+msgstr ""
+
+#: ../../../globbing.rst:235
+msgid "``.paths()``"
+msgstr ""
+
+#: ../../../globbing.rst:236
+msgid "Convert elements to ``pathlib.Path`` objects."
+msgstr ""
+
+#: ../../../globbing.rst:237
+msgid "``.files()``"
+msgstr ""
+
+#: ../../../globbing.rst:238
+msgid "Keep only existing regular files."
+msgstr ""
+
+#: ../../../globbing.rst:239
+msgid "``.dirs()``"
+msgstr ""
+
+#: ../../../globbing.rst:240
+msgid "Keep only existing directories."
+msgstr ""
+
+#: ../../../globbing.rst:241
+msgid "``.exists()``"
+msgstr ""
+
+#: ../../../globbing.rst:242
+msgid "Keep only paths that exist on disk."
+msgstr ""
+
+#: ../../../globbing.rst:243
+msgid "``.visible()``"
+msgstr ""
+
+#: ../../../globbing.rst:244
+msgid "Keep only visible (non-hidden) entries."
+msgstr ""
+
+#: ../../../globbing.rst:245
+msgid "``.hidden()``"
+msgstr ""
+
+#: ../../../globbing.rst:246
+msgid ""
+"Keep only hidden entries (dotfiles on Unix, ``FILE_ATTRIBUTE_HIDDEN`` on "
+"Windows)."
+msgstr ""
+
+#: ../../../globbing.rst:249
+msgid ""
+"A more complete example — find all Python test files, convert to ``Path`` "
+"objects, and extract just the filenames:"
+msgstr ""
+
+#: ../../../globbing.rst:252
+msgid ""
+"@ g`tests/**/*.py`.files().paths().filter(lambda p: p.stem."
+"startswith('test_'))\n"
+"[PosixPath('tests/test_main.py'), PosixPath('tests/test_utils.py')]"
+msgstr ""
+
+#: ../../../globbing.rst:258
+msgid "Working with Tuples from Match Globs"
+msgstr ""
+
+#: ../../../globbing.rst:260
+msgid ""
+"When ``m`` glob has multiple capture groups, the result is a list of tuples. "
+"Path-based methods (``.files()``, ``.dirs()``, ``.exists()``, ``.paths()``) "
+"don't work on tuples — use ``.select(n)`` first to extract a specific "
+"element:"
+msgstr ""
+
+#: ../../../globbing.rst:264
+msgid ""
+"@ results = m`src/(.*)/(.*\\.py)`\n"
+"@ print(results[:2])\n"
+"[('lib', 'utils.py'), ('lib', 'main.py')]\n"
+"\n"
+"@ results.files()  # TypeError!\n"
+"TypeError: .files() requires string paths, got tuples.\n"
+"Use .select(n) to pick a tuple element first, e.g. .select(0).files()\n"
+"\n"
+"@ # Extract directory names\n"
+"@ results.select(0).unique().sorted()\n"
+"['lib', 'tests']\n"
+"\n"
+"@ # Extract filenames\n"
+"@ results.select(1).sorted()\n"
+"['main.py', 'utils.py']"
+msgstr ""
+
+#: ../../../globbing.rst:282
+msgid ""
+"Methods that don't need paths — ``.unique()``, ``.sorted()``, ``.filter()`` "
+"— work on tuples directly:"
+msgstr ""
+
+#: ../../../globbing.rst:285
+msgid ""
+"@ m`src/(.*)/(.*\\.py)`.unique().sorted()[:3]\n"
+"[('lib', 'main.py'), ('lib', 'utils.py'), ('tests', 'test_main.py')]"
+msgstr ""
+
+#: ../../../globbing.rst:290
+msgid ""
+"``XonshList`` is a regular ``list`` subclass, so it works everywhere a list "
+"does — iteration, indexing, ``len()``, passing to functions, etc."
+msgstr ""
+
+#: ../../../globbing.rst:295
+msgid "Full-Path Regex via Custom Search"
+msgstr ""
+
+#: ../../../globbing.rst:297
+msgid ""
+"Xonsh supports custom path search functions with the ``@func`pattern``` "
+"syntax. This can be used to implement full-path regex matching where the "
+"pattern is applied to the entire path, not split by ``/``:"
+msgstr ""
+
+#: ../../../globbing.rst:301
+msgid ""
+"@ def refullglob(pattern):\n"
+"      import re, os\n"
+"       regex = re.compile(pattern)\n"
+"       results = []\n"
+"       for root, dirs, files in os.walk('.'):\n"
+"           for name in dirs + files:\n"
+"               path = os.path.join(root, name)\n"
+"               if regex.fullmatch(path):\n"
+"                   results.append(path)\n"
+"       return results\n"
+"@ @refullglob`(.*/)*\\w+\\.py`\n"
+"['./src/main.py', './src/utils.py', './tests/test_main.py']"
+msgstr ""
+
+#: ../../../globbing.rst:316
+msgid "This approach has trade-offs compared to the built-in ``r`` glob:"
+msgstr ""
+
+#: ../../../globbing.rst:318
+msgid ""
+"**Pro:** the full ``re`` syntax works — groups, backreferences, and "
+"alternations can span across ``/``."
+msgstr ""
+
+#: ../../../globbing.rst:320
+msgid ""
+"**Con:** it always walks the entire directory tree. On large trees this is "
+"slower than the built-in segment-by-segment pruning."
+msgstr ""
+
+#: ../../../globbing.rst:322
+msgid ""
+"**Con:** ``$DOTGLOB`` is not automatically respected — add filtering for "
+"names starting with ``.`` if needed."
+msgstr ""

@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.platforms.winutils.rst:2
+msgid "xonsh.platforms.winutils"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils:1
+msgid ""
+"This file is based on the code from https://github.com/JustAMan/pyWinClobber/"
+"blob/master/win32elevate.py"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils:3
+msgid "Copyright (c) 2013 by JustAMan at GitHub"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils:5
+msgid ""
+"Permission is hereby granted, free of charge, to any person obtaining a copy "
+"of this software and associated documentation files (the \"Software\"), to "
+"deal in the Software without restriction, including without limitation the "
+"rights to use, copy, modify, merge, publish, distribute, sublicense, and/or "
+"sell copies of the Software, and to permit persons to whom the Software is "
+"furnished to do so, subject to the following conditions:"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils:12
+msgid ""
+"The above copyright notice and this permission notice shall be included in "
+"all copies or substantial portions of the Software."
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils:15
+msgid ""
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR "
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, "
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE "
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER "
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING "
+"FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
+"IN THE SOFTWARE."
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:2
+msgid ""
+"This will re-run current Python script requesting to elevate administrative "
+"rights."
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:7
+msgid "**executable**"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:8
+msgid "The path/name of the executable"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:10
+msgid "**args**"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:-1
+msgid "list of str"
+msgstr ""
+
+#: ../../../../xonsh/platforms/winutils.py:docstring of
+#: xonsh.platforms.winutils.sudo:11
+msgid "The arguments to be passed to the executable"
+msgstr ""
