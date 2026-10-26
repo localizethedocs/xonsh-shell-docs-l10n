@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -58,9 +59,9 @@ msgstr ""
 
 #: ../../../xonsh_session.rst:29
 msgid ""
-"Internally, the parser rewrites every ``@.<name>`` into ``__xonsh__."
-"interface.<name>``, so the two are exactly equivalent. ``@`` on its own "
-"evaluates to the interface object itself."
+"Internally, the parser rewrites every ``@.<name>`` into "
+"``__xonsh__.interface.<name>``, so the two are exactly equivalent. ``@`` on "
+"its own evaluates to the interface object itself."
 msgstr ""
 
 #: ../../../xonsh_session.rst:33
@@ -234,10 +235,10 @@ msgstr ""
 #: ../../../xonsh_session.rst:165
 msgid ""
 "Most attributes here are internal. They are exposed because xonsh needs them "
-"to talk to itself, but they are **not** part of the stable API. Anything in :"
-"class:`XonshSessionInterface` (the ``@`` shortcut) is meant to outlive "
-"releases; everything else here may change. Prefer ``@.<x>`` or ``XSH."
-"interface`` whenever an equivalent exists."
+"to talk to itself, but they are **not** part of the stable API. Anything "
+"in :class:`XonshSessionInterface` (the ``@`` shortcut) is meant to outlive "
+"releases; everything else here may change. Prefer ``@.<x>`` or "
+"``XSH.interface`` whenever an equivalent exists."
 msgstr ""
 
 #: ../../../xonsh_session.rst:172
@@ -288,8 +289,8 @@ msgstr ""
 #: ../../../xonsh_session.rst:199
 msgid ""
 "``__xonsh__.execer`` — the :class:`xonsh.execer.Execer`, which parses, "
-"compiles, and runs xonsh source. Use ``execer.exec(src)`` / ``execer."
-"eval(src)`` to evaluate xonsh code from inside Python."
+"compiles, and runs xonsh source. Use ``execer.exec(src)`` / "
+"``execer.eval(src)`` to evaluate xonsh code from inside Python."
 msgstr ""
 
 #: ../../../xonsh_session.rst:203
@@ -355,8 +356,8 @@ msgstr ""
 msgid ""
 "``load(execer=None, ctx=None, inherit_env=True, **kwargs)`` — fully "
 "initialize the session: build the env, install builtins into Python, hook "
-"``atexit`` for history flush, install signal handlers. Called by ``main."
-"main_xonsh`` once at startup."
+"``atexit`` for history flush, install signal handlers. Called by "
+"``main.main_xonsh`` once at startup."
 msgstr ""
 
 #: ../../../xonsh_session.rst:241
@@ -609,8 +610,8 @@ msgstr ""
 #: ../../../xonsh_session.rst:346
 msgid ""
 "``help`` / ``superhelp`` — back ``obj?`` and ``obj??`` for Python objects "
-"(the subproc-mode counterparts live in ``xonsh.procs.specs`` and ``xonsh."
-"aliases.print_alias_help``)."
+"(the subproc-mode counterparts live in ``xonsh.procs.specs`` and "
+"``xonsh.aliases.print_alias_help``)."
 msgstr ""
 
 #: ../../../xonsh_session.rst:349

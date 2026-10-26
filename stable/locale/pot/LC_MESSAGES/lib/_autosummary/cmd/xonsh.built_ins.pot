@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-10-26 15:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -285,8 +286,8 @@ msgstr ""
 #: ../../../../xonsh/built_ins.py:docstring of
 #: xonsh.built_ins.XonshPathLiteral.cd:2
 msgid ""
-"Returns context manager to change the directory e.g. ``with p'/tmp'.cd(): "
-"$[ls]``"
+"Returns context manager to change the directory e.g. ``with p'/tmp'.cd(): $"
+"[ls]``"
 msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of
@@ -308,8 +309,8 @@ msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.expanduser:2
 msgid ""
-"Return a new path with expanded ~ and ~user constructs (as returned by os."
-"path.expanduser)"
+"Return a new path with expanded ~ and ~user constructs (as returned by "
+"os.path.expanduser)"
 msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of
@@ -522,8 +523,8 @@ msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of pathlib._abc.PathBase.samefile:2
 msgid ""
-"Return whether other_path is the same or not as this file (as returned by os."
-"path.samefile())."
+"Return whether other_path is the same or not as this file (as returned by "
+"os.path.samefile())."
 msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of pathlib._local.Path.stat:2
@@ -1055,8 +1056,8 @@ msgstr ""
 #: ../../../../xonsh/built_ins.py:docstring of xonsh.built_ins.pathsearch:2
 msgid ""
 "Takes a string and returns a list of file paths that match (regex, glob, or "
-"arbitrary search function). If pathobj=True, the return is a list of pathlib."
-"Path objects instead of strings."
+"arbitrary search function). If pathobj=True, the return is a list of "
+"pathlib.Path objects instead of strings."
 msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of
@@ -1204,9 +1205,9 @@ msgstr ""
 msgid ""
 "Some subproc helpers (``$()``, ``$[]``, ``@$()``) return a *string* / "
 "*None* / *list* rather than a ``CommandPipeline``, so the wrapper can't read "
-"``returncode`` directly off ``value``.  In that case it falls back to ``XSH."
-"lastcmd`` — the most recently completed pipeline, which is the one this "
-"helper just ran."
+"``returncode`` directly off ``value``.  In that case it falls back to "
+"``XSH.lastcmd`` — the most recently completed pipeline, which is the one "
+"this helper just ran."
 msgstr ""
 
 #: ../../../../xonsh/built_ins.py:docstring of
