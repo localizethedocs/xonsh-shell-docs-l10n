@@ -1,0 +1,397 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../contents.rst:22
+msgid "Extensions on Github"
+msgstr ""
+
+#: ../../../contents.rst:22
+msgid "Ask question"
+msgstr ""
+
+#: ../../../contents.rst:42
+msgid "Open technical issue"
+msgstr ""
+
+#: ../../../contents.rst:68
+msgid "Create an extension"
+msgstr ""
+
+#: ../../../contents.rst:3
+msgid "The Xonsh Shell"
+msgstr ""
+
+#: ../../../intro.rst:3
+msgid ""
+"<p style=\"text-align:left;\">\n"
+"<span style=\"font-family:Times;font-size:28px;font-style:normal;font-weight:"
+"normal;text-decoration:none;text-transform:none;font-variant:small-caps;"
+"color:000000;\">\n"
+"~\n"
+"<script>\n"
+"var taglines = [\n"
+"    \"Exofrills in the shell\",\n"
+"    \"No frills in the shell\",\n"
+"    \"Become the Lord of the Files\",\n"
+"    \"Break out of your shell\",\n"
+"    \"The only shell that is also a shell\",\n"
+"    \"All that is and all that shell be\",\n"
+"    \"Pass the xonsh, Piggy\",\n"
+"    \"Piggy glanced nervously into hell and cradled the xonsh\",\n"
+"    \"The xonsh is a symbol\",\n"
+"    \"It is pronounced <i>consh</i>\",\n"
+"    \"It is pronounced <i>🐚</i>\",\n"
+"    \"The shell, bourne again\",\n"
+"    \"Snailed it\",\n"
+"    \"Starfish loves you\",\n"
+"    \"Come snail away\",\n"
+"    \"This is Major Tom to Ground Xonshtrol\",\n"
+"    \"Sally sells csh and keeps xonsh to herself\",\n"
+"    \"Nice indeed. Everything's accounted for, except your old shell.\",\n"
+"    \"I wanna thank you for putting me back in my snail shell\",\n"
+"    \"Crustaceanly Yours\",\n"
+"    \"With great shell comes great reproducibility\",\n"
+"    \"None shell pass\",\n"
+"    \"You shell not pass!\",\n"
+"    \"The x-on shell\",\n"
+"    \"Ever wonder why there isn't a Taco Shell? Because it is a corny idea."
+"\",\n"
+"    \"It is pronounced <i>コンシュ</i>\",\n"
+"    \"The carcolh will catch you!\",\n"
+"    \"People xonshtantly mispronounce these things\",\n"
+"    \"WHAT...is your favorite shell?\",\n"
+"    \"Conches for the xonsh god!\",\n"
+"    \"Python-powered, cross-platform, Unix-gazing shell\",\n"
+"    \"Tab completion in Alderaan places\",\n"
+"    \"Exploiting the workers and hanging on to outdated imperialist dogma "
+"since 2015.\",\n"
+"    \"Not perfect but ahead\",\n"
+"    \"We call @ a conch\",\n"
+"    \"Still a shell, now with feelings\",\n"
+"    \"The only shell that knows what your code meant\",\n"
+"    \"Shell yeah\",\n"
+"    \"Tab completion as a service\",\n"
+"    \"Now powered by vibes and unit tests\",\n"
+"    \"Infrastructure as a conchline\",\n"
+"    \"Reproducibility is a lifestyle\"\n"
+"    ];\n"
+"document.write(taglines[Math.floor(Math.random() * taglines.length)]);\n"
+"</script>\n"
+"~\n"
+"<br />\n"
+"<br />\n"
+"</span>\n"
+"</p>"
+msgstr ""
+
+#: ../../../intro.rst:61
+msgid ""
+"Xonsh (sounds like \"consh\") is a full-featured and cross-platform Python-"
+"based shell. The language is a superset of Python 3 with seamless "
+"integration of shell functionality and commands. It works on all major "
+"systems including Linux, macOS, Windows, BSD, Jupyter, Android and Raspberry "
+"Pi."
+msgstr ""
+
+#: ../../../comparison.rst:2
+msgid "Comparison"
+msgstr ""
+
+#: ../../../comparison.rst:3
+msgid ""
+"The following table lists built in features and capabilities that various "
+"tools may or may not share."
+msgstr ""
+
+#: ../../../comparison.rst:5
+msgid ""
+"<table class=\"docutils align-default\">\n"
+"  <thead>\n"
+"    <tr>\n"
+"      <th></th>\n"
+"      <th class=\"head\"><p>Traditional<br> bash, zsh</p></th>\n"
+"      <th class=\"head\"><p>Next-generation<br> fish, nu, elvish</p></th>\n"
+"      <th class=\"head\"><p>Python‑based<br> IPython, plumbum</p></th>\n"
+"      <th class=\"head\"><p>Xonsh<br> shell</p></th>\n"
+"    </tr>\n"
+"  </thead>\n"
+"  <tbody>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Meant as a shell</p></th>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Nice prompt</p></th>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>First-class objects</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Native cross-platform</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Large standard library</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>General-purpose language</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Built-in testability</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">◯</td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Maintains clarity at scale</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>User-patchable</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>Package and deps manager</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"    <tr>\n"
+"      <th class=\"stub\"><p>AI-friendly</p></th>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\"></td>\n"
+"      <td align=\"center\">🟢</td>\n"
+"    </tr>\n"
+"  </tbody>\n"
+"</table>"
+msgstr ""
+
+#: ../../../installation.rst:2
+msgid "Installation"
+msgstr ""
+
+#: ../../../installation.rst:4
+msgid "Xonsh can be installed and run with various methods:"
+msgstr ""
+
+#: ../../../contents.rst:13
+msgid "Docs"
+msgstr ""
+
+#: ../../../contents.rst:16
+msgid "Beginner"
+msgstr ""
+
+#: ../../../contents.rst:18
+msgid ""
+"The fundamentals of using Xonsh, including basic commands, syntax, and how "
+"subprocesses work in practice. This section introduces key concepts step by "
+"step and helps you build a solid foundation for working in the shell."
+msgstr ""
+
+#: ../../../contents.rst:35
+msgid "Regular User"
+msgstr ""
+
+#: ../../../contents.rst:37
+msgid ""
+"How to use Xonsh efficiently in daily workflows by configuring environment "
+"variables, aliases, and history. It also covers customization options, "
+"keyboard shortcuts, and practical tips to improve productivity and "
+"streamline your command-line experience."
+msgstr ""
+
+#: ../../../contents.rst:61
+msgid "Creator"
+msgstr ""
+
+#: ../../../contents.rst:63
+msgid ""
+"How to extend Xonsh by building projects, creating extensions, and "
+"customizing tab-completion. This section also explores deeper integrations, "
+"event handling, and advanced customization techniques for building powerful "
+"developer tools."
+msgstr ""
+
+#: ../../../contents.rst:86
+msgid "Contributor"
+msgstr ""
+
+#: ../../../contents.rst:88
+msgid ""
+"The internal architecture of Xonsh and how to work with its API. It also "
+"guides you through contributing to the project, understanding the codebase, "
+"and collaborating with others."
+msgstr ""
+
+#: ../../../contents.rst:101
+msgid "`Developer’s Guide <developer.html>`_"
+msgstr ""
+
+#: ../../../contents.rst:102
+msgid "`Xonsh Library Reference <lib/index.html>`_"
+msgstr ""
+
+#: ../../../contents.rst:103
+msgid "`History Backend <history_backend.html>`_"
+msgstr ""
+
+#: ../../../contents.rst:104
+msgid ""
+"`Contribute to documentation <https://github.com/xonsh/xonsh/tree/main/"
+"docs>`_"
+msgstr ""
+
+#: ../../../contents.rst:105
+msgid "Write a note or an article about Xonsh."
+msgstr ""
+
+#: ../../../contents.rst:106
+msgid "Send a link to Xonsh to your favorite blogger."
+msgstr ""
+
+#: ../../../contents.rst:107
+msgid ""
+"Add Xonsh support in third party tool: `package manager <https://github.com/"
+"topics/package-manager>`_, `terminal emulator <https://github.com/topics/"
+"terminal-emulators>`_, `console tool <https://github.com/topics/console>`_, "
+"`IDE <https://github.com/topics/ide>`_."
+msgstr ""
+
+#: ../../../contents.rst:108
+msgid ""
+"Give a star to `xonsh repository <https://github.com/xonsh/xonsh>`_ and to "
+"`xontribs <https://github.com/topics/xontrib>`_ you like."
+msgstr ""
+
+#: ../../../contents.rst:109
+msgid ""
+"Solve a `popular issue <https://github.com/xonsh/xonsh/issues?"
+"q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc>`_ or `high priority issue "
+"<https://github.com/xonsh/xonsh/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Apriority-high+sort%3Areactions-%2B1-desc>`_ "
+"or a `good first issue <https://github.com/xonsh/xonsh/issues?"
+"q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22+sort%3Areactions-%2B1-"
+"desc>`_."
+msgstr ""
+
+#: ../../../contents.rst:110
+msgid ""
+"Take an `idea <https://github.com/xonsh/xontrib-template/issues?"
+"q=is%3Aopen+is%3Aissue+label%3Aidea+sort%3Areactions-%2B1-desc>`_ and "
+"`create a new xontrib <https://github.com/xonsh/xontrib-template#why-use-"
+"this-template>`_."
+msgstr ""
+
+#: ../../../contents.rst:111
+msgid ""
+"Contribute to `Xonsh Public API <https://github.com/xonsh/xonsh/tree/main/"
+"xonsh/api>`_."
+msgstr ""
+
+#: ../../../contents.rst:112
+msgid ""
+"Test Xonsh with compiler, interpreter, optimizer and report upstream issues "
+"e.g. `Nuitka <https://github.com/xonsh/xonsh/"
+"issues/2895#issuecomment-3665753657>`_, `RustPython <https://github.com/"
+"xonsh/xonsh/issues/5082#issue-1611837062>`_."
+msgstr ""
+
+#: ../../../contents.rst:113
+msgid ""
+"Use high quality LLMs with max effort and testing to dive into the core, "
+"suggest improvements, refactor and fix issues."
+msgstr ""
+
+#: ../../../contents.rst:114
+msgid ""
+"Design more `logos and images <https://github.com/xonsh/logo>`_, `improve "
+"<https://github.com/xonsh/xonsh/"
+"blob/12f12ce94f1b6c92218e22fbdaaa846e16ac8b2d/docs/_templates/index."
+"html#L9>`_ `xonsh website <https://xon.sh/>`_."
+msgstr ""
+
+#: ../../../contents.rst:115
+msgid "`Become a sponsor to Xonsh <https://github.com/sponsors/xonsh>`_."
+msgstr ""
+
+#: ../../../contents.rst:119
+msgid "Links"
+msgstr ""
+
+#: ../../../contents.rst:121
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../../contents.rst:122
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../../contents.rst:123
+msgid ":ref:`search`"
+msgstr ""
+
+#: ../../../contents.rst:124
+msgid ""
+"`Xonsh Community <https://xonsh.zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/"
+">`_"
+msgstr ""
+
+#: ../../../contents.rst:125
+msgid "`Xonsh Fediverse <https://mastodon.online/@xonsh>`_"
+msgstr ""
+
+#: ../../../contents.rst:126
+msgid "`Xonsh Matrix <https://matrix.to/#/#xonsh:matrix.org>`_"
+msgstr ""
+
+#: ../../../contents.rst:127
+msgid "`Xonsh Merch <https://www.hellotux.com/xonsh>`_"
+msgstr ""

@@ -1,0 +1,980 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../callable_aliases.rst:2
+msgid "Callable Aliases"
+msgstr ""
+
+#: ../../../callable_aliases.rst:4
+msgid ""
+"In Xonsh, a Python function can be registered as a shell command (alias). "
+"The function declares which arguments it needs, and Xonsh fills them "
+"automatically based on parameter names. When a function runs as an alias, "
+"Xonsh redirects ``sys.stdout`` and ``sys.stderr`` inside it, making it "
+"possible to capture all output that happens within the function — including "
+"``print()`` calls and subprocess commands."
+msgstr ""
+
+#: ../../../callable_aliases.rst:13
+msgid "Signature Parameters"
+msgstr ""
+
+#: ../../../callable_aliases.rst:15
+msgid ""
+"Callable aliases receive arguments matched by name. You can request any "
+"combination of the following parameters in any order:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:22
+msgid "Parameter"
+msgstr ""
+
+#: ../../../callable_aliases.rst:23
+msgid "Description"
+msgstr ""
+
+#: ../../../callable_aliases.rst:24
+msgid "``args``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:25
+msgid "List of strings — command-line arguments passed to the alias."
+msgstr ""
+
+#: ../../../callable_aliases.rst:26
+msgid "``stdin``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:27
+msgid "File-like object for reading piped input, or ``None`` if no pipe."
+msgstr ""
+
+#: ../../../callable_aliases.rst:28
+msgid "``stdout``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:29
+msgid "File-like object for writing standard output."
+msgstr ""
+
+#: ../../../callable_aliases.rst:30
+msgid "``stderr``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:31
+msgid "File-like object for writing standard error."
+msgstr ""
+
+#: ../../../callable_aliases.rst:32
+msgid "``spec``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:33
+msgid "``SubprocSpec`` object with details about how the command is being run."
+msgstr ""
+
+#: ../../../callable_aliases.rst:34
+msgid "``stack``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:35
+msgid ""
+"List of ``FrameInfo`` namedtuples from the call site (only computed if "
+"requested)."
+msgstr ""
+
+#: ../../../callable_aliases.rst:37
+msgid "``alias_name``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:38
+msgid "The name under which the alias was registered."
+msgstr ""
+
+#: ../../../callable_aliases.rst:39
+msgid "``called_alias_name``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:40
+msgid ""
+"The name actually used to invoke the alias (may differ if one alias points "
+"to another)."
+msgstr ""
+
+#: ../../../callable_aliases.rst:42
+msgid "``env``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:43
+msgid ""
+"A local environment overlay dict. Values set here shadow the global env "
+"during alias execution and are visible to subprocesses. Removed "
+"automatically when the alias exits. When you set `env['VAR']=1` it's like "
+"`with @.env.swap(VAR=1)` for the rest of the callable alias code."
+msgstr ""
+
+#: ../../../callable_aliases.rst:48
+msgid "You only need to declare the parameters you actually use:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:50
+msgid ""
+"@ @aliases.register\n"
+"  def _hello():\n"
+"      print('hello')\n"
+"\n"
+"@ hello\n"
+"hello\n"
+"\n"
+"@ @aliases.register\n"
+"  def _upper(args, stdin=None):\n"
+"      text = stdin.read() if stdin else ' '.join(args)\n"
+"      print(text.upper())\n"
+"\n"
+"@ upper hello world\n"
+"HELLO WORLD\n"
+"@ echo quiet | upper\n"
+"QUIET\n"
+"\n"
+"@ @aliases.register\n"
+"  def _shout(args, stdin=None, stdout=None):\n"
+"      \"\"\"Read stdin, write to stdout.\"\"\"\n"
+"      for line in stdin or []:\n"
+"          stdout.write(line.upper())\n"
+"\n"
+"@ echo 'hello\\nworld' | shout\n"
+"HELLO\n"
+"WORLD"
+msgstr ""
+
+#: ../../../callable_aliases.rst:81
+msgid "Alias Name and Called Alias Name"
+msgstr ""
+
+#: ../../../callable_aliases.rst:83
+msgid ""
+"When one alias points to another, it can be useful to know how the alias was "
+"invoked. The ``alias_name`` and ``called_alias_name`` parameters provide "
+"this:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:86
+msgid ""
+"@ @aliases.register('groot')\n"
+"  def _groot(alias_name=None, called_alias_name=None):\n"
+"      print(f'I am {alias_name}! You called me {called_alias_name}.')\n"
+"@ aliases['tree'] = 'groot'\n"
+"@ groot\n"
+"I am groot! You called me groot.\n"
+"@ tree\n"
+"I am groot! You called me tree."
+msgstr ""
+
+#: ../../../callable_aliases.rst:97
+msgid ""
+"``alias_name`` is set at registration time and never changes. "
+"``called_alias_name`` is set at each invocation and reflects the name the "
+"user actually typed."
+msgstr ""
+
+#: ../../../callable_aliases.rst:103
+msgid "Local Environment Overlay"
+msgstr ""
+
+#: ../../../callable_aliases.rst:105
+msgid ""
+"The ``env`` parameter provides a local environment overlay. Values set in "
+"``env`` shadow the global environment during alias execution — both for "
+"Xonsh ``$VAR`` reads and for subprocesses. When the alias exits, the overlay "
+"is removed and the global environment is unchanged."
+msgstr ""
+
+#: ../../../callable_aliases.rst:110
+msgid ""
+"Direct writes to ``$VAR`` or ``@.env`` modify the global environment as "
+"usual and persist after the alias exits:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:113
+msgid ""
+"@ @aliases.register\n"
+"  def _ca(env=None):\n"
+"      $GLOBAL = 2\n"
+"      echo GLOBAL before overlay = $GLOBAL\n"
+"      env['GLOBAL'] = 1\n"
+"      echo GLOBAL after overlay = $GLOBAL\n"
+"      printenv GLOBAL\n"
+"\n"
+"@ ca\n"
+"GLOBAL before overlay = 2\n"
+"GLOBAL after overlay = 1\n"
+"1\n"
+"@ echo GLOBAL after alias = $GLOBAL\n"
+"GLOBAL after alias = 2"
+msgstr ""
+
+#: ../../../callable_aliases.rst:130
+msgid ""
+"Inside the alias, ``$GLOBAL`` returns ``1`` (overlay has priority) and "
+"subprocesses see ``GLOBAL=1`` in their environment. After the alias exits, "
+"``$GLOBAL`` is back to ``2`` (the global value set by ``$GLOBAL = 2``)."
+msgstr ""
+
+#: ../../../callable_aliases.rst:136
+msgid "Return Command Aliases"
+msgstr ""
+
+#: ../../../callable_aliases.rst:138
+msgid ""
+"The ``@aliases.return_command`` decorator creates aliases that return a new "
+"command to execute instead of running it themselves. The body of the alias "
+"can run its own commands first, then return the command Xonsh should execute "
+"on its behalf."
+msgstr ""
+
+#: ../../../callable_aliases.rst:143
+msgid "The alias may return its result in either of two forms:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:145
+msgid ""
+"**1. A non-empty list** — just the command tokens. The returned command has "
+"no env overlay; if you need to set env vars for it you must use the dict "
+"form below."
+msgstr ""
+
+#: ../../../callable_aliases.rst:149
+msgid ""
+"@ @aliases.register\n"
+"  @aliases.return_command\n"
+"  def _rca(args):\n"
+"      return ['xonsh', '-c', 'echo hello']"
+msgstr ""
+
+#: ../../../callable_aliases.rst:156
+msgid ""
+"**2. A dict** with a required ``\"cmd\"`` key (non-empty list of tokens) and "
+"an optional ``\"env\"`` key (dict) — the command tokens plus an env overlay "
+"that applies **only** to the returned command."
+msgstr ""
+
+#: ../../../callable_aliases.rst:160
+msgid ""
+"@ @aliases.register\n"
+"  @aliases.return_command\n"
+"  def _rca(args):\n"
+"      return {\n"
+"          'cmd': ['xonsh', '-c', 'echo $RETURNED'],\n"
+"          'env': {'RETURNED': 'set_by_dict'},\n"
+"      }\n"
+"\n"
+"@ rca\n"
+"set_by_dict\n"
+"@ $RETURNED\n"
+"Unknown environment variable: $RETURNED"
+msgstr ""
+
+#: ../../../callable_aliases.rst:175
+msgid ""
+"The ``env=`` kwarg of a ``return_command`` alias behaves exactly like the "
+"``env=`` kwarg of an ordinary callable alias: it is a **local overlay active "
+"only during the function body**. Mutating it affects commands the alias runs "
+"inline (e.g. via ``$[...]``, ``!()``, or subprocess syntax), but it does "
+"**not** flow to the returned command. To set env for the returned command, "
+"the alias must use the dict form above."
+msgstr ""
+
+#: ../../../callable_aliases.rst:182
+msgid ""
+"@ @aliases.register\n"
+"  @aliases.return_command\n"
+"  def _rca(args, env=None):\n"
+"      env['BODY_ONLY'] = 'visible_inside'\n"
+"      # A subprocess spawned here sees BODY_ONLY=visible_inside\n"
+"      $[env | grep BODY_ONLY]\n"
+"      # But the returned command does NOT — it has no overlay at all.\n"
+"      return ['env']"
+msgstr ""
+
+#: ../../../callable_aliases.rst:193
+msgid ""
+"Direct writes to ``$VAR`` or ``@.env`` still modify the global environment "
+"and persist after the alias exits, as for any callable alias."
+msgstr ""
+
+#: ../../../callable_aliases.rst:196
+msgid ""
+"The following example exercises all four env-flow paths of a "
+"``return_command`` alias in one place: the ``env=`` kwarg overlay (body-"
+"only), a direct global write (persists), a dict-return ``\"env\"`` overlay "
+"(applies only to the returned command), and the global value that flows "
+"through both."
+msgstr ""
+
+#: ../../../callable_aliases.rst:201
+msgid ""
+"@ $GLOBAL = 1\n"
+"\n"
+"@ @aliases.register\n"
+"  @aliases.return_command\n"
+"  def _rca(env):\n"
+"      # ``env`` is the body-scoped overlay (introduced in 0.23.0).\n"
+"      # Mutating it affects commands the alias runs inline.\n"
+"      env['LOCAL'] = 1\n"
+"      xonsh -c @('echo g=$GLOBAL l=$LOCAL')\n"
+"      # Direct write to the global env — persists after the alias exits.\n"
+"      $GLOBAL = 2\n"
+"      return {\n"
+"          'cmd': ['xonsh', '-c', 'echo g=$GLOBAL l=$LOCAL'],\n"
+"          'env': {'LOCAL': 2},\n"
+"      }\n"
+"\n"
+"@ rca\n"
+"# xonsh inside the alias body:\n"
+"#   g=1  from the global $GLOBAL set before the alias\n"
+"#   l=1  from the ``env=`` kwarg overlay (body-scoped)\n"
+"g=1 l=1\n"
+"\n"
+"# the returned xonsh command:\n"
+"#   g=2  from the direct write ``$GLOBAL = 2`` in the body\n"
+"#   l=2  from the dict-return ``\"env\"`` overlay\n"
+"g=2 l=2\n"
+"\n"
+"@ $LOCAL\n"
+"# the body overlay is gone,\n"
+"# and the dict overlay only\n"
+"# applied to the returned command\n"
+"Unknown environment variable: $LOCAL\n"
+"\n"
+"@ $GLOBAL\n"
+"2    # the direct write persisted"
+msgstr ""
+
+#: ../../../callable_aliases.rst:241
+msgid "Return Values"
+msgstr ""
+
+#: ../../../callable_aliases.rst:243
+msgid "Callable aliases can return values in several forms:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:245
+msgid ""
+"@ @aliases.register\n"
+"  def _ret0():\n"
+"      return 0  # integer return code (0 = success)\n"
+"\n"
+"@ ret0\n"
+"@ $LAST_RETURN_CODE\n"
+"0\n"
+"\n"
+"@ @aliases.register\n"
+"  def _ret_str():\n"
+"      return 'hello from return'\n"
+"\n"
+"@ $(ret-str)\n"
+"'hello from return\\n'\n"
+"\n"
+"@ @aliases.register\n"
+"  def _ret_tuple():\n"
+"      return ('out text', 'err text', 1)\n"
+"\n"
+"@ !(ret-tuple)\n"
+"err text\n"
+"CommandPipeline(returncode=1, output='out text\\n', errors='err text\\n')"
+msgstr ""
+
+#: ../../../callable_aliases.rst:270
+msgid ""
+"Anything printed with ``print()`` inside the function is also captured "
+"automatically."
+msgstr ""
+
+#: ../../../callable_aliases.rst:275
+msgid "Capturing and Stream Redirection"
+msgstr ""
+
+#: ../../../callable_aliases.rst:277
+msgid ""
+"Inside a callable alias, ``sys.stdout`` and ``sys.stderr`` are temporarily "
+"replaced with the alias's own streams. The ``stdout`` and ``stderr`` "
+"function arguments point to the **same** redirected streams. This means that "
+"``print()`` and ``print(file=stdout)`` are equivalent — both write to the "
+"alias's captured output, not directly to the terminal:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:283
+msgid ""
+"# These are all the same stream inside a callable alias:\n"
+"sys.stdout  is  stdout      # True\n"
+"sys.stderr  is  stderr      # True\n"
+"print(\"x\")                  # goes to alias stdout\n"
+"print(\"x\", file=stdout)    # same\n"
+"stdout.write(\"x\\n\")        # same"
+msgstr ""
+
+#: ../../../callable_aliases.rst:292
+msgid ""
+"@ @aliases.register\n"
+"  def _demo(args, stdout=None, stderr=None):\n"
+"      print(\"via print()\")\n"
+"      stdout.write(\"via stdout.write()\\n\")\n"
+"      echo \"via subprocess\"\n"
+"      print(\"error\", file=stderr)\n"
+"\n"
+"@ output = $(_demo)\n"
+"error\n"
+"@ print(output)\n"
+"via print()\n"
+"via stdout.write()\n"
+"via subprocess"
+msgstr ""
+
+#: ../../../callable_aliases.rst:308
+msgid ""
+"Here is a more complete example showing how different output methods behave "
+"under capture:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:311
+msgid ""
+"@ @aliases.register\n"
+"  def _printer(args, stdin, stdout, stderr):\n"
+"      \"\"\"Ultimate printer.\"\"\"\n"
+"      print(\"print out\")\n"
+"      print(\"print err\", file=@.imp.sys.stderr)\n"
+"\n"
+"      print(\"print out alias stdout\", file=stdout)\n"
+"      print(\"print err alias stderr\", file=stderr)\n"
+"\n"
+"      echo @(\"echo out\")\n"
+"      echo @(\"echo err\") o>e\n"
+"\n"
+"      $(echo @(\"$() echo out\"))\n"
+"      $(echo @(\"$() echo err\") o>e)\n"
+"\n"
+"      !(echo @(\"!() echo out\"))\n"
+"      !(echo @(\"!() echo err\") o>e)\n"
+"\n"
+"      ![echo @(\"![] echo out\")]\n"
+"      ![echo @(\"![] echo err\") o>e]\n"
+"\n"
+"      $[echo @(\"$[] echo out\")]\n"
+"      $[echo @(\"$[] echo err\") o>e]\n"
+"\n"
+"      execx('echo \"execx echo out\"')\n"
+"      execx('echo \"execx echo err\" o>e')\n"
+"\n"
+"@ $(printer)\n"
+"print err\n"
+"print err alias stderr\n"
+"echo err\n"
+"$() echo err\n"
+"![] echo err\n"
+"$[] echo out\n"
+"$[] echo err\n"
+"execx echo err\n"
+"'print out\\necho out\\nprint out alias stdout\\n![] echo out\\nexecx echo "
+"out\\n'\n"
+"\n"
+"@ !(printer)\n"
+"$() echo err\n"
+"$[] echo out\n"
+"$[] echo err\n"
+"CommandPipeline(\n"
+"  returncode=0,\n"
+"  output='print out\\necho out\\nprint out alias stdout\\n![] echo "
+"out\\nexecx echo out\\n',\n"
+"  errors='print err\\necho err\\nprint err alias stderr\\n![] echo "
+"err\\nexecx echo err\\n'\n"
+")"
+msgstr ""
+
+#: ../../../callable_aliases.rst:361
+msgid ""
+"When the alias is captured with ``$()`` or ``!()``, its stdout is collected. "
+"When called uncaptured (bare command), output goes to the terminal as usual. "
+"The ``stderr`` argument and ``sys.stderr`` are also redirected — use ``sys."
+"__stderr__`` if you need to bypass capture:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:366
+msgid ""
+"@ @aliases.register\n"
+"  def _loud(args, stdin=None):\n"
+"      print(\"this is captured\")\n"
+"      print(\"this goes to real terminal\", file=@.imp.sys.__stderr__)\n"
+"\n"
+"@ output = $(_loud)\n"
+"this goes to real terminal\n"
+"@ print(output)\n"
+"this is captured"
+msgstr ""
+
+#: ../../../callable_aliases.rst:380
+msgid "Streams"
+msgstr ""
+
+#: ../../../callable_aliases.rst:382
+msgid ""
+"Inside a callable alias Xonsh replaces ``sys.stdout`` and ``sys.stderr`` "
+"with the alias's own streams.  The ``stdout`` and ``stderr`` function "
+"arguments point to the **same** redirected streams.  So bare ``print()`` "
+"just works — in pipes, in capture, everywhere:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:387
+msgid ""
+"@aliases.register\n"
+"def _greet(args):\n"
+"    print(\"hello\")       # goes to pipe, capture, or terminal — wherever "
+"needed\n"
+"\n"
+"# all of these work:\n"
+"greet                     # prints to terminal\n"
+"greet | grep hello        # piped to grep\n"
+"output = $(greet)         # captured into variable"
+msgstr ""
+
+#: ../../../callable_aliases.rst:398
+msgid ""
+"The ``stdout`` / ``stderr`` arguments give you the **same stream as a file "
+"object**, which is useful when you need to pass it to functions that accept "
+"a file argument, or when you need ``.write()`` for finer control:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:402
+msgid ""
+"@aliases.register\n"
+"def _json_dump(args, stdout=None):\n"
+"    import json\n"
+"    data = {\"key\": \"value\"}\n"
+"    json.dump(data, stdout)          # json.dump needs a file object\n"
+"    stdout.write(\"\\n\")"
+msgstr ""
+
+#: ../../../callable_aliases.rst:411
+msgid "**Reading from** ``stdin``"
+msgstr ""
+
+#: ../../../callable_aliases.rst:413
+msgid ""
+"``stdin`` is ``None`` when the alias is called standalone, and a readable "
+"stream when piped into.  This is the one argument you **must** use "
+"explicitly — there is no automatic redirection of ``sys.stdin`` for aliases:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:417
+msgid ""
+"@aliases.register\n"
+"def _upper(args, stdin=None):\n"
+"    if stdin is not None:\n"
+"        for line in stdin:\n"
+"            print(line.strip().upper())"
+msgstr ""
+
+#: ../../../callable_aliases.rst:425
+msgid ""
+"@ echo hello | upper\n"
+"HELLO"
+msgstr ""
+
+#: ../../../callable_aliases.rst:431
+msgid "**Binary data — bypassing universal newlines**"
+msgstr ""
+
+#: ../../../callable_aliases.rst:433
+msgid ""
+"``stdin``, ``stdout``, and ``stderr`` are text streams (``io."
+"TextIOWrapper``). Reading them applies *universal newlines* to incoming "
+"bytes: ``\\r\\n`` and lone ``\\r`` are translated to ``\\n``. That is "
+"convenient for text but can corrupts binary data flowing through the alias — "
+"every CR is silently rewritten."
+msgstr ""
+
+#: ../../../callable_aliases.rst:439
+msgid ""
+"To pass bytes through unchanged, use the underlying ``.buffer`` on both ends:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:442
+msgid ""
+"@aliases.register\n"
+"def _passthru(args, stdin=None, stdout=None):\n"
+"    \"\"\"Copy stdin to stdout byte-for-byte.\"\"\"\n"
+"    if stdin is None:\n"
+"        return\n"
+"    for chunk in iter(lambda: stdin.buffer.read(65536), b\"\"):\n"
+"        stdout.buffer.write(chunk)\n"
+"    stdout.buffer.flush()"
+msgstr ""
+
+#: ../../../callable_aliases.rst:453
+msgid ""
+"@ cat /usr/bin/python | passthru > /tmp/copy\n"
+"@ # bytes preserved exactly — diff /usr/bin/python /tmp/copy is empty"
+msgstr ""
+
+#: ../../../callable_aliases.rst:458
+msgid ""
+"This applies symmetrically: ``stdout.write(text)`` goes through the text "
+"layer (and on Windows translates ``\\n`` to ``\\r\\n``), while ``stdout."
+"buffer.write(b\"...\")`` writes raw bytes. Reach for ``.buffer`` whenever "
+"the alias is a passthrough or otherwise binary-aware — ``cat``-likes, "
+"hashing, compression, image/audio filters, ``ssh``-style streaming."
+msgstr ""
+
+#: ../../../callable_aliases.rst:465
+msgid ""
+"Reading a file directly with ``open(path, \"rb\")`` is also unaffected: the "
+"text layer only applies to ``stdin``/``stdout``/``stderr``. So ``mycat file "
+"> out`` (no upstream pipe) is safe; ``something | mycat > out`` needs "
+"``stdin.buffer`` to stay byte-clean."
+msgstr ""
+
+#: ../../../callable_aliases.rst:472 ../../../callable_aliases.rst:535
+msgid "Threading"
+msgstr ""
+
+#: ../../../callable_aliases.rst:474
+msgid ""
+"By default, callable aliases run in a **separate thread** so they can be "
+"used in pipelines and run in the background. This is usually what you want."
+msgstr ""
+
+#: ../../../callable_aliases.rst:477
+msgid ""
+"However, some aliases need to run on the **main thread** — for example, "
+"interactive tools (vim, less, htop), debuggers, profilers, or anything that "
+"modifies terminal state. Use the ``unthreadable`` decorator to force "
+"foreground execution."
+msgstr ""
+
+#: ../../../callable_aliases.rst:482
+msgid ""
+"Threading and capturability can also be controlled at call time using the "
+"``@thread``, ``@unthread`` command decorators. These override the function's "
+"decorators for a single invocation:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:486
+msgid ""
+"@ @unthread my-alias    # force main thread for this call\n"
+"@ @thread my-alias      # force background thread for this call"
+msgstr ""
+
+#: ../../../callable_aliases.rst:491
+msgid "To set it permanently on the function, use the Python decorator:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:493
+msgid ""
+"@ @aliases.register\n"
+"  @aliases.unthreadable\n"
+"  def _vi(args, stdin=None):\n"
+"      vim @(args)\n"
+"\n"
+"@ vi myfile.txt\n"
+"# opens vim on the main thread"
+msgstr ""
+
+#: ../../../callable_aliases.rst:505
+msgid "Capturability"
+msgstr ""
+
+#: ../../../callable_aliases.rst:507
+msgid ""
+"By default, callable aliases are **capturable** — their output can be "
+"collected with ``$()``, ``!()``, or piped to another command. This is how "
+"most aliases work."
+msgstr ""
+
+#: ../../../callable_aliases.rst:511
+msgid ""
+"Some aliases launch interactive programs (editors, pagers, TUI apps) that "
+"take over the terminal. These must not be captured, or the program will not "
+"display correctly. Use ``@aliases.uncapturable``, typically together with "
+"``@aliases.unthreadable``:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:516
+msgid ""
+"@ @aliases.register\n"
+"  @aliases.uncapturable\n"
+"  @aliases.unthreadable\n"
+"  def _edit(args, stdin=None):\n"
+"      vim @(args)\n"
+"\n"
+"@ edit myfile.txt\n"
+"# opens vim directly in the terminal"
+msgstr ""
+
+#: ../../../callable_aliases.rst:527
+msgid "Summary of default behavior:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:532
+msgid "Property"
+msgstr ""
+
+#: ../../../callable_aliases.rst:533
+msgid "Default"
+msgstr ""
+
+#: ../../../callable_aliases.rst:534
+msgid "Decorator to change"
+msgstr ""
+
+#: ../../../callable_aliases.rst:536
+msgid "Threaded (runs in background thread)"
+msgstr ""
+
+#: ../../../callable_aliases.rst:537
+msgid "``@unthreadable`` — run on main thread"
+msgstr ""
+
+#: ../../../callable_aliases.rst:538
+msgid "Capturing"
+msgstr ""
+
+#: ../../../callable_aliases.rst:539
+msgid "Capturable (output can be collected)"
+msgstr ""
+
+#: ../../../callable_aliases.rst:540
+msgid "``@uncapturable`` — output goes to terminal only"
+msgstr ""
+
+#: ../../../callable_aliases.rst:544
+msgid "Click CLI Integration"
+msgstr ""
+
+#: ../../../callable_aliases.rst:546
+msgid ""
+"If the `click <https://click.palletsprojects.com/>`_ package is installed, "
+"xonsh exposes two helpers on the ``aliases`` object:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:549
+msgid ""
+"``aliases.click`` — the ``click`` module itself, for decorating functions "
+"with ``@aliases.click.option(...)``, ``@aliases.click.argument(...)``, etc."
+msgstr ""
+
+#: ../../../callable_aliases.rst:551
+msgid ""
+"``aliases.register_click_command`` — a decorator that registers a click "
+"command as a Xonsh alias."
+msgstr ""
+
+#: ../../../callable_aliases.rst:554
+msgid ""
+"Both are loaded lazily on first access — sessions that never touch click "
+"don't pay the import cost, and nothing breaks on systems where click is not "
+"installed."
+msgstr ""
+
+#: ../../../callable_aliases.rst:558
+msgid ""
+"@ @aliases.register_click_command\n"
+"  @aliases.click.option('--count', default=1, help='Number of greetings.')\n"
+"  @aliases.click.option('--name', help='The person to greet.')\n"
+"  def _hello(ctx, count, name):\n"
+"      \"\"\"Simple program that greets NAME for a total of COUNT times."
+"\"\"\"\n"
+"      for i in range(count):\n"
+"          print(name, file=ctx.stdout)\n"
+"\n"
+"@ hello --count 3 --name World\n"
+"World\n"
+"World\n"
+"World"
+msgstr ""
+
+#: ../../../callable_aliases.rst:573
+msgid "The decorator mirrors the calling conventions of ``@aliases.register``:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:575
+msgid ""
+"@aliases.register_click_command              # bare, name from function\n"
+"@aliases.register_click_command()            # empty parentheses, same "
+"thing\n"
+"@aliases.register_click_command(\"my-name\")   # explicit alias name"
+msgstr ""
+
+#: ../../../callable_aliases.rst:581
+msgid ""
+"The function's first argument is a ``click.Context`` subclass that carries "
+"every standard Xonsh alias parameter from `Signature Parameters`_ as an "
+"attribute of the same name — ``ctx.stdin``, ``ctx.stdout``, ``ctx.stderr``, "
+"``ctx.spec``, ``ctx.stack``, ``ctx.decorators``, ``ctx.alias_name``, ``ctx."
+"called_alias_name``, ``ctx.env``. The only exception is ``args``, which is "
+"exposed as ``ctx.alias_args`` to avoid clashing with the built-in ``click."
+"Context.args`` that ``click`` uses for option parsing."
+msgstr ""
+
+#: ../../../callable_aliases.rst:589
+msgid ""
+"The ``click`` module itself is also attached as ``ctx.click``, so callbacks "
+"can call ``ctx.click.echo(...)``, ``ctx.click.secho(...)``, etc. without a "
+"separate ``import click``."
+msgstr ""
+
+#: ../../../callable_aliases.rst:593
+msgid ""
+"Use these when a click command needs the underlying Xonsh streams or "
+"environment overlay — for example, ``print(text, file=ctx.stdout)`` writes "
+"to the alias's captured output the same way a regular callable alias does."
+msgstr ""
+
+#: ../../../callable_aliases.rst:597
+msgid ""
+"Tab completion is wired up automatically: option flags, ``click.Choice`` "
+"option values, positional ``click.Choice`` arguments, and sub-commands of a "
+"``click.Group`` are all suggested without any extra configuration."
+msgstr ""
+
+#: ../../../callable_aliases.rst:601
+msgid ""
+"@ hello --<TAB>\n"
+"--count --help --name"
+msgstr ""
+
+#: ../../../callable_aliases.rst:608
+msgid "String Aliases and ExecAlias"
+msgstr ""
+
+#: ../../../callable_aliases.rst:610
+msgid ""
+"When you assign a string to an alias, Xonsh stores it in one of two ways "
+"depending on the content."
+msgstr ""
+
+#: ../../../callable_aliases.rst:613
+msgid ""
+"A **simple string** like ``\"ls -la\"`` is split into a list of tokens and "
+"stored as ``[\"ls\", \"-la\"]``. This is equivalent to assigning the list "
+"directly:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:617
+msgid ""
+"@ aliases['ll'] = 'ls -la'\n"
+"@ aliases['ll'] = ['ls', '-la']   # same thing"
+msgstr ""
+
+#: ../../../callable_aliases.rst:622
+msgid ""
+"A string that contains Xonsh expressions (``@()``, ``$()``), pipes (``|``), "
+"redirections (``>``, ``<``), or logical operators (``&&``, ``||``) cannot be "
+"represented as a simple list — it needs to be compiled and executed as Xonsh "
+"code. Xonsh wraps such strings in an ``ExecAlias``, which is a callable "
+"alias under the hood:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:628
+msgid ""
+"@ aliases['answer'] = 'echo @(21+21)'\n"
+"@ answer\n"
+"42\n"
+"\n"
+"@ aliases['findpy'] = 'ls | grep $arg0'\n"
+"@ findpy .py\n"
+"\n"
+"@ aliases['combo'] = 'echo start && echo end'\n"
+"@ combo\n"
+"start\n"
+"end"
+msgstr ""
+
+#: ../../../callable_aliases.rst:644
+msgid "Arguments"
+msgstr ""
+
+#: ../../../callable_aliases.rst:646
+msgid ""
+"When an ``ExecAlias`` runs, the arguments passed to it are available as "
+"temporary environment variables:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:649
+msgid "``$args`` — the full list of arguments."
+msgstr ""
+
+#: ../../../callable_aliases.rst:650
+msgid "``$arg0``, ``$arg1``, … — individual positional arguments."
+msgstr ""
+
+#: ../../../callable_aliases.rst:652
+msgid ""
+"These variables exist only while the alias body is running and are removed "
+"afterwards."
+msgstr ""
+
+#: ../../../callable_aliases.rst:655
+msgid ""
+"@ aliases['greet'] = 'echo Hello, $arg0!'\n"
+"@ greet World\n"
+"Hello, World!\n"
+"\n"
+"@ aliases['piu'] = 'pip install -U @($args)'\n"
+"@ piu xonsh prompt_toolkit\n"
+"\n"
+"@ aliases['cdls'] = 'cd $arg0 && ls'\n"
+"@ cdls /tmp"
+msgstr ""
+
+#: ../../../callable_aliases.rst:667
+msgid ""
+"Arguments are **not** passed automatically — you need to use ``$args`` or "
+"``$arg<n>`` explicitly. If you don't reference them, they are ignored:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:670
+msgid ""
+"@ aliases['noargs'] = 'echo @(\"arguments are ignored\")'\n"
+"@ noargs 1 2 3\n"
+"arguments are ignored\n"
+"\n"
+"@ aliases['withargs'] = 'echo the arguments are: @($args)'\n"
+"@ withargs 1 2 3\n"
+"the arguments are: 1 2 3"
+msgstr ""
+
+#: ../../../callable_aliases.rst:682
+msgid "Equivalence with Callable Aliases"
+msgstr ""
+
+#: ../../../callable_aliases.rst:684
+msgid ""
+"An ``ExecAlias`` is a shorthand for a callable alias. These three "
+"definitions are equivalent:"
+msgstr ""
+
+#: ../../../callable_aliases.rst:687
+msgid ""
+"@ aliases['answer'] = 'echo @(21+21)'\n"
+"\n"
+"@ aliases['answer'] = lambda: $[echo @(21+21)]\n"
+"\n"
+"@ @aliases.register\n"
+"  def _answer():\n"
+"      echo @(21+21)"
+msgstr ""

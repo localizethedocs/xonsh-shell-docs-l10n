@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.procs.executables.rst:2
+msgid "xonsh.procs.executables"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables:1
+msgid "Interfaces to locate executable files on file system."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.clear_paths:2
+msgid "Remove duplicates and nonexistent directories from paths."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.get_paths:2
+msgid "Return tuple with deduplicated and existent paths from ``$PATH``."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.get_possible_names:2
+msgid "Expand name to all possible variants based on `PATHEXT`."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.get_possible_names:4
+msgid ""
+"PATHEXT is a Windows convention containing extensions to be considered when "
+"searching for an executable file."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.get_possible_names:7
+msgid ""
+"Conserves order of any extensions found and gives precedence to the bare "
+"name."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:2
+msgid "Check the file is executable in POSIX."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:0
+#: xonsh.procs.executables.is_executable_in_windows:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:7
+#: xonsh.procs.executables.is_executable_in_windows:7
+msgid "**filepath**"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:-1
+#: xonsh.procs.executables.is_executable_in_windows:-1
+msgid "str"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:8
+#: xonsh.procs.executables.is_executable_in_windows:8
+msgid "Path to file."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:10
+#: xonsh.procs.executables.is_executable_in_windows:10
+msgid "**check_file_exist**"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:-1
+#: xonsh.procs.executables.is_executable_in_windows:-1
+msgid "bool"
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_posix:11
+msgid ""
+"If ``False`` do not check that file exists. This made to consistency with "
+"``is_executable_in_windows``."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_windows:2
+msgid "Check the file is executable in Windows."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_executable_in_windows:11
+msgid ""
+"If ``False`` do not check that file exists. This helps to disable double "
+"checking in case the file already checked in upstream code. This is "
+"important for Windows where checking can take a long time."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.is_file:2
+msgid "Check that ``filepath`` is file and exist."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_executable:2
+msgid "Search executable binary name in ``$PATH`` and return full path."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_file:2
+msgid ""
+"Search file name in the current working directory and in ``$PATH`` and "
+"return full path."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_file_in_path_env:2
+msgid "Search file name in ``$PATH`` and return full path."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_file_in_path_env:4
+msgid ""
+"Compromise. There is no way to get case sensitive file name without listing "
+"all files. If the file name is ``CaMeL.exe`` and we found that ``camel.EXE`` "
+"exists there is no way to get back the case sensitive name. We don't want to "
+"read the list of files in all ``$PATH`` directories because of performance "
+"reasons. So we're ok to get existent but case insensitive (or different) "
+"result from resolver. May be in the future file systems as well as Python "
+"Path will be smarter to get the case sensitive name. The task for reading "
+"and returning case sensitive filename we give to completer in interactive "
+"mode with ``commands_cache``."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_relative_path:2
+msgid "Return absolute path by relative file path."
+msgstr ""
+
+#: ../../../../xonsh/procs/executables.py:docstring of
+#: xonsh.procs.executables.locate_relative_path:4
+msgid ""
+"We should not locate files without prefix (e.g. ``\"binfile\"``) by security "
+"reasons like other shells. If directory has \"binfile\" it can be called "
+"only by providing prefix \"./binfile\" explicitly."
+msgstr ""
