@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:59+0000\n"
+"POT-Creation-Date: 2026-10-26 15:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../../_templates/index.html:11
-msgid "Xonsh — Python-powered shell for Linux, macOS, Windows, Android"
+msgid ""
+"Xonsh — Python-powered shell for Linux, macOS, Windows, Android. Alternative "
+"to PowerShell, cmd, Fish, Nushell, Zsh, Bash"
 msgstr ""
 
 #: ../../../_templates/index.html:174
@@ -65,7 +67,7 @@ msgid ""
 "                              The language is a superset of Python 3 with "
 "seamless integration of shell functionality and commands.\n"
 "                              It works on all major platforms, including "
-"Linux, macOS, Windows, BSD, Jupyter, Android and Raspberry Pi."
+"Linux, macOS, Windows, BSD, Jupyter, Android, Raspberry Pi and Nix."
 msgstr ""
 
 #: ../../../_templates/index.html:245
@@ -123,8 +125,9 @@ msgstr ""
 
 #: ../../../_templates/index.html:399
 msgid ""
-"Xonsh can orchestrate and unify other shells and tools, allowing you to "
-"combine external programs into a single programmable environment."
+"Xonsh can orchestrate and unify other shells and tools, such as Fish, "
+"Nushell, PowerShell, and others, allowing you to combine external programs "
+"into a single programmable environment."
 msgstr ""
 
 #: ../../../_templates/index.html:432
@@ -3730,8 +3733,8 @@ msgstr ""
 
 #: ext/apidoc/_cli.py:91
 msgid ""
-"follow symbolic links. Powerful when combined with collective.recipe."
-"omelette."
+"follow symbolic links. Powerful when combined with "
+"collective.recipe.omelette."
 msgstr ""
 
 #: ext/apidoc/_cli.py:99
