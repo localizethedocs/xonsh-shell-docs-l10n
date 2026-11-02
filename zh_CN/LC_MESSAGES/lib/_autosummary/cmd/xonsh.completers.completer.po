@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.completer.rst:2
+msgid "xonsh.completers.completer"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.complete_completer_names:2
+msgid "Complete all loaded completer names"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.list_completers:2
+msgid "List the active completers"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.remove_completer:2
+msgid "Removes a completer from xonsh"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.remove_completer:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.remove_completer:7
+msgid "**name:**"
+msgstr ""
+
+#: ../../../../xonsh/completers/completer.py:docstring of
+#: xonsh.completers.completer.remove_completer:8
+msgid ""
+"NAME is a unique name of a completer (run \"completer list\" to see the "
+"current completers in order)"
+msgstr ""

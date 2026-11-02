@@ -1,0 +1,457 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/index.rst:5
+msgid "Xonsh Library"
+msgstr ""
+
+#: ../../../lib/index.rst:6
+msgid "For those of you who want the gritty details."
+msgstr ""
+
+#: ../../../lib/index.rst:9
+msgid "**Language:**"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.parsers.lexer <xonsh.parsers.lexer>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "Lexer for xonsh code."
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.parser <xonsh.parser>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "Implements the xonsh parser."
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.parsers.ast <xonsh.parsers.ast>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "Abstract Syntax Tree handler"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.execer <xonsh.execer>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "Implements the xonsh executer."
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.imphooks <xonsh.imphooks>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "Import hooks for importing xonsh source files."
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid ":py:obj:`xonsh.shell <xonsh.shell>`"
+msgstr ""
+
+#: ../../../lib/index.rst:23:<autosummary>:1
+msgid "The xonsh shell"
+msgstr ""
+
+#: ../../../lib/index.rst:24
+msgid "**Command Prompt:**"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.built_ins <xonsh.built_ins>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "The xonsh built-ins."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.environ <xonsh.environ>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Environment for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.aliases <xonsh.aliases>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Aliases for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.dirstack <xonsh.dirstack>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Directory stack and associated utilities for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.procs <xonsh.procs>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Subprocess and pipeline execution for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.lib.inspectors <xonsh.lib.inspectors>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Tools for inspecting Python objects."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.history <xonsh.history>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Command history backends for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.completer <xonsh.completer>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "A (tab-)completer for xonsh."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.completers <xonsh.completers>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Tab completion providers for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.prompt <xonsh.prompt>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Prompt formatting for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.shells <xonsh.shells>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "The xonsh interactive shells"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.shells.base_shell <xonsh.shells.base_shell>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "The base class for xonsh shell"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.shells.readline_shell <xonsh.shells.readline_shell>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "The readline based xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.shells.ptk_shell <xonsh.shells.ptk_shell>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "The prompt_toolkit based xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.lib.pretty <xonsh.lib.pretty>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Python advanced pretty printer."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.history.diff_history <xonsh.history.diff_history>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Tools for diff'ing two xonsh history files in a meaningful fashion."
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid ":py:obj:`xonsh.xoreutils <xonsh.xoreutils>`"
+msgstr ""
+
+#: ../../../lib/index.rst:49:<autosummary>:1
+msgid "Cross-platform reimplementations of common coreutils."
+msgstr ""
+
+#: ../../../lib/index.rst:50
+msgid "**Helpers:**"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.events <xonsh.events>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Events for xonsh."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.lib <xonsh.lib>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"Libraries of common functions that used in xonsh components as well as "
+"modules borrowed from other projects."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.tools <xonsh.tools>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Shared utility functions and helpers for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.platform <xonsh.platform>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"Module for platform-specific constants and implementations, as well as "
+"compatibility layers to make use of the 'best' implementation available on a "
+"platform."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.lib.lazyjson <xonsh.lib.lazyjson>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Implements a lazy JSON file class that wraps around json data."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.lib.lazyasd <xonsh.lib.lazyasd>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Lazy and self destructive containers for speeding up module import."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.lib.openpy <xonsh.lib.openpy>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools to open ``*.py`` files as Unicode."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.foreign_shells <xonsh.foreign_shells>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools to help interface with foreign shells, such as Bash."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.commands_cache <xonsh.commands_cache>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"Module for caching command & alias names as well as for predicting whether a "
+"command will be able to be run in the background."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.tracer <xonsh.tracer>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Implements a xonsh tracer."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.main <xonsh.main>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "The main xonsh script."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.color_tools <xonsh.color_tools>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools for color handling in xonsh."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.pyghooks <xonsh.pyghooks>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Hooks for pygments syntax highlighting."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.shells.dumb_shell <xonsh.shells.dumb_shell>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "A dumb shell for when $TERM == 'dumb', which usually happens in emacs."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.wizard <xonsh.wizard>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"Tools for creating command-line and web-based wizards from a tree of nodes."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.xonfig <xonsh.xonfig>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "The xonsh configuration (xonfig) utility."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.xontribs <xonsh.xontribs>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools for helping manage xontributions."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.codecache <xonsh.codecache>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools for caching xonsh code."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.contexts <xonsh.contexts>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Context management tools for xonsh."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.ansi_colors <xonsh.ansi_colors>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Tools for helping with ANSI color codes."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.style_tools <xonsh.style_tools>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"Xonsh color styling tools that simulate pygments, when it is unavailable."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.cli_utils <xonsh.cli_utils>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "helper functions and classes to create argparse CLI from functions."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.timings <xonsh.timings>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Timing related functionality for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.pygments_cache <xonsh.pygments_cache>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ""
+"A fast, drop-in replacement for pygments ``get_*()`` and ``guess_*()`` "
+"funtions."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.platforms <xonsh.platforms>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Platform-dependent code."
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid ":py:obj:`xonsh.webconfig <xonsh.webconfig>`"
+msgstr ""
+
+#: ../../../lib/index.rst:83:<autosummary>:1
+msgid "Web-based configuration UI for the xonsh shell."
+msgstr ""
+
+#: ../../../lib/index.rst:84
+msgid "**Xompletions:**"
+msgstr ""
+
+#: ../../../lib/index.rst:93:<autosummary>:1
+msgid ":py:obj:`xompletions <xompletions>`"
+msgstr ""
+
+#: ../../../lib/index.rst:94
+msgid "**Xontribs:**"
+msgstr ""
+
+#: ../../../lib/index.rst:102:<autosummary>:1
+msgid ":py:obj:`xontrib <xontrib>`"
+msgstr ""
