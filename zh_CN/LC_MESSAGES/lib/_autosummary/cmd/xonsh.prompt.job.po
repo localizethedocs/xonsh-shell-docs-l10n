@@ -1,0 +1,101 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.prompt.job.rst:2
+msgid "xonsh.prompt.job"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of xonsh.prompt.job:1
+msgid "Prompt formatter for jobs fields e.g. current_job."
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField:2
+msgid "Prompt field for the currently running foreground job."
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField:4
+msgid ""
+"Uses thread-local storage so that background threads running subprocesses "
+"don't leak their command names into the prompt. See xonsh/xonsh#3175."
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField:31
+msgid "**kwargs**"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField:32
+msgid "attributes of the class will be set from this"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.base.BasePromptField.wrap:2
+msgid "decorator to set the updator"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.update:2
+msgid "will be called from PromptFields getter for each new prompt"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.update_current_cmds:2
+msgid ""
+"Context manager that updates the information used to update the job name"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.name:2
+msgid "will be set during load."
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.name:17
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.name:18
+msgid ""
+"fields with names such as ``gitstatus.branch`` mean they are defined in a "
+"module named ``gitstatus`` and are most likely a subfield used by "
+"``gitstatus``"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.updator:2
+msgid ""
+"this is a callable that needs to update the value or any of the attribute of "
+"the field"
+msgstr ""
+
+#: ../../../../xonsh/prompt/job.py:docstring of
+#: xonsh.prompt.job.CurrentJobField.value:2
+msgid ""
+"This field should hold the bare value of the field without any color/format "
+"strings"
+msgstr ""

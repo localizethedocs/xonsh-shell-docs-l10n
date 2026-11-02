@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/cmd/xonsh.completers.imports.rst:2
+msgid "xonsh.completers.imports"
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports:1
+msgid ""
+"Import statement completions. Contains modified code from the IPython "
+"project (at core/completerlib.py)."
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports:4
+msgid ""
+"# Copyright (c) IPython Development Team. # Distributed under the terms of "
+"the Modified BSD License."
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports.complete_import:2
+msgid ""
+"Completes module names and objects for \"import ...\" and \"from ... "
+"import ...\"."
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports.get_root_modules:2
+msgid ""
+"Returns a list containing the names of all the modules available in the "
+"folders of the pythonpath."
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports.module_list:2
+msgid ""
+"Return the list containing the names of the modules available in the given "
+"folder."
+msgstr ""
+
+#: ../../../../xonsh/completers/imports.py:docstring of
+#: xonsh.completers.imports.try_import:2
+msgid "Try to import given module and return list of potential completions."
+msgstr ""
