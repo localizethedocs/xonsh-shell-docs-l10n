@@ -24,8 +24,8 @@ msgstr "容器"
 #: ../../../containers.rst:4
 msgid ""
 "Xonsh publishes a handful of containers, primarily targeting CI and "
-"automation use cases. All of them are published on `Docker Hub <https://hub."
-"docker.com/u/xonsh>`__."
+"automation use cases. All of them are published on `Docker Hub <https://"
+"hub.docker.com/u/xonsh>`__."
 msgstr ""
 
 #: ../../../containers.rst:6
@@ -73,8 +73,8 @@ msgstr ""
 
 #: ../../../containers.rst:20
 msgid ""
-"The container source can be found in the `container project <https://github."
-"com/xonsh/container>`_."
+"The container source can be found in the `container project <https://"
+"github.com/xonsh/container>`_."
 msgstr ""
 
 #: ../../../containers.rst:23

@@ -180,8 +180,8 @@ msgstr ""
 
 #: ../../../platforms.rst:102
 msgid ""
-"**MacPorts** — install the ``bash-completion`` port (`docs <https://trac."
-"macports.org/wiki/howto/bash-completion>`_):"
+"**MacPorts** — install the ``bash-completion`` port (`docs <https://"
+"trac.macports.org/wiki/howto/bash-completion>`_):"
 msgstr ""
 
 #: ../../../platforms.rst:105
@@ -290,9 +290,9 @@ msgstr ""
 msgid ""
 "The locale must be set **before** Xonsh starts — setting ``$LC_ALL`` from "
 "your :doc:`xonsh RC <xonshrc>` is too late for subprocesses that already "
-"inherited the broken environment. Fix it at the OS level (``~/."
-"pam_environment``, ``/etc/locale.conf``, the container image's base layer, "
-"or the systemd unit's ``Environment=`` directive). As a temporary "
+"inherited the broken environment. Fix it at the OS level "
+"(``~/.pam_environment``, ``/etc/locale.conf``, the container image's base "
+"layer, or the systemd unit's ``Environment=`` directive). As a temporary "
 "workaround, ``PYTHONUTF8=1`` forces Python into UTF-8 mode regardless of "
 "locale."
 msgstr ""
@@ -398,8 +398,8 @@ msgstr ""
 #: ../../../platforms.rst:265
 msgid ""
 "Homebrew installs GNU tools with a ``g`` prefix (e.g. ``gls``, ``ggrep``). "
-"To use them without the prefix, add the GNU paths to your ``$PATH`` in your :"
-"doc:`xonsh RC <xonshrc>`:"
+"To use them without the prefix, add the GNU paths to your ``$PATH`` in "
+"your :doc:`xonsh RC <xonshrc>`:"
 msgstr ""
 
 #: ../../../platforms.rst:269
@@ -558,8 +558,8 @@ msgstr ""
 
 #: ../../../platforms.rst:382
 msgid ""
-"``which`` is already wired by default. Add the line above to your :doc:"
-"`xonsh RC <xonshrc>` to load it on every session."
+"``which`` is already wired by default. Add the line above to "
+"your :doc:`xonsh RC <xonshrc>` to load it on every session."
 msgstr ""
 
 #: ../../../platforms.rst:385
@@ -684,8 +684,8 @@ msgid ""
 "                // Guid from https://guidgen.com\n"
 "                \"guid\": \"{02639f1c-9437-4b34-a383-2df49b5ed5c5}\",\n"
 "                \"name\": \"Xonsh\",\n"
-"                \"commandline\": \"c:\\\\users\\\\bobhy\\\\src\\\\xonsh\\\\."
-"venv\\\\scripts\\\\xonsh.exe\",\n"
+"                \"commandline\": \"c:\\\\users\\\\bobhy\\\\src\\\\xonsh\\"
+"\\.venv\\\\scripts\\\\xonsh.exe\",\n"
 "                \"hidden\": false\n"
 "            },\n"
 "            {\n"
@@ -727,14 +727,14 @@ msgstr ""
 msgid ""
 "# Open Xonsh and copy-paste the following line:\n"
 "@ exec(@.imp.urllib.request.urlopen(r'https://gist.githubusercontent.com/"
-"nedsociety/91041691d0ac18bc8fd9e937ad21b055/raw/xonsh_context_menu.py')."
-"read()) \\\n"
+"nedsociety/91041691d0ac18bc8fd9e937ad21b055/raw/"
+"xonsh_context_menu.py').read()) \\\n"
 "   && xonsh_register_right_click()\n"
 "\n"
 "# To remove the menu, use following line instead:\n"
 "@ exec(@.imp.urllib.request.urlopen(r'https://gist.githubusercontent.com/"
-"nedsociety/91041691d0ac18bc8fd9e937ad21b055/raw/xonsh_context_menu.py')."
-"read()) \\\n"
+"nedsociety/91041691d0ac18bc8fd9e937ad21b055/raw/"
+"xonsh_context_menu.py').read()) \\\n"
 "   && xonsh_unregister_right_click()"
 msgstr ""
 
@@ -752,9 +752,9 @@ msgstr ""
 
 #: ../../../platforms.rst:526
 msgid ""
-"Xonsh has some tricks to fix colors. This is controlled by the :ref:"
-"`$INTENSIFY_COLORS_ON_WIN <intensify_colors_on_win>` environment variable "
-"which is ``True`` by default."
+"Xonsh has some tricks to fix colors. This is controlled by "
+"the :ref:`$INTENSIFY_COLORS_ON_WIN <intensify_colors_on_win>` environment "
+"variable which is ``True`` by default."
 msgstr ""
 
 #: ../../../platforms.rst:531
@@ -1070,9 +1070,9 @@ msgstr ""
 
 #: ../../../platforms.rst:746
 msgid ""
-"Because ``osqueryi --json`` prints a table as a JSON array, the ``@json`` :"
-"doc:`output decorator <aliases>` hands it back as a list of dicts you can "
-"loop over directly:"
+"Because ``osqueryi --json`` prints a table as a JSON array, the "
+"``@json`` :doc:`output decorator <aliases>` hands it back as a list of dicts "
+"you can loop over directly:"
 msgstr ""
 
 #: ../../../platforms.rst:750

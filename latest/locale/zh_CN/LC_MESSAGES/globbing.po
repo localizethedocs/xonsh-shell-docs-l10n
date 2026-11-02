@@ -417,8 +417,8 @@ msgstr ""
 
 #: ../../../globbing.rst:252
 msgid ""
-"@ g`tests/**/*.py`.files().paths().filter(lambda p: p.stem."
-"startswith('test_'))\n"
+"@ g`tests/**/*.py`.files().paths().filter(lambda p: "
+"p.stem.startswith('test_'))\n"
 "[PosixPath('tests/test_main.py'), PosixPath('tests/test_utils.py')]"
 msgstr ""
 

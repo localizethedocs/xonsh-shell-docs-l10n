@@ -152,19 +152,19 @@ msgstr ""
 #: ../../../history.rst:92
 msgid ""
 "``zsh`` will display all history from the history file specified by the "
-"``HISTFILE`` environmental variable in zsh. By default this is ``~/."
-"zsh_history``. However, they can also be respectively specified in both ``~/."
-"zshrc`` and ``~/.zprofile``. Xonsh will parse these files (rc file first) to "
-"check if ``HISTFILE`` has been set."
+"``HISTFILE`` environmental variable in zsh. By default this is "
+"``~/.zsh_history``. However, they can also be respectively specified in both "
+"``~/.zshrc`` and ``~/.zprofile``. Xonsh will parse these files (rc file "
+"first) to check if ``HISTFILE`` has been set."
 msgstr ""
 
 #: ../../../history.rst:98
 msgid ""
 "The ``bash`` action will display all history from the history file specified "
-"by the ``HISTFILE`` environmental variable in bash. By default this is ``~/."
-"bash_history``. However, they can also be respectively specified in both "
-"``~/.bashrc`` and ``~/.bash_profile``. Xonsh will parse these files (rc file "
-"first) to check if ``HISTFILE`` has been set."
+"by the ``HISTFILE`` environmental variable in bash. By default this is "
+"``~/.bash_history``. However, they can also be respectively specified in "
+"both ``~/.bashrc`` and ``~/.bash_profile``. Xonsh will parse these files (rc "
+"file first) to check if ``HISTFILE`` has been set."
 msgstr ""
 
 #: ../../../history.rst:105
@@ -682,8 +682,8 @@ msgstr ""
 #: ../../../history.rst:418
 msgid ""
 "If you have `sqlite-web <https://pypi.python.org/pypi/sqlite-web>`_ "
-"installed, you can read the history easily with command: ``sqlite_web "
-"@$(history file)``."
+"installed, you can read the history easily with command: ``sqlite_web @$"
+"(history file)``."
 msgstr ""
 
 #: ../../../history.rst:424

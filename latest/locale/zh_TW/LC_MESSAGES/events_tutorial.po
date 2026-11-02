@@ -124,9 +124,9 @@ msgstr ""
 
 #: ../../../events_tutorial.rst:74
 msgid ""
-"To get this information programmatically, you can use the ``events."
-"handlers()`` method, which returns a dictionary mapping event names to a "
-"list of handler strings."
+"To get this information programmatically, you can use the "
+"``events.handlers()`` method, which returns a dictionary mapping event names "
+"to a list of handler strings."
 msgstr ""
 
 #: ../../../events_tutorial.rst:77
@@ -168,6 +168,6 @@ msgstr ""
 
 #: ../../../events_tutorial.rst:100
 msgid ""
-"For a complete list of available events, see `the events reference <events."
-"html>`_."
+"For a complete list of available events, see `the events reference "
+"<events.html>`_."
 msgstr ""

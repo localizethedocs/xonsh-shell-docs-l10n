@@ -510,8 +510,8 @@ msgstr ""
 msgid ""
 "When the alias is captured with ``$()`` or ``!()``, its stdout is collected. "
 "When called uncaptured (bare command), output goes to the terminal as usual. "
-"The ``stderr`` argument and ``sys.stderr`` are also redirected — use ``sys."
-"__stderr__`` if you need to bypass capture:"
+"The ``stderr`` argument and ``sys.stderr`` are also redirected — use "
+"``sys.__stderr__`` if you need to bypass capture:"
 msgstr ""
 
 #: ../../../callable_aliases.rst:366
@@ -601,11 +601,11 @@ msgstr ""
 
 #: ../../../callable_aliases.rst:433
 msgid ""
-"``stdin``, ``stdout``, and ``stderr`` are text streams (``io."
-"TextIOWrapper``). Reading them applies *universal newlines* to incoming "
-"bytes: ``\\r\\n`` and lone ``\\r`` are translated to ``\\n``. That is "
-"convenient for text but can corrupts binary data flowing through the alias — "
-"every CR is silently rewritten."
+"``stdin``, ``stdout``, and ``stderr`` are text streams "
+"(``io.TextIOWrapper``). Reading them applies *universal newlines* to "
+"incoming bytes: ``\\r\\n`` and lone ``\\r`` are translated to ``\\n``. That "
+"is convenient for text but can corrupts binary data flowing through the "
+"alias — every CR is silently rewritten."
 msgstr ""
 
 #: ../../../callable_aliases.rst:439
@@ -634,10 +634,10 @@ msgstr ""
 #: ../../../callable_aliases.rst:458
 msgid ""
 "This applies symmetrically: ``stdout.write(text)`` goes through the text "
-"layer (and on Windows translates ``\\n`` to ``\\r\\n``), while ``stdout."
-"buffer.write(b\"...\")`` writes raw bytes. Reach for ``.buffer`` whenever "
-"the alias is a passthrough or otherwise binary-aware — ``cat``-likes, "
-"hashing, compression, image/audio filters, ``ssh``-style streaming."
+"layer (and on Windows translates ``\\n`` to ``\\r\\n``), while "
+"``stdout.buffer.write(b\"...\")`` writes raw bytes. Reach for ``.buffer`` "
+"whenever the alias is a passthrough or otherwise binary-aware — ``cat``-"
+"likes, hashing, compression, image/audio filters, ``ssh``-style streaming."
 msgstr ""
 
 #: ../../../callable_aliases.rst:465
@@ -824,10 +824,10 @@ msgid ""
 "The function's first argument is a ``click.Context`` subclass that carries "
 "every standard Xonsh alias parameter from `Signature Parameters`_ as an "
 "attribute of the same name — ``ctx.stdin``, ``ctx.stdout``, ``ctx.stderr``, "
-"``ctx.spec``, ``ctx.stack``, ``ctx.decorators``, ``ctx.alias_name``, ``ctx."
-"called_alias_name``, ``ctx.env``. The only exception is ``args``, which is "
-"exposed as ``ctx.alias_args`` to avoid clashing with the built-in ``click."
-"Context.args`` that ``click`` uses for option parsing."
+"``ctx.spec``, ``ctx.stack``, ``ctx.decorators``, ``ctx.alias_name``, "
+"``ctx.called_alias_name``, ``ctx.env``. The only exception is ``args``, "
+"which is exposed as ``ctx.alias_args`` to avoid clashing with the built-in "
+"``click.Context.args`` that ``click`` uses for option parsing."
 msgstr ""
 
 #: ../../../callable_aliases.rst:589

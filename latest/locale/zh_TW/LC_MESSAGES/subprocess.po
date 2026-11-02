@@ -79,16 +79,16 @@ msgstr ""
 
 #: ../../../subprocess.rst:49
 msgid ""
-"In fact every subprocess command in xonsh is executed through a :class:"
-"`~xonsh.procs.pipelines.CommandPipeline` -- the central object that manages "
-"process execution, piping, stdout/stderr capturing, and return codes."
+"In fact every subprocess command in xonsh is executed through "
+"a :class:`~xonsh.procs.pipelines.CommandPipeline` -- the central object that "
+"manages process execution, piping, stdout/stderr capturing, and return codes."
 msgstr ""
 
 #: ../../../subprocess.rst:54
 msgid ""
-"``!(cmd)`` operator captures stdout and stderr and returns a :class:`~xonsh."
-"procs.pipelines.CommandPipeline`. The object is truthy when the return code "
-"is 0, and iterates over lines of stdout."
+"``!(cmd)`` operator captures stdout and stderr and returns "
+"a :class:`~xonsh.procs.pipelines.CommandPipeline`. The object is truthy when "
+"the return code is 0, and iterates over lines of stdout."
 msgstr ""
 
 #: ../../../subprocess.rst:61
@@ -126,8 +126,8 @@ msgstr ""
 msgid ""
 "Because the terminal is detached, this operator can only be used for **non-"
 "interactive** tools. Running ``!(ls | fzf)`` or ``!(python -c \"input()\")`` "
-"will cause the process to be suspended by the OS. Use ``$(cmd)``, "
-"``$[cmd]``, or ``![cmd]`` for interactive tools."
+"will cause the process to be suspended by the OS. Use ``$(cmd)``, ``$"
+"[cmd]``, or ``![cmd]`` for interactive tools."
 msgstr ""
 
 #: ../../../subprocess.rst:96
@@ -136,10 +136,10 @@ msgstr ""
 
 #: ../../../subprocess.rst:98
 msgid ""
-"Streams stdout and stderr to the screen and returns a :class:`~xonsh.procs."
-"pipelines.HiddenCommandPipeline`. This is the operator used under the hood "
-"when you type a plain command at the interactive prompt (``cmd`` is the same "
-"as ``![cmd]``)."
+"Streams stdout and stderr to the screen and returns "
+"a :class:`~xonsh.procs.pipelines.HiddenCommandPipeline`. This is the "
+"operator used under the hood when you type a plain command at the "
+"interactive prompt (``cmd`` is the same as ``![cmd]``)."
 msgstr ""
 
 #: ../../../subprocess.rst:103
@@ -217,9 +217,9 @@ msgstr ""
 
 #: ../../../subprocess.rst:163
 msgid ""
-"Runs ``cmd``, captures stdout, splits it using :meth:`Lexer.split() <xonsh."
-"parsers.lexer.Lexer.split>` (shell-aware, respects quoting), and injects the "
-"resulting tokens as separate arguments:"
+"Runs ``cmd``, captures stdout, splits it using :meth:`Lexer.split() "
+"<xonsh.parsers.lexer.Lexer.split>` (shell-aware, respects quoting), and "
+"injects the resulting tokens as separate arguments:"
 msgstr ""
 
 #: ../../../subprocess.rst:168

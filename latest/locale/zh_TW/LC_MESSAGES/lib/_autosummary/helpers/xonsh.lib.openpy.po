@@ -122,8 +122,8 @@ msgstr ""
 
 #: ../../../../xonsh/lib/openpy.py:docstring of xonsh.lib.openpy.read_py_url:11
 msgid ""
-"How to handle decoding errors in the file. Options are the same as for bytes."
-"decode(), but here 'replace' is the default."
+"How to handle decoding errors in the file. Options are the same as for "
+"bytes.decode(), but here 'replace' is the default."
 msgstr ""
 
 #: ../../../../xonsh/lib/openpy.py:docstring of

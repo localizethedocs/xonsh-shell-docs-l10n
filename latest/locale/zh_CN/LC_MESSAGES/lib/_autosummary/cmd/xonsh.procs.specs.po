@@ -338,9 +338,10 @@ msgstr ""
 #: xonsh.procs.specs.SubprocSpec.close:4
 msgid ""
 "Required when a spec is created via ``cmds_to_specs`` but never executed (no "
-"``CommandPipeline._close_proc`` is invoked). The wrappers from ``PipeChannel."
-"open_writer/open_reader`` use ``closefd=False``, so leaving them for GC "
-"produces a ``ResourceWarning: unclosed file`` on Python 3.12+. Idempotent."
+"``CommandPipeline._close_proc`` is invoked). The wrappers from "
+"``PipeChannel.open_writer/open_reader`` use ``closefd=False``, so leaving "
+"them for GC produces a ``ResourceWarning: unclosed file`` on Python 3.12+. "
+"Idempotent."
 msgstr ""
 
 #: ../../../../xonsh/procs/specs.py:docstring of
@@ -487,9 +488,9 @@ msgstr ""
 #: xonsh.procs.specs.run_subproc:14
 msgid ""
 "``in_boolop`` is forwarded from the parser; True when this whole pipeline is "
-"a direct operand of a ``&&``/``||`` chain.  Each spec receives ``spec."
-"in_boolop`` so downstream consumers can act on it (e.g. let a non-zero "
-"return short-circuit instead of raising)."
+"a direct operand of a ``&&``/``||`` chain.  Each spec receives "
+"``spec.in_boolop`` so downstream consumers can act on it (e.g. let a non-"
+"zero return short-circuit instead of raising)."
 msgstr ""
 
 #: ../../../../xonsh/procs/specs.py:docstring of xonsh.procs.specs.safe_close:2

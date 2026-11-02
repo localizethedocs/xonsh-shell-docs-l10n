@@ -40,9 +40,8 @@ msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:11
 msgid ""
-"**Exceptions and error handling** — :class:`XonshError`, :class:"
-"`XonshCalledProcessError`, :func:`print_exception`, :func:"
-"`format_std_prepost`."
+"**Exceptions and error handling** "
+"— :class:`XonshError`, :class:`XonshCalledProcessError`, :func:`print_exception`, :func:`format_std_prepost`."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:14
@@ -55,37 +54,39 @@ msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:18
 msgid ""
-"**Path and file utilities** — :func:`expand_path`, :func:"
-"`expanduser_abs_path`, :func:`is_writable_file`, :func:`executables_in`, :"
-"func:`iglobpath`, cross-platform path normalisation helpers."
+"**Path and file utilities** "
+"— :func:`expand_path`, :func:`expanduser_abs_path`, :func:`is_writable_file`, :func:`executables_in`, :func:`iglobpath`, "
+"cross-platform path normalisation helpers."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:22
 msgid ""
-"**String, token and AST helpers** — quoting/escaping, :func:"
-"`subexpr_from_unbalanced`, :func:`find_next_break`, regex constants for "
-"string prefixes and history tuples, the :class:`FlexibleFormatter` for "
-"prompt/format-string rendering."
+"**String, token and AST helpers** — quoting/"
+"escaping, :func:`subexpr_from_unbalanced`, :func:`find_next_break`, regex "
+"constants for string prefixes and history tuples, "
+"the :class:`FlexibleFormatter` for prompt/format-string rendering."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:26
 msgid ""
-"**Subprocess and signal helpers** — :func:`on_main_thread`, :func:"
-"`suggest_commands`, signal-safe context managers, PTY helpers."
+"**Subprocess and signal helpers** "
+"— :func:`on_main_thread`, :func:`suggest_commands`, signal-safe context "
+"managers, PTY helpers."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:28
 msgid ""
 "**Terminal and color handling** — ANSI/ANSI256/RGB color parsing, "
-"``PTK_NEW_OLD_COLOR_MAP``, ``WIN10_COLOR_MAP`` and related lookup tables, :"
-"func:`print_color` / :func:`format_color`."
+"``PTK_NEW_OLD_COLOR_MAP``, ``WIN10_COLOR_MAP`` and related lookup "
+"tables, :func:`print_color` / :func:`format_color`."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:31
 msgid ""
-"**Collections and functional helpers** — :class:`LazyObject`, :class:"
-"`LazyDict`, :class:`DefaultNotGivenType`, ``always_true``, ``always_false``, "
-"``all_permutations``, small functional shims."
+"**Collections and functional helpers** "
+"— :class:`LazyObject`, :class:`LazyDict`, :class:`DefaultNotGivenType`, "
+"``always_true``, ``always_false``, ``all_permutations``, small functional "
+"shims."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:34
@@ -198,8 +199,8 @@ msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.adjust_shlvl:2
 msgid ""
-"Adjusts an $SHLVL integer according to bash's behaviour (variables.c::"
-"adjust_shell_level)."
+"Adjusts an $SHLVL integer according to bash's behaviour "
+"(variables.c::adjust_shell_level)."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.all_permutations:2
@@ -229,9 +230,9 @@ msgid ""
 "Windows will return the argument string unchanged. This is the same thing "
 "Popen does when supplied with an list of arguments. Arguments in a command "
 "line should be separated by spaces; this function does not add these spaces. "
-"This implementation follows the suggestions outlined here: https://blogs."
-"msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-quotes-"
-"command-line-arguments-the-wrong-way/"
+"This implementation follows the suggestions outlined here: https://"
+"blogs.msdn.microsoft.com/twistylittlepassagesallalike/2011/04/23/everyone-"
+"quotes-command-line-arguments-the-wrong-way/"
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.backup_file:2
@@ -387,9 +388,9 @@ msgstr ""
 #: ../../../../xonsh/tools.py:docstring of
 #: xonsh.tools.check_for_partial_string:44
 msgid ""
-"PEP 701 f-strings with nested quotes of the same kind, e.g. "
-"``f\"{ \"hi\" }\"`` (Python 3.12+). The scanner sees this as two separate "
-"strings (``f\"{ \"`` and ``\" }\"``) instead of one f-string. Quotes of a "
+"PEP 701 f-strings with nested quotes of the same kind, e.g. ``f\"{ \"hi\" }"
+"\"`` (Python 3.12+). The scanner sees this as two separate strings "
+"(``f\"{ \"`` and ``\" }\"``) instead of one f-string. Quotes of a "
 "*different* kind nested inside f-string expressions work fine."
 msgstr ""
 
@@ -650,8 +651,9 @@ msgid ""
 "quoted strings opened by earlier physical lines is required — "
 "``splitlines()`` cuts inside ``\"\"\"abc\\ndef\"\"\"`` and ``lines[idx]`` on "
 "its own does not know whether it starts inside an open triple-quoted "
-"string.  We answer that question by re-scanning ``\"\\n\".join(lines[:"
-"idx])`` with the context-aware ``_have_open_triple_quotes``."
+"string.  We answer that question by re-scanning "
+"``\"\\n\".join(lines[:idx])`` with the context-aware "
+"``_have_open_triple_quotes``."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.get_portions:2

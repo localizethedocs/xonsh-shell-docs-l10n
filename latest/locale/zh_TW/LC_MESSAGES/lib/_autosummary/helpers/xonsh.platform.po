@@ -110,8 +110,8 @@ msgstr ""
 #: ../../../../xonsh/platform.py:docstring of
 #: xonsh.platform.windows_expanduser:2
 msgid ""
-"A Windows-specific expanduser() function for xonsh. This is needed since os."
-"path.expanduser() does not check on Windows if the user actually exists. "
+"A Windows-specific expanduser() function for xonsh. This is needed since "
+"os.path.expanduser() does not check on Windows if the user actually exists. "
 "This restricts expanding the '~' if it is not followed by a separator. That "
 "is only '~/' and '~' are expanded."
 msgstr ""
@@ -156,11 +156,11 @@ msgstr ""
 
 #: ../../../../xonsh/platform.py:docstring of xonsh.platform.ON_ANDROID:11
 msgid ""
-"Implies the Android app sandbox: ``/`` is typically unlistable, ``os."
-"tcsetpgrp`` and ``os.link`` are restricted, the filesystem is non-FHS. Code "
-"that needs Android-wide behaviour (e.g. ``skipif`` on tests that walk the FS "
-"root) should key off this flag rather than ``ON_TERMUX`` so non-Termux "
-"Android shells (UserLAnd, …) are covered."
+"Implies the Android app sandbox: ``/`` is typically unlistable, "
+"``os.tcsetpgrp`` and ``os.link`` are restricted, the filesystem is non-FHS. "
+"Code that needs Android-wide behaviour (e.g. ``skipif`` on tests that walk "
+"the FS root) should key off this flag rather than ``ON_TERMUX`` so non-"
+"Termux Android shells (UserLAnd, …) are covered."
 msgstr ""
 
 #: ../../../../xonsh/platform.py:docstring of xonsh.platform.ON_CYGWIN:2

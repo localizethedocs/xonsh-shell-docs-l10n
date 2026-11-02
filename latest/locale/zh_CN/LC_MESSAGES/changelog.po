@@ -59,8 +59,8 @@ msgstr ""
 
 #: ../../../changelog.md:11
 msgid ""
-"Support SSH escape sequences ([#6462](https://github.com/xonsh/xonsh/"
-"issues/6462)) ([c5300ed](https://github.com/xonsh/xonsh/commit/"
+"Support SSH escape sequences ([#6462](https://github.com/xonsh/xonsh/issues/"
+"6462)) ([c5300ed](https://github.com/xonsh/xonsh/commit/"
 "c5300ed1be96aad8cbe94351b11fe8f575122ea9))"
 msgstr ""
 
@@ -81,16 +81,16 @@ msgstr ""
 #: ../../../changelog.md:17
 msgid ""
 "Builtins: trace: Fix lags issue by avoiding settrace for all files. Also "
-"improve output flushing ([#6460](https://github.com/xonsh/xonsh/"
-"issues/6460)) ([da4e2c9](https://github.com/xonsh/xonsh/commit/"
+"improve output flushing ([#6460](https://github.com/xonsh/xonsh/issues/"
+"6460)) ([da4e2c9](https://github.com/xonsh/xonsh/commit/"
 "da4e2c99f759e15615b2d38b26a5b0e5b49dbd7c))"
 msgstr ""
 
 #: ../../../changelog.md:18
 msgid ""
-"**completer:** Source user bash completion scripts ([#6464](https://github."
-"com/xonsh/xonsh/issues/6464)) ([a17c6f6](https://github.com/xonsh/xonsh/"
-"commit/a17c6f6c9d56453a3082d8afe642e89c24299c2e))"
+"**completer:** Source user bash completion scripts ([#6464](https://"
+"github.com/xonsh/xonsh/issues/6464)) ([a17c6f6](https://github.com/xonsh/"
+"xonsh/commit/a17c6f6c9d56453a3082d8afe642e89c24299c2e))"
 msgstr ""
 
 #: ../../../changelog.md:19
@@ -110,8 +110,8 @@ msgstr ""
 #: ../../../changelog.md:21
 msgid ""
 "Proc: Additional polling return code  ([#6457](https://github.com/xonsh/"
-"xonsh/issues/6457)) ([0549cc5](https://github.com/xonsh/xonsh/"
-"commit/0549cc51b00b3d5c495a3e0145f0c7b57e48f472))"
+"xonsh/issues/6457)) ([0549cc5](https://github.com/xonsh/xonsh/commit/"
+"0549cc51b00b3d5c495a3e0145f0c7b57e48f472))"
 msgstr ""
 
 #: ../../../changelog.md:22
@@ -124,8 +124,8 @@ msgstr ""
 #: ../../../changelog.md:23
 msgid ""
 "**tests:** Add pytest-xdist support  ([#6454](https://github.com/xonsh/xonsh/"
-"issues/6454)) ([85f6c55](https://github.com/xonsh/xonsh/"
-"commit/85f6c55590e64a07097b2e91a486273ad25825cd))"
+"issues/6454)) ([85f6c55](https://github.com/xonsh/xonsh/commit/"
+"85f6c55590e64a07097b2e91a486273ad25825cd))"
 msgstr ""
 
 #: ../../../changelog.md:24
@@ -138,8 +138,8 @@ msgstr ""
 #: ../../../changelog.md:25
 msgid ""
 "xcontext: Show both path and resolved path ([#6448](https://github.com/xonsh/"
-"xonsh/issues/6448)) ([8b75ce2](https://github.com/xonsh/xonsh/"
-"commit/8b75ce20c71c72f8e50aa1a55148bf895fa6a243))"
+"xonsh/issues/6448)) ([8b75ce2](https://github.com/xonsh/xonsh/commit/"
+"8b75ce20c71c72f8e50aa1a55148bf895fa6a243))"
 msgstr ""
 
 #: ../../../changelog.md:26
@@ -156,8 +156,8 @@ msgstr ""
 #: ../../../changelog.md:31
 msgid ""
 "Remove docstring shenanigans from events ([#6449](https://github.com/xonsh/"
-"xonsh/issues/6449)) ([8bc46d0](https://github.com/xonsh/xonsh/"
-"commit/8bc46d046d386b7128e1c778ba476f771f859f75))"
+"xonsh/issues/6449)) ([8bc46d0](https://github.com/xonsh/xonsh/commit/"
+"8bc46d046d386b7128e1c778ba476f771f859f75))"
 msgstr ""
 
 #: ../../../changelog.md:33
@@ -167,8 +167,8 @@ msgstr ""
 
 #: ../../../changelog.md:38
 msgid ""
-"Add `[@toml](https://github.com/toml)` command decorator e.g. `data = "
-"$([@toml](https://github.com/toml) cat pyproject.toml)` ([#6436](https://"
+"Add `[@toml](https://github.com/toml)` command decorator e.g. `data = $"
+"([@toml](https://github.com/toml) cat pyproject.toml)` ([#6436](https://"
 "github.com/xonsh/xonsh/issues/6436)) ([97f701d](https://github.com/xonsh/"
 "xonsh/commit/97f701dfe8910585a85c16407b5f19cd719d86fc))"
 msgstr ""
@@ -184,8 +184,8 @@ msgstr ""
 msgid ""
 "Add sentinel `@.env.DELETE_VAR` to removing env variables using env swap/"
 "layouts/specs ([#6427](https://github.com/xonsh/xonsh/issues/6427)) "
-"([7e66501](https://github.com/xonsh/xonsh/"
-"commit/7e66501c89c8bae0c236a8bdaad26b51095f0d7d))"
+"([7e66501](https://github.com/xonsh/xonsh/commit/"
+"7e66501c89c8bae0c236a8bdaad26b51095f0d7d))"
 msgstr ""
 
 #: ../../../changelog.md:45
@@ -198,8 +198,8 @@ msgstr ""
 #: ../../../changelog.md:46
 msgid ""
 "Add repr to DecoratorAlias and ArgParserAlias ([#6443](https://github.com/"
-"xonsh/xonsh/issues/6443)) ([554b675](https://github.com/xonsh/xonsh/"
-"commit/554b675257a0f208eb33ead7192975b90e250448))"
+"xonsh/xonsh/issues/6443)) ([554b675](https://github.com/xonsh/xonsh/commit/"
+"554b675257a0f208eb33ead7192975b90e250448))"
 msgstr ""
 
 #: ../../../changelog.md:47
@@ -212,8 +212,8 @@ msgstr ""
 #: ../../../changelog.md:48
 msgid ""
 "Proc: Fix alias with pipe backgrounding ([#6439](https://github.com/xonsh/"
-"xonsh/issues/6439)) ([208d359](https://github.com/xonsh/xonsh/"
-"commit/208d359a84bffd624942a365672d46a2baaebd18))"
+"xonsh/issues/6439)) ([208d359](https://github.com/xonsh/xonsh/commit/"
+"208d359a84bffd624942a365672d46a2baaebd18))"
 msgstr ""
 
 #: ../../../changelog.md:49
@@ -246,15 +246,15 @@ msgstr ""
 #: ../../../changelog.md:61
 msgid ""
 "Add `--show-output` to source foreign ([#6421](https://github.com/xonsh/"
-"xonsh/issues/6421)) ([23e26b8](https://github.com/xonsh/xonsh/"
-"commit/23e26b8983b877e816b6021f811c97b21c520cea))"
+"xonsh/issues/6421)) ([23e26b8](https://github.com/xonsh/xonsh/commit/"
+"23e26b8983b877e816b6021f811c97b21c520cea))"
 msgstr ""
 
 #: ../../../changelog.md:62
 msgid ""
 "Add `xontrib info <xontrib_name>` ([#6407](https://github.com/xonsh/xonsh/"
-"issues/6407)) ([6fe1e11](https://github.com/xonsh/xonsh/"
-"commit/6fe1e114f1b956bee30bb7d74377a059210eb81d))"
+"issues/6407)) ([6fe1e11](https://github.com/xonsh/xonsh/commit/"
+"6fe1e114f1b956bee30bb7d74377a059210eb81d))"
 msgstr ""
 
 #: ../../../changelog.md:63
@@ -274,8 +274,8 @@ msgstr ""
 #: ../../../changelog.md:65
 msgid ""
 "Parser: Allow comments in multiline commands ([#6417](https://github.com/"
-"xonsh/xonsh/issues/6417)) ([081deeb](https://github.com/xonsh/xonsh/"
-"commit/081deebfbcef640d03cf25568374ada1f2f5cead))"
+"xonsh/xonsh/issues/6417)) ([081deeb](https://github.com/xonsh/xonsh/commit/"
+"081deebfbcef640d03cf25568374ada1f2f5cead))"
 msgstr ""
 
 #: ../../../changelog.md:70
@@ -295,9 +295,9 @@ msgstr ""
 #: ../../../changelog.md:72
 msgid ""
 "Conda on Windows: `conda init xonsh` produces TypeError. Also fixed conda "
-"activate/deactivate aliases when conda is on $PATH ([#6423](https://github."
-"com/xonsh/xonsh/issues/6423)) ([6708eee](https://github.com/xonsh/xonsh/"
-"commit/6708eeedcd77d7bc70eb8795125b8608b4d89195))"
+"activate/deactivate aliases when conda is on $PATH ([#6423](https://"
+"github.com/xonsh/xonsh/issues/6423)) ([6708eee](https://github.com/xonsh/"
+"xonsh/commit/6708eeedcd77d7bc70eb8795125b8608b4d89195))"
 msgstr ""
 
 #: ../../../changelog.md:73
@@ -309,9 +309,9 @@ msgstr ""
 
 #: ../../../changelog.md:74
 msgid ""
-"**Docs:** Highlight xonsh code block in docs/xonshrc ([#6419](https://github."
-"com/xonsh/xonsh/issues/6419)) ([bfb4667](https://github.com/xonsh/xonsh/"
-"commit/bfb46672489599ac58f70847e6dd98b4210aaf0d))"
+"**Docs:** Highlight xonsh code block in docs/xonshrc ([#6419](https://"
+"github.com/xonsh/xonsh/issues/6419)) ([bfb4667](https://github.com/xonsh/"
+"xonsh/commit/bfb46672489599ac58f70847e6dd98b4210aaf0d))"
 msgstr ""
 
 #: ../../../changelog.md:75
@@ -332,16 +332,16 @@ msgstr ""
 #: ../../../changelog.md:77
 msgid ""
 "**Prompt:** Fix exception in case IGNOREEOF + ^D ([#6413](https://github.com/"
-"xonsh/xonsh/issues/6413)) ([03cd547](https://github.com/xonsh/xonsh/"
-"commit/03cd547406ef9b7b06119634c37c3f967f754089))"
+"xonsh/xonsh/issues/6413)) ([03cd547](https://github.com/xonsh/xonsh/commit/"
+"03cd547406ef9b7b06119634c37c3f967f754089))"
 msgstr ""
 
 #: ../../../changelog.md:78
 msgid ""
 "Windows: Aliases: Fix sudo shadowing and significantly improve win_sudo "
 "logic ([#6410](https://github.com/xonsh/xonsh/issues/6410)) ([58b835b]"
-"(https://github.com/xonsh/xonsh/"
-"commit/58b835b265d37ef90641b6955510d5afd73fa2ef))"
+"(https://github.com/xonsh/xonsh/commit/"
+"58b835b265d37ef90641b6955510d5afd73fa2ef))"
 msgstr ""
 
 #: ../../../changelog.md:80
@@ -365,16 +365,16 @@ msgstr ""
 
 #: ../../../changelog.md:91
 msgid ""
-"**completer:** Allow completion of explicit dot-dirs ([#6402](https://github."
-"com/xonsh/xonsh/issues/6402)) ([343f5fd](https://github.com/xonsh/xonsh/"
-"commit/343f5fd9bbea3c143b6bc5ec6e0816d78a1e8b17))"
+"**completer:** Allow completion of explicit dot-dirs ([#6402](https://"
+"github.com/xonsh/xonsh/issues/6402)) ([343f5fd](https://github.com/xonsh/"
+"xonsh/commit/343f5fd9bbea3c143b6bc5ec6e0816d78a1e8b17))"
 msgstr ""
 
 #: ../../../changelog.md:92
 msgid ""
 "**completer:** Fix parent directory completion ([#6404](https://github.com/"
-"xonsh/xonsh/issues/6404)) ([0d5a2fc](https://github.com/xonsh/xonsh/"
-"commit/0d5a2fc7c130314dcfe8f3a873cf6e3346a163d6))"
+"xonsh/xonsh/issues/6404)) ([0d5a2fc](https://github.com/xonsh/xonsh/commit/"
+"0d5a2fc7c130314dcfe8f3a873cf6e3346a163d6))"
 msgstr ""
 
 #: ../../../changelog.md:93
@@ -387,8 +387,8 @@ msgstr ""
 #: ../../../changelog.md:98
 msgid ""
 "**editors:** Add JetBrains plugin ([#6396](https://github.com/xonsh/xonsh/"
-"issues/6396)) ([6d6640b](https://github.com/xonsh/xonsh/"
-"commit/6d6640b689ba305e9ef4da5d0ee9d05d472738d8))"
+"issues/6396)) ([6d6640b](https://github.com/xonsh/xonsh/commit/"
+"6d6640b689ba305e9ef4da5d0ee9d05d472738d8))"
 msgstr ""
 
 #: ../../../changelog.md:100
@@ -405,8 +405,8 @@ msgstr ""
 
 #: ../../../changelog.md:106
 msgid ""
-"**chore:** Added smoke tests ([#6393](https://github.com/xonsh/xonsh/"
-"issues/6393)) ([c5c2a3f](https://github.com/xonsh/xonsh/commit/"
+"**chore:** Added smoke tests ([#6393](https://github.com/xonsh/xonsh/issues/"
+"6393)) ([c5c2a3f](https://github.com/xonsh/xonsh/commit/"
 "c5c2a3fb3b82423318c0690fe2d350bc320c0b47))"
 msgstr ""
 
@@ -427,15 +427,15 @@ msgstr ""
 #: ../../../changelog.md:109
 msgid ""
 "**nix:** fix nix build ([#6388](https://github.com/xonsh/xonsh/issues/6388)) "
-"([5831959](https://github.com/xonsh/xonsh/"
-"commit/5831959d066c5d0411f626d749e00eecc58ce2aa))"
+"([5831959](https://github.com/xonsh/xonsh/commit/"
+"5831959d066c5d0411f626d749e00eecc58ce2aa))"
 msgstr ""
 
 #: ../../../changelog.md:110
 msgid ""
-"**parser:** Fix lost LHS in `cmd && ![…]` chain wrap ([#6392](https://github."
-"com/xonsh/xonsh/issues/6392)) ([4daff85](https://github.com/xonsh/xonsh/"
-"commit/4daff85ebe45c69679639239bb20730a5bc642c3))"
+"**parser:** Fix lost LHS in `cmd && ![…]` chain wrap ([#6392](https://"
+"github.com/xonsh/xonsh/issues/6392)) ([4daff85](https://github.com/xonsh/"
+"xonsh/commit/4daff85ebe45c69679639239bb20730a5bc642c3))"
 msgstr ""
 
 #: ../../../changelog.md:111
@@ -453,14 +453,14 @@ msgstr ""
 #: ../../../changelog.md:118
 msgid ""
 "Add frame to `@.debug.breakpoint()` ([#6376](https://github.com/xonsh/xonsh/"
-"issues/6376)) ([8e17615](https://github.com/xonsh/xonsh/"
-"commit/8e176151831c4552804426c9657f72ca0c82692e))"
+"issues/6376)) ([8e17615](https://github.com/xonsh/xonsh/commit/"
+"8e176151831c4552804426c9657f72ca0c82692e))"
 msgstr ""
 
 #: ../../../changelog.md:119
 msgid ""
-"Better Android/Termux support ([#6382](https://github.com/xonsh/xonsh/"
-"issues/6382)) ([c3aefaf](https://github.com/xonsh/xonsh/commit/"
+"Better Android/Termux support ([#6382](https://github.com/xonsh/xonsh/issues/"
+"6382)) ([c3aefaf](https://github.com/xonsh/xonsh/commit/"
 "c3aefafb351caabbea0874217abeebe47e8afb0a))"
 msgstr ""
 
@@ -473,9 +473,9 @@ msgstr ""
 
 #: ../../../changelog.md:125
 msgid ""
-"Debug: Show debug warning in case of worker thread ([#6378](https://github."
-"com/xonsh/xonsh/issues/6378)) ([58b66d5](https://github.com/xonsh/xonsh/"
-"commit/58b66d5a360eb26684d270adedd9d15fb7f1c288))"
+"Debug: Show debug warning in case of worker thread ([#6378](https://"
+"github.com/xonsh/xonsh/issues/6378)) ([58b66d5](https://github.com/xonsh/"
+"xonsh/commit/58b66d5a360eb26684d270adedd9d15fb7f1c288))"
 msgstr ""
 
 #: ../../../changelog.md:126
@@ -514,8 +514,8 @@ msgstr ""
 #: ../../../changelog.md:140
 msgid ""
 "**completer:** Fix `@.<obj>.<tab>` completion ([#6364](https://github.com/"
-"xonsh/xonsh/issues/6364)) ([23e4652](https://github.com/xonsh/xonsh/"
-"commit/23e46520e2fbd906eefcf366c1400466f49db43d))"
+"xonsh/xonsh/issues/6364)) ([23e4652](https://github.com/xonsh/xonsh/commit/"
+"23e46520e2fbd906eefcf366c1400466f49db43d))"
 msgstr ""
 
 #: ../../../changelog.md:141
@@ -534,9 +534,9 @@ msgstr ""
 
 #: ../../../changelog.md:143
 msgid ""
-"Nix: Now flake uses the package built from source ([#6361](https://github."
-"com/xonsh/xonsh/issues/6361)) ([f6d458c](https://github.com/xonsh/xonsh/"
-"commit/f6d458c641da5d87374e02ff68e56aa25719eb6d))"
+"Nix: Now flake uses the package built from source ([#6361](https://"
+"github.com/xonsh/xonsh/issues/6361)) ([f6d458c](https://github.com/xonsh/"
+"xonsh/commit/f6d458c641da5d87374e02ff68e56aa25719eb6d))"
 msgstr ""
 
 #: ../../../changelog.md:148
@@ -579,8 +579,8 @@ msgstr ""
 #: ../../../changelog.md:159
 msgid ""
 "avoid error when output dir is not `_build` ([#6357](https://github.com/"
-"xonsh/xonsh/issues/6357)) ([6ba2b3e](https://github.com/xonsh/xonsh/"
-"commit/6ba2b3ecba547cce731acb4373a5fdb797c9a284))"
+"xonsh/xonsh/issues/6357)) ([6ba2b3e](https://github.com/xonsh/xonsh/commit/"
+"6ba2b3ecba547cce731acb4373a5fdb797c9a284))"
 msgstr ""
 
 #: ../../../changelog.md:160
@@ -600,8 +600,8 @@ msgstr ""
 #: ../../../changelog.md:162
 msgid ""
 "virtualenv name now has smarter formatting ([#6353](https://github.com/xonsh/"
-"xonsh/issues/6353)) ([014715e](https://github.com/xonsh/xonsh/"
-"commit/014715ecf5adde6a71e341763aad2fb18a4e13c6))"
+"xonsh/issues/6353)) ([014715e](https://github.com/xonsh/xonsh/commit/"
+"014715ecf5adde6a71e341763aad2fb18a4e13c6))"
 msgstr ""
 
 #: ../../../changelog.md:164
@@ -617,8 +617,8 @@ msgstr ""
 #: ../../../changelog.md:169
 msgid ""
 "Error handling now supports logical operations, and raising exceptions for "
-"chains is enabled by default. ([#6267](https://github.com/xonsh/xonsh/"
-"issues/6267))"
+"chains is enabled by default. ([#6267](https://github.com/xonsh/xonsh/issues/"
+"6267))"
 msgstr ""
 
 #: ../../../changelog.md:170
@@ -669,15 +669,15 @@ msgstr ""
 #: ../../../changelog.md:180
 msgid ""
 "`history show all` support ISO date in filter ([#6277](https://github.com/"
-"xonsh/xonsh/issues/6277)) ([7ef37fd](https://github.com/xonsh/xonsh/"
-"commit/7ef37fd6815ba27be6d38bf18e71efebcbd6a3ec))"
+"xonsh/xonsh/issues/6277)) ([7ef37fd](https://github.com/xonsh/xonsh/commit/"
+"7ef37fd6815ba27be6d38bf18e71efebcbd6a3ec))"
 msgstr ""
 
 #: ../../../changelog.md:181
 msgid ""
 "`xcontext` resolves the paths before showing ([#6286](https://github.com/"
-"xonsh/xonsh/issues/6286)) ([41ff6e3](https://github.com/xonsh/xonsh/"
-"commit/41ff6e30ea08b7191df72fe722a7cf748732fb47))"
+"xonsh/xonsh/issues/6286)) ([41ff6e3](https://github.com/xonsh/xonsh/commit/"
+"41ff6e30ea08b7191df72fe722a7cf748732fb47))"
 msgstr ""
 
 #: ../../../changelog.md:182
@@ -698,8 +698,8 @@ msgstr ""
 msgid ""
 "Add `xxonsh` - launches exactly the same ``xonsh`` that was used to start "
 "the current session. ([#6283](https://github.com/xonsh/xonsh/issues/6283)) "
-"([2fa87ef](https://github.com/xonsh/xonsh/"
-"commit/2fa87efaadcd512a3279fcd4ea28427178f1f30e))"
+"([2fa87ef](https://github.com/xonsh/xonsh/commit/"
+"2fa87efaadcd512a3279fcd4ea28427178f1f30e))"
 msgstr ""
 
 #: ../../../changelog.md:185
@@ -712,21 +712,21 @@ msgstr ""
 #: ../../../changelog.md:186
 msgid ""
 "Add full featured git completer ([#6333](https://github.com/xonsh/xonsh/"
-"issues/6333)) ([41ffc82](https://github.com/xonsh/xonsh/"
-"commit/41ffc82e60e44ee212918494f44e7100e887b9bc))"
+"issues/6333)) ([41ffc82](https://github.com/xonsh/xonsh/commit/"
+"41ffc82e60e44ee212918494f44e7100e887b9bc))"
 msgstr ""
 
 #: ../../../changelog.md:187
 msgid ""
-"Added `a>p`, `e>p` to redirect all/stderr to pipe ([#6317](https://github."
-"com/xonsh/xonsh/issues/6317)) ([d63ac38](https://github.com/xonsh/xonsh/"
-"commit/d63ac38c638ae1092e7828b87c4128dde1d85f4a))"
+"Added `a>p`, `e>p` to redirect all/stderr to pipe ([#6317](https://"
+"github.com/xonsh/xonsh/issues/6317)) ([d63ac38](https://github.com/xonsh/"
+"xonsh/commit/d63ac38c638ae1092e7828b87c4128dde1d85f4a))"
 msgstr ""
 
 #: ../../../changelog.md:188
 msgid ""
-"Added `uv` to xcontext ([18f67b7](https://github.com/xonsh/xonsh/"
-"commit/18f67b7545f7912642d87f06043661e151cc8aa2))"
+"Added `uv` to xcontext ([18f67b7](https://github.com/xonsh/xonsh/commit/"
+"18f67b7545f7912642d87f06043661e151cc8aa2))"
 msgstr ""
 
 #: ../../../changelog.md:189
@@ -740,8 +740,8 @@ msgstr ""
 msgid ""
 "Added support for subprocess substitution in the middle of a string e.g. "
 "`echo prefix_$(whoami)_suffix` or `echo path/$([@lines](https://github.com/"
-"lines) echo '1\\n2').suffix` ([#6166](https://github.com/xonsh/xonsh/"
-"issues/6166)) ([a229266](https://github.com/xonsh/xonsh/commit/"
+"lines) echo '1\\n2').suffix` ([#6166](https://github.com/xonsh/xonsh/issues/"
+"6166)) ([a229266](https://github.com/xonsh/xonsh/commit/"
 "a229266172dbf8afe9b9bfb266a0ccc1f8cf5fc0))"
 msgstr ""
 
@@ -774,15 +774,15 @@ msgid ""
 "Command Decorators: Added `[@path](https://github.com/path)`, `[@paths]"
 "(https://github.com/paths)`, `[@error](https://github.com/error)_raise`, "
 "`[@error](https://github.com/error)_ignore` ([#6212](https://github.com/"
-"xonsh/xonsh/issues/6212)) ([4bc6aac](https://github.com/xonsh/xonsh/"
-"commit/4bc6aac4166836b28e153cdfcc833a1ec13cffdf))"
+"xonsh/xonsh/issues/6212)) ([4bc6aac](https://github.com/xonsh/xonsh/commit/"
+"4bc6aac4166836b28e153cdfcc833a1ec13cffdf))"
 msgstr ""
 
 #: ../../../changelog.md:195
 msgid ""
 "CommandPipeline: Add `pipecode` and `pipestatus` ([#6228](https://github.com/"
-"xonsh/xonsh/issues/6228)) ([431393d](https://github.com/xonsh/xonsh/"
-"commit/431393d8ae6bea30c841fdce3e7e542b324adfca))"
+"xonsh/xonsh/issues/6228)) ([431393d](https://github.com/xonsh/xonsh/commit/"
+"431393d8ae6bea30c841fdce3e7e542b324adfca))"
 msgstr ""
 
 #: ../../../changelog.md:196
@@ -820,8 +820,8 @@ msgstr ""
 #: ../../../changelog.md:200
 msgid ""
 "Error handling now supports logical operations, and raising exceptions for "
-"chains is enabled by default. ([#6267](https://github.com/xonsh/xonsh/"
-"issues/6267)) ([cb80ec4](https://github.com/xonsh/xonsh/commit/"
+"chains is enabled by default. ([#6267](https://github.com/xonsh/xonsh/issues/"
+"6267)) ([cb80ec4](https://github.com/xonsh/xonsh/commit/"
 "cb80ec41e7a219489fac6dfa9c0fa65b476b44f0))"
 msgstr ""
 
@@ -834,9 +834,9 @@ msgstr ""
 
 #: ../../../changelog.md:202
 msgid ""
-"Extend completion locations ([#6347](https://github.com/xonsh/xonsh/"
-"issues/6347)) ([8bb8dd6](https://github.com/xonsh/xonsh/"
-"commit/8bb8dd6bd0d860c43a70d9774ce0fdcf4c7b1744))"
+"Extend completion locations ([#6347](https://github.com/xonsh/xonsh/issues/"
+"6347)) ([8bb8dd6](https://github.com/xonsh/xonsh/commit/"
+"8bb8dd6bd0d860c43a70d9774ce0fdcf4c7b1744))"
 msgstr ""
 
 #: ../../../changelog.md:203
@@ -848,17 +848,16 @@ msgstr ""
 #: ../../../changelog.md:204
 msgid ""
 "glob: Added regex glob \"m\" that returns match groups as XonshList instead "
-"of paths e.g. \"for path, file in m'(.*)/(.*)\\.png': print(path, "
-"file)\" ([#6235](https://github.com/xonsh/xonsh/issues/6235)) ([88b9069]"
-"(https://github.com/xonsh/xonsh/"
-"commit/88b9069d4668b3ab3d9634468172ea92a7517dd9))"
+"of paths e.g. \"for path, file in m'(.*)/(.*)\\.png': print(path, file)\" "
+"([#6235](https://github.com/xonsh/xonsh/issues/6235)) ([88b9069](https://"
+"github.com/xonsh/xonsh/commit/88b9069d4668b3ab3d9634468172ea92a7517dd9))"
 msgstr ""
 
 #: ../../../changelog.md:205
 msgid ""
 "**history:** Reimplement sqlite history backend `erasedups` and add json "
-"history backend support ([#6293](https://github.com/xonsh/xonsh/"
-"issues/6293)) ([d9d32c1](https://github.com/xonsh/xonsh/commit/"
+"history backend support ([#6293](https://github.com/xonsh/xonsh/issues/"
+"6293)) ([d9d32c1](https://github.com/xonsh/xonsh/commit/"
 "d9d32c1aa862d8625bf43788fabd93e68c6dea23))"
 msgstr ""
 
@@ -885,17 +884,17 @@ msgstr ""
 
 #: ../../../changelog.md:209
 msgid ""
-"**nix:** Add Nix packaging ([#6288](https://github.com/xonsh/xonsh/"
-"issues/6288)) ([5b71bbf](https://github.com/xonsh/xonsh/"
-"commit/5b71bbfe2a1bc2a8947a6d83c580b045e3632b85))"
+"**nix:** Add Nix packaging ([#6288](https://github.com/xonsh/xonsh/issues/"
+"6288)) ([5b71bbf](https://github.com/xonsh/xonsh/commit/"
+"5b71bbfe2a1bc2a8947a6d83c580b045e3632b85))"
 msgstr ""
 
 #: ../../../changelog.md:210
 msgid ""
 "Now xonsh repository has \"Nightly build\" with AppImage, Flatpak, Nuitka "
-"binary, Windows Installer ([#6329](https://github.com/xonsh/xonsh/"
-"issues/6329)) ([322ce0b](https://github.com/xonsh/xonsh/"
-"commit/322ce0b43aacb72c72c53967caf1f14a0e15ed78))"
+"binary, Windows Installer ([#6329](https://github.com/xonsh/xonsh/issues/"
+"6329)) ([322ce0b](https://github.com/xonsh/xonsh/commit/"
+"322ce0b43aacb72c72c53967caf1f14a0e15ed78))"
 msgstr ""
 
 #: ../../../changelog.md:211
@@ -908,8 +907,8 @@ msgstr ""
 #: ../../../changelog.md:212
 msgid ""
 "**parser:** Add correct parsing of `builtin --builtin` to "
-"`$XONSH_BUILTINS_TO_CMD` ([#6315](https://github.com/xonsh/xonsh/"
-"issues/6315)) ([e048799](https://github.com/xonsh/xonsh/commit/"
+"`$XONSH_BUILTINS_TO_CMD` ([#6315](https://github.com/xonsh/xonsh/issues/"
+"6315)) ([e048799](https://github.com/xonsh/xonsh/commit/"
 "e04879900a94b3d56153a9de30c6b7826b757bc4))"
 msgstr ""
 
@@ -924,8 +923,8 @@ msgstr ""
 #: ../../../changelog.md:214
 msgid ""
 "**parser:** Reduce shadowing by using experimental "
-"`$XONSH_BUILTINS_TO_CMD=True` ([#6227](https://github.com/xonsh/xonsh/"
-"issues/6227)) ([c5494bb](https://github.com/xonsh/xonsh/commit/"
+"`$XONSH_BUILTINS_TO_CMD=True` ([#6227](https://github.com/xonsh/xonsh/issues/"
+"6227)) ([c5494bb](https://github.com/xonsh/xonsh/commit/"
 "c5494bb4fd3078c57b3544b7682530a27cab13ae))"
 msgstr ""
 
@@ -948,8 +947,8 @@ msgstr ""
 msgid ""
 "Prompt: Ability to set cursor position for the next command in "
 "XONSH_PROMPT_NEXT_CMD ([#6244](https://github.com/xonsh/xonsh/issues/6244)) "
-"([43baf0f](https://github.com/xonsh/xonsh/"
-"commit/43baf0f503a7d0e00c380e589eff39b3cee15598))"
+"([43baf0f](https://github.com/xonsh/xonsh/commit/"
+"43baf0f503a7d0e00c380e589eff39b3cee15598))"
 msgstr ""
 
 #: ../../../changelog.md:218
@@ -976,49 +975,49 @@ msgstr ""
 #: ../../../changelog.md:221
 msgid ""
 "Support env in on_command_not_found event ([#6291](https://github.com/xonsh/"
-"xonsh/issues/6291)) ([5d93414](https://github.com/xonsh/xonsh/"
-"commit/5d93414fa6bc539fe2631a4027bd86e310117244))"
+"xonsh/issues/6291)) ([5d93414](https://github.com/xonsh/xonsh/commit/"
+"5d93414fa6bc539fe2631a4027bd86e310117244))"
 msgstr ""
 
 #: ../../../changelog.md:222
 msgid ""
-"Support OSC7 by default ([#6300](https://github.com/xonsh/xonsh/"
-"issues/6300)) ([5c764b0](https://github.com/xonsh/xonsh/"
-"commit/5c764b09ae1b0b38b0ced405b8d43f7e7a98cf84))"
+"Support OSC7 by default ([#6300](https://github.com/xonsh/xonsh/issues/"
+"6300)) ([5c764b0](https://github.com/xonsh/xonsh/commit/"
+"5c764b09ae1b0b38b0ced405b8d43f7e7a98cf84))"
 msgstr ""
 
 #: ../../../changelog.md:223
 msgid ""
 "Windows/WSL Performance with Commands Cache: Improved execution performance "
-"and prompt highlighting ([#6183](https://github.com/xonsh/xonsh/"
-"issues/6183)) ([2835fa6](https://github.com/xonsh/xonsh/"
-"commit/2835fa6e55fcb7757ff60468fcb417e0cead645e))"
+"and prompt highlighting ([#6183](https://github.com/xonsh/xonsh/issues/"
+"6183)) ([2835fa6](https://github.com/xonsh/xonsh/commit/"
+"2835fa6e55fcb7757ff60468fcb417e0cead645e))"
 msgstr ""
 
 #: ../../../changelog.md:224
 msgid ""
 "**Windows:** Added installation script and instructions to the xonsh "
 "installation guide ([#6196](https://github.com/xonsh/xonsh/issues/6196)) "
-"([8449aae](https://github.com/xonsh/xonsh/"
-"commit/8449aaedb715badc635ead96afb4a83d66d5b8ca))"
+"([8449aae](https://github.com/xonsh/xonsh/commit/"
+"8449aaedb715badc635ead96afb4a83d66d5b8ca))"
 msgstr ""
 
 #: ../../../changelog.md:225
 msgid ""
-"xonshcon output ([322df13](https://github.com/xonsh/xonsh/"
-"commit/322df133c3384e4ee15e841f8c0e97b3ba10fb6b))"
+"xonshcon output ([322df13](https://github.com/xonsh/xonsh/commit/"
+"322df133c3384e4ee15e841f8c0e97b3ba10fb6b))"
 msgstr ""
 
 #: ../../../changelog.md:226
 msgid ""
-"xonshcon output ([9d06bc0](https://github.com/xonsh/xonsh/"
-"commit/9d06bc0671f24e5e82786c402b8a26e6aef40f9c))"
+"xonshcon output ([9d06bc0](https://github.com/xonsh/xonsh/commit/"
+"9d06bc0671f24e5e82786c402b8a26e6aef40f9c))"
 msgstr ""
 
 #: ../../../changelog.md:227
 msgid ""
-"xonshcon output ([6da5472](https://github.com/xonsh/xonsh/"
-"commit/6da547297a7efeaaf54b2f239470d1aa8d70d1a2))"
+"xonshcon output ([6da5472](https://github.com/xonsh/xonsh/commit/"
+"6da547297a7efeaaf54b2f239470d1aa8d70d1a2))"
 msgstr ""
 
 #: ../../../changelog.md:228
@@ -1042,16 +1041,16 @@ msgstr ""
 
 #: ../../../changelog.md:235
 msgid ""
-"Add error handling in completer for alias expanding ([#6337](https://github."
-"com/xonsh/xonsh/issues/6337)) ([ef6b61f](https://github.com/xonsh/xonsh/"
-"commit/ef6b61fded083068bfc9fad124dcb5e14c315d7c))"
+"Add error handling in completer for alias expanding ([#6337](https://"
+"github.com/xonsh/xonsh/issues/6337)) ([ef6b61f](https://github.com/xonsh/"
+"xonsh/commit/ef6b61fded083068bfc9fad124dcb5e14c315d7c))"
 msgstr ""
 
 #: ../../../changelog.md:236
 msgid ""
-"Block dark theme plugins ([#6330](https://github.com/xonsh/xonsh/"
-"issues/6330)) ([266b5a2](https://github.com/xonsh/xonsh/"
-"commit/266b5a241279ad571358f312e0264b3566dfafc5))"
+"Block dark theme plugins ([#6330](https://github.com/xonsh/xonsh/issues/"
+"6330)) ([266b5a2](https://github.com/xonsh/xonsh/commit/"
+"266b5a241279ad571358f312e0264b3566dfafc5))"
 msgstr ""
 
 #: ../../../changelog.md:237
@@ -1072,8 +1071,8 @@ msgstr ""
 msgid ""
 "**Callable aliases:** Added exception with workaround in case of using "
 "explicit unthreadable callable alias in pipe ([#6165](https://github.com/"
-"xonsh/xonsh/issues/6165)) ([643d630](https://github.com/xonsh/xonsh/"
-"commit/643d630d0fb1519ab70ab216044b0962cd2d5fc7))"
+"xonsh/xonsh/issues/6165)) ([643d630](https://github.com/xonsh/xonsh/commit/"
+"643d630d0fb1519ab70ab216044b0962cd2d5fc7))"
 msgstr ""
 
 #: ../../../changelog.md:240
@@ -1134,17 +1133,17 @@ msgstr ""
 
 #: ../../../changelog.md:248
 msgid ""
-"Env: Fix empty path in PATH ([#6169](https://github.com/xonsh/xonsh/"
-"issues/6169)) ([ebf58b5](https://github.com/xonsh/xonsh/commit/"
+"Env: Fix empty path in PATH ([#6169](https://github.com/xonsh/xonsh/issues/"
+"6169)) ([ebf58b5](https://github.com/xonsh/xonsh/commit/"
 "ebf58b5cf797300e3a5bffd022b7f670ec7434cf))"
 msgstr ""
 
 #: ../../../changelog.md:249
 msgid ""
 "Env: Fix EnvPath (e.g. PATH) mirroring to `os.environ` in case of update and "
-"`UPDATE_OS_ENVIRON=True` ([#6171](https://github.com/xonsh/xonsh/"
-"issues/6171)) ([112514a](https://github.com/xonsh/xonsh/"
-"commit/112514a09bd508807790f04f8953e287f16d9791))"
+"`UPDATE_OS_ENVIRON=True` ([#6171](https://github.com/xonsh/xonsh/issues/"
+"6171)) ([112514a](https://github.com/xonsh/xonsh/commit/"
+"112514a09bd508807790f04f8953e287f16d9791))"
 msgstr ""
 
 #: ../../../changelog.md:250
@@ -1158,8 +1157,8 @@ msgstr ""
 msgid ""
 "**events:** Do not strip leading whitespace from command before going thru "
 "pre-cmd events ([#6294](https://github.com/xonsh/xonsh/issues/6294)) "
-"([03f60fb](https://github.com/xonsh/xonsh/"
-"commit/03f60fb72a7c852491ae19ff498ed1ad9d697173))"
+"([03f60fb](https://github.com/xonsh/xonsh/commit/"
+"03f60fb72a7c852491ae19ff498ed1ad9d697173))"
 msgstr ""
 
 #: ../../../changelog.md:252
@@ -1172,23 +1171,23 @@ msgstr ""
 
 #: ../../../changelog.md:253
 msgid ""
-"Fix code issues - Pack 3 ([#6254](https://github.com/xonsh/xonsh/"
-"issues/6254)) ([6e0b25d](https://github.com/xonsh/xonsh/"
-"commit/6e0b25d5bb1c8388722c17c963176de45f1b6989))"
+"Fix code issues - Pack 3 ([#6254](https://github.com/xonsh/xonsh/issues/"
+"6254)) ([6e0b25d](https://github.com/xonsh/xonsh/commit/"
+"6e0b25d5bb1c8388722c17c963176de45f1b6989))"
 msgstr ""
 
 #: ../../../changelog.md:254
 msgid ""
-"Fix code issues - Pack 4 ([#6257](https://github.com/xonsh/xonsh/"
-"issues/6257)) ([81368c8](https://github.com/xonsh/xonsh/"
-"commit/81368c8f073edbae65fd7081d26ee2c9311c448c))"
+"Fix code issues - Pack 4 ([#6257](https://github.com/xonsh/xonsh/issues/"
+"6257)) ([81368c8](https://github.com/xonsh/xonsh/commit/"
+"81368c8f073edbae65fd7081d26ee2c9311c448c))"
 msgstr ""
 
 #: ../../../changelog.md:255
 msgid ""
-"Fix code issues - Pack 5 ([#6276](https://github.com/xonsh/xonsh/"
-"issues/6276)) ([3c8db38](https://github.com/xonsh/xonsh/"
-"commit/3c8db3856b3545e3e4d18ee0976ae13a73e59001))"
+"Fix code issues - Pack 5 ([#6276](https://github.com/xonsh/xonsh/issues/"
+"6276)) ([3c8db38](https://github.com/xonsh/xonsh/commit/"
+"3c8db3856b3545e3e4d18ee0976ae13a73e59001))"
 msgstr ""
 
 #: ../../../changelog.md:256
@@ -1201,8 +1200,8 @@ msgstr ""
 #: ../../../changelog.md:257
 msgid ""
 "Fixed completion of file names with newlines ([#6335](https://github.com/"
-"xonsh/xonsh/issues/6335)) ([460b00b](https://github.com/xonsh/xonsh/"
-"commit/460b00bb7beff2059bb7da7e3c59cfcbbcff1475))"
+"xonsh/xonsh/issues/6335)) ([460b00b](https://github.com/xonsh/xonsh/commit/"
+"460b00bb7beff2059bb7da7e3c59cfcbbcff1475))"
 msgstr ""
 
 #: ../../../changelog.md:258
@@ -1250,9 +1249,9 @@ msgstr ""
 
 #: ../../../changelog.md:264
 msgid ""
-"glob: Remove legacy glob logic that produced issue ([#6231](https://github."
-"com/xonsh/xonsh/issues/6231)) ([6088df2](https://github.com/xonsh/xonsh/"
-"commit/6088df25087ffa37e5bb5ad6884bde7eb0e8de11))"
+"glob: Remove legacy glob logic that produced issue ([#6231](https://"
+"github.com/xonsh/xonsh/issues/6231)) ([6088df2](https://github.com/xonsh/"
+"xonsh/commit/6088df25087ffa37e5bb5ad6884bde7eb0e8de11))"
 msgstr ""
 
 #: ../../../changelog.md:265
@@ -1265,33 +1264,33 @@ msgstr ""
 #: ../../../changelog.md:266
 msgid ""
 "history-json: Switch json history backend to atomic file replacing and "
-"remove race condition on flushing history at exit ([#6249](https://github."
-"com/xonsh/xonsh/issues/6249)) ([481d732](https://github.com/xonsh/xonsh/"
-"commit/481d7327dfbc07b64cf14e3209e6649279d00dda))"
+"remove race condition on flushing history at exit ([#6249](https://"
+"github.com/xonsh/xonsh/issues/6249)) ([481d732](https://github.com/xonsh/"
+"xonsh/commit/481d7327dfbc07b64cf14e3209e6649279d00dda))"
 msgstr ""
 
 #: ../../../changelog.md:267
 msgid ""
 "**history:** Fix exception when XONSH_HISTORY_FILE has json file but we try "
 "to load sqlite ([#6287](https://github.com/xonsh/xonsh/issues/6287)) "
-"([6ebadf3](https://github.com/xonsh/xonsh/"
-"commit/6ebadf328f5628079c9fc5e372f41620dd1de7a7))"
+"([6ebadf3](https://github.com/xonsh/xonsh/commit/"
+"6ebadf328f5628079c9fc5e372f41620dd1de7a7))"
 msgstr ""
 
 #: ../../../changelog.md:268
 msgid ""
 "**history:** The subproc cmd from prompt field is affecting the history rtn "
-"value of the python command  ([#6304](https://github.com/xonsh/xonsh/"
-"issues/6304)) ([95d2d7e](https://github.com/xonsh/xonsh/"
-"commit/95d2d7ebcc7e4d0df847838b0999fe45b7990237))"
+"value of the python command  ([#6304](https://github.com/xonsh/xonsh/issues/"
+"6304)) ([95d2d7e](https://github.com/xonsh/xonsh/commit/"
+"95d2d7ebcc7e4d0df847838b0999fe45b7990237))"
 msgstr ""
 
 #: ../../../changelog.md:269
 msgid ""
 "**import:** Fixed CPython sys_path_init requrement to have current directory "
 "in sys path for executed script ([#6219](https://github.com/xonsh/xonsh/"
-"issues/6219)) ([0d3892e](https://github.com/xonsh/xonsh/"
-"commit/0d3892e0173a156b6c24dc01b7f44cbee20f82ff))"
+"issues/6219)) ([0d3892e](https://github.com/xonsh/xonsh/commit/"
+"0d3892e0173a156b6c24dc01b7f44cbee20f82ff))"
 msgstr ""
 
 #: ../../../changelog.md:270
@@ -1306,8 +1305,8 @@ msgid ""
 "**Mac:** Fix `xonsh.platforms.sysctlbyname` returns bytes instead of string "
 "when return_str=True ([#6190](https://github.com/xonsh/xonsh/issues/6190)) "
 "([e5a31f7](https://github.com/xonsh/xonsh/commit/"
-"e5a31f7eaa09fbf9116a006ff0b5a82193163436)), closes [#6189](https://github."
-"com/xonsh/xonsh/issues/6189)"
+"e5a31f7eaa09fbf9116a006ff0b5a82193163436)), closes [#6189](https://"
+"github.com/xonsh/xonsh/issues/6189)"
 msgstr ""
 
 #: ../../../changelog.md:272
@@ -1327,16 +1326,16 @@ msgstr ""
 #: ../../../changelog.md:274
 msgid ""
 "**parser:** DeprecationWarning Python 3.14 ([#6279](https://github.com/xonsh/"
-"xonsh/issues/6279)) ([18f7a6b](https://github.com/xonsh/xonsh/"
-"commit/18f7a6bf3b3a8d68d44c1a8142b60d22b6a97d78))"
+"xonsh/issues/6279)) ([18f7a6b](https://github.com/xonsh/xonsh/commit/"
+"18f7a6bf3b3a8d68d44c1a8142b60d22b6a97d78))"
 msgstr ""
 
 #: ../../../changelog.md:275
 msgid ""
 "**parser:** Fix check_for_partial_string: Unmatched/unclosed quotes inside # "
-"comments prevent the prompt from being submitted. ([#6264](https://github."
-"com/xonsh/xonsh/issues/6264)) ([3aaf36d](https://github.com/xonsh/xonsh/"
-"commit/3aaf36d00db1b5df380a2e76696d243fc5b91a87))"
+"comments prevent the prompt from being submitted. ([#6264](https://"
+"github.com/xonsh/xonsh/issues/6264)) ([3aaf36d](https://github.com/xonsh/"
+"xonsh/commit/3aaf36d00db1b5df380a2e76696d243fc5b91a87))"
 msgstr ""
 
 #: ../../../changelog.md:276
@@ -1349,15 +1348,15 @@ msgstr ""
 #: ../../../changelog.md:277
 msgid ""
 "**Parser:** Fix loop on `\\ ` sequence ([#6194](https://github.com/xonsh/"
-"xonsh/issues/6194)) ([1658c53](https://github.com/xonsh/xonsh/"
-"commit/1658c537b34b90287f684ef9dd99bf978585ecda))"
+"xonsh/issues/6194)) ([1658c53](https://github.com/xonsh/xonsh/commit/"
+"1658c537b34b90287f684ef9dd99bf978585ecda))"
 msgstr ""
 
 #: ../../../changelog.md:278
 msgid ""
-"**parser:** Fix parsing macro block with comments ([#6216](https://github."
-"com/xonsh/xonsh/issues/6216)) ([01a8340](https://github.com/xonsh/xonsh/"
-"commit/01a8340fa6dc992ef259c8c06d6af13d1ca4707c))"
+"**parser:** Fix parsing macro block with comments ([#6216](https://"
+"github.com/xonsh/xonsh/issues/6216)) ([01a8340](https://github.com/xonsh/"
+"xonsh/commit/01a8340fa6dc992ef259c8c06d6af13d1ca4707c))"
 msgstr ""
 
 #: ../../../changelog.md:279
@@ -1376,16 +1375,16 @@ msgstr ""
 
 #: ../../../changelog.md:281
 msgid ""
-"**parser:** Fix Syntax Error: `foo('spam'='eggs')` ([#6328](https://github."
-"com/xonsh/xonsh/issues/6328)) ([3504e7c](https://github.com/xonsh/xonsh/"
-"commit/3504e7c84d3b555e8f5e3f5cf8257d6e844cb24d))"
+"**parser:** Fix Syntax Error: `foo('spam'='eggs')` ([#6328](https://"
+"github.com/xonsh/xonsh/issues/6328)) ([3504e7c](https://github.com/xonsh/"
+"xonsh/commit/3504e7c84d3b555e8f5e3f5cf8257d6e844cb24d))"
 msgstr ""
 
 #: ../../../changelog.md:282
 msgid ""
 "**parser:** Fixed exception processing in parser ([#6327](https://github.com/"
-"xonsh/xonsh/issues/6327)) ([9c51b17](https://github.com/xonsh/xonsh/"
-"commit/9c51b17d6dd4af70880a9971c34aeffb671edbb2))"
+"xonsh/xonsh/issues/6327)) ([9c51b17](https://github.com/xonsh/xonsh/commit/"
+"9c51b17d6dd4af70880a9971c34aeffb671edbb2))"
 msgstr ""
 
 #: ../../../changelog.md:283
@@ -1399,9 +1398,9 @@ msgstr ""
 #: ../../../changelog.md:284
 msgid ""
 "**parser:** FIxed ValueError error in typed inline env variables e.g. "
-"`$QWE=False xonsh --no-rc` ([#6221](https://github.com/xonsh/xonsh/"
-"issues/6221)) ([2330498](https://github.com/xonsh/xonsh/"
-"commit/23304980c6fcf8a4a50926bb1e08cca5456074d6))"
+"`$QWE=False xonsh --no-rc` ([#6221](https://github.com/xonsh/xonsh/issues/"
+"6221)) ([2330498](https://github.com/xonsh/xonsh/commit/"
+"23304980c6fcf8a4a50926bb1e08cca5456074d6))"
 msgstr ""
 
 #: ../../../changelog.md:285
@@ -1442,8 +1441,8 @@ msgstr ""
 msgid ""
 "**Performance:** Reduce expensive operations around getting VCS branch on "
 "every prompt ([#6184](https://github.com/xonsh/xonsh/issues/6184)) ([9efb585]"
-"(https://github.com/xonsh/xonsh/"
-"commit/9efb585f591e2402c5f3f3374567a430eb907123))"
+"(https://github.com/xonsh/xonsh/commit/"
+"9efb585f591e2402c5f3f3374567a430eb907123))"
 msgstr ""
 
 #: ../../../changelog.md:291
@@ -1472,40 +1471,40 @@ msgstr ""
 #: ../../../changelog.md:294
 msgid ""
 "Prompt-toolkit: Fixed async prompt race condition when "
-"`$ENABLE_ASYNC_PROMPT=True` ([#6250](https://github.com/xonsh/xonsh/"
-"issues/6250)) ([760f462](https://github.com/xonsh/xonsh/"
-"commit/760f46269e86b20d86e6c01cac329f597a78b646))"
+"`$ENABLE_ASYNC_PROMPT=True` ([#6250](https://github.com/xonsh/xonsh/issues/"
+"6250)) ([760f462](https://github.com/xonsh/xonsh/commit/"
+"760f46269e86b20d86e6c01cac329f597a78b646))"
 msgstr ""
 
 #: ../../../changelog.md:295
 msgid ""
 "**prompt-toolkit:** Restore terminal state after using captured subprocess "
 "in key bindings ([#6182](https://github.com/xonsh/xonsh/issues/6182)) "
-"([6ecc8fd](https://github.com/xonsh/xonsh/"
-"commit/6ecc8fdc27583c0d9e3fbb8a205a1ee66ca04387))"
+"([6ecc8fd](https://github.com/xonsh/xonsh/commit/"
+"6ecc8fdc27583c0d9e3fbb8a205a1ee66ca04387))"
 msgstr ""
 
 #: ../../../changelog.md:296
 msgid ""
 "**prompt-toolkit:** Support retry on EINTR (errno 4) in ptk. Fixed "
 "exceptions when xonsh run as a child process. ([#6192](https://github.com/"
-"xonsh/xonsh/issues/6192)) ([2ffd785](https://github.com/xonsh/xonsh/"
-"commit/2ffd78535a8f98e87673fe45c058a54c848f4eca))"
+"xonsh/xonsh/issues/6192)) ([2ffd785](https://github.com/xonsh/xonsh/commit/"
+"2ffd78535a8f98e87673fe45c058a54c848f4eca))"
 msgstr ""
 
 #: ../../../changelog.md:297
 msgid ""
 "Prompt: Fixed: register_custom_style does not inherit properly from default "
 "style ([#6303](https://github.com/xonsh/xonsh/issues/6303)) ([25dba26]"
-"(https://github.com/xonsh/xonsh/"
-"commit/25dba2619e3ea8464de457c659c06c49e069b69f))"
+"(https://github.com/xonsh/xonsh/commit/"
+"25dba2619e3ea8464de457c659c06c49e069b69f))"
 msgstr ""
 
 #: ../../../changelog.md:298
 msgid ""
-"Python 3.15: Fix ResourceWarning in procs and specs ([#6324](https://github."
-"com/xonsh/xonsh/issues/6324)) ([20dabcb](https://github.com/xonsh/xonsh/"
-"commit/20dabcb53c6b71be93c23e657136242be1b77d9f))"
+"Python 3.15: Fix ResourceWarning in procs and specs ([#6324](https://"
+"github.com/xonsh/xonsh/issues/6324)) ([20dabcb](https://github.com/xonsh/"
+"xonsh/commit/20dabcb53c6b71be93c23e657136242be1b77d9f))"
 msgstr ""
 
 #: ../../../changelog.md:299
@@ -1526,8 +1525,8 @@ msgstr ""
 msgid ""
 "**Readline:** Fix the case when output disappears in case of no new line "
 "character ([#6177](https://github.com/xonsh/xonsh/issues/6177)) ([78ad7de]"
-"(https://github.com/xonsh/xonsh/"
-"commit/78ad7de787fc1aa3a8d0b752003ae4abb8108b81))"
+"(https://github.com/xonsh/xonsh/commit/"
+"78ad7de787fc1aa3a8d0b752003ae4abb8108b81))"
 msgstr ""
 
 #: ../../../changelog.md:302
@@ -1540,8 +1539,8 @@ msgstr ""
 #: ../../../changelog.md:303
 msgid ""
 "**Refactor:** Fixed small issues in code ([#6191](https://github.com/xonsh/"
-"xonsh/issues/6191)) ([463c387](https://github.com/xonsh/xonsh/"
-"commit/463c387b1fa353b1d2c47c15d68fe39cfefd946f))"
+"xonsh/issues/6191)) ([463c387](https://github.com/xonsh/xonsh/commit/"
+"463c387b1fa353b1d2c47c15d68fe39cfefd946f))"
 msgstr ""
 
 #: ../../../changelog.md:304
@@ -1554,17 +1553,17 @@ msgstr ""
 #: ../../../changelog.md:305
 msgid ""
 "Rename XONSH_TRACE_SUBPROC to XONSH_SUBPROC_TRACE and remove "
-"XONSH_TRACE_SUBPROC_FUNC ([#6313](https://github.com/xonsh/xonsh/"
-"issues/6313)) ([5de3c0d](https://github.com/xonsh/xonsh/"
-"commit/5de3c0d617b2f0e43d28db4d9e294bcd4d30cfa9))"
+"XONSH_TRACE_SUBPROC_FUNC ([#6313](https://github.com/xonsh/xonsh/issues/"
+"6313)) ([5de3c0d](https://github.com/xonsh/xonsh/commit/"
+"5de3c0d617b2f0e43d28db4d9e294bcd4d30cfa9))"
 msgstr ""
 
 #: ../../../changelog.md:306
 msgid ""
 "Reopen stdin from /dev/tty so that child processes (e.g. fzf, vim) can "
-"interact with the terminal ([#6274](https://github.com/xonsh/xonsh/"
-"issues/6274)) ([178f1d2](https://github.com/xonsh/xonsh/"
-"commit/178f1d29109d373c4447f79af77d19b150d5725a))"
+"interact with the terminal ([#6274](https://github.com/xonsh/xonsh/issues/"
+"6274)) ([178f1d2](https://github.com/xonsh/xonsh/commit/"
+"178f1d29109d373c4447f79af77d19b150d5725a))"
 msgstr ""
 
 #: ../../../changelog.md:307
@@ -1583,24 +1582,24 @@ msgstr ""
 
 #: ../../../changelog.md:309
 msgid ""
-"Switch OSC7 to sys.__stdout__ ([#6307](https://github.com/xonsh/xonsh/"
-"issues/6307)) ([4cf3169](https://github.com/xonsh/xonsh/"
-"commit/4cf3169809af0230403f505e5ae3bf16c24d38a8))"
+"Switch OSC7 to sys.__stdout__ ([#6307](https://github.com/xonsh/xonsh/issues/"
+"6307)) ([4cf3169](https://github.com/xonsh/xonsh/commit/"
+"4cf3169809af0230403f505e5ae3bf16c24d38a8))"
 msgstr ""
 
 #: ../../../changelog.md:310
 msgid ""
-"Switch path to substring and move git to xompleters ([#6334](https://github."
-"com/xonsh/xonsh/issues/6334)) ([8e8cb32](https://github.com/xonsh/xonsh/"
-"commit/8e8cb32d2a924a18e441b759ccd57db920b87308))"
+"Switch path to substring and move git to xompleters ([#6334](https://"
+"github.com/xonsh/xonsh/issues/6334)) ([8e8cb32](https://github.com/xonsh/"
+"xonsh/commit/8e8cb32d2a924a18e441b759ccd57db920b87308))"
 msgstr ""
 
 #: ../../../changelog.md:311
 msgid ""
 "**Tests:** Added strict check of using `python -m pytest` instead of "
 "`pytest`. ([#6173](https://github.com/xonsh/xonsh/issues/6173)) ([6ad6ae9]"
-"(https://github.com/xonsh/xonsh/"
-"commit/6ad6ae92448c9dd9c6338a8397077f8366eaf932))"
+"(https://github.com/xonsh/xonsh/commit/"
+"6ad6ae92448c9dd9c6338a8397077f8366eaf932))"
 msgstr ""
 
 #: ../../../changelog.md:312
@@ -1613,8 +1612,8 @@ msgstr ""
 #: ../../../changelog.md:313
 msgid ""
 "The `cd` command should not perform expanduser ([#6338](https://github.com/"
-"xonsh/xonsh/issues/6338)) ([071f7e1](https://github.com/xonsh/xonsh/"
-"commit/071f7e18577997d37920734756415812f00cba95))"
+"xonsh/xonsh/issues/6338)) ([071f7e1](https://github.com/xonsh/xonsh/commit/"
+"071f7e18577997d37920734756415812f00cba95))"
 msgstr ""
 
 #: ../../../changelog.md:314
@@ -1627,22 +1626,22 @@ msgstr ""
 #: ../../../changelog.md:315
 msgid ""
 "Unify $VAR? and $VAR?? ([#6345](https://github.com/xonsh/xonsh/issues/6345)) "
-"([5ce3bb6](https://github.com/xonsh/xonsh/"
-"commit/5ce3bb6a8d3d4d5d116391fd673896464fffbcb3))"
+"([5ce3bb6](https://github.com/xonsh/xonsh/commit/"
+"5ce3bb6a8d3d4d5d116391fd673896464fffbcb3))"
 msgstr ""
 
 #: ../../../changelog.md:316
 msgid ""
 "Use getuid to detect root instead of user ([#6296](https://github.com/xonsh/"
-"xonsh/issues/6296)) ([8bc737c](https://github.com/xonsh/xonsh/"
-"commit/8bc737c8d4045ca0203f2314a7e084f88d67d89d))"
+"xonsh/issues/6296)) ([8bc737c](https://github.com/xonsh/xonsh/commit/"
+"8bc737c8d4045ca0203f2314a7e084f88d67d89d))"
 msgstr ""
 
 #: ../../../changelog.md:317
 msgid ""
 "Windows Completer: Fixed raw paths completion ([#6179](https://github.com/"
-"xonsh/xonsh/issues/6179)) ([3eb150c](https://github.com/xonsh/xonsh/"
-"commit/3eb150c71e5682b89e0d4453c127bb28542aa0ae))"
+"xonsh/xonsh/issues/6179)) ([3eb150c](https://github.com/xonsh/xonsh/commit/"
+"3eb150c71e5682b89e0d4453c127bb28542aa0ae))"
 msgstr ""
 
 #: ../../../changelog.md:318
@@ -1661,8 +1660,8 @@ msgstr ""
 
 #: ../../../changelog.md:320
 msgid ""
-"Windows: fix unstable tests ([#6163](https://github.com/xonsh/xonsh/"
-"issues/6163)) ([d3b22b9](https://github.com/xonsh/xonsh/commit/"
+"Windows: fix unstable tests ([#6163](https://github.com/xonsh/xonsh/issues/"
+"6163)) ([d3b22b9](https://github.com/xonsh/xonsh/commit/"
 "d3b22b91f53709089b747f3aa0c833651fb0bd45))"
 msgstr ""
 
@@ -1688,27 +1687,27 @@ msgstr ""
 
 #: ../../../changelog.md:328
 msgid ""
-"Add Ctrl+c ([8be8919](https://github.com/xonsh/xonsh/"
-"commit/8be891971a2359754575a0154eb6f63d33fbe922))"
+"Add Ctrl+c ([8be8919](https://github.com/xonsh/xonsh/commit/"
+"8be891971a2359754575a0154eb6f63d33fbe922))"
 msgstr ""
 
 #: ../../../changelog.md:329
 msgid ""
-"Added dark mode on landing ([#6261](https://github.com/xonsh/xonsh/"
-"issues/6261)) ([360883c](https://github.com/xonsh/xonsh/"
-"commit/360883cde9944072747814a33d2197645a8ad9ca))"
+"Added dark mode on landing ([#6261](https://github.com/xonsh/xonsh/issues/"
+"6261)) ([360883c](https://github.com/xonsh/xonsh/commit/"
+"360883cde9944072747814a33d2197645a8ad9ca))"
 msgstr ""
 
 #: ../../../changelog.md:330
 msgid ""
-"contributor ([960a0ac](https://github.com/xonsh/xonsh/"
-"commit/960a0ac1e4fda1f975cbe5b1a109ac0abfdcf9c1))"
+"contributor ([960a0ac](https://github.com/xonsh/xonsh/commit/"
+"960a0ac1e4fda1f975cbe5b1a109ac0abfdcf9c1))"
 msgstr ""
 
 #: ../../../changelog.md:331
 msgid ""
-"description update ([0b5f82c](https://github.com/xonsh/xonsh/"
-"commit/0b5f82cb1e9a5ab467e5aea47a69eabdeb1cacd0))"
+"description update ([0b5f82c](https://github.com/xonsh/xonsh/commit/"
+"0b5f82cb1e9a5ab467e5aea47a69eabdeb1cacd0))"
 msgstr ""
 
 #: ../../../changelog.md:332
@@ -1721,8 +1720,8 @@ msgstr ""
 msgid ""
 "Fixed wording issues on Environment Variables page. Added example of how to "
 "bing shortcut to copy current command. ([#6243](https://github.com/xonsh/"
-"xonsh/issues/6243)) ([9c39b18](https://github.com/xonsh/xonsh/"
-"commit/9c39b18fc7921801cb59918d1fb0741e746c6520))"
+"xonsh/issues/6243)) ([9c39b18](https://github.com/xonsh/xonsh/commit/"
+"9c39b18fc7921801cb59918d1fb0741e746c6520))"
 msgstr ""
 
 #: ../../../changelog.md:334
@@ -1740,15 +1739,15 @@ msgstr ""
 
 #: ../../../changelog.md:336
 msgid ""
-"Platforms: Windows tips ([#6343](https://github.com/xonsh/xonsh/"
-"issues/6343)) ([793d2ad](https://github.com/xonsh/xonsh/"
-"commit/793d2ad4a67aeda0fd780bbd5ce1b0e15ca705d6))"
+"Platforms: Windows tips ([#6343](https://github.com/xonsh/xonsh/issues/"
+"6343)) ([793d2ad](https://github.com/xonsh/xonsh/commit/"
+"793d2ad4a67aeda0fd780bbd5ce1b0e15ca705d6))"
 msgstr ""
 
 #: ../../../changelog.md:337
 msgid ""
-"sphinx redirect old pages ([7639b40](https://github.com/xonsh/xonsh/"
-"commit/7639b40ffe30b45026c648f0876c95bf506df1b6))"
+"sphinx redirect old pages ([7639b40](https://github.com/xonsh/xonsh/commit/"
+"7639b40ffe30b45026c648f0876c95bf506df1b6))"
 msgstr ""
 
 #: ../../../changelog.md:338
@@ -1765,14 +1764,14 @@ msgstr ""
 
 #: ../../../changelog.md:340
 msgid ""
-"windows update instructions ([7b59ac3](https://github.com/xonsh/xonsh/"
-"commit/7b59ac3839c5c0e30bbbb826b62f2509c728614b))"
+"windows update instructions ([7b59ac3](https://github.com/xonsh/xonsh/commit/"
+"7b59ac3839c5c0e30bbbb826b62f2509c728614b))"
 msgstr ""
 
 #: ../../../changelog.md:341
 msgid ""
-"windows update warning ([87f7161](https://github.com/xonsh/xonsh/"
-"commit/87f71613227a13ed8666ce57fd93f4b7cd08fefa))"
+"windows update warning ([87f7161](https://github.com/xonsh/xonsh/commit/"
+"87f71613227a13ed8666ce57fd93f4b7cd08fefa))"
 msgstr ""
 
 #: ../../../changelog.md:344
@@ -1789,22 +1788,22 @@ msgstr ""
 #: ../../../changelog.md:347
 msgid ""
 "Revert unreleased PATHEXT implicit behavior ([#6208](https://github.com/"
-"xonsh/xonsh/issues/6208)) ([57f0b31](https://github.com/xonsh/xonsh/"
-"commit/57f0b318d838c281601dfb225bd3e98e2849d485))"
+"xonsh/xonsh/issues/6208)) ([57f0b31](https://github.com/xonsh/xonsh/commit/"
+"57f0b318d838c281601dfb225bd3e98e2849d485))"
 msgstr ""
 
 #: ../../../changelog.md:348
 msgid ""
 "Tests: Split integration tests into fast integration tests and slow stress "
 "tests ([#6224](https://github.com/xonsh/xonsh/issues/6224)) ([2d17f5d]"
-"(https://github.com/xonsh/xonsh/"
-"commit/2d17f5dd47b71920aa8b11502b301600226742a6))"
+"(https://github.com/xonsh/xonsh/commit/"
+"2d17f5dd47b71920aa8b11502b301600226742a6))"
 msgstr ""
 
 #: ../../../changelog.md:353
 msgid ""
-"Add aliases.get_alias_name ([207a78e](https://github.com/xonsh/xonsh/"
-"commit/207a78e57c7632e47a484c82dda2d4cca1aed7c1))"
+"Add aliases.get_alias_name ([207a78e](https://github.com/xonsh/xonsh/commit/"
+"207a78e57c7632e47a484c82dda2d4cca1aed7c1))"
 msgstr ""
 
 #: ../../../changelog.md:355
@@ -1840,8 +1839,8 @@ msgstr ""
 
 #: ../../../changelog.md:366
 msgid ""
-"Fix test_indir stability ([#6138](https://github.com/xonsh/xonsh/"
-"issues/6138)) ([cb91146](https://github.com/xonsh/xonsh/commit/"
+"Fix test_indir stability ([#6138](https://github.com/xonsh/xonsh/issues/"
+"6138)) ([cb91146](https://github.com/xonsh/xonsh/commit/"
 "cb91146d6fea2ecc5731bd6e5631807988004c98))"
 msgstr ""
 
@@ -1856,8 +1855,8 @@ msgstr ""
 #: ../../../changelog.md:368
 msgid ""
 "Use `python -m xonsh` to run integration tests ([#6140](https://github.com/"
-"xonsh/xonsh/issues/6140)) ([1490d0e](https://github.com/xonsh/xonsh/"
-"commit/1490d0e0a00bef78dc2867fa66f44f0696266cff))"
+"xonsh/xonsh/issues/6140)) ([1490d0e](https://github.com/xonsh/xonsh/commit/"
+"1490d0e0a00bef78dc2867fa66f44f0696266cff))"
 msgstr ""
 
 #: ../../../changelog.md:369
@@ -1881,8 +1880,8 @@ msgstr ""
 
 #: ../../../changelog.md:377
 msgid ""
-"Fix tests that fail on NixOS ([#6132](https://github.com/xonsh/xonsh/"
-"issues/6132)) ([dda0276](https://github.com/xonsh/xonsh/commit/"
+"Fix tests that fail on NixOS ([#6132](https://github.com/xonsh/xonsh/issues/"
+"6132)) ([dda0276](https://github.com/xonsh/xonsh/commit/"
 "dda0276e99b76c59a74f55ba09f2e0c46edae0ef))"
 msgstr ""
 
@@ -1890,8 +1889,8 @@ msgstr ""
 msgid ""
 "**test_environ:** Fix test_environ failing in case of UPDATE_OS_ENVIRON=True "
 "globally ([#6120](https://github.com/xonsh/xonsh/issues/6120)) ([99afeb4]"
-"(https://github.com/xonsh/xonsh/"
-"commit/99afeb4248e33f62358878bbeba0b2c35698f83e))"
+"(https://github.com/xonsh/xonsh/commit/"
+"99afeb4248e33f62358878bbeba0b2c35698f83e))"
 msgstr ""
 
 #: ../../../changelog.md:380
@@ -1916,8 +1915,8 @@ msgid ""
 "Added useful command decorators: `[@lines](https://github.com/lines)`, "
 "`[@json](https://github.com/json)`, `[@jsonl](https://github.com/jsonl)`, "
 "`[@yaml](https://github.com/yaml)` ([#6114](https://github.com/xonsh/xonsh/"
-"issues/6114)) ([0f7124e](https://github.com/xonsh/xonsh/"
-"commit/0f7124e75751c9b20bc116e206aa19967f538b40))"
+"issues/6114)) ([0f7124e](https://github.com/xonsh/xonsh/commit/"
+"0f7124e75751c9b20bc116e206aa19967f538b40))"
 msgstr ""
 
 #: ../../../changelog.md:397
@@ -1930,8 +1929,8 @@ msgstr ""
 #: ../../../changelog.md:398
 msgid ""
 "Increase `@$()` stability and now it is also working in case of "
-"`$THREAD_SUBPROCS=False` ([#6112](https://github.com/xonsh/xonsh/"
-"issues/6112)) ([a3ac036](https://github.com/xonsh/xonsh/commit/"
+"`$THREAD_SUBPROCS=False` ([#6112](https://github.com/xonsh/xonsh/issues/"
+"6112)) ([a3ac036](https://github.com/xonsh/xonsh/commit/"
 "a3ac036171a5f45a400c2695aa2b62d9e01b5dfe))"
 msgstr ""
 
@@ -1953,9 +1952,9 @@ msgstr ""
 
 #: ../../../changelog.md:401
 msgid ""
-"replace 12 bare except clauses with except Exception ([#6110](https://github."
-"com/xonsh/xonsh/issues/6110)) ([54b311c](https://github.com/xonsh/xonsh/"
-"commit/54b311c454eb0e5e1473f16a6d62870ba2634cd2))"
+"replace 12 bare except clauses with except Exception ([#6110](https://"
+"github.com/xonsh/xonsh/issues/6110)) ([54b311c](https://github.com/xonsh/"
+"xonsh/commit/54b311c454eb0e5e1473f16a6d62870ba2634cd2))"
 msgstr ""
 
 #: ../../../changelog.md:403
@@ -2013,24 +2012,24 @@ msgstr ""
 msgid ""
 "**environ:** Added shortcut `xonsh -DVAR` to inherit `VAR` as alternative to "
 "`xonsh -DVAR=$VAR` ([#6080](https://github.com/xonsh/xonsh/issues/6080)) "
-"([4c2dc8b](https://github.com/xonsh/xonsh/"
-"commit/4c2dc8b474c84bea38cc55bd9a7c885c4dd1496d))"
+"([4c2dc8b](https://github.com/xonsh/xonsh/commit/"
+"4c2dc8b474c84bea38cc55bd9a7c885c4dd1496d))"
 msgstr ""
 
 #: ../../../changelog.md:426
 msgid ""
-"**events:** Now `on_envvar_change` event is working for EnvPath variables e."
-"g. PATH. ([#6055](https://github.com/xonsh/xonsh/issues/6055)) ([37bb23a]"
-"(https://github.com/xonsh/xonsh/"
-"commit/37bb23a64bf06996c1a23b44ca1de2b63cef5a4d))"
+"**events:** Now `on_envvar_change` event is working for EnvPath variables "
+"e.g. PATH. ([#6055](https://github.com/xonsh/xonsh/issues/6055)) ([37bb23a]"
+"(https://github.com/xonsh/xonsh/commit/"
+"37bb23a64bf06996c1a23b44ca1de2b63cef5a4d))"
 msgstr ""
 
 #: ../../../changelog.md:427
 msgid ""
 "**prompt:** Added $XONSH_PROMPT_NEXT_CMD_SUGGESTION to set the text of the "
-"next command suggestion ([#6048](https://github.com/xonsh/xonsh/"
-"issues/6048)) ([8c8372e](https://github.com/xonsh/xonsh/"
-"commit/8c8372ec56de6f39dc3d01d6ec442ab20884915f))"
+"next command suggestion ([#6048](https://github.com/xonsh/xonsh/issues/"
+"6048)) ([8c8372e](https://github.com/xonsh/xonsh/commit/"
+"8c8372ec56de6f39dc3d01d6ec442ab20884915f))"
 msgstr ""
 
 #: ../../../changelog.md:428
@@ -2057,46 +2056,46 @@ msgstr ""
 #: ../../../changelog.md:435
 msgid ""
 "**mamba-installer:** Rename xmamba to xmamba.xsh ([#6059](https://github.com/"
-"xonsh/xonsh/issues/6059)) ([82b9210](https://github.com/xonsh/xonsh/"
-"commit/82b921062487b60efd08e39f291789dfcddb67b7))"
+"xonsh/xonsh/issues/6059)) ([82b9210](https://github.com/xonsh/xonsh/commit/"
+"82b921062487b60efd08e39f291789dfcddb67b7))"
 msgstr ""
 
 #: ../../../changelog.md:436
 msgid ""
-"prevent stripping r except leading ones of r-strings ([#6030](https://github."
-"com/xonsh/xonsh/issues/6030)) ([8bf34d7](https://github.com/xonsh/xonsh/"
-"commit/8bf34d7be54e71a6740c27949cdbe3b766de8bc8))"
+"prevent stripping r except leading ones of r-strings ([#6030](https://"
+"github.com/xonsh/xonsh/issues/6030)) ([8bf34d7](https://github.com/xonsh/"
+"xonsh/commit/8bf34d7be54e71a6740c27949cdbe3b766de8bc8))"
 msgstr ""
 
 #: ../../../changelog.md:437
 msgid ""
 "**procs:** Fix ioctl windowsize buffer size to reduce issues in the future "
 "python 3.14 ([#6061](https://github.com/xonsh/xonsh/issues/6061)) ([03c2c3d]"
-"(https://github.com/xonsh/xonsh/"
-"commit/03c2c3d1af8193718080b92dfb15dd8abd313d07))"
+"(https://github.com/xonsh/xonsh/commit/"
+"03c2c3d1af8193718080b92dfb15dd8abd313d07))"
 msgstr ""
 
 #: ../../../changelog.md:438
 msgid ""
-"Raise an error in case of redirect without command ([#6060](https://github."
-"com/xonsh/xonsh/issues/6060)) ([ba79df1](https://github.com/xonsh/xonsh/"
-"commit/ba79df11a25ff7a5e555e9ab442118f3fe7da015))"
+"Raise an error in case of redirect without command ([#6060](https://"
+"github.com/xonsh/xonsh/issues/6060)) ([ba79df1](https://github.com/xonsh/"
+"xonsh/commit/ba79df11a25ff7a5e555e9ab442118f3fe7da015))"
 msgstr ""
 
 #: ../../../changelog.md:439
 msgid ""
 "Revert \"Fix for completer issue with file name containing backslash\" "
 "because of a regress ([#6052](https://github.com/xonsh/xonsh/issues/6052)) "
-"([1bfcba6](https://github.com/xonsh/xonsh/"
-"commit/1bfcba635745eb122780ccebf87a03baf5a7130b))"
+"([1bfcba6](https://github.com/xonsh/xonsh/commit/"
+"1bfcba635745eb122780ccebf87a03baf5a7130b))"
 msgstr ""
 
 #: ../../../changelog.md:440
 msgid ""
 "**startup:** Fix crash on built-in readline, print compatibility message on "
 "uv pythons ([#6069](https://github.com/xonsh/xonsh/issues/6069)) ([1e29ee2]"
-"(https://github.com/xonsh/xonsh/"
-"commit/1e29ee2dd6ba3feb831cdfc4c8bd880e2c62a95d))"
+"(https://github.com/xonsh/xonsh/commit/"
+"1e29ee2dd6ba3feb831cdfc4c8bd880e2c62a95d))"
 msgstr ""
 
 #: ../../../changelog.md:442
@@ -2115,8 +2114,8 @@ msgstr ""
 msgid ""
 "**prompt:** Added XONSH_PROMPT_NEXT_CMD to set the text of the next command "
 "that will be inserted in the next prompt ([#6037](https://github.com/xonsh/"
-"xonsh/issues/6037)) ([8a04bad](https://github.com/xonsh/xonsh/"
-"commit/8a04bad17ad38848e75c7b7f320111e9399c6c28))"
+"xonsh/issues/6037)) ([8a04bad](https://github.com/xonsh/xonsh/commit/"
+"8a04bad17ad38848e75c7b7f320111e9399c6c28))"
 msgstr ""
 
 #: ../../../changelog.md:453
@@ -2142,28 +2141,28 @@ msgstr ""
 
 #: ../../../changelog.md:460
 msgid ""
-"add showcmd mention ([54e2898](https://github.com/xonsh/xonsh/"
-"commit/54e2898e0847b3c3fbd7f7b28acb525841771e08))"
+"add showcmd mention ([54e2898](https://github.com/xonsh/xonsh/commit/"
+"54e2898e0847b3c3fbd7f7b28acb525841771e08))"
 msgstr ""
 
 #: ../../../changelog.md:461
 msgid ""
-"Add xonsh install script ([#6046](https://github.com/xonsh/xonsh/"
-"issues/6046)) ([d044dc4](https://github.com/xonsh/xonsh/commit/"
+"Add xonsh install script ([#6046](https://github.com/xonsh/xonsh/issues/"
+"6046)) ([d044dc4](https://github.com/xonsh/xonsh/commit/"
 "d044dc41cb1711de704855f3ba4b0bb4954660e4))"
 msgstr ""
 
 #: ../../../changelog.md:462
 msgid ""
-"platform guide micro fix ([93dd54e](https://github.com/xonsh/xonsh/"
-"commit/93dd54eb06522c83f23a01679b379c4ad4f8d0e4))"
+"platform guide micro fix ([93dd54e](https://github.com/xonsh/xonsh/commit/"
+"93dd54eb06522c83f23a01679b379c4ad4f8d0e4))"
 msgstr ""
 
 #: ../../../changelog.md:463
 msgid ""
 "Refactor xonsh installation process description ([#6029](https://github.com/"
-"xonsh/xonsh/issues/6029)) ([3770165](https://github.com/xonsh/xonsh/"
-"commit/3770165220f121cb3fa822c5671c51633bfa9033))"
+"xonsh/xonsh/issues/6029)) ([3770165](https://github.com/xonsh/xonsh/commit/"
+"3770165220f121cb3fa822c5671c51633bfa9033))"
 msgstr ""
 
 #: ../../../changelog.md:465
@@ -2180,8 +2179,8 @@ msgstr ""
 #: ../../../changelog.md:474
 msgid ""
 "added `xpython` and `xсontext` builtin aliases ([#5989](https://github.com/"
-"xonsh/xonsh/issues/5989)) ([4382735](https://github.com/xonsh/xonsh/"
-"commit/43827358d205855c6c1c68bed138d656f3657bc3))"
+"xonsh/xonsh/issues/5989)) ([4382735](https://github.com/xonsh/xonsh/commit/"
+"43827358d205855c6c1c68bed138d656f3657bc3))"
 msgstr ""
 
 #: ../../../changelog.md:475
@@ -2195,8 +2194,8 @@ msgstr ""
 #: ../../../changelog.md:480
 msgid ""
 "allow spaces in auto-suggest completions ([#5993](https://github.com/xonsh/"
-"xonsh/issues/5993)) ([4332701](https://github.com/xonsh/xonsh/"
-"commit/4332701179c06d7a7ce2853043271eb1aa2e3214))"
+"xonsh/issues/5993)) ([4332701](https://github.com/xonsh/xonsh/commit/"
+"4332701179c06d7a7ce2853043271eb1aa2e3214))"
 msgstr ""
 
 #: ../../../changelog.md:481
@@ -2216,22 +2215,22 @@ msgstr ""
 
 #: ../../../changelog.md:487
 msgid ""
-"add description and examples for `@.env.register` ([#5990](https://github."
-"com/xonsh/xonsh/issues/5990)) ([9ce5d5d](https://github.com/xonsh/xonsh/"
-"commit/9ce5d5d3d58b00b642856f4dc48dbac9b25f63c1))"
+"add description and examples for `@.env.register` ([#5990](https://"
+"github.com/xonsh/xonsh/issues/5990)) ([9ce5d5d](https://github.com/xonsh/"
+"xonsh/commit/9ce5d5d3d58b00b642856f4dc48dbac9b25f63c1))"
 msgstr ""
 
 #: ../../../changelog.md:488
 msgid ""
 "Update tutorial to replace prompt ([#6007](https://github.com/xonsh/xonsh/"
-"issues/6007)) ([3260b77](https://github.com/xonsh/xonsh/"
-"commit/3260b77ab4d4d8fa2dc5fb61e7509a0a7eaaa9bc))"
+"issues/6007)) ([3260b77](https://github.com/xonsh/xonsh/commit/"
+"3260b77ab4d4d8fa2dc5fb61e7509a0a7eaaa9bc))"
 msgstr ""
 
 #: ../../../changelog.md:489
 msgid ""
-"Update xonsh logo in the docs ([#6004](https://github.com/xonsh/xonsh/"
-"issues/6004)) ([dbeb276](https://github.com/xonsh/xonsh/commit/"
+"Update xonsh logo in the docs ([#6004](https://github.com/xonsh/xonsh/issues/"
+"6004)) ([dbeb276](https://github.com/xonsh/xonsh/commit/"
 "dbeb27688bdbbd5efd6ffcc246ce4181df4f66bc))"
 msgstr ""
 
@@ -2255,9 +2254,9 @@ msgstr ""
 
 #: ../../../changelog.md:501
 msgid ""
-"appimage upload to release ([#5982](https://github.com/xonsh/xonsh/"
-"issues/5982)) ([7965b1f](https://github.com/xonsh/xonsh/"
-"commit/7965b1ffef2d934484a121a39bf7f789b3c22e0b))"
+"appimage upload to release ([#5982](https://github.com/xonsh/xonsh/issues/"
+"5982)) ([7965b1f](https://github.com/xonsh/xonsh/commit/"
+"7965b1ffef2d934484a121a39bf7f789b3c22e0b))"
 msgstr ""
 
 #: ../../../changelog.md:503
@@ -2286,8 +2285,8 @@ msgstr ""
 msgid ""
 "Added `@` as a global object that provides easy access to `@.env`, `@. "
 "lastcmd ` and `@.imp`(inline-imports) ([#5956](https://github.com/xonsh/"
-"xonsh/issues/5956)) ([64e3a3c](https://github.com/xonsh/xonsh/"
-"commit/64e3a3c467e1b2a42083e5c2dae0dbd9e0910087))"
+"xonsh/issues/5956)) ([64e3a3c](https://github.com/xonsh/xonsh/commit/"
+"64e3a3c467e1b2a42083e5c2dae0dbd9e0910087))"
 msgstr ""
 
 #: ../../../changelog.md:520
@@ -2309,8 +2308,8 @@ msgstr ""
 msgid ""
 "allow on_command_not_found handlers to return replacement commands ([#5952]"
 "(https://github.com/xonsh/xonsh/issues/5952)) ([#5962](https://github.com/"
-"xonsh/xonsh/issues/5962)) ([14d9686](https://github.com/xonsh/xonsh/"
-"commit/14d9686b3f82d72749700a07b6da9f95c6959308))"
+"xonsh/xonsh/issues/5962)) ([14d9686](https://github.com/xonsh/xonsh/commit/"
+"14d9686b3f82d72749700a07b6da9f95c6959308))"
 msgstr ""
 
 #: ../../../changelog.md:527
@@ -2330,15 +2329,15 @@ msgstr ""
 #: ../../../changelog.md:529
 msgid ""
 "Update tutorial example for piping into an alias ([#5955](https://github.com/"
-"xonsh/xonsh/issues/5955)) ([07d4334](https://github.com/xonsh/xonsh/"
-"commit/07d43341b981c251049855f04edaa025a4f1b1b7))"
+"xonsh/xonsh/issues/5955)) ([07d4334](https://github.com/xonsh/xonsh/commit/"
+"07d43341b981c251049855f04edaa025a4f1b1b7))"
 msgstr ""
 
 #: ../../../changelog.md:534
 msgid ""
 "Add verification file for ads.fund project ([#5946](https://github.com/xonsh/"
-"xonsh/issues/5946)) ([2482f06](https://github.com/xonsh/xonsh/"
-"commit/2482f06ef042d8a47f175e1eab45d6af4c9dcd0d))"
+"xonsh/issues/5946)) ([2482f06](https://github.com/xonsh/xonsh/commit/"
+"2482f06ef042d8a47f175e1eab45d6af4c9dcd0d))"
 msgstr ""
 
 #: ../../../changelog.md:535
@@ -2351,8 +2350,8 @@ msgstr ""
 #: ../../../changelog.md:540
 msgid ""
 "`$AUTO_SUGGEST` is now deprecated in favour of `$XONSH_PROMPT_AUTO_SUGGEST` "
-"([1e5bda4](https://github.com/xonsh/xonsh/"
-"commit/1e5bda4402f4f3257b1aa68b01cb22a8c6c4b485))"
+"([1e5bda4](https://github.com/xonsh/xonsh/commit/"
+"1e5bda4402f4f3257b1aa68b01cb22a8c6c4b485))"
 msgstr ""
 
 #: ../../../changelog.md:542
@@ -2373,8 +2372,8 @@ msgstr ""
 #: ../../../changelog.md:552
 msgid ""
 "Allow sourcing files with different extensions ([#5938](https://github.com/"
-"xonsh/xonsh/issues/5938)) ([296a683](https://github.com/xonsh/xonsh/"
-"commit/296a6831e11380b37564f27e118629b78a19cfb9))"
+"xonsh/xonsh/issues/5938)) ([296a683](https://github.com/xonsh/xonsh/commit/"
+"296a6831e11380b37564f27e118629b78a19cfb9))"
 msgstr ""
 
 #: ../../../changelog.md:553
@@ -2407,8 +2406,8 @@ msgstr ""
 #: ../../../changelog.md:561
 msgid ""
 "ensure PATH is EnvPath when using --no-env flag ([#5870](https://github.com/"
-"xonsh/xonsh/issues/5870)) ([#5903](https://github.com/xonsh/xonsh/"
-"issues/5903)) ([c73d599](https://github.com/xonsh/xonsh/commit/"
+"xonsh/xonsh/issues/5870)) ([#5903](https://github.com/xonsh/xonsh/issues/"
+"5903)) ([c73d599](https://github.com/xonsh/xonsh/commit/"
 "c73d599751d14c75aca15400fb3bfe21997a45a3))"
 msgstr ""
 
@@ -2416,30 +2415,30 @@ msgstr ""
 msgid ""
 "filter escape sequences after decoding in captured stdout and stderr ([#5939]"
 "(https://github.com/xonsh/xonsh/issues/5939)) ([#5940](https://github.com/"
-"xonsh/xonsh/issues/5940)) ([9df5cce](https://github.com/xonsh/xonsh/"
-"commit/9df5ccedf00c8114225625974db11f4fe58b320a))"
+"xonsh/xonsh/issues/5940)) ([9df5cce](https://github.com/xonsh/xonsh/commit/"
+"9df5ccedf00c8114225625974db11f4fe58b320a))"
 msgstr ""
 
 #: ../../../changelog.md:563
 msgid ""
 "map Name.Builtin to Color.GREEN when undefined ([#5908](https://github.com/"
-"xonsh/xonsh/issues/5908)) ([9a23e2e](https://github.com/xonsh/xonsh/"
-"commit/9a23e2ef40fce2f946bd01b2a9fc6855940ecc36))"
+"xonsh/xonsh/issues/5908)) ([9a23e2e](https://github.com/xonsh/xonsh/commit/"
+"9a23e2ef40fce2f946bd01b2a9fc6855940ecc36))"
 msgstr ""
 
 #: ../../../changelog.md:564
 msgid ""
 "missing docstring for argument \"verbose\" of xontribs_unload and "
 "xontribs_reload ([#5922](https://github.com/xonsh/xonsh/issues/5922)) "
-"([97265ed](https://github.com/xonsh/xonsh/"
-"commit/97265edffc6ad1084644ca5d3e2f1844904a13a0))"
+"([97265ed](https://github.com/xonsh/xonsh/commit/"
+"97265edffc6ad1084644ca5d3e2f1844904a13a0))"
 msgstr ""
 
 #: ../../../changelog.md:565
 msgid ""
 "remove redundant \"command not found\" ([#5915](https://github.com/xonsh/"
-"xonsh/issues/5915)) ([2db28a0](https://github.com/xonsh/xonsh/"
-"commit/2db28a0836374ad44e2ba34c5760b3353e06df67))"
+"xonsh/issues/5915)) ([2db28a0](https://github.com/xonsh/xonsh/commit/"
+"2db28a0836374ad44e2ba34c5760b3353e06df67))"
 msgstr ""
 
 #: ../../../changelog.md:566
@@ -2450,8 +2449,8 @@ msgstr ""
 
 #: ../../../changelog.md:571
 msgid ""
-"update devguide ([911a2f8](https://github.com/xonsh/xonsh/"
-"commit/911a2f84e6d25dd82c8a4957bb966a80a8d3f244))"
+"update devguide ([911a2f8](https://github.com/xonsh/xonsh/commit/"
+"911a2f84e6d25dd82c8a4957bb966a80a8d3f244))"
 msgstr ""
 
 #: ../../../changelog.md:572
@@ -2504,8 +2503,8 @@ msgstr ""
 
 #: ../../../changelog.md:589
 msgid ""
-"Update release-please.yml ([505a3a7](https://github.com/xonsh/xonsh/"
-"commit/505a3a7288f2840975265922a543e6296f6870de))"
+"Update release-please.yml ([505a3a7](https://github.com/xonsh/xonsh/commit/"
+"505a3a7288f2840975265922a543e6296f6870de))"
 msgstr ""
 
 #: ../../../changelog.md:591
@@ -2516,14 +2515,14 @@ msgstr ""
 
 #: ../../../changelog.md:596
 msgid ""
-"ci update ([246a88f](https://github.com/xonsh/xonsh/"
-"commit/246a88fc267beaefce4af841e805200971109b68))"
+"ci update ([246a88f](https://github.com/xonsh/xonsh/commit/"
+"246a88fc267beaefce4af841e805200971109b68))"
 msgstr ""
 
 #: ../../../changelog.md:597
 msgid ""
-"pypi wheel checking ([88bfa3c](https://github.com/xonsh/xonsh/"
-"commit/88bfa3ce7c4c67ebdb5144408abbce2df12d4d98))"
+"pypi wheel checking ([88bfa3c](https://github.com/xonsh/xonsh/commit/"
+"88bfa3ce7c4c67ebdb5144408abbce2df12d4d98))"
 msgstr ""
 
 #: ../../../changelog.md:598
@@ -2539,9 +2538,9 @@ msgstr ""
 
 #: ../../../changelog.md:605
 msgid ""
-"upload releases to PyPI ([#5847](https://github.com/xonsh/xonsh/"
-"issues/5847)) ([26818ef](https://github.com/xonsh/xonsh/"
-"commit/26818efd99ce0406beaaecab3e97a03a6352ac9f))"
+"upload releases to PyPI ([#5847](https://github.com/xonsh/xonsh/issues/"
+"5847)) ([26818ef](https://github.com/xonsh/xonsh/commit/"
+"26818efd99ce0406beaaecab3e97a03a6352ac9f))"
 msgstr ""
 
 #: ../../../changelog.md:607
@@ -2575,8 +2574,8 @@ msgstr ""
 msgid ""
 "don't skip history items when running full history pull after session-"
 "specific pull ([#5826](https://github.com/xonsh/xonsh/issues/5826)) "
-"([5ecdcae](https://github.com/xonsh/xonsh/"
-"commit/5ecdcae86d8d430f125b61a387cf6bb4ab877940))"
+"([5ecdcae](https://github.com/xonsh/xonsh/commit/"
+"5ecdcae86d8d430f125b61a387cf6bb4ab877940))"
 msgstr ""
 
 #: ../../../changelog.md:622
@@ -2593,8 +2592,8 @@ msgstr ""
 #: ../../../changelog.md:629
 msgid ""
 "Add missing bash conversion example ([#5832](https://github.com/xonsh/xonsh/"
-"issues/5832)) ([1985128](https://github.com/xonsh/xonsh/"
-"commit/198512832242afecf61ea902e4929f3d14767717))"
+"issues/5832)) ([1985128](https://github.com/xonsh/xonsh/commit/"
+"198512832242afecf61ea902e4929f3d14767717))"
 msgstr ""
 
 #: ../../../changelog.md:631
@@ -2661,8 +2660,9 @@ msgstr ""
 
 #: ../../../changelog.md:646
 msgid ""
-"On Windows, cmd.exe-based aliases now resolve to %SystemRoot%\\System32\\cmd."
-"exe by default (and fallback to COMSPEC only if the former cannot be found)."
+"On Windows, cmd.exe-based aliases now resolve to %SystemRoot%"
+"\\System32\\cmd.exe by default (and fallback to COMSPEC only if the former "
+"cannot be found)."
 msgstr ""
 
 #: ../../../changelog.md:648 ../../../changelog.md:681
@@ -3282,8 +3282,8 @@ msgstr ""
 msgid ""
 "Starting from this release we notify that in the future we will not "
 "recommend to use `xonsh.procs.run_subproc` and `xonsh.built_ins.subproc_*` "
-"functions for downstream projects because of #5383. We will develop `xonsh."
-"api` as alternative."
+"functions for downstream projects because of #5383. We will develop "
+"`xonsh.api` as alternative."
 msgstr ""
 
 #: ../../../changelog.md:867 ../../../changelog.md:967
@@ -3324,8 +3324,8 @@ msgstr ""
 
 #: ../../../changelog.md:877
 msgid ""
-"Replaced deprecated [sys.last_type, sys.last_value, sys.last_traceback]{."
-"title-ref} with [sys.last_exc]{.title-ref}"
+"Replaced deprecated [sys.last_type, sys.last_value, sys.last_traceback]"
+"{.title-ref} with [sys.last_exc]{.title-ref}"
 msgstr ""
 
 #: ../../../changelog.md:879
@@ -3514,8 +3514,8 @@ msgstr ""
 
 #: ../../../changelog.md:958
 msgid ""
-"Cleaning logic and functions around threading and capturing in `procs/specs."
-"py` file."
+"Cleaning logic and functions around threading and capturing in `procs/"
+"specs.py` file."
 msgstr ""
 
 #: ../../../changelog.md:960
@@ -3676,9 +3676,9 @@ msgstr ""
 
 #: ../../../changelog.md:1036
 msgid ""
-"Removed `ArgParserAlias.hook_pre_add_argument`, `ArgParserAlias."
-"hook_post_add_argument`. Please use custom action instead to modify the "
-"argument options."
+"Removed `ArgParserAlias.hook_pre_add_argument`, "
+"`ArgParserAlias.hook_post_add_argument`. Please use custom action instead to "
+"modify the argument options."
 msgstr ""
 
 #: ../../../changelog.md:1039
@@ -4017,8 +4017,8 @@ msgstr ""
 
 #: ../../../changelog.md:1244
 msgid ""
-"`pdb`, `xog` xontribs transferred to [xontrib-debug-tools](https://github."
-"com/xonsh/xontrib-debug-tools)."
+"`pdb`, `xog` xontribs transferred to [xontrib-debug-tools](https://"
+"github.com/xonsh/xontrib-debug-tools)."
 msgstr ""
 
 #: ../../../changelog.md:1249
@@ -4419,8 +4419,8 @@ msgstr ""
 
 #: ../../../changelog.md:1482
 msgid ""
-"The default prompt (on unix-systems) now includes a red "
-"\\[\\<errorcode\\>\\] field in case a command failed."
+"The default prompt (on unix-systems) now includes a red \\"
+"[\\<errorcode\\>\\] field in case a command failed."
 msgstr ""
 
 #: ../../../changelog.md:1484
@@ -4636,8 +4636,8 @@ msgstr ""
 
 #: ../../../changelog.md:1630
 msgid ""
-"[xontrib.fish_completer]{.title-ref} is available to complete using [fish]{."
-"title-ref} shell."
+"[xontrib.fish_completer]{.title-ref} is available to complete using [fish]"
+"{.title-ref} shell."
 msgstr ""
 
 #: ../../../changelog.md:1633
@@ -4679,9 +4679,9 @@ msgstr ""
 
 #: ../../../changelog.md:1653
 msgid ""
-"Support for the [virtualenv](https://virtualenv.pypa.io/en/20.0.1/extend."
-"html#activation-scripts) `activate.xsh` script is back! Ensure you create "
-"the virtualenv from the same python where xonsh is installed."
+"Support for the [virtualenv](https://virtualenv.pypa.io/en/20.0.1/"
+"extend.html#activation-scripts) `activate.xsh` script is back! Ensure you "
+"create the virtualenv from the same python where xonsh is installed."
 msgstr ""
 
 #: ../../../changelog.md:1658
@@ -4764,8 +4764,8 @@ msgstr ""
 
 #: ../../../changelog.md:1700
 msgid ""
-"Added [xontrib-gruvbox \\<https://github.com/rpdelaney/xontrib-gruvbox\\>]{."
-"title-ref} to xontrib list."
+"Added [xontrib-gruvbox \\<https://github.com/rpdelaney/xontrib-gruvbox\\>]"
+"{.title-ref} to xontrib list."
 msgstr ""
 
 #: ../../../changelog.md:1704
@@ -4802,8 +4802,8 @@ msgstr ""
 
 #: ../../../changelog.md:1722
 msgid ""
-"run_compiled_code, run_script_with_cache, run_code_with_cache now return sys."
-"exc_info() triples instead of throwing errors"
+"run_compiled_code, run_script_with_cache, run_code_with_cache now return "
+"sys.exc_info() triples instead of throwing errors"
 msgstr ""
 
 #: ../../../changelog.md:1724
@@ -4859,8 +4859,8 @@ msgstr ""
 
 #: ../../../changelog.md:1741
 msgid ""
-"Xonsh adopts [NEP-0029](https://numpy.org/neps/nep-0029-deprecation_policy."
-"html) in supporting Python versions."
+"Xonsh adopts [NEP-0029](https://numpy.org/neps/nep-0029-"
+"deprecation_policy.html) in supporting Python versions."
 msgstr ""
 
 #: ../../../changelog.md:1744
@@ -4956,8 +4956,8 @@ msgstr ""
 
 #: ../../../changelog.md:1783
 msgid ""
-"Fixed regex globbing for file paths that contain special regex characters (e."
-"g. \\\"test\\*1/model\\\")"
+"Fixed regex globbing for file paths that contain special regex characters "
+"(e.g. \\\"test\\*1/model\\\")"
 msgstr ""
 
 #: ../../../changelog.md:1785
@@ -5105,9 +5105,9 @@ msgstr ""
 
 #: ../../../changelog.md:1847
 msgid ""
-"added new utility classes `xonsh.cli_utils.ArgParserAlias`, `xonsh.cli_utils."
-"ArgCompleter`. These are helper classes, that add coloring and auto-"
-"completion support to the alias-commands."
+"added new utility classes `xonsh.cli_utils.ArgParserAlias`, "
+"`xonsh.cli_utils.ArgCompleter`. These are helper classes, that add coloring "
+"and auto-completion support to the alias-commands."
 msgstr ""
 
 #: ../../../changelog.md:1850
@@ -5353,8 +5353,8 @@ msgstr ""
 
 #: ../../../changelog.md:1947
 msgid ""
-"Fix launching processes on Windows by using full paths (<https://bugs.python."
-"org/issue8557>)"
+"Fix launching processes on Windows by using full paths (<https://"
+"bugs.python.org/issue8557>)"
 msgstr ""
 
 #: ../../../changelog.md:1950
@@ -5365,8 +5365,8 @@ msgstr ""
 msgid ""
 "`execx` and `xonsh -c` previously exposed xonsh-internal code in global "
 "scope. They also did not support defining variables and then referring to "
-"them in comprehensions, generators, functions, or lambdas. - <https://github."
-"com/xonsh/xonsh/issues/4363>"
+"them in comprehensions, generators, functions, or lambdas. - <https://"
+"github.com/xonsh/xonsh/issues/4363>"
 msgstr ""
 
 #: ../../../changelog.md:1958
@@ -5494,8 +5494,8 @@ msgstr ""
 
 #: ../../../changelog.md:2028
 msgid ""
-"In addition to reading single rc files at startup (`/etc/xonshrc`, `~/."
-"config/xonsh/rc.xsh`), xonsh now also supports rc.d-style config "
+"In addition to reading single rc files at startup (`/etc/xonshrc`, "
+"`~/.config/xonsh/rc.xsh`), xonsh now also supports rc.d-style config "
 "directories, from which all files are sourced. This is designed to support "
 "drop-in style configuration where you could, for example, have a common "
 "config file shared across multiple machines and a separate machine specific "
@@ -5948,9 +5948,10 @@ msgstr ""
 #: ../../../changelog.md:2257
 msgid ""
 "PTK style rules can be defined in custom styles using the `Token.PTK` token "
-"prefix. For example `custom_style[\"Token.PTK.CompletionMenu.Completion."
-"Current\"] = \"bg:#ff0000 #fff\"` sets the `completion-menu.completion."
-"current` PTK style to white on red."
+"prefix. For example "
+"`custom_style[\"Token.PTK.CompletionMenu.Completion.Current\"] = "
+"\"bg:#ff0000 #fff\"` sets the `completion-menu.completion.current` PTK style "
+"to white on red."
 msgstr ""
 
 #: ../../../changelog.md:2263
@@ -5996,8 +5997,9 @@ msgstr ""
 msgid ""
 "`_get_normalized_pstring_quote` returns a consistent set of prefixes, and "
 "the quote, for all path-string variants e.g. inputs `pr'` and `rp'` both "
-"produce the tuple `(\"pr\", \"'\")`. This function is used by `xonsh."
-"completers.complete_path` and `xonsh.completers._path_from_partial_string`."
+"produce the tuple `(\"pr\", \"'\")`. This function is used by "
+"`xonsh.completers.complete_path` and "
+"`xonsh.completers._path_from_partial_string`."
 msgstr ""
 
 #: ../../../changelog.md:2291
@@ -6112,17 +6114,17 @@ msgstr ""
 
 #: ../../../changelog.md:2347
 msgid ""
-"Remove `p`, `rp` and `pr` prefix from partial p-string used in `xonsh."
-"completers._path_from_partial_string`, such that `ast.literal_eval` does not "
-"raise `SyntaxError`. `pr` and `rp` strings are now treated internally as raw "
-"strings, but the p-string quote is correctly returned."
+"Remove `p`, `rp` and `pr` prefix from partial p-string used in "
+"`xonsh.completers._path_from_partial_string`, such that `ast.literal_eval` "
+"does not raise `SyntaxError`. `pr` and `rp` strings are now treated "
+"internally as raw strings, but the p-string quote is correctly returned."
 msgstr ""
 
 #: ../../../changelog.md:2352
 msgid ""
-"Increment the prefix length when the prefix input to `xonsh.completers."
-"complete_path` is a p-string. This preserves the length of the prefix for "
-"path-string variants."
+"Increment the prefix length when the prefix input to "
+"`xonsh.completers.complete_path` is a p-string. This preserves the length of "
+"the prefix for path-string variants."
 msgstr ""
 
 #: ../../../changelog.md:2355
@@ -6163,9 +6165,9 @@ msgstr ""
 
 #: ../../../changelog.md:2369
 msgid ""
-"The `xonsh.proc` module has been deprecated. Please use the new `xonsh."
-"procs` subpackage instead. Deprecation warnings related to this have been "
-"added."
+"The `xonsh.proc` module has been deprecated. Please use the new "
+"`xonsh.procs` subpackage instead. Deprecation warnings related to this have "
+"been added."
 msgstr ""
 
 #: ../../../changelog.md:2375
@@ -6699,10 +6701,10 @@ msgstr ""
 
 #: ../../../changelog.md:2607
 msgid ""
-"Setup wasn\\'t consistently detecting jupyter in environment; `python setup."
-"py install` worked, but `pip install .` wouldn\\'t (because pip mucks with "
-"`sys.path`), nor would install from wheel (because it doesn\\'t run `setup."
-"py`)."
+"Setup wasn\\'t consistently detecting jupyter in environment; `python "
+"setup.py install` worked, but `pip install .` wouldn\\'t (because pip mucks "
+"with `sys.path`), nor would install from wheel (because it doesn\\'t run "
+"`setup.py`)."
 msgstr ""
 
 #: ../../../changelog.md:2611
@@ -7075,8 +7077,8 @@ msgstr ""
 
 #: ../../../changelog.md:2833
 msgid ""
-"Allow completer access to multiline document when available via `xonsh."
-"completers.tools.get_ptk_completer().current_document`."
+"Allow completer access to multiline document when available via "
+"`xonsh.completers.tools.get_ptk_completer().current_document`."
 msgstr ""
 
 #: ../../../changelog.md:2836
@@ -7496,8 +7498,8 @@ msgstr ""
 #: ../../../changelog.md:3073
 msgid ""
 "Fixed bug on Windows if Path elements has trailing spaces. Windows in "
-"general and `os.path.isdir()` doesn\\'t care about trailing spaces but `os."
-"scandir()` does."
+"general and `os.path.isdir()` doesn\\'t care about trailing spaces but "
+"`os.scandir()` does."
 msgstr ""
 
 #: ../../../changelog.md:3083 ../../../changelog.md:3234
@@ -7596,8 +7598,8 @@ msgstr ""
 #: ../../../changelog.md:3135
 msgid ""
 "The `xonsh/interactive` container has been added, in addition to the "
-"previous `xonsh/xonsh` and `xonsh/action` containers. See <https://hub."
-"docker.com/u/xonsh>"
+"previous `xonsh/xonsh` and `xonsh/action` containers. See <https://"
+"hub.docker.com/u/xonsh>"
 msgstr ""
 
 #: ../../../changelog.md:3138
@@ -7652,8 +7654,8 @@ msgstr ""
 
 #: ../../../changelog.md:3160
 msgid ""
-"The `html` module in `xonsh.lazyimps` was added to lazily import `pygments."
-"formatters.html`."
+"The `html` module in `xonsh.lazyimps` was added to lazily import "
+"`pygments.formatters.html`."
 msgstr ""
 
 #: ../../../changelog.md:3162
@@ -7695,8 +7697,8 @@ msgstr ""
 
 #: ../../../changelog.md:3184
 msgid ""
-"[\\[color\\] in .gitconfig (#3427)](https://github.com/xonsh/xonsh/"
-"issues/3427) now stripped from {curr_branch}"
+"[\\[color\\] in .gitconfig (#3427)](https://github.com/xonsh/xonsh/issues/"
+"3427) now stripped from {curr_branch}"
 msgstr ""
 
 #: ../../../changelog.md:3188
@@ -8099,8 +8101,8 @@ msgstr ""
 
 #: ../../../changelog.md:3420
 msgid ""
-"Removed deprecated `builtin.__xonsh_*__` alises, please use `builtins."
-"__xonsh__.*` instead."
+"Removed deprecated `builtin.__xonsh_*__` alises, please use "
+"`builtins.__xonsh__.*` instead."
 msgstr ""
 
 #: ../../../changelog.md:3425
@@ -8429,8 +8431,8 @@ msgstr ""
 
 #: ../../../changelog.md:3654
 msgid ""
-"`style_tools.KNOWN_COLORS` was never used, redundant with `pyghooks."
-"KNOWN_COLORS` and has thus been removed."
+"`style_tools.KNOWN_COLORS` was never used, redundant with "
+"`pyghooks.KNOWN_COLORS` and has thus been removed."
 msgstr ""
 
 #: ../../../changelog.md:3659
@@ -8614,10 +8616,10 @@ msgstr ""
 #: ../../../changelog.md:3756
 msgid ""
 "New command-specific event categories called `on_pre_spec_run_<cmd-name>` "
-"and `on_post_spec_run_<cmd-name>` will be fired before and after `SubpocSpec."
-"run()` is called. This allows for command specific events to be executed. "
-"For example, `on_pre_spec_run_ls` would be run prior to an invocation of "
-"`ls`."
+"and `on_post_spec_run_<cmd-name>` will be fired before and after "
+"`SubpocSpec.run()` is called. This allows for command specific events to be "
+"executed. For example, `on_pre_spec_run_ls` would be run prior to an "
+"invocation of `ls`."
 msgstr ""
 
 #: ../../../changelog.md:3761
@@ -8661,8 +8663,8 @@ msgstr ""
 msgid ""
 "An environment variable `detype` operation no longer needs to be a function, "
 "but may also be `None`. If `None`, this variable is considered not "
-"detypeable, and will not be exported to subprocess environments via the `Env."
-"detype()` function."
+"detypeable, and will not be exported to subprocess environments via the "
+"`Env.detype()` function."
 msgstr ""
 
 #: ../../../changelog.md:3783
@@ -8771,8 +8773,8 @@ msgstr ""
 
 #: ../../../changelog.md:3844
 msgid ""
-"The `xonsh.Aliases.eval_alias()` method updated to use `xonsh.aliases."
-"partial_eval_alias()`."
+"The `xonsh.Aliases.eval_alias()` method updated to use "
+"`xonsh.aliases.partial_eval_alias()`."
 msgstr ""
 
 #: ../../../changelog.md:3849
@@ -9277,10 +9279,10 @@ msgstr ""
 
 #: ../../../changelog.md:4161
 msgid ""
-"The `ls` command would have a pipeline index of 0 (`p.specs[0]."
-"pipeline_index == 0`) and `grep` would have a pipeline index of 1 (`p."
-"specs[1].pipeline_index == 1`). This may be usefule in callable alaises "
-"which recieve the spec as an argument."
+"The `ls` command would have a pipeline index of 0 "
+"(`p.specs[0].pipeline_index == 0`) and `grep` would have a pipeline index of "
+"1 (`p.specs[1].pipeline_index == 1`). This may be usefule in callable "
+"alaises which recieve the spec as an argument."
 msgstr ""
 
 #: ../../../changelog.md:4168
@@ -9517,8 +9519,8 @@ msgstr ""
 msgid ""
 "Format strings (f-strings) now allow environment variables to be looked up. "
 "For example, `f\"{$HOME}\"` will yield `\"/home/user\"`. Note that this will "
-"look up and fill in the `detype()`-ed version of the environment variable, i."
-"e. it\\'s native string representation."
+"look up and fill in the `detype()`-ed version of the environment variable, "
+"i.e. it\\'s native string representation."
 msgstr ""
 
 #: ../../../changelog.md:4328
@@ -9580,8 +9582,8 @@ msgstr ""
 msgid ""
 "New `$DOTGLOB` environment variable enables globs to match \\\"hidden\\\" "
 "files which start with a literal `.`. Set this variable to `True` to get "
-"this matching behavior. Cooresponding API changes have been made to `xonsh."
-"tools.globpath()` and `xonsh.tools.iglobpath()`"
+"this matching behavior. Cooresponding API changes have been made to "
+"`xonsh.tools.globpath()` and `xonsh.tools.iglobpath()`"
 msgstr ""
 
 #: ../../../changelog.md:4371
@@ -9751,10 +9753,10 @@ msgstr ""
 
 #: ../../../changelog.md:4473
 msgid ""
-"New `CommandsCache.is_only_functional_alias()` and `CommandsCache."
-"lazy_is_only_functional_alias()` methods for determining if if a command "
-"name is only implemented as a function, and thus has no underlying binary "
-"command to execute."
+"New `CommandsCache.is_only_functional_alias()` and "
+"`CommandsCache.lazy_is_only_functional_alias()` methods for determining if "
+"if a command name is only implemented as a function, and thus has no "
+"underlying binary command to execute."
 msgstr ""
 
 #: ../../../changelog.md:4477
@@ -10099,8 +10101,8 @@ msgstr ""
 
 #: ../../../changelog.md:4682
 msgid ""
-"`xonsh.tokenize.tok_name` no longer mutates the standard library `tokenize."
-"tok_name`. A copy is made on import instead."
+"`xonsh.tokenize.tok_name` no longer mutates the standard library "
+"`tokenize.tok_name`. A copy is made on import instead."
 msgstr ""
 
 #: ../../../changelog.md:4685
@@ -10579,9 +10581,10 @@ msgstr ""
 #: ../../../changelog.md:4944
 msgid ""
 "Spelling error in the `xonsh.color_tools.make_pallete()` public function "
-"declaration. This was fixed by renaming the function to `xonsh.color_tools."
-"make_palette()` while maintaining a binding of `make_pallete()` to the new "
-"`make_palette()` in case users are already used to this API."
+"declaration. This was fixed by renaming the function to "
+"`xonsh.color_tools.make_palette()` while maintaining a binding of "
+"`make_pallete()` to the new `make_palette()` in case users are already used "
+"to this API."
 msgstr ""
 
 #: ../../../changelog.md:4949
@@ -10934,8 +10937,8 @@ msgstr ""
 
 #: ../../../changelog.md:5120
 msgid ""
-"Callable alias proxy functions are now more friendly to `functools."
-"partial()`."
+"Callable alias proxy functions are now more friendly to "
+"`functools.partial()`."
 msgstr ""
 
 #: ../../../changelog.md:5122
@@ -11259,8 +11262,8 @@ msgstr ""
 
 #: ../../../changelog.md:5264
 msgid ""
-"Moved decorators `unthreadable`, `uncapturable` from `xonsh.proc` to `xonsh."
-"tools`."
+"Moved decorators `unthreadable`, `uncapturable` from `xonsh.proc` to "
+"`xonsh.tools`."
 msgstr ""
 
 #: ../../../changelog.md:5266
@@ -11275,8 +11278,8 @@ msgstr ""
 #: ../../../changelog.md:5275
 msgid ""
 "`xonsh.environ.DEFAULT_XONSHRC` has been removed due to deprecation. For "
-"this value, please check the environment instead, or call `xonsh.environ."
-"default_xonshrc(env)`."
+"this value, please check the environment instead, or call "
+"`xonsh.environ.default_xonshrc(env)`."
 msgstr ""
 
 #: ../../../changelog.md:5281
@@ -11525,8 +11528,8 @@ msgstr ""
 
 #: ../../../changelog.md:5388
 msgid ""
-"Fixed an issue that xonsh would fail over to external shells when running ."
-"xsh script which raises exceptions."
+"Fixed an issue that xonsh would fail over to external shells when "
+"running .xsh script which raises exceptions."
 msgstr ""
 
 #: ../../../changelog.md:5390
@@ -12445,14 +12448,15 @@ msgstr ""
 
 #: ../../../changelog.md:5756
 msgid ""
-"implementation of `xonsh.prompt.vc_branch.get_git_branch` and `xonsh.prompt."
-"vc_branch.git_dirty_working_directory` to use \\'git status \\--procelain\\'"
+"implementation of `xonsh.prompt.vc_branch.get_git_branch` and "
+"`xonsh.prompt.vc_branch.git_dirty_working_directory` to use \\'git status "
+"\\--procelain\\'"
 msgstr ""
 
 #: ../../../changelog.md:5759
 msgid ""
-"moved prompt formatting specific functions from `xonsh.environ` to `xonsh."
-"prompt.base`"
+"moved prompt formatting specific functions from `xonsh.environ` to "
+"`xonsh.prompt.base`"
 msgstr ""
 
 #: ../../../changelog.md:5761
@@ -13185,9 +13189,9 @@ msgstr ""
 #: ../../../changelog.md:6136
 msgid ""
 "Because of the addition of \\\"optional items\\\" to the prompt format "
-"string, the functions `xonsh.environ.current_branch`, `xonsh.environ."
-"env_name` and formatter dict items `curr_branch`, `current_job`, `env_name` "
-"are no longer padded with a separator."
+"string, the functions `xonsh.environ.current_branch`, "
+"`xonsh.environ.env_name` and formatter dict items `curr_branch`, "
+"`current_job`, `env_name` are no longer padded with a separator."
 msgstr ""
 
 #: ../../../changelog.md:6140
@@ -13600,8 +13604,8 @@ msgstr ""
 
 #: ../../../changelog.md:6361
 msgid ""
-"New `pathsep_to_set()` and `set_to_pathsep()` functions convert to/from `os."
-"pathsep` separated strings to a set of strings."
+"New `pathsep_to_set()` and `set_to_pathsep()` functions convert to/from "
+"`os.pathsep` separated strings to a set of strings."
 msgstr ""
 
 #: ../../../changelog.md:6366
@@ -14158,8 +14162,8 @@ msgstr ""
 
 #: ../../../changelog.md:6606
 msgid ""
-"Automatically enhance colors for readability in the default terminal (cmd."
-"exe) on Windows. This functionality can be enabled/disabled with the \\"
+"Automatically enhance colors for readability in the default terminal "
+"(cmd.exe) on Windows. This functionality can be enabled/disabled with the \\"
 "$INTENSIFY_COLORS_ON_WIN environment variable."
 msgstr ""
 
@@ -14179,9 +14183,9 @@ msgstr ""
 #: ../../../changelog.md:6614
 msgid ""
 "Added Windows \\'cmd.exe\\' as a foreign shell. This gives xonsh the ability "
-"to source Windows Batch files (.bat and .cmd). Calling `source-cmd script."
-"bat` or the alias `source-bat script.bat` will call the bat file and changes "
-"to the environment variables will be reflected in xonsh."
+"to source Windows Batch files (.bat and .cmd). Calling `source-cmd "
+"script.bat` or the alias `source-bat script.bat` will call the bat file and "
+"changes to the environment variables will be reflected in xonsh."
 msgstr ""
 
 #: ../../../changelog.md:6619
@@ -14443,8 +14447,8 @@ msgstr ""
 
 #: ../../../changelog.md:6729
 msgid ""
-"New `Token.Color` token for xonsh color names, e.g. we now use `Token.Color."
-"RED` rather than `Token.RED`."
+"New `Token.Color` token for xonsh color names, e.g. we now use "
+"`Token.Color.RED` rather than `Token.RED`."
 msgstr ""
 
 #: ../../../changelog.md:6731
@@ -14478,8 +14482,8 @@ msgstr ""
 
 #: ../../../changelog.md:6749
 msgid ""
-"The `BaseShell.settitle` method no longer has its commands captured by "
-"`$(...)`"
+"The `BaseShell.settitle` method no longer has its commands captured by `$"
+"(...)`"
 msgstr ""
 
 #: ../../../changelog.md:6752
@@ -14495,12 +14499,13 @@ msgstr ""
 
 #: ../../../changelog.md:6759
 msgid ""
-"New ability to force callable alias functions to be run in the foreground, i."
-"e. the main thread from which the function was called. This is useful for "
-"debuggers and profilers which may require such access. Use the `xonsh.proc."
-"foreground` decorator on an alias function to flag it. `ForegroundProcProxy` "
-"and `SimpleForegroundProcProxy` classes have been added to support this "
-"feature. Normally, forcing a foreground alias is not needed."
+"New ability to force callable alias functions to be run in the foreground, "
+"i.e. the main thread from which the function was called. This is useful for "
+"debuggers and profilers which may require such access. Use the "
+"`xonsh.proc.foreground` decorator on an alias function to flag it. "
+"`ForegroundProcProxy` and `SimpleForegroundProcProxy` classes have been "
+"added to support this feature. Normally, forcing a foreground alias is not "
+"needed."
 msgstr ""
 
 #: ../../../changelog.md:6766
@@ -14628,10 +14633,10 @@ msgstr ""
 
 #: ../../../changelog.md:6826
 msgid ""
-"Removed `xonsh.ptk.shortcuts.Prompter.create_prompt_layout()` and `xonsh.ptk."
-"shortcuts.Prompter.create_prompt_application()` methods to reduce portion of "
-"xonsh that forks prompt-toolkit. This may require users to upgrade to prompt-"
-"toolkit v0.57+."
+"Removed `xonsh.ptk.shortcuts.Prompter.create_prompt_layout()` and "
+"`xonsh.ptk.shortcuts.Prompter.create_prompt_application()` methods to reduce "
+"portion of xonsh that forks prompt-toolkit. This may require users to "
+"upgrade to prompt-toolkit v0.57+."
 msgstr ""
 
 #: ../../../changelog.md:6833

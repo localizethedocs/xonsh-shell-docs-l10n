@@ -92,8 +92,8 @@ msgstr ""
 #: ../../../../xonsh/webconfig/main.py:docstring of
 #: http.server.SimpleHTTPRequestHandler.guess_type:9
 msgid ""
-"The default implementation looks the file's extension up in the table self."
-"extensions_map, using application/octet-stream as a default; however it "
+"The default implementation looks the file's extension up in the table "
+"self.extensions_map, using application/octet-stream as a default; however it "
 "would be permissible (if slow) to look inside the data to make a better "
 "guess."
 msgstr ""

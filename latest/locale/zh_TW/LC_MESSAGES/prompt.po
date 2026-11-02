@@ -156,8 +156,8 @@ msgstr ""
 
 #: ../../../prompt.rst:64
 msgid ""
-"``gitstatus``: Informative git status, like ``[main|MERGING|+1…2]``. See :py:"
-"mod:`xonsh.prompt.gitstatus` for customization options."
+"``gitstatus``: Informative git status, like ``[main|MERGING|+1…2]``. "
+"See :py:mod:`xonsh.prompt.gitstatus` for customization options."
 msgstr ""
 
 #: ../../../prompt.rst:66
@@ -364,10 +364,10 @@ msgstr ""
 #: ../../../prompt.rst:157
 msgid ""
 "from xonsh.completers.emoji import get_emoji_cache\n"
-"$PROMPT_FIELDS['random_emoji'] = lambda: @.imp.random."
-"choice(get_emoji_cache())[0]\n"
-"$PROMPT = $PROMPT.replace(\"{prompt_end}\", \"{random_emoji} "
-"{prompt_end}\")\n"
+"$PROMPT_FIELDS['random_emoji'] = lambda: "
+"@.imp.random.choice(get_emoji_cache())[0]\n"
+"$PROMPT = $PROMPT.replace(\"{prompt_end}\", \"{random_emoji} {prompt_end}"
+"\")\n"
 "\n"
 "snail@home ~ 🥗 @  # It helps to visually\n"
 "snail@home ~ 🍎 @  # identify lines\n"
@@ -519,8 +519,8 @@ msgstr ""
 
 #: ../../../prompt.rst:262
 msgid ""
-"For the list of default key bindings shipped with xonsh, see :doc:"
-"`keyboard_shortcuts`."
+"For the list of default key bindings shipped with xonsh, "
+"see :doc:`keyboard_shortcuts`."
 msgstr ""
 
 #: ../../../prompt.rst:265
@@ -915,11 +915,11 @@ msgstr ""
 #: ../../../prompt.rst:513
 msgid ""
 "xonsh obeys the ``$VIRTUAL_ENV_DISABLE_PROMPT`` environment variable `as "
-"defined by virtualenv <https://virtualenv.pypa.io/en/latest/how-to/usage."
-"html#customize-prompt>`__. If this variable is truthy, xonsh will *always* "
-"substitute an empty string for ``{env_name}``. Note that unlike other "
-"shells, ``$VIRTUAL_ENV_DISABLE_PROMPT`` takes effect *immediately* after "
-"being set --- it is not necessary to re-activate the environment."
+"defined by virtualenv <https://virtualenv.pypa.io/en/latest/how-to/"
+"usage.html#customize-prompt>`__. If this variable is truthy, xonsh will "
+"*always* substitute an empty string for ``{env_name}``. Note that unlike "
+"other shells, ``$VIRTUAL_ENV_DISABLE_PROMPT`` takes effect *immediately* "
+"after being set --- it is not necessary to re-activate the environment."
 msgstr ""
 
 #: ../../../prompt.rst:520
@@ -1039,9 +1039,9 @@ msgstr ""
 
 #: ../../../prompt.rst:599
 msgid ""
-"This works out of the box on most modern terminals including macOS Terminal."
-"app, iTerm2, GNOME Terminal, Windows Terminal, WezTerm, and Kitty. No "
-"configuration is needed."
+"This works out of the box on most modern terminals including macOS "
+"Terminal.app, iTerm2, GNOME Terminal, Windows Terminal, WezTerm, and Kitty. "
+"No configuration is needed."
 msgstr ""
 
 #: ../../../prompt.rst:605

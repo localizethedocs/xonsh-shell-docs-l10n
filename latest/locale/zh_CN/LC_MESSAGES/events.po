@@ -357,8 +357,8 @@ msgid ""
 "def _event_save_session_log(exit_code, **kw):\n"
 "    import datetime\n"
 "    with open(\"/tmp/xonsh_sessions.log\", \"a\") as f:\n"
-"        f.write(f\"{datetime.datetime.now()}: exited with code "
-"{exit_code}\\n\")"
+"        f.write(f\"{datetime.datetime.now()}: exited with code {exit_code}"
+"\\n\")"
 msgstr ""
 
 #: ../../../eventsbody:198
@@ -449,8 +449,8 @@ msgstr ""
 
 #: ../../../eventsbody:250
 msgid ""
-"``on_import_pre_find_spec(fullname: str, path: str, target: module or None) -"
-"> None``"
+"``on_import_pre_find_spec(fullname: str, path: str, target: module or None) "
+"-> None``"
 msgstr ""
 
 #: ../../../eventsbody:251
@@ -497,8 +497,8 @@ msgid ""
 "    elif oldvalue is None:\n"
 "        print(f\"LS_COLORS: added {key!r}={newvalue!r}\")\n"
 "    else:\n"
-"        print(f\"LS_COLORS: changed {key!r} from {oldvalue!r} to {newvalue!"
-"r}\")"
+"        print(f\"LS_COLORS: changed {key!r} from {oldvalue!r} to {newvalue!r}"
+"\")"
 msgstr ""
 
 #: ../../../eventsbody:296

@@ -98,8 +98,8 @@ msgid ""
 "Xonsh code requires a ``XonshSession`` to exist as ``builtins.__xonsh__`` "
 "and for be that object to be setup correctly. This can be quite a bit of "
 "work and the exact setup depends on the execution context. To simplify the "
-"process of constructing the session properly, xonsh provides the ``xonsh."
-"main.setup()`` function specifically for use in 3rd party packages."
+"process of constructing the session properly, xonsh provides the "
+"``xonsh.main.setup()`` function specifically for use in 3rd party packages."
 msgstr ""
 
 #: ../../../xonsh_projects.rst:55

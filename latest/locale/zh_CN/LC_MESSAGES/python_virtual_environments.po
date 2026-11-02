@@ -188,8 +188,8 @@ msgstr ""
 
 #: ../../../python_virtual_environments.rst:114
 msgid ""
-"To see all available commands, run ``vox help``, ``vox --help``, or ``vox -"
-"h``."
+"To see all available commands, run ``vox help``, ``vox --help``, or ``vox "
+"-h``."
 msgstr ""
 
 #: ../../../python_virtual_environments.rst:117

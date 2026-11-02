@@ -205,8 +205,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:140
 msgid ""
-"To update ``os.environ`` when the xonsh environment changes set :ref:"
-"`$UPDATE_OS_ENVIRON <update_os_environ>` to ``True``."
+"To update ``os.environ`` when the xonsh environment changes "
+"set :ref:`$UPDATE_OS_ENVIRON <update_os_environ>` to ``True``."
 msgstr ""
 
 #: ../../../tutorial.rst:145
@@ -234,8 +234,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:158
 msgid ""
-"To get information about a specific environment variable you can use the :"
-"func:`~xonsh.environ.Env.help` method or just ``?`` at the end."
+"To get information about a specific environment variable you can use "
+"the :func:`~xonsh.environ.Env.help` method or just ``?`` at the end."
 msgstr ""
 
 #: ../../../tutorial.rst:161
@@ -289,8 +289,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:197
 msgid ""
-"We can place any valid Python expression inside of the curly braces in "
-"``${<expr>}``. This result of this expression will then be used to look up a "
+"We can place any valid Python expression inside of the curly braces in ``$"
+"{<expr>}``. This result of this expression will then be used to look up a "
 "value in the environment. Here are a couple of examples in action:"
 msgstr ""
 
@@ -953,9 +953,9 @@ msgstr ""
 #: ../../../tutorial.rst:692
 msgid ""
 "A common use of the ``@()`` and ``$()`` operators is allowing the output of "
-"a command to replace the command itself (command substitution): ``@([i."
-"strip() for i in $(cmd).split()])``.  Xonsh offers a short-hand syntax for "
-"this operation: ``@$(cmd)``."
+"a command to replace the command itself (command substitution): "
+"``@([i.strip() for i in $(cmd).split()])``.  Xonsh offers a short-hand "
+"syntax for this operation: ``@$(cmd)``."
 msgstr ""
 
 #: ../../../tutorial.rst:697
@@ -1015,8 +1015,8 @@ msgstr ""
 
 #: ../../../tutorial.rst:740
 msgid ""
-"To understand how xonsh executes the subprocess commands try to set :ref:"
-"`$XONSH_SUBPROC_TRACE <xonsh_subproc_trace>` to ``True``:"
+"To understand how xonsh executes the subprocess commands try to "
+"set :ref:`$XONSH_SUBPROC_TRACE <xonsh_subproc_trace>` to ``True``:"
 msgstr ""
 
 #: ../../../tutorial.rst:743
@@ -1597,8 +1597,8 @@ msgid ""
 "@ mypath = p'/etc'\n"
 "@ sorted(mypath.glob('**/*xonshrc*'))\n"
 "[Path('/etc/xonsh/xonshrc'), Path('/etc/xonsh/rc.d/xonshrc.xsh')]\n"
-"@ [mypath.exists(), mypath.is_dir(), mypath.is_file(), mypath.parent, mypath."
-"owner()]\n"
+"@ [mypath.exists(), mypath.is_dir(), mypath.is_file(), mypath.parent, "
+"mypath.owner()]\n"
 "[True, True, False, Path('/'), 'root']"
 msgstr ""
 
@@ -1910,10 +1910,10 @@ msgstr ""
 #: ../../../tutorial.rst:1375
 msgid ""
 "If the `click <https://click.palletsprojects.com/>`_ package is installed, "
-"you can register a click command as a xonsh alias with ``@aliases."
-"register_click_command``. The ``aliases.click`` attribute exposes the "
-"``click`` module itself, so ``@aliases.click.option(...)`` works without a "
-"separate ``import click``. Both are loaded lazily on first access."
+"you can register a click command as a xonsh alias with "
+"``@aliases.register_click_command``. The ``aliases.click`` attribute exposes "
+"the ``click`` module itself, so ``@aliases.click.option(...)`` works without "
+"a separate ``import click``. Both are loaded lazily on first access."
 msgstr ""
 
 #: ../../../tutorial.rst:1381
@@ -1936,9 +1936,9 @@ msgstr ""
 msgid ""
 "The call forms mirror ``@aliases.register`` — bare, ``()``, or with an "
 "explicit name. Inside the click callback, ``ctx`` is a ``click.Context`` "
-"subclass carrying the usual xonsh alias parameters as attributes (``ctx."
-"alias_args``, ``ctx.stdin``, ``ctx.stdout``, ``ctx.env``, and so on). See :"
-"doc:`callable_aliases` for the full reference."
+"subclass carrying the usual xonsh alias parameters as attributes "
+"(``ctx.alias_args``, ``ctx.stdin``, ``ctx.stdout``, ``ctx.env``, and so on). "
+"See :doc:`callable_aliases` for the full reference."
 msgstr ""
 
 #: ../../../tutorial.rst:1403
@@ -1991,8 +1991,8 @@ msgid ""
 "from xonsh.procs.specs import SpecAttrDecoratorAlias\n"
 "\n"
 "aliases['@and'] = SpecAttrDecoratorAlias(\n"
-"                    {\"output_format\": lambda lines: ' and '.join([l."
-"strip() for l in lines])},\n"
+"                    {\"output_format\": lambda lines: ' and "
+"'.join([l.strip() for l in lines])},\n"
 "                    descr=\"Join lines with 'and'.\", name=\"@and\")"
 msgstr ""
 

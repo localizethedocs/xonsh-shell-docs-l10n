@@ -40,9 +40,9 @@ msgstr ""
 #: ../../../intro.rst:3
 msgid ""
 "<p style=\"text-align:left;\">\n"
-"<span style=\"font-family:Times;font-size:28px;font-style:normal;font-weight:"
-"normal;text-decoration:none;text-transform:none;font-variant:small-caps;"
-"color:000000;\">\n"
+"<span style=\"font-family:Times;font-size:28px;font-style:normal;font-"
+"weight:normal;text-decoration:none;text-transform:none;font-variant:small-"
+"caps;color:000000;\">\n"
 "~\n"
 "<script>\n"
 "var taglines = [\n"
@@ -339,9 +339,9 @@ msgstr ""
 #: ../../../contents.rst:112
 msgid ""
 "Test Xonsh with compiler, interpreter, optimizer and report upstream issues "
-"e.g. `Nuitka <https://github.com/xonsh/xonsh/"
-"issues/2895#issuecomment-3665753657>`_, `RustPython <https://github.com/"
-"xonsh/xonsh/issues/5082#issue-1611837062>`_."
+"e.g. `Nuitka <https://github.com/xonsh/xonsh/issues/"
+"2895#issuecomment-3665753657>`_, `RustPython <https://github.com/xonsh/xonsh/"
+"issues/5082#issue-1611837062>`_."
 msgstr ""
 
 #: ../../../contents.rst:113
@@ -353,9 +353,9 @@ msgstr ""
 #: ../../../contents.rst:114
 msgid ""
 "Design more `logos and images <https://github.com/xonsh/logo>`_, `improve "
-"<https://github.com/xonsh/xonsh/"
-"blob/12f12ce94f1b6c92218e22fbdaaa846e16ac8b2d/docs/_templates/index."
-"html#L9>`_ `xonsh website <https://xon.sh/>`_."
+"<https://github.com/xonsh/xonsh/blob/"
+"12f12ce94f1b6c92218e22fbdaaa846e16ac8b2d/docs/_templates/index.html#L9>`_ "
+"`xonsh website <https://xon.sh/>`_."
 msgstr ""
 
 #: ../../../contents.rst:115
