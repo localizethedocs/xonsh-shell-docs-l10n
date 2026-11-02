@@ -468,8 +468,8 @@ msgstr ""
 msgid ""
 "Xonsh's :meth:`Lexer.split() <xonsh.parsers.lexer.Lexer.split>` can split a "
 "string into tokens the same way the shell does -- respecting quoting, "
-"escapes, and operators.  This is the function used internally by the "
-"``@$()`` operator:"
+"escapes, and operators.  This is the function used internally by the ``@$"
+"()`` operator:"
 msgstr ""
 
 #: ../../../strings.rst:248

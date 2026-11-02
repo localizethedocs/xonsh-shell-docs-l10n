@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../bash_to_xsh.rst:14
 msgid ""
-"The ``@`` object has ``@.env`` - env variables, ``@.imp`` - importer, ``@."
-"lastcmd`` - last command, etc."
+"The ``@`` object has ``@.env`` - env variables, ``@.imp`` - importer, "
+"``@.lastcmd`` - last command, etc."
 msgstr ""
 
 #: ../../../bash_to_xsh.rst:15
@@ -485,8 +485,8 @@ msgstr ""
 #: ../../../bash_to_xsh.rst:141
 msgid ""
 "Xonsh publishes a handful of containers, primarily targeting CI and "
-"automation use cases. All of them are published on `Docker Hub <https://hub."
-"docker.com/u/xonsh>`_."
+"automation use cases. All of them are published on `Docker Hub <https://"
+"hub.docker.com/u/xonsh>`_."
 msgstr ""
 
 #: ../../../bash_to_xsh.rst:143

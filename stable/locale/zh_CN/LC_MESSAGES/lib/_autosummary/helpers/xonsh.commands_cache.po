@@ -183,8 +183,8 @@ msgstr ""
 #: xonsh.commands_cache.CommandsCache.lazy_locate_binary:4
 #: xonsh.commands_cache.CommandsCache.locate_binary:4
 msgid ""
-"NOT RECOMMENDED. Take a look into `xonsh.procs.executables."
-"locate_executable` before using this function."
+"NOT RECOMMENDED. Take a look into "
+"`xonsh.procs.executables.locate_executable` before using this function."
 msgstr ""
 
 #: ../../../../xonsh/commands_cache.py:docstring of
@@ -273,10 +273,10 @@ msgstr ""
 #: ../../../../xonsh/commands_cache.py:docstring of
 #: xonsh.commands_cache.CommandsCache.update_cache:2
 msgid ""
-"The main function to update commands cache. Note! There is ``xonsh.procs."
-"executables`` module with resolving executables. Usage ``executables`` is "
-"preferred instead of commands_cache for cases where you just need to locate "
-"executable command."
+"The main function to update commands cache. Note! There is "
+"``xonsh.procs.executables`` module with resolving executables. Usage "
+"``executables`` is preferred instead of commands_cache for cases where you "
+"just need to locate executable command."
 msgstr ""
 
 #: ../../../../xonsh/commands_cache.py:docstring of

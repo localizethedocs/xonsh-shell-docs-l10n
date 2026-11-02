@@ -37,8 +37,8 @@ msgid ""
 "Xonsh exposes itself as a Python library in addition to the standalone "
 "``xonsh`` command. Third-party projects can create a xonsh session, load "
 "xontribs and rc files, and drive the execer / shell from their own code. The "
-"public entry point for this is :func:`xonsh.main.setup`, documented in :mod:"
-"`xonsh.main`."
+"public entry point for this is :func:`xonsh.main.setup`, documented "
+"in :mod:`xonsh.main`."
 msgstr ""
 
 #: ../../../embedding.rst:26
@@ -85,9 +85,9 @@ msgstr ""
 
 #: ../../../embedding.rst:50
 msgid ""
-"When xonsh runs as the standalone ``xonsh`` command, its entry point (:func:"
-"`xonsh.main.main`) automatically performs a startup handshake that makes "
-"xonsh the *foreground process group* of its controlling terminal. This "
+"When xonsh runs as the standalone ``xonsh`` command, its entry point "
+"(:func:`xonsh.main.main`) automatically performs a startup handshake that "
+"makes xonsh the *foreground process group* of its controlling terminal. This "
 "avoids a class of startup crashes and hangs in environments where the parent "
 "process does not arrange TTY ownership correctly — Flatpak / Bubblewrap "
 "sandboxes, build systems, nested containers, ``systemd --user`` services, "

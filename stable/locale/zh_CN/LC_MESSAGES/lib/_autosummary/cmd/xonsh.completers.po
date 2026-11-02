@@ -64,8 +64,8 @@ msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1
 msgid ""
-"Tab-completion for click-based aliases registered via :func:`xonsh.aliases."
-"Aliases.register_click_command`."
+"Tab-completion for click-based aliases registered "
+"via :func:`xonsh.aliases.Aliases.register_click_command`."
 msgstr ""
 
 #: ../../../lib/_autosummary/cmd/xonsh.completers.rst:47:<autosummary>:1

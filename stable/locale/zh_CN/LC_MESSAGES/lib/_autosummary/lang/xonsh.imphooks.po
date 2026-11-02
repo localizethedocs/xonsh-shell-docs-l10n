@@ -199,8 +199,8 @@ msgid ""
 "https://docs.python.org/3/howto/unicode.html#unicode-literals-in-python-"
 "source-code If no encoding is found, UTF-8 codec with BOM signature will be "
 "returned as it skips an optional UTF-8 encoded BOM at the start of the data "
-"and is otherwise the same as UTF-8 https://docs.python.org/3/library/codecs."
-"html#module-encodings.utf_8_sig"
+"and is otherwise the same as UTF-8 https://docs.python.org/3/library/"
+"codecs.html#module-encodings.utf_8_sig"
 msgstr ""
 
 #: ../../../../xonsh/imphooks.py:docstring of

@@ -118,11 +118,11 @@ msgstr ""
 
 #: ../../../install.rst:83
 msgid ""
-"Work in progress: `binary build <https://github.com/xonsh/xonsh/"
-"issues/2895#issuecomment-3665753657>`_, `running in RustPython <https://"
-"github.com/xonsh/xonsh/issues/5082#issue-1611837062>`_, `xonsh Flatpak "
-"<https://github.com/xonsh/xonsh-flatpak>`_. Check out `Nightly build "
-"<https://github.com/xonsh/xonsh/releases/tag/nightly-build>`_ page."
+"Work in progress: `binary build <https://github.com/xonsh/xonsh/issues/"
+"2895#issuecomment-3665753657>`_, `running in RustPython <https://github.com/"
+"xonsh/xonsh/issues/5082#issue-1611837062>`_, `xonsh Flatpak <https://"
+"github.com/xonsh/xonsh-flatpak>`_. Check out `Nightly build <https://"
+"github.com/xonsh/xonsh/releases/tag/nightly-build>`_ page."
 msgstr ""
 
 #: ../../../install.rst:90
@@ -151,8 +151,8 @@ msgstr ""
 msgid ""
 "$ TARGET_DIR=$HOME/.local/xonsh-env PYTHON_VER=3.11 XONSH_VER='xonsh[full]' "
 "\\\n"
-"  /bin/bash -c \"$(curl -fsSL https://xon.sh/install/mamba-install-xonsh."
-"sh)\""
+"  /bin/bash -c \"$(curl -fsSL https://xon.sh/install/mamba-install-xonsh.sh)"
+"\""
 msgstr ""
 
 #: ../../../install.rst:108
@@ -166,8 +166,8 @@ msgstr ""
 #: ../../../install.rst:116
 msgid ""
 "The installation instructions for Windows were recently updated. If you run "
-"into any issues, please report them to the `issue tracker <https://github."
-"com/xonsh/xonsh/issues>`_."
+"into any issues, please report them to the `issue tracker <https://"
+"github.com/xonsh/xonsh/issues>`_."
 msgstr ""
 
 #: ../../../install.rst:120
@@ -191,8 +191,8 @@ msgstr ""
 
 #: ../../../install.rst:128
 msgid ""
-"> curl -L -o install_xonsh.cmd https://xon.sh/install/windows_install_xonsh."
-"cmd\n"
+"> curl -L -o install_xonsh.cmd https://xon.sh/install/"
+"windows_install_xonsh.cmd\n"
 "> install_xonsh.cmd  # Install to ~/xonsh-env/"
 msgstr ""
 
@@ -222,8 +222,8 @@ msgstr ""
 
 #: ../../../install.rst:148
 msgid ""
-"$ pip install 'https://github.com/xonsh/xonsh/archive/main."
-"zip#egg=xonsh[full]'"
+"$ pip install 'https://github.com/xonsh/xonsh/archive/"
+"main.zip#egg=xonsh[full]'"
 msgstr ""
 
 #: ../../../install.rst:152
@@ -256,8 +256,8 @@ msgstr ""
 
 #: ../../../install.rst:171
 msgid ""
-"$ wget 'https://github.com/xonsh/xonsh/releases/latest/download/xonsh-x86_64."
-"AppImage' -O xonsh\n"
+"$ wget 'https://github.com/xonsh/xonsh/releases/latest/download/xonsh-"
+"x86_64.AppImage' -O xonsh\n"
 "$ chmod +x xonsh\n"
 "$ ./xonsh"
 msgstr ""
@@ -275,8 +275,8 @@ msgstr "容器"
 #: ../../../install.rst:182
 msgid ""
 "Xonsh publishes a handful of containers, primarily targeting CI and "
-"automation use cases. All of them are published on `Docker Hub <https://hub."
-"docker.com/u/xonsh>`__."
+"automation use cases. All of them are published on `Docker Hub <https://"
+"hub.docker.com/u/xonsh>`__."
 msgstr ""
 
 #: ../../../install.rst:185
@@ -389,8 +389,8 @@ msgstr ""
 #: ../../../install.rst:254
 msgid ""
 "Using Nuitka (a Python compiler), it is possible to build a binary version "
-"of xonsh. Learn more in `xonsh/2895 <https://github.com/xonsh/xonsh/"
-"issues/2895>`_."
+"of xonsh. Learn more in `xonsh/2895 <https://github.com/xonsh/xonsh/issues/"
+"2895>`_."
 msgstr ""
 
 #: ../../../install.rst:258
@@ -434,9 +434,9 @@ msgstr ""
 #: ../../../install.rst:281
 msgid ""
 "**On Windows** the running ``xonsh.exe`` is locked by the OS, so pip cannot "
-"replace it from inside xonsh itself. Grab the interpreter path with :ref:"
-"`xcontext <aliases-xcontext>`, leave the shell, then run pip from another "
-"terminal (``cmd``, PowerShell, etc.):"
+"replace it from inside xonsh itself. Grab the interpreter path "
+"with :ref:`xcontext <aliases-xcontext>`, leave the shell, then run pip from "
+"another terminal (``cmd``, PowerShell, etc.):"
 msgstr ""
 
 #: ../../../install.rst:286

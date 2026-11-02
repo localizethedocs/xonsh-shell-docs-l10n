@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../contact.rst:12
 msgid ""
-"`Join Zulip Community with core xonsh developers <https://xonsh.zulipchat."
-"com/join/hbvue5rimpdkwkdjuiqfs7tv/>`_"
+"`Join Zulip Community with core xonsh developers <https://"
+"xonsh.zulipchat.com/join/hbvue5rimpdkwkdjuiqfs7tv/>`_"
 msgstr ""
 
 #: ../../../contact.rst:13

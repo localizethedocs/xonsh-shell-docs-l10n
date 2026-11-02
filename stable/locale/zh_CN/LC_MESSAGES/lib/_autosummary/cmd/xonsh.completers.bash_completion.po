@@ -246,8 +246,8 @@ msgstr ""
 #: ../../../../xonsh/completers/bash_completion.py:docstring of
 #: xonsh.completers.bash_completion.bash_completions:44
 msgid ""
-"A list of the args in the current line to be used instead of ``line."
-"split()``. This is usefull with a space in an argument, e.g. ``ls 'a "
+"A list of the args in the current line to be used instead of "
+"``line.split()``. This is usefull with a space in an argument, e.g. ``ls 'a "
 "dir/'<TAB>``."
 msgstr ""
 

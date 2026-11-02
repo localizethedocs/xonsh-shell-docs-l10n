@@ -29,9 +29,9 @@ msgstr ""
 msgid ""
 "xonsh is an extensible, user-patchable platform: third-party developers can "
 "build and distribute their own extensions without going through the xonsh "
-"release cycle, and end users can reshape any subsystem directly from their :"
-"doc:`xonsh RC <xonshrc>` because every part of xonsh is a Python module. In "
-"the xonsh ecosystem these extensions are called *xontribs*."
+"release cycle, and end users can reshape any subsystem directly from "
+"their :doc:`xonsh RC <xonshrc>` because every part of xonsh is a Python "
+"module. In the xonsh ecosystem these extensions are called *xontribs*."
 msgstr ""
 
 #: ../../../xontrib.rst:15

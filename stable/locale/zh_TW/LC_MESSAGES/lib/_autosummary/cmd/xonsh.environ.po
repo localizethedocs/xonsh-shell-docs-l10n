@@ -815,8 +815,8 @@ msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_xonshrc:2
 msgid ""
-"``['$XONSH_SYS_CONFIG_DIR/xonshrc', '$XONSH_CONFIG_DIR/xonsh/rc.xsh', '~/."
-"xonshrc']``"
+"``['$XONSH_SYS_CONFIG_DIR/xonshrc', '$XONSH_CONFIG_DIR/xonsh/rc.xsh', "
+"'~/.xonshrc']``"
 msgstr ""
 
 #: ../../../../xonsh/environ.py:docstring of xonsh.environ.default_xonshrcdir:2

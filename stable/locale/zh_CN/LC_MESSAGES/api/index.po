@@ -74,8 +74,8 @@ msgstr ""
 #: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:2
 msgid ""
 "Remove a directory, even if it has read-only files (Windows). Git creates "
-"read-only files that must be removed on teardown. See https://stackoverflow."
-"com/questions/2656322  for more info."
+"read-only files that must be removed on teardown. See https://"
+"stackoverflow.com/questions/2656322  for more info."
 msgstr ""
 
 #: ../../../../xonsh/api/os.py:docstring of xonsh.api.os.rmtree:0

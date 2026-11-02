@@ -64,16 +64,15 @@ msgstr ""
 
 #: ../../../aliases.rst:31
 msgid ""
-"Tools for dealing with xonsh history. See `the history tutorial <history."
-"html>`_ for more information all the history command and all of its sub-"
-"commands."
+"Tools for dealing with xonsh history. See `the history tutorial "
+"<history.html>`_ for more information all the history command and all of its "
+"sub-commands."
 msgstr ""
 
 #: ../../../aliases.rst:1
 msgid ""
 "usage: history [-h]\n"
-"               {show,id,file,info,pull,flush,off,on,clear,delete,erasedups,"
-"gc,transfer} ...\n"
+"               {show,id,file,info,pull,flush,off,on,clear,delete,erasedups,gc,transfer} ...\n"
 "\n"
 "Try 'history <command> --help' for more info\n"
 "\n"
@@ -256,10 +255,10 @@ msgstr ""
 
 #: ../../../aliases.rst:134
 msgid ""
-"Alias to the Python interpreter that is currently running xonsh (``sys."
-"executable``). This is useful for running Python modules or scripts in the "
-"same environment as the shell itself, especially in complex setups like "
-"AppImage."
+"Alias to the Python interpreter that is currently running xonsh "
+"(``sys.executable``). This is useful for running Python modules or scripts "
+"in the same environment as the shell itself, especially in complex setups "
+"like AppImage."
 msgstr ""
 
 #: ../../../aliases.rst:136
@@ -512,10 +511,10 @@ msgstr ""
 
 #: ../../../aliases.rst:288
 msgid ""
-"Parses XML with `lxml <https://lxml.de/>`_ and returns an ``lxml.etree."
-"_Element``. Adds full XPath, richer error messages, and faster parsing on "
-"top of the stdlib ``@xml``. Registered only when ``lxml`` is installed "
-"(``xpip install lxml``)."
+"Parses XML with `lxml <https://lxml.de/>`_ and returns an "
+"``lxml.etree._Element``. Adds full XPath, richer error messages, and faster "
+"parsing on top of the stdlib ``@xml``. Registered only when ``lxml`` is "
+"installed (``xpip install lxml``)."
 msgstr ""
 
 #: ../../../aliases.rst:293

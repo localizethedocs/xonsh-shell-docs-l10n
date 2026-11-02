@@ -355,13 +355,13 @@ msgstr ""
 #: xonsh.procs.pipelines.CommandPipeline.returncode:8
 #: xonsh.procs.pipelines.HiddenCommandPipeline.returncode:8
 msgid ""
-"Background: under load, ``tee_stdout`` can bail before the trailing ``proc."
-"wait()`` in ``iterraw`` runs (e.g. an uncaught ``OSError`` while draining "
-"the pipe).  ``end()`` then flips ``self.ended = True`` in its ``finally`` "
-"with ``self.proc.returncode`` still unset.  The raise-check helpers "
-"conflated ``None`` with ``0`` (success) and silently swallowed real failures "
-"(#6456).  Reap once more via ``poll()`` — non-blocking, so suspended/"
-"backgrounded pipelines still correctly report ``None``."
+"Background: under load, ``tee_stdout`` can bail before the trailing "
+"``proc.wait()`` in ``iterraw`` runs (e.g. an uncaught ``OSError`` while "
+"draining the pipe).  ``end()`` then flips ``self.ended = True`` in its "
+"``finally`` with ``self.proc.returncode`` still unset.  The raise-check "
+"helpers conflated ``None`` with ``0`` (success) and silently swallowed real "
+"failures (#6456).  Reap once more via ``poll()`` — non-blocking, so "
+"suspended/backgrounded pipelines still correctly report ``None``."
 msgstr ""
 
 #: ../../../../xonsh/procs/pipelines.py:docstring of

@@ -411,8 +411,8 @@ msgstr ""
 
 #: ../../../eventsbody:223
 msgid ""
-"``on_import_pre_find_spec(fullname: str, path: str, target: module or None) -"
-"> None``"
+"``on_import_pre_find_spec(fullname: str, path: str, target: module or None) "
+"-> None``"
 msgstr ""
 
 #: ../../../eventsbody:224

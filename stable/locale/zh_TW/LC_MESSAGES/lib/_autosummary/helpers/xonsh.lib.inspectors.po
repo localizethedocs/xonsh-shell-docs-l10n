@@ -348,8 +348,8 @@ msgstr ""
 #: ../../../../xonsh/lib/inspectors.py:docstring of
 #: xonsh.lib.inspectors.getargspec:2
 msgid ""
-"Wrapper around :func:`inspect.getfullargspec` on Python 3, and :func:inspect."
-"getargspec` on Python 2."
+"Wrapper around :func:`inspect.getfullargspec` on Python 3, "
+"and :func:inspect.getargspec` on Python 2."
 msgstr ""
 
 #: ../../../../xonsh/lib/inspectors.py:docstring of
