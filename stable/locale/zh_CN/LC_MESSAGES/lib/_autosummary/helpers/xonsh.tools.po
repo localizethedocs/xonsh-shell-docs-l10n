@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xonsh stable\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 07:58+0000\n"
+"POT-Creation-Date: 2026-11-02 18:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,9 +62,9 @@ msgstr ""
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:22
 msgid ""
 "**String, token and AST helpers** — quoting/"
-"escaping, :func:`subexpr_from_unbalanced`, :func:`find_next_break`, regex "
-"constants for string prefixes and history tuples, "
-"the :class:`FlexibleFormatter` for prompt/format-string rendering."
+"escaping, :func:`find_next_break`, regex constants for string prefixes and "
+"history tuples, the :class:`FlexibleFormatter` for prompt/format-string "
+"rendering."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools:26
@@ -548,10 +548,6 @@ msgstr ""
 msgid "Determines whether a line ends with a colon token, ignoring comments."
 msgstr ""
 
-#: ../../../../xonsh/tools.py:docstring of xonsh.tools.endswith_newline:2
-msgid "Force one new line character end to string."
-msgstr ""
-
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.ensure_slice:2
 msgid "Try to convert an object into a slice, complain on failure"
 msgstr ""
@@ -690,13 +686,6 @@ msgstr ""
 msgid "Simple wrapper around glob that also expands home and env vars."
 msgstr ""
 
-#: ../../../../xonsh/tools.py:docstring of
-#: xonsh.tools.hardcode_colors_for_win10:2
-msgid ""
-"Replace all ansi colors with hardcoded colors to avoid unreadable defaults "
-"in conhost.exe"
-msgstr ""
-
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.history_tuple_to_str:2
 msgid "Converts a valid history tuple to a canonical string."
 msgstr ""
@@ -784,11 +773,6 @@ msgstr ""
 msgid ""
 "Resets the style when setting the INTENSIFY_COLORS_ON_WIN environment "
 "variable."
-msgstr ""
-
-#: ../../../../xonsh/tools.py:docstring of xonsh.tools.is_balanced:2
-msgid ""
-"Determines whether an expression has unbalanced opening and closing tokens."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.is_bool:2
@@ -1127,19 +1111,6 @@ msgid ""
 "Otherwiswe, does nothing."
 msgstr ""
 
-#: ../../../../xonsh/tools.py:docstring of
-#: xonsh.tools.subexpr_before_unbalanced:2
-msgid "Obtains the expression prior to last unbalanced left token."
-msgstr ""
-
-#: ../../../../xonsh/tools.py:docstring of
-#: xonsh.tools.subexpr_from_unbalanced:2
-msgid ""
-"Attempts to pull out a valid subexpression for unbalanced grouping, based on "
-"opening tokens, eg. '(', and closing tokens, eg. ')'.  This does not do full "
-"tokenization, but should be good enough for tab completion."
-msgstr ""
-
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.subproc_toks:2
 msgid ""
 "Encapsulates tokens in a source code line in a uncaptured subprocess ![] "
@@ -1239,10 +1210,6 @@ msgid ""
 "Decorator that specifies that a callable alias should not be run with any "
 "capturing. This is often needed if the alias call interactive subprocess, "
 "like pagers and text editors."
-msgstr ""
-
-#: ../../../../xonsh/tools.py:docstring of xonsh.tools.unquote:2
-msgid "Strip paired quotes from string once."
 msgstr ""
 
 #: ../../../../xonsh/tools.py:docstring of xonsh.tools.unthreadable:2
