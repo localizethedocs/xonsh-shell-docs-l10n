@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.itertools.rst:2
+msgid "xonsh.lib.itertools"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:2
+msgid ""
+"Utility for converting an object to an iterable. Parameters ---------- "
+"iterable_or_scalar : anything"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:0
+msgid "Returns"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:13
+msgid "**l**"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:-1
+msgid "iterable"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:14
+msgid ""
+"If `obj` was None, return the empty tuple. If `obj` was not iterable returns "
+"a 1-tuple containing `obj`. Otherwise return `obj`"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:26
+msgid "Notes"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:27
+msgid ""
+"Although string types are iterable in Python, we are treating them as not "
+"iterable in this method.  Thus, as_iterable(string) returns (string, )"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.as_iterable:32
+msgid "Examples"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.unique_everseen:2
+msgid ""
+"Yield unique elements, preserving order. Remember all elements ever seen."
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.unique_everseen:4
+msgid ""
+"``` unique_everseen('AAAABBBCCDAABBB') → A B C D unique_everseen('ABBcCAD', "
+"str.casefold) → A B c D ```"
+msgstr ""
+
+#: ../../../../xonsh/lib/itertools.py:docstring of
+#: xonsh.lib.itertools.unique_everseen:9
+msgid ""
+"Source code: https://docs.python.org/3/library/itertools.html#itertools-"
+"recipes"
+msgstr ""
