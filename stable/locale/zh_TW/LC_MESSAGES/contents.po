@@ -360,7 +360,7 @@ msgstr ""
 
 #: ../../../contents.rst:118
 msgid "`Become a sponsor to Xonsh <https://github.com/sponsors/xonsh>`_."
-msgstr ""
+msgstr "`成為 Xonsh 的贊助者 <https://github.com/sponsors/xonsh>`_\\ 。"
 
 #: ../../../contents.rst:122
 msgid "Links"
