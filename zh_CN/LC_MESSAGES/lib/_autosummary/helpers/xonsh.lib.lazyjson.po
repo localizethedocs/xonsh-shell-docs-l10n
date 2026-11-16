@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) Xonsh Contributors / https://github.com/xonsh/xonsh/graphs/contributors?all=1
+# This file is distributed under the same license as the xonsh package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xonsh latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-22 14:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../lib/_autosummary/helpers/xonsh.lib.lazyjson.rst:2
+msgid "xonsh.lib.lazyjson"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson:1
+msgid "Implements a lazy JSON file class that wraps around json data."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:2
+msgid "A proxy node for JSON nodes. Acts as both sequence and mapping."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:0
+#: xonsh.lib.lazyjson.LazyJSON:0
+msgid "Parameters"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:28
+msgid "**offsets**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:-1
+msgid "dict, list, or int"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:29
+msgid "offsets of corresponding data structure, in bytes"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:31
+msgid "**sizes**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:32
+msgid "sizes of corresponding data structure, in bytes"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:34
+msgid "**root**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:-1
+msgid "weakref.proxy of LazyJSON"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LJNode:35
+msgid "weakref back to root node, which should be a LazyJSON object."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: collections.abc.Sequence.index:2
+msgid "value.  Raises ValueError if the value is not present."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: collections.abc.Sequence.index:4
+msgid "Supporting start and stop arguments is optional, but recommended."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LJNode.load:2
+msgid "Returns the Python data structure represented by the node."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.LazyJSON:2
+msgid ""
+"Represents a lazy json file. Can be used like a normal Python dict or list."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:29
+msgid "**f**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:-1
+msgid "file handle or str"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:30
+msgid "JSON file to open."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:32
+msgid "**reopen**"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:-1
+msgid "bool, optional"
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON:33
+msgid "Whether new file handle should be opened for each load."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of
+#: xonsh.lib.lazyjson.LazyJSON.close:2
+msgid "Close the file handle, if appropriate."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.dumps:2
+msgid "Dumps an object to JSON with an index."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.index:2
+msgid "Creates an index for a JSON file."
+msgstr ""
+
+#: ../../../../xonsh/lib/lazyjson.py:docstring of xonsh.lib.lazyjson.ljdump:2
+msgid "Dumps an object to JSON file."
+msgstr ""
